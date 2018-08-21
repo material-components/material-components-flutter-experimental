@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            SizedBox(height: 12.0),
+            const SizedBox(height: 12.0),
             PrimaryColorOverride(
               color: kShrineBrown900,
               child: TextField(
