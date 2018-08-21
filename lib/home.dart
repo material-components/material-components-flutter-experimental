@@ -12,32 +12,24 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:scoped_model/scoped_model.dart';
 
-enum Category { all, accessories, clothing, home, }
+import 'model/app_state_model.dart';
+import 'model/product.dart';
+import 'supplemental/asymmetric_view.dart';
 
-class Product {
-  const Product({
-    @required this.category,
-    @required this.id,
-    @required this.isFeatured,
-    @required this.name,
-    @required this.price,
-  })  : assert(category != null),
-        assert(id != null),
-        assert(isFeatured != null),
-        assert(name != null),
-        assert(price != null);
-
+class HomePage extends StatelessWidget {
   final Category category;
-  final int id;
-  final bool isFeatured;
-  final String name;
-  final int price;
 
-  String get assetName => '$id-0.jpg';
-  String get assetPackage => 'shrine_images';
+  const HomePage({this.category: Category.all});
 
   @override
-  String toString() => '$name (id=$id)';
+  Widget build(BuildContext context) {
+    return ScopedModelDescendant<AppStateModel>(
+      builder: (context, child, model) => AsymmetricView(
+            products: model.getProducts(),
+          ),
+    );
+  }
 }

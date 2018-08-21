@@ -15,10 +15,10 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
-import 'model/product.dart';
 import 'login.dart';
+import 'shopping_cart.dart';
 
-double _kFlingVelocity = 2.0;
+const double _kFlingVelocity = 2.0;
 
 class _FrontLayer extends StatelessWidget {
   const _FrontLayer({
@@ -98,7 +98,8 @@ class _BackdropTitle extends AnimatedWidget {
                   end: Offset(1.0, 0.0),
                 ).evaluate(animation),
                 child: ImageIcon(AssetImage('assets/diamond.png')),
-              )]),
+              )
+            ]),
           ),
         ),
         // Here, we do a custom cross fade between backTitle and frontTitle.
@@ -145,20 +146,17 @@ class _BackdropTitle extends AnimatedWidget {
 /// can make a selection. The user can also configure the titles for when the
 /// front or back layer is showing.
 class Backdrop extends StatefulWidget {
-  final Category currentCategory;
   final Widget frontLayer;
   final Widget backLayer;
   final Widget frontTitle;
   final Widget backTitle;
 
   const Backdrop({
-    @required this.currentCategory,
     @required this.frontLayer,
     @required this.backLayer,
     @required this.frontTitle,
     @required this.backTitle,
-  })  : assert(currentCategory != null),
-        assert(frontLayer != null),
+  })  : assert(frontLayer != null),
         assert(backLayer != null),
         assert(frontTitle != null),
         assert(backTitle != null);
@@ -183,17 +181,6 @@ class _BackdropState extends State<Backdrop>
   }
 
   @override
-  void didUpdateWidget(Backdrop old) {
-    super.didUpdateWidget(old);
-
-    if (widget.currentCategory != old.currentCategory) {
-      _toggleBackdropLayerVisibility();
-    } else if (!_frontLayerVisible) {
-      _controller.fling(velocity: _kFlingVelocity);
-    }
-  }
-
-  @override
   void dispose() {
     _controller.dispose();
     super.dispose();
@@ -211,7 +198,7 @@ class _BackdropState extends State<Backdrop>
   }
 
   Widget _buildStack(BuildContext context, BoxConstraints constraints) {
-    double layerTitleHeight = 48.0;
+    const double layerTitleHeight = 48.0;
     final Size layerSize = constraints.biggest;
     final double layerTop = layerSize.height - layerTitleHeight;
 
@@ -249,11 +236,18 @@ class _BackdropState extends State<Backdrop>
         backTitle: widget.backTitle,
       ),
       actions: <Widget>[
-        new IconButton(
-          icon: Icon(
-            Icons.search,
-            semanticLabel: 'search',
-          ),
+        IconButton(
+          icon: const Icon(Icons.shopping_cart),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (BuildContext context) => ShoppingCartPage()),
+            );
+          },
+        ),
+        IconButton(
+          icon: const Icon(Icons.search),
           onPressed: () {
             Navigator.push(
               context,
@@ -261,11 +255,8 @@ class _BackdropState extends State<Backdrop>
             );
           },
         ),
-        new IconButton(
-          icon: Icon(
-            Icons.tune,
-            semanticLabel: 'filter',
-          ),
+        IconButton(
+          icon: const Icon(Icons.tune),
           onPressed: () {
             Navigator.push(
               context,
