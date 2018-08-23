@@ -17,6 +17,7 @@ import 'package:intl/intl.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import 'colors.dart';
+import 'short_bottom_sheet.dart';
 import 'model/app_state_model.dart';
 import 'model/product.dart';
 
@@ -47,7 +48,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
     final localTheme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: kShrinePink100,
+      backgroundColor: kShrinePink50,
       body: SafeArea(
         child: Container(
           child: ScopedModelDescendant<AppStateModel>(
@@ -62,7 +63,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
                             width: _leftColumnWidth,
                             child: IconButton(
                               icon: const Icon(Icons.keyboard_arrow_down),
-                              onPressed: () => Navigator.of(context).pop(),
+                              onPressed: () => ShortBottomSheet.of(context).close()
                             ),
                           ),
                           Text(
@@ -98,7 +99,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
                       ),
                       onPressed: () {
                         model.clearCart();
-                        Navigator.of(context).pop();
+                        ShortBottomSheet.of(context).close();
                       },
                     ),
                   ),

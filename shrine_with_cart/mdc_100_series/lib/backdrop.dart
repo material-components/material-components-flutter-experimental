@@ -16,7 +16,6 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 import 'login.dart';
-import 'shopping_cart.dart';
 
 const double _kFlingVelocity = 2.0;
 
@@ -150,12 +149,14 @@ class Backdrop extends StatefulWidget {
   final Widget backLayer;
   final Widget frontTitle;
   final Widget backTitle;
+  final BoolCallback toggleSheet;
 
   const Backdrop({
     @required this.frontLayer,
     @required this.backLayer,
     @required this.frontTitle,
     @required this.backTitle,
+    this.toggleSheet
   })  : assert(frontLayer != null),
         assert(backLayer != null),
         assert(frontTitle != null),
@@ -195,6 +196,7 @@ class _BackdropState extends State<Backdrop>
   void _toggleBackdropLayerVisibility() {
     _controller.fling(
         velocity: _frontLayerVisible ? -_kFlingVelocity : _kFlingVelocity);
+    widget.toggleSheet(_frontLayerVisible);
   }
 
   Widget _buildStack(BuildContext context, BoxConstraints constraints) {
@@ -237,17 +239,7 @@ class _BackdropState extends State<Backdrop>
       ),
       actions: <Widget>[
         IconButton(
-          icon: const Icon(Icons.shopping_cart),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (BuildContext context) => ShoppingCartPage()),
-            );
-          },
-        ),
-        IconButton(
-          icon: const Icon(Icons.search),
+          icon: const Icon(Icons.search, semanticLabel: 'login'),
           onPressed: () {
             Navigator.push(
               context,
@@ -256,7 +248,7 @@ class _BackdropState extends State<Backdrop>
           },
         ),
         IconButton(
-          icon: const Icon(Icons.tune),
+          icon: const Icon(Icons.tune, semanticLabel: 'login'),
           onPressed: () {
             Navigator.push(
               context,
@@ -274,3 +266,5 @@ class _BackdropState extends State<Backdrop>
     );
   }
 }
+
+typedef BoolCallback = void Function(bool condition);

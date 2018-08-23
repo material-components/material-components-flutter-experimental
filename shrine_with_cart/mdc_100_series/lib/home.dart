@@ -18,18 +18,41 @@ import 'package:scoped_model/scoped_model.dart';
 import 'model/app_state_model.dart';
 import 'model/product.dart';
 import 'supplemental/asymmetric_view.dart';
+import 'backdrop.dart';
+import 'short_bottom_sheet.dart';
 
-class HomePage extends StatelessWidget {
+class ProductPage extends StatelessWidget {
   final Category category;
 
-  const HomePage({this.category: Category.all});
+  const ProductPage({this.category: Category.all});
 
   @override
   Widget build(BuildContext context) {
     return ScopedModelDescendant<AppStateModel>(
       builder: (context, child, model) => AsymmetricView(
-            products: model.getProducts(),
-          ),
+        products: model.getProducts(),
+      ),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  final ShortBottomSheet shortBottomSheet;
+  final Backdrop backdrop;
+
+  const HomePage({
+    Key key,
+    this.shortBottomSheet,
+    this.backdrop
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: <Widget>[
+        backdrop,
+        Align(child: shortBottomSheet, alignment: Alignment.bottomRight)
+      ],
     );
   }
 }
