@@ -1,14 +1,19 @@
+import 'dart:async';
+
+import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter/services.dart';
 
-import 'model/app_state_model.dart';
-import 'package:flutter/material.dart';
-import 'package:scoped_model/scoped_model.dart';
 import 'package:meta/meta.dart';
+import 'package:scoped_model/scoped_model.dart';
+
 import 'colors.dart';
-import 'shopping_cart.dart';
+import 'model/app_state_model.dart';
 import 'model/product.dart';
-import 'package:flutter/scheduler.dart' show timeDilation;
-import 'dart:async';
+import 'shopping_cart.dart';
+
+
+
 
 class ShortBottomSheet extends StatefulWidget {
   final AnimationController hideController;
@@ -50,7 +55,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   // Curves that represent the two curves that compose the emphasized easing curve.
   final Cubic _accelerateCurve = const Cubic(0.3, 0.0, 0.8, 0.15);
   final Cubic _decelerateCurve = const Cubic(0.05, 0.7, 0.1, 1.0);
-  final _cartHeight = 56.0;
+  final double _cartHeight = 56.0;
 
   @override
   void initState() {
@@ -73,6 +78,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     Size screenSize = MediaQuery.of(context).size;
     double mediaWidth = screenSize.width;
     double mediaHeight = screenSize.height;
+    double cornerRadius = 24.0;
 
     _widthAnimation = TweenSequence(
       <TweenSequenceItem<double>>[
@@ -140,12 +146,12 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     _shapeAnimation = TweenSequence(
       <TweenSequenceItem<double>>[
         TweenSequenceItem<double>(
-          tween: Tween<double>(begin: 24.0, end: (24.0 - 0.0) * 0.4)
+          tween: Tween<double>(begin: cornerRadius, end: cornerRadius * 0.4)
               .chain(CurveTween(curve: _accelerateCurve)),
           weight: 1.0 / 6.0,
         ),
         TweenSequenceItem<double>(
-          tween: Tween<double>(begin: (24.0 - 0.0) * 0.4, end: 0.0)
+          tween: Tween<double>(begin: cornerRadius * 0.4, end: 0.0)
               .chain(CurveTween(curve: _decelerateCurve)),
           weight: 5.0 / 6.0,
         ),
@@ -237,8 +243,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
                           .of(context)
                           .productsInCart
                           .keys
-                          .length >
-                      3
+                          .length > 3
                   ? _width - 94 // Accounts for the overflow number
                   : _width - 64,
               height: _cartHeight,
