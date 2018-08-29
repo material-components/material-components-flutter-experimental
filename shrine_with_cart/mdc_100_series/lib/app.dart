@@ -36,7 +36,7 @@ class _ShrineAppState extends State<ShrineApp>
   void initState() {
     super.initState();
     slideBottomSheetController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+        AnimationController(vsync: this, duration: Duration(milliseconds: 450));
   }
 
   void toggleShortBottomSheet(bool isFrontLayerVisible) {

@@ -12,9 +12,6 @@ import 'model/app_state_model.dart';
 import 'model/product.dart';
 import 'shopping_cart.dart';
 
-
-
-
 class ShortBottomSheet extends StatefulWidget {
   final AnimationController hideController;
   const ShortBottomSheet({Key key, this.hideController}) : super(key: key);
@@ -312,10 +309,29 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
 
   @override
   Widget build(BuildContext context) {
-    Animation<Offset> offsetRect =
-        Tween<Offset>(begin: Offset(0.0, 0.0), end: Offset(1.0, 0.0)).animate(
-            CurvedAnimation(
-                parent: widget.hideController.view, curve: Curves.easeOut));
+    final Animation<Offset> _slideAnimation = TweenSequence(
+      <TweenSequenceItem<Offset>>[
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(0.0, 0.0),
+              end: Offset(0.4, 0.0),
+            ).chain(CurveTween(curve: _accelerateCurve)),
+            weight: 1.0 / 6.0),
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(0.4, 0.0),
+              end: Offset(1.0, 0.0),
+            ).chain(CurveTween(curve: _decelerateCurve)),
+            weight: 5.0 / 6.0),
+      ],
+    ).animate(
+      CurvedAnimation(
+        parent: widget.hideController,
+        curve: Interval(0.0, 1.0)
+      ),
+    );
+
+    Animation<Offset> offsetRect = _slideAnimation;
     timeDilation = 1.0;
 
     return AnimatedSize(
