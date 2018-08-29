@@ -49,6 +49,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   Animation<double> _thumbnailOpacityAnimation;
   Animation<double> _cartOpacityAnimation;
   Animation<double> _shapeAnimation;
+  Animation<Offset> _slideAnimation;
   // Curves that represent the two curves that compose the emphasized easing curve.
   final Cubic _accelerateCurve = const Cubic(0.3, 0.0, 0.8, 0.15);
   final Cubic _decelerateCurve = const Cubic(0.05, 0.7, 0.1, 1.0);
@@ -61,6 +62,27 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     _updateWidth(0);
     _controller = AnimationController(
         duration: const Duration(milliseconds: 300), vsync: this);
+    _slideAnimation = TweenSequence(
+      <TweenSequenceItem<Offset>>[
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(0.0, 0.0),
+              end: Offset(0.4, 0.0),
+            ).chain(CurveTween(curve: _accelerateCurve)),
+            weight: 1.0 / 6.0),
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(0.4, 0.0),
+              end: Offset(1.0, 0.0),
+            ).chain(CurveTween(curve: _decelerateCurve)),
+            weight: 5.0 / 6.0),
+      ],
+    ).animate(
+      CurvedAnimation(
+          parent: widget.hideController,
+          curve: Interval(0.0, 1.0)
+      ),
+    );
   }
 
   @override
@@ -309,29 +331,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
 
   @override
   Widget build(BuildContext context) {
-    final Animation<Offset> _slideAnimation = TweenSequence(
-      <TweenSequenceItem<Offset>>[
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(0.0, 0.0),
-              end: Offset(0.4, 0.0),
-            ).chain(CurveTween(curve: _accelerateCurve)),
-            weight: 1.0 / 6.0),
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(0.4, 0.0),
-              end: Offset(1.0, 0.0),
-            ).chain(CurveTween(curve: _decelerateCurve)),
-            weight: 5.0 / 6.0),
-      ],
-    ).animate(
-      CurvedAnimation(
-        parent: widget.hideController,
-        curve: Interval(0.0, 1.0)
-      ),
-    );
-
-    Animation<Offset> offsetRect = _slideAnimation;
     timeDilation = 1.0;
 
     return AnimatedSize(
@@ -343,7 +342,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       child: WillPopScope(
         onWillPop: _onWillPop,
         child: SlideTransition(
-          position: offsetRect,
+          position: _slideAnimation,
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: open,
