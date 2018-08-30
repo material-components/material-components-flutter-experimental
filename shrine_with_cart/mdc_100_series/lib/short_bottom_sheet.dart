@@ -66,14 +66,14 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       <TweenSequenceItem<Offset>>[
         TweenSequenceItem<Offset>(
             tween: Tween<Offset>(
-              begin: Offset(0.0, 0.0),
-              end: Offset(0.4, 0.0),
+              begin: Offset(1.0, 0.0),
+              end: Offset(0.6, 0.0),
             ).chain(CurveTween(curve: _accelerateCurve)),
             weight: 1.0 / 6.0),
         TweenSequenceItem<Offset>(
             tween: Tween<Offset>(
-              begin: Offset(0.4, 0.0),
-              end: Offset(1.0, 0.0),
+              begin: Offset(0.6, 0.0),
+              end: Offset(0.0, 0.0),
             ).chain(CurveTween(curve: _decelerateCurve)),
             weight: 5.0 / 6.0),
       ],

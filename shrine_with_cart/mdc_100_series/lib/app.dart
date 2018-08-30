@@ -29,20 +29,18 @@ class ShrineApp extends StatefulWidget {
 
 class _ShrineAppState extends State<ShrineApp>
     with SingleTickerProviderStateMixin {
-
-  AnimationController slideBottomSheetController;
+  // Controller to coordinate both the opening/closing of backdrop and sliding
+  // of short bottom sheet
+  AnimationController _controller;
 
   @override
   void initState() {
     super.initState();
-    slideBottomSheetController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 450));
-  }
-
-  void toggleShortBottomSheet(bool isFrontLayerVisible) {
-    isFrontLayerVisible
-        ? slideBottomSheetController.reverse()
-        : slideBottomSheetController.forward();
+    _controller = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 450),
+      value: 1.0,
+    );
   }
 
   @override
@@ -52,13 +50,14 @@ class _ShrineAppState extends State<ShrineApp>
       home: HomePage(
         backdrop: Backdrop(
           frontLayer: ProductPage(),
-          backLayer: CategoryMenuPage(),
+          backLayer: CategoryMenuPage(
+            onCategoryTap: () => _controller.forward(),
+          ),
           frontTitle: Text('SHRINE'),
           backTitle: Text('MENU'),
-          toggleSheet: toggleShortBottomSheet,
+          controller: _controller,
         ),
-        shortBottomSheet:
-            ShortBottomSheet(hideController: slideBottomSheetController),
+        shortBottomSheet: ShortBottomSheet(hideController: _controller),
       ),
       initialRoute: '/login',
       onGenerateRoute: _getRoute,

@@ -73,7 +73,11 @@ class _BackdropTitle extends AnimatedWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Animation<double> animation = this.listenable;
+    // TODO: Add emphasized easing when available.
+    final Animation<double> animation = CurvedAnimation(
+      parent: this.listenable,
+      curve: Interval(0.0, 0.78),
+    );
 
     return DefaultTextStyle(
       style: Theme.of(context).primaryTextTheme.title,
@@ -149,14 +153,14 @@ class Backdrop extends StatefulWidget {
   final Widget backLayer;
   final Widget frontTitle;
   final Widget backTitle;
-  final BoolCallback toggleSheet;
+  final AnimationController controller;
 
   const Backdrop({
     @required this.frontLayer,
     @required this.backLayer,
     @required this.frontTitle,
     @required this.backTitle,
-    this.toggleSheet
+    @required this.controller,
   })  : assert(frontLayer != null),
         assert(backLayer != null),
         assert(frontTitle != null),
@@ -170,15 +174,14 @@ class _BackdropState extends State<Backdrop>
     with SingleTickerProviderStateMixin {
   final GlobalKey _backdropKey = GlobalKey(debugLabel: 'Backdrop');
   AnimationController _controller;
+  Animation<RelativeRect> layerAnimation;
+  final Cubic _accelerateCurve = const Cubic(0.3, 0.0, 0.8, 0.15);
+  final Cubic _decelerateCurve = const Cubic(0.05, 0.7, 0.1, 1.0);
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      duration: Duration(milliseconds: 300),
-      value: 1.0,
-      vsync: this,
-    );
+    _controller = widget.controller;
   }
 
   @override
@@ -194,9 +197,7 @@ class _BackdropState extends State<Backdrop>
   }
 
   void _toggleBackdropLayerVisibility() {
-    _controller.fling(
-        velocity: _frontLayerVisible ? -_kFlingVelocity : _kFlingVelocity);
-    widget.toggleSheet(_frontLayerVisible);
+    _frontLayerVisible ? _controller.reverse() : _controller.forward();
   }
 
   Widget _buildStack(BuildContext context, BoxConstraints constraints) {
@@ -204,24 +205,48 @@ class _BackdropState extends State<Backdrop>
     final Size layerSize = constraints.biggest;
     final double layerTop = layerSize.height - layerTitleHeight;
 
-    Animation<RelativeRect> layerAnimation = RelativeRectTween(
-      begin: RelativeRect.fromLTRB(
-          0.0, layerTop, 0.0, layerTop - layerSize.height),
-      end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
-    ).animate(_controller.view);
+    layerAnimation = TweenSequence(
+      <TweenSequenceItem<RelativeRect>>[
+        TweenSequenceItem<RelativeRect>(
+            tween: RelativeRectTween(
+              begin: RelativeRect.fromLTRB(0.0, layerTop, 0.0, layerTop - layerSize.height),
+              end: RelativeRect.fromLTRB(0.0, layerTop * 0.4, 0.0, (layerTop - layerSize.height) * 0.4),
+            ).chain(CurveTween(curve: _accelerateCurve)),
+            weight: 1.0 / 6.0),
+        TweenSequenceItem<RelativeRect>(
+            tween: RelativeRectTween(
+              begin: RelativeRect.fromLTRB(0.0, layerTop * 0.4, 0.0, (layerTop - layerSize.height) * 0.4),
+              end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
+            ).chain(CurveTween(curve: _decelerateCurve)),
+            weight: 5.0 / 6.0),
+      ],
+    ).animate(
+      CurvedAnimation(
+          parent: _controller.view,
+          curve: _frontLayerVisible ? Interval(0.0, 1.0) : Interval(0.22, 1.0)
+      ),
+    );
 
     return Stack(
       key: _backdropKey,
       children: <Widget>[
         widget.backLayer,
-        PositionedTransition(
-          rect: layerAnimation,
+        AnimatedBuilder(
+          builder: _buildPositionedTransition,
+          animation: layerAnimation,
           child: _FrontLayer(
             onTap: _toggleBackdropLayerVisibility,
             child: widget.frontLayer,
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildPositionedTransition(BuildContext context, Widget child) {
+    return PositionedTransition(
+      rect: layerAnimation,
+      child: child,
     );
   }
 
@@ -266,5 +291,3 @@ class _BackdropState extends State<Backdrop>
     );
   }
 }
-
-typedef BoolCallback = void Function(bool condition);

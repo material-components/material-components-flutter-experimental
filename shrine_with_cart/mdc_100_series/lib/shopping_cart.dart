@@ -91,7 +91,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
                       shape: const BeveledRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(7.0)),
                       ),
-                      color: kShrinePink300,
+                      color: kShrinePink100,
                       splashColor: kShrineBrown600,
                       child: const Padding(
                         padding: EdgeInsets.symmetric(vertical: 12.0),
