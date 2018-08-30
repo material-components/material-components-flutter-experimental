@@ -51,8 +51,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   Animation<double> _shapeAnimation;
   Animation<Offset> _slideAnimation;
   // Curves that represent the two curves that compose the emphasized easing curve.
-  final Cubic _accelerateCurve = const Cubic(0.3, 0.0, 0.8, 0.15);
-  final Cubic _decelerateCurve = const Cubic(0.05, 0.7, 0.1, 1.0);
+  final Cubic _accelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
+  final Cubic _decelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
   final double _cartHeight = 56.0;
 
   @override
@@ -78,10 +78,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
             weight: 5.0 / 6.0),
       ],
     ).animate(
-      CurvedAnimation(
-          parent: widget.hideController,
-          curve: Interval(0.0, 1.0)
-      ),
+      CurvedAnimation(parent: widget.hideController, curve: Interval(0.0, 1.0)),
     );
   }
 
@@ -258,11 +255,11 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
                 ),
                 duration: Duration(milliseconds: 225)),
             Container(
-              width: ModelFinder<AppStateModel>()
-                          .of(context)
+              width: ScopedModel.of<AppStateModel>(context)
                           .productsInCart
                           .keys
-                          .length > 3
+                          .length >
+                      3
                   ? _width - 94 // Accounts for the overflow number
                   : _width - 64,
               height: _cartHeight,
@@ -289,7 +286,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   Widget _buildCart(BuildContext context, Widget child) {
     // numProducts is the number of different products in the cart (does not
     // include multiple of the same product).
-    AppStateModel model = ModelFinder<AppStateModel>().of(context);
+    AppStateModel model = ScopedModel.of<AppStateModel>(context);
     int numProducts = model.productsInCart.keys.length;
     int totalCartQuantity = model.totalCartQuantity;
 
@@ -380,7 +377,7 @@ class ProductListState extends State<ProductList> {
     _list = ListModel(
       listKey: _listKey,
       initialItems:
-          ModelFinder<AppStateModel>().of(context).productsInCart.keys.toList(),
+          ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList(),
       removedItemBuilder: _buildRemovedThumbnail,
     );
     _internalList = List<int>.from(_list.list);
@@ -389,7 +386,7 @@ class ProductListState extends State<ProductList> {
   Widget _buildRemovedThumbnail(
       int item, BuildContext context, Animation<double> animation) {
     return ProductThumbnail(animation, animation,
-        ModelFinder<AppStateModel>().of(context).getProductById(item));
+        ScopedModel.of<AppStateModel>(context).getProductById(item));
   }
 
   Widget _buildThumbnail(
@@ -416,7 +413,7 @@ class ProductListState extends State<ProductList> {
           parent: animation),
     );
 
-    AppStateModel model = ModelFinder<AppStateModel>().of(context);
+    AppStateModel model = ScopedModel.of<AppStateModel>(context);
     int productId = _list[index];
     Product product = model.getProductById(productId);
     assert(product != null);
@@ -430,7 +427,7 @@ class ProductListState extends State<ProductList> {
   void _updateLists() {
     // Update _internalList based on the model
     _internalList =
-        ModelFinder<AppStateModel>().of(context).productsInCart.keys.toList();
+        ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList();
     while (_internalList.length != _list.length) {
       int index = 0;
       // Check bounds and that the list elements are the same

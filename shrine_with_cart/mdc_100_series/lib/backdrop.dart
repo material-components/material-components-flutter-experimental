@@ -175,8 +175,8 @@ class _BackdropState extends State<Backdrop>
   final GlobalKey _backdropKey = GlobalKey(debugLabel: 'Backdrop');
   AnimationController _controller;
   Animation<RelativeRect> layerAnimation;
-  final Cubic _accelerateCurve = const Cubic(0.3, 0.0, 0.8, 0.15);
-  final Cubic _decelerateCurve = const Cubic(0.05, 0.7, 0.1, 1.0);
+  final Cubic _accelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
+  final Cubic _decelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
 
   @override
   void initState() {
