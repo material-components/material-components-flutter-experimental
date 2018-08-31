@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter/services.dart';
-
 import 'package:meta/meta.dart';
 import 'package:scoped_model/scoped_model.dart';
 
@@ -19,12 +18,13 @@ class ShortBottomSheet extends StatefulWidget {
   @override
   _ShortBottomSheetState createState() => _ShortBottomSheetState();
 
-  static _ShortBottomSheetState of(BuildContext context, {bool nullOk: false}) {
-    assert(nullOk != null);
+  static _ShortBottomSheetState of(BuildContext context,
+      {bool isNullOk: false}) {
+    assert(isNullOk != null);
     assert(context != null);
     final _ShortBottomSheetState result = context
         .ancestorStateOfType(const TypeMatcher<_ShortBottomSheetState>());
-    if (nullOk || result != null) {
+    if (isNullOk || result != null) {
       return result;
     }
     throw FlutterError(
@@ -99,10 +99,11 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     _widthAnimation = TweenSequence(
       <TweenSequenceItem<double>>[
         TweenSequenceItem<double>(
-          // 1/6 of duration = 40% (0.4) of property delta
+          // 1/6 of duration = 40% of property delta
           tween: Tween<double>(
-                  begin: _width, end: _width + (mediaWidth - _width) * 0.4)
-              .chain(CurveTween(curve: _accelerateCurve)),
+            begin: _width,
+            end: _width + (mediaWidth - _width) * 0.4,
+          ).chain(CurveTween(curve: _accelerateCurve)),
           weight: 1.0 / 6.0,
         ),
         new TweenSequenceItem<double>(
@@ -235,11 +236,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   }
 
   bool _revealCart() {
-    if (_thumbnailOpacityAnimation.value == 0.0) {
-      return true;
-    } else {
-      return false;
-    }
+    return _thumbnailOpacityAnimation.value == 0.0;
   }
 
   Widget _buildThumbnails(int numProducts) {
@@ -249,23 +246,24 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
         child: Column(children: <Widget>[
           Row(children: <Widget>[
             AnimatedPadding(
-                padding: EdgeInsets.only(left: _cartPadding, right: 8.0),
-                child: Icon(
-                  Icons.shopping_cart,
-                ),
-                duration: Duration(milliseconds: 225)),
+              padding: EdgeInsets.only(
+                left: _cartPadding,
+                right: 8.0,
+              ),
+              child: Icon(Icons.shopping_cart),
+              duration: Duration(milliseconds: 225),
+            ),
             Container(
               width: ScopedModel.of<AppStateModel>(context)
                           .productsInCart
                           .keys
-                          .length >
-                      3
+                          .length > 3
                   ? _width - 94 // Accounts for the overflow number
                   : _width - 64,
               height: _cartHeight,
               child: Padding(
                 padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
-                child: ProductList(),
+                child: ProductThumbnailRow(),
               ),
             ),
             ExtraProductsNumber()
@@ -319,11 +317,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   // Closes the cart if the cart is open, otherwise exits the app (this should
   // only be relevant for Android).
   Future<bool> _onWillPop() {
-    if (_isOpen) {
-      close();
-    } else {
-      SystemNavigator.pop();
-    }
+    _isOpen ? close() : SystemNavigator.pop();
   }
 
   @override
@@ -356,19 +350,19 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   }
 }
 
-class ProductList extends StatefulWidget {
+class ProductThumbnailRow extends StatefulWidget {
   @override
-  ProductListState createState() {
-    return ProductListState();
+  ProductThumbnailRowState createState() {
+    return ProductThumbnailRowState();
   }
 }
 
-class ProductListState extends State<ProductList> {
+class ProductThumbnailRowState extends State<ProductThumbnailRow> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
   // _list represents the list that actively manipulates the AnimatedList,
   // meaning that it needs to be updated by _internalList
   ListModel _list;
-  // internalList represents the list as it is updated by the AppStateModel
+  // _internalList represents the list as it is updated by the AppStateModel
   List<int> _internalList;
 
   @override

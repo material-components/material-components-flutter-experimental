@@ -50,9 +50,8 @@ class _ShrineAppState extends State<ShrineApp>
       home: HomePage(
         backdrop: Backdrop(
           frontLayer: ProductPage(),
-          backLayer: CategoryMenuPage(
-            onCategoryTap: () => _controller.forward(),
-          ),
+          backLayer:
+              CategoryMenuPage(onCategoryTap: () => _controller.forward()),
           frontTitle: Text('SHRINE'),
           backTitle: Text('MENU'),
           controller: _controller,
