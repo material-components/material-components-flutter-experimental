@@ -61,7 +61,9 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     _adjustCartPadding(0);
     _updateWidth(0);
     _controller = AnimationController(
-        duration: const Duration(milliseconds: 300), vsync: this);
+      duration: const Duration(milliseconds: 300),
+      vsync: this,
+    );
     _slideAnimation = TweenSequence(
       <TweenSequenceItem<Offset>>[
         TweenSequenceItem<Offset>(
