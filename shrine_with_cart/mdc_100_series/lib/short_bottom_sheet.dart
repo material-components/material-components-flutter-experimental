@@ -280,7 +280,9 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
 
   Widget _buildShoppingCartPage() {
     return Opacity(
-        opacity: _cartOpacityAnimation.value, child: ShoppingCartPage());
+      opacity: _cartOpacityAnimation.value,
+      child: ShoppingCartPage(),
+    );
   }
 
   Widget _buildCart(BuildContext context, Widget child) {
@@ -301,17 +303,18 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
         width: _widthAnimation.value,
         height: _heightAnimation.value,
         child: Material(
-            type: MaterialType.canvas,
-            animationDuration: Duration(milliseconds: 0),
-            shape: BeveledRectangleBorder(
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(_shapeAnimation.value)),
-            ),
-            elevation: 4.0,
-            color: kShrinePink50,
-            child: _revealCart()
-                ? _buildShoppingCartPage()
-                : _buildThumbnails(numProducts)),
+          type: MaterialType.canvas,
+          animationDuration: Duration(milliseconds: 0),
+          shape: BeveledRectangleBorder(
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(_shapeAnimation.value)),
+          ),
+          elevation: 4.0,
+          color: kShrinePink50,
+          child: _revealCart()
+              ? _buildShoppingCartPage()
+              : _buildThumbnails(numProducts),
+        ),
       ),
     );
   }
