@@ -53,6 +53,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   // Curves that represent the two curves that compose the emphasized easing curve.
   final Cubic _accelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
   final Cubic _decelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
+  final double _peakVelocityTime = 0.248210;
+  final double _peakVelocityProgress = 0.379146;
   final double _cartHeight = 56.0;
 
   @override
@@ -61,7 +63,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     _adjustCartPadding(0);
     _updateWidth(0);
     _controller = AnimationController(
-      duration: const Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 500),
       vsync: this,
     );
     _slideAnimation = TweenSequence(
@@ -69,18 +71,21 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
         TweenSequenceItem<Offset>(
             tween: Tween<Offset>(
               begin: Offset(1.0, 0.0),
-              end: Offset(0.6, 0.0),
+              end: Offset(1.0 - _peakVelocityProgress, 0.0),
             ).chain(CurveTween(curve: _accelerateCurve)),
-            weight: 1.0 / 6.0),
+            weight: _peakVelocityTime),
         TweenSequenceItem<Offset>(
             tween: Tween<Offset>(
-              begin: Offset(0.6, 0.0),
+              begin: Offset(1.0 - _peakVelocityProgress, 0.0),
               end: Offset(0.0, 0.0),
             ).chain(CurveTween(curve: _decelerateCurve)),
-            weight: 5.0 / 6.0),
+            weight: 1.0 - _peakVelocityTime),
       ],
     ).animate(
-      CurvedAnimation(parent: widget.hideController, curve: Interval(0.0, 1.0)),
+      CurvedAnimation(
+          parent: widget.hideController,
+          curve: Interval(0.0, 1.0),
+          reverseCurve: Interval(0.0, 1.0).flipped),
     );
   }
 
@@ -98,89 +103,138 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     double mediaHeight = screenSize.height;
     double cornerRadius = 24.0;
 
-    _widthAnimation = TweenSequence(
-      <TweenSequenceItem<double>>[
-        TweenSequenceItem<double>(
-          // 1/6 of duration = 40% of property delta
-          tween: Tween<double>(
-            begin: _width,
-            end: _width + (mediaWidth - _width) * 0.4,
-          ).chain(CurveTween(curve: _accelerateCurve)),
-          weight: 1.0 / 6.0,
-        ),
-        new TweenSequenceItem<double>(
-          tween: Tween<double>(
-                  begin: _width + (mediaWidth - _width) * 0.4, end: mediaWidth)
-              .chain(CurveTween(curve: _decelerateCurve)),
-          weight: 5.0 / 6.0,
-        ),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: _controller,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.35)
-              : Interval(0.17, 0.72)),
-    );
+    if (_controller.status == AnimationStatus.forward) {
+      _widthAnimation = Tween<double>(begin: _width, end: mediaWidth).animate(
+        CurvedAnimation(
+            curve: Interval(
+              0.0,
+              0.3,
+              curve: Curves.fastOutSlowIn,
+            ),
+            parent: _controller.view),
+      );
 
-    _heightAnimation = TweenSequence(
-      <TweenSequenceItem<double>>[
-        TweenSequenceItem<double>(
-          tween: Tween<double>(
-                  begin: _cartHeight, end: (mediaHeight - _cartHeight) * 0.4)
-              .chain(CurveTween(curve: _accelerateCurve)),
-          weight: 1.0 / 6.0,
+      _heightAnimation = TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+                    begin: _cartHeight,
+                    end: _cartHeight +
+                        (mediaHeight - _cartHeight) * _peakVelocityProgress)
+                .chain(CurveTween(curve: _accelerateCurve)),
+            weight: _peakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+                    begin: _cartHeight +
+                        (mediaHeight - _cartHeight) * _peakVelocityProgress,
+                    end: mediaHeight)
+                .chain(CurveTween(curve: _decelerateCurve)),
+            weight: 1 - _peakVelocityTime,
+          ),
+        ],
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(0.0, 1.0),
         ),
-        TweenSequenceItem<double>(
-          tween: Tween<double>(
-                  begin: (mediaHeight - _cartHeight) * 0.4, end: mediaHeight)
-              .chain(CurveTween(curve: _decelerateCurve)),
-          weight: 5.0 / 6.0,
+      );
+
+      _shapeAnimation = Tween<double>(begin: cornerRadius, end: 0.0).animate(
+        CurvedAnimation(
+          curve: Interval(
+            0.0,
+            0.3,
+            curve: Curves.fastOutSlowIn,
+          ),
+          parent: _controller.view,
         ),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: _controller,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 1.0)
-              : Interval(0.2, 1.0)),
-    );
+      );
+    } else {
+      _widthAnimation = TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _width,
+              end: _width + (mediaWidth - _width) * (_peakVelocityProgress),
+            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
+            weight: 1 - _peakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _width + (mediaWidth - _width) * (_peakVelocityProgress),
+              end: mediaWidth,
+            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
+            weight: _peakVelocityTime,
+          ),
+        ],
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(0.0, 0.87),
+          reverseCurve: Interval(0.134, 1.0).flipped,
+        ),
+      );
+
+      _heightAnimation = Tween<double>(
+        begin: _cartHeight,
+        end: mediaHeight,
+      ).animate(
+        CurvedAnimation(
+          curve: Interval(
+            0.434,
+            1.0,
+            curve: Curves.fastOutSlowIn,
+          ),
+          reverseCurve: Interval(
+            0.0,
+            0.566,
+            curve: Curves.fastOutSlowIn,
+          ).flipped,
+          parent: _controller.view,
+        ),
+      );
+
+      _shapeAnimation = TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: cornerRadius,
+              end: cornerRadius * _peakVelocityProgress,
+            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
+            weight: 1 - _peakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: cornerRadius * _peakVelocityProgress,
+              end: 0.0,
+            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
+            weight: _peakVelocityTime,
+          ),
+        ],
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(0.0, 0.87),
+          reverseCurve: Interval(0.134, 1.0).flipped,
+        ),
+      );
+    }
 
     _thumbnailOpacityAnimation = Tween<double>(begin: 1.0, end: 0.0).animate(
       CurvedAnimation(
-          parent: _controller,
+          parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.25, curve: Curves.linear)
-              : Interval(0.25, 0.75, curve: Curves.linear)),
+              ? Interval(0.0, 0.3, curve: Curves.linear)
+              : Interval(0.234, 0.468, curve: Curves.linear).flipped),
     );
 
     _cartOpacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
-          parent: _controller,
+          parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.25, 0.75, curve: Curves.linear)
-              : Interval(0.75, 1.0, curve: Curves.linear)),
-    );
-
-    _shapeAnimation = TweenSequence(
-      <TweenSequenceItem<double>>[
-        TweenSequenceItem<double>(
-          tween: Tween<double>(begin: cornerRadius, end: cornerRadius * 0.4)
-              .chain(CurveTween(curve: _accelerateCurve)),
-          weight: 1.0 / 6.0,
-        ),
-        TweenSequenceItem<double>(
-          tween: Tween<double>(begin: cornerRadius * 0.4, end: 0.0)
-              .chain(CurveTween(curve: _decelerateCurve)),
-          weight: 5.0 / 6.0,
-        ),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: _controller,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.35)
-              : Interval(0.17, 0.72)),
+              ? Interval(0.3, 0.6, curve: Curves.linear)
+              : Interval(0.0, 0.234, curve: Curves.linear).flipped),
     );
   }
 
