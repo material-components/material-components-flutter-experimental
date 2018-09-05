@@ -12,8 +12,8 @@ import 'model/product.dart';
 import 'shopping_cart.dart';
 
 class ShortBottomSheet extends StatefulWidget {
-  final AnimationController hideController;
   const ShortBottomSheet({Key key, this.hideController}) : super(key: key);
+  final AnimationController hideController;
 
   @override
   _ShortBottomSheetState createState() => _ShortBottomSheetState();
@@ -104,6 +104,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     double cornerRadius = 24.0;
 
     if (_controller.status == AnimationStatus.forward) {
+      // Animations going from closed to open
       _widthAnimation = Tween<double>(begin: _width, end: mediaWidth).animate(
         CurvedAnimation(
             curve: Interval(
@@ -151,6 +152,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
         ),
       );
     } else {
+      // Animations going from open to closed
       _widthAnimation = TweenSequence(
         <TweenSequenceItem<double>>[
           TweenSequenceItem<double>(
