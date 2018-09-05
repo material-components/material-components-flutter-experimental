@@ -177,6 +177,8 @@ class _BackdropState extends State<Backdrop>
   Animation<RelativeRect> layerAnimation;
   final Cubic _accelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
   final Cubic _decelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
+  final double _peakVelocityTime = 0.248210;
+  final double _peakVelocityProgress = 0.379146;
 
   @override
   void initState() {
@@ -205,25 +207,45 @@ class _BackdropState extends State<Backdrop>
     final Size layerSize = constraints.biggest;
     final double layerTop = layerSize.height - layerTitleHeight;
 
-    layerAnimation = TweenSequence(
+    layerAnimation = _frontLayerVisible ? TweenSequence(
       <TweenSequenceItem<RelativeRect>>[
         TweenSequenceItem<RelativeRect>(
             tween: RelativeRectTween(
               begin: RelativeRect.fromLTRB(0.0, layerTop, 0.0, layerTop - layerSize.height),
-              end: RelativeRect.fromLTRB(0.0, layerTop * 0.4, 0.0, (layerTop - layerSize.height) * 0.4),
-            ).chain(CurveTween(curve: _accelerateCurve)),
-            weight: 1.0 / 6.0),
+              end: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
+            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
+            weight: 1.0 - _peakVelocityTime),
         TweenSequenceItem<RelativeRect>(
             tween: RelativeRectTween(
-              begin: RelativeRect.fromLTRB(0.0, layerTop * 0.4, 0.0, (layerTop - layerSize.height) * 0.4),
+              begin: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
               end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
-            ).chain(CurveTween(curve: _decelerateCurve)),
-            weight: 5.0 / 6.0),
+            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
+            weight: _peakVelocityTime),
       ],
     ).animate(
       CurvedAnimation(
           parent: _controller.view,
-          curve: _frontLayerVisible ? Interval(0.0, 1.0) : Interval(0.22, 1.0)
+          curve: Interval(0.0, 1.0)
+      ),
+    ) : TweenSequence(
+      <TweenSequenceItem<RelativeRect>>[
+        TweenSequenceItem<RelativeRect>(
+            tween: RelativeRectTween(
+              begin: RelativeRect.fromLTRB(0.0, layerTop, 0.0, layerTop - layerSize.height),
+              end: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
+            ).chain(CurveTween(curve: _accelerateCurve)),
+            weight: _peakVelocityTime),
+        TweenSequenceItem<RelativeRect>(
+            tween: RelativeRectTween(
+              begin: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
+              end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
+            ).chain(CurveTween(curve: _decelerateCurve)),
+            weight: 1.0 - _peakVelocityTime),
+      ],
+    ).animate(
+      CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(0.0, 0.78).flipped, //TODO: Update with flipped version
       ),
     );
 
