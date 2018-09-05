@@ -44,10 +44,7 @@ class ProductCard extends StatelessWidget {
       builder: (context, child, model) => GestureDetector(
             onTap: () {
               model.addProductToCart(product.id);
-              Scaffold.of(context).showSnackBar(SnackBar(
-                    content:
-                        Text('${product.name} has been added to your cart.'),
-                  ));
+              // TODO: Add Snackbar
             },
             child: child,
           ),
