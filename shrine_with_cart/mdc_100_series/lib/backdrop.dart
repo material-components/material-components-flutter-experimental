@@ -17,8 +17,6 @@ import 'package:meta/meta.dart';
 
 import 'login.dart';
 
-const double _kFlingVelocity = 2.0;
-
 class _FrontLayer extends StatelessWidget {
   const _FrontLayer({
     Key key,
