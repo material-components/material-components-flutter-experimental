@@ -207,47 +207,81 @@ class _BackdropState extends State<Backdrop>
     final Size layerSize = constraints.biggest;
     final double layerTop = layerSize.height - layerTitleHeight;
 
-    layerAnimation = _frontLayerVisible ? TweenSequence(
-      <TweenSequenceItem<RelativeRect>>[
-        TweenSequenceItem<RelativeRect>(
-            tween: RelativeRectTween(
-              begin: RelativeRect.fromLTRB(0.0, layerTop, 0.0, layerTop - layerSize.height),
-              end: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
-            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
-            weight: 1.0 - _peakVelocityTime),
-        TweenSequenceItem<RelativeRect>(
-            tween: RelativeRectTween(
-              begin: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
-              end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
-            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
-            weight: _peakVelocityTime),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: _controller.view,
-          curve: Interval(0.0, 1.0)
-      ),
-    ) : TweenSequence(
-      <TweenSequenceItem<RelativeRect>>[
-        TweenSequenceItem<RelativeRect>(
-            tween: RelativeRectTween(
-              begin: RelativeRect.fromLTRB(0.0, layerTop, 0.0, layerTop - layerSize.height),
-              end: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
-            ).chain(CurveTween(curve: _accelerateCurve)),
-            weight: _peakVelocityTime),
-        TweenSequenceItem<RelativeRect>(
-            tween: RelativeRectTween(
-              begin: RelativeRect.fromLTRB(0.0, layerTop * _peakVelocityProgress, 0.0, (layerTop - layerSize.height) * _peakVelocityProgress),
-              end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
-            ).chain(CurveTween(curve: _decelerateCurve)),
-            weight: 1.0 - _peakVelocityTime),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: _controller.view,
-          curve: Interval(0.0, 0.78).flipped, //TODO: Update with flipped version
-      ),
-    );
+    layerAnimation = _frontLayerVisible
+        ? TweenSequence(
+            <TweenSequenceItem<RelativeRect>>[
+              TweenSequenceItem<RelativeRect>(
+                  tween: RelativeRectTween(
+                    begin: RelativeRect.fromLTRB(
+                      0.0,
+                      layerTop,
+                      0.0,
+                      layerTop - layerSize.height,
+                    ),
+                    end: RelativeRect.fromLTRB(
+                      0.0,
+                      layerTop * _peakVelocityProgress,
+                      0.0,
+                      (layerTop - layerSize.height) * _peakVelocityProgress,
+                    ),
+                  ).chain(CurveTween(curve: _decelerateCurve.flipped)),
+                  weight: 1.0 - _peakVelocityTime),
+              TweenSequenceItem<RelativeRect>(
+                tween: RelativeRectTween(
+                  begin: RelativeRect.fromLTRB(
+                      0.0,
+                      layerTop * _peakVelocityProgress,
+                      0.0,
+                      (layerTop - layerSize.height) * _peakVelocityProgress),
+                  end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                ).chain(CurveTween(curve: _accelerateCurve.flipped)),
+                weight: _peakVelocityTime,
+              ),
+            ],
+          ).animate(
+            CurvedAnimation(
+              parent: _controller.view,
+              curve: Interval(0.0, 1.0),
+            ),
+          )
+        : TweenSequence(
+            <TweenSequenceItem<RelativeRect>>[
+              TweenSequenceItem<RelativeRect>(
+                tween: RelativeRectTween(
+                  begin: RelativeRect.fromLTRB(
+                    0.0,
+                    layerTop,
+                    0.0,
+                    layerTop - layerSize.height,
+                  ),
+                  end: RelativeRect.fromLTRB(
+                    0.0,
+                    layerTop * _peakVelocityProgress,
+                    0.0,
+                    (layerTop - layerSize.height) * _peakVelocityProgress,
+                  ),
+                ).chain(CurveTween(curve: _accelerateCurve)),
+                weight: _peakVelocityTime,
+              ),
+              TweenSequenceItem<RelativeRect>(
+                tween: RelativeRectTween(
+                  begin: RelativeRect.fromLTRB(
+                    0.0,
+                    layerTop * _peakVelocityProgress,
+                    0.0,
+                    (layerTop - layerSize.height) * _peakVelocityProgress,
+                  ),
+                  end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
+                ).chain(CurveTween(curve: _decelerateCurve)),
+                weight: 1.0 - _peakVelocityTime,
+              ),
+            ],
+          ).animate(
+            CurvedAnimation(
+              parent: _controller.view,
+              curve: Interval(0.0, 0.78).flipped,
+            ),
+          );
 
     return Stack(
       key: _backdropKey,
