@@ -66,27 +66,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       duration: const Duration(milliseconds: 500),
       vsync: this,
     );
-    _slideAnimation = TweenSequence(
-      <TweenSequenceItem<Offset>>[
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(1.0, 0.0),
-              end: Offset(1.0 - _peakVelocityProgress, 0.0),
-            ).chain(CurveTween(curve: _accelerateCurve)),
-            weight: _peakVelocityTime),
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(1.0 - _peakVelocityProgress, 0.0),
-              end: Offset(0.0, 0.0),
-            ).chain(CurveTween(curve: _decelerateCurve)),
-            weight: 1.0 - _peakVelocityTime),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: widget.hideController,
-          curve: Interval(0.0, 1.0),
-          reverseCurve: Interval(0.0, 1.0).flipped),
-    );
   }
 
   @override
@@ -315,7 +294,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
               width: ScopedModel.of<AppStateModel>(context)
                           .productsInCart
                           .keys
-                          .length > 3
+                          .length >
+                      3
                   ? _width - 94 // Accounts for the overflow number
                   : _width - 64,
               height: _cartHeight,
@@ -375,6 +355,56 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     );
   }
 
+  Widget _buildSlideAnimation(BuildContext context, Widget child) {
+    _slideAnimation = widget.hideController.status == AnimationStatus.forward
+        ? TweenSequence(
+      <TweenSequenceItem<Offset>>[
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(1.0, 0.0),
+              end: Offset(1.0 - _peakVelocityProgress, 0.0),
+            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
+            weight: 1.0 - _peakVelocityTime),
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(1.0 - _peakVelocityProgress, 0.0),
+              end: Offset(0.0, 0.0),
+            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
+            weight: _peakVelocityTime),
+      ],
+    ).animate(
+      CurvedAnimation(
+          parent: widget.hideController,
+          curve: Interval(0.0, 1.0),
+          reverseCurve: Interval(0.0, 1.0).flipped),
+    ) : TweenSequence(
+      <TweenSequenceItem<Offset>>[
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(1.0, 0.0),
+              end: Offset(1.0 - _peakVelocityProgress, 0.0),
+            ).chain(CurveTween(curve: _accelerateCurve)),
+            weight: _peakVelocityTime),
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(1.0 - _peakVelocityProgress, 0.0),
+              end: Offset(0.0, 0.0),
+            ).chain(CurveTween(curve: _decelerateCurve)),
+            weight: 1.0 - _peakVelocityTime),
+      ],
+    ).animate(
+      CurvedAnimation(
+          parent: widget.hideController,
+          curve: Interval(0.0, 1.0),
+          reverseCurve: Interval(0.0, 1.0).flipped),
+    );
+
+    return SlideTransition(
+      position: _slideAnimation,
+      child: child,
+    );
+  }
+
   // Closes the cart if the cart is open, otherwise exits the app (this should
   // only be relevant for Android).
   Future<bool> _onWillPop() {
@@ -393,8 +423,9 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       alignment: FractionalOffset.topLeft,
       child: WillPopScope(
         onWillPop: _onWillPop,
-        child: SlideTransition(
-          position: _slideAnimation,
+        child: AnimatedBuilder(
+          animation: widget.hideController,
+          builder: _buildSlideAnimation,
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: open,
