@@ -273,7 +273,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     }
   }
 
-  bool _cartIsVisible() => _thumbnailOpacityAnimation.value == 0.0;
+  bool get _cartIsVisible => _thumbnailOpacityAnimation.value == 0.0;
 
   Widget _buildThumbnails(int numProducts) {
     return ExcludeSemantics(
@@ -346,7 +346,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
           ),
           elevation: 4.0,
           color: kShrinePink50,
-          child: _cartIsVisible()
+          child: _cartIsVisible
               ? _buildShoppingCartPage()
               : _buildThumbnails(numProducts),
         ),
