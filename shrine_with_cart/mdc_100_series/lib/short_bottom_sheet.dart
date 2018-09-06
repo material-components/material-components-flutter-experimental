@@ -113,7 +113,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         CurvedAnimation(
           parent: _controller.view,
           curve: Interval(0.0, 0.87),
-          reverseCurve: Interval(0.134, 1.0).flipped,
         ),
       );
     }
@@ -202,26 +201,18 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     }
   }
 
-  // Updates the animations for the opening/closing of the ShortBottomSheet,
-  // using the size of the screen.
-  void _updateAnimations(BuildContext context) {
-    final Size screenSize = MediaQuery.of(context).size;
-    final double screenWidth = screenSize.width;
-    final double screenHeight = screenSize.height;
-
-    _widthAnimation = _getWidthAnimation(screenWidth);
-    _heightAnimation = _getHeightAnimation(screenHeight);
-    _shapeAnimation = _getShapeAnimation();
-
-    _thumbnailOpacityAnimation = Tween<double>(begin: 1.0, end: 0.0).animate(
+  Animation<double> _getThumbnailOpacityAnimation() {
+    return Tween<double>(begin: 1.0, end: 0.0).animate(
       CurvedAnimation(
           parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
               ? Interval(0.0, 0.3)
               : Interval(0.234, 0.468).flipped),
     );
+  }
 
-    _cartOpacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
+  Animation<double> _getCartOpacityAnimation() {
+    return Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
           parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
@@ -331,9 +322,16 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     final AppStateModel model = ScopedModel.of<AppStateModel>(context);
     final int numProducts = model.productsInCart.keys.length;
     final int totalCartQuantity = model.totalCartQuantity;
+    final Size screenSize = MediaQuery.of(context).size;
+    final double screenWidth = screenSize.width;
+    final double screenHeight = screenSize.height;
 
     _width = _widthFor(numProducts);
-    _updateAnimations(context);
+    _widthAnimation = _getWidthAnimation(screenWidth);
+    _heightAnimation = _getHeightAnimation(screenHeight);
+    _shapeAnimation = _getShapeAnimation();
+    _thumbnailOpacityAnimation = _getThumbnailOpacityAnimation();
+    _cartOpacityAnimation = _getCartOpacityAnimation();
 
     return Semantics(
       button: true,
