@@ -248,14 +248,14 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     return status == AnimationStatus.completed || status == AnimationStatus.forward;
   }
 
-  // Opens the ShortBottomSheet if it's open, otherwise does nothing.
+  // Opens the ShortBottomSheet if it's closed, otherwise does nothing.
   void open() {
     if (!_isOpen) {
       _controller.forward();
     }
   }
 
-  // Closes the ShortBottomSheet if it's open, otherwise does nothing.
+  // Closes the ShortBottomSheet if it's open or opening, otherwise does nothing.
   void close() {
     if (_isOpen) {
       _controller.reverse();
@@ -273,9 +273,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     }
   }
 
-  bool _cartIsVisible() {
-    return _thumbnailOpacityAnimation.value == 0.0;
-  }
+  bool _cartIsVisible() => _thumbnailOpacityAnimation.value == 0.0;
 
   Widget _buildThumbnails(int numProducts) {
     return ExcludeSemantics(
