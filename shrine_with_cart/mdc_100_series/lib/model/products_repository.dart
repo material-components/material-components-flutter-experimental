@@ -287,9 +287,7 @@ class ProductsRepository {
     if (category == Category.all) {
       return allProducts;
     } else {
-      return allProducts.where((Product p) {
-        return p.category == category;
-      }).toList();
+      return allProducts.where((Product p) => p.category == category).toList();
     }
   }
 }

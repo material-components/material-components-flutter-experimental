@@ -354,19 +354,21 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     );
   }
 
+  // Builder for the hide and reveal animation when the backdrop opens and closes
   Widget _buildSlideAnimation(BuildContext context, Widget child) {
+    // TODO: Correct easing per spec
     _slideAnimation = widget.hideController.status == AnimationStatus.forward
         ? TweenSequence(
             <TweenSequenceItem<Offset>>[
               TweenSequenceItem<Offset>(
                   tween: Tween<Offset>(
                     begin: Offset(1.0, 0.0),
-                    end: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                    end: Offset(_kPeakVelocityProgress, 0.0),
                   ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
                   weight: 1.0 - _kPeakVelocityTime),
               TweenSequenceItem<Offset>(
                   tween: Tween<Offset>(
-                    begin: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                    begin: Offset(_kPeakVelocityProgress, 0.0),
                     end: Offset(0.0, 0.0),
                   ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
                   weight: _kPeakVelocityTime),
@@ -377,12 +379,12 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
               TweenSequenceItem<Offset>(
                   tween: Tween<Offset>(
                     begin: Offset(1.0, 0.0),
-                    end: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                    end: Offset(_kPeakVelocityProgress, 0.0),
                   ).chain(CurveTween(curve: _kAccelerateCurve)),
                   weight: _kPeakVelocityTime),
               TweenSequenceItem<Offset>(
                   tween: Tween<Offset>(
-                    begin: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                    begin: Offset(_kPeakVelocityProgress, 0.0),
                     end: Offset(0.0, 0.0),
                   ).chain(CurveTween(curve: _kDecelerateCurve)),
                   weight: 1.0 - _kPeakVelocityTime),
