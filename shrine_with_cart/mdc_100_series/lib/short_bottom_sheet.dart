@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';
 import 'package:scoped_model/scoped_model.dart';
@@ -11,15 +10,28 @@ import 'model/app_state_model.dart';
 import 'model/product.dart';
 import 'shopping_cart.dart';
 
+// Curves that represent the two curves that compose the emphasized easing curve.
+const Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
+const Cubic _kDecelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
+// The time at which the accelerate and decelerate curves switch off
+const double _kPeakVelocityTime = 0.248210;
+// Percent (as a decimal) of animation that should be completed at _peakVelocityTime
+const double _kPeakVelocityProgress = 0.379146;
+const double _kCartHeight = 56.0;
+// Radius of the shape on the top left of the sheet.
+const double _kCornerRadius = 24.0;
+
 class ShortBottomSheet extends StatefulWidget {
-  const ShortBottomSheet({Key key, this.hideController}) : super(key: key);
+  const ShortBottomSheet({ Key key, @required this.hideController })
+      : assert(hideController != null),
+        super(key: key);
+
   final AnimationController hideController;
 
   @override
   _ShortBottomSheetState createState() => _ShortBottomSheetState();
 
-  static _ShortBottomSheetState of(BuildContext context,
-      {bool isNullOk: false}) {
+  static _ShortBottomSheetState of(BuildContext context, { bool isNullOk: false }) {
     assert(isNullOk != null);
     assert(context != null);
     final _ShortBottomSheetState result = context
@@ -28,12 +40,12 @@ class ShortBottomSheet extends StatefulWidget {
       return result;
     }
     throw FlutterError(
-        'ShortBottomSheet.of() called with a context that does not contain a ShortBottomSheet.\n');
+      'ShortBottomSheet.of() called with a context that does not contain a ShortBottomSheet.\n'
+    );
   }
 }
 
-class _ShortBottomSheetState extends State<ShortBottomSheet>
-    with TickerProviderStateMixin {
+class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProviderStateMixin {
   final GlobalKey _shortBottomSheetKey =
       GlobalKey(debugLabel: 'Short bottom sheet');
   // The padding between the left edge of the Material and the shopping cart icon
@@ -50,18 +62,12 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   Animation<double> _cartOpacityAnimation;
   Animation<double> _shapeAnimation;
   Animation<Offset> _slideAnimation;
-  // Curves that represent the two curves that compose the emphasized easing curve.
-  final Cubic _accelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
-  final Cubic _decelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
-  final double _peakVelocityTime = 0.248210;
-  final double _peakVelocityProgress = 0.379146;
-  final double _cartHeight = 56.0;
 
   @override
   void initState() {
     super.initState();
-    _adjustCartPadding(0);
-    _updateWidth(0);
+    _cartPadding = 20.0;
+    _width = 64.0;
     _controller = AnimationController(
       duration: const Duration(milliseconds: 500),
       vsync: this,
@@ -74,123 +80,36 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     super.dispose();
   }
 
-  // Updates the animations for the opening/closing of the ShortBottomSheet,
-  // using the size of the screen.
-  void _updateAnimations(BuildContext context) {
-    Size screenSize = MediaQuery.of(context).size;
-    double mediaWidth = screenSize.width;
-    double mediaHeight = screenSize.height;
-    double cornerRadius = 24.0;
-
+  Animation<double> _getWidthAnimation(double screenWidth) {
     if (_controller.status == AnimationStatus.forward) {
-      // Animations going from closed to open
-      _widthAnimation = Tween<double>(begin: _width, end: mediaWidth).animate(
-        CurvedAnimation(
-            curve: Interval(
-              0.0,
-              0.3,
-              curve: Curves.fastOutSlowIn,
-            ),
-            parent: _controller.view),
-      );
-
-      _heightAnimation = TweenSequence(
-        <TweenSequenceItem<double>>[
-          TweenSequenceItem<double>(
-            tween: Tween<double>(
-                    begin: _cartHeight,
-                    end: _cartHeight +
-                        (mediaHeight - _cartHeight) * _peakVelocityProgress)
-                .chain(CurveTween(curve: _accelerateCurve)),
-            weight: _peakVelocityTime,
-          ),
-          TweenSequenceItem<double>(
-            tween: Tween<double>(
-                    begin: _cartHeight +
-                        (mediaHeight - _cartHeight) * _peakVelocityProgress,
-                    end: mediaHeight)
-                .chain(CurveTween(curve: _decelerateCurve)),
-            weight: 1 - _peakVelocityTime,
-          ),
-        ],
-      ).animate(
+      // opening animation
+      return Tween<double>(begin: _width, end: screenWidth).animate(
         CurvedAnimation(
           parent: _controller.view,
-          curve: Interval(0.0, 1.0),
-        ),
-      );
-
-      _shapeAnimation = Tween<double>(begin: cornerRadius, end: 0.0).animate(
-        CurvedAnimation(
           curve: Interval(
             0.0,
             0.3,
             curve: Curves.fastOutSlowIn,
           ),
-          parent: _controller.view,
         ),
       );
     } else {
-      // Animations going from open to closed
-      _widthAnimation = TweenSequence(
+      // closing animation
+      return TweenSequence(
         <TweenSequenceItem<double>>[
           TweenSequenceItem<double>(
             tween: Tween<double>(
               begin: _width,
-              end: _width + (mediaWidth - _width) * (_peakVelocityProgress),
-            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
-            weight: 1 - _peakVelocityTime,
+              end: _width + (screenWidth - _width) * (_kPeakVelocityProgress),
+            ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
+            weight: 1 - _kPeakVelocityTime,
           ),
           TweenSequenceItem<double>(
             tween: Tween<double>(
-              begin: _width + (mediaWidth - _width) * (_peakVelocityProgress),
-              end: mediaWidth,
-            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
-            weight: _peakVelocityTime,
-          ),
-        ],
-      ).animate(
-        CurvedAnimation(
-          parent: _controller.view,
-          curve: Interval(0.0, 0.87),
-          reverseCurve: Interval(0.134, 1.0).flipped,
-        ),
-      );
-
-      _heightAnimation = Tween<double>(
-        begin: _cartHeight,
-        end: mediaHeight,
-      ).animate(
-        CurvedAnimation(
-          curve: Interval(
-            0.434,
-            1.0,
-            curve: Curves.fastOutSlowIn,
-          ),
-          reverseCurve: Interval(
-            0.0,
-            0.566,
-            curve: Curves.fastOutSlowIn,
-          ).flipped,
-          parent: _controller.view,
-        ),
-      );
-
-      _shapeAnimation = TweenSequence(
-        <TweenSequenceItem<double>>[
-          TweenSequenceItem<double>(
-            tween: Tween<double>(
-              begin: cornerRadius,
-              end: cornerRadius * _peakVelocityProgress,
-            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
-            weight: 1 - _peakVelocityTime,
-          ),
-          TweenSequenceItem<double>(
-            tween: Tween<double>(
-              begin: cornerRadius * _peakVelocityProgress,
-              end: 0.0,
-            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
-            weight: _peakVelocityTime,
+              begin: _width + (screenWidth - _width) * (_kPeakVelocityProgress),
+              end: screenWidth,
+            ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
+            weight: _kPeakVelocityTime,
           ),
         ],
       ).animate(
@@ -201,6 +120,102 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
         ),
       );
     }
+  }
+
+  Animation<double> _getHeightAnimation(double screenHeight) {
+    if (_controller.status == AnimationStatus.forward) {
+      // opening animation
+      return TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCartHeight,
+              end: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+            ).chain(CurveTween(curve: _kAccelerateCurve)),
+            weight: _kPeakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+              end: screenHeight,
+            ).chain(CurveTween(curve: _kDecelerateCurve)),
+            weight: 1 - _kPeakVelocityTime,
+          ),
+        ],
+      ).animate(_controller.view);
+    } else {
+      // opening animation
+      return Tween<double>(
+        begin: _kCartHeight,
+        end: screenHeight,
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(
+            0.434,
+            1.0,
+            curve: Curves.fastOutSlowIn,
+          ),
+          reverseCurve: Interval( // only the reverseCurve will be used
+            0.0,
+            0.566,
+            curve: Curves.fastOutSlowIn,
+          ).flipped,
+        ),
+      );
+    }
+  }
+
+  Animation<double> _getShapeAnimation() {
+    if (_controller.status == AnimationStatus.forward) {
+      return Tween<double>(begin: _kCornerRadius, end: 0.0).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(
+            0.0,
+            0.3,
+            curve: Curves.fastOutSlowIn,
+          ),
+        ),
+      );
+    } else {
+      return TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCornerRadius,
+              end: _kCornerRadius * _kPeakVelocityProgress,
+            ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
+            weight: 1 - _kPeakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCornerRadius * _kPeakVelocityProgress,
+              end: 0.0,
+            ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
+            weight: _kPeakVelocityTime,
+          ),
+        ],
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(0.0, 0.87),
+          reverseCurve: Interval(0.134, 1.0).flipped,
+        ),
+      );
+    }
+  }
+
+  // Updates the animations for the opening/closing of the ShortBottomSheet,
+  // using the size of the screen.
+  void _updateAnimations(BuildContext context) {
+    final Size screenSize = MediaQuery.of(context).size;
+    final double screenWidth = screenSize.width;
+    final double screenHeight = screenSize.height;
+
+    _widthAnimation = _getWidthAnimation(screenWidth);
+    _heightAnimation = _getHeightAnimation(screenHeight);
+    _shapeAnimation = _getShapeAnimation();
 
     _thumbnailOpacityAnimation = Tween<double>(begin: 1.0, end: 0.0).animate(
       CurvedAnimation(
@@ -294,11 +309,10 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
               width: ScopedModel.of<AppStateModel>(context)
                           .productsInCart
                           .keys
-                          .length >
-                      3
+                          .length > 3
                   ? _width - 94 // Accounts for the overflow number
                   : _width - 64,
-              height: _cartHeight,
+              height: _kCartHeight,
               child: Padding(
                 padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
                 child: ProductThumbnailRow(),
@@ -358,46 +372,37 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   Widget _buildSlideAnimation(BuildContext context, Widget child) {
     _slideAnimation = widget.hideController.status == AnimationStatus.forward
         ? TweenSequence(
-      <TweenSequenceItem<Offset>>[
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(1.0, 0.0),
-              end: Offset(1.0 - _peakVelocityProgress, 0.0),
-            ).chain(CurveTween(curve: _decelerateCurve.flipped)),
-            weight: 1.0 - _peakVelocityTime),
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(1.0 - _peakVelocityProgress, 0.0),
-              end: Offset(0.0, 0.0),
-            ).chain(CurveTween(curve: _accelerateCurve.flipped)),
-            weight: _peakVelocityTime),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: widget.hideController,
-          curve: Interval(0.0, 1.0),
-          reverseCurve: Interval(0.0, 1.0).flipped),
-    ) : TweenSequence(
-      <TweenSequenceItem<Offset>>[
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(1.0, 0.0),
-              end: Offset(1.0 - _peakVelocityProgress, 0.0),
-            ).chain(CurveTween(curve: _accelerateCurve)),
-            weight: _peakVelocityTime),
-        TweenSequenceItem<Offset>(
-            tween: Tween<Offset>(
-              begin: Offset(1.0 - _peakVelocityProgress, 0.0),
-              end: Offset(0.0, 0.0),
-            ).chain(CurveTween(curve: _decelerateCurve)),
-            weight: 1.0 - _peakVelocityTime),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: widget.hideController,
-          curve: Interval(0.0, 1.0),
-          reverseCurve: Interval(0.0, 1.0).flipped),
-    );
+            <TweenSequenceItem<Offset>>[
+              TweenSequenceItem<Offset>(
+                  tween: Tween<Offset>(
+                    begin: Offset(1.0, 0.0),
+                    end: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                  ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
+                  weight: 1.0 - _kPeakVelocityTime),
+              TweenSequenceItem<Offset>(
+                  tween: Tween<Offset>(
+                    begin: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                    end: Offset(0.0, 0.0),
+                  ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
+                  weight: _kPeakVelocityTime),
+            ],
+          ).animate(widget.hideController)
+        : TweenSequence(
+            <TweenSequenceItem<Offset>>[
+              TweenSequenceItem<Offset>(
+                  tween: Tween<Offset>(
+                    begin: Offset(1.0, 0.0),
+                    end: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                  ).chain(CurveTween(curve: _kAccelerateCurve)),
+                  weight: _kPeakVelocityTime),
+              TweenSequenceItem<Offset>(
+                  tween: Tween<Offset>(
+                    begin: Offset(1.0 - _kPeakVelocityProgress, 0.0),
+                    end: Offset(0.0, 0.0),
+                  ).chain(CurveTween(curve: _kDecelerateCurve)),
+                  weight: 1.0 - _kPeakVelocityTime),
+            ],
+          ).animate(widget.hideController);
 
     return SlideTransition(
       position: _slideAnimation,
@@ -413,8 +418,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
 
   @override
   Widget build(BuildContext context) {
-    timeDilation = 1.0;
-
     return AnimatedSize(
       key: _shortBottomSheetKey,
       duration: Duration(milliseconds: 225),
