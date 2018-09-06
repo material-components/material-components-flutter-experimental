@@ -48,8 +48,6 @@ class ShortBottomSheet extends StatefulWidget {
 class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProviderStateMixin {
   final GlobalKey _shortBottomSheetKey =
       GlobalKey(debugLabel: 'Short bottom sheet');
-  // The padding between the left edge of the Material and the shopping cart icon
-  double _cartPadding;
   // The width of the Material, calculated by _getWidth & based on the number of
   // products in the cart.
   double _width;
@@ -66,7 +64,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
   @override
   void initState() {
     super.initState();
-    _cartPadding = 20.0;
     _width = 64.0;
     _controller = AnimationController(
       duration: const Duration(milliseconds: 500),
@@ -200,7 +197,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         CurvedAnimation(
           parent: _controller.view,
           curve: Interval(0.0, 0.87),
-          reverseCurve: Interval(0.134, 1.0).flipped,
         ),
       );
     }
@@ -221,73 +217,72 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
       CurvedAnimation(
           parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.3, curve: Curves.linear)
-              : Interval(0.234, 0.468, curve: Curves.linear).flipped),
+              ? Interval(0.0, 0.3)
+              : Interval(0.234, 0.468).flipped),
     );
 
     _cartOpacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
           parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.3, 0.6, curve: Curves.linear)
-              : Interval(0.0, 0.234, curve: Curves.linear).flipped),
+              ? Interval(0.3, 0.6)
+              : Interval(0.0, 0.234).flipped),
     );
   }
 
   // Returns the correct width of the ShortBottomSheet based on the number of
   // products in the cart.
-  double _getWidth(int numProducts) {
-    if (numProducts == 0) {
-      return 64.0;
-    } else if (numProducts == 1) {
-      return 136.0;
-    } else if (numProducts == 2) {
-      return 192.0;
-    } else if (numProducts == 3) {
-      return 248.0;
-    } else {
-      return 278.0;
+  double _widthFor(int numProducts) {
+    switch (numProducts) {
+      case 0:
+        return 64.0;
+        break;
+      case 1:
+        return 136.0;
+        break;
+      case 2:
+        return 192.0;
+        break;
+      case 3:
+        return 248.0;
+        break;
+      default:
+        return 278.0;
     }
   }
 
-  // Updates _width based on the number of products in the cart.
-  void _updateWidth(int numProducts) {
-    _width = _getWidth(numProducts);
-  }
-
-  // Returns true if the cart is open and false otherwise.
+  // Returns true if the cart is open or opening and false otherwise.
   bool get _isOpen {
     final AnimationStatus status = _controller.status;
-    return status == AnimationStatus.completed ||
-        status == AnimationStatus.forward;
+    return status == AnimationStatus.completed || status == AnimationStatus.forward;
   }
 
   // Opens the ShortBottomSheet if it's open, otherwise does nothing.
   void open() {
     if (!_isOpen) {
-      setState(() {
-        _controller.forward();
-      });
+      _controller.forward();
     }
   }
 
   // Closes the ShortBottomSheet if it's open, otherwise does nothing.
   void close() {
     if (_isOpen) {
-      setState(() {
-        _controller.reverse();
-      });
+      _controller.reverse();
     }
   }
 
-  // Changes the padding between the left edge of the Material and the cart icon
+  // Changes the padding between the start edge of the Material and the cart icon
   // based on the number of products in the cart (padding increases when > 0
   // products.)
-  void _adjustCartPadding(int numProducts) {
-    _cartPadding = numProducts == 0 ? 20.0 : 32.0;
+  EdgeInsetsDirectional _cartPaddingFor(int numProducts) {
+    if (numProducts == 0) {
+      return EdgeInsetsDirectional.only(start: 20.0, end: 8.0);
+    } else {
+      return EdgeInsetsDirectional.only(start: 32.0, end: 8.0);
+    }
   }
 
-  bool _revealCart() {
+  bool _cartIsVisible() {
     return _thumbnailOpacityAnimation.value == 0.0;
   }
 
@@ -298,10 +293,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         child: Column(children: <Widget>[
           Row(children: <Widget>[
             AnimatedPadding(
-              padding: EdgeInsets.only(
-                left: _cartPadding,
-                right: 8.0,
-              ),
+              padding: _cartPaddingFor(numProducts),
               child: Icon(Icons.shopping_cart),
               duration: Duration(milliseconds: 225),
             ),
@@ -313,10 +305,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
                   ? _width - 94 // Accounts for the overflow number
                   : _width - 64,
               height: _kCartHeight,
-              child: Padding(
-                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
-                child: ProductThumbnailRow(),
-              ),
+              padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+              child: ProductThumbnailRow(),
             ),
             ExtraProductsNumber()
           ]),
@@ -337,13 +327,12 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
   Widget _buildCart(BuildContext context, Widget child) {
     // numProducts is the number of different products in the cart (does not
-    // include multiple of the same product).
-    AppStateModel model = ScopedModel.of<AppStateModel>(context);
-    int numProducts = model.productsInCart.keys.length;
-    int totalCartQuantity = model.totalCartQuantity;
+    // include multiples of the same product).
+    final AppStateModel model = ScopedModel.of<AppStateModel>(context);
+    final int numProducts = model.productsInCart.keys.length;
+    final int totalCartQuantity = model.totalCartQuantity;
 
-    _adjustCartPadding(numProducts);
-    _updateWidth(numProducts);
+    _width = _widthFor(numProducts);
     _updateAnimations(context);
 
     return Semantics(
@@ -361,7 +350,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
           ),
           elevation: 4.0,
           color: kShrinePink50,
-          child: _revealCart()
+          child: _cartIsVisible()
               ? _buildShoppingCartPage()
               : _buildThumbnails(numProducts),
         ),
@@ -434,9 +423,9 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
             onTap: open,
             child: ScopedModelDescendant<AppStateModel>(
               builder: (context, child, model) => AnimatedBuilder(
-                    builder: _buildCart,
-                    animation: _controller,
-                  ),
+                builder: _buildCart,
+                animation: _controller,
+              ),
             ),
           ),
         ),
@@ -447,12 +436,10 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
 class ProductThumbnailRow extends StatefulWidget {
   @override
-  ProductThumbnailRowState createState() {
-    return ProductThumbnailRowState();
-  }
+  _ProductThumbnailRowState createState() => _ProductThumbnailRowState();
 }
 
-class ProductThumbnailRowState extends State<ProductThumbnailRow> {
+class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
   // _list represents the list that actively manipulates the AnimatedList,
   // meaning that it needs to be updated by _internalList

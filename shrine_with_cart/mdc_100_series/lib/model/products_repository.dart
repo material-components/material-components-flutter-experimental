@@ -284,6 +284,12 @@ class ProductsRepository {
         price: 58,
       ),
     ];
-    return allProducts.where((Product p) => p.category == category).toList();
+    if (category == Category.all) {
+      return allProducts;
+    } else {
+      return allProducts.where((Product p) {
+        return p.category == category;
+      }).toList();
+    }
   }
 }
