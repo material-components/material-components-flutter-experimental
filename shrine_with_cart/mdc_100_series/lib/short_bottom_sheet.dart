@@ -591,22 +591,26 @@ class ProductThumbnail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FadeTransition(
-        opacity: opacityAnimation,
-        child: ScaleTransition(
-            scale: animation,
-            child: Container(
-                width: 40.0,
-                height: 40.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: ExactAssetImage(
-                        product.assetName, // asset name
-                        package: product.assetPackage, // asset package
-                      ),
-                      fit: BoxFit.cover),
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                ),
-                margin: EdgeInsets.only(left: 16.0))));
+      opacity: opacityAnimation,
+      child: ScaleTransition(
+        scale: animation,
+        child: Container(
+          width: 40.0,
+          height: 40.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: ExactAssetImage(
+                product.assetName, // asset name
+                package: product.assetPackage, // asset package
+              ),
+              fit: BoxFit.cover,
+            ),
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          ),
+          margin: EdgeInsets.only(left: 16.0),
+        ),
+      ),
+    );
   }
 }
 
