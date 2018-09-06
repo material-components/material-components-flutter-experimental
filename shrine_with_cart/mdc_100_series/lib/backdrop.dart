@@ -215,6 +215,7 @@ class _BackdropState extends State<Backdrop>
     Animation animation; // Animation on which TweenSequence runs
 
     if (_frontLayerVisible) {
+      // These values are only used when the controller runs from t=1.0 to t=0.0
       firstCurve = _decelerateCurve.flipped;
       secondCurve = _accelerateCurve.flipped;
       firstWeight = 1.0 - _peakVelocityTime;
