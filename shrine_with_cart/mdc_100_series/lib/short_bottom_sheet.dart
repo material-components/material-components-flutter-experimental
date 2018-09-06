@@ -356,38 +356,37 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
   // Builder for the hide and reveal animation when the backdrop opens and closes
   Widget _buildSlideAnimation(BuildContext context, Widget child) {
-    // TODO: Correct easing per spec
-    _slideAnimation = widget.hideController.status == AnimationStatus.forward
-        ? TweenSequence(
+    Curve firstCurve;
+    Curve secondCurve;
+    double firstWeight;
+    double secondWeight;
+
+    if (widget.hideController.status == AnimationStatus.forward) {
+      firstCurve = _kAccelerateCurve;
+      secondCurve = _kDecelerateCurve;
+      firstWeight = _kPeakVelocityTime;
+      secondWeight = 1.0 - _kPeakVelocityTime;
+    } else {
+      firstCurve = _kDecelerateCurve.flipped;
+      secondCurve = _kAccelerateCurve.flipped;
+      firstWeight = 1.0 - _kPeakVelocityTime;
+      secondWeight = _kPeakVelocityTime;
+    }
+
+    _slideAnimation = TweenSequence(
             <TweenSequenceItem<Offset>>[
               TweenSequenceItem<Offset>(
                   tween: Tween<Offset>(
                     begin: Offset(1.0, 0.0),
                     end: Offset(_kPeakVelocityProgress, 0.0),
-                  ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
-                  weight: 1.0 - _kPeakVelocityTime),
+                  ).chain(CurveTween(curve: firstCurve)),
+                  weight: firstWeight),
               TweenSequenceItem<Offset>(
                   tween: Tween<Offset>(
                     begin: Offset(_kPeakVelocityProgress, 0.0),
                     end: Offset(0.0, 0.0),
-                  ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
-                  weight: _kPeakVelocityTime),
-            ],
-          ).animate(widget.hideController)
-        : TweenSequence(
-            <TweenSequenceItem<Offset>>[
-              TweenSequenceItem<Offset>(
-                  tween: Tween<Offset>(
-                    begin: Offset(1.0, 0.0),
-                    end: Offset(_kPeakVelocityProgress, 0.0),
-                  ).chain(CurveTween(curve: _kAccelerateCurve)),
-                  weight: _kPeakVelocityTime),
-              TweenSequenceItem<Offset>(
-                  tween: Tween<Offset>(
-                    begin: Offset(_kPeakVelocityProgress, 0.0),
-                    end: Offset(0.0, 0.0),
-                  ).chain(CurveTween(curve: _kDecelerateCurve)),
-                  weight: 1.0 - _kPeakVelocityTime),
+                  ).chain(CurveTween(curve: secondCurve)),
+                  weight: secondWeight),
             ],
           ).animate(widget.hideController);
 
