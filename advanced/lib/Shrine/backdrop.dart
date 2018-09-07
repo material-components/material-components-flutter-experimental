@@ -221,7 +221,7 @@ class _BackdropState extends State<Backdrop>
       secondWeight = 1.0 - _kPeakVelocityTime;
       animation = CurvedAnimation(
         parent: _controller.view,
-        curve: Interval(0.22, 1.0),
+        curve: Interval(0.0, 0.78),
       );
     } else {
       // These values are only used when the controller runs from t=1.0 to t=0.0
