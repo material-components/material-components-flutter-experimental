@@ -17,10 +17,10 @@ import 'package:meta/meta.dart';
 
 import 'login.dart';
 
-final Cubic _accelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
-final Cubic _decelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
-final double _peakVelocityTime = 0.248210;
-final double _peakVelocityProgress = 0.379146;
+final Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
+final Cubic _kDecelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
+final double _kPeakVelocityTime = 0.248210;
+final double _kPeakVelocityProgress = 0.379146;
 
 class _FrontLayer extends StatelessWidget {
   const _FrontLayer({
@@ -215,21 +215,21 @@ class _BackdropState extends State<Backdrop>
     Animation animation; // Animation on which TweenSequence runs
 
     if (_frontLayerVisible) {
-      firstCurve = _accelerateCurve;
-      secondCurve = _decelerateCurve;
-      firstWeight = _peakVelocityTime;
-      secondWeight = 1.0 - _peakVelocityTime;
-      animation = _controller.view;
-    } else {
-      // These values are only used when the controller runs from t=1.0 to t=0.0
-      firstCurve = _decelerateCurve.flipped;
-      secondCurve = _accelerateCurve.flipped;
-      firstWeight = 1.0 - _peakVelocityTime;
-      secondWeight = _peakVelocityTime;
+      firstCurve = _kAccelerateCurve;
+      secondCurve = _kDecelerateCurve;
+      firstWeight = _kPeakVelocityTime;
+      secondWeight = 1.0 - _kPeakVelocityTime;
       animation = CurvedAnimation(
         parent: _controller.view,
         curve: Interval(0.22, 1.0),
       );
+    } else {
+      // These values are only used when the controller runs from t=1.0 to t=0.0
+      firstCurve = _kDecelerateCurve.flipped;
+      secondCurve = _kAccelerateCurve.flipped;
+      firstWeight = 1.0 - _kPeakVelocityTime;
+      secondWeight = _kPeakVelocityTime;
+      animation = _controller.view;
     }
 
     return TweenSequence(
@@ -244,9 +244,9 @@ class _BackdropState extends State<Backdrop>
             ),
             end: RelativeRect.fromLTRB(
               0.0,
-              layerTop * _peakVelocityProgress,
+              layerTop * _kPeakVelocityProgress,
               0.0,
-              (layerTop - layerSize.height) * _peakVelocityProgress,
+              (layerTop - layerSize.height) * _kPeakVelocityProgress,
             ),
           ).chain(CurveTween(curve: firstCurve)),
           weight: firstWeight,
@@ -255,9 +255,9 @@ class _BackdropState extends State<Backdrop>
           tween: RelativeRectTween(
             begin: RelativeRect.fromLTRB(
               0.0,
-              layerTop * _peakVelocityProgress,
+              layerTop * _kPeakVelocityProgress,
               0.0,
-              (layerTop - layerSize.height) * _peakVelocityProgress,
+              (layerTop - layerSize.height) * _kPeakVelocityProgress,
             ),
             end: RelativeRect.fill,
           ).chain(CurveTween(curve: secondCurve)),
