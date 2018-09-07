@@ -34,11 +34,13 @@ class _FrontLayer extends StatelessWidget {
     this.onTap,
     this.child,
     this.title,
+    this.index
   }) : super(key: key);
 
   final VoidCallback onTap;
   final Widget child;
   final String title;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -61,14 +63,29 @@ class _FrontLayer extends StatelessWidget {
               height: 8.0,
             ),
             Column(
-              children: _buildFlightCards(),
+              children: _buildFlightCards(listIndex: index),
             ),
           ],
         ));
   }
 
-  static List<Widget> _buildFlightCards() {
-    List<Flight> flights = getFlights(Category.findTrips);
+  static List<Widget> _buildFlightCards({int listIndex}) {
+    final List<Flight> flightsFly = getFlights(Category.findTrips)..shuffle();
+    final List<Flight> flightsSleep = getFlights(Category.findTrips)..shuffle();
+    final List<Flight> flightsEat = getFlights(Category.findTrips)..shuffle();
+
+    List<Flight> flights;
+    switch (listIndex) {
+      case 0:
+        flights = flightsFly;
+        break;
+      case 1:
+        flights = flightsSleep;
+        break;
+      case 2:
+        flights = flightsEat;
+        break;
+    }
     return List.generate(flights.length, (int index) {
       return _DestinationCard(flight: flights[index]);
     }).toList();
@@ -204,6 +221,7 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
             onTap: _flingFrontLayerVertical,
             child: widget.frontLayer,
             title: 'Explore Flights by Destination',
+            index: 0,
           ),
         ),
       ],
@@ -225,6 +243,7 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
             onTap: _flingFrontLayerVertical,
             child: widget.frontLayer,
             title: 'Explore Properties by Destination',
+            index: 1,
           ),
         ),
       ],
@@ -246,6 +265,7 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
             onTap: _flingFrontLayerVertical,
             child: widget.frontLayer,
             title: 'Explore Restaurants by Destination',
+            index: 2,
           ),
         ),
       ],

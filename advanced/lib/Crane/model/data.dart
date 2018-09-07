@@ -16,7 +16,7 @@ import 'flight.dart';
 
 // This is where destination info should go
 List<Flight> getFlights(Category category) {
-  const allFlights = <Flight>[
+  var allFlights = <Flight>[
     Flight(
       category: Category.findTrips,
       id: 0,
