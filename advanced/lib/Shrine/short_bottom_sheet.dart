@@ -1,68 +1,74 @@
-import 'package:flutter/services.dart';
-
-import 'model/app_state_model.dart';
-import 'package:flutter/material.dart';
-import 'package:scoped_model/scoped_model.dart';
-import 'package:meta/meta.dart';
-import 'colors.dart';
-import 'shopping_cart.dart';
-import 'model/product.dart';
-import 'package:flutter/scheduler.dart' show timeDilation;
 import 'dart:async';
 
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:meta/meta.dart';
+import 'package:scoped_model/scoped_model.dart';
+
+import 'colors.dart';
+import 'model/app_state_model.dart';
+import 'model/product.dart';
+import 'shopping_cart.dart';
+
+// Curves that represent the two curves that compose the emphasized easing curve.
+const Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
+const Cubic _kDecelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
+// The time at which the accelerate and decelerate curves switch off
+const double _kPeakVelocityTime = 0.248210;
+// Percent (as a decimal) of animation that should be completed at _peakVelocityTime
+const double _kPeakVelocityProgress = 0.379146;
+const double _kCartHeight = 56.0;
+// Radius of the shape on the top left of the sheet.
+const double _kCornerRadius = 24.0;
+
 class ShortBottomSheet extends StatefulWidget {
-  const ShortBottomSheet({Key key, this.hideController}) : super(key: key);
+  const ShortBottomSheet({ Key key, @required this.hideController })
+      : assert(hideController != null),
+        super(key: key);
 
   final AnimationController hideController;
 
   @override
   _ShortBottomSheetState createState() => _ShortBottomSheetState();
 
-  static _ShortBottomSheetState of(BuildContext context, {bool nullOk: false}) {
-    assert(nullOk != null);
+  static _ShortBottomSheetState of(BuildContext context, { bool isNullOk: false }) {
+    assert(isNullOk != null);
     assert(context != null);
     final _ShortBottomSheetState result = context
         .ancestorStateOfType(const TypeMatcher<_ShortBottomSheetState>());
-    if (nullOk || result != null) {
+    if (isNullOk || result != null) {
       return result;
     }
-    throw new FlutterError(
-        'ShortBottomSheet.of() called with a context that does not contain a ShortBottomSheet.\n');
+    throw FlutterError(
+      'ShortBottomSheet.of() called with a context that does not contain a ShortBottomSheet.\n'
+    );
   }
 }
 
-class _ShortBottomSheetState extends State<ShortBottomSheet>
-    with TickerProviderStateMixin {
+class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProviderStateMixin {
   final GlobalKey _shortBottomSheetKey =
       GlobalKey(debugLabel: 'Short bottom sheet');
-  // The padding between the left edge of the Material and the shopping cart icon
-  double _cartPadding;
   // The width of the Material, calculated by _getWidth & based on the number of
   // products in the cart.
   double _width;
   // Controller for the opening and closing of the ShortBottomSheet
   AnimationController _controller;
-  // Tracks the size of the screen so animations can be updated appropriately.
-  Size _mediaSize;
   // Animations for the opening and closing of the ShortBottomSheet
   Animation<double> _widthAnimation;
   Animation<double> _heightAnimation;
   Animation<double> _thumbnailOpacityAnimation;
   Animation<double> _cartOpacityAnimation;
   Animation<double> _shapeAnimation;
-  // Curves that represent the two curves that compose the emphasized easing curve.
-  final Cubic _accelerateCurve = const Cubic(0.3, 0.0, 0.8, 0.15);
-  final Cubic _decelerateCurve = const Cubic(0.05, 0.7, 0.1, 1.0);
-  final _cartHeight = 56.0;
+  Animation<Offset> _slideAnimation;
 
   @override
   void initState() {
     super.initState();
-    _adjustCartPadding(0);
-    _updateWidth(0);
+    _width = 64.0;
     _controller = AnimationController(
-        duration: const Duration(milliseconds: 300), vsync: this);
-    _mediaSize = Size.zero;
+      duration: const Duration(milliseconds: 500),
+      vsync: this,
+    );
   }
 
   @override
@@ -71,223 +77,267 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
     super.dispose();
   }
 
-  // Returns true if the screen size has changed, false otherwise.
-  bool _dimensionsNeedUpdate(BuildContext context) {
-    if (_mediaSize != MediaQuery.of(context).size) {
-      return true;
+  Animation<double> _getWidthAnimation(double screenWidth) {
+    if (_controller.status == AnimationStatus.forward) {
+      // opening animation
+      return Tween<double>(begin: _width, end: screenWidth).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(
+            0.0,
+            0.3,
+            curve: Curves.fastOutSlowIn,
+          ),
+        ),
+      );
+    } else {
+      // closing animation
+      return TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _width,
+              end: _width + (screenWidth - _width) * (_kPeakVelocityProgress),
+            ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
+            weight: 1 - _kPeakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _width + (screenWidth - _width) * (_kPeakVelocityProgress),
+              end: screenWidth,
+            ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
+            weight: _kPeakVelocityTime,
+          ),
+        ],
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(0.0, 0.87),
+        ),
+      );
     }
-    return false;
   }
 
-  // Updates the animations for the opening/closing of the ShortBottomSheet,
-  // using the size of the screen.
-  void _updateAnimations(BuildContext context) {
-    _mediaSize = MediaQuery.of(context).size;
-    double mediaWidth = _mediaSize.width;
-    double mediaHeight = _mediaSize.height;
+  Animation<double> _getHeightAnimation(double screenHeight) {
+    if (_controller.status == AnimationStatus.forward) {
+      // opening animation
+      return TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCartHeight,
+              end: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+            ).chain(CurveTween(curve: _kAccelerateCurve)),
+            weight: _kPeakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+              end: screenHeight,
+            ).chain(CurveTween(curve: _kDecelerateCurve)),
+            weight: 1 - _kPeakVelocityTime,
+          ),
+        ],
+      ).animate(_controller.view);
+    } else {
+      // opening animation
+      return Tween<double>(
+        begin: _kCartHeight,
+        end: screenHeight,
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(
+            0.434,
+            1.0,
+            curve: Curves.fastOutSlowIn,
+          ),
+          reverseCurve: Interval( // only the reverseCurve will be used
+            0.0,
+            0.566,
+            curve: Curves.fastOutSlowIn,
+          ).flipped,
+        ),
+      );
+    }
+  }
 
-    _widthAnimation = TweenSequence(
-      <TweenSequenceItem<double>>[
-        TweenSequenceItem<double>(
-          // 1/6 of duration = 40% (0.4) of property delta
-          tween: Tween<double>(
-                  begin: _width, end: _width + (mediaWidth - _width) * 0.4)
-              .chain(CurveTween(curve: _accelerateCurve)),
-          weight: 1.0 / 6.0,
+  Animation<double> _getShapeAnimation() {
+    if (_controller.status == AnimationStatus.forward) {
+      return Tween<double>(begin: _kCornerRadius, end: 0.0).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(
+            0.0,
+            0.3,
+            curve: Curves.fastOutSlowIn,
+          ),
         ),
-        new TweenSequenceItem<double>(
-          tween: Tween<double>(
-                  begin: _width + (mediaWidth - _width) * 0.4, end: mediaWidth)
-              .chain(CurveTween(curve: _decelerateCurve)),
-          weight: 5.0 / 6.0,
+      );
+    } else {
+      return TweenSequence(
+        <TweenSequenceItem<double>>[
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCornerRadius,
+              end: _kCornerRadius * _kPeakVelocityProgress,
+            ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
+            weight: 1 - _kPeakVelocityTime,
+          ),
+          TweenSequenceItem<double>(
+            tween: Tween<double>(
+              begin: _kCornerRadius * _kPeakVelocityProgress,
+              end: 0.0,
+            ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
+            weight: _kPeakVelocityTime,
+          ),
+        ],
+      ).animate(
+        CurvedAnimation(
+          parent: _controller.view,
+          curve: Interval(0.0, 0.87),
         ),
-      ],
-    ).animate(
+      );
+    }
+  }
+
+  Animation<double> _getThumbnailOpacityAnimation() {
+    return Tween<double>(begin: 1.0, end: 0.0).animate(
       CurvedAnimation(
-          parent: _controller,
+          parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.35)
-              : Interval(0.17, 0.72)),
+              ? Interval(0.0, 0.3)
+              : Interval(0.234, 0.468).flipped),
     );
+  }
 
-    _heightAnimation = TweenSequence(
-      <TweenSequenceItem<double>>[
-        TweenSequenceItem<double>(
-          tween: Tween<double>(
-                  begin: _cartHeight, end: (mediaHeight - _cartHeight) * 0.4)
-              .chain(CurveTween(curve: _accelerateCurve)),
-          weight: 1.0 / 6.0,
-        ),
-        TweenSequenceItem<double>(
-          tween: Tween<double>(
-                  begin: (mediaHeight - _cartHeight) * 0.4, end: mediaHeight)
-              .chain(CurveTween(curve: _decelerateCurve)),
-          weight: 5.0 / 6.0,
-        ),
-      ],
-    ).animate(
+  Animation<double> _getCartOpacityAnimation() {
+    return Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
-          parent: _controller,
+          parent: _controller.view,
           curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 1.0)
-              : Interval(0.2, 1.0)),
-    );
-
-    _thumbnailOpacityAnimation = Tween<double>(begin: 1.0, end: 0.0).animate(
-      CurvedAnimation(
-          parent: _controller,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.25, curve: Curves.linear)
-              : Interval(0.25, 0.75, curve: Curves.linear)),
-    );
-
-    _cartOpacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-          parent: _controller,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.25, 0.75, curve: Curves.linear)
-              : Interval(0.75, 1.0, curve: Curves.linear)),
-    );
-
-    _shapeAnimation = TweenSequence(
-      <TweenSequenceItem<double>>[
-        TweenSequenceItem<double>(
-          tween: Tween<double>(begin: 24.0, end: (24.0 - 0.0) * 0.4)
-              .chain(CurveTween(curve: _accelerateCurve)),
-          weight: 1.0 / 6.0,
-        ),
-        TweenSequenceItem<double>(
-          tween: Tween<double>(begin: (24.0 - 0.0) * 0.4, end: 0.0)
-              .chain(CurveTween(curve: _decelerateCurve)),
-          weight: 5.0 / 6.0,
-        ),
-      ],
-    ).animate(
-      CurvedAnimation(
-          parent: _controller,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.35)
-              : Interval(0.17, 0.72)),
+              ? Interval(0.3, 0.6)
+              : Interval(0.0, 0.234).flipped),
     );
   }
 
   // Returns the correct width of the ShortBottomSheet based on the number of
   // products in the cart.
-  double _getWidth(int numProducts) {
-    if (numProducts == 0) {
-      return 64.0;
-    } else if (numProducts == 1) {
-      return 136.0;
-    } else if (numProducts == 2) {
-      return 192.0;
-    } else if (numProducts == 3) {
-      return 248.0;
-    } else {
-      return 278.0;
+  double _widthFor(int numProducts) {
+    switch (numProducts) {
+      case 0:
+        return 64.0;
+        break;
+      case 1:
+        return 136.0;
+        break;
+      case 2:
+        return 192.0;
+        break;
+      case 3:
+        return 248.0;
+        break;
+      default:
+        return 278.0;
     }
   }
 
-  bool _widthNeedsUpdate(int numProducts) {
-    if (_width != _getWidth(numProducts)) {
-      return true;
-    }
-    return false;
-  }
-
-  // Updates _width based on the number of products in the cart.
-  void _updateWidth(int numProducts) {
-    _width = _getWidth(numProducts);
-  }
-
-  // Returns true if the cart is open and false otherwise.
+  // Returns true if the cart is open or opening and false otherwise.
   bool get _isOpen {
     final AnimationStatus status = _controller.status;
-    return status == AnimationStatus.completed ||
-        status == AnimationStatus.forward;
+    return status == AnimationStatus.completed || status == AnimationStatus.forward;
   }
 
-  // Opens the ShortBottomSheet if it's open, otherwise does nothing.
+  // Opens the ShortBottomSheet if it's closed, otherwise does nothing.
   void open() {
     if (!_isOpen) {
       _controller.forward();
     }
   }
 
-  // Closes the ShortBottomSheet if it's open, otherwise does nothing.
+  // Closes the ShortBottomSheet if it's open or opening, otherwise does nothing.
   void close() {
     if (_isOpen) {
       _controller.reverse();
     }
   }
 
-  // Changes the padding between the left edge of the Material and the cart icon
+  // Changes the padding between the start edge of the Material and the cart icon
   // based on the number of products in the cart (padding increases when > 0
   // products.)
-  void _adjustCartPadding(int numProducts) {
-    _cartPadding = numProducts == 0 ? 20.0 : 32.0;
-  }
-
-  bool _revealCart() {
-    if (_thumbnailOpacityAnimation.value == 0.0) {
-      return true;
+  EdgeInsetsDirectional _cartPaddingFor(int numProducts) {
+    if (numProducts == 0) {
+      return EdgeInsetsDirectional.only(start: 20.0, end: 8.0);
     } else {
-      return false;
+      return EdgeInsetsDirectional.only(start: 32.0, end: 8.0);
     }
   }
 
+  bool get _cartIsVisible => _thumbnailOpacityAnimation.value == 0.0;
+
   Widget _buildThumbnails(int numProducts) {
-    return Opacity(
-      opacity: _thumbnailOpacityAnimation.value,
-      child: Column(children: <Widget>[
-        Row(children: <Widget>[
-          AnimatedPadding(
-              padding: EdgeInsets.only(left: _cartPadding, right: 8.0),
-              child: Icon(
-                Icons.shopping_cart,
-                semanticLabel: "Cart",
-              ),
-              duration: Duration(milliseconds: 225)),
-          Container(
-            width: numProducts > 3
-                ? _width - 96 // Accounts for the overflow number
-                : _width - 64,
-            height: _cartHeight,
-            child: Padding(
-              padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
-              child: ProductList(),
+    return ExcludeSemantics(
+      child: Opacity(
+        opacity: _thumbnailOpacityAnimation.value,
+        child: Column(children: <Widget>[
+          Row(children: <Widget>[
+            AnimatedPadding(
+              padding: _cartPaddingFor(numProducts),
+              child: Icon(Icons.shopping_cart),
+              duration: Duration(milliseconds: 225),
             ),
-          ),
-          ExtraProductsNumber()
+            Container(
+              width: ScopedModel.of<AppStateModel>(context)
+                          .productsInCart
+                          .keys
+                          .length > 3
+                  ? _width - 94 // Accounts for the overflow number
+                  : _width - 64,
+              height: _kCartHeight,
+              padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+              child: ProductThumbnailRow(),
+            ),
+            ExtraProductsNumber()
+          ]),
+          // Ensures the thumbnails are "pinned" to the top left when opening the
+          // sheet by filling the space beneath them.
+          Expanded(child: Container())
         ]),
-        // Ensures the thumbnails are "pinned" to the top left when opening the
-        // sheet by filling the space beneath them.
-        Expanded(child: Container())
-      ]),
+      ),
     );
   }
 
   Widget _buildShoppingCartPage() {
     return Opacity(
-        opacity: _cartOpacityAnimation.value, child: ShoppingCartPage());
+      opacity: _cartOpacityAnimation.value,
+      child: ShoppingCartPage(),
+    );
   }
 
-  Widget _buildCart(BuildContext context, Widget child, AppStateModel model) {
+  Widget _buildCart(BuildContext context, Widget child) {
     // numProducts is the number of different products in the cart (does not
-    // include multiple of the same product).
-    int numProducts = model.productsInCart.keys.length;
+    // include multiples of the same product).
+    final AppStateModel model = ScopedModel.of<AppStateModel>(context);
+    final int numProducts = model.productsInCart.keys.length;
+    final int totalCartQuantity = model.totalCartQuantity;
+    final Size screenSize = MediaQuery.of(context).size;
+    final double screenWidth = screenSize.width;
+    final double screenHeight = screenSize.height;
 
-    _adjustCartPadding(numProducts);
-    // This currently can't be within a conditional because the animations need
-    // to be updated so that they can change on reverse.
-    //if (_widthNeedsUpdate(numProducts)) {
-      _updateWidth(numProducts);
-      _updateAnimations(context);
-    //}
+    _width = _widthFor(numProducts);
+    _widthAnimation = _getWidthAnimation(screenWidth);
+    _heightAnimation = _getHeightAnimation(screenHeight);
+    _shapeAnimation = _getShapeAnimation();
+    _thumbnailOpacityAnimation = _getThumbnailOpacityAnimation();
+    _cartOpacityAnimation = _getCartOpacityAnimation();
 
-    return Container(
-      width: _widthAnimation.value,
-      height: _heightAnimation.value,
-      child: Material(
+    return Semantics(
+      button: true,
+      value: "Shopping cart, $totalCartQuantity items",
+      child: Container(
+        width: _widthAnimation.value,
+        height: _heightAnimation.value,
+        child: Material(
           type: MaterialType.canvas,
           animationDuration: Duration(milliseconds: 0),
           shape: BeveledRectangleBorder(
@@ -296,50 +346,82 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
           ),
           elevation: 4.0,
           color: kShrinePink50,
-          child: _revealCart()
+          child: _cartIsVisible
               ? _buildShoppingCartPage()
-              : _buildThumbnails(numProducts)),
+              : _buildThumbnails(numProducts),
+        ),
+      ),
+    );
+  }
+
+  // Builder for the hide and reveal animation when the backdrop opens and closes
+  Widget _buildSlideAnimation(BuildContext context, Widget child) {
+    Curve firstCurve;
+    Curve secondCurve;
+    double firstWeight;
+    double secondWeight;
+
+    if (widget.hideController.status == AnimationStatus.forward) {
+      firstCurve = _kAccelerateCurve;
+      secondCurve = _kDecelerateCurve;
+      firstWeight = _kPeakVelocityTime;
+      secondWeight = 1.0 - _kPeakVelocityTime;
+    } else {
+      firstCurve = _kDecelerateCurve.flipped;
+      secondCurve = _kAccelerateCurve.flipped;
+      firstWeight = 1.0 - _kPeakVelocityTime;
+      secondWeight = _kPeakVelocityTime;
+    }
+
+    _slideAnimation = TweenSequence(
+            <TweenSequenceItem<Offset>>[
+              TweenSequenceItem<Offset>(
+                  tween: Tween<Offset>(
+                    begin: Offset(1.0, 0.0),
+                    end: Offset(_kPeakVelocityProgress, 0.0),
+                  ).chain(CurveTween(curve: firstCurve)),
+                  weight: firstWeight),
+              TweenSequenceItem<Offset>(
+                  tween: Tween<Offset>(
+                    begin: Offset(_kPeakVelocityProgress, 0.0),
+                    end: Offset(0.0, 0.0),
+                  ).chain(CurveTween(curve: secondCurve)),
+                  weight: secondWeight),
+            ],
+          ).animate(widget.hideController);
+
+    return SlideTransition(
+      position: _slideAnimation,
+      child: child,
     );
   }
 
   // Closes the cart if the cart is open, otherwise exits the app (this should
   // only be relevant for Android).
   Future<bool> _onWillPop() {
-    if (_isOpen) {
-      close();
-    } else {
-      SystemNavigator.pop();
-    }
+    _isOpen ? close() : SystemNavigator.pop();
   }
 
   @override
   Widget build(BuildContext context) {
-    Animation<Offset> offsetRect =
-        Tween<Offset>(begin: Offset(0.0, 0.0), end: Offset(1.0, 0.0)).animate(
-            CurvedAnimation(
-                parent: widget.hideController.view, curve: Curves.easeOut));
-    timeDilation = 1.0;
-
-    _updateAnimations(context);
-
-    return WillPopScope(
-      onWillPop: _onWillPop,
-      child: SlideTransition(
-        position: offsetRect,
-        child: Align(
-          alignment: Alignment.bottomRight,
-          child: AnimatedSize(
-            key: _shortBottomSheetKey,
-            duration: Duration(milliseconds: 225),
-            curve: Curves.easeInOut,
-            vsync: this,
-            alignment: FractionalOffset.topLeft,
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: open,
-              child: ScopedModelDescendant<AppStateModel>(
-                builder: (context, child, model) => AnimatedBuilderWithModel(
-                    builder: _buildCart, animation: _controller, model: model),
+    return AnimatedSize(
+      key: _shortBottomSheetKey,
+      duration: Duration(milliseconds: 225),
+      curve: Curves.easeInOut,
+      vsync: this,
+      alignment: FractionalOffset.topLeft,
+      child: WillPopScope(
+        onWillPop: _onWillPop,
+        child: AnimatedBuilder(
+          animation: widget.hideController,
+          builder: _buildSlideAnimation,
+          child: GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: open,
+            child: ScopedModelDescendant<AppStateModel>(
+              builder: (context, child, model) => AnimatedBuilder(
+                builder: _buildCart,
+                animation: _controller,
               ),
             ),
           ),
@@ -349,19 +431,17 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   }
 }
 
-class ProductList extends StatefulWidget {
+class ProductThumbnailRow extends StatefulWidget {
   @override
-  ProductListState createState() {
-    return ProductListState();
-  }
+  _ProductThumbnailRowState createState() => _ProductThumbnailRowState();
 }
 
-class ProductListState extends State<ProductList> {
+class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
   // _list represents the list that actively manipulates the AnimatedList,
   // meaning that it needs to be updated by _internalList
   ListModel _list;
-  // internalList represents the list as it is updated by the AppStateModel
+  // _internalList represents the list as it is updated by the AppStateModel
   List<int> _internalList;
 
   @override
@@ -370,7 +450,7 @@ class ProductListState extends State<ProductList> {
     _list = ListModel(
       listKey: _listKey,
       initialItems:
-          ModelFinder<AppStateModel>().of(context).productsInCart.keys.toList(),
+          ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList(),
       removedItemBuilder: _buildRemovedThumbnail,
     );
     _internalList = List<int>.from(_list.list);
@@ -379,7 +459,7 @@ class ProductListState extends State<ProductList> {
   Widget _buildRemovedThumbnail(
       int item, BuildContext context, Animation<double> animation) {
     return ProductThumbnail(animation, animation,
-        ModelFinder<AppStateModel>().of(context).getProductById(item));
+        ScopedModel.of<AppStateModel>(context).getProductById(item));
   }
 
   Widget _buildThumbnail(
@@ -406,7 +486,7 @@ class ProductListState extends State<ProductList> {
           parent: animation),
     );
 
-    AppStateModel model = ModelFinder<AppStateModel>().of(context);
+    AppStateModel model = ScopedModel.of<AppStateModel>(context);
     int productId = _list[index];
     Product product = model.getProductById(productId);
     assert(product != null);
@@ -420,7 +500,7 @@ class ProductListState extends State<ProductList> {
   void _updateLists() {
     // Update _internalList based on the model
     _internalList =
-        ModelFinder<AppStateModel>().of(context).productsInCart.keys.toList();
+        ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList();
     while (_internalList.length != _list.length) {
       int index = 0;
       // Check bounds and that the list elements are the same
@@ -511,32 +591,36 @@ class ProductThumbnail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FadeTransition(
-        opacity: opacityAnimation,
-        child: ScaleTransition(
-            scale: animation,
-            child: Container(
-                width: 40.0,
-                height: 40.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: ExactAssetImage(
-                        product.assetName, // asset name
-                        package: product.assetPackage, // asset package
-                      ),
-                      fit: BoxFit.cover),
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                ),
-                margin: EdgeInsets.only(left: 16.0))));
+      opacity: opacityAnimation,
+      child: ScaleTransition(
+        scale: animation,
+        child: Container(
+          width: 40.0,
+          height: 40.0,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: ExactAssetImage(
+                product.assetName, // asset name
+                package: product.assetPackage, // asset package
+              ),
+              fit: BoxFit.cover,
+            ),
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          ),
+          margin: EdgeInsets.only(left: 16.0),
+        ),
+      ),
+    );
   }
 }
 
 // ListModel manipulates an internal list and an AnimatedList
 class ListModel {
-  ListModel({
-    @required this.listKey,
-    @required this.removedItemBuilder,
-    Iterable<int> initialItems,
-  })  : assert(listKey != null),
+  ListModel(
+      {@required this.listKey,
+      @required this.removedItemBuilder,
+      Iterable<int> initialItems})
+      : assert(listKey != null),
         assert(removedItemBuilder != null),
         _items = List<int>.from(initialItems ?? <int>[]);
 
@@ -569,36 +653,3 @@ class ListModel {
 
   List<int> get list => _items;
 }
-
-// An AnimatedBuilder, but it also takes a model.
-class AnimatedBuilderWithModel extends AnimatedWidget {
-  const AnimatedBuilderWithModel(
-      {Key key,
-      @required this.animation,
-      @required this.builder,
-      this.child,
-      @required this.model})
-      : assert(builder != null),
-        super(key: key, listenable: animation);
-
-  final TransitionWithModelBuilder builder;
-
-  final Widget child;
-
-  final AppStateModel model;
-
-  final Listenable animation;
-
-  @override
-  Widget build(BuildContext context) {
-    return builder(context, child, model);
-  }
-}
-
-// To follow the convention of AnimatedBuilder, a typedef is used for the
-// AnimatedBuilderWithModel builder. The widget parameter in AnimatedBuilder is
-// called TransitionBuilder because it's called every time the animation changes
-// value. This is similar, but it also takes a model.
-
-typedef Widget TransitionWithModelBuilder(
-    BuildContext context, Widget child, AppStateModel model);

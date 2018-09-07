@@ -7,7 +7,7 @@ dependencies:
   intl: ^0.15.6
 
   cupertino_icons: ^0.1.0
-  scoped_model: 0.2.0
+  scoped_model: 0.3.0
   shrine_images: 1.0.0
 
 dev_dependencies:
@@ -57,9 +57,22 @@ flutter:
   - packages/shrine_images/35-0.jpg
   - packages/shrine_images/36-0.jpg
   - packages/shrine_images/37-0.jpg
+  - assets/0.png
+  - assets/1.png
+  - assets/2.png
+  - assets/3.png
+  - assets/4.png
+  - assets/5.png
+  - assets/6.png
+
   fonts:
   - family: Rubik
     fonts:
     - asset: fonts/Rubik-Regular.ttf
     - asset: fonts/Rubik-Medium.ttf
       weight: 500
+  - family: Raleway
+    fonts:
+    - asset: fonts/Raleway-Regular.ttf
+    - asset: fonts/Raleway-SemiBold.ttf
+

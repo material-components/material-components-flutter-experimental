@@ -16,10 +16,11 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 import 'login.dart';
-import 'shopping_cart.dart';
-import 'short_bottom_sheet.dart';
 
-const double _kFlingVelocity = 2.0;
+final Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
+final Cubic _kDecelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
+final double _kPeakVelocityTime = 0.248210;
+final double _kPeakVelocityProgress = 0.379146;
 
 class _FrontLayer extends StatelessWidget {
   const _FrontLayer({
@@ -75,7 +76,10 @@ class _BackdropTitle extends AnimatedWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Animation<double> animation = this.listenable;
+    final Animation<double> animation = CurvedAnimation(
+      parent: this.listenable,
+      curve: Interval(0.0, 0.78),
+    );
 
     return DefaultTextStyle(
       style: Theme.of(context).primaryTextTheme.title,
@@ -151,18 +155,19 @@ class Backdrop extends StatefulWidget {
   final Widget backLayer;
   final Widget frontTitle;
   final Widget backTitle;
-  final BoolCallback toggleSheet;
+  final AnimationController controller;
 
   const Backdrop({
     @required this.frontLayer,
     @required this.backLayer,
     @required this.frontTitle,
     @required this.backTitle,
-    this.toggleSheet
+    @required this.controller,
   })  : assert(frontLayer != null),
         assert(backLayer != null),
         assert(frontTitle != null),
-        assert(backTitle != null);
+        assert(backTitle != null),
+        assert(controller != null);
 
   @override
   _BackdropState createState() => _BackdropState();
@@ -172,15 +177,12 @@ class _BackdropState extends State<Backdrop>
     with SingleTickerProviderStateMixin {
   final GlobalKey _backdropKey = GlobalKey(debugLabel: 'Backdrop');
   AnimationController _controller;
+  Animation<RelativeRect> _layerAnimation;
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      duration: Duration(milliseconds: 300),
-      value: 1.0,
-      vsync: this,
-    );
+    _controller = widget.controller;
   }
 
   @override
@@ -196,9 +198,73 @@ class _BackdropState extends State<Backdrop>
   }
 
   void _toggleBackdropLayerVisibility() {
-    _controller.fling(
-        velocity: _frontLayerVisible ? -_kFlingVelocity : _kFlingVelocity);
-    widget.toggleSheet(_frontLayerVisible);
+    // Call setState here to update layerAnimation update if necessary
+    setState(() {
+      _frontLayerVisible ? _controller.reverse() : _controller.forward();
+    });
+  }
+
+  // _layerAnimation animates the front layer between open and close.
+  // _getLayerAnimation adjusts the values in the TweenSequence so the
+  // curve and timing are correct in both directions.
+  Animation<RelativeRect> _getLayerAnimation(Size layerSize, double layerTop) {
+    Curve firstCurve; // Curve for first TweenSequenceItem
+    Curve secondCurve; // Curve for second TweenSequenceItem
+    double firstWeight; // Weight of first TweenSequenceItem
+    double secondWeight; // Weight of second TweenSequenceItem
+    Animation animation; // Animation on which TweenSequence runs
+
+    if (_frontLayerVisible) {
+      firstCurve = _kAccelerateCurve;
+      secondCurve = _kDecelerateCurve;
+      firstWeight = _kPeakVelocityTime;
+      secondWeight = 1.0 - _kPeakVelocityTime;
+      animation = CurvedAnimation(
+        parent: _controller.view,
+        curve: Interval(0.22, 1.0),
+      );
+    } else {
+      // These values are only used when the controller runs from t=1.0 to t=0.0
+      firstCurve = _kDecelerateCurve.flipped;
+      secondCurve = _kAccelerateCurve.flipped;
+      firstWeight = 1.0 - _kPeakVelocityTime;
+      secondWeight = _kPeakVelocityTime;
+      animation = _controller.view;
+    }
+
+    return TweenSequence(
+      <TweenSequenceItem<RelativeRect>>[
+        TweenSequenceItem<RelativeRect>(
+          tween: RelativeRectTween(
+            begin: RelativeRect.fromLTRB(
+              0.0,
+              layerTop,
+              0.0,
+              layerTop - layerSize.height,
+            ),
+            end: RelativeRect.fromLTRB(
+              0.0,
+              layerTop * _kPeakVelocityProgress,
+              0.0,
+              (layerTop - layerSize.height) * _kPeakVelocityProgress,
+            ),
+          ).chain(CurveTween(curve: firstCurve)),
+          weight: firstWeight,
+        ),
+        TweenSequenceItem<RelativeRect>(
+          tween: RelativeRectTween(
+            begin: RelativeRect.fromLTRB(
+              0.0,
+              layerTop * _kPeakVelocityProgress,
+              0.0,
+              (layerTop - layerSize.height) * _kPeakVelocityProgress,
+            ),
+            end: RelativeRect.fill,
+          ).chain(CurveTween(curve: secondCurve)),
+          weight: secondWeight,
+        ),
+      ],
+    ).animate(animation);
   }
 
   Widget _buildStack(BuildContext context, BoxConstraints constraints) {
@@ -206,18 +272,14 @@ class _BackdropState extends State<Backdrop>
     final Size layerSize = constraints.biggest;
     final double layerTop = layerSize.height - layerTitleHeight;
 
-    Animation<RelativeRect> layerAnimation = RelativeRectTween(
-      begin: RelativeRect.fromLTRB(
-          0.0, layerTop, 0.0, layerTop - layerSize.height),
-      end: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
-    ).animate(_controller.view);
+    _layerAnimation = _getLayerAnimation(layerSize, layerTop);
 
     return Stack(
       key: _backdropKey,
       children: <Widget>[
         widget.backLayer,
         PositionedTransition(
-          rect: layerAnimation,
+          rect: _layerAnimation,
           child: _FrontLayer(
             onTap: _toggleBackdropLayerVisibility,
             child: widget.frontLayer,
@@ -240,18 +302,8 @@ class _BackdropState extends State<Backdrop>
         backTitle: widget.backTitle,
       ),
       actions: <Widget>[
-       /* IconButton(
-          icon: const Icon(Icons.shopping_cart),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (BuildContext context) => ShoppingCartPage()),
-            );
-          },
-        ),*/
         IconButton(
-          icon: const Icon(Icons.search),
+          icon: const Icon(Icons.search, semanticLabel: 'login'),
           onPressed: () {
             Navigator.push(
               context,
@@ -260,7 +312,7 @@ class _BackdropState extends State<Backdrop>
           },
         ),
         IconButton(
-          icon: const Icon(Icons.tune),
+          icon: const Icon(Icons.tune, semanticLabel: 'login'),
           onPressed: () {
             Navigator.push(
               context,
@@ -278,5 +330,3 @@ class _BackdropState extends State<Backdrop>
     );
   }
 }
-
-typedef BoolCallback = void Function(bool condition);

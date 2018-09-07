@@ -18,28 +18,27 @@ import 'package:flutter/foundation.dart';
 // to respective screen
 enum Category { findTrips, myTrips, savedTrips, priceAlerts, myAccount}
 
-class Product {
-  const Product({
+class Flight {
+  const Flight({
     @required this.category,
     @required this.id,
     @required this.isFeatured,
-    @required this.name,
-    @required this.price,
+    @required this.destination,
+    @required this.layover,
   })  : assert(category != null),
         assert(id != null),
         assert(isFeatured != null),
-        assert(name != null),
-        assert(price != null);
+        assert(destination != null),
+        assert(layover != null);
 
   final Category category;
   final int id;
   final bool isFeatured;
-  final String name;
-  final int price;
+  final String destination;
+  final bool layover;
 // TODO(tianlun): change to crane images
-  String get assetName => '$id-0.jpg';
-  String get assetPackage => 'shrine_images';
+  String get assetName => 'assets/$id.png';
 
   @override
-  String toString() => '$name (id=$id)';
+  String toString() => '$destination (id=$id)';
 }

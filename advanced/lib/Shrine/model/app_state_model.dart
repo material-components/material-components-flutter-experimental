@@ -83,7 +83,7 @@ class AppStateModel extends Model {
       if (_productsInCart[productId] == 1) {
         _productsInCart.remove(productId);
       } else {
-        _productsInCart[productId] -= 1;
+        _productsInCart[productId]--;
       }
     }
 
@@ -103,7 +103,7 @@ class AppStateModel extends Model {
 
   // Loads the list of available products from the repo.
   void loadProducts() {
-    _availableProducts = ProductsRepository.loadProducts();
+    _availableProducts = ProductsRepository.loadProducts(Category.all);
     notifyListeners();
   }
 

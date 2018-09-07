@@ -14,26 +14,26 @@
 
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'package:intl/intl.dart';
 
-import 'model/app_state_model.dart';
-import 'model/data.dart';
-import 'model/product.dart';
-import 'supplemental/asymmetric_view.dart';
 import 'backdrop.dart';
 import 'short_bottom_sheet.dart';
+import 'model/app_state_model.dart';
+import 'model/product.dart';
+import 'supplemental/asymmetric_view.dart';
 
 class ProductPage extends StatelessWidget {
   final Category category;
 
-  const ProductPage({this.category: Category.all});
+  const ProductPage({ this.category: Category.all });
 
   @override
   Widget build(BuildContext context) {
     return ScopedModelDescendant<AppStateModel>(
-      builder: (context, child, model) => AsymmetricView(
-        products: model.getProducts(),
-      ),
+      builder: (context, child, model) {
+        return AsymmetricView(
+          products: model.getProducts(),
+        );
+      }
     );
   }
 }
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
     return Stack(
       children: <Widget>[
         backdrop,
-        shortBottomSheet
+        Align(child: shortBottomSheet, alignment: Alignment.bottomRight)
       ],
     );
   }

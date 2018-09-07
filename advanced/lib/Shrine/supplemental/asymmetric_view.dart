@@ -20,11 +20,11 @@ import 'product_columns.dart';
 class AsymmetricView extends StatelessWidget {
   final List<Product> products;
 
-  AsymmetricView({Key key, this.products});
+  const AsymmetricView({Key key, this.products});
 
   List<Container> _buildColumns(BuildContext context) {
     if (products == null || products.isEmpty) {
-      return <Container>[];
+      return const <Container>[];
     }
 
     /// This will return a list of columns. It will oscillate between the two
@@ -90,6 +90,7 @@ class AsymmetricView extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       padding: EdgeInsets.fromLTRB(0.0, 34.0, 16.0, 44.0),
       children: _buildColumns(context),
+      physics: AlwaysScrollableScrollPhysics(),
     );
   }
 }

@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 import 'colors.dart';
-import 'model/product.dart';
+import 'model/flight.dart';
 import 'app.dart';
 
 class MenuPage extends StatelessWidget {

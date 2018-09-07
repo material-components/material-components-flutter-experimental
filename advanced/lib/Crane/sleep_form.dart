@@ -15,6 +15,7 @@
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
+import 'no_paint_rounded_border.dart';
 
 class SleepForm extends StatefulWidget {
   @override
@@ -34,11 +35,12 @@ class _SleepFormState extends State<SleepForm> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 24.0),
           children: <Widget>[
-            PrimaryColorOverride(
+            _PrimaryColorOverride(
               color: kCranePrimaryWhite,
               child: TextField(
                 controller: _travelerController,
                 decoration: InputDecoration(
+                  border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
                   labelText: 'Travelers',
@@ -46,11 +48,12 @@ class _SleepFormState extends State<SleepForm> {
               ),
             ),
             SizedBox(height: 8.0),
-            PrimaryColorOverride(
+            _PrimaryColorOverride(
               color: kCranePrimaryWhite,
               child: TextField(
                 controller: _dateController,
                 decoration: InputDecoration(
+                  border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
                   labelText: 'Dates',
@@ -58,11 +61,12 @@ class _SleepFormState extends State<SleepForm> {
               ),
             ),
             SizedBox(height: 8.0),
-            PrimaryColorOverride(
+            _PrimaryColorOverride(
               color: kCranePrimaryWhite,
               child: TextField(
                 controller: _locationController,
                 decoration: InputDecoration(
+                  border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
                   labelText: 'Location',
@@ -77,8 +81,8 @@ class _SleepFormState extends State<SleepForm> {
 }
 
 
-class PrimaryColorOverride extends StatelessWidget {
-  const PrimaryColorOverride({Key key, this.color, this.child})
+class _PrimaryColorOverride extends StatelessWidget {
+  const _PrimaryColorOverride({Key key, this.color, this.child})
       : super(key: key);
 
   final Color color;

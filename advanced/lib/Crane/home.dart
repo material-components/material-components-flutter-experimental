@@ -15,7 +15,7 @@
 import 'package:flutter/material.dart';
 
 import 'model/data.dart';
-import 'model/product.dart';
+import 'model/flight.dart';
 
 class HomePage extends StatelessWidget {
 

@@ -15,6 +15,7 @@
 import 'package:flutter/material.dart';
 
 import 'colors.dart';
+import 'no_paint_rounded_border.dart';
 
 class FlyForm extends StatefulWidget {
   @override
@@ -35,11 +36,12 @@ class _FlyFormState extends State<FlyForm> {
         child: ListView(
           padding: EdgeInsets.symmetric(horizontal: 24.0),
           children: <Widget>[
-            PrimaryColorOverride(
+            _PrimaryColorOverride(
               color: kCranePrimaryWhite,
               child: TextField(
                 controller: _travelerController,
                 decoration: InputDecoration(
+                  border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
                   labelText: 'Travelers',
@@ -47,11 +49,12 @@ class _FlyFormState extends State<FlyForm> {
               ),
             ),
             SizedBox(height: 8.0),
-            PrimaryColorOverride(
+            _PrimaryColorOverride(
               color: kCranePrimaryWhite,
               child: TextField(
                 controller: _countryDestinationController,
                 decoration: InputDecoration(
+                  border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
                   labelText: 'Country',
@@ -59,11 +62,12 @@ class _FlyFormState extends State<FlyForm> {
               ),
             ),
             SizedBox(height: 8.0),
-            PrimaryColorOverride(
+            _PrimaryColorOverride(
               color: kCranePrimaryWhite,
               child: TextField(
                 controller: _destinationController,
                 decoration: InputDecoration(
+                  border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
                   labelText: 'Destination',
@@ -71,11 +75,12 @@ class _FlyFormState extends State<FlyForm> {
               ),
             ),
             SizedBox(height: 8.0),
-            PrimaryColorOverride(
+            _PrimaryColorOverride(
               color: kCranePrimaryWhite,
               child: TextField(
                 controller: _dateController,
                 decoration: InputDecoration(
+                  border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
                   labelText: 'Dates',
@@ -90,8 +95,8 @@ class _FlyFormState extends State<FlyForm> {
 }
 
 
-class PrimaryColorOverride extends StatelessWidget {
-  const PrimaryColorOverride({Key key, this.color, this.child})
+class _PrimaryColorOverride extends StatelessWidget {
+  const _PrimaryColorOverride({Key key, this.color, this.child})
       : super(key: key);
 
   final Color color;

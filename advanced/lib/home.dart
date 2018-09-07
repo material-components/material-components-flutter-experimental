@@ -16,7 +16,8 @@ class MainHomePage extends StatelessWidget {
       body: Center(
         child: GridView.count(
           padding: EdgeInsets.all(4.0),
-          crossAxisCount: 2,
+          childAspectRatio: 2.0,
+          crossAxisCount: 1,
           children: <Widget>[
             GestureDetector(
               onTap: () {
@@ -42,25 +43,6 @@ class MainHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (BuildContext context) => IconsPage()),
-                );
-              },
-              child: Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: Material(
-                    color: Colors.white,
-                    child: Center(
-                        child: Text(
-                      'Icons',
-                      style: Theme.of(context).textTheme.display1,
-                    ))),
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
                       builder: (BuildContext context) => ShrineApp()),
                 );
               },
@@ -70,7 +52,7 @@ class MainHomePage extends StatelessWidget {
                     color: Colors.white,
                     child: Center(
                         child: Text(
-                      'Easy',
+                      'Shrine',
                       style: Theme.of(context).textTheme.display1,
                     ))),
               ),
@@ -80,36 +62,7 @@ class MainHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => ThemeColorOverride(
-                          color: kOwlYellow,
-                          secondary: kOwlBlue,
-                          textColor: Colors.black,
-                          child: OwlWidget(() {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    ThemeColorOverride(
-                                      color: kOwlRed,
-                                      secondary: kOwlRed,
-                                      textColor: Colors.white,
-                                      child: OwlWidget(() {
-                                        Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (BuildContext context) =>
-                                                  ThemeColorOverride(
-                                                      color: kOwlBlue,
-                                                      secondary: kOwlYellow,
-                                                      textColor: Colors.white,
-                                                      child: OwlWidget(() {}))),
-                                        );
-                                      }),
-                                    ),
-                              ),
-                            );
-                          }),
-                        ),
+                    builder: (BuildContext context) => OwlWidget(() {}),
                   ),
                 );
               },
