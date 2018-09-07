@@ -62,7 +62,7 @@ class MainHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => OwlWidget(() {}),
+                    builder: (BuildContext context) => OwlWidget(),
                   ),
                 );
               },
