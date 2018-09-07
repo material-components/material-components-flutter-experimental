@@ -340,7 +340,7 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
             ),
             Container(
               height: 100.0,
-              width: mediaSize.width - 104.0,
+              width: mediaSize.width - 72.0,
               child: _SplashOverride(
                 color: kCraneAlpha,
                 child: TabBar(
