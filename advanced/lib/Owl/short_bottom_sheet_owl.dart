@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';
 
+import 'colors.dart';
+
 
 // Curves that represent the two curves that compose the emphasized easing curve.
 const Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
@@ -253,7 +255,7 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
     final double screenWidth = screenSize.width;
     final double screenHeight = screenSize.height;
 
-    _width = 70.0;
+    _width = 50.0;
     _widthAnimation = _getWidthAnimation(screenWidth);
     _heightAnimation = _getHeightAnimation(screenHeight);
     _shapeAnimation = _getShapeAnimation();
@@ -266,15 +268,17 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
       child: Material(
         type: MaterialType.canvas,
         animationDuration: Duration(milliseconds: 0),
-        shape: BeveledRectangleBorder(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(_shapeAnimation.value)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(_width))
         ),
         elevation: 4.0,
-        color: Colors.orange,
+        color: kOwlRed,
         child: _cartIsVisible
             ? _buildShoppingCartPage()
-            : Icon(Icons.star),
+            : Padding(
+              padding: const EdgeInsets.all(21.0),
+              child: Icon(Icons.playlist_play),
+            ),
       ),
     );
   }
