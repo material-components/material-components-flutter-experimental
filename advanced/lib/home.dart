@@ -10,13 +10,13 @@ class MainHomePage extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('Android Summit 2018'),
+        title: Text('Advanced Components'),
       ),
       backgroundColor: Colors.grey.shade100,
       body: Center(
         child: GridView.count(
           padding: EdgeInsets.all(4.0),
-          childAspectRatio: 2.0,
+          childAspectRatio: 2.5,
           crossAxisCount: 1,
           children: <Widget>[
             GestureDetector(
@@ -24,7 +24,8 @@ class MainHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (BuildContext context) => CraneApp()),
+                    builder: (BuildContext context) => OwlWidget(),
+                  ),
                 );
               },
               child: Padding(
@@ -33,9 +34,9 @@ class MainHomePage extends StatelessWidget {
                     color: Colors.white,
                     child: Center(
                         child: Text(
-                      'Crane',
-                      style: Theme.of(context).textTheme.display1,
-                    ))),
+                          'Owl',
+                          style: Theme.of(context).textTheme.display1,
+                        ))),
               ),
             ),
             GestureDetector(
@@ -52,9 +53,9 @@ class MainHomePage extends StatelessWidget {
                     color: Colors.white,
                     child: Center(
                         child: Text(
-                      'Shrine',
-                      style: Theme.of(context).textTheme.display1,
-                    ))),
+                          'Shrine',
+                          style: Theme.of(context).textTheme.display1,
+                        ))),
               ),
             ),
             GestureDetector(
@@ -62,8 +63,7 @@ class MainHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => OwlWidget(),
-                  ),
+                      builder: (BuildContext context) => CraneApp()),
                 );
               },
               child: Padding(
@@ -72,7 +72,7 @@ class MainHomePage extends StatelessWidget {
                     color: Colors.white,
                     child: Center(
                         child: Text(
-                      'Owl',
+                      'Crane',
                       style: Theme.of(context).textTheme.display1,
                     ))),
               ),
