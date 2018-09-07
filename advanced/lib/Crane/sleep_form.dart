@@ -40,6 +40,7 @@ class _SleepFormState extends State<SleepForm> {
               child: TextField(
                 controller: _travelerController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/person.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -53,6 +54,7 @@ class _SleepFormState extends State<SleepForm> {
               child: TextField(
                 controller: _dateController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/calendar.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -66,6 +68,10 @@ class _SleepFormState extends State<SleepForm> {
               child: TextField(
                 controller: _locationController,
                 decoration: InputDecoration(
+                  prefixIcon: Padding(
+                    padding: EdgeInsets.fromLTRB(7.0, 12.0, 7.0, 12.0),
+                    child: Image.asset('assets/hotel.png'),
+                  ),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,

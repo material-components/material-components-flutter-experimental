@@ -41,6 +41,7 @@ class _EatFormState extends State<EatForm> {
               child: TextField(
                 controller: _dinerController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/person.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -54,6 +55,7 @@ class _EatFormState extends State<EatForm> {
               child: TextField(
                 controller: _dateController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/calendar.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -67,6 +69,7 @@ class _EatFormState extends State<EatForm> {
               child: TextField(
                 controller: _timeController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/time.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -80,6 +83,7 @@ class _EatFormState extends State<EatForm> {
               child: TextField(
                 controller: _locationController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/food.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,

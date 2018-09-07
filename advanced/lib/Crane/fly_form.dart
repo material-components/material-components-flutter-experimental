@@ -41,6 +41,7 @@ class _FlyFormState extends State<FlyForm> {
               child: TextField(
                 controller: _travelerController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/person.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -54,6 +55,10 @@ class _FlyFormState extends State<FlyForm> {
               child: TextField(
                 controller: _countryDestinationController,
                 decoration: InputDecoration(
+                  prefixIcon: Padding(
+                    padding: EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
+                    child: Image.asset('assets/pin.png'),
+                  ),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -67,6 +72,7 @@ class _FlyFormState extends State<FlyForm> {
               child: TextField(
                 controller: _destinationController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/plane.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,
@@ -80,6 +86,7 @@ class _FlyFormState extends State<FlyForm> {
               child: TextField(
                 controller: _dateController,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset('assets/calendar.png'),
                   border: PaintlessRoundedBorder(),
                   fillColor: kCranePurple700,
                   filled: true,

@@ -64,6 +64,15 @@ flutter:
   - assets/4.png
   - assets/5.png
   - assets/6.png
+  - assets/logo.png
+  - assets/person.png
+  - assets/plane.png
+  - assets/pin.png
+  - assets/calendar.png
+  - assets/hotel.png
+  - assets/time.png
+  - assets/food.png
+  - assets/menu_logo.png
 
   fonts:
   - family: Rubik

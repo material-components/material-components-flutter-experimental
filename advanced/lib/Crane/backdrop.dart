@@ -20,7 +20,6 @@ import 'model/flight.dart';
 import 'model/data.dart';
 import 'colors.dart';
 import 'border_tab_indicator.dart';
-import 'no_paint_rounded_border.dart';
 //import 'menu_page.dart';
 
 enum MenuStatus { open, closed }
@@ -313,15 +312,21 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
       // TODO(tianlun): Replace IconButton icon with Crane logo.
       flexibleSpace: SafeArea(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             _SplashOverride(
               color: kCraneAlpha,
               child: Container(
-                padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+//                width: 80.0,
+                padding: EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 0.0),
                 child: IconButton(
-                  icon: Icon(Icons.menu),
+                  iconSize: 72.0,
+                  padding: EdgeInsets.all(0.0),
+                  icon: Image.asset(
+                    'assets/menu_logo.png',
+                    fit: BoxFit.cover,
+                  ),
                   onPressed: () {
 //                    setState(() {
 //                    _menuStatus = MenuStatus.open;
@@ -335,7 +340,7 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
             ),
             Container(
               height: 100.0,
-              width: mediaSize.width - 52.0,
+              width: mediaSize.width - 104.0,
               child: _SplashOverride(
                 color: kCraneAlpha,
                 child: TabBar(
@@ -348,10 +353,10 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
                       child: FlatButton(
                         child: Text(
                           'FLY',
-//                          style: Theme.of(context).textTheme.body2.copyWith(
-//                            color: kCranePrimaryWhite,
-//                            fontWeight: FontWeight.w600,
-//                          ),
+                          style: Theme.of(context).textTheme.caption.copyWith(
+                            color: kCranePrimaryWhite,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                         textColor: kCranePrimaryWhite,
                         shape: RoundedRectangleBorder(
@@ -366,10 +371,10 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
                       child: FlatButton(
                         child: Text(
                           'SLEEP',
-//                          style: Theme.of(context).textTheme.body2.copyWith(
-//                            color: kCranePrimaryWhite,
-//                            fontWeight: FontWeight.w600,
-//                          ),
+                          style: Theme.of(context).textTheme.caption.copyWith(
+                            color: kCranePrimaryWhite,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                         textColor: kCranePrimaryWhite,
                         shape: RoundedRectangleBorder(
@@ -384,10 +389,10 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
                       child: FlatButton(
                         child: Text(
                           'EAT',
-//                          style: Theme.of(context).textTheme.body2.copyWith(
-//                            color: kCranePrimaryWhite,
-//                            fontWeight: FontWeight.w600,
-//                          ),
+                          style: Theme.of(context).textTheme.caption.copyWith(
+                            color: kCranePrimaryWhite,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                         textColor: kCranePrimaryWhite,
                         shape: RoundedRectangleBorder(
@@ -412,71 +417,22 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
             body: Stack(
               children: <Widget>[
                 widget.backLayer[0],
-                  SlideTransition(
-                    transformHitTests: false,
-                    position: Tween<Offset>(
-                      begin: Offset(0.0, 0.0),
-                      end: Offset(0.0 - _kFlingValue, 0.0),
-                    ).animate(
-                      CurvedAnimation(
-                        parent: _xController,
-                        curve: Interval(0.0, 1.0),
-                        reverseCurve: Interval(0.0, 1.0).flipped,
-                      ),
-                    ),
-                    child: LayoutBuilder(
+                TabBarView(
+                  controller: _tabController,
+                  children: <Widget>[
+                    LayoutBuilder(
                       builder: _buildFlyStack,
                     ),
-                  ),
-                  SlideTransition(
-                    transformHitTests: false,
-                    position: Tween<Offset>(
-                      begin: Offset(1.0 + transitionPadding, 0.0),
-                      end: Offset(1.0 - _kFlingValue, 0.0),
-                    ).animate(
-                      CurvedAnimation(
-                        parent: _xController,
-                        curve: Interval(0.0, 1.0),
-                        reverseCurve: Interval(0.0, 1.0).flipped,
-                      ),
-                    ),
-                    child: LayoutBuilder(
+                    LayoutBuilder(
                       builder: _buildSleepStack,
                     ),
-                  ),
-//                 SlideTransition(
-//                  position: Tween<Offset>(
-//                    begin: Offset(0.0, 0.0),
-//                    end: Offset(-1.0, 0.0),
-//                  ).animate(
-//                    CurvedAnimation(
-//                      parent: _yController,
-//                      curve: Interval(0.0, 1.0),
-//                      reverseCurve: Interval(0.0, 1.0).flipped,
-//                    ),
-//                  ),
-//                  child: LayoutBuilder(
-//                    builder: _buildSleepStack,
-//                  ),
-//                ),
-                SlideTransition(
-                  transformHitTests: false,
-                  position: Tween<Offset>(
-                    begin: Offset(2.0 + transitionPadding, 0.0),
-                    end: Offset(2.0 - _kFlingValue, 0.0),
-                  ).animate(
-                    CurvedAnimation(
-                      parent: _xController,
-                      curve: Interval(0.0, 1.0),
-                      reverseCurve: Interval(0.0, 1.0).flipped,
+                    LayoutBuilder(
+                      builder: _buildEatStack,
                     ),
-                  ),
-                  child: LayoutBuilder(
-                    builder: _buildEatStack,
-                  ),
+                  ],
                 ),
               ],
-            ),
+            )
           ),
           AnimatedBuilder(
             animation: _controller,

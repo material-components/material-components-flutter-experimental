@@ -80,7 +80,7 @@ class _BorderPainter extends BoxPainter {
       indicator.left + indicator.width / 2.0 - 36.0,
       indicator.top + (indicator.height - 32.0) / 2.0,
       72.0,
-      32.0, // TODO(tianlun): Add as constants
+      30.0,
     );
   }
 
