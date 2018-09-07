@@ -7,28 +7,51 @@ class OwlWidget extends StatefulWidget {
   State<StatefulWidget> createState() => _OwlState();
 }
 
+const TextTheme textThemeOwl = TextTheme(
+  subhead: TextStyle(
+    color: kOwlRed,
+    fontSize: 20.0,
+    fontFamily: 'Rubik',
+    fontWeight: FontWeight.w500,
+  ),
+  display1: TextStyle(
+    color: Colors.black87,
+    fontSize: 30.0,
+    fontFamily: 'Rubik',
+    fontWeight: FontWeight.w400,
+  ),
+  body1: TextStyle(
+    color: Colors.black87,
+    height: 1.8,
+  ),
+  body2: TextStyle(
+    color: Colors.black87,
+  ),
+  title: TextStyle(
+    color: Colors.black87,
+    fontSize: 20.0,
+    fontFamily: 'Rubik',
+    fontWeight: FontWeight.w800,
+  ),
+  caption: TextStyle(
+    color: Colors.black87,
+    fontSize: 14.0,
+    fontFamily: 'Rubik',
+    fontWeight: FontWeight.w500,
+  ),
+  button: TextStyle(
+    color: Colors.black38,
+    fontSize: 14.0,
+    fontFamily: 'Rubik',
+    fontWeight: FontWeight.w500,
+  ),
+
+);
+
 class _OwlState extends State<OwlWidget> with SingleTickerProviderStateMixin {
   AnimationController _controller;
   ShortBottomSheetOwl shortBottomSheet;
 
-  static TextTheme textThemeOwl = TextTheme(
-    subhead: TextStyle(
-      color: kOwlRed,
-      fontSize: 20.0,
-      fontFamily: 'Rubik',
-      fontWeight: FontWeight.w500,
-    ),
-    display1: TextStyle(
-      color: Colors.black87,
-      fontSize: 30.0,
-      fontFamily: 'Rubik',
-      fontWeight: FontWeight.w400,
-    ),
-    body1: TextStyle(
-      color: Colors.black87,
-      height: 1.8,
-    ),
-  );
 
   @override
   void initState() {

@@ -3,9 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:meta/meta.dart';
+import 'package:scoped_model/scoped_model.dart';
 
 import 'colors.dart';
-
+import '../Shrine/model/app_state_model.dart';
+import 'owl.dart';
 
 // Curves that represent the two curves that compose the emphasized easing curve.
 const Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
@@ -19,7 +21,7 @@ const double _kCartHeight = 56.0;
 const double _kCornerRadius = 24.0;
 
 class ShortBottomSheetOwl extends StatefulWidget {
-  const ShortBottomSheetOwl({ Key key, @required this.hideController })
+  const ShortBottomSheetOwl({Key key, @required this.hideController})
       : assert(hideController != null),
         super(key: key);
 
@@ -28,7 +30,8 @@ class ShortBottomSheetOwl extends StatefulWidget {
   @override
   _ShortBottomSheetOwlState createState() => _ShortBottomSheetOwlState();
 
-  static _ShortBottomSheetOwlState of(BuildContext context, { bool isNullOk: false }) {
+  static _ShortBottomSheetOwlState of(BuildContext context,
+      {bool isNullOk: false}) {
     assert(isNullOk != null);
     assert(context != null);
     final _ShortBottomSheetOwlState result = context
@@ -37,12 +40,12 @@ class ShortBottomSheetOwl extends StatefulWidget {
       return result;
     }
     throw FlutterError(
-      'ShortBottomSheet.of() called with a context that does not contain a ShortBottomSheet.\n'
-    );
+        'ShortBottomSheet.of() called with a context that does not contain a ShortBottomSheet.\n');
   }
 }
 
-class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerProviderStateMixin {
+class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl>
+    with TickerProviderStateMixin {
   final GlobalKey _shortBottomSheetKey =
       GlobalKey(debugLabel: 'Short bottom sheet');
   // The width of the Material, calculated by _getWidth & based on the number of
@@ -123,13 +126,15 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
           TweenSequenceItem<double>(
             tween: Tween<double>(
               begin: _kCartHeight,
-              end: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+              end: _kCartHeight +
+                  (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
             ).chain(CurveTween(curve: _kAccelerateCurve)),
             weight: _kPeakVelocityTime,
           ),
           TweenSequenceItem<double>(
             tween: Tween<double>(
-              begin: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+              begin: _kCartHeight +
+                  (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
               end: screenHeight,
             ).chain(CurveTween(curve: _kDecelerateCurve)),
             weight: 1 - _kPeakVelocityTime,
@@ -149,7 +154,8 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
             1.0,
             curve: Curves.fastOutSlowIn,
           ),
-          reverseCurve: Interval( // only the reverseCurve will be used
+          reverseCurve: Interval(
+            // only the reverseCurve will be used
             0.0,
             0.566,
             curve: Curves.fastOutSlowIn,
@@ -221,7 +227,8 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
   // Returns true if the cart is open or opening and false otherwise.
   bool get _isOpen {
     final AnimationStatus status = _controller.status;
-    return status == AnimationStatus.completed || status == AnimationStatus.forward;
+    return status == AnimationStatus.completed ||
+        status == AnimationStatus.forward;
   }
 
   // Opens the ShortBottomSheet if it's closed, otherwise does nothing.
@@ -238,13 +245,292 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
     }
   }
 
-
   bool get _cartIsVisible => _thumbnailOpacityAnimation.value == 0.0;
 
   Widget _buildShoppingCartPage() {
     return Opacity(
       opacity: _cartOpacityAnimation.value,
-      child: null,
+      child: Scaffold(
+        backgroundColor: kOwlRed,
+        appBar: AppBar(
+          brightness: Brightness.light,
+          automaticallyImplyLeading: false,
+          elevation: 0.0,
+          actions: <Widget>[
+            IconButton(
+              onPressed: close,
+              icon: Icon(
+                Icons.expand_more,
+                color: Colors.black87,
+              ),
+            )
+          ],
+          iconTheme:
+              Theme.of(context).iconTheme.copyWith(color: Colors.black87),
+          backgroundColor: kOwlRed,
+          title: Text(
+            'Glamping Videos',
+            style: textThemeOwl.title,
+          ),
+        ),
+        body: ListView(
+          children: <Widget>[
+            Divider(color: Colors.black54),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '01',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'An Introduction to the Landscape',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '4:14',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/0.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '02',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'Movement and Expression',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '7:28',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/1.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '03',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'Composition and the Urban Canvas',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '3:43',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/2.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '04',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'Lighting Technique and Aesthetics',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '4:45',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/4.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '05',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'Special Effects',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '6:19',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/6.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '06',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'Techniques with Structures',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '9:41',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/0.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '07',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'Landscapes and Climate Change: Is it too late?',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '40:28',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/2.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '01',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'An Introduction to the Landscape',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '4:14',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/0.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+            ListTile(
+              contentPadding: EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 8.0),
+              trailing: SizedBox(
+                  width: 40.0,
+                  child: Text(
+                    '01',
+                    style: textThemeOwl.button,
+                  )),
+              title: Text(
+                'An Introduction to the Landscape',
+                style: textThemeOwl.caption,
+              ),
+              subtitle: Text(
+                '4:14',
+                style: textThemeOwl.body1,
+              ),
+              leading:
+                  SizedBox(height: 60.0, child: Image.asset('assets/0.png')),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  width: 100.0,
+                ),
+                Expanded(child: Divider(color: Colors.black54)),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -269,16 +555,16 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
         type: MaterialType.canvas,
         animationDuration: Duration(milliseconds: 0),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(topLeft: Radius.circular(_width))
-        ),
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(_shapeAnimation.value * _width))),
         elevation: 4.0,
         color: kOwlRed,
         child: _cartIsVisible
             ? _buildShoppingCartPage()
             : Padding(
-              padding: const EdgeInsets.all(21.0),
-              child: Icon(Icons.playlist_play),
-            ),
+                padding: const EdgeInsets.all(21.0),
+                child: Icon(Icons.playlist_play),
+              ),
       ),
     );
   }
@@ -303,21 +589,21 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
     }
 
     _slideAnimation = TweenSequence(
-            <TweenSequenceItem<Offset>>[
-              TweenSequenceItem<Offset>(
-                  tween: Tween<Offset>(
-                    begin: Offset(1.0, 0.0),
-                    end: Offset(_kPeakVelocityProgress, 0.0),
-                  ).chain(CurveTween(curve: firstCurve)),
-                  weight: firstWeight),
-              TweenSequenceItem<Offset>(
-                  tween: Tween<Offset>(
-                    begin: Offset(_kPeakVelocityProgress, 0.0),
-                    end: Offset(0.0, 0.0),
-                  ).chain(CurveTween(curve: secondCurve)),
-                  weight: secondWeight),
-            ],
-          ).animate(widget.hideController);
+      <TweenSequenceItem<Offset>>[
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(1.0, 0.0),
+              end: Offset(_kPeakVelocityProgress, 0.0),
+            ).chain(CurveTween(curve: firstCurve)),
+            weight: firstWeight),
+        TweenSequenceItem<Offset>(
+            tween: Tween<Offset>(
+              begin: Offset(_kPeakVelocityProgress, 0.0),
+              end: Offset(0.0, 0.0),
+            ).chain(CurveTween(curve: secondCurve)),
+            weight: secondWeight),
+      ],
+    ).animate(widget.hideController);
 
     return SlideTransition(
       position: _slideAnimation,
@@ -347,7 +633,12 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl> with TickerPr
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: open,
-            child: _buildCart(context, null),
+            child: ScopedModelDescendant<AppStateModel>(
+              builder: (context, child, model) => AnimatedBuilder(
+                    builder: _buildCart,
+                    animation: _controller,
+                  ),
+            ),
           ),
         ),
       ),
