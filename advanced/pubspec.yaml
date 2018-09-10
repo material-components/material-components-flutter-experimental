@@ -1,5 +1,5 @@
 name: advanced_components_and_theming
-description: For talk given at Android Summit 2018.
+description: [Work in progress] Demonstrations of expanding bottom sheet and backdrop choreography.
 
 dependencies:
   flutter:
