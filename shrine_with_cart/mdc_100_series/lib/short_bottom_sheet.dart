@@ -471,34 +471,24 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
         ScopedModel.of<AppStateModel>(context).getProductById(item));
   }
 
-  Widget _buildThumbnail(
-      BuildContext context, int index, Animation<double> animation) {
-    Animation<double> thumbnailSize =
-        Tween<double>(begin: 0.8, end: 1.0).animate(
+  Widget _buildThumbnail(BuildContext context, int index, Animation<double> animation) {
+    Animation<double> thumbnailSize = Tween<double>(begin: 0.8, end: 1.0).animate(
       CurvedAnimation(
-        curve: Interval(
-          0.33,
-          1.0,
-          curve: Curves.easeIn,
-        ),
+        curve: Interval(0.33, 1.0, curve: Curves.easeIn),
         parent: animation,
       ),
     );
 
     Animation<double> opacity = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
-        curve: Interval(
-          0.33,
-          1.0,
-          curve: Curves.linear,
-        ),
+        curve: Interval(0.33, 1.0, curve: Curves.linear),
         parent: animation,
       ),
     );
 
-    AppStateModel model = ScopedModel.of<AppStateModel>(context);
-    int productId = _list[index];
-    Product product = model.getProductById(productId);
+    final AppStateModel model = ScopedModel.of<AppStateModel>(context);
+    final int productId = _list[index];
+    final Product product = model.getProductById(productId);
     assert(product != null);
 
     return ProductThumbnail(thumbnailSize, opacity, product);
