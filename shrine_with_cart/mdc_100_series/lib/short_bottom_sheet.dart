@@ -45,7 +45,8 @@ class ShortBottomSheet extends StatefulWidget {
   }
 }
 
-class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProviderStateMixin {
+class _ShortBottomSheetState extends State<ShortBottomSheet>
+    with TickerProviderStateMixin {
   final GlobalKey _shortBottomSheetKey =
       GlobalKey(debugLabel: 'Short bottom sheet');
   // The width of the Material, calculated by _getWidth & based on the number of
@@ -152,7 +153,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
             1.0,
             curve: Curves.fastOutSlowIn,
           ),
-          reverseCurve: Interval( // only the reverseCurve will be used
+          reverseCurve: Interval(
+            // only the reverseCurve will be used
             0.0,
             0.566,
             curve: Curves.fastOutSlowIn,
@@ -204,20 +206,22 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
   Animation<double> _getThumbnailOpacityAnimation() {
     return Tween<double>(begin: 1.0, end: 0.0).animate(
       CurvedAnimation(
-          parent: _controller.view,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.0, 0.3)
-              : Interval(0.234, 0.468).flipped),
+        parent: _controller.view,
+        curve: _controller.status == AnimationStatus.forward
+            ? Interval(0.0, 0.3)
+            : Interval(0.234, 0.468).flipped,
+      ),
     );
   }
 
   Animation<double> _getCartOpacityAnimation() {
     return Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
-          parent: _controller.view,
-          curve: _controller.status == AnimationStatus.forward
-              ? Interval(0.3, 0.6)
-              : Interval(0.0, 0.234).flipped),
+        parent: _controller.view,
+        curve: _controller.status == AnimationStatus.forward
+            ? Interval(0.3, 0.6)
+            : Interval(0.0, 0.234).flipped,
+      ),
     );
   }
 
@@ -342,7 +346,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
           animationDuration: Duration(milliseconds: 0),
           shape: BeveledRectangleBorder(
             borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(_shapeAnimation.value)),
+              topLeft: Radius.circular(_shapeAnimation.value),
+            ),
           ),
           elevation: 4.0,
           color: kShrinePink50,
@@ -374,21 +379,23 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     }
 
     _slideAnimation = TweenSequence(
-            <TweenSequenceItem<Offset>>[
-              TweenSequenceItem<Offset>(
-                  tween: Tween<Offset>(
-                    begin: Offset(1.0, 0.0),
-                    end: Offset(_kPeakVelocityProgress, 0.0),
-                  ).chain(CurveTween(curve: firstCurve)),
-                  weight: firstWeight),
-              TweenSequenceItem<Offset>(
-                  tween: Tween<Offset>(
-                    begin: Offset(_kPeakVelocityProgress, 0.0),
-                    end: Offset(0.0, 0.0),
-                  ).chain(CurveTween(curve: secondCurve)),
-                  weight: secondWeight),
-            ],
-          ).animate(widget.hideController);
+      <TweenSequenceItem<Offset>>[
+        TweenSequenceItem<Offset>(
+          tween: Tween<Offset>(
+            begin: Offset(1.0, 0.0),
+            end: Offset(_kPeakVelocityProgress, 0.0),
+          ).chain(CurveTween(curve: firstCurve)),
+          weight: firstWeight,
+        ),
+        TweenSequenceItem<Offset>(
+          tween: Tween<Offset>(
+            begin: Offset(_kPeakVelocityProgress, 0.0),
+            end: Offset(0.0, 0.0),
+          ).chain(CurveTween(curve: secondCurve)),
+          weight: secondWeight,
+        ),
+      ],
+    ).animate(widget.hideController);
 
     return SlideTransition(
       position: _slideAnimation,
@@ -419,10 +426,12 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
             behavior: HitTestBehavior.opaque,
             onTap: open,
             child: ScopedModelDescendant<AppStateModel>(
-              builder: (context, child, model) => AnimatedBuilder(
-                builder: _buildCart,
-                animation: _controller,
-              ),
+              builder: (context, child, model) {
+                return AnimatedBuilder(
+                  builder: _buildCart,
+                  animation: _controller,
+                );
+              },
             ),
           ),
         ),
@@ -478,12 +487,13 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
 
     Animation<double> opacity = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
-          curve: Interval(
-            0.33,
-            1.0,
-            curve: Curves.linear,
-          ),
-          parent: animation),
+        curve: Interval(
+          0.33,
+          1.0,
+          curve: Curves.linear,
+        ),
+        parent: animation,
+      ),
     );
 
     AppStateModel model = ScopedModel.of<AppStateModel>(context);
@@ -535,7 +545,8 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
   Widget build(BuildContext context) {
     _updateLists();
     return ScopedModelDescendant<AppStateModel>(
-        builder: (context, child, model) => _buildAnimatedList());
+        builder: (context, child, model) => _buildAnimatedList(),
+    );
   }
 }
 
@@ -577,7 +588,8 @@ class ExtraProductsNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScopedModelDescendant<AppStateModel>(
-        builder: (builder, child, model) => _buildOverflow(model, context));
+        builder: (builder, child, model) => _buildOverflow(model, context),
+    );
   }
 }
 
