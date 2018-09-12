@@ -84,11 +84,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       return Tween<double>(begin: _width, end: screenWidth).animate(
         CurvedAnimation(
           parent: _controller.view,
-          curve: Interval(
-            0.0,
-            0.3,
-            curve: Curves.fastOutSlowIn,
-          ),
+          curve: Interval(0.0, 0.3, curve: Curves.fastOutSlowIn),
         ),
       );
     } else {
@@ -169,11 +165,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       return Tween<double>(begin: _kCornerRadius, end: 0.0).animate(
         CurvedAnimation(
           parent: _controller.view,
-          curve: Interval(
-            0.0,
-            0.3,
-            curve: Curves.fastOutSlowIn,
-          ),
+          curve: Interval(0.0, 0.3, curve: Curves.fastOutSlowIn),
         ),
       );
     } else {
@@ -564,8 +556,7 @@ class ExtraProductsNumber extends StatelessWidget {
     if (model.productsInCart.length > 3) {
       int numOverflowProducts = _calculateOverflow(model);
       // Maximum of 99 so padding doesn't get messy.
-      int displayedOverflowProducts =
-          numOverflowProducts <= 99 ? numOverflowProducts : 99;
+      int displayedOverflowProducts = numOverflowProducts <= 99 ? numOverflowProducts : 99;
       return Container(
         child: Text('+$displayedOverflowProducts',
             style: Theme.of(context).primaryTextTheme.button),
