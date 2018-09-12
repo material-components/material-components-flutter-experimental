@@ -288,9 +288,9 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
             ),
             Container(
               width: ScopedModel.of<AppStateModel>(context)
-                          .productsInCart
-                          .keys
-                          .length > 3
+                                .productsInCart
+                                .keys
+                                .length > 3
                   ? _width - 94 // Accounts for the overflow number
                   : _width - 64,
               height: _kCartHeight,
