@@ -20,6 +20,8 @@ const double _kPeakVelocityProgress = 0.379146;
 const double _kCartHeight = 56.0;
 // Radius of the shape on the top left of the sheet.
 const double _kCornerRadius = 24.0;
+// Width for just the cart icon and no thumbnails.
+const double _kWidthForCartIcon = 64.0;
 
 class ShortBottomSheet extends StatefulWidget {
   const ShortBottomSheet({ Key key, @required this.hideController })
@@ -45,13 +47,13 @@ class ShortBottomSheet extends StatefulWidget {
   }
 }
 
-class _ShortBottomSheetState extends State<ShortBottomSheet>
-    with TickerProviderStateMixin {
-  final GlobalKey _shortBottomSheetKey =
-      GlobalKey(debugLabel: 'Short bottom sheet');
-  // The width of the Material, calculated by _getWidth & based on the number of
-  // products in the cart.
-  double _width;
+class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProviderStateMixin {
+  final GlobalKey _shortBottomSheetKey = GlobalKey(debugLabel: 'Short bottom sheet');
+
+  // The width of the Material, calculated by _widthFor() & based on the number
+  // of products in the cart. 64.0 is the width when there are 0 products
+  // (_kWidthForZeroProducts)
+  double _width = _kWidthForCartIcon;
   // Controller for the opening and closing of the ShortBottomSheet
   AnimationController _controller;
   // Animations for the opening and closing of the ShortBottomSheet
@@ -65,7 +67,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   @override
   void initState() {
     super.initState();
-    _width = 64.0;
     _controller = AnimationController(
       duration: const Duration(milliseconds: 500),
       vsync: this,
@@ -92,18 +93,18 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       return TweenSequence(
         <TweenSequenceItem<double>>[
           TweenSequenceItem<double>(
+            weight: 1.0 - _kPeakVelocityTime,
             tween: Tween<double>(
               begin: _width,
-              end: _width + (screenWidth - _width) * (_kPeakVelocityProgress),
+              end: _width + (screenWidth - _width) * _kPeakVelocityProgress,
             ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
-            weight: 1 - _kPeakVelocityTime,
           ),
           TweenSequenceItem<double>(
+            weight: _kPeakVelocityTime,
             tween: Tween<double>(
-              begin: _width + (screenWidth - _width) * (_kPeakVelocityProgress),
+              begin: _width + (screenWidth - _width) * _kPeakVelocityProgress,
               end: screenWidth,
             ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
-            weight: _kPeakVelocityTime,
           ),
         ],
       ).animate(
@@ -121,18 +122,18 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       return TweenSequence(
         <TweenSequenceItem<double>>[
           TweenSequenceItem<double>(
+            weight: _kPeakVelocityTime,
             tween: Tween<double>(
               begin: _kCartHeight,
               end: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
             ).chain(CurveTween(curve: _kAccelerateCurve)),
-            weight: _kPeakVelocityTime,
           ),
           TweenSequenceItem<double>(
+            weight: 1.0 - _kPeakVelocityTime,
             tween: Tween<double>(
               begin: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
               end: screenHeight,
             ).chain(CurveTween(curve: _kDecelerateCurve)),
-            weight: 1 - _kPeakVelocityTime,
           ),
         ],
       ).animate(_controller.view);
@@ -144,17 +145,9 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       ).animate(
         CurvedAnimation(
           parent: _controller.view,
-          curve: Interval(
-            0.434,
-            1.0,
-            curve: Curves.fastOutSlowIn,
-          ),
-          reverseCurve: Interval(
-            // only the reverseCurve will be used
-            0.0,
-            0.566,
-            curve: Curves.fastOutSlowIn,
-          ).flipped,
+          curve: Interval(0.434, 1.0, curve: Curves.fastOutSlowIn),
+          // only the reverseCurve will be used
+          reverseCurve: Interval(0.0, 0.566, curve: Curves.fastOutSlowIn).flipped,
         ),
       );
     }
@@ -172,18 +165,18 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
       return TweenSequence(
         <TweenSequenceItem<double>>[
           TweenSequenceItem<double>(
+            weight: 1.0 - _kPeakVelocityTime,
             tween: Tween<double>(
               begin: _kCornerRadius,
               end: _kCornerRadius * _kPeakVelocityProgress,
             ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
-            weight: 1 - _kPeakVelocityTime,
           ),
           TweenSequenceItem<double>(
+            weight: _kPeakVelocityTime,
             tween: Tween<double>(
               begin: _kCornerRadius * _kPeakVelocityProgress,
               end: 0.0,
             ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
-            weight: _kPeakVelocityTime,
           ),
         ],
       ).animate(
@@ -222,7 +215,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet>
   double _widthFor(int numProducts) {
     switch (numProducts) {
       case 0:
-        return 64.0;
+        return _kWidthForCartIcon;
         break;
       case 1:
         return 136.0;
