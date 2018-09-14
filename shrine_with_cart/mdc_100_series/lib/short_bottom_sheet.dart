@@ -390,7 +390,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
   // Closes the cart if the cart is open, otherwise exits the app (this should
   // only be relevant for Android).
-  Future<bool> _onWillPop() {
+  void _onWillPop() {
     _isOpen ? close() : SystemNavigator.pop();
   }
 
@@ -621,7 +621,7 @@ class ListModel {
     _animatedList.insertItem(index, duration: Duration(milliseconds: 225));
   }
 
-  int removeAt(int index) {
+  void removeAt(int index) {
     final int removedItem = _items.removeAt(index);
     if (removedItem != null) {
       _animatedList.removeItem(index,
