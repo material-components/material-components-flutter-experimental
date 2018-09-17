@@ -47,6 +47,62 @@ class ShortBottomSheet extends StatefulWidget {
   }
 }
 
+// Emphasized Easing is a motion curve that has an organic, exciting feeling.
+// It's very fast to begin with and then very slow to finish. Unlike standard
+// curves, like [Curves.fastOutSlowIn], it can't be expressed in a cubic bezier
+// curve formula. It's quintic, not cubic. But it _can_ be expressed as one
+// curve followed by another, which we do here.
+Animation<T> _getEmphasizedEasingAnimation<T>({
+    @required T begin,
+    @required T peak,
+    @required T end,
+    @required bool isForward,
+    @required Animation parent
+  }) {
+
+  Curve firstCurve;
+  Curve secondCurve;
+  double firstWeight;
+  double secondWeight;
+
+  if (isForward) {
+    firstCurve = _kAccelerateCurve;
+    secondCurve = _kDecelerateCurve;
+    firstWeight = _kPeakVelocityTime;
+    secondWeight = 1.0 - _kPeakVelocityTime;
+  } else {
+    firstCurve = _kDecelerateCurve.flipped;
+    secondCurve = _kAccelerateCurve.flipped;
+    firstWeight = 1.0 - _kPeakVelocityTime;
+    secondWeight = _kPeakVelocityTime;
+  }
+
+  return TweenSequence(
+    <TweenSequenceItem<T>>[
+      TweenSequenceItem<T>(
+        weight: firstWeight,
+        tween: Tween<T>(
+          begin: begin,
+          end: peak,
+        ).chain(CurveTween(curve: firstCurve)),
+      ),
+      TweenSequenceItem<T>(
+        weight: secondWeight,
+        tween: Tween<T>(
+          begin: peak,
+          end: end,
+        ).chain(CurveTween(curve: secondCurve)),
+      ),
+    ],
+  ).animate(parent);
+}
+
+// Calculates the value where two double Animations should be joined. Used by
+// callers of _getEmphasisedEasing<double>().
+double _getPeakPoint({double begin, double end}) {
+  return begin + (end - begin) * _kPeakVelocityProgress;
+}
+
 class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProviderStateMixin {
   final GlobalKey _shortBottomSheetKey = GlobalKey(debugLabel: 'Short bottom sheet');
 
@@ -81,7 +137,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
   Animation<double> _getWidthAnimation(double screenWidth) {
     if (_controller.status == AnimationStatus.forward) {
-      // opening animation
+      // Opening animation
       return Tween<double>(begin: _width, end: screenWidth).animate(
         CurvedAnimation(
           parent: _controller.view,
@@ -89,56 +145,30 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         ),
       );
     } else {
-      // closing animation
-      return TweenSequence(
-        <TweenSequenceItem<double>>[
-          TweenSequenceItem<double>(
-            weight: 1.0 - _kPeakVelocityTime,
-            tween: Tween<double>(
-              begin: _width,
-              end: _width + (screenWidth - _width) * _kPeakVelocityProgress,
-            ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
-          ),
-          TweenSequenceItem<double>(
-            weight: _kPeakVelocityTime,
-            tween: Tween<double>(
-              begin: _width + (screenWidth - _width) * _kPeakVelocityProgress,
-              end: screenWidth,
-            ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
-          ),
-        ],
-      ).animate(
-        CurvedAnimation(
-          parent: _controller.view,
-          curve: Interval(0.0, 0.87),
-        ),
+      // Closing animation
+      return _getEmphasizedEasingAnimation(
+        begin: _width,
+        peak: _getPeakPoint(begin: _width, end: screenWidth),
+        end: screenWidth,
+        isForward: false,
+        parent: CurvedAnimation(parent: _controller.view, curve: Interval(0.0, 0.87)),
       );
     }
   }
 
   Animation<double> _getHeightAnimation(double screenHeight) {
     if (_controller.status == AnimationStatus.forward) {
-      // opening animation
-      return TweenSequence(
-        <TweenSequenceItem<double>>[
-          TweenSequenceItem<double>(
-            weight: _kPeakVelocityTime,
-            tween: Tween<double>(
-              begin: _kCartHeight,
-              end: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
-            ).chain(CurveTween(curve: _kAccelerateCurve)),
-          ),
-          TweenSequenceItem<double>(
-            weight: 1.0 - _kPeakVelocityTime,
-            tween: Tween<double>(
-              begin: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
-              end: screenHeight,
-            ).chain(CurveTween(curve: _kDecelerateCurve)),
-          ),
-        ],
-      ).animate(_controller.view);
+      // Opening animation
+
+      return _getEmphasizedEasingAnimation(
+        begin: _kCartHeight,
+        peak: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+        end: screenHeight,
+        isForward: true,
+        parent: _controller.view,
+      );
     } else {
-      // opening animation
+      // Closing animation
       return Tween<double>(
         begin: _kCartHeight,
         end: screenHeight,
@@ -147,12 +177,13 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
           parent: _controller.view,
           curve: Interval(0.434, 1.0, curve: Curves.fastOutSlowIn),
           // only the reverseCurve will be used
-          reverseCurve: Interval(0.0, 0.566, curve: Curves.fastOutSlowIn).flipped,
+          reverseCurve: Interval(0.434, 1.0, curve: Curves.fastOutSlowIn.flipped),
         ),
       );
     }
   }
 
+  // Animation of the cut corner. It's cut when closed and not cut when open.
   Animation<double> _getShapeAnimation() {
     if (_controller.status == AnimationStatus.forward) {
       return Tween<double>(begin: _kCornerRadius, end: 0.0).animate(
@@ -162,28 +193,12 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         ),
       );
     } else {
-      return TweenSequence(
-        <TweenSequenceItem<double>>[
-          TweenSequenceItem<double>(
-            weight: 1.0 - _kPeakVelocityTime,
-            tween: Tween<double>(
-              begin: _kCornerRadius,
-              end: _kCornerRadius * _kPeakVelocityProgress,
-            ).chain(CurveTween(curve: _kDecelerateCurve.flipped)),
-          ),
-          TweenSequenceItem<double>(
-            weight: _kPeakVelocityTime,
-            tween: Tween<double>(
-              begin: _kCornerRadius * _kPeakVelocityProgress,
-              end: 0.0,
-            ).chain(CurveTween(curve: _kAccelerateCurve.flipped)),
-          ),
-        ],
-      ).animate(
-        CurvedAnimation(
-          parent: _controller.view,
-          curve: Interval(0.0, 0.87),
-        ),
+      return _getEmphasizedEasingAnimation(
+        begin: _kCornerRadius,
+        peak: _getPeakPoint(begin: _kCornerRadius, end: 0.0),
+        end: 0.0,
+        isForward: false,
+        parent: _controller.view,
       );
     }
   }
@@ -194,7 +209,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         parent: _controller.view,
         curve: _controller.status == AnimationStatus.forward
             ? Interval(0.0, 0.3)
-            : Interval(0.234, 0.468).flipped,
+            : Interval(0.532, 0.766),
       ),
     );
   }
@@ -205,7 +220,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         parent: _controller.view,
         curve: _controller.status == AnimationStatus.forward
             ? Interval(0.3, 0.6)
-            : Interval(0.0, 0.234).flipped,
+            : Interval(0.766, 1.0),
       ),
     );
   }
@@ -346,41 +361,13 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
   // Builder for the hide and reveal animation when the backdrop opens and closes
   Widget _buildSlideAnimation(BuildContext context, Widget child) {
-    Curve firstCurve;
-    Curve secondCurve;
-    double firstWeight;
-    double secondWeight;
-
-    if (widget.hideController.status == AnimationStatus.forward) {
-      firstCurve = _kAccelerateCurve;
-      secondCurve = _kDecelerateCurve;
-      firstWeight = _kPeakVelocityTime;
-      secondWeight = 1.0 - _kPeakVelocityTime;
-    } else {
-      firstCurve = _kDecelerateCurve.flipped;
-      secondCurve = _kAccelerateCurve.flipped;
-      firstWeight = 1.0 - _kPeakVelocityTime;
-      secondWeight = _kPeakVelocityTime;
-    }
-
-    _slideAnimation = TweenSequence(
-      <TweenSequenceItem<Offset>>[
-        TweenSequenceItem<Offset>(
-          tween: Tween<Offset>(
-            begin: Offset(1.0, 0.0),
-            end: Offset(_kPeakVelocityProgress, 0.0),
-          ).chain(CurveTween(curve: firstCurve)),
-          weight: firstWeight,
-        ),
-        TweenSequenceItem<Offset>(
-          tween: Tween<Offset>(
-            begin: Offset(_kPeakVelocityProgress, 0.0),
-            end: Offset(0.0, 0.0),
-          ).chain(CurveTween(curve: secondCurve)),
-          weight: secondWeight,
-        ),
-      ],
-    ).animate(widget.hideController);
+    _slideAnimation = _getEmphasizedEasingAnimation(
+        begin: Offset(1.0, 0.0),
+        peak: Offset(_kPeakVelocityProgress, 0.0),
+        end: Offset(0.0, 0.0),
+        isForward: widget.hideController.status == AnimationStatus.forward,
+        parent: widget.hideController,
+    );
 
     return SlideTransition(
       position: _slideAnimation,
@@ -390,8 +377,13 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
   // Closes the cart if the cart is open, otherwise exits the app (this should
   // only be relevant for Android).
-  void _onWillPop() {
-    _isOpen ? close() : SystemNavigator.pop();
+  Future<bool> _onWillPop() async {
+    if (!_isOpen) {
+      return SystemNavigator.pop();
+    }
+
+    close();
+    return true;
   }
 
   @override
