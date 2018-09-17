@@ -215,13 +215,11 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
   }
 
   Animation<double> _getCartOpacityAnimation() {
-    return Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _controller.view,
-        curve: _controller.status == AnimationStatus.forward
-            ? Interval(0.3, 0.6)
-            : Interval(0.766, 1.0),
-      ),
+    return CurvedAnimation(
+      parent: _controller.view,
+      curve: _controller.status == AnimationStatus.forward
+          ? Interval(0.3, 0.6)
+          : Interval(0.766, 1.0),
     );
   }
 
@@ -295,10 +293,10 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
                                 .productsInCart
                                 .keys
                                 .length > 3
-                  ? _width - 94 // Accounts for the overflow number
-                  : _width - 64,
+                  ? _width - 94.0 // Accounts for the overflow number
+                  : _width - 64.0,
               height: _kCartHeight,
-              padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
               child: ProductThumbnailRow(),
             ),
             ExtraProductsNumber()
@@ -337,12 +335,11 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
 
     return Semantics(
       button: true,
-      value: "Shopping cart, $totalCartQuantity items",
+      value: 'Shopping cart, $totalCartQuantity items',
       child: Container(
         width: _widthAnimation.value,
         height: _heightAnimation.value,
         child: Material(
-          type: MaterialType.canvas,
           animationDuration: Duration(milliseconds: 0),
           shape: BeveledRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -426,24 +423,22 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
   // _list represents the list that actively manipulates the AnimatedList,
   // meaning that it needs to be updated by _internalList
-  ListModel _list;
+  _ListModel _list;
   // _internalList represents the list as it is updated by the AppStateModel
   List<int> _internalList;
 
   @override
   void initState() {
     super.initState();
-    _list = ListModel(
+    _list = _ListModel(
       listKey: _listKey,
-      initialItems:
-          ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList(),
+      initialItems: ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList(),
       removedItemBuilder: _buildRemovedThumbnail,
     );
     _internalList = List<int>.from(_list.list);
   }
 
-  Widget _buildRemovedThumbnail(
-      int item, BuildContext context, Animation<double> animation) {
+  Widget _buildRemovedThumbnail(int item, BuildContext context, Animation<double> animation) {
     return ProductThumbnail(animation, animation,
         ScopedModel.of<AppStateModel>(context).getProductById(item));
   }
@@ -476,8 +471,7 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
   // If the internalList is longer, then an item has been added.
   void _updateLists() {
     // Update _internalList based on the model
-    _internalList =
-        ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList();
+    _internalList = ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList();
     while (_internalList.length != _list.length) {
       int index = 0;
       // Check bounds and that the list elements are the same
@@ -593,8 +587,8 @@ class ProductThumbnail extends StatelessWidget {
 }
 
 // ListModel manipulates an internal list and an AnimatedList
-class ListModel {
-  ListModel(
+class _ListModel {
+  _ListModel(
       {@required this.listKey,
       @required this.removedItemBuilder,
       Iterable<int> initialItems})
