@@ -435,9 +435,15 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
     _internalList = List<int>.from(_list.list);
   }
 
+  Product _productWithId(int productId) {
+    final AppStateModel model = ScopedModel.of<AppStateModel>(context);
+    final Product product = model.getProductById(productId);
+    assert(product != null);
+    return product;
+  }
+
   Widget _buildRemovedThumbnail(int item, BuildContext context, Animation<double> animation) {
-    return ProductThumbnail(animation, animation,
-        ScopedModel.of<AppStateModel>(context).getProductById(item));
+    return ProductThumbnail(animation, animation, _productWithId(item));
   }
 
   Widget _buildThumbnail(BuildContext context, int index, Animation<double> animation) {
@@ -460,7 +466,7 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
     final Product product = model.getProductById(productId);
     assert(product != null);
 
-    return ProductThumbnail(thumbnailSize, opacity, product);
+    return ProductThumbnail(thumbnailSize, opacity, _productWithId(index));
   }
 
   // If the lists are the same length, assume nothing has changed.
