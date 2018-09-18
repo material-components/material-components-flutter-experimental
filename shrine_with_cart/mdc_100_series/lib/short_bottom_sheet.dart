@@ -454,13 +454,8 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
       curve: Interval(0.33, 1.0, curve: Curves.linear),
       parent: animation,
     );
-
-    final AppStateModel model = ScopedModel.of<AppStateModel>(context);
-    final int productId = _list[index];
-    final Product product = model.getProductById(productId);
-    assert(product != null);
-
-    return ProductThumbnail(thumbnailSize, opacity, product);
+    
+    return ProductThumbnail(thumbnailSize, opacity, _productWithId(_list[index]));
   }
 
   // If the lists are the same length, assume nothing has changed.
