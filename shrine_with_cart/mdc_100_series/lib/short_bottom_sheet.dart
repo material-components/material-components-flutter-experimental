@@ -301,9 +301,6 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
             ),
             ExtraProductsNumber()
           ]),
-          // Ensures the thumbnails are "pinned" to the top left when opening the
-          // sheet by filling the space beneath them.
-          Expanded(child: Container())
         ]),
       ),
     );
