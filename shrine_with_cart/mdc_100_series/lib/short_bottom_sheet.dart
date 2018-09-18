@@ -586,7 +586,7 @@ class ProductThumbnail extends StatelessWidget {
   }
 }
 
-// ListModel manipulates an internal list and an AnimatedList
+// _ListModel manipulates an internal list and an AnimatedList
 class _ListModel {
   _ListModel(
       {@required this.listKey,
