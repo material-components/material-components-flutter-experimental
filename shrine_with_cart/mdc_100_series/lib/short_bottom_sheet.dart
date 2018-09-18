@@ -460,12 +460,7 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
         parent: animation,
       ),
     );
-
-    final AppStateModel model = ScopedModel.of<AppStateModel>(context);
-    final int productId = _list[index];
-    final Product product = model.getProductById(productId);
-    assert(product != null);
-
+    
     return ProductThumbnail(thumbnailSize, opacity, _productWithId(index));
   }
 
