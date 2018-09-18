@@ -478,7 +478,7 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
     while (_internalList.length != _list.length) {
       int index = 0;
       // Check bounds and that the list elements are the same
-      while (_internalList.length > 0 &&
+      while (_internalList.isNotEmpty &&
           _list.length > 0 &&
           index < _internalList.length &&
           index < _list.length &&
