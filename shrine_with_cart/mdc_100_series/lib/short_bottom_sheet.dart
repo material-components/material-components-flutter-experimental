@@ -289,12 +289,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
               duration: Duration(milliseconds: 225),
             ),
             Container(
-              width: ScopedModel.of<AppStateModel>(context)
-                                .productsInCart
-                                .keys
-                                .length > 3
-                  ? _width - 94.0 // Accounts for the overflow number
-                  : _width - 64.0,
+              // Accounts for the overflow number
+              width: numProducts > 3 ? _width - 94.0 : _width - 64.0,
               height: _kCartHeight,
               padding: EdgeInsets.symmetric(vertical: 8.0),
               child: ProductThumbnailRow(),
