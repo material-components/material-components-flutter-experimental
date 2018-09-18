@@ -414,10 +414,10 @@ class ProductThumbnailRow extends StatefulWidget {
 
 class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
   final GlobalKey<AnimatedListState> _listKey = GlobalKey<AnimatedListState>();
-  // _list represents the list that actively manipulates the AnimatedList,
-  // meaning that it needs to be updated by _internalList
+  // _list represents what's currently on screen. If _internalList updates,
+  // it will need to be updated to match it.
   _ListModel _list;
-  // _internalList represents the list as it is updated by the AppStateModel
+  // _internalList represents the list as it is updated by the AppStateModel.
   List<int> _internalList;
 
   @override
@@ -454,7 +454,7 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
       curve: Interval(0.33, 1.0, curve: Curves.linear),
       parent: animation,
     );
-    
+
     return ProductThumbnail(thumbnailSize, opacity, _productWithId(_list[index]));
   }
 
