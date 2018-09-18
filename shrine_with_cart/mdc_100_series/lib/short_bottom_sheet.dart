@@ -175,8 +175,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
       ).animate(
         CurvedAnimation(
           parent: _controller.view,
-          curve: Interval(0.434, 1.0, curve: Curves.fastOutSlowIn),
           // only the reverseCurve will be used
+          curve: Interval(0.434, 1.0, curve: Curves.linear),
           reverseCurve: Interval(0.434, 1.0, curve: Curves.fastOutSlowIn.flipped),
         ),
       );
