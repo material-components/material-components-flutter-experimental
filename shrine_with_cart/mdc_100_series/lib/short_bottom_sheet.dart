@@ -464,6 +464,23 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
   void _updateLists() {
     // Update _internalList based on the model
     _internalList = ScopedModel.of<AppStateModel>(context).productsInCart.keys.toList();
+    Set<int> internalSet = Set<int>.from(_internalList);
+    Set<int> listSet = Set<int>.from(_list.list);
+
+    Set<int> difference = internalSet.difference(listSet);
+    if (difference.isEmpty) {
+      return;
+    }
+
+    difference.forEach((product) {
+      if (_internalList.length < _list.length) {
+        _list.remove(product);
+      } else if (_internalList.length > _list.length) {
+        _list.add(product);
+      }
+    });
+
+
     while (_internalList.length != _list.length) {
       int index = 0;
       // Check bounds and that the list elements are the same
@@ -475,11 +492,6 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
         index++;
       }
 
-      if (_internalList.length < _list.length) {
-        _list.removeAt(index);
-      } else if (_internalList.length > _list.length) {
-        _list.insert(_list.length, _internalList[index]);
-      }
     }
   }
 
@@ -594,12 +606,23 @@ class _ListModel {
 
   AnimatedListState get _animatedList => listKey.currentState;
 
-  void insert(int index, int item) {
+  void add(int product) {
+    _insert(_items.length, product);
+  }
+
+  void _insert(int index, int item) {
     _items.insert(index, item);
     _animatedList.insertItem(index, duration: Duration(milliseconds: 225));
   }
 
-  void removeAt(int index) {
+  void remove(int product) {
+    final int index = _items.indexOf(product);
+    if (index >= 0) {
+      _removeAt(index);
+    }
+  }
+
+  void _removeAt(int index) {
     final int removedItem = _items.removeAt(index);
     if (removedItem != null) {
       _animatedList.removeItem(index,
