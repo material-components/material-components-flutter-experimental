@@ -454,11 +454,9 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
       ),
     );
 
-    Animation<double> opacity = Tween<double>(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-        curve: Interval(0.33, 1.0, curve: Curves.linear),
-        parent: animation,
-      ),
+    Animation<double> opacity = CurvedAnimation(
+      curve: Interval(0.33, 1.0, curve: Curves.linear),
+      parent: animation,
     );
     
     return ProductThumbnail(thumbnailSize, opacity, _productWithId(index));
