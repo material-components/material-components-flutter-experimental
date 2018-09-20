@@ -23,26 +23,26 @@ const double _kCornerRadius = 24.0;
 // Width for just the cart icon and no thumbnails.
 const double _kWidthForCartIcon = 64.0;
 
-class ShortBottomSheet extends StatefulWidget {
-  const ShortBottomSheet({ Key key, @required this.hideController })
+class ExpandingBottomSheet extends StatefulWidget {
+  const ExpandingBottomSheet({ Key key, @required this.hideController })
       : assert(hideController != null),
         super(key: key);
 
   final AnimationController hideController;
 
   @override
-  _ShortBottomSheetState createState() => _ShortBottomSheetState();
+  _ExpandingBottomSheetState createState() => _ExpandingBottomSheetState();
 
-  static _ShortBottomSheetState of(BuildContext context, { bool isNullOk: false }) {
+  static _ExpandingBottomSheetState of(BuildContext context, { bool isNullOk: false }) {
     assert(isNullOk != null);
     assert(context != null);
-    final _ShortBottomSheetState result = context
-        .ancestorStateOfType(const TypeMatcher<_ShortBottomSheetState>());
+    final _ExpandingBottomSheetState result = context
+        .ancestorStateOfType(const TypeMatcher<_ExpandingBottomSheetState>());
     if (isNullOk || result != null) {
       return result;
     }
     throw FlutterError(
-      'ShortBottomSheet.of() called with a context that does not contain a ShortBottomSheet.\n'
+      'ExpandingBottomSheet.of() called with a context that does not contain a ExpandingBottomSheet.\n'
     );
   }
 }
@@ -103,16 +103,16 @@ double _getPeakPoint({double begin, double end}) {
   return begin + (end - begin) * _kPeakVelocityProgress;
 }
 
-class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProviderStateMixin {
-  final GlobalKey _shortBottomSheetKey = GlobalKey(debugLabel: 'Short bottom sheet');
+class _ExpandingBottomSheetState extends State<ExpandingBottomSheet> with TickerProviderStateMixin {
+  final GlobalKey _expandingBottomSheetKey = GlobalKey(debugLabel: 'Expanding bottom sheet');
 
   // The width of the Material, calculated by _widthFor() & based on the number
   // of products in the cart. 64.0 is the width when there are 0 products
   // (_kWidthForZeroProducts)
   double _width = _kWidthForCartIcon;
-  // Controller for the opening and closing of the ShortBottomSheet
+  // Controller for the opening and closing of the ExpandingBottomSheet
   AnimationController _controller;
-  // Animations for the opening and closing of the ShortBottomSheet
+  // Animations for the opening and closing of the ExpandingBottomSheet
   Animation<double> _widthAnimation;
   Animation<double> _heightAnimation;
   Animation<double> _thumbnailOpacityAnimation;
@@ -223,7 +223,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     );
   }
 
-  // Returns the correct width of the ShortBottomSheet based on the number of
+  // Returns the correct width of the ExpandingBottomSheet based on the number of
   // products in the cart.
   double _widthFor(int numProducts) {
     switch (numProducts) {
@@ -250,14 +250,14 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
     return status == AnimationStatus.completed || status == AnimationStatus.forward;
   }
 
-  // Opens the ShortBottomSheet if it's closed, otherwise does nothing.
+  // Opens the ExpandingBottomSheet if it's closed, otherwise does nothing.
   void open() {
     if (!_isOpen) {
       _controller.forward();
     }
   }
 
-  // Closes the ShortBottomSheet if it's open or opening, otherwise does nothing.
+  // Closes the ExpandingBottomSheet if it's open or opening, otherwise does nothing.
   void close() {
     if (_isOpen) {
       _controller.reverse();
@@ -379,7 +379,7 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
   @override
   Widget build(BuildContext context) {
     return AnimatedSize(
-      key: _shortBottomSheetKey,
+      key: _expandingBottomSheetKey,
       duration: Duration(milliseconds: 225),
       curve: Curves.easeInOut,
       vsync: this,

@@ -19,7 +19,7 @@ import 'category_menu_page.dart';
 import 'colors.dart';
 import 'home.dart';
 import 'login.dart';
-import 'short_bottom_sheet.dart';
+import 'expanding_bottom_sheet.dart';
 import 'supplemental/cut_corners_border.dart';
 
 class ShrineApp extends StatefulWidget {
@@ -30,7 +30,7 @@ class ShrineApp extends StatefulWidget {
 class _ShrineAppState extends State<ShrineApp>
     with SingleTickerProviderStateMixin {
   // Controller to coordinate both the opening/closing of backdrop and sliding
-  // of short bottom sheet
+  // of expanding bottom sheet
   AnimationController _controller;
 
   @override
@@ -55,7 +55,7 @@ class _ShrineAppState extends State<ShrineApp>
           backTitle: Text('MENU'),
           controller: _controller,
         ),
-        shortBottomSheet: ShortBottomSheet(hideController: _controller),
+        expandingBottomSheet: ExpandingBottomSheet(hideController: _controller),
       ),
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
