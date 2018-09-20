@@ -17,10 +17,10 @@ import 'package:meta/meta.dart';
 
 import 'login.dart';
 
-final Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
-final Cubic _kDecelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
-final double _kPeakVelocityTime = 0.248210;
-final double _kPeakVelocityProgress = 0.379146;
+const Cubic _kAccelerateCurve = Cubic(0.548, 0.0, 0.757, 0.464);
+const Cubic _kDecelerateCurve = Cubic(0.23, 0.94, 0.41, 1.0);
+const double _kPeakVelocityTime = 0.248210;
+const double _kPeakVelocityProgress = 0.379146;
 
 class _FrontLayer extends StatelessWidget {
   const _FrontLayer({
@@ -198,7 +198,7 @@ class _BackdropState extends State<Backdrop>
   }
 
   void _toggleBackdropLayerVisibility() {
-    // Call setState here to update layerAnimation update if necessary
+    // Call setState here to update layerAnimation update if that's necessary
     setState(() {
       _frontLayerVisible ? _controller.reverse() : _controller.forward();
     });

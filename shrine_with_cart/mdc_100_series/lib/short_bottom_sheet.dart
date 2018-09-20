@@ -10,7 +10,7 @@ import 'model/app_state_model.dart';
 import 'model/product.dart';
 import 'shopping_cart.dart';
 
-// Curves that represent the two curves that compose the emphasized easing curve.
+// These curves define the emphasized easing curve.
 const Cubic _kAccelerateCurve = const Cubic(0.548, 0.0, 0.757, 0.464);
 const Cubic _kDecelerateCurve = const Cubic(0.23, 0.94, 0.41, 1.0);
 // The time at which the accelerate and decelerate curves switch off
@@ -176,8 +176,8 @@ class _ShortBottomSheetState extends State<ShortBottomSheet> with TickerProvider
         CurvedAnimation(
           parent: _controller.view,
           curve: Interval(0.434, 1.0, curve: Curves.linear), // not used
-              // only the reverseCurve will be used
-              reverseCurve: Interval(0.434, 1.0, curve: Curves.fastOutSlowIn.flipped),
+            // only the reverseCurve will be used
+            reverseCurve: Interval(0.434, 1.0, curve: Curves.fastOutSlowIn.flipped),
         ),
       );
     }
@@ -480,7 +480,6 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
       }
     });
 
-
     while (_internalList.length != _list.length) {
       int index = 0;
       // Check bounds and that the list elements are the same
@@ -542,7 +541,8 @@ class ExtraProductsNumber extends StatelessWidget {
       int displayedOverflowProducts = numOverflowProducts <= 99 ? numOverflowProducts : 99;
       return Container(
         child: Text('+$displayedOverflowProducts',
-            style: Theme.of(context).primaryTextTheme.button),
+          style: Theme.of(context).primaryTextTheme.button,
+        ),
       );
     } else {
       return Container(); // build() can never return null.
@@ -552,7 +552,7 @@ class ExtraProductsNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScopedModelDescendant<AppStateModel>(
-        builder: (builder, child, model) => _buildOverflow(model, context),
+      builder: (builder, child, model) => _buildOverflow(model, context),
     );
   }
 }
@@ -625,8 +625,7 @@ class _ListModel {
   void _removeAt(int index) {
     final int removedItem = _items.removeAt(index);
     if (removedItem != null) {
-      _animatedList.removeItem(index,
-          (BuildContext context, Animation<double> animation) {
+      _animatedList.removeItem(index, (BuildContext context, Animation<double> animation) {
         return removedItemBuilder(removedItem, context, animation);
       });
     }

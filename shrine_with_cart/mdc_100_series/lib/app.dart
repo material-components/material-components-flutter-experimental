@@ -50,8 +50,7 @@ class _ShrineAppState extends State<ShrineApp>
       home: HomePage(
         backdrop: Backdrop(
           frontLayer: ProductPage(),
-          backLayer:
-              CategoryMenuPage(onCategoryTap: () => _controller.forward()),
+          backLayer: CategoryMenuPage(onCategoryTap: () => _controller.forward()),
           frontTitle: Text('SHRINE'),
           backTitle: Text('MENU'),
           controller: _controller,
@@ -93,13 +92,9 @@ ThemeData _buildShrineTheme() {
     cardColor: kShrineBackgroundWhite,
     textSelectionColor: kShrinePink100,
     errorColor: kShrineErrorRed,
-    buttonTheme: ButtonThemeData(
-      textTheme: ButtonTextTheme.accent,
-    ),
+    buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.accent),
     primaryIconTheme: base.iconTheme.copyWith(color: kShrineBrown900),
-    inputDecorationTheme: InputDecorationTheme(
-      border: CutCornersBorder(),
-    ),
+    inputDecorationTheme: InputDecorationTheme(border: CutCornersBorder()),
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
