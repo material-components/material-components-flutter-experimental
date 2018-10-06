@@ -13,23 +13,16 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:scoped_model/scoped_model.dart';
 
-import 'package:Shrine/app.dart';
-import 'package:Shrine/model/app_state_model.dart';
+const kShrinePink50 = const Color(0xFFFEEAE6);
+const kShrinePink100 = const Color(0xFFFEDBD0);
+const kShrinePink300 = const Color(0xFFFBB8AC);
+const kShrinePink400 = const Color(0xFFEAA4A4);
 
-void main() {
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+const kShrineBrown900 = const Color(0xFF442B2D);
+const kShrineBrown600 = const Color(0xFF7D4F52);
 
-  AppStateModel model = AppStateModel();
-  model.loadProducts();
+const kShrineErrorRed = const Color(0xFFC5032B);
 
-  runApp(
-    ScopedModel<AppStateModel>(
-      model: model,
-      child: ShrineApp(),
-    ),
-  );
-}
+const kShrineSurfaceWhite = const Color(0xFFFFFBFA);
+const kShrineBackgroundWhite = Colors.white;
