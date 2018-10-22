@@ -36,8 +36,7 @@ class CategoryMenuPage extends StatelessWidget {
       builder: (context, child, model) => GestureDetector(
             onTap: () {
               model.setCategory(category);
-              if (onCategoryTap != null)
-                onCategoryTap();
+              if (onCategoryTap != null) onCategoryTap();
             },
             child: model.selectedCategory == category
                 ? Column(

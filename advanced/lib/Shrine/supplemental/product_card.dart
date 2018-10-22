@@ -48,35 +48,43 @@ class ProductCard extends StatelessWidget {
             },
             child: child,
           ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+      child: Stack(
         children: <Widget>[
-          AspectRatio(
-            aspectRatio: imageAspectRatio,
-            child: imageWidget,
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              AspectRatio(
+                aspectRatio: imageAspectRatio,
+                child: imageWidget,
+              ),
+              SizedBox(
+                height: kTextBoxHeight * MediaQuery.of(context).textScaleFactor,
+                width: 121.0,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      product == null ? '' : product.name,
+                      style: theme.textTheme.button,
+                      softWrap: false,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
+                    ),
+                    SizedBox(height: 4.0),
+                    Text(
+                      product == null ? '' : formatter.format(product.price),
+                      style: theme.textTheme.caption,
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
-          SizedBox(
-            height: kTextBoxHeight * MediaQuery.of(context).textScaleFactor,
-            width: 121.0,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  product == null ? '' : product.name,
-                  style: theme.textTheme.button,
-                  softWrap: false,
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 1,
-                ),
-                SizedBox(height: 4.0),
-                Text(
-                  product == null ? '' : formatter.format(product.price),
-                  style: theme.textTheme.caption,
-                ),
-              ],
-            ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Icon(Icons.add_shopping_cart),
           ),
         ],
       ),

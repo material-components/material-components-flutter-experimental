@@ -19,7 +19,7 @@ import 'category_menu_page.dart';
 import 'colors.dart';
 import 'home.dart';
 import 'login.dart';
-import 'short_bottom_sheet.dart';
+import 'expanding_bottom_sheet.dart';
 import 'supplemental/cut_corners_border.dart';
 
 class ShrineApp extends StatefulWidget {
@@ -30,7 +30,7 @@ class ShrineApp extends StatefulWidget {
 class _ShrineAppState extends State<ShrineApp>
     with SingleTickerProviderStateMixin {
   // Controller to coordinate both the opening/closing of backdrop and sliding
-  // of short bottom sheet
+  // of expanding bottom sheet.
   AnimationController _controller;
 
   @override
@@ -50,13 +50,12 @@ class _ShrineAppState extends State<ShrineApp>
       home: HomePage(
         backdrop: Backdrop(
           frontLayer: ProductPage(),
-          backLayer:
-              CategoryMenuPage(onCategoryTap: () => _controller.forward()),
+          backLayer: CategoryMenuPage(onCategoryTap: () => _controller.forward()),
           frontTitle: Text('SHRINE'),
           backTitle: Text('MENU'),
           controller: _controller,
         ),
-        shortBottomSheet: ShortBottomSheet(hideController: _controller),
+        expandingBottomSheet: ExpandingBottomSheet(hideController: _controller),
       ),
       initialRoute: '/login',
       onGenerateRoute: _getRoute,
@@ -93,13 +92,9 @@ ThemeData _buildShrineTheme() {
     cardColor: kShrineBackgroundWhite,
     textSelectionColor: kShrinePink100,
     errorColor: kShrineErrorRed,
-    buttonTheme: ButtonThemeData(
-      textTheme: ButtonTextTheme.accent,
-    ),
+    buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.accent),
     primaryIconTheme: base.iconTheme.copyWith(color: kShrineBrown900),
-    inputDecorationTheme: InputDecorationTheme(
-      border: CutCornersBorder(),
-    ),
+    inputDecorationTheme: InputDecorationTheme(border: CutCornersBorder()),
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),

@@ -17,7 +17,7 @@ import 'package:intl/intl.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import 'colors.dart';
-import 'short_bottom_sheet.dart';
+import 'expanding_bottom_sheet.dart';
 import 'model/app_state_model.dart';
 import 'model/product.dart';
 
@@ -62,8 +62,8 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
                           SizedBox(
                             width: _leftColumnWidth,
                             child: IconButton(
-                              icon: const Icon(Icons.keyboard_arrow_down),
-                              onPressed: () => ShortBottomSheet.of(context).close()
+                                icon: const Icon(Icons.keyboard_arrow_down),
+                                onPressed: () => ExpandingBottomSheet.of(context).close()
                             ),
                           ),
                           Text(
@@ -99,7 +99,7 @@ class _ShoppingCartPageState extends State<ShoppingCartPage> {
                       ),
                       onPressed: () {
                         model.clearCart();
-                        ShortBottomSheet.of(context).close();
+                        ExpandingBottomSheet.of(context).close();
                       },
                     ),
                   ),
