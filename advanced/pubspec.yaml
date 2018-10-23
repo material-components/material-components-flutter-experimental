@@ -1,5 +1,5 @@
 name: advanced_components_and_theming
-description: [Work in progress] Demonstrations of expanding bottom sheet and backdrop choreography.
+description: Work in progress, Demonstrations of expanding bottom sheet and backdrop choreography.
 
 dependencies:
   flutter:

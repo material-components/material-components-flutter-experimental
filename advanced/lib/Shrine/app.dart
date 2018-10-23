@@ -71,7 +71,9 @@ Route<dynamic> _getRoute(RouteSettings settings) {
 
   return MaterialPageRoute<void>(
     settings: settings,
-    builder: (BuildContext context) => LoginPage(),
+    builder: (BuildContext context) {
+      return Theme(data: _kShrineTheme, child: LoginPage());
+    },
     fullscreenDialog: true,
   );
 }
@@ -85,6 +87,7 @@ IconThemeData _customIconTheme(IconThemeData original) {
 ThemeData _buildShrineTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
+    colorScheme: kShrineColorScheme,
     accentColor: kShrineBrown900,
     primaryColor: kShrinePink100,
     buttonColor: kShrinePink100,
@@ -94,7 +97,10 @@ ThemeData _buildShrineTheme() {
     errorColor: kShrineErrorRed,
     buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.accent),
     primaryIconTheme: base.iconTheme.copyWith(color: kShrineBrown900),
-    inputDecorationTheme: InputDecorationTheme(border: CutCornersBorder()),
+    inputDecorationTheme: InputDecorationTheme(
+      border: CutCornersBorder(),
+      focusedBorder: CutCornersBorder(borderSide: BorderSide(color: kShrineBrown900)),
+    ),
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
@@ -128,3 +134,10 @@ TextTheme _buildShrineTextTheme(TextTheme base) {
         bodyColor: kShrineBrown900,
       );
 }
+
+ColorScheme kShrineColorScheme =
+  ColorScheme.light(
+      primary: kShrinePink100,
+      secondary: kShrineBrown900,
+      surface: kShrineBackgroundWhite,
+  );
