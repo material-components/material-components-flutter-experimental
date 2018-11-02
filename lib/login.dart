@@ -14,8 +14,6 @@
 
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
-
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -35,10 +33,9 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image.asset('assets/diamond.png'),
-                SizedBox(height: 16.0),
+//                Image.asset('assets/logo.svg'),
                 Text(
-                  'SHRINE',
+                  'RALLY LOGO GOES HERE',
                   style: Theme.of(context).textTheme.headline,
                 ),
               ],
