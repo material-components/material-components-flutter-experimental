@@ -43,6 +43,20 @@ flutter:
 
   assets:
     - assets/logo.png
+    - assets/thumb.png
+
+    - assets/ic_arrow_back_24px.png
+    - assets/ic_arrow_forward_ios_24px.png
+    - assets/ic_attach_money_24px.png
+    - assets/ic_bar_chart_24px.png
+    - assets/ic_credit_card_24px.png
+    - assets/ic_info_outline_24px.png
+    - assets/ic_not_interested_24px.png
+    - assets/ic_pie_chart_24px.png
+    - assets/ic_pie_chart_outlined_24px.png
+    - assets/ic_search_24px.png
+    - assets/ic_settings_24px.png
+    - assets/ic_sort_24px.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
