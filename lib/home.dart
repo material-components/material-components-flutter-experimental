@@ -12,120 +12,90 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
   TabController _tabController;
-  List<Tab> _tabs;
+//  List<Tab> _tabs;
 
-  void _incrementCounter() {
-    setState(() {
-//      _counter++;
-    });
+  _HomePageState() {
+    _tabController = TabController(length: 5, vsync: this);
   }
 
   @override
   void initState() {
     super.initState();
-    _tabs = _buildTabs();
-    _tabController = TabController(length: 5, vsync: this);
+    print('_HomePageState initState');
+
     _tabController.addListener(() {
-//      print(_tabController.indexIsChanging);
       if (_tabController.indexIsChanging && _tabController.previousIndex != _tabController.index) {
         print('prev: ' + _tabController.previousIndex.toString());
         print('curr: ' + _tabController.index.toString());
-        (_tabs[_tabController.previousIndex].child as _RallyTab).isExpanded = false;
-        (_tabs[_tabController.index].child as _RallyTab).isExpanded = true;
+        setState(() {});
       }
-//      print(_tabController.index);
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: <Widget>[
-//            Image.asset('assets/logo.png'),
-            TabBar(
-                tabs: _buildTabs(),
-                controller: _tabController
-            ),
-//            TabBarView(
-//                children: _buildTabViews(),
-//                controller: _tabController
-//            )
-          ],
-        ),
-      ),
+        body: SafeArea(
+          child: Column(
+              children: <Widget>[
+                TabBar(
+                  isScrollable: true,
+                  tabs: _buildTabs(),
+                  controller: _tabController,
+                  indicator: UnderlineTabIndicator(borderSide: BorderSide(style: BorderStyle.none)),
+                ),
+                Expanded(
+                  child: TabBarView(
+                      children: _buildTabViews(),
+                      controller: _tabController
+                  ),
+                )
+              ]),
+        )
     );
   }
 
-  List<Tab> _buildTabs() {
-    return <Tab>[
-      _buildTab(Image.asset("assets/ic_pie_chart_24px"), "overview"),
-      _buildTab(Image.asset("assets/ic_attach_money_24px"), "accounts"),
-      _buildTab(Image.asset("assets/ic_money_off_24px"), "bills"),
-      _buildTab(Image.asset("assets/ic_bar_chart_24px"), "budgets"),
-      _buildTab(Image.asset("assets/ic_settings_24px"), "settings"),
-    ];
-  }
+  List<Widget> _buildTabs() {
+    print('_buildTabs');
 
-  Tab _buildTab(Image tabImage, String title) {
-    return Tab(
-        child: _AnimatedRallyTab(tabImage: tabImage, title: title)
-    );
-  }
-
-  _buildTabViews() {
     return <Widget>[
-      Image.asset('assets/logo.png'),
-      Text('2'),
-      Text('3'),
-      Text('4'),
-      Text('5'),
+      _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "overview", 0),
+      _buildTab(Image.asset("assets/ic_attach_money_24px.png"), "accounts", 1),
+      _buildTab(Image.asset("assets/ic_money_off_24px.png"), "bills", 2),
+      _buildTab(Image.asset("assets/ic_bar_chart_24px.png"), "budgets", 3),
+      _buildTab(Image.asset("assets/ic_settings_24px.png"), "settings", 4),
     ];
   }
-}
 
-//class _RallyTab extends AnimatedWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    // TODO: implement build
-//    return null;
-//  }
-//
-//}
+  List<Widget> _buildTabViews() {
+    return <Widget>[
+      ListView(children: [Image.asset('assets/logo.png')]),
+      ListView(children: [Image.asset('assets/logo.png')]),
+      ListView(children: [Image.asset('assets/logo.png')]),
+      ListView(children: [Image.asset('assets/logo.png')]),
+      ListView(children: [Image.asset('assets/logo.png')]),
+    ];
+  }
 
-class _AnimatedRallyTab extends StatelessWidget {
-  Text titleText;
-  Image image;
-
-  _AnimatedRallyTab({
-    Image tabImage,
-    String title,
-  }) : titleText = Text(title), image = tabImage;
-
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        image,
-        SizedBox(width: 32.0, child: titleText)
-      ],
-    );
+  Widget _buildTab(Image tabImage, String title, int index) {
+    return _RallyTab(_tabController, tabImage, title, _tabController.index == index);
   }
 }
 
 class _RallyTab extends StatefulWidget {
+  TabController tabController;
   Text titleText;
-  Icon icon;
+  Image iconImage;
   bool _isExpanded;
 
   _RallyTab(
-      IconData iconData,
+      TabController tabController,
+      Image iconImage,
       String title,
       bool isExpanded) {
+    this.tabController = tabController;
     titleText = Text(title);
-    icon = Icon(iconData);
+    this.iconImage = iconImage;
     _isExpanded = isExpanded;
   }
 
@@ -139,26 +109,51 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
   Animation<double> _animation;
   AnimationController _controller;
 
+  @override
   initState() {
     super.initState();
+    print('_RallyTabState initState ' + widget.isExpanded.toString());
     _controller = AnimationController(
-        duration: Duration(milliseconds: 1000),
+        duration: Duration(milliseconds: 500),
         vsync: this
     );
-    _animation = Tween(begin: 0.0, end: 1.0).animate(_controller);
+    _animation = Tween(begin: 1.0, end: 3.0).animate(_controller);
+  }
+
+  @override
+  void didUpdateWidget(_RallyTab oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    print('_RallyTabState didUpdateWidget ' + widget.isExpanded.toString());
+
     if (widget.isExpanded) {
-      _controller.reverse();
-    } else {
       _controller.forward();
+    } else {
+      _controller.reverse();
     }
   }
 
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        widget.icon,
-        RotationTransition(child: widget.titleText, turns: _animation)
-      ],
+    return SizedBox(
+      width: 90.0,
+      child: Container(
+          decoration: new BoxDecoration(
+              border: new Border.all(color: Colors.blueAccent)
+          ),
+          child: Row(
+              children: <Widget>[
+                SizedBox(
+                  width: 20.0,
+                  height: 40.0,
+                  child: widget.iconImage,
+                ),
+                SizeTransition(
+                    child: widget.titleText,
+                  axis: Axis.horizontal,
+                  axisAlignment: -1.0,
+                  sizeFactor: _animation,),
+              ],
+            ),
+      ),
     );
   }
 
