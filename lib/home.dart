@@ -43,8 +43,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
               children: <Widget>[
                 Theme(
                   data: Theme.of(context).copyWith(
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
                   ),
                   child: TabBar(
                     isScrollable: true,
@@ -112,6 +112,7 @@ class _RallyTab extends StatefulWidget {
 class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixin {
   Animation<double> _titleSizeAnimation;
   Animation<double> _titleFadeAnimation;
+  Animation<double> _iconFadeAnimation;
   AnimationController _controller;
 
   @override
@@ -119,7 +120,7 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
     super.initState();
     print('_RallyTabState initState ' + widget.isExpanded.toString());
     _controller = AnimationController(
-        duration: Duration(milliseconds: 200),
+        duration: Duration(milliseconds: 175),
         vsync: this
     );
     _titleSizeAnimation = CurvedAnimation(
@@ -129,6 +130,10 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
     _titleFadeAnimation = CurvedAnimation(
         parent: Tween(begin: 0.0, end: 1.0).animate(_controller),
         curve: Curves.easeOut
+    );
+    _iconFadeAnimation = CurvedAnimation(
+        parent: Tween(begin: 0.6, end: 1.0).animate(_controller),
+        curve: Curves.linear
     );
     if (widget.isExpanded) {
       _controller.value = 1.0;

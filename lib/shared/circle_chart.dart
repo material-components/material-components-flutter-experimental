@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
 class CircleChart extends StatelessWidget {
-//  CircleChart()
+  CircleChart({this.total, this.amounts, this.colors});
+
+  final double total;
+  final List<double> amounts;
+  final List<Color> colors;
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -13,4 +19,12 @@ class CircleChart extends StatelessWidget {
         )
     );
   }
+}
+
+class CircleChartOutline extends RenderConstrainedBox {
+  @override
+  void paint(PaintingContext context, Offset offset) {
+//    Paint p = Paint(context)
+  }
+
 }
