@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:rally_proto/tab_pages/accounts_page.dart';
+import 'package:rally_proto/tab_pages/bills_page.dart';
+import 'package:rally_proto/tab_pages/budgets_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -38,12 +41,18 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         body: SafeArea(
           child: Column(
               children: <Widget>[
-                TabBar(
-                  isScrollable: true,
-                  labelPadding: EdgeInsets.zero,
-                  tabs: _buildTabs(),
-                  controller: _tabController,
-                  indicator: UnderlineTabIndicator(borderSide: BorderSide(style: BorderStyle.none)),
+                Theme(
+                  data: Theme.of(context).copyWith(
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                  ),
+                  child: TabBar(
+                    isScrollable: true,
+                    labelPadding: EdgeInsets.zero,
+                    tabs: _buildTabs(),
+                    controller: _tabController,
+                    indicator: UnderlineTabIndicator(borderSide: BorderSide(style: BorderStyle.none)),
+                  ),
                 ),
                 Expanded(
                   child: TabBarView(
@@ -71,9 +80,9 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   List<Widget> _buildTabViews() {
     return <Widget>[
       ListView(children: [Image.asset('assets/logo.png')]),
-      ListView(children: [Image.asset('assets/logo.png')]),
-      ListView(children: [Image.asset('assets/logo.png')]),
-      ListView(children: [Image.asset('assets/logo.png')]),
+      AccountsPage(),
+      BillsPage(),
+      BudgetsPage(),
       ListView(children: [Image.asset('assets/logo.png')]),
     ];
   }
@@ -140,17 +149,17 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
 
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 40.0,
+      height: 56.0,
       child: Row(
         children: <Widget>[
           SizedBox(
-            width: 64.0,
+            width: 54.0,
             child: widget.iconImage,
           ),
           FadeTransition(
             child: SizeTransition(
               child: SizedBox(
-                width: 88.0,
+                width: 74.0,
                 child: Center(child: widget.titleText),
               ),
               axis: Axis.horizontal,

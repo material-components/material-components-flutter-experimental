@@ -39,23 +39,30 @@ class RallyApp extends StatelessWidget {
   TextTheme _buildRallyTextTheme(TextTheme base) {
     return base.copyWith(
       headline: base.headline.copyWith(
+        fontFamily: "Roboto Condensed",
         fontWeight: FontWeight.w500,
       ),
       title: base.title.copyWith(fontSize: 18.0),
       caption: base.caption.copyWith(
+        fontFamily: "Roboto RallyCondensed",
+        fontWeight: FontWeight.w400,
+        fontSize: 14.0,
+      ),
+      body1:base.body1.copyWith(
+        fontFamily: "Roboto Condensed",
         fontWeight: FontWeight.w400,
         fontSize: 14.0,
       ),
       body2: base.body2.copyWith(
-        fontWeight: FontWeight.w500,
-        fontSize: 16.0,
+        fontFamily: "Eczar",
+        fontSize: 14.0,
       ),
       button: base.button.copyWith(
+        fontFamily: "Roboto Condensed",
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       ),
     ).apply(
-      fontFamily: 'Roboto Condensed',
       displayColor: Colors.white,
       bodyColor: Colors.white,
     );

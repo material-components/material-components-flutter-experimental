@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
             children: <Widget>[
               SizedBox(height: 64.0),
               SizedBox(
-                  height: 200.0,
+                  height: 160.0,
                   child: Image.asset('assets/logo.png'
                   )
               ),
@@ -55,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               SizedBox(
-                  height: 200.0,
+                  height: 120.0,
                   child: Image.asset('assets/thumb.png'
                   )
               ),
