@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:rally_proto/colors.dart';
+import 'package:rally_proto/formatters.dart';
 import 'package:rally_proto/shared/vertical_fractional_bar.dart';
+import 'package:intl/intl.dart';
 
 class BalanceCard extends StatelessWidget {
   const BalanceCard({
@@ -46,7 +48,7 @@ class BalanceCard extends StatelessWidget {
                     ],
                   ),
                   Spacer(),
-                  Text('\$ ' + usdAmount.toStringAsFixed(2),
+                  Text('\$ ' + Formatters.usd.format(usdAmount),
                       style: Theme.of(context).textTheme.body2.copyWith(
                           fontSize: 20.0,
                           color: RallyColors.gray)

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:rally_proto/colors.dart';
+import 'package:rally_proto/formatters.dart';
 import 'package:rally_proto/models.dart';
 import 'package:rally_proto/shared/balance_card.dart';
 import 'package:rally_proto/shared/circle_chart.dart';
@@ -61,7 +62,7 @@ class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStat
     return BalanceCard(
       suffix: Text(' LEFT', style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60, fontSize: 10.0)),
       title: budgetModel.name,
-      subtitle: budgetModel.usdUsed.toStringAsFixed(2) + ' / ' + budgetModel.usdCap.toStringAsFixed(2),
+      subtitle: Formatters.usdWithSign.format(budgetModel.usdUsed) + ' / ' + Formatters.usdWithSign.format(budgetModel.usdCap),
       indicatorColor: RallyColors.getBudgetColor(i),
       indicatorFraction: budgetModel.usdUsed / budgetModel.usdCap,
       usdAmount: budgetModel.usdCap - budgetModel.usdUsed,
