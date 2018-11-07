@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
               children: <Widget>[
                 TabBar(
                   isScrollable: true,
+                  labelPadding: EdgeInsets.zero,
                   tabs: _buildTabs(),
                   controller: _tabController,
                   indicator: UnderlineTabIndicator(borderSide: BorderSide(style: BorderStyle.none)),
@@ -59,11 +60,11 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     print('_buildTabs');
 
     return <Widget>[
-      _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "overview", 0),
-      _buildTab(Image.asset("assets/ic_attach_money_24px.png"), "accounts", 1),
-      _buildTab(Image.asset("assets/ic_money_off_24px.png"), "bills", 2),
-      _buildTab(Image.asset("assets/ic_bar_chart_24px.png"), "budgets", 3),
-      _buildTab(Image.asset("assets/ic_settings_24px.png"), "settings", 4),
+      _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "OVERVIEW", 0),
+      _buildTab(Image.asset("assets/ic_attach_money_24px.png"), "ACCOUNTS", 1),
+      _buildTab(Image.asset("assets/ic_money_off_24px.png"), "BILLS", 2),
+      _buildTab(Image.asset("assets/ic_bar_chart_24px.png"), "BUDGETS", 3),
+      _buildTab(Image.asset("assets/ic_settings_24px.png"), "SETTINGS", 4),
     ];
   }
 
@@ -78,35 +79,30 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   }
 
   Widget _buildTab(Image tabImage, String title, int index) {
-    return _RallyTab(_tabController, tabImage, title, _tabController.index == index);
+    return _RallyTab(tabImage, title, _tabController.index == index);
   }
 }
 
 class _RallyTab extends StatefulWidget {
-  TabController tabController;
   Text titleText;
   Image iconImage;
-  bool _isExpanded;
+  bool isExpanded;
 
   _RallyTab(
-      TabController tabController,
       Image iconImage,
       String title,
       bool isExpanded) {
-    this.tabController = tabController;
     titleText = Text(title);
     this.iconImage = iconImage;
-    _isExpanded = isExpanded;
+    this.isExpanded = isExpanded;
   }
-
-  bool get isExpanded => _isExpanded;
-  set isExpanded(bool isExpanded) => _isExpanded = isExpanded;
 
   _RallyTabState createState() => _RallyTabState();
 }
 
 class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixin {
-  Animation<double> _animation;
+  Animation<double> _titleSizeAnimation;
+  Animation<double> _titleFadeAnimation;
   AnimationController _controller;
 
   @override
@@ -114,10 +110,20 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
     super.initState();
     print('_RallyTabState initState ' + widget.isExpanded.toString());
     _controller = AnimationController(
-        duration: Duration(milliseconds: 500),
+        duration: Duration(milliseconds: 200),
         vsync: this
     );
-    _animation = Tween(begin: 1.0, end: 3.0).animate(_controller);
+    _titleSizeAnimation = CurvedAnimation(
+        parent: Tween(begin: 0.0, end: 1.0).animate(_controller),
+        curve: Curves.linear
+    );
+    _titleFadeAnimation = CurvedAnimation(
+        parent: Tween(begin: 0.0, end: 1.0).animate(_controller),
+        curve: Curves.easeOut
+    );
+    if (widget.isExpanded) {
+      _controller.value = 1.0;
+    }
   }
 
   @override
@@ -134,25 +140,28 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
 
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 90.0,
-      child: Container(
-          decoration: new BoxDecoration(
-              border: new Border.all(color: Colors.blueAccent)
+      height: 40.0,
+      child: Row(
+        children: <Widget>[
+          SizedBox(
+            width: 64.0,
+            child: widget.iconImage,
           ),
-          child: Row(
-              children: <Widget>[
-                SizedBox(
-                  width: 20.0,
-                  height: 40.0,
-                  child: widget.iconImage,
-                ),
-                SizeTransition(
-                    child: widget.titleText,
-                  axis: Axis.horizontal,
-                  axisAlignment: -1.0,
-                  sizeFactor: _animation,),
-              ],
+          FadeTransition(
+            child: SizeTransition(
+              child: SizedBox(
+                width: 88.0,
+                child: Center(child: widget.titleText),
+              ),
+              axis: Axis.horizontal,
+              axisAlignment: -1.0,
+              sizeFactor: _titleSizeAnimation,
             ),
+            opacity: _titleFadeAnimation,
+
+          ),
+
+        ],
       ),
     );
   }
