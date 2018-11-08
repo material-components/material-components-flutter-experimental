@@ -13,28 +13,7 @@ class AccountsPage extends StatefulWidget {
 }
 
 class _AccountsPageState extends State<AccountsPage> with SingleTickerProviderStateMixin {
-  final List<SingleAccountModel> accountModels = <SingleAccountModel>[
-    SingleAccountModel(
-        name: 'Checking',
-        accountNumber: '1234561234',
-        usdBalance: 2215.13
-    ),
-    SingleAccountModel(
-        name: 'Home Savings',
-        accountNumber: '8888885678',
-        usdBalance: 8678.88
-    ),
-    SingleAccountModel(
-        name: 'Car Savings',
-        accountNumber: '8888889012',
-        usdBalance: 987.48
-    ),
-    SingleAccountModel(
-        name: 'Vacation',
-        accountNumber: '1231233456',
-        usdBalance: 253.0
-    ),
-  ];
+  final List<SingleAccountModel> accountModels = Models.getAccountsModel();
 
   @override
   Widget build(BuildContext context) {

@@ -13,28 +13,7 @@ class BillsPage extends StatefulWidget {
 }
 
 class _BillsPageState extends State<BillsPage> with SingleTickerProviderStateMixin {
-  final List<SingleBillModel> billModels = <SingleBillModel>[
-    SingleBillModel(
-        name: 'RedPay Credit',
-        dueDate: 'Jan 29',
-        usdDue: 45.36
-    ),
-    SingleBillModel(
-        name: 'Rent',
-        dueDate: 'Feb 9',
-        usdDue: 1200.0
-    ),
-    SingleBillModel(
-        name: 'TabFine Credit',
-        dueDate: 'Feb 22',
-        usdDue: 87.33
-    ),
-    SingleBillModel(
-        name: 'ABC Loans',
-        dueDate: 'Feb 29',
-        usdDue: 400.0
-    ),
-  ];
+  final List<SingleBillModel> billModels = Models.getBillsModel();
 
   @override
   Widget build(BuildContext context) {

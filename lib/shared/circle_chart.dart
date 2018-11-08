@@ -30,7 +30,7 @@ class _CircleChartState extends State<CircleChart> with SingleTickerProviderStat
     controller = AnimationController(duration: const Duration(milliseconds: Constants.defaultAnimationMillis * 3), vsync: this);
     animation = CurvedAnimation(parent: TweenSequence(<TweenSequenceItem<double>>[
       TweenSequenceItem(tween: Tween(begin: 0.0, end: 0.0), weight: 1.0),
-      TweenSequenceItem(tween: Tween(begin: 0.0, end: 1.0), weight: 1.0),
+      TweenSequenceItem(tween: Tween(begin: 0.0, end: 1.0), weight: 1.5),
     ]).animate(controller),
         curve: Curves.decelerate);
     controller.forward();

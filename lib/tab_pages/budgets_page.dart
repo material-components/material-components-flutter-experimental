@@ -14,28 +14,7 @@ class BudgetsPage extends StatefulWidget {
 }
 
 class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStateMixin {
-  final List<SingleBudgetModel> budgetModels = <SingleBudgetModel>[
-    SingleBudgetModel(
-        name: 'Coffee Shops',
-        usdUsed: 45.49,
-        usdCap: 70.0
-    ),
-    SingleBudgetModel(
-        name: 'Groceries',
-        usdUsed: 16.45,
-        usdCap: 170.0
-    ),
-    SingleBudgetModel(
-        name: 'Restaurants',
-        usdUsed: 123.25,
-        usdCap: 170.0
-    ),
-    SingleBudgetModel(
-        name: 'Clothing',
-        usdUsed: 19.45,
-        usdCap: 70.0
-    ),
-  ];
+  final List<SingleBudgetModel> budgetModels = Models.getBudgetsModel();
 
   @override
   Widget build(BuildContext context) {

@@ -1,14 +1,14 @@
 import 'package:flutter/widgets.dart';
 import 'package:rally_proto/models.dart';
 
-class OverviewPage extends StatefulWidget {
-  OverviewPage({Key key}) : super(key: key);
+class SettingsPage extends StatefulWidget {
+  SettingsPage({Key key}) : super(key: key);
 
   @override
-  _OverviewPageState createState() => _OverviewPageState();
+  _SettingsPageState createState() => _SettingsPageState();
 }
 
-class _OverviewPageState extends State<OverviewPage> {
+class _SettingsPageState extends State<SettingsPage> {
   final List<SingleAccountModel> accountModels = Models.getAccountsModel();
   final List<SingleBillModel> billModels = Models.getBillsModel();
   final List<SingleBudgetModel> budgetModels = Models.getBudgetsModel();

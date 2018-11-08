@@ -4,6 +4,8 @@ import 'package:rally_proto/constants.dart';
 import 'package:rally_proto/tab_pages/accounts_page.dart';
 import 'package:rally_proto/tab_pages/bills_page.dart';
 import 'package:rally_proto/tab_pages/budgets_page.dart';
+import 'package:rally_proto/tab_pages/overview_page.dart';
+import 'package:rally_proto/tab_pages/settings_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -67,8 +69,6 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   }
 
   List<Widget> _buildTabs() {
-//    print('_buildTabs');
-
     return <Widget>[
       _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "OVERVIEW", 0),
       _buildTab(Image.asset("assets/ic_attach_money_24px.png"), "ACCOUNTS", 1),
@@ -80,11 +80,11 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
   List<Widget> _buildTabViews() {
     return <Widget>[
-      ListView(children: [Image.asset('assets/logo.png')]),
+      OverviewPage(),
       AccountsPage(),
       BillsPage(),
       BudgetsPage(),
-      ListView(children: [Image.asset('assets/logo.png')]),
+      SettingsPage(),
     ];
   }
 
@@ -119,7 +119,6 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
   @override
   initState() {
     super.initState();
-//    print('_RallyTabState initState ' + widget.isExpanded.toString());
     _controller = AnimationController(
         duration: Duration(milliseconds: Constants.defaultAnimationMillis),
         vsync: this
