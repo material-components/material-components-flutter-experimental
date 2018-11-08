@@ -41,7 +41,13 @@ class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStat
   Widget build(BuildContext context) {
     return Column(
         children: <Widget>[
-          CircleChart(),
+          CircleChart(
+            centerLabel: "Left",
+            centerAmount: _getTotal() - _getUsed(),
+            total: _getTotal(),
+            colors: _getColors(),
+            amounts: _getAmounts(),
+          ),
           SizedBox(height: 1.0, child: Container(color: Color(0xA026282F))),
           ListView(
             shrinkWrap: true,
@@ -67,5 +73,25 @@ class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStat
       indicatorFraction: budgetModel.usdUsed / budgetModel.usdCap,
       usdAmount: budgetModel.usdCap - budgetModel.usdUsed,
     );
+  }
+
+  double _getTotal() {
+    return budgetModels.fold(0, (double sum, SingleBudgetModel next) => sum + next.usdCap);
+  }
+
+  double _getUsed() {
+    return budgetModels.fold(0, (double sum, SingleBudgetModel next) => sum + next.usdUsed);
+  }
+
+  List<Color> _getColors() {
+    List<Color> list = [];
+    for (int i = 0; i < budgetModels.length; i++) {
+      list.add(RallyColors.getBudgetColor(i));
+    }
+    return list;
+  }
+
+  List<double> _getAmounts() {
+    return budgetModels.map((SingleBudgetModel m) => m.usdUsed).toList();
   }
 }

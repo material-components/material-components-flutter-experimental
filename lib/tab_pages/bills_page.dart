@@ -40,7 +40,13 @@ class _BillsPageState extends State<BillsPage> with SingleTickerProviderStateMix
   Widget build(BuildContext context) {
     return Column(
         children: <Widget>[
-          CircleChart(),
+          CircleChart(
+            centerLabel: "Due",
+            centerAmount: _getTotal(),
+            total: _getTotal(),
+            colors: _getColors(),
+            amounts: _getAmounts(),
+          ),
           SizedBox(height: 1.0, child: Container(color: Color(0xA026282F))),
           ListView(
             shrinkWrap: true,
@@ -66,5 +72,21 @@ class _BillsPageState extends State<BillsPage> with SingleTickerProviderStateMix
       indicatorFraction: 1.0,
       usdAmount: billModel.usdDue,
     );
+  }
+
+  double _getTotal() {
+    return billModels.fold(0, (double sum, SingleBillModel next) => sum + next.usdDue);
+  }
+
+  List<Color> _getColors() {
+    List<Color> list = [];
+    for (int i = 0; i < billModels.length; i++) {
+      list.add(RallyColors.getBillColor(i));
+    }
+    return list;
+  }
+
+  List<double> _getAmounts() {
+    return billModels.map((SingleBillModel m) => m.usdDue).toList();
   }
 }

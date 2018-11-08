@@ -53,4 +53,5 @@ class RallyColors {
 
   static Color gray60 = Color(0x99D8D8D8);
   static Color gray = Color(0xFFD8D8D8);
+  static Color bgColor = Color(0xFF33333D);
 }
