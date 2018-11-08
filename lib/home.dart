@@ -31,8 +31,6 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
     _tabController.addListener(() {
       if (_tabController.indexIsChanging && _tabController.previousIndex != _tabController.index) {
-//        print('prev: ' + _tabController.previousIndex.toString());
-//        print('curr: ' + _tabController.index.toString());
         setState(() {});
       }
     });
@@ -153,18 +151,20 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
   }
 
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+
     return SizedBox(
       height: 56.0,
       child: Row(
         children: <Widget>[
           SizedBox(
-            width: 54.0,
+            width: width / 7,
             child: widget.iconImage,
           ),
           FadeTransition(
             child: SizeTransition(
               child: SizedBox(
-                width: 74.0,
+                width: width / 4,
                 child: Center(child: widget.titleText),
               ),
               axis: Axis.horizontal,

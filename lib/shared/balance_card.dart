@@ -2,10 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:rally_proto/colors.dart';
 import 'package:rally_proto/formatters.dart';
+import 'package:rally_proto/models.dart';
 import 'package:rally_proto/shared/vertical_fractional_bar.dart';
 import 'package:intl/intl.dart';
 
 class BalanceCard extends StatelessWidget {
+  static BalanceCard fromAccountModel(SingleAccountModel model, int i) {
+      return BalanceCard(
+        suffix: Icon(Icons.chevron_right, color: Colors.grey),
+        title: model.name,
+        subtitle: '• • • • • • ' + model.accountNumber.substring(6),
+        indicatorColor: RallyColors.getAccountColor(i),
+        indicatorFraction: 1.0,
+        usdAmount: model.usdBalance,
+      );
+  }
+
+  static List<BalanceCard> listFromAccountModels(List<SingleAccountModel> models) {
+    List<BalanceCard> list = [];
+    for (int i = 0; i < models.length; i++) {
+      list.add(BalanceCard.fromAccountModel(models[i], i));
+    }
+    return list;
+  }
+
   const BalanceCard({
     @required this.indicatorColor,
     @required this.indicatorFraction,
