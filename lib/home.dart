@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:rally_proto/constants.dart';
 import 'package:rally_proto/tab_pages/accounts_page.dart';
 import 'package:rally_proto/tab_pages/bills_page.dart';
 import 'package:rally_proto/tab_pages/budgets_page.dart';
@@ -28,8 +29,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
     _tabController.addListener(() {
       if (_tabController.indexIsChanging && _tabController.previousIndex != _tabController.index) {
-        print('prev: ' + _tabController.previousIndex.toString());
-        print('curr: ' + _tabController.index.toString());
+//        print('prev: ' + _tabController.previousIndex.toString());
+//        print('curr: ' + _tabController.index.toString());
         setState(() {});
       }
     });
@@ -66,7 +67,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   }
 
   List<Widget> _buildTabs() {
-    print('_buildTabs');
+//    print('_buildTabs');
 
     return <Widget>[
       _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "OVERVIEW", 0),
@@ -118,9 +119,9 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
   @override
   initState() {
     super.initState();
-    print('_RallyTabState initState ' + widget.isExpanded.toString());
+//    print('_RallyTabState initState ' + widget.isExpanded.toString());
     _controller = AnimationController(
-        duration: Duration(milliseconds: 175),
+        duration: Duration(milliseconds: Constants.defaultAnimationMillis),
         vsync: this
     );
     _titleSizeAnimation = CurvedAnimation(
@@ -143,7 +144,7 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
   @override
   void didUpdateWidget(_RallyTab oldWidget) {
     super.didUpdateWidget(oldWidget);
-    print('_RallyTabState didUpdateWidget ' + widget.isExpanded.toString());
+//    print('_RallyTabState didUpdateWidget ' + widget.isExpanded.toString());
 
     if (widget.isExpanded) {
       _controller.forward();
