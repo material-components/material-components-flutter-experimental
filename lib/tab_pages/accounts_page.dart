@@ -5,6 +5,7 @@ import 'package:rally_proto/models.dart';
 import 'package:rally_proto/shared/balance_card.dart';
 import 'package:rally_proto/shared/circle_chart.dart';
 
+// TODO(clocksmith): Refactor AccountsPage, BillsPage, and BudgetsPage to share more.
 class AccountsPage extends StatefulWidget {
   AccountsPage({Key key}) : super(key: key);
 
@@ -26,6 +27,7 @@ class _AccountsPageState extends State<AccountsPage> with SingleTickerProviderSt
             colors: _getColors(),
             amounts: _getAmounts(),
           ),
+          // TODO(clocksmith): Is this actually supposed to be a shadow?
           SizedBox(height: 1.0, child: Container(color: Color(0xA026282F))),
           ListView(
             shrinkWrap: true,

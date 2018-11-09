@@ -1,23 +1,9 @@
 import 'package:flutter/material.dart';
 
+/// Most color assignments in Rally are not like the the typical color
+/// assignments that are common in other apps. Instead of primarily mapping to
+/// component type and part, they are assigned round robin based on layout.
 class RallyColors {
-  static const MaterialColor primaryGreen = MaterialColor(
-    _primaryGreenPrimaryValue,
-    <int, Color>{
-      50: Color(0xFFFFEBEE),
-      100: Color(0xFFFFCDD2),
-      200: Color(0xFFEF9A9A),
-      300: Color(0xFFE57373),
-      400: Color(0xFFEF5350),
-      500: Color(_primaryGreenPrimaryValue),
-      600: Color(0xFFE53935),
-      700: Color(0xFFD32F2F),
-      800: Color(0xFFC62828),
-      900: Color(0xFFB71C1C),
-    },
-  );
-  static const int _primaryGreenPrimaryValue = 0xFFF44336;
-
   static const List<Color> accountColors = <Color>[
     Color(0xFF005D57),
     Color(0xFF04B97F),
@@ -51,7 +37,11 @@ class RallyColors {
     return budgetColors[i % budgetColors.length];
   }
 
-  static Color gray60 = Color(0x99D8D8D8);
+  // TODO(clocksmith): Use color scheme where possible
+
   static Color gray = Color(0xFFD8D8D8);
-  static Color bgColor = Color(0xFF33333D);
+  static Color gray60a = Color(0x99D8D8D8);
+
+  static Color pageBg = Color(0xFF33333D);
+  static Color inputBg = Color(0xFF26282F);
 }

@@ -64,7 +64,7 @@ class BalanceCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(title, style: Theme.of(context).textTheme.body1.copyWith(fontSize: 16.0)),
-                      Text(subtitle, style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60))
+                      Text(subtitle, style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60a))
                     ],
                   ),
                   Spacer(),

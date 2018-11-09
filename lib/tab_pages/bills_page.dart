@@ -28,6 +28,7 @@ class _BillsPageState extends State<BillsPage> with SingleTickerProviderStateMix
           ),
           SizedBox(height: 1.0, child: Container(color: Color(0xA026282F))),
           ListView(
+            // TODO(clocksmith): Is this needed? If so, why?
             shrinkWrap: true,
             children: _buildBalanceCards(),
           )

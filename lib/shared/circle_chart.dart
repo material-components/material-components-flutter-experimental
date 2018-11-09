@@ -13,6 +13,7 @@ class CircleChart extends StatefulWidget {
   final String centerLabel;
   final double centerAmount;
   final double total;
+  // TODO(clocksmith): Create ColoredAmount and use 1 list.
   final List<double> amounts;
   final List<Color> colors;
 
@@ -148,7 +149,7 @@ class _CircleChartOutlineBoxPainter extends BoxPainter {
     }
 
     // Paint a smaller inner curcle to cover the painted arcs to display as segments
-    Paint bgPaint = Paint()..color = RallyColors.bgColor;
+    Paint bgPaint = Paint()..color = RallyColors.pageBg;
     canvas.drawArc(innerRect, 0, 2.0 * pi, true, bgPaint);
   }
 }

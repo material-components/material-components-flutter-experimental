@@ -8,17 +8,12 @@ import 'package:rally_proto/tab_pages/overview_page.dart';
 import 'package:rally_proto/tab_pages/settings_page.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
   TabController _tabController;
-//  List<Tab> _tabs;
 
   _HomePageState() {
     _tabController = TabController(length: 5, vsync: this);
@@ -43,16 +38,25 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           child: Column(
               children: <Widget>[
                 Theme(
+                  // This theme effectively removes the default visual touch
+                  // feedback for tapping a tab, which is replaced with a custom
+                  // animation.
                   data: Theme.of(context).copyWith(
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                   ),
                   child: TabBar(
+                    // setting isScrollable to true prevents the tabs from being
+                    // wrapped in [Expanded] widgets, which allows for more
+                    // flexible sizes and size animations among tabs.
                     isScrollable: true,
                     labelPadding: EdgeInsets.zero,
                     tabs: _buildTabs(),
                     controller: _tabController,
-                    indicator: UnderlineTabIndicator(borderSide: BorderSide(style: BorderStyle.none)),
+                    // This effectively removes the tab indicator.
+                    indicator: UnderlineTabIndicator(
+                        borderSide: BorderSide(style: BorderStyle.none)
+                    ),
                   ),
                 ),
                 Expanded(
@@ -66,6 +70,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     );
   }
 
+  // TODO(clocksmith): Use icons
   List<Widget> _buildTabs() {
     return <Widget>[
       _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "OVERVIEW", 0),
@@ -111,6 +116,7 @@ class _RallyTab extends StatefulWidget {
 class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixin {
   Animation<double> _titleSizeAnimation;
   Animation<double> _titleFadeAnimation;
+  // TODO(clocksmith): Use this to animate the opacity of the icons
   Animation<double> _iconFadeAnimation;
   AnimationController _controller;
 
@@ -141,8 +147,6 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
   @override
   void didUpdateWidget(_RallyTab oldWidget) {
     super.didUpdateWidget(oldWidget);
-//    print('_RallyTabState didUpdateWidget ' + widget.isExpanded.toString());
-
     if (widget.isExpanded) {
       _controller.forward();
     } else {

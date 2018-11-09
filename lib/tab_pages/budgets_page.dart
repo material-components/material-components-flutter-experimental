@@ -45,7 +45,7 @@ class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStat
 
   BalanceCard _buildBalanceCard(SingleBudgetModel budgetModel, int i, BuildContext context) {
     return BalanceCard(
-      suffix: Text(' LEFT', style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60, fontSize: 10.0)),
+      suffix: Text(' LEFT', style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60a, fontSize: 10.0)),
       title: budgetModel.name,
       subtitle: Formatters.usdWithSign.format(budgetModel.usdUsed) + ' / ' + Formatters.usdWithSign.format(budgetModel.usdCap),
       indicatorColor: RallyColors.getBudgetColor(i),

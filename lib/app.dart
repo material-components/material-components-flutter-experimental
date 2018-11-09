@@ -4,6 +4,10 @@ import 'package:rally_proto/colors.dart';
 import 'package:rally_proto/home.dart';
 import 'package:rally_proto/login.dart';
 
+/// The RallyApp is a MaterialApp with a theme and 2 routes.
+///
+/// The home route is the main page with tabs for sub pages.
+/// The login route is the initial route.
 class RallyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,16 +25,15 @@ class RallyApp extends StatelessWidget {
   ThemeData _buildRallyTheme() {
     final ThemeData base = ThemeData.dark();
     return ThemeData(
-      scaffoldBackgroundColor: RallyColors.bgColor,
-      primarySwatch: RallyColors.primaryGreen,
+      scaffoldBackgroundColor: RallyColors.pageBg,
       textTheme: _buildRallyTextTheme(base.textTheme),
       inputDecorationTheme: InputDecorationTheme(
         labelStyle: TextStyle(
-            color: Colors.grey,
+            color: RallyColors.gray,
             fontWeight: FontWeight.w500
         ),
         filled: true,
-        fillColor: Color(0xFF26282F),
+        fillColor: RallyColors.inputBg,
         focusedBorder: InputBorder.none,
       ),
     );
@@ -38,29 +41,15 @@ class RallyApp extends StatelessWidget {
 
   TextTheme _buildRallyTextTheme(TextTheme base) {
     return base.copyWith(
-      headline: base.headline.copyWith(
-        fontFamily: "Roboto Condensed",
-        fontWeight: FontWeight.w500,
-      ),
-      title: base.title.copyWith(fontSize: 18.0),
-      caption: base.caption.copyWith(
-        fontFamily: "Roboto RallyCondensed",
-        fontWeight: FontWeight.w400,
-        fontSize: 14.0,
-      ),
       body1:base.body1.copyWith(
         fontFamily: "Roboto Condensed",
-        fontWeight: FontWeight.w400,
         fontSize: 14.0,
+        fontWeight: FontWeight.w400,
       ),
       body2: base.body2.copyWith(
         fontFamily: "Eczar",
         fontSize: 14.0,
-      ),
-      button: base.button.copyWith(
-        fontFamily: "Roboto Condensed",
-        fontWeight: FontWeight.w500,
-        fontSize: 14.0,
+        fontWeight: FontWeight.w400,
       ),
     ).apply(
       displayColor: Colors.white,
