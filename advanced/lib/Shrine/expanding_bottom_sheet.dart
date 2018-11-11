@@ -1,17 +1,3 @@
-// Copyright 2018-present the Flutter authors. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -38,7 +24,7 @@ const double _kCornerRadius = 24.0;
 const double _kWidthForCartIcon = 64.0;
 
 class ExpandingBottomSheet extends StatefulWidget {
-  const ExpandingBottomSheet({Key key, @required this.hideController})
+  const ExpandingBottomSheet({ Key key, @required this.hideController })
       : assert(hideController != null),
         super(key: key);
 
@@ -47,8 +33,7 @@ class ExpandingBottomSheet extends StatefulWidget {
   @override
   _ExpandingBottomSheetState createState() => _ExpandingBottomSheetState();
 
-  static _ExpandingBottomSheetState of(BuildContext context,
-      {bool isNullOk: false}) {
+  static _ExpandingBottomSheetState of(BuildContext context, { bool isNullOk: false }) {
     assert(isNullOk != null);
     assert(context != null);
     final _ExpandingBottomSheetState result = context
@@ -57,7 +42,8 @@ class ExpandingBottomSheet extends StatefulWidget {
       return result;
     }
     throw FlutterError(
-        'ExpandingBottomSheet.of() called with a context that does not contain a ExpandingBottomSheet.\n');
+        'ExpandingBottomSheet.of() called with a context that does not contain a ExpandingBottomSheet.\n'
+    );
   }
 }
 
@@ -66,12 +52,14 @@ class ExpandingBottomSheet extends StatefulWidget {
 // curves, like [Curves.fastOutSlowIn], it can't be expressed in a cubic bezier
 // curve formula. It's quintic, not cubic. But it _can_ be expressed as one
 // curve followed by another, which we do here.
-Animation<T> _getEmphasizedEasingAnimation<T>(
-    {@required T begin,
-    @required T peak,
-    @required T end,
-    @required bool isForward,
-    @required Animation parent}) {
+Animation<T> _getEmphasizedEasingAnimation<T>({
+  @required T begin,
+  @required T peak,
+  @required T end,
+  @required bool isForward,
+  @required Animation parent
+}) {
+
   Curve firstCurve;
   Curve secondCurve;
   double firstWeight;
@@ -168,13 +156,13 @@ class _ExpandingBottomSheetState extends State<ExpandingBottomSheet> with Ticker
     }
   }
 
-  Animation<double> _getHeightAnimation(double screenHeight) {
+  Animation<double> _getHeightAnimation(BuildContext context, double screenHeight) {
     if (_controller.status == AnimationStatus.forward) {
       // Opening animation
 
       return _getEmphasizedEasingAnimation(
-        begin: _kCartHeight,
-        peak: _kCartHeight + (screenHeight - _kCartHeight) * _kPeakVelocityProgress,
+        begin: _getNetCartHeight(context),
+        peak: _getNetCartHeight(context) + (screenHeight - _getNetCartHeight(context)) * _kPeakVelocityProgress,
         end: screenHeight,
         isForward: true,
         parent: _controller.view,
@@ -182,7 +170,7 @@ class _ExpandingBottomSheetState extends State<ExpandingBottomSheet> with Ticker
     } else {
       // Closing animation
       return Tween<double>(
-        begin: _kCartHeight,
+        begin: _getNetCartHeight(context),
         end: screenHeight,
       ).animate(
         CurvedAnimation(
@@ -233,6 +221,10 @@ class _ExpandingBottomSheetState extends State<ExpandingBottomSheet> with Ticker
           ? Interval(0.3, 0.6)
           : Interval(0.766, 1.0),
     );
+  }
+
+  _getNetCartHeight(BuildContext context) {
+    return _kCartHeight + MediaQuery.of(context).padding.bottom;
   }
 
   // Returns the correct width of the ExpandingBottomSheet based on the number of
@@ -293,23 +285,27 @@ class _ExpandingBottomSheetState extends State<ExpandingBottomSheet> with Ticker
     return ExcludeSemantics(
       child: Opacity(
         opacity: _thumbnailOpacityAnimation.value,
-        child: Column(children: <Widget>[
-          Row(children: <Widget>[
-            AnimatedPadding(
-              padding: _cartPaddingFor(numProducts),
-              child: Icon(Icons.shopping_cart),
-              duration: Duration(milliseconds: 225),
-            ),
-            Container(
-              // Accounts for the overflow number
-              width: numProducts > 3 ? _width - 94.0 : _width - 64.0,
-              height: _kCartHeight,
-              padding: EdgeInsets.symmetric(vertical: 8.0),
-              child: ProductThumbnailRow(),
-            ),
-            ExtraProductsNumber()
-          ]),
-        ]),
+        child: Column(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
+              child: Row(children: <Widget>[
+                AnimatedPadding(
+                  padding: _cartPaddingFor(numProducts),
+                  child: Icon(Icons.shopping_cart),
+                  duration: Duration(milliseconds: 225),
+                ),
+                Container(
+                  // Accounts for the overflow number
+                  width: numProducts > 3 ? _width - 94.0 : _width - 64.0,
+                  height: _kCartHeight,
+                  padding: EdgeInsets.symmetric(vertical: 8.0),
+                  child: ProductThumbnailRow(),
+                ),
+                ExtraProductsNumber()
+              ]),
+            )],
+        ),
       ),
     );
   }
@@ -333,7 +329,7 @@ class _ExpandingBottomSheetState extends State<ExpandingBottomSheet> with Ticker
 
     _width = _widthFor(numProducts);
     _widthAnimation = _getWidthAnimation(screenWidth);
-    _heightAnimation = _getHeightAnimation(screenHeight);
+    _heightAnimation = _getHeightAnimation(context, screenHeight);
     _shapeAnimation = _getShapeAnimation();
     _thumbnailOpacityAnimation = _getThumbnailOpacityAnimation();
     _cartOpacityAnimation = _getCartOpacityAnimation();
@@ -381,8 +377,8 @@ class _ExpandingBottomSheetState extends State<ExpandingBottomSheet> with Ticker
   // only be relevant for Android).
   Future<bool> _onWillPop() async {
     if (!_isOpen) {
-      SystemNavigator.pop();
-      return false;
+      await SystemNavigator.pop();
+      return true;
     }
 
     close();
@@ -482,27 +478,28 @@ class _ProductThumbnailRowState extends State<ProductThumbnailRow> {
 
     Set<int> difference = internalSet.difference(listSet);
     if (difference.isEmpty) {
-      return;
+    return;
     }
 
     difference.forEach((product) {
-      if (_internalList.length < _list.length) {
-        _list.remove(product);
-      } else if (_internalList.length > _list.length) {
-        _list.add(product);
-      }
+    if (_internalList.length < _list.length) {
+    _list.remove(product);
+    } else if (_internalList.length > _list.length) {
+    _list.add(product);
+    }
     });
 
     while (_internalList.length != _list.length) {
-      int index = 0;
-      // Check bounds and that the list elements are the same
-      while (_internalList.isNotEmpty &&
-          _list.length > 0 &&
-          index < _internalList.length &&
-          index < _list.length &&
-          _internalList[index] == _list[index]) {
-        index++;
-      }
+    int index = 0;
+    // Check bounds and that the list elements are the same
+    while (_internalList.isNotEmpty &&
+    _list.length > 0 &&
+    index < _internalList.length &&
+    index < _list.length &&
+    _internalList[index] == _list[index]) {
+    index++;
+    }
+
     }
   }
 

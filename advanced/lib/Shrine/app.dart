@@ -17,9 +17,9 @@ import 'package:flutter/material.dart';
 import 'backdrop.dart';
 import 'category_menu_page.dart';
 import 'colors.dart';
+import 'expanding_bottom_sheet.dart';
 import 'home.dart';
 import 'login.dart';
-import 'expanding_bottom_sheet.dart';
 import 'supplemental/cut_corners_border.dart';
 
 class ShrineApp extends StatefulWidget {
@@ -27,10 +27,9 @@ class ShrineApp extends StatefulWidget {
   _ShrineAppState createState() => _ShrineAppState();
 }
 
-class _ShrineAppState extends State<ShrineApp>
-    with SingleTickerProviderStateMixin {
+class _ShrineAppState extends State<ShrineApp> with SingleTickerProviderStateMixin {
   // Controller to coordinate both the opening/closing of backdrop and sliding
-  // of expanding bottom sheet.
+  // of expanding bottom sheet
   AnimationController _controller;
 
   @override
@@ -38,7 +37,7 @@ class _ShrineAppState extends State<ShrineApp>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 450),
+      duration: const Duration(milliseconds: 450),
       value: 1.0,
     );
   }
@@ -49,10 +48,10 @@ class _ShrineAppState extends State<ShrineApp>
       title: 'Shrine',
       home: HomePage(
         backdrop: Backdrop(
-          frontLayer: ProductPage(),
+          frontLayer: const ProductPage(),
           backLayer: CategoryMenuPage(onCategoryTap: () => _controller.forward()),
-          frontTitle: Text('SHRINE'),
-          backTitle: Text('MENU'),
+          frontTitle: const Text('SHRINE'),
+          backTitle: const Text('MENU'),
           controller: _controller,
         ),
         expandingBottomSheet: ExpandingBottomSheet(hideController: _controller),
@@ -71,9 +70,7 @@ Route<dynamic> _getRoute(RouteSettings settings) {
 
   return MaterialPageRoute<void>(
     settings: settings,
-    builder: (BuildContext context) {
-      return Theme(data: _kShrineTheme, child: LoginPage());
-    },
+    builder: (BuildContext context) => LoginPage(),
     fullscreenDialog: true,
   );
 }
@@ -95,12 +92,12 @@ ThemeData _buildShrineTheme() {
     cardColor: kShrineBackgroundWhite,
     textSelectionColor: kShrinePink100,
     errorColor: kShrineErrorRed,
-    buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.accent),
-    primaryIconTheme: base.iconTheme.copyWith(color: kShrineBrown900),
-    inputDecorationTheme: InputDecorationTheme(
-      border: CutCornersBorder(),
-      focusedBorder: CutCornersBorder(borderSide: BorderSide(color: kShrineBrown900)),
+    buttonTheme: const ButtonThemeData(
+      colorScheme: kShrineColorScheme,
+      textTheme: ButtonTextTheme.normal,
     ),
+    primaryIconTheme: _customIconTheme(base.iconTheme),
+    inputDecorationTheme: const InputDecorationTheme(border: CutCornersBorder()),
     textTheme: _buildShrineTextTheme(base.textTheme),
     primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
@@ -109,35 +106,31 @@ ThemeData _buildShrineTheme() {
 }
 
 TextTheme _buildShrineTextTheme(TextTheme base) {
-  return base
-      .copyWith(
-        headline: base.headline.copyWith(
-          fontWeight: FontWeight.w500,
-        ),
-        title: base.title.copyWith(fontSize: 18.0),
-        caption: base.caption.copyWith(
-          fontWeight: FontWeight.w400,
-          fontSize: 14.0,
-        ),
-        body2: base.body2.copyWith(
-          fontWeight: FontWeight.w500,
-          fontSize: 16.0,
-        ),
-        button: base.button.copyWith(
-          fontWeight: FontWeight.w500,
-          fontSize: 14.0,
-        ),
-      )
-      .apply(
-        fontFamily: 'Rubik',
-        displayColor: kShrineBrown900,
-        bodyColor: kShrineBrown900,
-      );
+  return base.copyWith(
+    headline: base.headline.copyWith(fontWeight: FontWeight.w500),
+    title: base.title.copyWith(fontSize: 18.0),
+    caption: base.caption.copyWith(fontWeight: FontWeight.w400, fontSize: 14.0),
+    body2: base.body2.copyWith(fontWeight: FontWeight.w500, fontSize: 16.0),
+    button: base.button.copyWith(fontWeight: FontWeight.w500, fontSize: 14.0),
+  ).apply(
+    fontFamily: 'Raleway',
+    displayColor: kShrineBrown900,
+    bodyColor: kShrineBrown900,
+  );
 }
 
-ColorScheme kShrineColorScheme =
-  ColorScheme.light(
-      primary: kShrinePink100,
-      secondary: kShrineBrown900,
-      surface: kShrineBackgroundWhite,
-  );
+const ColorScheme kShrineColorScheme = ColorScheme(
+  primary: kShrinePink100,
+  primaryVariant: kShrineBrown900,
+  secondary: kShrinePink50,
+  secondaryVariant: kShrineBrown900,
+  surface: kShrineSurfaceWhite,
+  background: kShrineBackgroundWhite,
+  error: kShrineErrorRed,
+  onPrimary: kShrineBrown900,
+  onSecondary: kShrineBrown900,
+  onSurface: kShrineBrown900,
+  onBackground: kShrineBrown900,
+  onError: kShrineSurfaceWhite,
+  brightness: Brightness.light,
+);
