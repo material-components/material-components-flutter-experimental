@@ -3,6 +3,7 @@ import 'Shrine/app.dart';
 import 'Crane/app.dart';
 import 'Owl/owl.dart';
 import 'Rally/app.dart';
+import 'Owl/colors.dart';
 
 class MainHomePage extends StatelessWidget {
   @override
@@ -24,7 +25,36 @@ class MainHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => OwlWidget(),
+                    builder: (BuildContext context) => ThemeColorOverride(
+                      color: kOwlYellow,
+                      secondary: kOwlBlue,
+                      textColor: Colors.black,
+                      child: OwlHomeWidget(() {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                ThemeColorOverride(
+                                  color: kOwlRed,
+                                  secondary: kOwlRed,
+                                  textColor: Colors.white,
+                                  child: OwlHomeWidget(() {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              ThemeColorOverride(
+                                                  color: kOwlBlue,
+                                                  secondary: kOwlYellow,
+                                                  textColor: Colors.white,
+                                                  child: OwlHomeWidget(() {}))),
+                                    );
+                                  }),
+                                ),
+                          ),
+                        );
+                      }),
+                    ),
                   ),
                 );
               },
