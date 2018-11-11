@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'icons.dart';
 import 'Shrine/app.dart';
 import 'Crane/app.dart';
 import 'Owl/owl.dart';
+import 'Rally/app.dart';
 
 class MainHomePage extends StatelessWidget {
   @override
@@ -75,6 +75,25 @@ class MainHomePage extends StatelessWidget {
                       'Crane',
                       style: Theme.of(context).textTheme.display1,
                     ))),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => RallyApp()),
+                );
+              },
+              child: Padding(
+                padding: const EdgeInsets.all(2.0),
+                child: Material(
+                    color: Colors.white,
+                    child: Center(
+                        child: Text(
+                          'Rally',
+                          style: Theme.of(context).textTheme.display1,
+                        ))),
               ),
             ),
           ],
