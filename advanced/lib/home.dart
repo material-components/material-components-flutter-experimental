@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'icons.dart';
 import 'Shrine/app.dart';
 import 'Crane/app.dart';
 import 'Owl/owl.dart';
+import 'Rally/app.dart';
+import 'Owl/colors.dart';
 
 class MainHomePage extends StatelessWidget {
   @override
@@ -24,7 +25,36 @@ class MainHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => OwlWidget(),
+                    builder: (BuildContext context) => ThemeColorOverride(
+                      color: kOwlYellow,
+                      secondary: kOwlBlue,
+                      textColor: Colors.black,
+                      child: OwlHomeWidget(() {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                ThemeColorOverride(
+                                  color: kOwlRed,
+                                  secondary: kOwlRed,
+                                  textColor: Colors.white,
+                                  child: OwlHomeWidget(() {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              ThemeColorOverride(
+                                                  color: kOwlBlue,
+                                                  secondary: kOwlYellow,
+                                                  textColor: Colors.white,
+                                                  child: OwlHomeWidget(() {}))),
+                                    );
+                                  }),
+                                ),
+                          ),
+                        );
+                      }),
+                    ),
                   ),
                 );
               },
@@ -75,6 +105,25 @@ class MainHomePage extends StatelessWidget {
                       'Crane',
                       style: Theme.of(context).textTheme.display1,
                     ))),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (BuildContext context) => RallyApp()),
+                );
+              },
+              child: Padding(
+                padding: const EdgeInsets.all(2.0),
+                child: Material(
+                    color: Colors.white,
+                    child: Center(
+                        child: Text(
+                          'Rally',
+                          style: Theme.of(context).textTheme.display1,
+                        ))),
               ),
             ),
           ],
