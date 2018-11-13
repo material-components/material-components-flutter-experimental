@@ -6,8 +6,9 @@ import 'package:rally_proto/models.dart';
 import 'package:rally_proto/shared/vertical_fractional_bar.dart';
 import 'package:intl/intl.dart';
 
+/// A reusable widget to show balance information of a single entity as a card.
 class BalanceCard extends StatelessWidget {
-  static BalanceCard fromAccountModel(SingleAccountModel model, int i) {
+  static BalanceCard fromAccountModel(AccountItem model, int i) {
       return BalanceCard(
         suffix: Icon(Icons.chevron_right, color: Colors.grey),
         title: model.name,
@@ -18,10 +19,29 @@ class BalanceCard extends StatelessWidget {
       );
   }
 
-  static List<BalanceCard> listFromAccountModels(List<SingleAccountModel> models) {
+  static BalanceCard fromBillModel(BillItem model, int i) {
+    return BalanceCard(
+      suffix: Icon(Icons.chevron_right, color: Colors.grey),
+      title: model.name,
+      subtitle: model.dueDate,
+      indicatorColor: RallyColors.getBillColor(i),
+      indicatorFraction: 1.0,
+      usdAmount: model.usdDue,
+    );
+  }
+
+  static List<BalanceCard> listFromAccountModels(List<AccountItem> models) {
     List<BalanceCard> list = [];
     for (int i = 0; i < models.length; i++) {
       list.add(BalanceCard.fromAccountModel(models[i], i));
+    }
+    return list;
+  }
+
+  static List<BalanceCard> listFromBillModels(List<BillItem> models) {
+    List<BalanceCard> list = [];
+    for (int i = 0; i < models.length; i++) {
+      list.add(BalanceCard.fromBillModel(models[i], i));
     }
     return list;
   }
@@ -88,4 +108,22 @@ class BalanceCard extends StatelessWidget {
         )
     );
   }
+}
+
+class BalanceCardModel {
+  final Color indicatorColor;
+  final double indicatorFraction;
+  final String title;
+  final String subtitle;
+  final double usdAmount;
+  final Widget suffix;
+
+  const BalanceCardModel(
+      this.indicatorColor,
+      this.indicatorFraction,
+      this.title,
+      this.subtitle,
+      this.usdAmount,
+      this.suffix,
+      );
 }

@@ -25,18 +25,6 @@ class RallyColors {
     Color(0xFF0082FB),
   ];
 
-  static Color getAccountColor(int i) {
-    return accountColors[i % accountColors.length];
-  }
-
-  static Color getBillColor(int i) {
-    return billColors[i % billColors.length];
-  }
-
-  static Color getBudgetColor(int i) {
-    return budgetColors[i % budgetColors.length];
-  }
-
   // TODO(clocksmith): Use color scheme where possible
 
   static Color gray = Color(0xFFD8D8D8);
@@ -44,4 +32,39 @@ class RallyColors {
 
   static Color pageBg = Color(0xFF33333D);
   static Color inputBg = Color(0xFF26282F);
+
+  /// Convenience method to get a list of account colors.
+  static List<Color> getAccountColors(int length) {
+    return List<Color>.generate(length, getAccountColor);
+  }
+
+  /// Convenience method to get a list of bill colors.
+  static List<Color> getBillColors(int length) {
+    return List<Color>.generate(length, getBillColor);
+  }
+
+  /// Convenience method to get a list of budget colors.
+  static List<Color> getBudgetColors(int length) {
+    return List<Color>.generate(length, getBudgetColor);
+  }
+
+  /// Convenience method to get a single account color with position i.
+  static Color getAccountColor(int i) {
+    return getCycledColor(accountColors, i);
+  }
+
+  /// Convenience method to get a single bill color with position i.
+  static Color getBillColor(int i) {
+    return getCycledColor(billColors, i);
+  }
+
+  /// Convenience method to get a single budget color with position i.
+  static Color getBudgetColor(int i) {
+    return getCycledColor(budgetColors, i);
+  }
+
+  /// Gets a color from a list that is considered to be infinitely repeating.
+  static Color getCycledColor(List<Color> colors, int i) {
+    return colors[i % colors.length];
+  }
 }

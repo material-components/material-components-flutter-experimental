@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:rally_proto/colors.dart';
 import 'package:rally_proto/models.dart';
 import 'package:rally_proto/shared/balance_card.dart';
-import 'package:rally_proto/shared/circle_chart.dart';
+import 'package:rally_proto/shared/rally_pie_chart.dart';
 
 // TODO(clocksmith): Refactor AccountsPage, BillsPage, and BudgetsPage to share more.
 class AccountsPage extends StatefulWidget {
@@ -14,13 +14,13 @@ class AccountsPage extends StatefulWidget {
 }
 
 class _AccountsPageState extends State<AccountsPage> with SingleTickerProviderStateMixin {
-  final List<SingleAccountModel> accountModels = Models.getAccountsModel();
+  final List<AccountItem> accountModels = Models.getAccountsModel();
 
   @override
   Widget build(BuildContext context) {
     return Column(
         children: <Widget>[
-          CircleChart(
+          RallyPieChart(
             centerLabel: "Total",
             centerAmount: _getTotal(),
             total: _getTotal(),
@@ -37,19 +37,14 @@ class _AccountsPageState extends State<AccountsPage> with SingleTickerProviderSt
   }
 
   double _getTotal() {
-    return accountModels.fold(0, (double sum, SingleAccountModel next) => sum + next.usdBalance);
+    return accountModels.fold(0, (double sum, AccountItem next) => sum + next.usdBalance);
   }
 
-  // TODO(clocksmith): map with index
   List<Color> _getColors() {
-    List<Color> list = [];
-    for (int i = 0; i < accountModels.length; i++) {
-      list.add(RallyColors.getAccountColor(i));
-    }
-    return list;
+    return RallyColors.getAccountColors(accountModels.length);
   }
 
   List<double> _getAmounts() {
-    return accountModels.map((SingleAccountModel m) => m.usdBalance).toList();
+    return accountModels.map((AccountItem m) => m.usdBalance).toList();
   }
 }

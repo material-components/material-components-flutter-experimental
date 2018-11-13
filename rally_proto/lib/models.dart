@@ -1,119 +1,108 @@
 import 'package:flutter/material.dart';
 
-class BalanceCardModel {
-  final Color indicatorColor;
-  final double indicatorFraction;
-  final String title;
-  final String subtitle;
-  final double usdAmount;
-  final Widget suffix;
+class BalanceItem {
+  final String name;
+  final double primaryAmount;
 
-  const BalanceCardModel(
-      this.indicatorColor,
-      this.indicatorFraction,
-      this.title,
-      this.subtitle,
-      this.usdAmount,
-      this.suffix,
-  );
+  const BalanceItem({this.name, this.primaryAmount});
 }
 
-class SingleAccountModel {
-  final String name;
+/// The [primaryAmount] is the balance of the account in USD.
+class AccountItem extends BalanceItem {
   final String accountNumber;
-  final double usdBalance;
 
-  const SingleAccountModel({this.name, this.accountNumber, this.usdBalance});
+  const AccountItem({String name, double primaryAmount, this.accountNumber})
+      : super(name: name, primaryAmount: primaryAmount);
 }
 
-class SingleBillModel {
-  final String name;
+/// The [primaryAmount] is the amount due in USD.
+class BillItem extends BalanceItem {
   final String dueDate; // TODO: final DateTime dueDate;
-  final double usdDue;
 
-  const SingleBillModel({this.name, this.dueDate, this.usdDue});
+  const BillItem({String name, double primaryAmount, this.dueDate})
+      : super(name: name, primaryAmount: primaryAmount);
 }
 
-class SingleBudgetModel {
-  final String name;
-  final double usdUsed;
-  final double usdCap;
+/// The [primaryAmount] is the budget cap in USD.
+class BudgetItem extends BalanceItem {
+  final double amountUsed;
 
-  const SingleBudgetModel({this.name, this.usdUsed, this.usdCap});
+  const BudgetItem({String name, double primaryAmount, this.amountUsed})
+      : super(name: name, primaryAmount: primaryAmount);
 }
 
 class Models {
-  static List<SingleAccountModel> getAccountsModel() {
-    return <SingleAccountModel>[
-      SingleAccountModel(
-          name: 'Checking',
-          accountNumber: '1234561234',
-          usdBalance: 2215.13
+  static List<AccountItem> getAccountsModel() {
+    return <AccountItem>[
+      AccountItem(
+        name: 'Checking',
+        primaryAmount: 2215.13,
+        accountNumber: '1234561234',
       ),
-      SingleAccountModel(
-          name: 'Home Savings',
-          accountNumber: '8888885678',
-          usdBalance: 8678.88
+      AccountItem(
+        name: 'Home Savings',
+        primaryAmount: 8678.88,
+        accountNumber: '8888885678',
       ),
-      SingleAccountModel(
-          name: 'Car Savings',
-          accountNumber: '8888889012',
-          usdBalance: 987.48
+      AccountItem(
+        name: 'Car Savings',
+        primaryAmount: 987.48,
+        accountNumber: '8888889012',
       ),
-      SingleAccountModel(
-          name: 'Vacation',
-          accountNumber: '1231233456',
-          usdBalance: 253.0
-      ),
-    ];
-  }
-
-  static List<SingleBillModel> getBillsModel() {
-    return <SingleBillModel>[
-      SingleBillModel(
-          name: 'RedPay Credit',
-          dueDate: 'Jan 29',
-          usdDue: 45.36
-      ),
-      SingleBillModel(
-          name: 'Rent',
-          dueDate: 'Feb 9',
-          usdDue: 1200.0
-      ),
-      SingleBillModel(
-          name: 'TabFine Credit',
-          dueDate: 'Feb 22',
-          usdDue: 87.33
-      ),
-      SingleBillModel(
-          name: 'ABC Loans',
-          dueDate: 'Feb 29',
-          usdDue: 400.0
+      AccountItem(
+        name: 'Vacation',
+        primaryAmount: 253.0,
+        accountNumber: '1231233456',
       ),
     ];
   }
 
-  static List<SingleBudgetModel> getBudgetsModel() {
-    return <SingleBudgetModel>[
-      SingleBudgetModel(
-          name: 'Coffee Shops',
-          usdUsed: 45.49,
-          usdCap: 70.0
+  static List<BillItem> getBillsModel() {
+    return <BillItem>[
+      BillItem(
+        name: 'RedPay Credit',
+        primaryAmount: 45.36,
+        dueDate: 'Jan 29',
       ),
-      SingleBudgetModel(
-          name: 'Groceries',
-          usdUsed: 16.45,
-          usdCap: 170.0
+      BillItem(
+        name: 'Rent',
+        primaryAmount: 1200.0,
+        dueDate: 'Feb 9',
       ),
-      SingleBudgetModel(
-          name: 'Restaurants',
-          usdUsed: 123.25,
-          usdCap: 170.0
+      BillItem(
+        name: 'TabFine Credit',
+        primaryAmount: 87.33,
+        dueDate: 'Feb 22',
       ),
-      SingleBudgetModel(
-          name: 'Clothing',
-          usdUsed: 19.45,
-          usdCap: 70.0
+      BillItem(
+        name: 'ABC Loans',
+        primaryAmount: 400.0,
+        dueDate: 'Feb 29',
+      ),
+    ];
+  }
+
+  static List<BudgetItem> getBudgetsModel() {
+    return <BudgetItem>[
+      BudgetItem(
+        name: 'Coffee Shops',
+        primaryAmount: 70.0,
+        amountUsed: 45.49,
+      ),
+      BudgetItem(
+        name: 'Groceries',
+        primaryAmount: 170.0,
+        amountUsed: 16.45,
+      ),
+      BudgetItem(
+        name: 'Restaurants',
+        primaryAmount: 170.0,
+        amountUsed: 123.25,
+      ),
+      BudgetItem(
+        name: 'Clothing',
+        primaryAmount: 70.0,
+        amountUsed: 19.45,
       ),
     ];
   }

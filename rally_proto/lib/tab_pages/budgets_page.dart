@@ -4,7 +4,7 @@ import 'package:rally_proto/colors.dart';
 import 'package:rally_proto/formatters.dart';
 import 'package:rally_proto/models.dart';
 import 'package:rally_proto/shared/balance_card.dart';
-import 'package:rally_proto/shared/circle_chart.dart';
+import 'package:rally_proto/shared/rally_pie_chart.dart';
 
 class BudgetsPage extends StatefulWidget {
   BudgetsPage({Key key}) : super(key: key);
@@ -14,13 +14,13 @@ class BudgetsPage extends StatefulWidget {
 }
 
 class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStateMixin {
-  final List<SingleBudgetModel> budgetModels = Models.getBudgetsModel();
+  final List<BudgetItem> budgetModels = Models.getBudgetsModel();
 
   @override
   Widget build(BuildContext context) {
     return Column(
         children: <Widget>[
-          CircleChart(
+          RallyPieChart(
             centerLabel: "Left",
             centerAmount: _getTotal() - _getUsed(),
             total: _getTotal(),
@@ -43,7 +43,7 @@ class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStat
     return list;
   }
 
-  BalanceCard _buildBalanceCard(SingleBudgetModel budgetModel, int i, BuildContext context) {
+  BalanceCard _buildBalanceCard(BudgetItem budgetModel, int i, BuildContext context) {
     return BalanceCard(
       suffix: Text(' LEFT', style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60a, fontSize: 10.0)),
       title: budgetModel.name,
@@ -55,22 +55,18 @@ class _BudgetsPageState extends State<BudgetsPage> with SingleTickerProviderStat
   }
 
   double _getTotal() {
-    return budgetModels.fold(0, (double sum, SingleBudgetModel next) => sum + next.usdCap);
+    return budgetModels.fold(0, (double sum, BudgetItem next) => sum + next.usdCap);
   }
 
   double _getUsed() {
-    return budgetModels.fold(0, (double sum, SingleBudgetModel next) => sum + next.usdUsed);
+    return budgetModels.fold(0, (double sum, BudgetItem next) => sum + next.usdUsed);
   }
 
   List<Color> _getColors() {
-    List<Color> list = [];
-    for (int i = 0; i < budgetModels.length; i++) {
-      list.add(RallyColors.getBudgetColor(i));
-    }
-    return list;
+    return RallyColors.getBillColors(budgetModels.length);
   }
 
   List<double> _getAmounts() {
-    return budgetModels.map((SingleBudgetModel m) => m.usdUsed).toList();
+    return budgetModels.map((BudgetItem m) => m.usdUsed).toList();
   }
 }

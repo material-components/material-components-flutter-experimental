@@ -9,9 +9,9 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-  final List<SingleAccountModel> accountModels = Models.getAccountsModel();
-  final List<SingleBillModel> billModels = Models.getBillsModel();
-  final List<SingleBudgetModel> budgetModels = Models.getBudgetsModel();
+  final List<AccountItem> accountModels = Models.getAccountsModel();
+  final List<BillItem> billModels = Models.getBillsModel();
+  final List<BudgetItem> budgetModels = Models.getBudgetsModel();
 
   @override
   Widget build(BuildContext context) {

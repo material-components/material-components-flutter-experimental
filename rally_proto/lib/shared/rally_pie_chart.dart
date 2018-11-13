@@ -7,8 +7,8 @@ import 'package:rally_proto/colors.dart';
 import 'package:rally_proto/constants.dart';
 import 'package:rally_proto/formatters.dart';
 
-class CircleChart extends StatefulWidget {
-  CircleChart({this.centerLabel, this.centerAmount, this.total, this.amounts, this.colors});
+class RallyPieChart extends StatefulWidget {
+  RallyPieChart({this.centerLabel, this.centerAmount, this.total, this.amounts, this.colors});
 
   final String centerLabel;
   final double centerAmount;
@@ -17,10 +17,10 @@ class CircleChart extends StatefulWidget {
   final List<double> amounts;
   final List<Color> colors;
 
-  _CircleChartState createState() => _CircleChartState();
+  _RallyPieChartState createState() => _RallyPieChartState();
 }
 
-class _CircleChartState extends State<CircleChart> with SingleTickerProviderStateMixin {
+class _RallyPieChartState extends State<RallyPieChart> with SingleTickerProviderStateMixin {
 
   AnimationController controller;
   Animation<double> animation;
