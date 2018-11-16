@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class VerticalFractionalBar extends StatelessWidget {
-  VerticalFractionalBar({this.color, this.fraction});
+class VerticalFractionBar extends StatelessWidget {
+  VerticalFractionBar({this.color, this.fraction});
 
   final Color color;
   final double fraction;
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    // TODO: use paint?
     return SizedBox(
         height: 32.0,
         width: 4.0,

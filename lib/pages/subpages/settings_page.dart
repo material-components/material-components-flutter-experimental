@@ -1,18 +1,14 @@
 import 'package:flutter/widgets.dart';
-import 'package:rally_proto/models.dart';
 
+/// Placeholder for the settings page.
+///
+/// TODO(clocksmith): this page.
 class SettingsPage extends StatefulWidget {
-  SettingsPage({Key key}) : super(key: key);
-
   @override
   _SettingsPageState createState() => _SettingsPageState();
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-  final List<SingleAccountModel> accountModels = Models.getAccountsModel();
-  final List<SingleBillModel> billModels = Models.getBillsModel();
-  final List<SingleBudgetModel> budgetModels = Models.getBudgetsModel();
-
   @override
   Widget build(BuildContext context) {
     return ListView(

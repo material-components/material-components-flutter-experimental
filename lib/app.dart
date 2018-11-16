@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:rally_proto/colors.dart';
-import 'package:rally_proto/home.dart';
-import 'package:rally_proto/login.dart';
+import 'package:rally_proto/util/colors.dart';
+import 'package:rally_proto/pages/home_page.dart';
+import 'package:rally_proto/pages/login_page.dart';
 
 /// The RallyApp is a MaterialApp with a theme and 2 routes.
 ///

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:rally_proto/constants.dart';
-import 'package:rally_proto/tab_pages/accounts_page.dart';
-import 'package:rally_proto/tab_pages/bills_page.dart';
-import 'package:rally_proto/tab_pages/budgets_page.dart';
-import 'package:rally_proto/tab_pages/overview_page.dart';
-import 'package:rally_proto/tab_pages/settings_page.dart';
+import 'package:rally_proto/pages/subpages/accounts.dart';
+import 'package:rally_proto/pages/subpages/bills_page.dart';
+import 'package:rally_proto/pages/subpages/budgets_page.dart';
+import 'package:rally_proto/pages/subpages/overview_page.dart';
+import 'package:rally_proto/pages/subpages/settings_page.dart';
+import 'package:rally_proto/util/constants.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     );
   }
 
-  // TODO(clocksmith): Use icons
+  // TODO(clocksmith): Use icons.
   List<Widget> _buildTabs() {
     return <Widget>[
       _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "OVERVIEW", 0),
@@ -157,6 +157,7 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
 
+    // TODO(clocksmith): Calculate the widths of the inner boxes to take the exact required space.
     return SizedBox(
       height: 56.0,
       child: Row(
