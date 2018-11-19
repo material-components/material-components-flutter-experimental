@@ -78,4 +78,17 @@ class DummyDatas {
       ),
     ];
   }
+
+  static List<String> getSettingsTitles() {
+    return <String>[
+      'Manage Accounts',
+      'Tax Documents',
+      'Passcode and Touch ID',
+      'Notifications',
+      'Personal Information',
+      'Paperless Settings',
+      'Find ATMs',
+      'Help',
+    ];
+  }
 }

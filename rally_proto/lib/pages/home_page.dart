@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:rally_proto/pages/subpages/accounts.dart';
-import 'package:rally_proto/pages/subpages/bills_page.dart';
-import 'package:rally_proto/pages/subpages/budgets_page.dart';
-import 'package:rally_proto/pages/subpages/overview_page.dart';
-import 'package:rally_proto/pages/subpages/settings_page.dart';
+import 'package:rally_proto/pages/subpages/bills.dart';
+import 'package:rally_proto/pages/subpages/budgets.dart';
+import 'package:rally_proto/pages/subpages/overview.dart';
+import 'package:rally_proto/pages/subpages/settings.dart';
 import 'package:rally_proto/util/constants.dart';
 
 class HomePage extends StatefulWidget {
