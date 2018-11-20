@@ -104,24 +104,33 @@ class Backdrop extends StatefulWidget {
 }
 
 class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
-  static const List<double> _tabHeights = [236.0, 176.0, 236.0];
+  static const List<double> _tabHeights = [.36, .265, .36]; // Currently approximations.
 
   TabController _tabController;
-  bool _isOpen = true;
-  double _openHeight = _tabHeights[0];
+  Animation<Offset> _flyLayerOffset;
+  Animation<Offset> _sleepLayerOffset;
+  Animation<Offset> _eatLayerOffset;
 
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
-    _tabController.addListener(() {
-      final int value = _tabController.index;
-      if (_tabHeights[value] != _openHeight) {
-        setState(() {
-          _openHeight = _tabHeights[value];
-        });
-      }
-    });
+
+    _flyLayerOffset = Tween<Offset>(
+        begin: Offset(0.0, _tabHeights[0]),
+        end: Offset(-1.0, _tabHeights[0])
+    ).animate(_tabController.animation);
+
+    _sleepLayerOffset = Tween<Offset>(
+      // Extra .05 leaves a gap between left and right layers.
+      begin: Offset(1.05, _tabHeights[1]),
+      end: Offset(0.0, _tabHeights[1]),
+    ).animate(_tabController.animation);
+
+    _eatLayerOffset = Tween<Offset>(
+      begin: Offset(2.0, _tabHeights[2]),
+      end: Offset(1.0, _tabHeights[2]),
+    ).animate(_tabController.animation);
   }
 
   @override
@@ -132,12 +141,8 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    void _handleTabs(var tabIndex) {
-      if (_tabController.index == tabIndex) {
-        setState(() {
-          _isOpen = !_isOpen;
-        });
-      } else {
+    void _handleTabs(int tabIndex) {
+      if (_tabController.index != tabIndex) {
         _tabController.animateTo(tabIndex);
       }
     }
@@ -156,25 +161,25 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
         body: Stack(
           children: <Widget>[
             widget.backLayer[0],
-            AnimatedContainer(
-              duration: Duration(milliseconds: 150),
-              margin: EdgeInsets.only(top: _isOpen ? _openHeight : 0.0),
-              child: TabBarView(
-                controller: _tabController,
-                children: <Widget>[
-                  _FrontLayer(
-                      title: 'Explore Flights by Destination',
-                      index: 0,
-                  ),
-                  _FrontLayer(
-                      title: 'Explore Properties by Destination',
-                      index: 1,
-                  ),
-                  _FrontLayer(
-                      title: 'Explore Restaurants by Destination',
-                      index: 2,
-                  ),
-                ],
+            SlideTransition(
+              position: _flyLayerOffset,
+              child: _FrontLayer(
+                  title: 'Explore Flights by Destination',
+                  index: 0,
+              ),
+            ),
+            SlideTransition(
+              position: _sleepLayerOffset,
+              child: _FrontLayer(
+                  title: 'Explore Properties by Destination',
+                  index: 1,
+              ),
+            ),
+            SlideTransition(
+              position: _eatLayerOffset,
+              child: _FrontLayer(
+                  title: 'Explore Restaurants by Destination',
+                  index: 2,
               ),
             ),
           ],
