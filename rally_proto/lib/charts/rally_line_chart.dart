@@ -92,33 +92,43 @@ class RallyLineChartPainter extends CustomPainter {
       ..color = RallyColors.getAccountColor(1)
       ..strokeWidth = 2.0;
 
-    double lineWindowBottom = size.height - space * 5.0;
-    double lineWindowWidth = size.width;
+    // The top left of the window is at 0,0, so these are the same as right and bottom.
+    double windowWidth = size.width;
+    double windowHeight = size.height - space * 5.0;
+
+    // Ranges uses to lerp the pixel points.
     int windowMillis = numDays * 24 * 60 * 60 * 1000;
-
     double maxAmount = 2000.0; // minAmount is 0.0
-    
-    double lastAmounnt = 800.0;
 
-    DateTime lastDate = DateTime.utc(2018, 12, 1);
+    // Beginning of window. The end is this plus numDays.
+    DateTime startDate = DateTime.utc(2018, 12, 1);
+
+    // Arbitrary value for the first point. In a real app, a wider range of
+    // points would be used that go beyond the boudnaries of the screen.
+    double lastAmount = 800.0;
 
     // Create a list of points in terms of pixels from top left.
-    final List<Offset> points = [];
+    final List<Offset> points = [Offset(0, (maxAmount - lastAmount) / maxAmount * windowHeight)];
+    points.addAll(events.reversed.map((event) {
+      lastAmount += event.amount;
+      int diffMiliis = event.date.millisecondsSinceEpoch - startDate.millisecondsSinceEpoch;
+      double x = diffMiliis / windowMillis * windowWidth;
+      double y = (maxAmount - lastAmount) / maxAmount * windowHeight;
+      return Offset(x, y);
+    }));
 
-
-    Offset cursorStart = Offset(0, (maxAmount - lastAmounnt) / maxAmount * lineWindowBottom);
-    Offset cursorEnd = null;
-    List<DetailedEventItem> reversedEvents = events.reversed.toList();
-    for (int i = 0; i < reversedEvents.length; i++) {
-      int diffMillis = reversedEvents[i].date.millisecondsSinceEpoch - lastDate.millisecondsSinceEpoch;
-      lastDate = reversedEvents[i].date;
-      double deltaX = diffMillis / windowMillis * lineWindowWidth;
-      lastAmounnt += reversedEvents[i].amount;
-      print(deltaX);
-      double newY = (maxAmount - lastAmounnt) / maxAmount * lineWindowBottom;
-      cursorEnd = Offset(cursorStart.dx + deltaX, newY);
-      canvas.drawLine(cursorStart, cursorEnd, linePaint);
-      cursorStart = cursorEnd;
+    final Path path = Path()..fillType = PathFillType.evenOdd;
+    path.moveTo(points[0].dx, points[0].dy);
+    for (int i = 0; i < points.length - 2; i += 3) {
+      path.cubicTo(points[i].dx, points[i].dy, points[i + 1].dx, points[i + 1].dy, points[i + 2].dx, points[i + 2].dy);
     }
+    path.close();
+    canvas.drawPath(path, linePaint);
+
+    // TODO(clocksmith): Smooth!
+    // Draw the line.
+//    for (int i = 0; i < points.length - 1; i++) {
+//      canvas.drawLine(points[i], points[i + 1], linePaint);
+//    }
   }
 }
