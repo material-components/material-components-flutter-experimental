@@ -78,5 +78,4 @@ class PaintlessRoundedBorder extends InputBorder {
 
   @override
   int get hashCode => borderSide.hashCode;
-
-  }
+}

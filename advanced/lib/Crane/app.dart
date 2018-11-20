@@ -16,8 +16,6 @@ import 'package:flutter/material.dart';
 
 import 'backdrop.dart';
 import 'colors.dart';
-import 'home.dart';
-import 'menu_page.dart';
 import 'fly_form.dart';
 import 'sleep_form.dart';
 import 'eat_form.dart';
@@ -49,12 +47,11 @@ class _CraneAppState extends State<CraneApp> {
     return MaterialApp(
       title: 'Crane',
       home: Backdrop(
-        frontLayer: HomePage(),
+        frontLayer: Container(),
         backLayer: <Widget> [
           FlyForm(),
           SleepForm(),
           EatForm(),
-          MenuPage(),
         ],
         frontTitle: Text('CRANE'),
         backTitle: Text('MENU'),
