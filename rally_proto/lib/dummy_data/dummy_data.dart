@@ -29,6 +29,46 @@ class DummyDatas {
     ];
   }
 
+  static List<DetailedEventItem> getDetailedEventItems() {
+    return <DetailedEventItem>[
+      DetailedEventItem(
+          title: 'Genoe',
+          date: DateTime.utc(2019, 1, 24),
+          amount: -16.54
+      ),
+      DetailedEventItem(
+          title: 'Fortnightly Subscribe',
+          date: DateTime.utc(2019, 1, 5),
+          amount: -12.54
+      ),
+      DetailedEventItem(
+          title: 'Circle Cash',
+          date: DateTime.utc(2019, 1, 5),
+          amount: 365.65
+      ),
+      DetailedEventItem(
+          title: 'Crane Hospitality',
+          date: DateTime.utc(2019, 1, 4),
+          amount: -705.13
+      ),
+      DetailedEventItem(
+          title: 'ABC Payroll',
+          date: DateTime.utc(2018, 12, 15),
+          amount: 1141.43
+      ),
+      DetailedEventItem(
+          title: 'Shrine',
+          date: DateTime.utc(2018, 12, 15),
+          amount: -88.88
+      ),
+      DetailedEventItem(
+          title: 'Foodmates',
+          date: DateTime.utc(2018, 12, 4),
+          amount: -11.69
+      ),
+    ];
+  }
+
   static List<BillItem> getBillItems() {
     return <BillItem>[
       BillItem(

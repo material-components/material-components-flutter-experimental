@@ -59,3 +59,14 @@ class BudgetItems {
   }
 }
 
+class DetailedEventItem {
+  const DetailedEventItem({
+    this.title,
+    this.date,
+    this.amount,
+  });
+
+  final String title;
+  final DateTime date;
+  final double amount;
+}

@@ -26,6 +26,7 @@ class RallyApp extends StatelessWidget {
     final ThemeData base = ThemeData.dark();
     return ThemeData(
       scaffoldBackgroundColor: RallyColors.pageBg,
+      primaryColor: RallyColors.pageBg,
       textTheme: _buildRallyTextTheme(base.textTheme),
         inputDecorationTheme: InputDecorationTheme(
         labelStyle: TextStyle(

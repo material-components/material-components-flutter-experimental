@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:rally_proto/financial_entity/financial_entity.dart';
 import 'package:rally_proto/financial_entity/financial_entity_view.dart';
+import 'package:rally_proto/pages/subpages/details.dart';
 import 'package:rally_proto/util/colors.dart';
 import 'package:rally_proto/util/formatters.dart';
 import 'package:rally_proto/charts/vertical_fraction_bar.dart';
@@ -27,48 +28,56 @@ class FinancialEntityCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-        height: 68.0,
-        child: Column(
-          children: <Widget>[
-            SizedBox(
-              height: 67.0,
-              child: Row(
-                children: <Widget>[
-                  Padding(
-                    child: VerticalFractionBar(
-                        color: indicatorColor,
-                        fraction: indicatorFraction
+    return FlatButton(
+      onPressed: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => DetailsPage())
+        );
+      },
+      child: SizedBox(
+          height: 68.0,
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 67.0,
+                child: Row(
+                  children: <Widget>[
+                    Padding(
+                      child: VerticalFractionBar(
+                          color: indicatorColor,
+                          fraction: indicatorFraction
+                      ),
+                      padding: EdgeInsets.only(left: 16.0, right: 16.0),
                     ),
-                    padding: EdgeInsets.only(left: 16.0, right: 16.0),
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(title, style: Theme.of(context).textTheme.body1.copyWith(fontSize: 16.0)),
-                      Text(subtitle, style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60a))
-                    ],
-                  ),
-                  Spacer(),
-                  Text('\$ ' + Formatters.usd.format(amount),
-                      style: Theme.of(context).textTheme.body2.copyWith(
-                          fontSize: 20.0,
-                          color: RallyColors.gray)
-                  ),
-                  SizedBox(width: 32.0, child: suffix)
-                ],
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(title, style: Theme.of(context).textTheme.body1.copyWith(fontSize: 16.0)),
+                        Text(subtitle, style: Theme.of(context).textTheme.body1.copyWith(color: RallyColors.gray60a))
+                      ],
+                    ),
+                    Spacer(),
+                    Text('\$ ' + Formatters.usd.format(amount),
+                        style: Theme.of(context).textTheme.body2.copyWith(
+                            fontSize: 20.0,
+                            color: RallyColors.gray)
+                    ),
+                    SizedBox(width: 32.0, child: suffix)
+                  ],
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 16.0, right: 16.0),
-              child: SizedBox(
-                  height: 1.0,
-                  child: Container(color: Color(0xAA282828))
-              ),
-            )
-          ],
-        )
+              Padding(
+                padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+                child: SizedBox(
+                    height: 1.0,
+                    child: Container(color: Color(0xAA282828))
+                ),
+              )
+            ],
+          )
+      ),
     );
   }
 }

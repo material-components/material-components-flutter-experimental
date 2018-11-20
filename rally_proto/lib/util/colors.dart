@@ -28,6 +28,7 @@ class RallyColors {
   // TODO(clocksmith): Use color scheme where possible.
   static Color gray = Color(0xFFD8D8D8);
   static Color gray60a = Color(0x99D8D8D8);
+  static Color gray25a = Color(0x40D8D8D8);
   static Color pageBg = Color(0xFF33333D);
   static Color inputBg = Color(0xFF26282F);
 
