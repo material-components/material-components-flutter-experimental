@@ -32,8 +32,8 @@ class _SleepFormState extends State<SleepForm> {
     return Center(
       child: Container(
         color: kCranePurple800,
-        child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 24.0),
+        padding: EdgeInsets.symmetric(horizontal: 24.0),
+        child: Column(
           children: <Widget>[
             _PrimaryColorOverride(
               color: kCranePrimaryWhite,

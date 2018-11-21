@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:meta/meta.dart';
 import 'dart:ui';
 
@@ -33,17 +34,18 @@ class _FrontLayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return PhysicalShape(
         elevation: 16.0,
         color: kCranePrimaryWhite,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
+        clipper: ShapeBorderClipper(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
               topLeft: Radius.circular(16.0),
               topRight: Radius.circular(16.0),
+            ),
           ),
         ),
         child: ListView(
-          shrinkWrap: true,
           padding: const EdgeInsets.all(20.0),
           children: <Widget>[
             Text(title, style: Theme.of(context).textTheme.display1),
@@ -105,11 +107,14 @@ class Backdrop extends StatefulWidget {
 
 class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
   static const List<double> _tabHeights = [.36, .265, .36]; // Currently approximations.
+//  static const List<double> _tabHeights = [0.0, 0.0, 0.0]; // Currently approximations.
 
   TabController _tabController;
   Animation<Offset> _flyLayerOffset;
   Animation<Offset> _sleepLayerOffset;
   Animation<Offset> _eatLayerOffset;
+
+  Widget backLayer;
 
   @override
   void initState() {
@@ -131,6 +136,15 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
       begin: Offset(2.0, _tabHeights[2]),
       end: Offset(1.0, _tabHeights[2]),
     ).animate(_tabController.animation);
+
+    _tabController.animation.addListener(() {
+      int index = _tabController.animation.value.round();
+      if (backLayer != widget.backLayer[index]) {
+        setState(() {
+          backLayer = widget.backLayer[index];
+        });
+      }
+    });
   }
 
   @override
@@ -160,7 +174,7 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
         ),
         body: Stack(
           children: <Widget>[
-            widget.backLayer[0],
+            widget.backLayer[_tabController.index],
             SlideTransition(
               position: _flyLayerOffset,
               child: _FrontLayer(
