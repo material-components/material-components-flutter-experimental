@@ -90,6 +90,7 @@ class RallyLineChartPainter extends CustomPainter {
   _drawLine(Canvas canvas, Size size) {
     Paint linePaint = Paint()
       ..color = RallyColors.getAccountColor(1)
+      ..style = PaintingStyle.stroke
       ..strokeWidth = 2.0;
 
     // The top left of the window is at 0,0, so these are the same as right and bottom.
@@ -108,6 +109,7 @@ class RallyLineChartPainter extends CustomPainter {
     double lastAmount = 800.0;
 
     // Create a list of points in terms of pixels from top left.
+    // TODO(clocksmith): Align the points for smooth curves.
     final List<Offset> points = [Offset(0, (maxAmount - lastAmount) / maxAmount * windowHeight)];
     points.addAll(events.reversed.map((event) {
       lastAmount += event.amount;
@@ -117,18 +119,11 @@ class RallyLineChartPainter extends CustomPainter {
       return Offset(x, y);
     }));
 
-    final Path path = Path()..fillType = PathFillType.evenOdd;
+    final Path path = Path();
     path.moveTo(points[0].dx, points[0].dy);
-    for (int i = 0; i < points.length - 2; i += 3) {
-      path.cubicTo(points[i].dx, points[i].dy, points[i + 1].dx, points[i + 1].dy, points[i + 2].dx, points[i + 2].dy);
+    for (int i = 2; i < points.length; i++) {
+      path.cubicTo(points[i - 2].dx, points[i - 2].dy, points[i - 1].dx, points[i - 1].dy, points[i].dx, points[i].dy);
     }
-    path.close();
     canvas.drawPath(path, linePaint);
-
-    // TODO(clocksmith): Smooth!
-    // Draw the line.
-//    for (int i = 0; i < points.length - 1; i++) {
-//      canvas.drawLine(points[i], points[i + 1], linePaint);
-//    }
   }
 }
