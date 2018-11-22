@@ -106,8 +106,10 @@ class Backdrop extends StatefulWidget {
 }
 
 class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
-  static const List<double> _tabHeights = [.36, .265, .36]; // Currently approximations.
-//  static const List<double> _tabHeights = [0.0, 0.0, 0.0]; // Currently approximations.
+  static const List<double> _midHeights = [256.0, 196.0, 256.0];
+  static const List<double> _topHeights = [0.0, 0.0, 0.0];
+
+  List<double> _tabHeights = _midHeights;
 
   TabController _tabController;
   Animation<Offset> _flyLayerOffset;
@@ -122,19 +124,19 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
     _tabController = TabController(length: 3, vsync: this);
 
     _flyLayerOffset = Tween<Offset>(
-        begin: Offset(0.0, _tabHeights[0]),
-        end: Offset(-1.0, _tabHeights[0])
+        begin: Offset(0.0, 0.0),
+        end: Offset(-1.0, 0.0)
     ).animate(_tabController.animation);
 
     _sleepLayerOffset = Tween<Offset>(
       // Extra .05 leaves a gap between left and right layers.
-      begin: Offset(1.05, _tabHeights[1]),
-      end: Offset(0.0, _tabHeights[1]),
+      begin: Offset(1.05, 0.0),
+      end: Offset(0.0, 0.0),
     ).animate(_tabController.animation);
 
     _eatLayerOffset = Tween<Offset>(
-      begin: Offset(2.0, _tabHeights[2]),
-      end: Offset(1.0, _tabHeights[2]),
+      begin: Offset(2.0, 0.0),
+      end: Offset(1.0, 0.0),
     ).animate(_tabController.animation);
 
     _tabController.animation.addListener(() {
@@ -156,7 +158,12 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     void _handleTabs(int tabIndex) {
-      if (_tabController.index != tabIndex) {
+      if (_tabController.index == tabIndex) {
+        setState(() {
+          _tabHeights = _tabHeights == _topHeights ? _midHeights : _topHeights;
+        });
+      }
+      else{
         _tabController.animateTo(tabIndex);
       }
     }
@@ -175,25 +182,37 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
         body: Stack(
           children: <Widget>[
             widget.backLayer[_tabController.index],
-            SlideTransition(
-              position: _flyLayerOffset,
-              child: _FrontLayer(
-                  title: 'Explore Flights by Destination',
-                  index: 0,
+            AnimatedContainer(
+              duration: Duration(milliseconds: 150),
+              margin: EdgeInsets.only(top: _tabHeights[0]),
+              child: SlideTransition(
+                position: _flyLayerOffset,
+                child: _FrontLayer(
+                    title: 'Explore Flights by Destination',
+                    index: 0,
+                ),
               ),
             ),
-            SlideTransition(
-              position: _sleepLayerOffset,
-              child: _FrontLayer(
-                  title: 'Explore Properties by Destination',
-                  index: 1,
+            AnimatedContainer(
+              duration: Duration(milliseconds: 150),
+              margin: EdgeInsets.only(top: _tabHeights[1]),
+              child: SlideTransition(
+                position: _sleepLayerOffset,
+                child: _FrontLayer(
+                    title: 'Explore Properties by Destination',
+                    index: 1,
+                ),
               ),
             ),
-            SlideTransition(
-              position: _eatLayerOffset,
-              child: _FrontLayer(
-                  title: 'Explore Restaurants by Destination',
-                  index: 2,
+            AnimatedContainer(
+              duration: Duration(milliseconds: 150),
+              margin: EdgeInsets.only(top: _tabHeights[2]),
+              child: SlideTransition(
+                position: _eatLayerOffset,
+                child: _FrontLayer(
+                    title: 'Explore Restaurants by Destination',
+                    index: 2,
+                ),
               ),
             ),
           ],

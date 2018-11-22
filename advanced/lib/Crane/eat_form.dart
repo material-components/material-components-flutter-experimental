@@ -12,10 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import 'package:advanced_components_and_theming/Crane/header_form.dart';
 import 'package:flutter/material.dart';
-
-import 'colors.dart';
-import 'no_paint_rounded_border.dart';
 
 class EatForm extends StatefulWidget {
   @override
@@ -23,95 +21,35 @@ class EatForm extends StatefulWidget {
 }
 
 class _EatFormState extends State<EatForm> {
-  final _timeController = TextEditingController();
-  final _locationController = TextEditingController();
-  final _dinerController = TextEditingController();
-  final _dateController = TextEditingController();
+  final dinerController = TextEditingController();
+  final dateController = TextEditingController();
+  final timeController = TextEditingController();
+  final locationController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: kCranePurple800,
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
-        child: Column(
-          children: <Widget>[
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _dinerController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/person.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Diners',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _dateController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/calendar.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Date',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _timeController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/time.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Time',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _locationController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/food.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Location',
-                ),
-              ),
-            ),
-          ],
+    return HeaderForm(fields: <HeaderFormField>[
+        HeaderFormField(
+          assetPath: 'assets/person.png',
+          title: 'Diners',
+          textController: dinerController,
         ),
-      ),
-    );
-  }
-}
-
-
-class _PrimaryColorOverride extends StatelessWidget {
-  const _PrimaryColorOverride({Key key, this.color, this.child})
-      : super(key: key);
-
-  final Color color;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Theme(
-      child: child,
-      // TODO(tianlun): Change the color of the text theme instead
-      data: Theme.of(context).copyWith(primaryColor: color),
+        HeaderFormField(
+          assetPath: 'assets/calendar.png',
+          title: 'Date',
+          textController: dateController,
+        ),
+        HeaderFormField(
+          assetPath: 'assets/time.png',
+          title: 'Time',
+          textController: timeController,
+        ),
+        HeaderFormField(
+          assetPath: 'assets/food.png',
+          title: 'Location',
+          textController: locationController,
+        ),
+      ],
     );
   }
 }

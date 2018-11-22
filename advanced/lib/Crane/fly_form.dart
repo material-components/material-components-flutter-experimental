@@ -12,10 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import 'package:advanced_components_and_theming/Crane/header_form.dart';
 import 'package:flutter/material.dart';
-
-import 'colors.dart';
-import 'no_paint_rounded_border.dart';
 
 class FlyForm extends StatefulWidget {
   @override
@@ -23,98 +21,35 @@ class FlyForm extends StatefulWidget {
 }
 
 class _FlyFormState extends State<FlyForm> {
-  final _countryDestinationController = TextEditingController();
-  final _destinationController = TextEditingController();
-  final _travelerController = TextEditingController();
-  final _dateController = TextEditingController();
+  final travelerController = TextEditingController();
+  final countryDestinationController = TextEditingController();
+  final destinationController = TextEditingController();
+  final dateController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: kCranePurple800,
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
-        child: Column(
-          children: <Widget>[
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _travelerController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/person.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Travelers',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _countryDestinationController,
-                decoration: InputDecoration(
-                  prefixIcon: Padding(
-                    padding: EdgeInsets.fromLTRB(12.0, 8.0, 12.0, 8.0),
-                    child: Image.asset('assets/pin.png'),
-                  ),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Country',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _destinationController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/plane.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Destination',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _dateController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/calendar.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Dates',
-                ),
-              ),
-            ),
-          ],
+    return HeaderForm(fields: <HeaderFormField>[
+        HeaderFormField(
+          assetPath: 'assets/person.png',
+          title: 'Travelers',
+          textController: travelerController,
         ),
-      ),
-    );
-  }
-}
-
-
-class _PrimaryColorOverride extends StatelessWidget {
-  const _PrimaryColorOverride({Key key, this.color, this.child})
-      : super(key: key);
-
-  final Color color;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Theme(
-      child: child,
-      // TODO(tianlun): Change the color of the text theme instead
-      data: Theme.of(context).copyWith(primaryColor: color),
+        HeaderFormField(
+            assetPath: 'assets/pin.png',
+            title: 'Country',
+            textController: countryDestinationController,
+        ),
+        HeaderFormField(
+            assetPath: 'assets/plane.png',
+            title: 'Destination',
+            textController: destinationController,
+        ),
+        HeaderFormField(
+            assetPath: 'assets/calendar.png',
+            title: 'Dates',
+            textController: dateController,
+        ),
+      ],
     );
   }
 }

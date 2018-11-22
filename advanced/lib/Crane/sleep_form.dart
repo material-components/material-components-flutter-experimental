@@ -12,10 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import 'package:advanced_components_and_theming/Crane/header_form.dart';
 import 'package:flutter/material.dart';
-
-import 'colors.dart';
-import 'no_paint_rounded_border.dart';
 
 class SleepForm extends StatefulWidget {
   @override
@@ -23,83 +21,29 @@ class SleepForm extends StatefulWidget {
 }
 
 class _SleepFormState extends State<SleepForm> {
-  final _locationController = TextEditingController();
-  final _travelerController = TextEditingController();
-  final _dateController = TextEditingController();
+  final travelerController = TextEditingController();
+  final dateController = TextEditingController();
+  final locationController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        color: kCranePurple800,
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
-        child: Column(
-          children: <Widget>[
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _travelerController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/person.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Travelers',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _dateController,
-                decoration: InputDecoration(
-                  prefixIcon: Image.asset('assets/calendar.png'),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Dates',
-                ),
-              ),
-            ),
-            SizedBox(height: 8.0),
-            _PrimaryColorOverride(
-              color: kCranePrimaryWhite,
-              child: TextField(
-                controller: _locationController,
-                decoration: InputDecoration(
-                  prefixIcon: Padding(
-                    padding: EdgeInsets.fromLTRB(7.0, 12.0, 7.0, 12.0),
-                    child: Image.asset('assets/hotel.png'),
-                  ),
-                  border: PaintlessRoundedBorder(),
-                  fillColor: kCranePurple700,
-                  filled: true,
-                  labelText: 'Location',
-                ),
-              ),
-            ),
-          ],
+    return HeaderForm(fields: <HeaderFormField>[
+        HeaderFormField(
+          assetPath: 'assets/person.png',
+          title: 'Travelers',
+          textController: travelerController,
         ),
-      ),
-    );
-  }
-}
-
-
-class _PrimaryColorOverride extends StatelessWidget {
-  const _PrimaryColorOverride({Key key, this.color, this.child})
-      : super(key: key);
-
-  final Color color;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Theme(
-      child: child,
-      // TODO(tianlun): Change the color of the text theme instead
-      data: Theme.of(context).copyWith(primaryColor: color),
+        HeaderFormField(
+          assetPath: 'assets/calendar.png',
+          title: 'Dates',
+          textController: dateController,
+        ),
+        HeaderFormField(
+          assetPath: 'assets/hotel.png',
+          title: 'Location',
+          textController: locationController,
+        ),
+      ],
     );
   }
 }
