@@ -50,11 +50,17 @@ class _FrontLayer extends StatelessWidget {
           children: <Widget>[
             Text(title, style: Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0)),
             SizedBox(height: 8.0),
-            Column(children: _buildFlightCards(listIndex: index)),
+            ItemCards(index: index),
           ],
         ),
     );
   }
+}
+
+class ItemCards extends StatelessWidget {
+  final int index;
+
+  const ItemCards({Key key, this.index}) : super(key: key);
 
   static List<Widget> _buildFlightCards({ int listIndex }) {
     final List<Flight> flightsFly = getFlights(Category.findTrips)..shuffle();
@@ -77,7 +83,13 @@ class _FrontLayer extends StatelessWidget {
       return _DestinationCard(flight: flights[index]);
     }).toList();
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: _buildFlightCards(listIndex: index));
+  }
 }
+
 
 /// Builds a Backdrop.
 ///
@@ -138,15 +150,6 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
       begin: Offset(2.0, 0.0),
       end: Offset(1.0, 0.0),
     ).animate(_tabController.animation);
-
-    _tabController.animation.addListener(() {
-      int index = _tabController.animation.value.round();
-      if (backLayer != widget.backLayer[index]) {
-        setState(() {
-          backLayer = widget.backLayer[index];
-        });
-      }
-    });
   }
 
   @override
@@ -155,19 +158,20 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    void _handleTabs(int tabIndex) {
+  void _handleTabs(int tabIndex) {
+    if (_tabController.index == tabIndex) {
       setState(() {
-        if (_tabController.index == tabIndex) {
-          _tabHeights = _tabHeights == _topHeights ? _midHeights : _topHeights;
-        }
-        else {
-          _tabController.animateTo(tabIndex, duration: Duration(milliseconds: 300));
-        }
+        _tabHeights = _tabHeights == _topHeights ? _midHeights : _topHeights;
       });
     }
+    else {
+      _tabController.animateTo(tabIndex, duration: Duration(milliseconds: 300));
+      setState(() {});
+    }
+  }
 
+  @override
+  Widget build(BuildContext context) {
     return Material(
       child: Scaffold(
         backgroundColor: kCranePurple800,
@@ -192,8 +196,8 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
               child: SlideTransition(
                 position: _flyLayerOffset,
                 child: _FrontLayer(
-                    title: 'Explore Flights by Destination',
-                    index: 0,
+                  title: 'Explore Flights by Destination',
+                  index: 0,
                 ),
               ),
             ),
@@ -203,8 +207,8 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
               child: SlideTransition(
                 position: _sleepLayerOffset,
                 child: _FrontLayer(
-                    title: 'Explore Properties by Destination',
-                    index: 1,
+                  title: 'Explore Properties by Destination',
+                  index: 1,
                 ),
               ),
             ),
@@ -214,8 +218,8 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
               child: SlideTransition(
                 position: _eatLayerOffset,
                 child: _FrontLayer(
-                    title: 'Explore Restaurants by Destination',
-                    index: 2,
+                  title: 'Explore Restaurants by Destination',
+                  index: 2,
                 ),
               ),
             ),
@@ -230,7 +234,7 @@ class CraneAppBar extends StatefulWidget {
   final Function(int) tabHandler;
   final TabController tabController;
 
-  const CraneAppBar({Key key, this.tabHandler, this.tabController}) : super(key: key);
+  const CraneAppBar({ Key key, this.tabHandler, this.tabController }) : super(key: key);
 
   @override
   _CraneAppBarState createState() => _CraneAppBarState();
@@ -301,16 +305,18 @@ class _NavigationTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return SizedBox.expand(
+      child: FlatButton(
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
-      child: Text(
-        title,
-        style: Theme.of(context).textTheme.button.copyWith(
-          color: selected ? kCranePrimaryWhite : kCranePrimaryWhite.withOpacity(.6),
+        child: Text(
+          title,
+          style: Theme.of(context).textTheme.button.copyWith(
+            color: selected ? kCranePrimaryWhite : kCranePrimaryWhite.withOpacity(.6),
+          ),
         ),
+        onPressed: callBack,
       ),
-      onPressed: callBack,
     );
   }
 }
