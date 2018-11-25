@@ -158,18 +158,19 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     void _handleTabs(int tabIndex) {
-      if (_tabController.index == tabIndex) {
-        setState(() {
+      setState(() {
+        if (_tabController.index == tabIndex) {
           _tabHeights = _tabHeights == _topHeights ? _midHeights : _topHeights;
-        });
-      }
-      else{
-        _tabController.animateTo(tabIndex);
-      }
+        }
+        else {
+          _tabController.animateTo(tabIndex, duration: Duration(milliseconds: 300));
+        }
+      });
     }
 
     return Material(
       child: Scaffold(
+        backgroundColor: kCranePurple800,
         appBar: AppBar(
           brightness: Brightness.dark,
           elevation: 0.0,
@@ -181,7 +182,10 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
         ),
         body: Stack(
           children: <Widget>[
-            widget.backLayer[_tabController.index],
+            AnimatedSwitcher(
+              child: widget.backLayer[_tabController.index],
+              duration: Duration(milliseconds: 300),
+            ),
             AnimatedContainer(
               duration: Duration(milliseconds: 150),
               margin: EdgeInsets.only(top: _tabHeights[0]),
