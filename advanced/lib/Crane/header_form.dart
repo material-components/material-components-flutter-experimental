@@ -42,12 +42,15 @@ class HeaderForm extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: TextField(
                   controller: field.textController,
+                  cursorColor: Theme.of(context).colorScheme.primary,
+                  style: Theme.of(context).textTheme.body2.copyWith(color: Colors.white),
                   decoration: InputDecoration(
                     prefixIcon: Image.asset(field.assetPath, height: 32, width: 32),
                     border: OutlineInputBorder(borderSide: BorderSide.none),
                     fillColor: kCranePurple700,
                     filled: true,
                     labelText: field.title,
+                    hasFloatingPlaceholder: false,
                   ),
                 ),
               );

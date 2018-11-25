@@ -48,7 +48,7 @@ class _FrontLayer extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.all(20.0),
           children: <Widget>[
-            Text(title, style: Theme.of(context).textTheme.display1),
+            Text(title, style: Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0)),
             SizedBox(height: 8.0),
             Column(children: _buildFlightCards(listIndex: index)),
           ],
@@ -106,7 +106,7 @@ class Backdrop extends StatefulWidget {
 }
 
 class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
-  static const List<double> _midHeights = [256.0, 196.0, 256.0];
+  static const List<double> _midHeights = [271.0, 206.0, 271.0];
   static const List<double> _topHeights = [0.0, 0.0, 0.0];
 
   List<double> _tabHeights = _midHeights;
@@ -250,23 +250,34 @@ class _CraneAppBarState extends State<CraneAppBar> {
                   'assets/menu_logo.png',
                   fit: BoxFit.cover,
                 ),
-                onPressed: () {
-                },
+                onPressed: () {},
               ),
             ),
           ),
           Container(
-            height: 100.0,
             width:  MediaQuery.of(context).size.width - 72.0,
             child: _SplashOverride(
               color: Colors.transparent,
               child: TabBar(
                 indicator: BorderTabIndicator(),
                 controller: widget.tabController,
+                labelPadding: EdgeInsets.all(0.0),
                 tabs: <Widget>[
-                  _NavigationTab(title: 'FLY', callBack: () => widget.tabHandler(0)),
-                  _NavigationTab(title: 'SLEEP', callBack: () => widget.tabHandler(1)),
-                  _NavigationTab(title: 'EAT', callBack: () => widget.tabHandler(2)),
+                  _NavigationTab(
+                    title: 'FLY',
+                    callBack: () => widget.tabHandler(0),
+                    selected: widget.tabController.index == 0,
+                  ),
+                  _NavigationTab(
+                    title: 'SLEEP',
+                    callBack: () => widget.tabHandler(1),
+                    selected: widget.tabController.index == 1,
+                  ),
+                  _NavigationTab(
+                    title: 'EAT',
+                    callBack: () => widget.tabHandler(2),
+                    selected: widget.tabController.index == 2,
+                  ),
                 ],
               ),
             ),
@@ -280,31 +291,28 @@ class _CraneAppBarState extends State<CraneAppBar> {
 class _NavigationTab extends StatelessWidget {
   final String title;
   final Function callBack;
+  final bool selected;
 
-  const _NavigationTab({ Key key, this.title, this.callBack }) : super(key: key);
+  const _NavigationTab({ Key key, this.title, this.callBack, this.selected }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 25.0,
-      width: 75.0,
-      child: FlatButton(
-        child: Text(
-          title,
-          style: Theme.of(context).textTheme.caption.copyWith(
-            color: kCranePrimaryWhite,
-            fontWeight: FontWeight.w600,
-          ),
+    return FlatButton(
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      child: Text(
+        title,
+        style: Theme.of(context).textTheme.button.copyWith(
+          color: selected ? kCranePrimaryWhite : kCranePrimaryWhite.withOpacity(.6),
         ),
-        textColor: kCranePrimaryWhite,
-        onPressed: callBack,
       ),
+      onPressed: callBack,
     );
   }
 }
 
 class _DestinationCard extends StatelessWidget {
-  _DestinationCard({this.flight}) : assert(flight != null);
+  _DestinationCard({ this.flight }) : assert(flight != null);
   final Flight flight;
 
   @override
@@ -329,11 +337,11 @@ class _DestinationCard extends StatelessWidget {
           ),
           title: Text(
             flight.destination,
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.subhead.copyWith(color: Colors.black),
           ),
           subtitle: Text(
             flight.layover ? 'Layover' : 'Nonstop',
-            style: Theme.of(context).textTheme.subhead,
+            style: Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0),
           ),
         ),
         SizedBox(child: Divider(indent: 4.0)),
