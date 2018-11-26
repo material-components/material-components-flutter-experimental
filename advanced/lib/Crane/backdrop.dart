@@ -60,7 +60,7 @@ class _FrontLayer extends StatelessWidget {
 class ItemCards extends StatelessWidget {
   final int index;
 
-  const ItemCards({Key key, this.index}) : super(key: key);
+  const ItemCards({ Key key, this.index }) : super(key: key);
 
   static List<Widget> _buildFlightCards({ int listIndex }) {
     final List<Flight> flightsFly = getFlights(Category.findTrips)..shuffle();
@@ -128,8 +128,6 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
   Animation<Offset> _sleepLayerOffset;
   Animation<Offset> _eatLayerOffset;
 
-  Widget backLayer;
-
   @override
   void initState() {
     super.initState();
@@ -137,13 +135,13 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
 
     _flyLayerOffset = Tween<Offset>(
         begin: Offset(0.0, 0.0),
-        end: Offset(-1.0, 0.0)
+        end: Offset(-1.05, 0.0)
     ).animate(_tabController.animation);
 
     _sleepLayerOffset = Tween<Offset>(
       // Extra .05 leaves a gap between left and right layers.
       begin: Offset(1.05, 0.0),
-      end: Offset(0.0, 0.0),
+      end: Offset(0, 0.0),
     ).animate(_tabController.animation);
 
     _eatLayerOffset = Tween<Offset>(
@@ -166,7 +164,6 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
     }
     else {
       _tabController.animateTo(tabIndex, duration: Duration(milliseconds: 300));
-      setState(() {});
     }
   }
 
@@ -186,9 +183,9 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
         ),
         body: Stack(
           children: <Widget>[
-            AnimatedSwitcher(
-              child: widget.backLayer[_tabController.index],
-              duration: Duration(milliseconds: 300),
+            BackLayer(
+                tabController: _tabController,
+                backLayers: widget.backLayer,
             ),
             AnimatedContainer(
               duration: Duration(milliseconds: 150),
@@ -229,6 +226,39 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
     );
   }
 }
+
+class BackLayer extends StatefulWidget {
+  final List<Widget> backLayers;
+  final TabController tabController;
+
+  const BackLayer({ Key key, this.backLayers, this.tabController }) : super(key: key);
+
+  @override
+  _BackLayerState createState() => _BackLayerState();
+}
+
+class _BackLayerState extends State<BackLayer> {
+  @override
+  void initState() {
+    super.initState();
+    widget.tabController.addListener(() => setState(() {}));
+  }
+
+  @override
+  void dispose() {
+    widget.tabController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedSwitcher(
+      child: widget.backLayers[widget.tabController.index],
+      duration: Duration(milliseconds: 300),
+    );
+  }
+}
+
 
 class CraneAppBar extends StatefulWidget {
   final Function(int) tabHandler;
@@ -274,17 +304,20 @@ class _CraneAppBarState extends State<CraneAppBar> {
                   _NavigationTab(
                     title: 'FLY',
                     callBack: () => widget.tabHandler(0),
-                    selected: widget.tabController.index == 0,
+                    tabController: widget.tabController,
+                    index: 0,
                   ),
                   _NavigationTab(
                     title: 'SLEEP',
                     callBack: () => widget.tabHandler(1),
-                    selected: widget.tabController.index == 1,
+                    tabController: widget.tabController,
+                    index: 1,
                   ),
                   _NavigationTab(
                     title: 'EAT',
                     callBack: () => widget.tabHandler(2),
-                    selected: widget.tabController.index == 2,
+                    tabController: widget.tabController,
+                    index: 2,
                   ),
                 ],
               ),
@@ -296,12 +329,36 @@ class _CraneAppBarState extends State<CraneAppBar> {
   }
 }
 
-class _NavigationTab extends StatelessWidget {
+class _NavigationTab extends StatefulWidget {
   final String title;
   final Function callBack;
-  final bool selected;
+  final TabController tabController;
+  final int index;
 
-  const _NavigationTab({ Key key, this.title, this.callBack, this.selected }) : super(key: key);
+  const _NavigationTab({
+    Key key,
+    this.title,
+    this.callBack,
+    this.tabController,
+    this.index
+  }) : super(key: key);
+
+  @override
+  _NavigationTabState createState() => _NavigationTabState();
+}
+
+class _NavigationTabState extends State<_NavigationTab> {
+  @override
+  void initState() {
+    super.initState();
+    widget.tabController.addListener(() => setState(() {}));
+  }
+
+  @override
+  void dispose() {
+    widget.tabController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -310,12 +367,14 @@ class _NavigationTab extends StatelessWidget {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
         child: Text(
-          title,
+          widget.title,
           style: Theme.of(context).textTheme.button.copyWith(
-            color: selected ? kCranePrimaryWhite : kCranePrimaryWhite.withOpacity(.6),
+            color: widget.tabController.index == widget.index
+                ? kCranePrimaryWhite
+                : kCranePrimaryWhite.withOpacity(.6),
           ),
         ),
-        onPressed: callBack,
+        onPressed: widget.callBack,
       ),
     );
   }
