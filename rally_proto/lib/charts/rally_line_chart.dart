@@ -87,7 +87,7 @@ class RallyLineChartPainter extends CustomPainter {
     }
   }
 
-  _drawLine(Canvas canvas, Size size) {
+  _drawLine(Canvas canvas, Size sizgie) {
     Paint linePaint = Paint()
       ..color = RallyColors.getAccountColor(1)
       ..style = PaintingStyle.stroke
