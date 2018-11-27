@@ -73,11 +73,11 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   // TODO(clocksmith): Use icons.
   List<Widget> _buildTabs() {
     return <Widget>[
-      _buildTab(Image.asset("assets/ic_pie_chart_24px.png"), "OVERVIEW", 0),
-      _buildTab(Image.asset("assets/ic_attach_money_24px.png"), "ACCOUNTS", 1),
-      _buildTab(Image.asset("assets/ic_money_off_24px.png"), "BILLS", 2),
-      _buildTab(Image.asset("assets/ic_bar_chart_24px.png"), "BUDGETS", 3),
-      _buildTab(Image.asset("assets/ic_settings_24px.png"), "SETTINGS", 4),
+      _buildTab(Icons.pie_chart, "OVERVIEW", 0),
+      _buildTab(Icons.attach_money, "ACCOUNTS", 1),
+      _buildTab(Icons.money_off, "BILLS", 2),
+      _buildTab(Icons.table_chart, "BUDGETS", 3), // TODO(clocksmith): This should be Icons.bar_chart, but its currently unavalableflutter
+      _buildTab(Icons.settings, "SETTINGS", 4),
     ];
   }
 
@@ -91,22 +91,22 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     ];
   }
 
-  Widget _buildTab(Image tabImage, String title, int index) {
-    return _RallyTab(tabImage, title, _tabController.index == index);
+  Widget _buildTab(IconData iconData, String title, int index) {
+    return _RallyTab(Icon(iconData), title, _tabController.index == index);
   }
 }
 
 class _RallyTab extends StatefulWidget {
   Text titleText;
-  Image iconImage;
+  Icon icon;
   bool isExpanded;
 
   _RallyTab(
-      Image iconImage,
+      Icon icon,
       String title,
       bool isExpanded) {
     titleText = Text(title);
-    this.iconImage = iconImage;
+    this.icon = icon;
     this.isExpanded = isExpanded;
   }
 
@@ -164,7 +164,7 @@ class _RallyTabState extends State<_RallyTab> with SingleTickerProviderStateMixi
         children: <Widget>[
           SizedBox(
             width: width / 7,
-            child: widget.iconImage,
+            child: widget.icon,
           ),
           FadeTransition(
             child: SizeTransition(

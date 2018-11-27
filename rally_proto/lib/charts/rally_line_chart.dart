@@ -68,7 +68,7 @@ class RallyLineChartPainter extends CustomPainter {
   _drawLine(Canvas canvas, Rect rect) {
     Paint linePaint = Paint()
       // TODO(demo): Change the line color here. Try passing 0, 1, 3, etc.
-      ..color = RallyColors.getAccountColor(1)
+      ..color = RallyColors.getAccountColor(2)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2.0;
 
@@ -77,15 +77,15 @@ class RallyLineChartPainter extends CustomPainter {
     double lastAmount = 800.0;
 
     // TODO(demo): This is the number of points to skip. The higher it is, the more smooth curve will be when drawing quadratic splines.
-    int smooth = 4; // try 1, 7, 15, etc.
+    int smooth = 7; // try 1, 7, 15, etc.
 
     // Align the points with equal deltas (1 day) as a cumulative sum.
     int startMillis = startDate.millisecondsSinceEpoch;
-    final List<Offset> points = [Offset(0, (maxAmount - lastAmount) / maxAmount * rect.height)];
+    final List<Offset> points = [Offset(0.0, (maxAmount - lastAmount) / maxAmount * rect.height)];
     for (int i = 0; i < numDays + smooth; i++) {
       int endMillis = startMillis + millisInDay * 1;
       List<DetailedEventItem> filteredEvents = events.where((e) => startMillis <= e.date.millisecondsSinceEpoch && e.date.millisecondsSinceEpoch <= endMillis).toList();
-      lastAmount += filteredEvents.fold(0, (sum, e) => sum + e.amount);
+      lastAmount += filteredEvents.fold(0.0, (sum, e) => sum + e.amount);
       double x = i / numDays * rect.width;
       double y = (maxAmount - lastAmount) / maxAmount * rect.height;
       points.add(Offset(x, y));
@@ -99,10 +99,10 @@ class RallyLineChartPainter extends CustomPainter {
       double y1 = points[i].dy;
 
       // TODO(demo): Comment out the next line and uncomment the next 3 to draw smoother lines between points.
-            path.lineTo(x1, y1);
-//      double x2 = (x1 + points[i + smooth].dx) / 2;
-//      double y2 = (y1 + points[i + smooth].dy) / 2;
-//      path.quadraticBezierTo(x1, y1, x2, y2);
+//            path.lineTo(x1, y1);
+      double x2 = (x1 + points[i + smooth].dx) / 2;
+      double y2 = (y1 + points[i + smooth].dy) / 2;
+      path.quadraticBezierTo(x1, y1, x2, y2);
     }
     canvas.drawPath(path, linePaint);
   }

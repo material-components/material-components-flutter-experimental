@@ -152,18 +152,18 @@ class _RallyPieChartOutlineBoxPainter extends BoxPainter {
     // Create two padded rects to draw arcs in: one for colored arcs and one for inner bg arc.
     double strokeWidth = 4.0;
     double outerRadius = min(configuration.size.width, configuration.size.height) / 2;
-    Rect outerRect = Rect.fromCircle(center: configuration.size.center(Offset.zero), radius: outerRadius - strokeWidth * 3);
-    Rect innerRect = Rect.fromCircle(center: configuration.size.center(Offset.zero), radius: outerRadius - strokeWidth * 4);
+    Rect outerRect = Rect.fromCircle(center: configuration.size.center(Offset.zero), radius: outerRadius - strokeWidth * 3.0);
+    Rect innerRect = Rect.fromCircle(center: configuration.size.center(Offset.zero), radius: outerRadius - strokeWidth * 4.0);
 
     // Paint each arc with spacing.
-    double cummulativeSpace = 0;
-    double cummulativeTotal = 0;
-    double wholeRadians = (2 * pi);
-    double spaceRadians = wholeRadians / 180;
+    double cummulativeSpace = 0.0;
+    double cummulativeTotal = 0.0;
+    double wholeRadians = (2.0 * pi);
+    double spaceRadians = wholeRadians / 180.0;
     double wholeMinusSpacesRadians = wholeRadians - (segments.length * spaceRadians);
     for (RallyPieChartSegment segment in segments) {
       Paint paint = Paint()..color = segment.color;
-      double start = maxFraction * ((cummulativeTotal / wholeAmount * wholeMinusSpacesRadians) + cummulativeSpace) - pi / 2;
+      double start = maxFraction * ((cummulativeTotal / wholeAmount * wholeMinusSpacesRadians) + cummulativeSpace) - pi / 2.0;
       double sweep = maxFraction * (segment.value / wholeAmount * wholeMinusSpacesRadians);
       canvas.drawArc(outerRect, start, sweep, true, paint);
       cummulativeTotal += segment.value;
@@ -174,13 +174,13 @@ class _RallyPieChartOutlineBoxPainter extends BoxPainter {
     double remaining = wholeAmount - cummulativeTotal;
     if (remaining > 0) {
       Paint paint = Paint()..color = Colors.black;
-      double start = maxFraction * ((cummulativeTotal / wholeAmount * wholeMinusSpacesRadians) + spaceRadians * segments.length) - pi / 2;
+      double start = maxFraction * ((cummulativeTotal / wholeAmount * wholeMinusSpacesRadians) + spaceRadians * segments.length) - pi / 2.0;
       double sweep = maxFraction * (remaining / wholeAmount * wholeMinusSpacesRadians - spaceRadians);
       canvas.drawArc(outerRect, start, sweep, true, paint);
     }
 
     // Paint a smaller inner circle to cover the painted arcs, so they are display as segments.
     Paint bgPaint = Paint()..color = RallyColors.pageBg;
-    canvas.drawArc(innerRect, 0, 2.0 * pi, true, bgPaint);
+    canvas.drawArc(innerRect, 0.0, 2.0 * pi, true, bgPaint);
   }
 }
