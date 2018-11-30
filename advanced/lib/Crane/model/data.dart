@@ -70,8 +70,6 @@ List<Flight> getFlights(Category category) {
   if (category == Category.findTrips) {
     return allFlights;
   } else {
-    return allFlights.where((Flight p) {
-      return p.category == category;
-    }).toList();
+    return allFlights.where((Flight p) => p.category == category).toList();
   }
 }

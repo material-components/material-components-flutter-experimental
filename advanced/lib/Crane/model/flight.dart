@@ -14,8 +14,8 @@
 
 import 'package:flutter/foundation.dart';
 
-// the following do not need to be enums, can just be strings that route
-// to respective screen
+// The following do not need to be enums, can just be strings that route
+// to respective screens.
 enum Category { findTrips, myTrips, savedTrips, priceAlerts, myAccount}
 
 class Flight {

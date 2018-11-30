@@ -15,7 +15,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-
 class BorderTabIndicator extends Decoration {
   /// Create an underline style selected tab indicator.
   ///

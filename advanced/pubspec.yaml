@@ -100,8 +100,14 @@ flutter:
       weight: 500
   - family: Raleway
     fonts:
+    - asset: fonts/Raleway-Light.ttf
+      weight: 200
     - asset: fonts/Raleway-Regular.ttf
+      weight: 300
+    - asset: fonts/Raleway-Medium.ttf
+      weight: 400
     - asset: fonts/Raleway-SemiBold.ttf
+      weight: 700
   - family: Roboto Condensed
     fonts:
       - asset: fonts/RobotoCondensed-Light.ttf

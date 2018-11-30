@@ -24,3 +24,5 @@ const kCranePrimaryWhite = const Color(0xFFFFFFFF);
 const kCraneErrorOrange = const Color(0xFFFF9100);
 
 const kCraneAlpha = const Color(0x00FFFFFF);
+
+const kCraneGrey = Color(0xFF747474);

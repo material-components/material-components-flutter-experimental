@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:meta/meta.dart';
 import 'dart:ui';
 
@@ -20,56 +21,48 @@ import 'model/flight.dart';
 import 'model/data.dart';
 import 'colors.dart';
 import 'border_tab_indicator.dart';
-//import 'menu_page.dart';
-
-enum MenuStatus { open, closed }
-enum FrontLayerStatus { open, partial, closed }
-
-double _kFlingVelocity = 2.0;
-MenuStatus _menuStatus = MenuStatus.closed;
 
 class _FrontLayer extends StatelessWidget {
   const _FrontLayer({
     Key key,
-    this.onTap,
-    this.child,
     this.title,
-    this.index
+    this.index,
   }) : super(key: key);
 
-  final VoidCallback onTap;
-  final Widget child;
   final String title;
   final int index;
 
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return PhysicalShape(
         elevation: 16.0,
         color: kCranePrimaryWhite,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(16.0), topRight: Radius.circular(16.0)),
+        clipper: ShapeBorderClipper(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(16.0),
+              topRight: Radius.circular(16.0),
+            ),
+          ),
         ),
         child: ListView(
-          shrinkWrap: true,
           padding: const EdgeInsets.all(20.0),
           children: <Widget>[
-            Text(
-              title,
-              style: Theme.of(context).textTheme.display1,
-            ),
-            SizedBox(
-              height: 8.0,
-            ),
-            Column(
-              children: _buildFlightCards(listIndex: index),
-            ),
+            Text(title, style: Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0)),
+            SizedBox(height: 8.0),
+            ItemCards(index: index),
           ],
-        ));
+        ),
+    );
   }
+}
 
-  static List<Widget> _buildFlightCards({int listIndex}) {
+class ItemCards extends StatelessWidget {
+  final int index;
+
+  const ItemCards({ Key key, this.index }) : super(key: key);
+
+  static List<Widget> _buildFlightCards({ int listIndex }) {
     final List<Flight> flightsFly = getFlights(Category.findTrips)..shuffle();
     final List<Flight> flightsSleep = getFlights(Category.findTrips)..shuffle();
     final List<Flight> flightsEat = getFlights(Category.findTrips)..shuffle();
@@ -90,7 +83,13 @@ class _FrontLayer extends StatelessWidget {
       return _DestinationCard(flight: flights[index]);
     }).toList();
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(children: _buildFlightCards(listIndex: index));
+  }
 }
+
 
 /// Builds a Backdrop.
 ///
@@ -119,309 +118,105 @@ class Backdrop extends StatefulWidget {
 }
 
 class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
-  AnimationController _controller;
+  static const List<double> _midHeights = [271.0, 206.0, 271.0];
+  static const List<double> _topHeights = [0.0, 0.0, 0.0];
+
+  List<double> _tabHeights = _midHeights;
+
   TabController _tabController;
-  FrontLayerStatus _initFrontLayerStatus;
-  FrontLayerStatus _targetFrontLayerStatus;
-  AnimationController _xController;
-  AnimationController _yController;
-  var prevTabIndex;
-  var _kFlingValue;
+  Animation<Offset> _flyLayerOffset;
+  Animation<Offset> _sleepLayerOffset;
+  Animation<Offset> _eatLayerOffset;
+
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      duration: Duration(milliseconds: 300),
-      value: 0.0,
-      vsync: this,
-    );
-    _xController = AnimationController(
-        duration: const Duration(milliseconds: 500),
-        value: 0.0,
-//        upperBound: 2.0,
-        vsync: this,
-    );
-    _yController = AnimationController(
-        duration: const Duration(milliseconds: 500),
-        value: 0.0,
-        vsync: this,
-    );
     _tabController = TabController(length: 3, vsync: this);
-    prevTabIndex = 0;
-    _initFrontLayerStatus = FrontLayerStatus.partial;
-    _targetFrontLayerStatus = FrontLayerStatus.closed;
-    _kFlingValue = 1.0;
+
+    _flyLayerOffset = Tween<Offset>(
+        begin: Offset(0.0, 0.0),
+        end: Offset(-1.05, 0.0)
+    ).animate(_tabController.animation);
+
+    _sleepLayerOffset = Tween<Offset>(
+      // Extra .05 leaves a gap between left and right layers.
+      begin: Offset(1.05, 0.0),
+      end: Offset(0, 0.0),
+    ).animate(_tabController.animation);
+
+    _eatLayerOffset = Tween<Offset>(
+      begin: Offset(2.0, 0.0),
+      end: Offset(1.0, 0.0),
+    ).animate(_tabController.animation);
   }
 
   @override
   void dispose() {
-    _controller.dispose();
+    _tabController.dispose();
     super.dispose();
   }
 
-  bool get _frontLayerVisible {
-    final AnimationStatus status = _controller.status;
-    return status == AnimationStatus.completed ||
-        status == AnimationStatus.forward;
-  }
-
-  void _flingFrontLayerVertical() {
-    _controller.fling(
-      velocity: _frontLayerVisible ? -_kFlingVelocity : _kFlingVelocity
-    );
-  }
-
-  Animation<RelativeRect> _buildLayerAnimation(
-      BuildContext context, double layerTop) {
-    Size size = MediaQuery.of(context).size;
-    double lowHeight = size.height - 144.0;
-    Animation<RelativeRect> layerAnimation;
-
-    RelativeRect begin;
-    RelativeRect end;
-
-    /// closed: RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0),
-    /// partial: RelativeRect.fromLTRB(0.0, layerTop, 0.0, 0.0),
-    ///
-    /// menu open: RelativeRect.fromLTRB(0.0, 550.0, 0.0, 0.0),
-    if (_initFrontLayerStatus == FrontLayerStatus.partial) {
-      begin = RelativeRect.fromLTRB(0.0, layerTop, 0.0, 0.0);
-    } else if (_initFrontLayerStatus == FrontLayerStatus.closed) {
-      begin = RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0);
-    } else {
-      begin = RelativeRect.fromLTRB(0.0, lowHeight, 0.0, 0.0);
+  void _handleTabs(int tabIndex) {
+    if (_tabController.index == tabIndex) {
+      setState(() {
+        _tabHeights = _tabHeights == _topHeights ? _midHeights : _topHeights;
+      });
     }
-    if (_targetFrontLayerStatus == FrontLayerStatus.partial) {
-      end = RelativeRect.fromLTRB(0.0, layerTop, 0.0, 0.0);
-    } else if (_targetFrontLayerStatus == FrontLayerStatus.closed) {
-      end = RelativeRect.fromLTRB(0.0, 0.0, 0.0, 0.0);
-    } else {
-      end = RelativeRect.fromLTRB(0.0, lowHeight, 0.0, 0.0);
+    else {
+      _tabController.animateTo(tabIndex, duration: Duration(milliseconds: 300));
     }
-    layerAnimation = RelativeRectTween(
-      begin: begin,
-      end: end,
-    ).animate(_controller.view);
-
-    return layerAnimation;
   }
 
-  Widget _buildFlyStack(BuildContext context, BoxConstraints constraints) {
-    final double flyLayerTop = 236 + .0;
-
-    Animation<RelativeRect> flyLayerAnimation =
-        _buildLayerAnimation(context, flyLayerTop);
-
-    return Stack(
-      children: <Widget>[
-//        widget.backLayer[0],
-        PositionedTransition(
-          rect: flyLayerAnimation,
-          child: _FrontLayer(
-            onTap: _flingFrontLayerVertical,
-            child: widget.frontLayer,
-            title: 'Explore Flights by Destination',
-            index: 0,
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Scaffold(
+        backgroundColor: kCranePurple800,
+        appBar: AppBar(
+          brightness: Brightness.dark,
+          elevation: 0.0,
+          titleSpacing: 0.0,
+          flexibleSpace: CraneAppBar(
+            tabController: _tabController,
+            tabHandler: _handleTabs,
           ),
         ),
-      ],
-    );
-  }
-
-  Widget _buildSleepStack(BuildContext context, BoxConstraints constraints) {
-    final double sleepLayerTop = 176 + .0;
-
-    Animation<RelativeRect> sleepLayerAnimation =
-        _buildLayerAnimation(context, sleepLayerTop);
-
-    return Stack(
-      children: <Widget>[
-//        widget.backLayer[1],
-        PositionedTransition(
-          rect: sleepLayerAnimation,
-          child: _FrontLayer(
-            onTap: _flingFrontLayerVertical,
-            child: widget.frontLayer,
-            title: 'Explore Properties by Destination',
-            index: 1,
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildEatStack(BuildContext context, BoxConstraints constraints) {
-    final double eatLayerTop = 236 + .0;
-
-    Animation<RelativeRect> eatLayerAnimation =
-        _buildLayerAnimation(context, eatLayerTop);
-
-    return Stack(
-      children: <Widget>[
-//        widget.backLayer[2],
-        PositionedTransition(
-          rect: eatLayerAnimation,
-          child: _FrontLayer(
-            onTap: _flingFrontLayerVertical,
-            child: widget.frontLayer,
-            title: 'Explore Restaurants by Destination',
-            index: 2,
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildMainApp(BuildContext context) {
-    Size mediaSize = MediaQuery.of(context).size;
-    double transitionPadding = 16.0 / mediaSize.width;
-    void _handleTabs(var tabIndex) {
-      if (_tabController.index == tabIndex) {
-//          if (_targetFrontLayerStatus == FrontLayerStatus.closed) {
-//            _targetFrontLayerStatus = FrontLayerStatus.partial;
-//            _initFrontLayerStatus = FrontLayerStatus.closed;
-//          } else {
-//            _targetFrontLayerStatus = FrontLayerStatus.closed;
-//            _initFrontLayerStatus = FrontLayerStatus.partial;
-//          }
-        setState(() {});
-        _flingFrontLayerVertical();
-      }
-      else {
-//        if (_controller.status == AnimationStatus.completed) {
-//          _controller.reverse();
-//        }
-//        _xController.value = tabIndex;
-        _tabController.animateTo(tabIndex);
-        if (tabIndex + prevTabIndex < 2) {
-          _xController.fling(
-            velocity: (tabIndex - prevTabIndex) * _kFlingVelocity,
-          );
-//          _xController.value = 0.0;
-        }
-        else if (tabIndex + prevTabIndex == 2) {
-          _yController.fling(
-            velocity: (tabIndex - prevTabIndex) * _kFlingVelocity,
-          );
-//          _xController.value = 1.0;
-        }
-        else {
-//          _xController.value = 2.0;
-          _xController.fling(
-            velocity: (tabIndex - prevTabIndex) * _kFlingVelocity,
-          );
-          _yController.fling(
-            velocity: (tabIndex - prevTabIndex) * _kFlingVelocity,
-          );
-        }
-        prevTabIndex = tabIndex;
-      }
-    }
-//
-//    bool _isSelected(var tabIndex) {
-//      if (_tabController.index == tabIndex) {
-//        return true;
-//      }
-//      return false;
-//    }
-
-    var appBar = AppBar(
-      brightness: Brightness.dark,
-      elevation: 0.0,
-      titleSpacing: 0.0,
-      // TODO(tianlun): Replace IconButton icon with Crane logo.
-      flexibleSpace: SafeArea(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        body: Stack(
           children: <Widget>[
-            _SplashOverride(
-              color: kCraneAlpha,
-              child: Container(
-//                width: 80.0,
-                padding: EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 0.0),
-                child: IconButton(
-                  iconSize: 72.0,
-                  padding: EdgeInsets.all(0.0),
-                  icon: Image.asset(
-                    'assets/menu_logo.png',
-                    fit: BoxFit.cover,
-                  ),
-                  onPressed: () {
-//                    setState(() {
-//                    _menuStatus = MenuStatus.open;
-//                    _initFrontLayerStatus = _targetFrontLayerStatus;
-//                    _targetFrontLayerStatus = FrontLayerStatus.open;
-//                    });
-//                    _flingFrontLayer();
-                  },
+            BackLayer(
+                tabController: _tabController,
+                backLayers: widget.backLayer,
+            ),
+            AnimatedContainer(
+              duration: Duration(milliseconds: 150),
+              margin: EdgeInsets.only(top: _tabHeights[0]),
+              child: SlideTransition(
+                position: _flyLayerOffset,
+                child: _FrontLayer(
+                  title: 'Explore Flights by Destination',
+                  index: 0,
                 ),
               ),
             ),
-            Container(
-              height: 100.0,
-              width: mediaSize.width - 72.0,
-              child: _SplashOverride(
-                color: kCraneAlpha,
-                child: TabBar(
-                  indicator: BorderTabIndicator(),
-                  controller: _tabController,
-                  tabs: <Widget>[
-                    Container(
-                      height: 25.0,
-                      width: 75.0,
-                      child: FlatButton(
-                        child: Text(
-                          'FLY',
-                          style: Theme.of(context).textTheme.caption.copyWith(
-                            color: kCranePrimaryWhite,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        textColor: kCranePrimaryWhite,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12.0)),
-                        ),
-                        onPressed: () => _handleTabs(0),
-                      ),
-                    ),
-                    Container(
-                      height: 25.0,
-                      width: 75.0,
-                      child: FlatButton(
-                        child: Text(
-                          'SLEEP',
-                          style: Theme.of(context).textTheme.caption.copyWith(
-                            color: kCranePrimaryWhite,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        textColor: kCranePrimaryWhite,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12.0)),
-                        ),
-                        onPressed: () => _handleTabs(1),
-                      ),
-                    ),
-                    Container(
-                      height: 25.0,
-                      width: 75.0,
-                      child: FlatButton(
-                        child: Text(
-                          'EAT',
-                          style: Theme.of(context).textTheme.caption.copyWith(
-                            color: kCranePrimaryWhite,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                        textColor: kCranePrimaryWhite,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12.0)),
-                        ),
-                        onPressed: () => _handleTabs(2),
-                      ),
-                    ),
-                  ],
+            AnimatedContainer(
+              duration: Duration(milliseconds: 150),
+              margin: EdgeInsets.only(top: _tabHeights[1]),
+              child: SlideTransition(
+                position: _sleepLayerOffset,
+                child: _FrontLayer(
+                  title: 'Explore Properties by Destination',
+                  index: 1,
+                ),
+              ),
+            ),
+            AnimatedContainer(
+              duration: Duration(milliseconds: 150),
+              margin: EdgeInsets.only(top: _tabHeights[2]),
+              child: SlideTransition(
+                position: _eatLayerOffset,
+                child: _FrontLayer(
+                  title: 'Explore Restaurants by Destination',
+                  index: 2,
                 ),
               ),
             ),
@@ -429,129 +224,164 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
         ),
       ),
     );
-    return Material(
-      child: Stack(
+  }
+}
+
+class BackLayer extends StatefulWidget {
+  final List<Widget> backLayers;
+  final TabController tabController;
+
+  const BackLayer({ Key key, this.backLayers, this.tabController }) : super(key: key);
+
+  @override
+  _BackLayerState createState() => _BackLayerState();
+}
+
+class _BackLayerState extends State<BackLayer> {
+  @override
+  void initState() {
+    super.initState();
+    widget.tabController.addListener(() => setState(() {}));
+  }
+
+  @override
+  void dispose() {
+    widget.tabController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedSwitcher(
+      child: widget.backLayers[widget.tabController.index],
+      duration: Duration(milliseconds: 300),
+    );
+  }
+}
+
+
+class CraneAppBar extends StatefulWidget {
+  final Function(int) tabHandler;
+  final TabController tabController;
+
+  const CraneAppBar({ Key key, this.tabHandler, this.tabController }) : super(key: key);
+
+  @override
+  _CraneAppBarState createState() => _CraneAppBarState();
+}
+
+class _CraneAppBarState extends State<CraneAppBar> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Scaffold(
-            appBar: appBar,
-            body: Stack(
-              children: <Widget>[
-                widget.backLayer[0],
-                TabBarView(
-                  controller: _tabController,
-                  children: <Widget>[
-                    LayoutBuilder(
-                      builder: _buildFlyStack,
-                    ),
-                    LayoutBuilder(
-                      builder: _buildSleepStack,
-                    ),
-                    LayoutBuilder(
-                      builder: _buildEatStack,
-                    ),
-                  ],
+          _SplashOverride(
+            color: kCraneAlpha,
+            child: Container(
+              child: IconButton(
+                iconSize: 72.0,
+                padding: EdgeInsets.all(0.0),
+                icon: Image.asset(
+                  'assets/menu_logo.png',
+                  fit: BoxFit.cover,
                 ),
-              ],
-            )
+                onPressed: () {},
+              ),
+            ),
           ),
-          AnimatedBuilder(
-            animation: _controller,
-            child: _buildMenu(context),
-            builder: _buildMenuTransition,
+          Container(
+            width:  MediaQuery.of(context).size.width - 72.0,
+            child: _SplashOverride(
+              color: Colors.transparent,
+              child: TabBar(
+                indicator: BorderTabIndicator(),
+                controller: widget.tabController,
+                labelPadding: EdgeInsets.all(0.0),
+                tabs: <Widget>[
+                  _NavigationTab(
+                    title: 'FLY',
+                    callBack: () => widget.tabHandler(0),
+                    tabController: widget.tabController,
+                    index: 0,
+                  ),
+                  _NavigationTab(
+                    title: 'SLEEP',
+                    callBack: () => widget.tabHandler(1),
+                    tabController: widget.tabController,
+                    index: 1,
+                  ),
+                  _NavigationTab(
+                    title: 'EAT',
+                    callBack: () => widget.tabHandler(2),
+                    tabController: widget.tabController,
+                    index: 2,
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
     );
   }
+}
 
-  Widget _buildMenuTransition(BuildContext context, Widget child) {
-    return _targetFrontLayerStatus == FrontLayerStatus.open
-        // TODO: check animation status and menu open / close status
-        ? FadeTransition(
-            opacity: _controller,
-            child: child,
-          )
-        : Container();
+class _NavigationTab extends StatefulWidget {
+  final String title;
+  final Function callBack;
+  final TabController tabController;
+  final int index;
+
+  const _NavigationTab({
+    Key key,
+    this.title,
+    this.callBack,
+    this.tabController,
+    this.index
+  }) : super(key: key);
+
+  @override
+  _NavigationTabState createState() => _NavigationTabState();
+}
+
+class _NavigationTabState extends State<_NavigationTab> {
+  @override
+  void initState() {
+    super.initState();
+    widget.tabController.addListener(() => setState(() {}));
   }
 
-  Widget _buildMenu(BuildContext context) {
-    return Material(
-      child: Container(
-        constraints: BoxConstraints(maxWidth: 375.0, maxHeight: 400.0),
-        padding: EdgeInsets.only(top: 40.0),
-        color: kCranePurple800,
-        child: ListView(
-          children: <Widget>[
-            IconButton(
-                icon: Icon(
-                  Icons.arrow_back,
-                  semanticLabel: 'back',
-                ),
-                onPressed: () {
-                  setState(() {
-                    _menuStatus = MenuStatus.closed;
-                    _targetFrontLayerStatus = _initFrontLayerStatus;
-                    _initFrontLayerStatus =
-                        _initFrontLayerStatus == FrontLayerStatus.closed
-                            ? FrontLayerStatus.partial
-                            : FrontLayerStatus.closed;
-                    _controller.forward();
-                  });
-                }),
-            Text('Find Trips'),
-            Text('My Trips'),
-            Text('Saved Trips'),
-            Text('Price Alerts'),
-            Text('My Account'),
-          ],
+  @override
+  void dispose() {
+    widget.tabController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox.expand(
+      child: FlatButton(
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+        child: Text(
+          widget.title,
+          style: Theme.of(context).textTheme.button.copyWith(
+            color: widget.tabController.index == widget.index
+                ? kCranePrimaryWhite
+                : kCranePrimaryWhite.withOpacity(.6),
+          ),
         ),
+        onPressed: widget.callBack,
       ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      child: _buildMainApp(context),
-    );
-  }
-}
-
-class _SplashOverride extends StatelessWidget {
-  const _SplashOverride({Key key, this.color, this.child}) : super(key: key);
-
-  final Color color;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Theme(
-      child: child,
-      data:
-          Theme.of(context).copyWith(splashColor: color, highlightColor: color),
-    );
-  }
-}
-
-class _PrimaryColorOverride extends StatelessWidget {
-  const _PrimaryColorOverride({Key key, this.color, this.child})
-      : super(key: key);
-
-  final Color color;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Theme(
-      child: child,
-      // TODO(tianlun): Change the color of the text theme instead
-      data: Theme.of(context).copyWith(primaryColor: color),
     );
   }
 }
 
 class _DestinationCard extends StatelessWidget {
-  _DestinationCard({this.flight}) : assert(flight != null);
+  _DestinationCard({ this.flight }) : assert(flight != null);
   final Flight flight;
 
   @override
@@ -565,7 +395,7 @@ class _DestinationCard extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         ListTile(
-          contentPadding: EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+          contentPadding: EdgeInsets.only(right: 8.0),
           leading: ClipRRect(
             borderRadius: BorderRadius.all(Radius.circular(4.0)),
             child: SizedBox(
@@ -576,19 +406,30 @@ class _DestinationCard extends StatelessWidget {
           ),
           title: Text(
             flight.destination,
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.subhead.copyWith(color: Colors.black),
           ),
           subtitle: Text(
             flight.layover ? 'Layover' : 'Nonstop',
-            style: Theme.of(context).textTheme.subhead,
+            style: Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0),
           ),
         ),
-        SizedBox(
-          child: Divider(
-            indent: 4.0,
-          ),
-        ),
+        SizedBox(child: Divider(indent: 4.0)),
       ],
+    );
+  }
+}
+
+class _SplashOverride extends StatelessWidget {
+  const _SplashOverride({ Key key, this.color, this.child }) : super(key: key);
+
+  final Color color;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Theme(
+      child: child,
+      data: Theme.of(context).copyWith(primaryColor: color),
     );
   }
 }
