@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
 import 'colors.dart';
 import 'short_bottom_sheet_owl.dart';
 
@@ -155,7 +157,8 @@ class _OwlState extends State<OwlWidget> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+
     return Scaffold(
         backgroundColor: Colors.white,
         body: Stack(
