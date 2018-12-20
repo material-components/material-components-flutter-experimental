@@ -20,7 +20,7 @@ class BasilHomePage extends StatelessWidget {
     fontFamily: 'Montserrat',
     color: Color(0xFF356859),
     fontSize: 60,
-    letterSpacing: 10,
+    letterSpacing: 1,
   );
 
   @override
@@ -56,7 +56,7 @@ class BasilHomePage extends StatelessWidget {
                     height: 10.0,
                   ),
                   Text(
-                    'Spinich Pies',
+                    'Spinach Pies',
                     textAlign: TextAlign.center,
                     style: style.apply(color: Color(0xFFFF3C00)),
                   ),
