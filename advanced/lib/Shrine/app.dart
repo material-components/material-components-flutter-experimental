@@ -46,6 +46,7 @@ class _ShrineAppState extends State<ShrineApp> with SingleTickerProviderStateMix
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Shrine',
+      debugShowCheckedModeBanner: false,
       home: HomePage(
         backdrop: Backdrop(
           frontLayer: const ProductPage(),

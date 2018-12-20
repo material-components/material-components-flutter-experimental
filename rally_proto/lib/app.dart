@@ -13,6 +13,7 @@ class RallyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Rally Proto',
+      debugShowCheckedModeBanner: false,
       theme: _buildRallyTheme(),
       home: HomePage(),
       initialRoute: '/login',

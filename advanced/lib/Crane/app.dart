@@ -31,6 +31,7 @@ class _CraneAppState extends State<CraneApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Crane',
+      debugShowCheckedModeBanner: false,
       home: Backdrop(
         frontLayer: Container(),
         backLayer: <Widget> [
