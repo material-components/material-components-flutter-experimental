@@ -8,7 +8,7 @@ dependencies:
 
   cupertino_icons: ^0.1.0
   scoped_model: 0.3.0
-  shrine_images: 1.0.0
+  shrine_images: ^1.0.0
 
 dev_dependencies:
   flutter_test:
