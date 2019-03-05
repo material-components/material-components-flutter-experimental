@@ -58,23 +58,35 @@ class ExperimentalMediaQuery extends MediaQueryData {
         assert(viewingAngle != null);
 
   /// Type of interaction model of the screen.
+  ///
+  /// Default is [focused].
   final DeviceCorporealContext deviceCorporealContext;
 
   /// Intended purpose of the screen in the real world.
+  ///
+  /// Default is [slabHandheld].
   final DeviceCorporealType deviceCorporealType;
 
   /// Number of users facing the screen.
-  /// If unknown, null.
+  /// Null means 'unknown'.
+  ///
+  /// Default is null.
   final int viewerCount;
 
   /// If the phone is foldable, is it folded (true) or not (false).
   /// If the phone is not foldable, null.
+  ///
+  /// Default is null.
   final bool isFolded;
 
   /// Angle of eyes of the main user to the screen.
-  /// If unknown, defaults to 0.
+  /// 0 means 'unknown.
+  ///
+  /// Default is 0.
   final double viewingAngle;
 
   /// How near the main user is to the screen in centimeters (cm).
+  ///
+  /// Default is 36.
   final double viewingProximity;
 }
