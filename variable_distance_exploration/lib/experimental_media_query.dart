@@ -59,12 +59,12 @@ class ExperimentalMediaQuery extends MediaQueryData {
 
   /// Type of interaction model of the screen.
   ///
-  /// Default is [focused].
+  /// Default is [DeviceCorporealContext.focused].
   final DeviceCorporealContext deviceCorporealContext;
 
   /// Intended purpose of the screen in the real world.
   ///
-  /// Default is [slabHandheld].
+  /// Default is [DeviceCorporealType.slabHandheld].
   final DeviceCorporealType deviceCorporealType;
 
   /// Number of users facing the screen.
