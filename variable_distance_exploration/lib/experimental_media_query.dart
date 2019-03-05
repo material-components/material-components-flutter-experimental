@@ -80,7 +80,7 @@ class ExperimentalMediaQuery extends MediaQueryData {
   final bool isFolded;
 
   /// Angle of eyes of the main user to the screen.
-  /// 0 means 'unknown.
+  /// 0 means 'unknown'.
   ///
   /// Default is 0.
   final double viewingAngle;
