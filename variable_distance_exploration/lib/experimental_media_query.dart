@@ -68,12 +68,14 @@ class ExperimentalMediaQuery extends MediaQueryData {
   final DeviceCorporealType deviceCorporealType;
 
   /// Number of users facing the screen.
+  ///
   /// Null means 'unknown'.
   ///
   /// Default is null.
   final int viewerCount;
 
   /// If the phone is foldable, is it folded (true) or not (false).
+  /// 
   /// If the phone is not foldable, null.
   ///
   /// Default is null.
