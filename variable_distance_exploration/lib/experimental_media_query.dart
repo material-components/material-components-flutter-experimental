@@ -44,9 +44,13 @@ enum DeviceCorporealType {
 }
 
 /// Information about a piece of media relating to variable distance.
-class ExperimentalMediaQuery extends MediaQueryData {
+///
+/// NOTE: This is encapsulated into a separate class only for the purposes of
+/// demonstration. In production, these new fields would just be added to
+/// [MediaQueryData].
+class ExperimentalMediaQueryData extends MediaQueryData {
   /// Creates additional data for a [MediaQuery] with explicit values.
-  const ExperimentalMediaQuery({
+  const ExperimentalMediaQueryData({
     this.deviceCorporealContext = DeviceCorporealContext.focused,
     this.deviceCorporealType = DeviceCorporealType.slabHandheld,
     this.isFolded,
