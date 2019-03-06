@@ -57,6 +57,30 @@ class ExperimentalMediaQuery extends MediaQueryData {
         assert(deviceCorporealType != null),
         assert(viewingAngle != null);
 
+  /// Creates experimental data with existing data.
+  ExperimentalMediaQueryData.withMediaQueryData(
+      MediaQueryData data, {
+        this.deviceCorporealContext = DeviceCorporealContext.focused,
+        this.deviceCorporealType = DeviceCorporealType.slabHandheld,
+        this.isFolded,
+        this.viewerCount = 1,
+        this.viewingAngle = 0,
+        this.viewingProximity = 36,
+      })  : assert(data != null),
+        super(
+        accessibleNavigation: data.accessibleNavigation,
+        alwaysUse24HourFormat: data.alwaysUse24HourFormat,
+        boldText: data.boldText,
+        devicePixelRatio: data.devicePixelRatio,
+        disableAnimations: data.disableAnimations,
+        invertColors: data.invertColors,
+        padding: data.padding,
+        platformBrightness: data.platformBrightness,
+        size: data.size,
+        textScaleFactor: data.textScaleFactor,
+        viewInsets: data.viewInsets,
+      );
+
   /// Type of interaction model of the screen.
   ///
   /// Default is [DeviceCorporealContext.focused].
