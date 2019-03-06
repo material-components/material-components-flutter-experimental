@@ -67,6 +67,13 @@ class ExperimentalMediaQuery extends MediaQueryData {
   /// Default is [DeviceCorporealType.slabHandheld].
   final DeviceCorporealType deviceCorporealType;
 
+  /// If the phone is foldable, is it folded (true) or not (false).
+  ///
+  /// If the phone is not foldable, null.
+  ///
+  /// Default is null.
+  final bool isFolded;
+
   /// Number of users facing the screen.
   ///
   /// Null means 'unknown'.
@@ -74,14 +81,9 @@ class ExperimentalMediaQuery extends MediaQueryData {
   /// Default is null.
   final int viewerCount;
 
-  /// If the phone is foldable, is it folded (true) or not (false).
-  /// 
-  /// If the phone is not foldable, null.
+  /// Altitude angle of eyes of the main user to the screen. The horizon is the
+  /// imaginary plane defined by the screen.
   ///
-  /// Default is null.
-  final bool isFolded;
-
-  /// Angle of eyes of the main user to the screen.
   /// 0 means 'unknown'.
   ///
   /// Default is 0.
