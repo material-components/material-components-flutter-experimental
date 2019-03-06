@@ -61,7 +61,7 @@ class ExperimentalMediaQuery extends MediaQueryData {
   ExperimentalMediaQueryData.withMediaQueryData(
       MediaQueryData data, {
         this.deviceCorporealContext = DeviceCorporealContext.focused,
-        this.deviceCorporealType = DeviceCorporealType.slabHandheld,
+        this.deviceCorporealType = DeviceCorporealType.slateHandheld,
         this.isFolded,
         this.viewerCount = 1,
         this.viewingAngle = 0,
