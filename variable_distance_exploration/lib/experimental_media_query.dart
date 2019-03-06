@@ -30,8 +30,8 @@ enum DeviceCorporealType {
   /// Foldable phone.
   foldableHandheld,
 
-  /// Slab-style phone.
-  slabHandheld,
+  /// Slate-style phone.
+  slateHandheld,
 
   /// Mobile tablet.
   tabletHandheld,
