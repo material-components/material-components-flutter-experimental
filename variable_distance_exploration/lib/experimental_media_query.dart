@@ -48,7 +48,7 @@ class ExperimentalMediaQuery extends MediaQueryData {
   /// Creates additional data for a [MediaQuery] with explicit values.
   const ExperimentalMediaQuery({
     this.deviceCorporealContext = DeviceCorporealContext.focused,
-    this.deviceCorporealType = DeviceCorporealType.slabHandheld,
+    this.deviceCorporealType = DeviceCorporealType.slateHandheld,
     this.isFolded,
     this.viewerCount = 1,
     this.viewingAngle = 0,
