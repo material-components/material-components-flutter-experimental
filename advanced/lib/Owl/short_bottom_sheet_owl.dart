@@ -6,7 +6,6 @@ import 'package:meta/meta.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import 'colors.dart';
-import '../Shrine/model/app_state_model.dart';
 import 'owl.dart';
 
 // Curves that represent the two curves that compose the emphasized easing curve.
@@ -633,11 +632,9 @@ class _ShortBottomSheetOwlState extends State<ShortBottomSheetOwl>
           child: GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: open,
-            child: ScopedModelDescendant<AppStateModel>(
-              builder: (context, child, model) => AnimatedBuilder(
-                    builder: _buildCart,
-                    animation: _controller,
-                  ),
+            child: AnimatedBuilder(
+              builder: _buildCart,
+              animation: _controller,
             ),
           ),
         ),

@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'Shrine/app.dart';
 import 'Crane/app.dart';
 import 'Owl/owl.dart';
-import 'Rally/app.dart';
 import 'Owl/colors.dart';
 
 class MainHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         title: Text('Advanced Components'),
@@ -26,35 +23,36 @@ class MainHomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => ThemeColorOverride(
-                      color: kOwlYellow,
-                      secondary: kOwlBlue,
-                      textColor: Colors.black,
-                      child: OwlHomeWidget(() {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                ThemeColorOverride(
-                                  color: kOwlRed,
-                                  secondary: kOwlRed,
-                                  textColor: Colors.white,
-                                  child: OwlHomeWidget(() {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (BuildContext context) =>
-                                              ThemeColorOverride(
-                                                  color: kOwlBlue,
-                                                  secondary: kOwlYellow,
-                                                  textColor: Colors.white,
-                                                  child: OwlHomeWidget(() {}))),
-                                    );
-                                  }),
-                                ),
-                          ),
-                        );
-                      }),
-                    ),
+                          color: kOwlYellow,
+                          secondary: kOwlBlue,
+                          textColor: Colors.black,
+                          child: OwlHomeWidget(() {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    ThemeColorOverride(
+                                      color: kOwlRed,
+                                      secondary: kOwlRed,
+                                      textColor: Colors.white,
+                                      child: OwlHomeWidget(() {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  ThemeColorOverride(
+                                                      color: kOwlBlue,
+                                                      secondary: kOwlYellow,
+                                                      textColor: Colors.white,
+                                                      child: OwlHomeWidget(
+                                                          () {}))),
+                                        );
+                                      }),
+                                    ),
+                              ),
+                            );
+                          }),
+                        ),
                   ),
                 );
               },
@@ -64,28 +62,9 @@ class MainHomePage extends StatelessWidget {
                     color: Colors.white,
                     child: Center(
                         child: Text(
-                          'Owl',
-                          style: Theme.of(context).textTheme.display1,
-                        ))),
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (BuildContext context) => ShrineApp()),
-                );
-              },
-              child: Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: Material(
-                    color: Colors.white,
-                    child: Center(
-                        child: Text(
-                          'Shrine',
-                          style: Theme.of(context).textTheme.display1,
-                        ))),
+                      'Owl',
+                      style: Theme.of(context).textTheme.display1,
+                    ))),
               ),
             ),
             GestureDetector(
@@ -105,25 +84,6 @@ class MainHomePage extends StatelessWidget {
                       'Crane',
                       style: Theme.of(context).textTheme.display1,
                     ))),
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (BuildContext context) => RallyApp()),
-                );
-              },
-              child: Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: Material(
-                    color: Colors.white,
-                    child: Center(
-                        child: Text(
-                          'Rally',
-                          style: Theme.of(context).textTheme.display1,
-                        ))),
               ),
             ),
           ],
