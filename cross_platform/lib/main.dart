@@ -76,6 +76,7 @@ class MaterialOniOSState extends State<MaterialOniOS> {
       ),
       body: ListView.separated(
         itemCount: switchValues.length,
+        separatorBuilder: (context, index) => Divider(),
         itemBuilder: (context, index) => SwitchListTile.adaptive(
               value: switchValues[index],
               title: Text('Option ${index + 1}'),
@@ -83,31 +84,7 @@ class MaterialOniOSState extends State<MaterialOniOS> {
                 print('Line x was touched');
               },
             ),
-        separatorBuilder: (context, index) => Divider(),
       ),
     );
   }
 }
-
-//children: <Widget>[
-//SwitchListTile.adaptive(
-//title: Text('Option 1'),
-//value: switchValues[0],
-//onChanged: (bool) {},
-//),
-//SwitchListTile.adaptive(
-//title: Text('Option 1'),
-//value: switchValues[1],
-//onChanged: (bool) {},
-//),
-//SwitchListTile.adaptive(
-//title: Text('Option 1'),
-//value: switchValues[2],
-//onChanged: (bool) {},
-//),
-//SwitchListTile.adaptive(
-//title: Text('Option 1'),
-//value: switchValues[3],
-//onChanged: (bool) {},
-//)
-//],
