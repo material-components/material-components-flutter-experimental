@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "459268634197",
+    "firebase_url": "https://material-flutter-proximity.firebaseio.com",
+    "project_id": "material-flutter-proximity",
+    "storage_bucket": "material-flutter-proximity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459268634197:android:7219aaacf267fde0",
+        "android_client_info": {
+          "package_name": "com.google.flutteriodemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459268634197-uqdrofl1dlv4l9l91lg8leovclmb72mh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDfc-oiPevs_FWDej2WoqoNDiwhJR0gcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459268634197-uqdrofl1dlv4l9l91lg8leovclmb72mh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
