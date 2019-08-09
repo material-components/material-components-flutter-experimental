@@ -52,7 +52,12 @@ class HorizontalArticlePreview extends StatelessWidget {
 }
 
 class VerticalArticlePreview extends StatelessWidget {
-  VerticalArticlePreview({this.data, this.width, this.headlineTextStyle, this.showSnippet = false});
+  VerticalArticlePreview({
+    this.data,
+    this.width,
+    this.headlineTextStyle,
+    this.showSnippet = false,
+  });
 
   final ArticleData data;
   final double width;
@@ -189,34 +194,39 @@ class HashtagBar extends StatelessWidget {
         children: <Widget>[
           SizedBox(width: 16),
           Center(
-              child: Text(
-            '#TechDesign',
-            style: textTheme.subtitle,
-          )),
+            child: Text(
+              '#TechDesign',
+              style: textTheme.subtitle,
+            ),
+          ),
           verticalDivider,
           Center(
-              child: Text(
-            '#Reform',
-            style: textTheme.subtitle,
-          )),
+            child: Text(
+              '#Reform',
+              style: textTheme.subtitle,
+            ),
+          ),
           verticalDivider,
           Center(
-              child: Text(
-            '#HealthcareRevolution',
-            style: textTheme.subtitle,
-          )),
+            child: Text(
+              '#HealthcareRevolution',
+              style: textTheme.subtitle,
+            ),
+          ),
           verticalDivider,
           Center(
-              child: Text(
-            '#GreenArmy',
-            style: textTheme.subtitle,
-          )),
+            child: Text(
+              '#GreenArmy',
+              style: textTheme.subtitle,
+            ),
+          ),
           verticalDivider,
           Center(
-              child: Text(
-            '#Stocks',
-            style: textTheme.subtitle,
-          )),
+            child: Text(
+              '#Stocks',
+              style: textTheme.subtitle,
+            ),
+          ),
           verticalDivider,
         ],
       ),

@@ -23,11 +23,13 @@ class BottomNavDemoState extends State<BottomNavDemo> {
         backgroundColor: Colors.white,
         title: Text('BottomNavigationBar Sample'),
         actions: <Widget>[
-          Switch(value: _showLabels, onChanged: (bool newValue) {
-            setState(() {
-              _showLabels = newValue;
-            });
-          })
+          Switch(
+              value: _showLabels,
+              onChanged: (bool newValue) {
+                setState(() {
+                  _showLabels = newValue;
+                });
+              })
         ],
       ),
       body: Center(
@@ -53,7 +55,8 @@ class BottomNavDemoState extends State<BottomNavDemo> {
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber[800],
         onTap: _onItemTapped,
-    ));
+      ),
+    );
   }
 
   void _onItemTapped(int index) {

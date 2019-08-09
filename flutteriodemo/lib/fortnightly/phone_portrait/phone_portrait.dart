@@ -32,10 +32,12 @@ class FortnightlyPhonePortraitHome extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           HashtagBar(),
-          ...buildArticlePreviewItems(context).map((w) => Padding(
-        padding: EdgeInsets.only(left: 16, right: 16),
-      child: w,
-    )),
+          ...buildArticlePreviewItems(context).map(
+            (w) => Padding(
+              padding: EdgeInsets.only(left: 16, right: 16),
+              child: w,
+            ),
+          ),
         ],
       ),
     );
@@ -45,31 +47,33 @@ class FortnightlyPhonePortraitHome extends StatelessWidget {
 ThemeData buildTheme(BuildContext context) {
   TextTheme textTheme = Theme.of(context).textTheme;
   return ThemeData(
-      scaffoldBackgroundColor: Colors.white,
-      appBarTheme: AppBarTheme(
-        color: Colors.white,
-        elevation: 0,
-        iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: AppBarTheme(
+      color: Colors.white,
+      elevation: 0,
+      iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
+    ),
+    textTheme: textTheme.copyWith(
+      title: textTheme.title.copyWith(
+        fontFamily: 'Merriweather',
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
       ),
-      textTheme: textTheme.copyWith(
-          title: textTheme.title.copyWith(
-            fontFamily: 'Merriweather',
-            fontWeight: FontWeight.w700,
-            fontStyle: FontStyle.italic,
-          ),
-          subtitle: textTheme.subtitle.copyWith(
-            fontFamily: 'Libre Franklin',
-            fontWeight: FontWeight.w400,
-            fontSize: 14,
-          ),
-          headline: textTheme.headline.copyWith(
-            fontFamily: 'Libre Franklin',
-            fontWeight: FontWeight.w500,
-            fontSize: 16,
-          ),
-          subhead: textTheme.subhead.copyWith(
-            fontFamily: 'Roboto Condensed',
-            fontWeight: FontWeight.w700,
-            fontSize: 14,
-          )));
+      subtitle: textTheme.subtitle.copyWith(
+        fontFamily: 'Libre Franklin',
+        fontWeight: FontWeight.w400,
+        fontSize: 14,
+      ),
+      headline: textTheme.headline.copyWith(
+        fontFamily: 'Libre Franklin',
+        fontWeight: FontWeight.w500,
+        fontSize: 16,
+      ),
+      subhead: textTheme.subhead.copyWith(
+        fontFamily: 'Roboto Condensed',
+        fontWeight: FontWeight.w700,
+        fontSize: 14,
+      ),
+    ),
+  );
 }

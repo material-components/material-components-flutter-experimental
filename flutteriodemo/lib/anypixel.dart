@@ -61,11 +61,11 @@ class AnypixelBridgeState extends State<AnypixelBridge>
 
   Future<ui.Image> _captureImage() async {
     RenderRepaintBoundary boundary =
-    globalKey.currentContext.findRenderObject();
+        globalKey.currentContext.findRenderObject();
     ui.Image image = await boundary.toImage(pixelRatio: 1);
 
     ByteData byteData =
-    await image.toByteData(format: ui.ImageByteFormat.rawRgba);
+        await image.toByteData(format: ui.ImageByteFormat.rawRgba);
     Uint8List imageBytes = byteData.buffer.asUint8List();
 
     // TODO(clocksmith): better rgba => rgb
@@ -76,24 +76,10 @@ class AnypixelBridgeState extends State<AnypixelBridge>
       }
     }
 
-//    List<int> noAlphaBytes = [0];
-//    for (int i = 0; i < imageBytes.length; i += 4) {
-//      int r = imageBytes[i];
-//      int g = imageBytes[i + 1];
-//      int b = imageBytes[i + 2];
-//      int a = imageBytes[i + 3];
-//      noAlphaBytes
-//        ..add((r * a / 255).round())
-//        ..add((g * a / 255).round())
-//        ..add((b * a / 255).round());
-//    }
-
     var body = new Map<String, dynamic>();
     body['arr'] = noAlphaBytes.toString();
 
-    // 10.0.2.2 for android ?
     final String local = '10.0.2.2';
-//    final String local = '127.0.0.1';
     http.post('http://$local:8000/flutter/publish-view', body: body);
     http.get('http://$local:8000/flutter/read-tap').then((Response val) {
       List<dynamic> arr = jsonDecode(val.body);

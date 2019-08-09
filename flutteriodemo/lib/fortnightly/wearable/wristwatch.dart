@@ -35,12 +35,12 @@ class FortnightlyWearableHome extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Align(
-                      alignment: Alignment.topCenter,
-                      child: Image.asset('assets/fortnightly_title_white.png'),
+                    alignment: Alignment.topCenter,
+                    child: Image.asset('assets/fortnightly_title_white.png'),
                   ),
                   Align(
                     alignment: Alignment.center,
-                    child:  Icon(
+                    child: Icon(
                       Icons.play_circle_filled,
                       color: Colors.white,
                       size: 48,
@@ -67,14 +67,15 @@ class FortnightlyWearableHome extends StatelessWidget {
 ThemeData buildTheme(BuildContext context) {
   TextTheme textTheme = Theme.of(context).textTheme;
   return ThemeData(
-      scaffoldBackgroundColor: Colors.black,
-      textTheme: textTheme.copyWith(
-        // preview headlines
-        headline: textTheme.headline.copyWith(
-          fontFamily: 'Raleway',
-          fontWeight: FontWeight.w400,
-          color: Colors.white,
-          fontSize: 15,
-        ),
-      ));
+    scaffoldBackgroundColor: Colors.black,
+    textTheme: textTheme.copyWith(
+      // preview headlines
+      headline: textTheme.headline.copyWith(
+        fontFamily: 'Raleway',
+        fontWeight: FontWeight.w400,
+        color: Colors.white,
+        fontSize: 15,
+      ),
+    ),
+  );
 }

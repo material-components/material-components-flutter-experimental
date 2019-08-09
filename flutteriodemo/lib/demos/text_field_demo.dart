@@ -31,7 +31,8 @@ class TextFieldDemoState extends State<TextFieldDemo> {
                       borderSide: BorderSide(color: Colors.black),
                     ),
                   ),
-                  cursorColor: HSLColor.fromAHSL(1, _hueValue, 1, 0.5).toColor(),
+                  cursorColor:
+                      HSLColor.fromAHSL(1, _hueValue, 1, 0.5).toColor(),
                   cursorWidth: 4,
                   cursorRadius: Radius.circular(30),
                 ),

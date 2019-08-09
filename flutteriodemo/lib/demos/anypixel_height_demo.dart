@@ -27,7 +27,6 @@ class AnypixelHeightDemoState extends State<AnypixelHeightDemo> {
   @override
   void initState() {
     super.initState();
-//    _handlePressed(Offset.zero);
   }
 
   @override
@@ -51,7 +50,8 @@ class AnypixelHeightDemoState extends State<AnypixelHeightDemo> {
             ),
             AnimatedContainer(
               duration: Duration(milliseconds: 500),
-              margin: EdgeInsets.only(left: left + 2, top: max(0, top - 10) , right: textRight),
+              margin: EdgeInsets.only(
+                  left: left + 2, top: max(0, top - 10), right: textRight),
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Text(
@@ -61,7 +61,6 @@ class AnypixelHeightDemoState extends State<AnypixelHeightDemo> {
                         color: Colors.white,
                         letterSpacing: 0.9,
                         fontWeight: FontWeight.w500,
-//                    decoration: TextDecoration.underline,
                       ),
                   textAlign: TextAlign.center,
                 ),

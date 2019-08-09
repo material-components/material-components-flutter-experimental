@@ -54,7 +54,8 @@ class FortnightlyCounterFarHome extends StatelessWidget {
                       ),
                     ),
                     Flexible(
-                        child: Image.asset('assets/fortnightly_healthcare.png')),
+                        child:
+                            Image.asset('assets/fortnightly_healthcare.png')),
                   ],
                 ),
               ),

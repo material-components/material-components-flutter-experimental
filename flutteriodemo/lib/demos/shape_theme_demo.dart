@@ -12,14 +12,24 @@ class ShapeThemeDemoState extends State<ShapeThemeDemo> {
   @override
   Widget build(BuildContext context) {
     ThemeData _roundTheme = Theme.of(context).copyWith(
-        cardTheme: CardTheme(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
-    ));
+      cardTheme: CardTheme(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(16),
+          ),
+        ),
+      ),
+    );
 
     ThemeData _cutTheme = Theme.of(context).copyWith(
-        cardTheme: CardTheme(
-      shape: BeveledRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
-    ));
+      cardTheme: CardTheme(
+        shape: BeveledRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(16),
+          ),
+        ),
+      ),
+    );
 
     double _value = 0.5;
 
@@ -50,9 +60,9 @@ class ShapeThemeDemoState extends State<ShapeThemeDemo> {
                 ),
               ),
               SliderTheme(
-                data: Theme.of(context).sliderTheme.copyWith(
-                  thumbShape: RoundSliderThumbShape()
-                ),
+                data: Theme.of(context)
+                    .sliderTheme
+                    .copyWith(thumbShape: RoundSliderThumbShape()),
                 child: Slider(
                   value: _value,
                   onChanged: (double newValue) {
@@ -63,9 +73,9 @@ class ShapeThemeDemoState extends State<ShapeThemeDemo> {
                 ),
               ),
               SliderTheme(
-                data: Theme.of(context).sliderTheme.copyWith(
-                    thumbShape: DiamondSliderThumbShape()
-                ),
+                data: Theme.of(context)
+                    .sliderTheme
+                    .copyWith(thumbShape: DiamondSliderThumbShape()),
                 child: Slider(
                   value: _value,
                   onChanged: (double newValue) {
@@ -104,7 +114,6 @@ class DiamondSliderThumbShape extends RoundSliderThumbShape {
       ..relativeLineTo(-8, -8)
       ..close();
     Paint paint = Paint()..color = sliderTheme.thumbColor;
-    context.canvas.drawPath(diamond,paint);
-//    context.canvas.restore();
+    context.canvas.drawPath(diamond, paint);
   }
 }

@@ -56,9 +56,11 @@ class _FortnightlyCountertopState extends State<FortnightlyCountertop> {
 
       _isDetecting = true;
 
-      final FaceDetectorOptions options = FaceDetectorOptions(minFaceSize: 0.02);
-      detect(image, FirebaseVision.instance.faceDetector(options).processImage).then(
-            (dynamic result) {
+      final FaceDetectorOptions options =
+          FaceDetectorOptions(minFaceSize: 0.02);
+      detect(image, FirebaseVision.instance.faceDetector(options).processImage)
+          .then(
+        (dynamic result) {
           setState(() {
             _scanResults = result;
           });
@@ -66,7 +68,7 @@ class _FortnightlyCountertopState extends State<FortnightlyCountertop> {
           _isDetecting = false;
         },
       ).catchError(
-            (_) {
+        (_) {
           _isDetecting = false;
         },
       );
@@ -100,7 +102,8 @@ class _FortnightlyCountertopState extends State<FortnightlyCountertop> {
       final double imageArea = imageSize.width * imageSize.height;
 
       for (Face face in faces) {
-        final double faceArea = face.boundingBox.width * face.boundingBox.height;
+        final double faceArea =
+            face.boundingBox.width * face.boundingBox.height;
         _faceAreaRatio = faceArea / imageArea;
         // Only display the close experience when the face is at least `_proximityThreshold` of the visible space.
         if (_faceAreaRatio >= _proximityThreshold) {
@@ -135,7 +138,8 @@ class _FortnightlyCountertopState extends State<FortnightlyCountertop> {
       fortnightly = FortnightlyCounterFar();
     }
 
-    final Color ratioColor = _faceAreaRatio >= _proximityThreshold ? Colors.green : Colors.red;
+    final Color ratioColor =
+        _faceAreaRatio >= _proximityThreshold ? Colors.green : Colors.red;
     return Stack(
       textDirection: TextDirection.ltr,
       children: <Widget>[
@@ -162,7 +166,10 @@ class _FortnightlyCountertopState extends State<FortnightlyCountertop> {
               child: Center(
                 child: Text(
                   '${_faceAreaRatio.toStringAsFixed(2)}',
-                  style: Theme.of(context).textTheme.body1.apply(color: ratioColor),
+                  style: Theme.of(context)
+                      .textTheme
+                      .body1
+                      .apply(color: ratioColor),
                   textDirection: TextDirection.ltr,
                 ),
               ),

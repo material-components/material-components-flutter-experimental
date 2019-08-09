@@ -8,7 +8,6 @@ class RadicalSliderDemo extends StatefulWidget {
 }
 
 class RadicalSliderDemoState extends State<RadicalSliderDemo> {
-  double _countValue = 6;
   double _hueValue = 50;
   double _prismValue = 100;
 
@@ -89,7 +88,6 @@ class _HueTrackShape extends RectangularSliderTrackShape {
       bool isEnabled = false,
       bool isDiscrete = false,
       TextDirection textDirection}) {
-
     final Rect trackRect = getPreferredRect(
       parentBox: parentBox,
       sliderTheme: sliderTheme,
@@ -100,19 +98,16 @@ class _HueTrackShape extends RectangularSliderTrackShape {
   }
 }
 
-
 SliderThemeData buildHueSelectorSliderThemeData(BuildContext context) {
   return Theme.of(context).sliderTheme.copyWith(
-    trackHeight: 6,
-    trackShape: _HueTrackShape(),
-    thumbShape: RoundSliderThumbShape(enabledThumbRadius: 12),
-    thumbColor: Colors.black,
-    overlayShape: RoundSliderOverlayShape(overlayRadius: 24),
-    overlayColor: Colors.black.withOpacity(0.12),
-  );
+        trackHeight: 6,
+        trackShape: _HueTrackShape(),
+        thumbShape: RoundSliderThumbShape(enabledThumbRadius: 12),
+        thumbColor: Colors.black,
+        overlayShape: RoundSliderOverlayShape(overlayRadius: 24),
+        overlayColor: Colors.black.withOpacity(0.12),
+      );
 }
-
-
 
 Path _triangle(double size, Offset thumbCenter, {bool invert = false}) {
   final Path thumbPath = Path();
@@ -151,12 +146,12 @@ class _CustomRainbowTriangularTrackShape extends RectangularSliderTrackShape {
   @override
   void paint(PaintingContext context, Offset offset,
       {RenderBox parentBox,
-        SliderThemeData sliderTheme,
-        Animation<double> enableAnimation,
-        Offset thumbCenter,
-        bool isEnabled = false,
-        bool isDiscrete = false,
-        TextDirection textDirection}) {
+      SliderThemeData sliderTheme,
+      Animation<double> enableAnimation,
+      Offset thumbCenter,
+      bool isEnabled = false,
+      bool isDiscrete = false,
+      TextDirection textDirection}) {
     final Rect trackRect = getPreferredRect(
         parentBox: parentBox,
         offset: offset,

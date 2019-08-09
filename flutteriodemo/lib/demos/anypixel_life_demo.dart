@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:math';
 import 'dart:ui';
 
@@ -19,7 +18,6 @@ class AnypixelLifeDemoState extends State<AnypixelLifeDemo>
   Ticker _ticker;
   int count = 0;
 
-
   _updateState() {
     List<List<bool>> newState = List.generate(140, (_) => List(42));
     for (int x = 0; x < state.length; x++) {
@@ -32,7 +30,6 @@ class AnypixelLifeDemoState extends State<AnypixelLifeDemo>
         assert(0 <= right && right < 140);
         assert(0 <= top && top < 42);
         assert(0 <= bottom && bottom < 42);
-//          print('$left $top $right $bottom');
         int sum = (state[left][top] ? 1 : 0) +
             (state[x][top] ? 1 : 0) +
             (state[right][top] ? 1 : 0) +
@@ -49,7 +46,6 @@ class AnypixelLifeDemoState extends State<AnypixelLifeDemo>
       }
     }
     setState(() {
-//      print(state.toString());
       state = newState;
     });
   }
@@ -152,11 +148,12 @@ class AnypixelLifeDemoState extends State<AnypixelLifeDemo>
   ];
 
   List<List<Color>> toColorState() {
-
     List<List<Color>> colorState = List.generate(140, (_) => List(42));
     for (int x = 0; x < state.length; x++) {
       for (int y = 0; y < state[x].length; y++) {
-        colorState[x][y] = state[x][y] ? _colors[Random().nextInt(_colors.length - 1)] : Colors.black;
+        colorState[x][y] = state[x][y]
+            ? _colors[Random().nextInt(_colors.length - 1)]
+            : Colors.black;
       }
     }
     return colorState;
@@ -173,15 +170,14 @@ class GolPainter extends CustomPainter {
     for (int x = 0; x < state.length; x++) {
       for (int y = 0; y < state[x].length; y++) {
         Offset offset = Offset(x.toDouble(), y.toDouble());
-        canvas.drawRect(Rect.fromPoints(offset, offset + Offset(1, 1)),
-            Paint()..color = state[x][y]);
-//        canvas.drawPoints(PointMode.points, [offset], Paint()..color = state[x][y]);
+        canvas.drawRect(
+          Rect.fromPoints(offset, offset + Offset(1, 1)),
+          Paint()..color = state[x][y],
+        );
       }
     }
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    return true;
-  }
+  bool shouldRepaint(CustomPainter oldDelegate) => true;
 }

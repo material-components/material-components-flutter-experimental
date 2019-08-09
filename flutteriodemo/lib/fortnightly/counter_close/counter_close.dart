@@ -103,21 +103,23 @@ class FortnightlyCounterCloseHome extends StatelessWidget {
 ThemeData buildTheme(BuildContext context) {
   TextTheme textTheme = Theme.of(context).textTheme;
   return ThemeData(
-      scaffoldBackgroundColor: Colors.white,
-      textTheme: textTheme.copyWith(
-          headline: textTheme.headline.copyWith(
-            fontFamily: 'Libre Franklin',
-            fontWeight: FontWeight.w500,
-            fontSize: 28,
-          ),
-          body1: textTheme.body1.copyWith(
-            fontFamily: 'Merriweather',
-            fontWeight: FontWeight.w300,
-            fontSize: 18,
-          ),
-          subhead: textTheme.subhead.copyWith(
-            fontFamily: 'Roboto Condensed',
-            fontWeight: FontWeight.w700,
-            fontSize: 18,
-          )));
+    scaffoldBackgroundColor: Colors.white,
+    textTheme: textTheme.copyWith(
+      headline: textTheme.headline.copyWith(
+        fontFamily: 'Libre Franklin',
+        fontWeight: FontWeight.w500,
+        fontSize: 28,
+      ),
+      body1: textTheme.body1.copyWith(
+        fontFamily: 'Merriweather',
+        fontWeight: FontWeight.w300,
+        fontSize: 18,
+      ),
+      subhead: textTheme.subhead.copyWith(
+        fontFamily: 'Roboto Condensed',
+        fontWeight: FontWeight.w700,
+        fontSize: 18,
+      ),
+    ),
+  );
 }

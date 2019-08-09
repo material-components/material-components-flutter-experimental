@@ -70,23 +70,23 @@ class FortnightlyFoldableOpenHome extends StatelessWidget {
                     ),
                     SizedBox(width: 20),
                     Flexible(
-                        flex: 1,
-                        fit: FlexFit.tight,
-                        child: ListView(
-                            children: <Widget>[
-                            ...buildStockItems(context),
-                        SizedBox(height: 32),
-                        ...buildVideoPreviewItems(context),
+                      flex: 1,
+                      fit: FlexFit.tight,
+                      child: ListView(
+                        children: <Widget>[
+                          ...buildStockItems(context),
+                          SizedBox(height: 32),
+                          ...buildVideoPreviewItems(context),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
             ],
           ),
         ),
-        ],
       ),
-    ),
-    ),
     );
   }
 }
@@ -114,5 +114,7 @@ ThemeData buildTheme(BuildContext context) {
         fontFamily: 'Libre Franklin',
         fontWeight: FontWeight.w700,
         fontSize: 11,
-      )));
+      ),
+    ),
+  );
 }

@@ -19,22 +19,21 @@ class AdaptiveControlsDemoState extends State<AdaptiveControlsDemo> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Switch.adaptive(
-                value: _switchValue,
-                onChanged: (bool newValue) {
-                  setState(() {
-                    _switchValue = newValue;
-                  });
-                },
+              value: _switchValue,
+              onChanged: (bool newValue) {
+                setState(() {
+                  _switchValue = newValue;
+                });
+              },
             ),
             SizedBox(height: 100),
             Slider.adaptive(
-              value: _sliderValue,
-              onChanged: (double newValue) {
-                setState(() {
-                  _sliderValue = newValue;
-                });
-              }
-            ),
+                value: _sliderValue,
+                onChanged: (double newValue) {
+                  setState(() {
+                    _sliderValue = newValue;
+                  });
+                }),
           ],
         ),
       ),

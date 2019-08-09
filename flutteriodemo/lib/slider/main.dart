@@ -20,41 +20,43 @@ class _SliderDemoState extends State<SliderDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SliderTheme(
-        data: SliderThemeData(
-          trackHeight: 48,
-          trackShape: _RainbowTriangularTrackShape(),
-          thumbShape: _TriangularThumbShape(),
-        ),
-        child: Slider(
+        body: SliderTheme(
+      data: SliderThemeData(
+        trackHeight: 48,
+        trackShape: _RainbowTriangularTrackShape(),
+        thumbShape: _TriangularThumbShape(),
+      ),
+      child: Slider(
           value: _value,
           onChanged: (double newValue) {
             setState(() {
               _value = newValue;
             });
-          }
-        ),
-      )
-    );
+          }),
+    ));
   }
 }
 
 class _RainbowTriangularTrackShape extends RectangularSliderTrackShape {
   @override
-  void paint(PaintingContext context, Offset offset,
-      {RenderBox parentBox,
-        SliderThemeData sliderTheme,
-        Animation<double> enableAnimation,
-        Offset thumbCenter,
-        bool isEnabled = false,
-        bool isDiscrete = false,
-        TextDirection textDirection}) {
+  void paint(
+    PaintingContext context,
+    Offset offset, {
+    RenderBox parentBox,
+    SliderThemeData sliderTheme,
+    Animation<double> enableAnimation,
+    Offset thumbCenter,
+    bool isEnabled = false,
+    bool isDiscrete = false,
+    TextDirection textDirection,
+  }) {
     final Rect trackRect = getPreferredRect(
-        parentBox: parentBox,
-        offset: offset,
-        sliderTheme: sliderTheme,
-        isEnabled: isEnabled,
-        isDiscrete: isDiscrete);
+      parentBox: parentBox,
+      offset: offset,
+      sliderTheme: sliderTheme,
+      isEnabled: isEnabled,
+      isDiscrete: isDiscrete,
+    );
     LinearGradient leftRainbowGradient = LinearGradient(colors: <Color>[
       Colors.red,
       Colors.orange,
@@ -101,27 +103,28 @@ class _TriangularThumbShape extends SliderComponentShape {
 
   @override
   void paint(
-      PaintingContext context,
-      Offset thumbCenter, {
-        Animation<double> activationAnimation,
-        Animation<double> enableAnimation,
-        bool isDiscrete,
-        TextPainter labelPainter,
-        RenderBox parentBox,
-        SliderThemeData sliderTheme,
-        TextDirection textDirection,
-        double value,
-      }) {
+    PaintingContext context,
+    Offset thumbCenter, {
+    Animation<double> activationAnimation,
+    Animation<double> enableAnimation,
+    bool isDiscrete,
+    TextPainter labelPainter,
+    RenderBox parentBox,
+    SliderThemeData sliderTheme,
+    TextDirection textDirection,
+    double value,
+  }) {
     final Canvas canvas = context.canvas;
     final double size = _thumbSize * sizeTween.evaluate(enableAnimation);
     final Path thumbPath = _triangle(size, thumbCenter);
     canvas.drawPath(thumbPath, Paint()..color = Colors.black);
     canvas.drawPath(
-        thumbPath,
-        Paint()
-          ..color = Colors.grey
-          ..strokeWidth = 1
-          ..style = PaintingStyle.stroke);
+      thumbPath,
+      Paint()
+        ..color = Colors.grey
+        ..strokeWidth = 1
+        ..style = PaintingStyle.stroke,
+    );
   }
 }
 

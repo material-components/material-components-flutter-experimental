@@ -16,7 +16,7 @@ void main(List<String> args) async {
   return runApp(FortnightlyAdaptive());
 }
 
-enum DeviceType {countertop, foldable, tv, wristwatch}
+enum DeviceType { countertop, foldable, tv, wristwatch }
 
 class FortnightlyAdaptive extends StatelessWidget {
   final DeviceType deviceType = DeviceType.countertop;
@@ -29,15 +29,17 @@ class FortnightlyAdaptive extends StatelessWidget {
         return FortnightlyCountertop();
         break;
       case DeviceType.foldable:
-        return LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
-          final Size size = constraints.biggest;
-          final double aspectRatio = size.width / size.height;
-          if (aspectRatio < 0.7) {
-            return FortnightlyPhonePortrait();
-          } else {
-            return FortnightlyFoldableOpen();
-          }
-        });
+        return LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            final Size size = constraints.biggest;
+            final double aspectRatio = size.width / size.height;
+            if (aspectRatio < 0.7) {
+              return FortnightlyPhonePortrait();
+            } else {
+              return FortnightlyFoldableOpen();
+            }
+          },
+        );
         break;
       case DeviceType.tv:
         SystemChrome.setEnabledSystemUIOverlays([]);

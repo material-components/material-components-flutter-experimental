@@ -35,7 +35,7 @@ class AnypixelStarterDemoState extends State<AnypixelStarterDemo> {
               key: key,
               mini: true,
               child: Icon(Icons.add),
-              onPressed: () { },
+              onPressed: () {},
             ),
           ],
         ),
@@ -48,4 +48,3 @@ class AnypixelStarterDemoState extends State<AnypixelStarterDemo> {
     );
   }
 }
-

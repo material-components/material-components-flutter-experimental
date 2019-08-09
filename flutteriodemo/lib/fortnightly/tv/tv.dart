@@ -44,18 +44,6 @@ class FortnightlyTvHome extends StatelessWidget {
                         child: TvRow(),
                       ),
                       SizedBox(height: 20),
-//                      Container(
-//                        alignment: Alignment.centerLeft,
-//                        padding: EdgeInsets.only(top: 20, bottom: 20),
-//                        child: Text('Last Updated', style: textTheme.title),
-//                      ),
-//                      Opacity(
-//                        opacity: 0.70,
-//                        child: SingleChildScrollView(
-//                          scrollDirection: Axis.horizontal,
-//                          child: TvRow(),
-//                        ),
-//                      )
                     ],
                   ),
                 )
@@ -83,7 +71,7 @@ class TvRow extends StatelessWidget {
             category: 'POLITICS',
             title: 'Modern Dining Rituals For Singles',
             snippet:
-            'From the chef\'s table to restaurants for singles, modern cusine gets creative',
+                'From the chef\'s table to restaurants for singles, modern cusine gets creative',
           ),
         ),
         SizedBox(width: 20),
@@ -95,7 +83,7 @@ class TvRow extends StatelessWidget {
             category: 'US',
             title: 'Poverty To Empowerment In Chicago',
             snippet:
-            'How one woman is transforming the lives of underprivileged children',
+                'How one woman is transforming the lives of underprivileged children',
           ),
         ),
         SizedBox(width: 20),
@@ -107,15 +95,14 @@ class TvRow extends StatelessWidget {
             category: 'POLITICS',
             title: 'A Fight For Aging Veterans',
             snippet:
-            'For those nearing retirement, benefits are not always guaranteed',
+                'For those nearing retirement, benefits are not always guaranteed',
           ),
         ),
         SizedBox(width: 20),
         SizedBox(
           width: 130,
           child: Column(
-            children: buildStockItems(context, isTv: true)
-                .sublist(0, 9),
+            children: buildStockItems(context, isTv: true).sublist(0, 9),
           ),
         ),
         SizedBox(width: 20),
@@ -127,7 +114,7 @@ class TvRow extends StatelessWidget {
             category: 'POLITICS',
             title: 'Modern Dining Rituals For Singles',
             snippet:
-            'From the chef\'s table to restaurants for singles, modern cusine gets creative',
+                'From the chef\'s table to restaurants for singles, modern cusine gets creative',
           ),
         ),
         SizedBox(width: 20),
@@ -139,7 +126,7 @@ class TvRow extends StatelessWidget {
             category: 'US',
             title: 'Poverty To Empowerment In Chicago',
             snippet:
-            'How one woman is transforming the lives of underprivileged children',
+                'How one woman is transforming the lives of underprivileged children',
           ),
         ),
         SizedBox(width: 20),
@@ -151,7 +138,7 @@ class TvRow extends StatelessWidget {
             category: 'POLITICS',
             title: 'A Fight For Aging Veterans',
             snippet:
-            'For those nearing retirement, benefits are not always guaranteed',
+                'For those nearing retirement, benefits are not always guaranteed',
           ),
         ),
       ],
@@ -162,54 +149,55 @@ class TvRow extends StatelessWidget {
 ThemeData buildTheme(BuildContext context) {
   TextTheme textTheme = Theme.of(context).textTheme;
   return ThemeData(
-      scaffoldBackgroundColor: Colors.white,
-      appBarTheme: AppBarTheme(
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: AppBarTheme(
+      color: Colors.white,
+      elevation: 0,
+      iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
+    ),
+    textTheme: textTheme.copyWith(
+      // preview headlines
+      headline: textTheme.headline.copyWith(
+        fontFamily: 'Libre Franklin',
+        fontWeight: FontWeight.w500,
         color: Colors.white,
-        elevation: 0,
-        iconTheme: IconTheme.of(context).copyWith(color: Colors.black),
+        fontSize: 16,
       ),
-      textTheme: textTheme.copyWith(
-        // preview headlines
-        headline: textTheme.headline.copyWith(
-          fontFamily: 'Libre Franklin',
-          fontWeight: FontWeight.w500,
-          color: Colors.white,
-          fontSize: 16,
-        ),
-        // preview snippet
-        body1: textTheme.body1.copyWith(
-          fontFamily: 'Merriweather',
-          fontWeight: FontWeight.w300,
-          color: Colors.white.withOpacity(0.76),
-          fontSize: 12,
-        ),
-        // caption 2, category subtitle
-        subhead: textTheme.subhead.copyWith(
-          fontFamily: 'Libre Franklin',
-          fontWeight: FontWeight.w700,
-          fontSize: 12,
-          color: Colors.white.withOpacity(0.50),
-        ),
-        subtitle: textTheme.caption.copyWith(
-          fontFamily: 'Libre Franklin',
-          fontWeight: FontWeight.w700,
-          fontSize: 12,
-          color: Colors.white,
-        ),
-        // stock ticker
-        caption: textTheme.caption.copyWith(
-          fontFamily: 'Libre Franklin',
-          fontWeight: FontWeight.w700,
-          fontSize: 12,
-          color: Colors.white,
-        ),
-        // Top Highlights, Last Updated...
-        title: textTheme.title.copyWith(
-          fontFamily: 'Merriweather',
-          fontWeight: FontWeight.w700,
-          fontStyle: FontStyle.italic,
-          fontSize: 14,
-          color: Colors.white,
-        ),
-      ));
+      // preview snippet
+      body1: textTheme.body1.copyWith(
+        fontFamily: 'Merriweather',
+        fontWeight: FontWeight.w300,
+        color: Colors.white.withOpacity(0.76),
+        fontSize: 12,
+      ),
+      // caption 2, category subtitle
+      subhead: textTheme.subhead.copyWith(
+        fontFamily: 'Libre Franklin',
+        fontWeight: FontWeight.w700,
+        fontSize: 12,
+        color: Colors.white.withOpacity(0.50),
+      ),
+      subtitle: textTheme.caption.copyWith(
+        fontFamily: 'Libre Franklin',
+        fontWeight: FontWeight.w700,
+        fontSize: 12,
+        color: Colors.white,
+      ),
+      // stock ticker
+      caption: textTheme.caption.copyWith(
+        fontFamily: 'Libre Franklin',
+        fontWeight: FontWeight.w700,
+        fontSize: 12,
+        color: Colors.white,
+      ),
+      // Top Highlights, Last Updated...
+      title: textTheme.title.copyWith(
+        fontFamily: 'Merriweather',
+        fontWeight: FontWeight.w700,
+        fontStyle: FontStyle.italic,
+        fontSize: 14,
+        color: Colors.white,
+      ),
+    ),
+  );
 }
