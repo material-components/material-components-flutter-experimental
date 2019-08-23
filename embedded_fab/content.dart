@@ -351,7 +351,7 @@ class _ListItem extends StatelessWidget {
 class _ChipAttachments extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    TextTheme textTheme = Theme.of(context).textTheme;
+    final TextTheme textTheme = Theme.of(context).textTheme;
     return Row(
       children: [
         Chip(

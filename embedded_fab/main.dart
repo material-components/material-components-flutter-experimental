@@ -69,19 +69,19 @@ class _HomeState extends State<Home> {
     });
   }
 
-  void _setSelectedTile(value) {
+  void _setSelectedTile(ShapeType value) {
     setState(() {
       _selectedShape = value;
     });
   }
 
-  void _setSelectedColorTile(value) {
+  void _setSelectedColorTile(Color value) {
     setState(() {
       _selectedColor = value;
     });
   }
 
-  void _setLayout(value) {
+  void _setLayout(Layout value) {
     setState(() {
       _layout = value;
     });
@@ -147,7 +147,7 @@ class _HomeState extends State<Home> {
 
     return GestureDetector(
       onTap: () {
-        _onFABTap();
+        _onFabTap();
       },
       child: CustomPaint(
         foregroundPainter: plusPainter,
@@ -226,7 +226,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  void _onFABTap() {
+  void _onFabTap() {
     Navigator.push(
         context,
         MaterialPageRoute(
@@ -405,7 +405,7 @@ class _HomeState extends State<Home> {
       extendBody: true,
       floatingActionButton: _layout != Layout.Experimental
           ? _traditionalFAB(() {
-              _onFABTap();
+              _onFabTap();
             })
           : null,
       floatingActionButtonLocation: _layout == Layout.AppBar
