@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
             fontSize: 24,
           ),
         ),
-        actions: <Widget>[
+        actions: [
           Padding(
             padding: const EdgeInsets.all(12),
             child: CircleAvatar(
@@ -306,12 +306,12 @@ class _ListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     return Column(
-      children: <Widget>[
+      children: [
         Padding(
           padding: EdgeInsets.only(left: 24, right: 24),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
+            children: [
               CircleAvatar(
                 child: Text(
                   content.initials,
@@ -323,10 +323,10 @@ class _ListItem extends StatelessWidget {
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
+                  children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: <Widget>[
+                      children: [
                         Text(
                           content.title,
                           style: textTheme.subtitle.copyWith(
@@ -379,7 +379,7 @@ class _ChipAttachments extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
     return Row(
-      children: <Widget>[
+      children: [
         Chip(
           label: Text(
             '10/16 Notes',

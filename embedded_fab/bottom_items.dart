@@ -35,7 +35,7 @@ class BottomNavItem extends StatelessWidget {
       onTap: onTap,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
+        children: [
           Icon(icon, color: isSelected ? blue500 : grey600),
           SizedBox(height: 4),
           Text(

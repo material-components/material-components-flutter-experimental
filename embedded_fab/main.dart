@@ -182,7 +182,7 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
+          children: [
             IconButton(icon: Icon(Icons.menu), onPressed: () {}),
             IconButton(icon: Icon(Icons.search), onPressed: () {})
           ],
@@ -233,7 +233,7 @@ class _HomeState extends State<Home> {
           builder: (context) {
             return Scaffold(
               appBar: AppBar(
-                actions: <Widget>[
+                actions: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: IconButton(
@@ -252,7 +252,7 @@ class _HomeState extends State<Home> {
               body: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
-                  children: <Widget>[
+                  children: [
                     TextField(
                       decoration: const InputDecoration(
                         border: OutlineInputBorder(),
