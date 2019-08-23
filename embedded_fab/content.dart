@@ -239,7 +239,7 @@ class NavigationView extends StatelessWidget {
       name: 'Rich Fulcher',
       description:
           'Don\'t forget that Monday is St Swithins day. The office will be closed',
-      initials: 'MJ',
+      initials: 'RF',
       color: Colors.teal,
     ),
   ];
@@ -254,8 +254,8 @@ class NavigationView extends StatelessWidget {
           child: Row(
             children: [
               IconTheme(
-                data: IconThemeData(color: Color(0xFF80868B)),
-                child: Icon(icon.icon, size: 16, color: Color(0xFF80868B)),
+                data: IconThemeData(color: grey600),
+                child: Icon(icon.icon, size: 16, color: grey600),
               ),
               SizedBox(width: 6),
               Text(
@@ -338,7 +338,7 @@ class _ListItem extends StatelessWidget {
                         Text(
                           time,
                           style: textTheme.body1.copyWith(
-                            color: Color(0xFF80868B),
+                            color: grey600,
                             letterSpacing: 0.25,
                             fontSize: 14,
                           ),
@@ -355,7 +355,7 @@ class _ListItem extends StatelessWidget {
                       content.description,
                       overflow: TextOverflow.ellipsis,
                       style: textTheme.body1.copyWith(
-                        color: Color(0xFF80868B),
+                        color: grey600,
                         fontSize: 14,
                       ),
                     ),
@@ -384,14 +384,14 @@ class _ChipAttachments extends StatelessWidget {
           label: Text(
             '10/16 Notes',
             style: textTheme.body1.copyWith(
-              color: Color(0xFF1A73E8),
+              color: blue600,
               fontSize: 12,
             ),
           ),
-          backgroundColor: Color(0xFFE8F0FE),
+          backgroundColor: blue50,
           avatar: Icon(
             Icons.assignment,
-            color: Color(0xFF1A73E8),
+            color: blue600,
           ),
         ),
         SizedBox(width: 8),
@@ -399,14 +399,14 @@ class _ChipAttachments extends StatelessWidget {
           label: Text(
             'Task tracker',
             style: textTheme.body1.copyWith(
-              color: Color(0xFF1E8E3E),
+              color: green600,
               fontSize: 12,
             ),
           ),
-          backgroundColor: Color(0xFFE6F4EA),
+          backgroundColor: blue50,
           avatar: Icon(
             Icons.assessment,
-            color: Color(0xFF1E8E3E),
+            color: green600,
           ),
         ),
       ],
