@@ -47,7 +47,7 @@ class ContainerPainter extends CustomPainter {
     switch (shape) {
       case ShapeType.Bump:
         {
-          num degToRad(num deg) => deg * (Math.pi / 180.0);
+          num degToRad(num deg) => deg * (Math.pi / 180);
           Rect rect = Rect.fromCenter(
             center: Offset(
               size.width * .5,

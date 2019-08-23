@@ -179,7 +179,7 @@ class _HomeState extends State<Home> {
     return BottomAppBar(
       shape: GoogleBabShape(),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 8),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -235,7 +235,7 @@ class _HomeState extends State<Home> {
               appBar: AppBar(
                 actions: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: IconButton(
                       icon: Icon(Icons.send),
                       onPressed: () {
@@ -250,7 +250,7 @@ class _HomeState extends State<Home> {
                 iconTheme: IconThemeData(color: grey800),
               ),
               body: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   children: [
                     TextField(
@@ -298,65 +298,52 @@ class _HomeState extends State<Home> {
         title: Text('Flat'),
         value: ShapeType.Flat,
         groupValue: _selectedShape,
-        onChanged: (value) {
-          _setSelectedTile(value);
-        },
+        onChanged: _setSelectedTile,
       ),
       RadioListTile(
         title: Text('Bump'),
         value: ShapeType.Bump,
         groupValue: _selectedShape,
-        onChanged: (value) {
-          _setSelectedTile(value);
-        },
+        onChanged: _setSelectedTile,
       ),
       RadioListTile(
         title: Text('Cut'),
         value: ShapeType.Cut,
         groupValue: _selectedShape,
-        onChanged: (value) {
-          _setSelectedTile(value);
-        },
+        onChanged: _setSelectedTile,
       ),
       ListTile(title: Text('FAB Color')),
       RadioListTile(
         title: Text('White'),
         value: Colors.white,
         groupValue: _selectedColor,
-        onChanged: (value) {
-          _setSelectedColorTile(value);
-        },
+        onChanged: _setSelectedColorTile,
       ),
       RadioListTile(
         title: Text('Blue'),
         value: blue500,
         groupValue: _selectedColor,
-        onChanged: (value) {
-          _setSelectedColorTile(value);
-        },
+        onChanged: _setSelectedColorTile,
       ),
       ListTile(title: Text('Layout')),
       RadioListTile(
           value: Layout.Experimental,
           title: Text('Experimental'),
           groupValue: _layout,
-          onChanged: (value) {
-            _setLayout(value);
-          }),
+          onChanged: _setLayout,
+      ),
       RadioListTile(
           value: Layout.SideFab,
           title: Text('Side FAB'),
           groupValue: _layout,
-          onChanged: (value) {
-            _setLayout(value);
-          }),
+          onChanged: _setLayout,
+      ),
       RadioListTile(
           value: Layout.AppBar,
           groupValue: _layout,
           title: Text('AppBar'),
-          onChanged: (value) {
-            _setLayout(value);
-          }),
+          onChanged: _setLayout,
+      ),
     ];
   }
 
