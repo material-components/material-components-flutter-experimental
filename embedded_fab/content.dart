@@ -88,32 +88,6 @@ List<Widget> get navigationViews => [
 
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
-  List<Widget> _navigationViews = [
-    NavigationView(
-      icon: Icon(Icons.inbox),
-      title: 'Inbox',
-      order: [0, 5, 1, 4, 3, 2],
-      times: ['2:44pm', '2:55pm', '3:08pm', 'Nov 2', 'Nov 2', 'Nov 4'],
-    ),
-    NavigationView(
-      icon: Icon(Icons.star),
-      title: 'Starred',
-      order: [5, 2, 0, 1, 4, 3],
-      times: ['2:08pm', '2:08pm', '2:11pm', 'Nov 3', 'Nov 4', 'Nov 5'],
-    ),
-    NavigationView(
-      icon: Icon(Icons.send),
-      title: 'Sent',
-      order: [1, 4, 2, 5, 3, 0],
-      times: ['12:08pm', '1:07pm', '2:08pm', '3:08pm', '4:08pm', '6:01pm'],
-    ),
-    NavigationView(
-      icon: Icon(Icons.archive),
-      title: 'Archived',
-      order: [2, 0, 4, 1, 3, 5],
-      times: ['2:08pm', '2:09pm', 'Nov 2', 'Nov 2', 'Nov 3', 'Nov 6'],
-    ),
-  ];
 
   void _onItemTapped(int index) {
     setState(() {
@@ -155,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          for (NavigationView view in _navigationViews)
+          for (NavigationView view in navigationViews)
             BottomNavigationBarItem(
               icon: view.icon,
               title: Text(view.title),
@@ -168,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
         type: BottomNavigationBarType.fixed,
       ),
       body: Center(
-        child: _navigationViews[_selectedIndex],
+        child: navigationViews[_selectedIndex],
       ),
     );
   }
