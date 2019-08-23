@@ -129,20 +129,14 @@ class _HomeState extends State<Home> {
     PlusPainter plusPainter;
     switch (_selectedShape) {
       case ShapeType.Bump:
-        {
-          plusPainter = PlusPainter(color: _strokeColor, yOffset: 36);
-          break;
-        }
+        plusPainter = PlusPainter(color: _strokeColor, yOffset: 36);
+        break;
       case ShapeType.Cut:
-        {
-          plusPainter = PlusPainter(color: _strokeColor, yOffset: 24);
-          break;
-        }
+        plusPainter = PlusPainter(color: _strokeColor, yOffset: 24);
+        break;
       case ShapeType.Flat:
-        {
-          plusPainter = PlusPainter(color: _strokeColor, iconSize: 24, yOffset: 62);
-          break;
-        }
+        plusPainter = PlusPainter(color: _strokeColor, iconSize: 24, yOffset: 62);
+        break;
     }
 
     return GestureDetector(
@@ -353,20 +347,14 @@ class _HomeState extends State<Home> {
     Widget bottomNavWidget;
     switch (_layout) {
       case Layout.AppBar:
-        {
-          bottomNavWidget = _bottomAppBar();
-          break;
-        }
+        bottomNavWidget = _bottomAppBar();
+        break;
       case Layout.Experimental:
-        {
-          bottomNavWidget = _experimentalBottomNav();
-          break;
-        }
+        bottomNavWidget = _experimentalBottomNav();
+        break;
       case Layout.SideFab:
-        {
-          bottomNavWidget = _bottomNavSideFab();
-          break;
-        }
+        bottomNavWidget = _bottomNavSideFab();
+        break;
     }
 
     return Scaffold(
@@ -376,7 +364,7 @@ class _HomeState extends State<Home> {
         elevation: 0,
         iconTheme: IconThemeData(color: grey800),
         title: const Text(
-          'red500ges',
+          'Messages',
           style: TextStyle(
             color: red500,
           ),

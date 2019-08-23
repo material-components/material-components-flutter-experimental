@@ -112,8 +112,7 @@ class ContainerPainter extends CustomPainter {
     canvas.drawPath(_silhouettePath, Paint()..color = Colors.white);
 
     if (hasShadow) {
-      Path shadowPath = Path.from(_fabPath)
-          .transform(Matrix4.translationValues(0, -4, 0).storage);
+      Path shadowPath = Path.from(_fabPath).shift(Offset(0, -4));
       canvas.drawShadow(shadowPath, Colors.black87, 4, true);
     }
 
@@ -134,8 +133,12 @@ class ContainerPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    return true;
+  bool shouldRepaint(ContainerPainter oldDelegate) {
+    return oldDelegate.shape != shape ||
+        oldDelegate.fillColor != fillColor ||
+        oldDelegate.strokeColor != strokeColor ||
+        oldDelegate.hasShadow != hasShadow ||
+        oldDelegate.hasStroke != hasStroke;
   }
 
   @override
@@ -244,7 +247,6 @@ class PlusPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return false;
   }
 }
