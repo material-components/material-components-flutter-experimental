@@ -160,8 +160,6 @@ class PlusPainter extends CustomPainter {
   final double yOffset;
   final Color color;
 
-  // These are based on the original branded icon asset. The asset size is
-  // 36 x 36, the thickness of the plus is 4 and the padding is 6.
   double get _iconStrokeWidth => iconSize / 9;
 
   double get _iconPadding => iconSize / 6;
