@@ -168,7 +168,7 @@ class NavigationView extends StatelessWidget {
     _ListItemContent(
       title: 'Stickersheet sync',
       name: 'Amy, David, Irin',
-      description: 'What\'s the latest version of the stickersheet',
+      description: "What's the latest version of the stickersheet",
       initials: 'AR',
       color: Colors.blue,
     ),
@@ -197,7 +197,7 @@ class NavigationView extends StatelessWidget {
       title: 'New position',
       name: 'Rachel Been',
       description:
-          'I\'ve got exciting news! I\' been speaking with the Home team.',
+          "I've got exciting news! I've been speaking with the Home team.",
       initials: 'RB',
       color: Colors.cyan,
     ),
@@ -212,7 +212,7 @@ class NavigationView extends StatelessWidget {
       title: 'Reminder: Monday is a holiday',
       name: 'Rich Fulcher',
       description:
-          'Don\'t forget that Monday is St Swithins day. The office will be closed',
+          "Don't forget that Monday is St Swithins day. The office will be closed.",
       initials: 'RF',
       color: Colors.teal,
     ),
