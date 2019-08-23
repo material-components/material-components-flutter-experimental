@@ -44,7 +44,7 @@ class Home extends StatefulWidget {
 enum Layout {
   AppBar,
   Experimental,
-  SideFAB,
+  SideFab,
 }
 
 class _HomeState extends State<Home> {
@@ -55,7 +55,7 @@ class _HomeState extends State<Home> {
 
   Color get _strokeColor => _selectedColor == blue500 ? Colors.white : null;
 
-  FloatingActionButton _traditionalFAB(onTap) {
+  FloatingActionButton _traditionalFab(onTap) {
     return FloatingActionButton(
       backgroundColor: Colors.white,
       child: Image.asset('assets/icon.png'),
@@ -191,7 +191,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  Widget _bottomNavSideFAB() {
+  Widget _bottomNavSideFab() {
     return BottomNavigationBar(
       items: [
         BottomNavigationBarItem(
@@ -344,7 +344,7 @@ class _HomeState extends State<Home> {
             _setLayout(value);
           }),
       RadioListTile(
-          value: Layout.SideFAB,
+          value: Layout.SideFab,
           title: Text('Side FAB'),
           groupValue: _layout,
           onChanged: (value) {
@@ -375,9 +375,9 @@ class _HomeState extends State<Home> {
           bottomNavWidget = _experimentalBottomNav();
           break;
         }
-      case Layout.SideFAB:
+      case Layout.SideFab:
         {
-          bottomNavWidget = _bottomNavSideFAB();
+          bottomNavWidget = _bottomNavSideFab();
           break;
         }
     }
@@ -404,7 +404,7 @@ class _HomeState extends State<Home> {
       ),
       extendBody: true,
       floatingActionButton: _layout != Layout.Experimental
-          ? _traditionalFAB(() {
+          ? _traditionalFab(() {
               _onFabTap();
             })
           : null,
