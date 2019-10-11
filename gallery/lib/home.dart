@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
           children: [
             Text('Gallery', style: Theme.of(context).textTheme.headline),
             Container(
-              height: 200,
+              height: 200.0,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -84,7 +84,7 @@ class CarouselCard extends StatelessWidget {
           );
         },
         child: Container(
-          width: 200,
+          width: 200.0,
           decoration: BoxDecoration(
             color: Colors.tealAccent,
             borderRadius: BorderRadius.circular(8.0),
@@ -116,7 +116,7 @@ class CategoryListItem extends StatelessWidget {
           );
         },
         child: Container(
-          height: 70,
+          height: 70.0,
           decoration: BoxDecoration(
             color: Colors.orangeAccent,
             borderRadius: BorderRadius.circular(4.0),
