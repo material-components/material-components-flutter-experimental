@@ -8,7 +8,10 @@ class SettingsPage extends StatelessWidget {
         title: Text('Settings'),
       ),
       body: Center(
-        child: Switch(value: false, onChanged: (value) {},),
+        child: Switch(
+          value: false,
+          onChanged: (value) {},
+        ),
       ),
     );
   }

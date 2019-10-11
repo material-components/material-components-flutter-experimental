@@ -10,42 +10,48 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Gallery'),
-        leading: IconButton(icon: Icon(Icons.color_lens), onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              fullscreenDialog: true,
-              builder: (context) => SplashPage(),
-            ),
-          );
-        }),
-        actions: <Widget>[
-          IconButton(icon: Icon(Icons.settings), onPressed: () {
+        leading: IconButton(
+          icon: Icon(Icons.color_lens),
+          onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
                 fullscreenDialog: true,
-                builder: (context) => SettingsPage(),
+                builder: (context) => SplashPage(),
               ),
             );
-          }),
+          },
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => SettingsPage(),
+                ),
+              );
+            },
+          ),
         ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
-          children: <Widget>[
-            Text('Gallery', style: Theme.of(context).textTheme.headline,),
+          children: [
+            Text('Gallery', style: Theme.of(context).textTheme.headline),
             Container(
               height: 200,
               child: ListView(
                 scrollDirection: Axis.horizontal,
-                children: <Widget>[
+                children: [
                   CarouselCard(title: 'Shrine'),
                   CarouselCard(title: 'Rally'),
                   CarouselCard(title: 'Crane'),
                 ],
               ),
             ),
-            Text('Categories', style: Theme.of(context).textTheme.headline,),
+            Text('Categories', style: Theme.of(context).textTheme.headline),
             CategoryListItem(title: 'Material'),
             CategoryListItem(title: 'Cupertino'),
             CategoryListItem(title: 'Reference styles & Media'),
@@ -64,7 +70,11 @@ class CarouselCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.only(top: 8.0, end: 16.0, bottom: 8.0),
+      padding: const EdgeInsetsDirectional.only(
+        top: 8.0,
+        end: 16.0,
+        bottom: 8.0,
+      ),
       child: GestureDetector(
         onTap: () {
           Navigator.of(context).push(
@@ -77,7 +87,7 @@ class CarouselCard extends StatelessWidget {
           width: 200,
           decoration: BoxDecoration(
             color: Colors.tealAccent,
-            borderRadius: BorderRadius.circular(8),
+            borderRadius: BorderRadius.circular(8.0),
           ),
           child: Center(
             child: Text(title),
@@ -109,7 +119,7 @@ class CategoryListItem extends StatelessWidget {
           height: 70,
           decoration: BoxDecoration(
             color: Colors.orangeAccent,
-            borderRadius: BorderRadius.circular(4),
+            borderRadius: BorderRadius.circular(4.0),
           ),
           child: Center(
             child: Text(title),
