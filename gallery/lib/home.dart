@@ -29,24 +29,91 @@ class HomePage extends StatelessWidget {
           }),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView(
           children: <Widget>[
-            Text(
-              'Welcome!',
+            Text('Gallery', style: Theme.of(context).textTheme.headline,),
+            Container(
+              height: 200,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  CarouselCard(title: 'Shrine'),
+                  CarouselCard(title: 'Rally'),
+                  CarouselCard(title: 'Crane'),
+                ],
+              ),
             ),
-            RaisedButton(
-              child: Text('Demo'),
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => DemoPage(),
-                  ),
-                );
-              },
-            ),
+            Text('Categories', style: Theme.of(context).textTheme.headline,),
+            CategoryListItem(title: 'Material'),
+            CategoryListItem(title: 'Cupertino'),
+            CategoryListItem(title: 'Reference styles & Media'),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class CarouselCard extends StatelessWidget {
+  const CarouselCard({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsetsDirectional.only(top: 8.0, end: 16.0, bottom: 8.0),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => DemoPage(),
+            ),
+          );
+        },
+        child: Container(
+          width: 200,
+          decoration: BoxDecoration(
+            color: Colors.tealAccent,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Center(
+            child: Text(title),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class CategoryListItem extends StatelessWidget {
+  const CategoryListItem({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => DemoPage(),
+            ),
+          );
+        },
+        child: Container(
+          height: 70,
+          decoration: BoxDecoration(
+            color: Colors.orangeAccent,
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: Center(
+            child: Text(title),
+          ),
         ),
       ),
     );
