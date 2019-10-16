@@ -12,15 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:meta/meta.dart';
-import 'dart:ui';
 
-import 'model/flight.dart';
-import 'model/data.dart';
-import 'colors.dart';
 import 'border_tab_indicator.dart';
+import 'colors.dart';
+import 'model/data.dart';
+import 'model/flight.dart';
 
 class _FrontLayer extends StatelessWidget {
   const _FrontLayer({
@@ -35,24 +36,28 @@ class _FrontLayer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PhysicalShape(
-        elevation: 16.0,
-        color: kCranePrimaryWhite,
-        clipper: ShapeBorderClipper(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(16.0),
-              topRight: Radius.circular(16.0),
-            ),
+      elevation: 16.0,
+      color: kCranePrimaryWhite,
+      clipper: ShapeBorderClipper(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(16.0),
+            topRight: Radius.circular(16.0),
           ),
         ),
-        child: ListView(
-          padding: const EdgeInsets.all(20.0),
-          children: <Widget>[
-            Text(title, style: Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0)),
-            SizedBox(height: 8.0),
-            ItemCards(index: index),
-          ],
-        ),
+      ),
+      child: ListView(
+        padding: const EdgeInsets.all(20.0),
+        children: <Widget>[
+          Text(title,
+              style: Theme.of(context)
+                  .textTheme
+                  .subtitle
+                  .copyWith(fontSize: 12.0)),
+          SizedBox(height: 8.0),
+          ItemCards(index: index),
+        ],
+      ),
     );
   }
 }
@@ -60,9 +65,9 @@ class _FrontLayer extends StatelessWidget {
 class ItemCards extends StatelessWidget {
   final int index;
 
-  const ItemCards({ Key key, this.index }) : super(key: key);
+  const ItemCards({Key key, this.index}) : super(key: key);
 
-  static List<Widget> _buildFlightCards({ int listIndex }) {
+  static List<Widget> _buildFlightCards({int listIndex}) {
     final List<Flight> flightsFly = getFlights(Category.findTrips)..shuffle();
     final List<Flight> flightsSleep = getFlights(Category.findTrips)..shuffle();
     final List<Flight> flightsEat = getFlights(Category.findTrips)..shuffle();
@@ -89,7 +94,6 @@ class ItemCards extends StatelessWidget {
     return Column(children: _buildFlightCards(listIndex: index));
   }
 }
-
 
 /// Builds a Backdrop.
 ///
@@ -133,10 +137,9 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
 
-    _flyLayerOffset = Tween<Offset>(
-        begin: Offset(0.0, 0.0),
-        end: Offset(-1.05, 0.0)
-    ).animate(_tabController.animation);
+    _flyLayerOffset =
+        Tween<Offset>(begin: Offset(0.0, 0.0), end: Offset(-1.05, 0.0))
+            .animate(_tabController.animation);
 
     _sleepLayerOffset = Tween<Offset>(
       // Extra .05 leaves a gap between left and right layers.
@@ -161,8 +164,7 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
       setState(() {
         _tabHeights = _tabHeights == _topHeights ? _midHeights : _topHeights;
       });
-    }
-    else {
+    } else {
       _tabController.animateTo(tabIndex, duration: Duration(milliseconds: 300));
     }
   }
@@ -184,8 +186,8 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
         body: Stack(
           children: <Widget>[
             BackLayer(
-                tabController: _tabController,
-                backLayers: widget.backLayer,
+              tabController: _tabController,
+              backLayers: widget.backLayer,
             ),
             AnimatedContainer(
               duration: Duration(milliseconds: 150),
@@ -231,7 +233,8 @@ class BackLayer extends StatefulWidget {
   final List<Widget> backLayers;
   final TabController tabController;
 
-  const BackLayer({ Key key, this.backLayers, this.tabController }) : super(key: key);
+  const BackLayer({Key key, this.backLayers, this.tabController})
+      : super(key: key);
 
   @override
   _BackLayerState createState() => _BackLayerState();
@@ -259,12 +262,12 @@ class _BackLayerState extends State<BackLayer> {
   }
 }
 
-
 class CraneAppBar extends StatefulWidget {
   final Function(int) tabHandler;
   final TabController tabController;
 
-  const CraneAppBar({ Key key, this.tabHandler, this.tabController }) : super(key: key);
+  const CraneAppBar({Key key, this.tabHandler, this.tabController})
+      : super(key: key);
 
   @override
   _CraneAppBarState createState() => _CraneAppBarState();
@@ -293,7 +296,7 @@ class _CraneAppBarState extends State<CraneAppBar> {
             ),
           ),
           Container(
-            width:  MediaQuery.of(context).size.width - 72.0,
+            width: MediaQuery.of(context).size.width - 72.0,
             child: _SplashOverride(
               color: Colors.transparent,
               child: TabBar(
@@ -335,13 +338,9 @@ class _NavigationTab extends StatefulWidget {
   final TabController tabController;
   final int index;
 
-  const _NavigationTab({
-    Key key,
-    this.title,
-    this.callBack,
-    this.tabController,
-    this.index
-  }) : super(key: key);
+  const _NavigationTab(
+      {Key key, this.title, this.callBack, this.tabController, this.index})
+      : super(key: key);
 
   @override
   _NavigationTabState createState() => _NavigationTabState();
@@ -364,15 +363,15 @@ class _NavigationTabState extends State<_NavigationTab> {
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: FlatButton(
-      splashColor: Colors.transparent,
-      highlightColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
         child: Text(
           widget.title,
           style: Theme.of(context).textTheme.button.copyWith(
-            color: widget.tabController.index == widget.index
-                ? kCranePrimaryWhite
-                : kCranePrimaryWhite.withOpacity(.6),
-          ),
+                color: widget.tabController.index == widget.index
+                    ? kCranePrimaryWhite
+                    : kCranePrimaryWhite.withOpacity(.6),
+              ),
         ),
         onPressed: widget.callBack,
       ),
@@ -381,7 +380,7 @@ class _NavigationTabState extends State<_NavigationTab> {
 }
 
 class _DestinationCard extends StatelessWidget {
-  _DestinationCard({ this.flight }) : assert(flight != null);
+  _DestinationCard({this.flight}) : assert(flight != null);
   final Flight flight;
 
   @override
@@ -406,11 +405,15 @@ class _DestinationCard extends StatelessWidget {
           ),
           title: Text(
             flight.destination,
-            style: Theme.of(context).textTheme.subhead.copyWith(color: Colors.black),
+            style: Theme.of(context)
+                .textTheme
+                .subhead
+                .copyWith(color: Colors.black),
           ),
           subtitle: Text(
             flight.layover ? 'Layover' : 'Nonstop',
-            style: Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0),
+            style:
+                Theme.of(context).textTheme.subtitle.copyWith(fontSize: 12.0),
           ),
         ),
         SizedBox(child: Divider(indent: 4.0)),
@@ -420,7 +423,7 @@ class _DestinationCard extends StatelessWidget {
 }
 
 class _SplashOverride extends StatelessWidget {
-  const _SplashOverride({ Key key, this.color, this.child }) : super(key: key);
+  const _SplashOverride({Key key, this.color, this.child}) : super(key: key);
 
   final Color color;
   final Widget child;

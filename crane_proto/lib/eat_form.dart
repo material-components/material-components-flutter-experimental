@@ -29,7 +29,8 @@ class _EatFormState extends State<EatForm> {
 
   @override
   Widget build(BuildContext context) {
-    return HeaderForm(fields: <HeaderFormField>[
+    return HeaderForm(
+      fields: <HeaderFormField>[
         HeaderFormField(
           assetPath: 'assets/person.png',
           title: 'Diners',

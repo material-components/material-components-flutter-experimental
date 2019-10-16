@@ -28,7 +28,8 @@ class _SleepFormState extends State<SleepForm> {
 
   @override
   Widget build(BuildContext context) {
-    return HeaderForm(fields: <HeaderFormField>[
+    return HeaderForm(
+      fields: <HeaderFormField>[
         HeaderFormField(
           assetPath: 'assets/person.png',
           title: 'Travelers',

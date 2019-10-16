@@ -16,7 +16,7 @@ import 'package:flutter/foundation.dart';
 
 // The following do not need to be enums, can just be strings that route
 // to respective screens.
-enum Category { findTrips, myTrips, savedTrips, priceAlerts, myAccount}
+enum Category { findTrips, myTrips, savedTrips, priceAlerts, myAccount }
 
 class Flight {
   const Flight({

@@ -22,7 +22,8 @@ class BorderTabIndicator extends Decoration {
   const BorderTabIndicator({
     this.borderSide = const BorderSide(width: 2.0, color: Colors.white),
     this.insets = const EdgeInsets.symmetric(vertical: 0.0, horizontal: 0.0),
-  }) : assert(borderSide != null), assert(insets != null);
+  })  : assert(borderSide != null),
+        assert(insets != null);
 
   /// The color and weight of the horizontal line drawn below the selected tab.
   final BorderSide borderSide;
@@ -64,7 +65,8 @@ class BorderTabIndicator extends Decoration {
 
 class _BorderPainter extends BoxPainter {
   _BorderPainter(this.decoration, VoidCallback onChanged)
-      : assert(decoration != null), super(onChanged);
+      : assert(decoration != null),
+        super(onChanged);
 
   final BorderTabIndicator decoration;
 
@@ -89,13 +91,15 @@ class _BorderPainter extends BoxPainter {
     assert(configuration.size != null);
     final Rect rect = offset & configuration.size;
     final TextDirection textDirection = configuration.textDirection;
-    final Rect indicator = _indicatorRectFor(rect, textDirection).deflate(borderSide.width / 2.0);
+    final Rect indicator =
+        _indicatorRectFor(rect, textDirection).deflate(borderSide.width / 2.0);
     final Paint paint = Paint();
     paint.color = Colors.white;
     paint.style = PaintingStyle.stroke;
     paint.strokeWidth = 1.5;
     canvas.drawRRect(
-      RRect.fromRectAndRadius(indicator, Radius.circular(24.0)), paint,
+      RRect.fromRectAndRadius(indicator, Radius.circular(24.0)),
+      paint,
     );
   }
 }
