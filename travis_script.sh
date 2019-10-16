@@ -14,6 +14,7 @@ function getFlutterPath() {
 
 declare -a  PROJECT_NAMES=(
     "gallery" \
+    "crane_proto" \
 )
 
 for PROJECT_NAME in "${PROJECT_NAMES[@]}"
