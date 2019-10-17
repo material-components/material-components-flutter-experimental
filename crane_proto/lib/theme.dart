@@ -70,7 +70,7 @@ TextTheme _buildCraneTextTheme(TextTheme base) {
         ),
         subtitle: base.subtitle.copyWith(
           fontWeight: FontWeight.w600,
-          fontSize: 14.0,
+          fontSize: 12.0,
           color: kCraneGrey,
         ),
         body2: base.body2.copyWith(
@@ -83,7 +83,8 @@ TextTheme _buildCraneTextTheme(TextTheme base) {
         ),
         button: base.button.copyWith(
           fontWeight: FontWeight.w600,
-          fontSize: 14.0,
+          fontSize: 13.0,
+          letterSpacing: 0.8,
         ),
         caption: base.caption.copyWith(
           fontWeight: FontWeight.w500,
