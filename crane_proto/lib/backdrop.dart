@@ -289,7 +289,7 @@ class _CraneAppBarState extends State<CraneAppBar> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           _SplashOverride(
-            color: kCraneAlpha,
+            color: Colors.transparent,
             child: Container(
               child: IconButton(
                 iconSize: 72.0,
