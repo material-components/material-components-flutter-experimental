@@ -37,18 +37,18 @@ class _FlyFormState extends State<FlyForm> {
           textController: travelerController,
         ),
         HeaderFormField(
-          title: 'Country',
           iconData: Icons.place,
+          title: 'Select Origin',
           textController: countryDestinationController,
         ),
         HeaderFormField(
-          title: 'Destination',
           iconData: Icons.airplanemode_active,
+          title: 'Choose Destination',
           textController: destinationController,
         ),
         HeaderFormField(
-          title: 'Dates',
           iconData: Icons.date_range,
+          title: 'Select Dates',
           textController: dateController,
         ),
       ],

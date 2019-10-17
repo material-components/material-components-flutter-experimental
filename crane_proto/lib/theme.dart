@@ -4,8 +4,8 @@ import 'colors.dart';
 
 final ThemeData kCraneTheme = _buildCraneTheme();
 
-IconThemeData _customIconTheme(IconThemeData original) {
-  return original.copyWith(color: kCranePrimaryWhite);
+IconThemeData _customIconTheme(IconThemeData original, Color color) {
+  return original.copyWith(color: color);
 }
 
 ThemeData _buildCraneTheme() {
@@ -19,19 +19,21 @@ ThemeData _buildCraneTheme() {
     accentColor: kCranePurple700,
     primaryColor: kCranePurple800,
     buttonColor: kCraneRed700,
-    hintColor: kCranePrimaryWhite,
+    hintColor: kCraneWhite60,
     indicatorColor: kCranePrimaryWhite,
     scaffoldBackgroundColor: kCranePrimaryWhite,
     cardColor: kCranePrimaryWhite,
     textSelectionColor: kCranePurple700,
     errorColor: kCraneErrorOrange,
+    highlightColor: Colors.transparent,
     buttonTheme: ButtonThemeData(
       textTheme: ButtonTextTheme.accent,
     ),
     textTheme: _buildCraneTextTheme(base.textTheme),
     primaryTextTheme: _buildCraneTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildCraneTextTheme(base.accentTextTheme),
-    iconTheme: _customIconTheme(base.iconTheme),
+    iconTheme: _customIconTheme(base.iconTheme, kCraneWhite60),
+    primaryIconTheme: _customIconTheme(base.iconTheme, kCranePrimaryWhite),
   );
 }
 
@@ -69,11 +71,11 @@ TextTheme _buildCraneTextTheme(TextTheme base) {
         ),
         subtitle: base.subtitle.copyWith(
           fontWeight: FontWeight.w600,
-          fontSize: 14.0,
+          fontSize: 12.0,
           color: kCraneGrey,
         ),
         body2: base.body2.copyWith(
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w500,
           fontSize: 16.0,
         ),
         body1: base.body1.copyWith(
@@ -82,7 +84,8 @@ TextTheme _buildCraneTextTheme(TextTheme base) {
         ),
         button: base.button.copyWith(
           fontWeight: FontWeight.w600,
-          fontSize: 14.0,
+          fontSize: 13.0,
+          letterSpacing: 0.8,
         ),
         caption: base.caption.copyWith(
           fontWeight: FontWeight.w500,
