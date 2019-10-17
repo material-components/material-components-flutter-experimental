@@ -439,7 +439,7 @@ class _SplashOverride extends StatelessWidget {
   Widget build(BuildContext context) {
     return Theme(
       child: child,
-      data: Theme.of(context).copyWith(primaryColor: color),
+      data: Theme.of(context).copyWith(highlightColor: color),
     );
   }
 }
