@@ -48,10 +48,8 @@ class _BorderPainter extends BoxPainter {
     paint.style = PaintingStyle.stroke;
     paint.strokeWidth = 2;
     canvas.drawRRect(
-        RRect.fromRectAndRadius(
-          rect,
-          Radius.circular(56.0),
-        ),
-        paint);
+      RRect.fromRectAndRadius(rect, Radius.circular(56.0)),
+      paint,
+    );
   }
 }
