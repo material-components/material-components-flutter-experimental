@@ -36,13 +36,13 @@ class _SleepFormState extends State<SleepForm> {
           textController: travelerController,
         ),
         HeaderFormField(
-          title: 'Dates',
           iconData: Icons.date_range,
+          title: 'Select Dates',
           textController: dateController,
         ),
         HeaderFormField(
-          title: 'Location',
           iconData: Icons.hotel,
+          title: 'Select Location',
           textController: locationController,
         ),
       ],

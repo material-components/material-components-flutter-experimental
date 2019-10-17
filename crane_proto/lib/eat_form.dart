@@ -37,18 +37,18 @@ class _EatFormState extends State<EatForm> {
           textController: dinerController,
         ),
         HeaderFormField(
-          title: 'Date',
           iconData: Icons.date_range,
+          title: 'Select Date',
           textController: dateController,
         ),
         HeaderFormField(
-          title: 'Time',
           iconData: Icons.access_time,
+          title: 'Select Time',
           textController: timeController,
         ),
         HeaderFormField(
-          title: 'Location',
           iconData: Icons.restaurant_menu,
+          title: 'Select Location',
           textController: locationController,
         ),
       ],
