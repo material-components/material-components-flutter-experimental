@@ -50,6 +50,17 @@ flutter:
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
+  assets:
+    - assets/flights/0.png
+    - assets/flights/1.png
+    - assets/flights/2.png
+    - assets/flights/3.png
+    - assets/flights/4.png
+    - assets/flights/5.png
+    - assets/flights/6.png
+    - assets/logo.png
+    - assets/menu.png
+    - assets/outline_logo.png
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
@@ -70,3 +81,14 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+  - family: Raleway
+    fonts:
+      - asset: fonts/Raleway-Light.ttf
+        weight: 300
+      - asset: fonts/Raleway-Regular.ttf
+        weight: 400
+      - asset: fonts/Raleway-Medium.ttf
+        weight: 500
+      - asset: fonts/Raleway-SemiBold.ttf
+        weight: 600

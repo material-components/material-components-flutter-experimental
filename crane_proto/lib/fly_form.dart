@@ -32,23 +32,23 @@ class _FlyFormState extends State<FlyForm> {
     return HeaderForm(
       fields: <HeaderFormField>[
         HeaderFormField(
-          assetPath: 'assets/person.png',
+          iconData: Icons.person,
           title: 'Travelers',
           textController: travelerController,
         ),
         HeaderFormField(
-          assetPath: 'assets/pin.png',
           title: 'Country',
+          iconData: Icons.place,
           textController: countryDestinationController,
         ),
         HeaderFormField(
-          assetPath: 'assets/plane.png',
           title: 'Destination',
+          iconData: Icons.airplanemode_active,
           textController: destinationController,
         ),
         HeaderFormField(
-          assetPath: 'assets/calendar.png',
           title: 'Dates',
+          iconData: Icons.date_range,
           textController: dateController,
         ),
       ],

@@ -31,18 +31,18 @@ class _SleepFormState extends State<SleepForm> {
     return HeaderForm(
       fields: <HeaderFormField>[
         HeaderFormField(
-          assetPath: 'assets/person.png',
+          iconData: Icons.person,
           title: 'Travelers',
           textController: travelerController,
         ),
         HeaderFormField(
-          assetPath: 'assets/calendar.png',
           title: 'Dates',
+          iconData: Icons.date_range,
           textController: dateController,
         ),
         HeaderFormField(
-          assetPath: 'assets/hotel.png',
           title: 'Location',
+          iconData: Icons.hotel,
           textController: locationController,
         ),
       ],

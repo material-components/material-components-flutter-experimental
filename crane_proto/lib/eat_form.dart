@@ -32,23 +32,23 @@ class _EatFormState extends State<EatForm> {
     return HeaderForm(
       fields: <HeaderFormField>[
         HeaderFormField(
-          assetPath: 'assets/person.png',
+          iconData: Icons.person,
           title: 'Diners',
           textController: dinerController,
         ),
         HeaderFormField(
-          assetPath: 'assets/calendar.png',
           title: 'Date',
+          iconData: Icons.date_range,
           textController: dateController,
         ),
         HeaderFormField(
-          assetPath: 'assets/time.png',
           title: 'Time',
+          iconData: Icons.access_time,
           textController: timeController,
         ),
         HeaderFormField(
-          assetPath: 'assets/food.png',
           title: 'Location',
+          iconData: Icons.restaurant_menu,
           textController: locationController,
         ),
       ],
