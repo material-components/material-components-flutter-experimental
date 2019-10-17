@@ -17,11 +17,11 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 class HeaderFormField {
-  final String assetPath;
+  final IconData iconData;
   final String title;
   final TextEditingController textController;
 
-  const HeaderFormField({this.assetPath, this.title, this.textController});
+  const HeaderFormField({this.iconData, this.title, this.textController});
 }
 
 class HeaderForm extends StatelessWidget {
@@ -47,8 +47,11 @@ class HeaderForm extends StatelessWidget {
                     .body2
                     .copyWith(color: Colors.white),
                 decoration: InputDecoration(
-                  prefixIcon:
-                      Image.asset(field.assetPath, height: 32, width: 32),
+                  prefixIcon: Icon(
+                    field.iconData,
+                    size: 24,
+                    color: Theme.of(context).iconTheme.color,
+                  ),
                   border: OutlineInputBorder(borderSide: BorderSide.none),
                   fillColor: kCranePurple700,
                   filled: true,
