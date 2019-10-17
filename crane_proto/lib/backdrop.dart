@@ -307,7 +307,7 @@ class _CraneAppBarState extends State<CraneAppBar> {
             child: _SplashOverride(
               color: Colors.transparent,
               child: TabBar(
-                indicator: BorderTabIndicator(),
+                indicator: BorderTabIndicator(32.0),
                 controller: widget.tabController,
                 labelPadding: EdgeInsets.all(0.0),
                 tabs: <Widget>[
