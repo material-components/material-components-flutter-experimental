@@ -178,6 +178,13 @@ class _BackdropState extends State<Backdrop> with TickerProviderStateMixin {
           brightness: Brightness.dark,
           elevation: 0.0,
           titleSpacing: 0.0,
+          leading: Align(
+            child: Transform.translate(
+              offset: Offset(-8.0, -8.0),
+              child: Image.asset('assets/menu.png', height: 20),
+            ),
+            alignment: Alignment.centerLeft,
+          ),
           flexibleSpace: CraneAppBar(
             tabController: _tabController,
             tabHandler: _handleTabs,
