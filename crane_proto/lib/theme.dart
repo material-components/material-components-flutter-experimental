@@ -25,6 +25,7 @@ ThemeData _buildCraneTheme() {
     cardColor: kCranePrimaryWhite,
     textSelectionColor: kCranePurple700,
     errorColor: kCraneErrorOrange,
+    highlightColor: Colors.transparent,
     buttonTheme: ButtonThemeData(
       textTheme: ButtonTextTheme.accent,
     ),

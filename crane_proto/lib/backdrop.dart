@@ -288,49 +288,43 @@ class _CraneAppBarState extends State<CraneAppBar> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          _SplashOverride(
-            color: Colors.transparent,
-            child: Container(
-              child: IconButton(
-                iconSize: 72.0,
-                padding: EdgeInsets.all(0.0),
-                icon: Image.asset(
-                  'assets/menu_logo.png',
-                  fit: BoxFit.cover,
-                ),
-                onPressed: () {},
+          Container(
+            child: IconButton(
+              iconSize: 72.0,
+              padding: EdgeInsets.all(0.0),
+              icon: Image.asset(
+                'assets/menu_logo.png',
+                fit: BoxFit.cover,
               ),
+              onPressed: () {},
             ),
           ),
           Container(
             width: MediaQuery.of(context).size.width - 72.0,
-            child: _SplashOverride(
-              color: Colors.transparent,
-              child: TabBar(
-                indicator: BorderTabIndicator(32.0),
-                controller: widget.tabController,
-                labelPadding: EdgeInsets.all(0.0),
-                tabs: <Widget>[
-                  _NavigationTab(
-                    title: 'FLY',
-                    callBack: () => widget.tabHandler(0),
-                    tabController: widget.tabController,
-                    index: 0,
-                  ),
-                  _NavigationTab(
-                    title: 'SLEEP',
-                    callBack: () => widget.tabHandler(1),
-                    tabController: widget.tabController,
-                    index: 1,
-                  ),
-                  _NavigationTab(
-                    title: 'EAT',
-                    callBack: () => widget.tabHandler(2),
-                    tabController: widget.tabController,
-                    index: 2,
-                  ),
-                ],
-              ),
+            child: TabBar(
+              indicator: BorderTabIndicator(32.0),
+              controller: widget.tabController,
+              labelPadding: EdgeInsets.all(0.0),
+              tabs: <Widget>[
+                _NavigationTab(
+                  title: 'FLY',
+                  callBack: () => widget.tabHandler(0),
+                  tabController: widget.tabController,
+                  index: 0,
+                ),
+                _NavigationTab(
+                  title: 'SLEEP',
+                  callBack: () => widget.tabHandler(1),
+                  tabController: widget.tabController,
+                  index: 1,
+                ),
+                _NavigationTab(
+                  title: 'EAT',
+                  callBack: () => widget.tabHandler(2),
+                  tabController: widget.tabController,
+                  index: 2,
+                ),
+              ],
             ),
           ),
         ],
@@ -425,21 +419,6 @@ class _DestinationCard extends StatelessWidget {
         ),
         SizedBox(child: Divider(indent: 4.0)),
       ],
-    );
-  }
-}
-
-class _SplashOverride extends StatelessWidget {
-  const _SplashOverride({Key key, this.color, this.child}) : super(key: key);
-
-  final Color color;
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Theme(
-      child: child,
-      data: Theme.of(context).copyWith(highlightColor: color),
     );
   }
 }
