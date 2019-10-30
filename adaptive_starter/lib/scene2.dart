@@ -86,7 +86,7 @@ class AdaptiveScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isDesktop = false;
+    bool isDesktop = true;
     return isDesktop
         ? Scaffold(
             body: Row(
@@ -160,17 +160,18 @@ class _NavigationRailState extends State<NavigationRail> {
   Widget build(BuildContext context) {
     return IconTheme(
       data: IconThemeData(
-        color: Colors.white,
+        color: Theme.of(context).colorScheme.primary,
       ),
       child: DefaultTextStyle(
-        style: TextStyle(color: Colors.white),
+        style: TextStyle(color: Theme.of(context).colorScheme.primary),
         child: Container(
           padding: EdgeInsets.all(8),
-          color: Theme.of(context).colorScheme.primary,
+          color: Theme.of(context).colorScheme.surface,
           child: Column(
             children: <Widget>[
               for (int i = 0; i < widget.navigationItems.length; i++)
                 RailItem(
+                  labelState: widget.labelState,
                   selected: widget.currentIndex == i,
                   icon: widget.navigationItems[i].icon,
                   title: widget.navigationItems[i].title,
@@ -179,7 +180,7 @@ class _NavigationRailState extends State<NavigationRail> {
                   },
                 ),
               Spacer(),
-              for (final action in widget.actions) action
+              ...widget.actions,
             ],
           ),
         ),
@@ -189,8 +190,9 @@ class _NavigationRailState extends State<NavigationRail> {
 }
 
 class RailItem extends StatelessWidget {
-  RailItem({this.selected, this.icon, this.title, this.onTap});
+  RailItem({this.labelState, this.selected, this.icon, this.title, this.onTap});
 
+  final NavigationRailLabelState labelState;
   final bool selected;
   final Icon icon;
   final Widget title;
@@ -198,6 +200,37 @@ class RailItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget content;
+    switch (labelState) {
+      case NavigationRailLabelState.None:
+        content = icon;
+        break;
+      case NavigationRailLabelState.Impersistent:
+        content = Column(
+          children: <Widget>[
+            icon,
+            title,
+          ],
+        );
+        break;
+      case NavigationRailLabelState.Persistent:
+        content = Column(
+          children: <Widget>[
+            icon,
+            title,
+          ],
+        );
+        break;
+      case NavigationRailLabelState.Extended:
+        content = Column(
+          children: <Widget>[
+            icon,
+            title,
+          ],
+        );
+        break;
+    }
+
     return InkWell(
       onTap: onTap,
       child: SizedBox(
