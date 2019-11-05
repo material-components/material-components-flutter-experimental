@@ -30,7 +30,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Color(0xFF6200EE),
+        accentColor: Color(0xFF03DAC5),
+        colorScheme: Theme.of(context).colorScheme.copyWith(primary: Color(0xFF6200EE), secondary: Color(0xFF03DAC5)),
       ),
       home: MyHomePage(title: 'Adaptive Scaffold Demos'),
       routes: {
@@ -54,15 +56,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Adaptive Scaffold Demos')),
+        appBar: AppBar(title: Text('Adaptive Scaffold Demos')),
         body: ListView(
-      children: <Widget>[
-        SizedBox(height: 12),
-        _SceneItem(routeName: '/scene1', title: 'Scene 1'),
-        SizedBox(height: 12),
-        _SceneItem(routeName: '/scene2', title: 'Scene 2'),
-      ],
-    ));
+          children: <Widget>[
+            SizedBox(height: 12),
+            _SceneItem(routeName: '/scene1', title: 'Scene 1'),
+            SizedBox(height: 12),
+            _SceneItem(routeName: '/scene2', title: 'Scene 2'),
+          ],
+        ));
   }
 }
 
