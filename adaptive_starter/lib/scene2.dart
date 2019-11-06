@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -14,20 +12,17 @@ class _Scene2State extends State<Scene2> {
       .map((state) => BottomNavigationKind.Persistent == state)
       .toList();
   BottomNavigationKind _bottomNavigationKind = BottomNavigationKind.Persistent;
-  List<bool> _navigationRailKindToggleIsSelected = NavigationRailKind.values
-      .map((state) => NavigationRailKind.Regular == state)
-      .toList();
   NavigationRailKind _navigationRailKind = NavigationRailKind.Regular;
 
   @override
   Widget build(BuildContext context) {
     return AdaptiveScaffold(
-      title: Text('Scene 2'),
+      title: Text('Scene'),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Bottom Navigation Bar Kind'),
+            Text('Kind'),
             SizedBox(height: 20),
             ToggleButtons(
               children: <Widget>[
@@ -47,58 +42,21 @@ class _Scene2State extends State<Scene2> {
               onPressed: (int index) {
                 setState(() {
                   for (int buttonIndex = 0;
-                      buttonIndex <
-                          _bottomNavigationKindToggleIsSelected.length;
-                      buttonIndex++) {
+                  buttonIndex <
+                      _bottomNavigationKindToggleIsSelected.length;
+                  buttonIndex++) {
                     if (buttonIndex == index) {
                       _bottomNavigationKindToggleIsSelected[buttonIndex] = true;
                     } else {
                       _bottomNavigationKindToggleIsSelected[buttonIndex] =
-                          false;
+                      false;
                     }
                   }
                   _bottomNavigationKind = BottomNavigationKind.values[index];
-                });
-              },
-              isSelected: _bottomNavigationKindToggleIsSelected,
-            ),
-            SizedBox(height: 40),
-            Text('Navigation Rail Kind'),
-            SizedBox(height: 20),
-            ToggleButtons(
-              children: <Widget>[
-                SizedBox(
-                  width: 100,
-                  child: Center(child: Text('Regular')),
-                ),
-                SizedBox(
-                  width: 100,
-                  child: Center(child: Text('Impersistent')),
-                ),
-                SizedBox(
-                  width: 100,
-                  child: Center(child: Text('Persistent')),
-                ),
-                SizedBox(
-                  width: 100,
-                  child: Center(child: Text('Extended')),
-                ),
-              ],
-              onPressed: (int index) {
-                setState(() {
-                  for (int buttonIndex = 0;
-                      buttonIndex < _navigationRailKindToggleIsSelected.length;
-                      buttonIndex++) {
-                    if (buttonIndex == index) {
-                      _navigationRailKindToggleIsSelected[buttonIndex] = true;
-                    } else {
-                      _navigationRailKindToggleIsSelected[buttonIndex] = false;
-                    }
-                  }
                   _navigationRailKind = NavigationRailKind.values[index];
                 });
               },
-              isSelected: _navigationRailKindToggleIsSelected,
+              isSelected: _bottomNavigationKindToggleIsSelected,
             ),
             SizedBox(height: 40),
             Text('Item Index'),
@@ -110,22 +68,23 @@ class _Scene2State extends State<Scene2> {
           ],
         ),
       ),
-      actions: [
-        SizedBox(
-          height: 48,
-          child: IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () {},
-          ),
-        ),
-        SizedBox(
-          height: 48,
-          child: IconButton(
-            icon: Icon(Icons.settings),
-            onPressed: () {},
-          ),
-        ),
-      ],
+//      actions: [
+//        SizedBox(
+//          height: 48,
+//          child: IconButton(
+//            icon: Icon(Icons.search),
+//            onPressed: () {},
+//          ),
+//        ),
+//        SizedBox(
+//          height: 48,
+//          child: IconButton(
+//            icon: Icon(Icons.settings),
+//            onPressed: () {},
+//          ),
+//        ),
+//      ],
+      actions: [],
       navigationItems: [
         BottomNavigationBarItem(
           icon: Icon(Icons.favorite_border),
@@ -209,50 +168,51 @@ class AdaptiveScaffold extends StatelessWidget {
     bool isDesktop = MediaQuery.of(context).size.width > 600;
     return isDesktop
         ? Scaffold(
-            backgroundColor: Colors.white,
-            appBar: AppBar(
-              elevation: 1,
-              leading: Icon(Icons.menu),
-              title: title,
-            ),
-            body: Row(
-              children: <Widget>[
-                NavigationRail(
-                  leading: floatingActionButton,
-                  extendedLeading: extendedFloatingActionButton,
-                  navigationItems: navigationItems,
-                  actions: actions,
-                  currentIndex: currentIndex,
-                  onNavigationIndexChange: onNavigationIndexChange,
-                  labelKind: navigationRailKind,
-                ),
-                Expanded(child: body),
-              ],
-            ),
-          )
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 1,
+//              leading: Icon(Icons.menu),
+//            leading: SizedBox(),
+        title: title,
+      ),
+      body: Row(
+        children: <Widget>[
+          NavigationRail(
+            leading: floatingActionButton,
+            extendedLeading: extendedFloatingActionButton,
+            navigationItems: navigationItems,
+            actions: actions,
+            currentIndex: currentIndex,
+            onNavigationIndexChange: onNavigationIndexChange,
+            labelKind: navigationRailKind,
+          ),
+          Expanded(child: body),
+        ],
+      ),
+    )
         : Scaffold(
-            floatingActionButton: floatingActionButton,
-            backgroundColor: Colors.white,
-            appBar: AppBar(
-              elevation: 1,
-              title: title,
-              actions: actions,
-            ),
-            body: body,
-            bottomNavigationBar: BottomNavigationBar(
-              type: BottomNavigationBarType.fixed,
-              currentIndex: currentIndex,
-              onTap: onNavigationIndexChange,
-              backgroundColor: Color(0xFF6200EE),
-              unselectedItemColor: Colors.white.withOpacity(0.75),
-              selectedItemColor: Colors.white,
-              items: navigationItems,
-              showSelectedLabels:
-                  bottomNavigationKind != BottomNavigationKind.Regular,
-              showUnselectedLabels:
-                  bottomNavigationKind == BottomNavigationKind.Persistent,
-            ),
-          );
+      floatingActionButton: floatingActionButton,
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 1,
+        title: title,
+        actions: actions,
+      ),
+      body: body,
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: currentIndex,
+        onTap: onNavigationIndexChange,
+        backgroundColor: Color(0xFF6200EE),
+        unselectedItemColor: Colors.white.withOpacity(0.75),
+        selectedItemColor: Colors.white,
+        items: navigationItems,
+        showSelectedLabels:
+        bottomNavigationKind != BottomNavigationKind.Regular,
+        showUnselectedLabels:
+        bottomNavigationKind == BottomNavigationKind.Persistent,
+      ),
+    );
   }
 }
 
@@ -266,7 +226,7 @@ enum NavigationRailKind {
   Regular,
   Impersistent,
   Persistent,
-  Extended,
+//  Extended,
 }
 
 class NavigationRail extends StatefulWidget {
@@ -304,49 +264,48 @@ class NavigationRail extends StatefulWidget {
 class _NavigationRailState extends State<NavigationRail> {
   @override
   Widget build(BuildContext context) {
-    final extendedLeading = widget.extendedLeading ?? widget.leading;
-    final leading = widget.labelKind == NavigationRailKind.Extended
-        ? extendedLeading
-        : widget.leading;
-    return IconTheme(
-      data: IconThemeData(
-        color: Theme.of(context).colorScheme.primary,
-      ),
-      child: DefaultTextStyle(
-        style: TextStyle(color: Theme.of(context).colorScheme.primary),
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 8),
-          color: Theme.of(context).colorScheme.surface,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              if (leading != null)
-                Padding(
-                  padding: const EdgeInsets.only(top: 16, bottom: 8),
+//    final extendedLeading = widget.extendedLeading ?? widget.leading;
+//    final leading = widget.labelKind == NavigationRailKind.Extended
+//        ? extendedLeading
+//        : widget.leading;
+    final leading = widget.leading;
+    return DefaultTextStyle(
+      style: TextStyle(color: Theme.of(context).colorScheme.primary),
+      child: Container(
+        color: Theme.of(context).colorScheme.surface,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            if (leading != null)
+              SizedBox(
+                height: 96,
+                width: 72,
+                child: Align(
+                  alignment: Alignment.center,
                   child: leading,
                 ),
-              for (int i = 0; i < widget.navigationItems.length; i++)
-                RailItem(
-                  labelKind: widget.labelKind,
-                  selected: widget.currentIndex == i,
-                  icon: widget.currentIndex == i
-                      ? widget.navigationItems[i].activeIcon
-                      : widget.navigationItems[i].icon,
-                  title: DefaultTextStyle(
-                    style: TextStyle(
-                        color: widget.currentIndex == i
-                            ? Theme.of(context).colorScheme.primary
-                            : Theme.of(context).colorScheme.onSurface.withOpacity(0.7)),
-                    child: widget.navigationItems[i].title,
-                  ),
-                  onTap: () {
-                    widget.onNavigationIndexChange(i);
-                  },
+              ),
+            for (int i = 0; i < widget.navigationItems.length; i++)
+              RailItem(
+                labelKind: widget.labelKind,
+                selected: widget.currentIndex == i,
+                icon: widget.currentIndex == i
+                    ? widget.navigationItems[i].activeIcon
+                    : widget.navigationItems[i].icon,
+                title: DefaultTextStyle(
+                  style: TextStyle(
+                      color: widget.currentIndex == i
+                          ? Theme.of(context).colorScheme.primary
+                          : Theme.of(context).colorScheme.onSurface.withOpacity(0.64)),
+                  child: widget.navigationItems[i].title,
                 ),
-              Spacer(),
-              ...widget.actions,
-            ],
-          ),
+                onTap: () {
+                  widget.onNavigationIndexChange(i);
+                },
+              ),
+            Spacer(),
+            ...widget.actions,
+          ],
         ),
       ),
     );
@@ -367,14 +326,14 @@ class RailItem extends StatelessWidget {
     Widget content;
     switch (labelKind) {
       case NavigationRailKind.Regular:
-        content = SizedBox(width: 56, child: icon);
+        content = SizedBox(width: 72, child: icon);
         break;
       case NavigationRailKind.Impersistent:
         content = SizedBox(
-          width: 56,
+          width: 72,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: 22),
               icon,
               if (selected) title,
             ],
@@ -383,39 +342,38 @@ class RailItem extends StatelessWidget {
         break;
       case NavigationRailKind.Persistent:
         content = SizedBox(
-          width: 56,
+          width: 72,
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: 22),
               icon,
               title,
             ],
           ),
         );
         break;
-      case NavigationRailKind.Extended:
-        content = SizedBox(
-          width: 128,
-          child: Column(
-            children: <Widget>[
-              SizedBox(height: 30),
-              Row(
-                children: <Widget>[
-                  SizedBox(width: 16),
-                  icon,
-                  SizedBox(width: 10),
-                  title,
-                ],
-              ),
-            ],
-          ),
-        );
-        break;
     }
 
-    return InkWell(
-      onTap: onTap,
-      child: SizedBox(height: 68, child: content),
+    final colors = Theme.of(context).colorScheme;
+
+    return IconTheme(
+      data: IconThemeData(
+        color: selected ? colors.primary : colors.onSurface.withOpacity(0.64),
+      ),
+      child: SizedBox(
+        height: 72,
+        child: Material(
+          type: MaterialType.transparency,
+          clipBehavior: Clip.none,
+          child: InkResponse(
+            onTap: onTap,
+            onHover: (_) { },
+            splashColor: Theme.of(context).colorScheme.primary.withOpacity(0.12),
+            hoverColor: Theme.of(context).colorScheme.primary.withOpacity(0.04),
+            child: content,
+          ),
+        ),
+      ),
     );
   }
 }

@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:adaptive_starter/scene1.dart';
 import 'package:adaptive_starter/scene2.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -34,11 +33,7 @@ class MyApp extends StatelessWidget {
         accentColor: Color(0xFF03DAC5),
         colorScheme: Theme.of(context).colorScheme.copyWith(primary: Color(0xFF6200EE), secondary: Color(0xFF03DAC5)),
       ),
-      home: MyHomePage(title: 'Adaptive Scaffold Demos'),
-      routes: {
-        '/scene1': (context) => Scene1(),
-        '/scene2': (context) => Scene2(),
-      },
+      home: Scene2(),
     );
   }
 }
