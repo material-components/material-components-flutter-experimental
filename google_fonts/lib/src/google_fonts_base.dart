@@ -103,9 +103,9 @@ Future<ByteData> readLocalFont(String name) async {
 ///   "700italic": "http://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4Sk0SK-UEGKDBz4.ttf",
 /// }
 String fontUrlKey(TextStyle textStyle) {
-  if (textStyle == null ||
-      (textStyle.fontWeight == FontWeight.w400 &&
-          textStyle.fontStyle != FontStyle.italic)) {
+  final isRegular = textStyle.fontWeight == FontWeight.w400 &&
+      textStyle.fontStyle != FontStyle.italic;
+  if (textStyle == null || isRegular) {
     return 'regular';
   }
   return '${_fontWeightString(textStyle)}'
