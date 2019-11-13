@@ -79,7 +79,6 @@ Future<ByteData> readLocalFont(String name) async {
   return null;
 }
 
-
 /// Function used to convert a [TextStyle] to a [String] that can be used to key
 /// into results from the Google Fonts api.
 ///
@@ -104,18 +103,20 @@ Future<ByteData> readLocalFont(String name) async {
 ///   "700italic": "http://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4Sk0SK-UEGKDBz4.ttf",
 /// }
 String fontUrlKey(TextStyle textStyle) {
-  if (textStyle == null) {
+  if (textStyle == null ||
+      (textStyle.fontWeight == FontWeight.w400 &&
+          textStyle.fontStyle != FontStyle.italic)) {
     return 'regular';
   }
-  return '${_fontWeightString(textStyle.fontWeight)}'
+  return '${_fontWeightString(textStyle)}'
       '${_fontStyleString(textStyle.fontStyle)}';
 }
 
-String _fontWeightString(FontWeight fontWeight) {
-  if (fontWeight == null) {
-    return '400';
+String _fontWeightString(TextStyle textStyle) {
+  if (textStyle.fontWeight == null || textStyle.fontWeight == FontWeight.w400) {
+    return '';
   }
-  return fontWeight.toString().replaceAll('FontWeight.w', '');
+  return textStyle.fontWeight.toString().replaceAll('FontWeight.w', '');
 }
 
 String _fontStyleString(FontStyle fontstyle) {
