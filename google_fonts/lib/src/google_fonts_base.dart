@@ -39,7 +39,7 @@ Future<void> loadFont(String fontName, String fontUrl) async {
   fontLoader.addFont(byteData);
   await fontLoader.load();
   print('loaded $fontName');
-//  // TODO: remove this once it is done automatically after loading a font.
+  // TODO: remove this once it is done automatically after loading a font.
   PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
 }
 
