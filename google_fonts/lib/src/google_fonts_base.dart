@@ -152,7 +152,7 @@ class GoogleFontsFamily {
 }
 
 // This logic is taken from the following section of the minikin library, which
-// is ultimatley how flutter handles matching fonts.
+// is ultimately how flutter handles matching fonts.
 // * https://github.com/flutter/engine/blob/a5680f9388ebcef6012c446c5226a79a5ab8000c/third_party/txt/src/minikin/FontFamily.cpp#L128
 int computeMatch(GoogleFontsFamily a, GoogleFontsFamily b) {
   if (a.fontStyle == b.fontStyle && a.fontWeight == b.fontWeight) {
