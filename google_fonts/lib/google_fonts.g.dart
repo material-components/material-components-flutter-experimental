@@ -10008,7 +10008,6 @@ class GoogleFonts {
     FontStyle fontStyle,
   }) {
     textStyle ??= TextStyle();
-
     final fontUrls = <GoogleFontsFamily>[
       GoogleFontsFamily.fromString('100', 'http://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHh30wWyWrFCbw7A.ttf'),
       GoogleFontsFamily.fromString('100italic', 'http://fonts.gstatic.com/s/lato/v16/S6u-w4BMUTPHjxsIPy-vNiPg7MU0.ttf'),
@@ -10022,11 +10021,7 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI3wiPHA3s5dwt7w.ttf'),
     ];
 
-    print(textStyle);
-    print(GoogleFontsFamily.fromTextStyle(textStyle));
-
     final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
-//    print(font);
     final fontFamily = 'Lato${font.toString()}';
 
     loadFont(fontFamily, font.url);

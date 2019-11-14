@@ -5,7 +5,6 @@
 import 'dart:convert';
 import 'dart:io';
 
-import '../src/google_fonts_base.dart';
 import 'package:mustache/mustache.dart';
 
 void main() {
@@ -20,23 +19,19 @@ void main() {
     final family = item['family'].toString().replaceAll(' ', '');
     final lowerFamily = family[0].toLowerCase() + family.substring(1);
 
-    final variants = <GoogleFontsFamily>[];
-    for (final variant in item['variants']) {
-      variants.add(
-        GoogleFontsFamily.fromString(variant, item['files'][variant]),
-      );
-    }
+//    final variants = <GoogleFontsFamily>[];
+//    for (final variant in item['variants']) {
+//      variants.add(
+//        GoogleFontsFamily.fromString(variant, item['files'][variant]),
+//      );
+//    }
 
     methods.add({
       'methodName': '$lowerFamily',
       'fontFamily': family,
       'fontUrls': [
-        for (final variant in variants)
-          {
-            'weight': variant.fontWeight,
-            'stye': variant.fontStyle,
-            'url': variant.url,
-          }
+        for (final variant in item['variants'])
+          {'variant': variant, 'url': item['files'][variant]}
       ],
     });
   }

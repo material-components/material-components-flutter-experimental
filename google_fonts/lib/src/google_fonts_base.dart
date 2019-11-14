@@ -175,8 +175,6 @@ GoogleFontsFamily getClosestMatch(
   GoogleFontsFamily bestMatch;
   for (var variant in variants) {
     final score = computeMatch(style, variant);
-    print('variant: $variant, score: $score');
-    print('style: $style, score: $variant');
     if (bestScore == null || score < bestScore) {
       bestScore = score;
       bestMatch = variant;

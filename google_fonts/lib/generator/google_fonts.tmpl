@@ -17,13 +17,9 @@ class GoogleFonts {
     FontStyle fontStyle,
   }) {
     textStyle ??= TextStyle();
-    const fontUrls = <GoogleFontsFamily>[
+    final fontUrls = <GoogleFontsFamily>[
       {{#fontUrls}}
-      GoogleFontsFamily(
-        FontWeight.w{{weight}},
-        '{{style}}',
-        '{{url}}'),
-      ),
+      GoogleFontsFamily.fromString('{{variant}}', '{{url}}'),
       {{/fontUrls}}
     ];
 
