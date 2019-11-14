@@ -19,13 +19,6 @@ void main() {
     final family = item['family'].toString().replaceAll(' ', '');
     final lowerFamily = family[0].toLowerCase() + family.substring(1);
 
-//    final variants = <GoogleFontsFamily>[];
-//    for (final variant in item['variants']) {
-//      variants.add(
-//        GoogleFontsFamily.fromString(variant, item['files'][variant]),
-//      );
-//    }
-
     methods.add({
       'methodName': '$lowerFamily',
       'fontFamily': family,
