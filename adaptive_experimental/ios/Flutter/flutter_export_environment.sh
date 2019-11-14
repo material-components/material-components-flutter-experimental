@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/antrob/git/flutter/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/antrob/git/material-components-flutter-experimental/adaptive_starter"
+export "FLUTTER_APPLICATION_PATH=/Users/antrob/git/material-components-flutter-experimental/adaptive_experimental"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build/ios"
