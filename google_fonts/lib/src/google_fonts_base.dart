@@ -158,7 +158,7 @@ int computeMatch(GoogleFontsFamily a, GoogleFontsFamily b) {
   if (a.fontStyle == b.fontStyle && a.fontWeight == b.fontWeight) {
     return 0;
   }
-  int score = (a.fontWeight- b.fontWeight).abs() ~/ 100;
+  int score = (a.fontWeight - b.fontWeight).abs() ~/ 100;
   if (a.fontStyle != b.fontStyle) {
     score += 2;
   }
