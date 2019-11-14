@@ -39,7 +39,7 @@ Future<void> loadFont(String fontName, String fontUrl) async {
   fontLoader.addFont(byteData);
   await fontLoader.load();
   print('loaded $fontName');
-  // TODO: remove this once it is done automatically after loading a font.
+//  // TODO: remove this once it is done automatically after loading a font.
   PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
 }
 
@@ -125,3 +125,65 @@ String _fontStyleString(FontStyle fontstyle) {
   }
   return '';
 }
+
+class GoogleFontsFamily {
+  const GoogleFontsFamily(this.fontWeight, this.fontStyle, [this.url]);
+
+  final int fontWeight;
+  final FontStyle fontStyle;
+  final String url;
+
+  // From a string key, for example, `500italic`.
+  GoogleFontsFamily.fromString(String key, [this.url])
+      : this.fontWeight = key == _regular || key == _italic
+            ? 400
+            : int.parse(key.replaceAll(_italic, '')),
+        this.fontStyle =
+            key.contains(_italic) ? FontStyle.italic : FontStyle.normal;
+
+  GoogleFontsFamily.fromTextStyle(TextStyle style, [this.url])
+      : this.fontWeight = (style?.fontWeight?.index ?? 4) * 100,
+        this.fontStyle = style?.fontStyle ?? FontStyle.normal;
+
+  @override
+  String toString() {
+    return '$fontWeight$fontStyle';
+  }
+}
+
+// This logic is taken from the following section of the minikin library, which
+// is ultimatley how flutter handles matching fonts.
+// * https://github.com/flutter/engine/blob/a5680f9388ebcef6012c446c5226a79a5ab8000c/third_party/txt/src/minikin/FontFamily.cpp#L128
+int computeMatch(GoogleFontsFamily a, GoogleFontsFamily b) {
+  if (a.fontStyle == b.fontStyle && a.fontWeight == b.fontWeight) {
+    return 0;
+  }
+  int score = (a.fontWeight- b.fontWeight).abs() ~/ 100;
+  if (a.fontStyle != b.fontStyle) {
+    score += 2;
+  }
+  return score;
+}
+
+// Returns [GoogleFontsFamily] from `variants` that most closely matches
+// [style] according to the computeMatch scoring function.
+GoogleFontsFamily getClosestMatch(
+  GoogleFontsFamily style,
+  List<GoogleFontsFamily> variants,
+) {
+  int bestScore;
+  GoogleFontsFamily bestMatch;
+  for (var variant in variants) {
+    final score = computeMatch(style, variant);
+    print('variant: $variant, score: $score');
+    print('style: $style, score: $variant');
+    if (bestScore == null || score < bestScore) {
+      bestScore = score;
+      bestMatch = variant;
+    }
+  }
+  return bestMatch;
+}
+
+const _regular = 'regular';
+const _italic = 'italic';

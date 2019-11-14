@@ -17,21 +17,20 @@ class GoogleFonts {
     FontStyle fontStyle,
   }) {
     textStyle ??= TextStyle();
-    const fontUrls = <String, String>{
+    const fontUrls = <GoogleFontsFamily>[
       {{#fontUrls}}
-      '{{variant}}' : '{{url}}',
+      GoogleFontsFamily(
+        FontWeight.w{{weight}},
+        '{{style}}',
+        '{{url}}'),
+      ),
       {{/fontUrls}}
-    };
+    ];
 
-    String key = fontUrlKey(
-      textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle),
-    );
-    if (!fontUrls.containsKey(key)) {
-      key = 'regular';
-    }
+    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final fontFamily = '{{fontFamily}}${font.toString()}';
 
-    final fontFamily = '{{fontFamily}}$key';
-    loadFont(fontFamily, fontUrls[key]);
+    loadFont(fontFamily, font.url);
     return textStyle.copyWith(
       fontFamily: fontFamily,
     );
