@@ -9,7 +9,7 @@ import 'package:mustache/mustache.dart';
 
 void main() {
   final fontsJsonData = readFontsJsonData();
-  
+
   final outFile = File('lib/google_fonts.g.dart');
   final outFileWriteSink = outFile.openWrite();
 
@@ -23,7 +23,7 @@ void main() {
       'methodName': '$lowerFamily',
       'fontFamily': family,
       'fontUrls': [
-        for(final variant in item['variants'])
+        for (final variant in item['variants'])
           {'variant': variant, 'url': item['files'][variant]}
       ],
     });
