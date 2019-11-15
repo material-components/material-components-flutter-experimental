@@ -10022,6 +10022,7 @@ class GoogleFonts {
     ];
 
     final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    print(font);
     final fontFamily = 'Lato${font.toString()}';
 
     loadFont(fontFamily, font.url);

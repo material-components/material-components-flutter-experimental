@@ -12,9 +12,16 @@ import 'package:path_provider/path_provider.dart';
 
 Set<String> _loadedFonts = {};
 
-Future<ByteData> fetchFont(String fontName, String fontUrl) async {
-  print('fetchFont: $fontName');
-  final response = await http.get(Uri.parse(fontUrl));
+/// Fetches a font with [fontName] from the [fontUrl] and saves it locally if
+/// it is thew first time it is being loaded.
+///
+/// This function can return null if the font fails to load from the URL.
+Future<ByteData> httpFetchFont(String fontName, String fontUrl) async {
+  final uri = Uri.tryParse(fontUrl);
+  if (uri == null) {
+
+  }
+  final response = await http.get(Uri.tryParse(fontUrl));
 
   if (response.statusCode == 200) {
     writeLocalFont(fontName, response.bodyBytes);
@@ -25,6 +32,16 @@ Future<ByteData> fetchFont(String fontName, String fontUrl) async {
   }
 }
 
+/// Loads a font into the [FontLoader] with [fontName] for the matching
+/// [fontUrl].
+///
+/// If a font with the [fontName] has already been loaded into memory, then
+/// this method does nothing as there is no need to load it a second time.
+///
+/// Otherwise, this method will first check to see if the font is available on
+/// disk. If it is, then it loads it into the [FontLoader]. If it is not on
+/// disk, then it fethces it via the [fontUrl], stores it on disk, and loads it
+/// into the [FontLoader.
 Future<void> loadFont(String fontName, String fontUrl) async {
   if (_loadedFonts.contains(fontName)) {
     return;
@@ -34,12 +51,13 @@ Future<void> loadFont(String fontName, String fontUrl) async {
   final fontLoader = FontLoader(fontName);
   var byteData = readLocalFont(fontName);
   if (await byteData == null) {
-    byteData = fetchFont(fontName, fontUrl);
+    byteData = httpFetchFont(fontName, fontUrl);
   }
   fontLoader.addFont(byteData);
   await fontLoader.load();
   print('loaded $fontName');
-  // TODO: remove this once it is done automatically after loading a font.
+  // TODO: Remove this once it is done automatically after loading a font.
+  // https://github.com/flutter/flutter/issues/44460
   PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
 }
 
