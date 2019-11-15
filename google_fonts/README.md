@@ -5,7 +5,7 @@ The GoogleFonts package for Flutter allows you to easily use any of the 960 font
 
 ## Getting Started
 
-![](google_fonts/main.gif)
+![](main.gif)
 
 With the GoogleFonts package, ttf files do not need to be stored in your assets folder and mapped in
 the pubspec. Instead, they are fetched once via http at runtime, and stored in the apps local disk
