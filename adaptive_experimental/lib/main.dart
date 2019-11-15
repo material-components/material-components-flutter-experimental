@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:adaptive_starter/scene2.dart';
+import 'scene2.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 

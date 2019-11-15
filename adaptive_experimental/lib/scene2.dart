@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'navigation_rail.dart';
+
 class Scene2 extends StatefulWidget {
   @override
   _Scene2State createState() => _Scene2State();
@@ -9,10 +11,10 @@ class Scene2 extends StatefulWidget {
 class _Scene2State extends State<Scene2> {
   int _currentIndex = 2;
   List<bool> _bottomNavigationKindToggleIsSelected = BottomNavigationKind.values
-      .map((state) => BottomNavigationKind.Persistent == state)
+      .map((state) => BottomNavigationKind.Impersistent == state)
       .toList();
-  BottomNavigationKind _bottomNavigationKind = BottomNavigationKind.Persistent;
-  NavigationRailKind _navigationRailKind = NavigationRailKind.Regular;
+  BottomNavigationKind _bottomNavigationKind = BottomNavigationKind.Impersistent;
+  NavigationRailKind _navigationRailKind = NavigationRailKind.Impersistent;
 
   @override
   Widget build(BuildContext context) {
@@ -180,7 +182,7 @@ class AdaptiveScaffold extends StatelessWidget {
           NavigationRail(
             leading: floatingActionButton,
             extendedLeading: extendedFloatingActionButton,
-            navigationItems: navigationItems,
+            items: navigationItems,
             actions: actions,
             currentIndex: currentIndex,
             onNavigationIndexChange: onNavigationIndexChange,
@@ -220,160 +222,4 @@ enum BottomNavigationKind {
   Regular,
   Impersistent,
   Persistent,
-}
-
-enum NavigationRailKind {
-  Regular,
-  Impersistent,
-  Persistent,
-//  Extended,
-}
-
-class NavigationRail extends StatefulWidget {
-  NavigationRail({
-    this.leading,
-    this.extendedLeading,
-    this.navigationItems,
-    this.actions,
-    this.currentIndex,
-    this.onNavigationIndexChange,
-    this.labelKind = NavigationRailKind.Regular,
-    this.labelTextStyle,
-    this.labelIconTheme,
-    this.selectedLabelTextStyle,
-    this.selectedLabelIconTheme,
-  });
-
-  final Widget leading;
-  final Widget extendedLeading;
-  final List<BottomNavigationBarItem> navigationItems;
-  final List<Widget> actions;
-  final int currentIndex;
-  final ValueChanged<int> onNavigationIndexChange;
-
-  final NavigationRailKind labelKind;
-  final TextStyle labelTextStyle;
-  final IconTheme labelIconTheme;
-  final TextStyle selectedLabelTextStyle;
-  final IconTheme selectedLabelIconTheme;
-
-  @override
-  _NavigationRailState createState() => _NavigationRailState();
-}
-
-class _NavigationRailState extends State<NavigationRail> {
-  @override
-  Widget build(BuildContext context) {
-//    final extendedLeading = widget.extendedLeading ?? widget.leading;
-//    final leading = widget.labelKind == NavigationRailKind.Extended
-//        ? extendedLeading
-//        : widget.leading;
-    final leading = widget.leading;
-    return DefaultTextStyle(
-      style: TextStyle(color: Theme.of(context).colorScheme.primary),
-      child: Container(
-        color: Theme.of(context).colorScheme.surface,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            if (leading != null)
-              SizedBox(
-                height: 96,
-                width: 72,
-                child: Align(
-                  alignment: Alignment.center,
-                  child: leading,
-                ),
-              ),
-            for (int i = 0; i < widget.navigationItems.length; i++)
-              RailItem(
-                labelKind: widget.labelKind,
-                selected: widget.currentIndex == i,
-                icon: widget.currentIndex == i
-                    ? widget.navigationItems[i].activeIcon
-                    : widget.navigationItems[i].icon,
-                title: DefaultTextStyle(
-                  style: TextStyle(
-                      color: widget.currentIndex == i
-                          ? Theme.of(context).colorScheme.primary
-                          : Theme.of(context).colorScheme.onSurface.withOpacity(0.64)),
-                  child: widget.navigationItems[i].title,
-                ),
-                onTap: () {
-                  widget.onNavigationIndexChange(i);
-                },
-              ),
-            Spacer(),
-            ...widget.actions,
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class RailItem extends StatelessWidget {
-  RailItem({this.labelKind, this.selected, this.icon, this.title, this.onTap});
-
-  final NavigationRailKind labelKind;
-  final bool selected;
-  final Icon icon;
-  final Widget title;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    Widget content;
-    switch (labelKind) {
-      case NavigationRailKind.Regular:
-        content = SizedBox(width: 72, child: icon);
-        break;
-      case NavigationRailKind.Impersistent:
-        content = SizedBox(
-          width: 72,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              icon,
-              if (selected) title,
-            ],
-          ),
-        );
-        break;
-      case NavigationRailKind.Persistent:
-        content = SizedBox(
-          width: 72,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              icon,
-              title,
-            ],
-          ),
-        );
-        break;
-    }
-
-    final colors = Theme.of(context).colorScheme;
-
-    return IconTheme(
-      data: IconThemeData(
-        color: selected ? colors.primary : colors.onSurface.withOpacity(0.64),
-      ),
-      child: SizedBox(
-        height: 72,
-        child: Material(
-          type: MaterialType.transparency,
-          clipBehavior: Clip.none,
-          child: InkResponse(
-            onTap: onTap,
-            onHover: (_) { },
-            splashColor: Theme.of(context).colorScheme.primary.withOpacity(0.12),
-            hoverColor: Theme.of(context).colorScheme.primary.withOpacity(0.04),
-            child: content,
-          ),
-        ),
-      ),
-    );
-  }
 }
