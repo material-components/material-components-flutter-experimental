@@ -129,6 +129,7 @@ String _fontStyleString(FontStyle fontstyle) {
 class GoogleFontsFamily {
   const GoogleFontsFamily(this.fontWeight, this.fontStyle, [this.url]);
 
+  // The FontWeight as an index [0-8] representing the font weights 100-900.
   final int fontWeight;
   final FontStyle fontStyle;
   final String url;
@@ -136,29 +137,47 @@ class GoogleFontsFamily {
   // From a string key, for example, `500italic`.
   GoogleFontsFamily.fromString(String key, [this.url])
       : this.fontWeight = key == _regular || key == _italic
-            ? 400
-            : int.parse(key.replaceAll(_italic, '')),
+            ? 3
+            : (int.parse(key.replaceAll(_italic, '')) ~/ 100) - 1,
         this.fontStyle =
             key.contains(_italic) ? FontStyle.italic : FontStyle.normal;
 
   GoogleFontsFamily.fromTextStyle(TextStyle style, [this.url])
-      : this.fontWeight = (style?.fontWeight?.index ?? 4) * 100,
+      : this.fontWeight = style?.fontWeight?.index ?? 3,
         this.fontStyle = style?.fontStyle ?? FontStyle.normal;
 
   @override
   String toString() {
-    return '$fontWeight$fontStyle';
+    final fontWeightString = (fontWeight + 1) * 100;
+    final fontStyleString = fontStyle.toString().replaceAll('FontStyle.', '');
+    return '$fontWeightString$fontStyleString';
+  }
+
+  @override
+  int get hashCode => hashValues(fontWeight, fontStyle);
+
+  @override
+  bool operator ==(dynamic other) {
+    if (identical(this, other)) {
+      return true;
+    }
+    if (other.runtimeType != runtimeType) {
+      return false;
+    }
+    final GoogleFontsFamily typedOther = other;
+    return typedOther.fontWeight == fontWeight &&
+        typedOther.fontStyle == fontStyle;
   }
 }
 
 // This logic is taken from the following section of the minikin library, which
 // is ultimately how flutter handles matching fonts.
-// * https://github.com/flutter/engine/blob/a5680f9388ebcef6012c446c5226a79a5ab8000c/third_party/txt/src/minikin/FontFamily.cpp#L128
+// * https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L128
 int computeMatch(GoogleFontsFamily a, GoogleFontsFamily b) {
-  if (a.fontStyle == b.fontStyle && a.fontWeight == b.fontWeight) {
+  if (a == b) {
     return 0;
   }
-  int score = (a.fontWeight - b.fontWeight).abs() ~/ 100;
+  int score = (a.fontWeight - b.fontWeight).abs();
   if (a.fontStyle != b.fontStyle) {
     score += 2;
   }
@@ -167,6 +186,10 @@ int computeMatch(GoogleFontsFamily a, GoogleFontsFamily b) {
 
 // Returns [GoogleFontsFamily] from `variants` that most closely matches
 // [style] according to the computeMatch scoring function.
+//
+// This logic is taken from the following section of the minikin library, which
+// is ultimately how flutter handles matching fonts.
+// * https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
 GoogleFontsFamily getClosestMatch(
   GoogleFontsFamily style,
   List<GoogleFontsFamily> variants,
