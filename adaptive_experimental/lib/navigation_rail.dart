@@ -55,8 +55,8 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
 
     _controllers = List<AnimationController>.generate(widget.items.length, (int index) {
       return AnimationController(
-//        duration: kThemeAnimationDuration,
-        duration: Duration(milliseconds: 2000),
+        duration: kThemeAnimationDuration,
+//        duration: Duration(milliseconds: 2000),
         vsync: this,
       )..addListener(_rebuild);
     });
@@ -156,7 +156,15 @@ class _RailItem extends StatelessWidget {
     this.icon,
     this.title,
     this.onTap,
-  });
+  }) {
+    _positionAnimation = CurvedAnimation(
+      parent: ReverseAnimation(animation),
+      curve: Curves.easeInOut,
+      reverseCurve: Curves.easeInOut.flipped,
+    );
+  }
+
+  Animation _positionAnimation;
 
   final Animation<double> animation;
   final NavigationRailKind labelKind;
@@ -196,6 +204,7 @@ class _RailItem extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(height: _positionAnimation.value * 18),
               icon,
               Opacity(
                 alwaysIncludeSemantics: true,

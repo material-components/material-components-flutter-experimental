@@ -11,10 +11,10 @@ class Scene2 extends StatefulWidget {
 class _Scene2State extends State<Scene2> {
   int _currentIndex = 2;
   List<bool> _bottomNavigationKindToggleIsSelected = BottomNavigationKind.values
-      .map((state) => BottomNavigationKind.Persistent == state)
+      .map((state) => BottomNavigationKind.Impersistent == state)
       .toList();
-  BottomNavigationKind _bottomNavigationKind = BottomNavigationKind.Persistent;
-  NavigationRailKind _navigationRailKind = NavigationRailKind.Regular;
+  BottomNavigationKind _bottomNavigationKind = BottomNavigationKind.Impersistent;
+  NavigationRailKind _navigationRailKind = NavigationRailKind.Impersistent;
 
   @override
   Widget build(BuildContext context) {
