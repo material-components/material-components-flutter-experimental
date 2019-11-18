@@ -21,11 +21,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/abeezee/v13/esDT31xSG-6AGleN2tCklZUCGpG-GQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ABeeZee${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -44,11 +41,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/abel/v10/MwQ5bhbm2POE6VhLPJp6qGI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Abel${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -71,11 +65,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/abhayalibre/v5/e3t5euGtX-Co5MNzeAOqinEY22_yqtxI6oYtBA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AbhayaLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -94,11 +85,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/abrilfatface/v11/zOL64pLDlL1D99S8g8PtiKchm-BsjOLhZBY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AbrilFatface${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -117,11 +105,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/aclonica/v10/K2FyfZJVlfNNSEBXGb7TCI6oBjLz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Aclonica${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -140,11 +125,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_bx3Lb23lzLk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Acme${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -163,11 +145,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/actor/v9/wEOzEBbCkc5cO3ekXygtUMIO.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Actor${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -186,11 +165,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/adamina/v13/j8_r6-DH1bjoc-dwu-reETl4Bno.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Adamina${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -215,11 +191,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/adventpro/v10/V8mDoQfxVT4Dvddr_yOwjYGIDbZyCts0DqQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AdventPro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -238,11 +211,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/aguafinascript/v8/If2QXTv_ZzSxGIO30LemWEOmt1bHqs4pgicOrg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AguafinaScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -261,11 +231,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/akronim/v9/fdN-9sqWtWZZlHRp-gBxkFYN-a8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Akronim${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -284,11 +251,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/aladin/v8/ZgNSjPJFPrvJV5f16Sf4pGT2Ng.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Aladin${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -307,11 +271,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/aldrich/v10/MCoTzAn-1s3IGyJMZaAS3pP5H_E.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Aldrich${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -331,11 +292,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/alef/v11/FeVQS0NQpLYglo50L5la2bxii28.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Alef${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -363,11 +321,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/alegreya/v13/4UaErEBBsBhlBjvfkSLk_ynOwpteLwtHJlc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Alegreya${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -395,11 +350,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/alegreyasc/v11/taiRGmRtCJ62-O0HhNEa-Z6q4RE2SK-UEGKDBz4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlegreyaSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -431,11 +383,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/alegreyasans/v10/5aUo9_-1phKLFgshYDvh6Vwt7V9VPEp2jkVHuxKiBA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlegreyaSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -467,11 +416,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/alegreyasanssc/v9/mtGk4-RGJqfMvt7P8FUr0Q1j-Hf1BkxddiNhNaB6O-51OA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlegreyaSansSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -495,11 +441,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/aleo/v3/c4mi1nF8G8_swAjxaDBJmq159KOnWA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Aleo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -518,11 +461,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/alexbrush/v11/SZc83FzrJKuqFbwMKk6EtUL57DtOmCc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlexBrush${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -541,11 +481,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/alfaslabone/v9/6NUQ8FmMKwSEKjnm5-4v-4Jh6dVretWvYmE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlfaSlabOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -564,11 +501,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/alice/v11/OpNCnoEEmtHa6FcJpA_chzJ0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Alice${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -587,11 +521,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/alike/v12/HI_EiYEYI6BIoEjBSZXAQ4-d.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Alike${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -610,11 +541,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/alikeangular/v10/3qTrojWunjGQtEBlIcwMbSoI3kM6bB7FKjE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlikeAngular${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -634,11 +562,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/allan/v12/ea8aadU7WuTxEu5KEPCN2WpNgEKU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Allan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -657,11 +582,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/allerta/v10/TwMO-IAHRlkbx940UnEdSQqO5uY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Allerta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -680,11 +602,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/allertastencil/v10/HTx0L209KT-LmIE9N7OR6eiycOeF-zz313DuvQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AllertaStencil${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -703,11 +622,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/allura/v8/9oRPNYsQpS4zjuAPjAIXPtrrGA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Allura${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -729,11 +645,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/almarai/v2/tssoApxBaigK_hnnS_qjhnicoq72sXg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Almarai${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -755,11 +668,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/almendra/v12/H4chBXKAlMnTn0CskxY48Ae9oqacbzhqDtg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Almendra${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -778,11 +688,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/almendradisplay/v10/0FlPVOGWl1Sb4O3tETtADHRRlZhzXS_eTyer338.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlmendraDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -801,11 +708,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/almendrasc/v10/Iure6Yx284eebowr7hbyTZZJprVA4XQ0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AlmendraSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -824,11 +728,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/amarante/v7/xMQXuF1KTa6EvGx9bq-3C3rAmD-b.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Amarante${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -850,11 +751,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/amaranth/v10/KtkrALODe433f0j1zMnAJWmn42T9E4ucRY8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Amaranth${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -874,11 +772,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/amaticsc/v13/TUZ3zwprpvBS1izr_vOMscG6eb8D3WTy-A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AmaticSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -897,11 +792,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/amethysta/v8/rP2Fp2K15kgb_F3ibfWIGDWCBl0O8Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Amethysta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -922,11 +814,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/amiko/v4/WwkdxPq1DFK04uIZXHrEGoQAUco5.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Amiko${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -948,11 +837,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/amiri/v13/J7aanpd8CGxBHpUrjAo9zptgHjAavCA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Amiri${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -972,11 +858,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/amita/v5/HhyXU5si9Om7PTHTLtCCOopCTKkI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Amita${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -995,11 +878,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/anaheim/v7/8vII7w042Wp87g4G0UTUEE5eK_w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Anaheim${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1018,11 +898,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/andada/v11/uK_y4riWaego3w9RCh0TMv6EXw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Andada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1041,11 +918,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/andika/v11/mem_Ya6iyW-LwqgAbbwRWrwGVA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Andika${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1064,11 +938,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/angkor/v12/H4cmBXyAlsPdnlb-8iw-4Lqggw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Angkor${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1087,11 +958,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/annieuseyourtelescope/v10/daaLSS4tI2qYYl3Jq9s_Hu74xwktnlKxH6osGVGjlDfB3UUVZA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AnnieUseYourTelescope${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1113,11 +981,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/anonymouspro/v13/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzc6IG30KqB9Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AnonymousPro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1136,11 +1001,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/antic/v11/TuGfUVB8XY5DRaZLodgzydtk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Antic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1159,11 +1021,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/anticdidone/v8/RWmPoKKX6u8sp8fIWdnDKqDiqYsGBGBzCw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AnticDidone${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1182,11 +1041,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/anticslab/v8/bWt97fPFfRzkCa9Jlp6IWcJWXW5p5Qo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AnticSlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1205,11 +1061,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm0K08i4gS7lu.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Anton${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1229,11 +1082,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/arapey/v8/-W_9XJn-UDDA2RCKZdoYREcjeo0k.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Arapey${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1252,11 +1102,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/arbutus/v9/NaPYcZ7dG_5J3poob9JtryO8fMU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Arbutus${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1275,11 +1122,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/arbutusslab/v8/oY1Z8e7OuLXkJGbXtr5ba7ZVa68dJlaFAQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ArbutusSlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1298,11 +1142,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/architectsdaughter/v10/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvfY5q4szgE-Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ArchitectsDaughter${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1328,11 +1169,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/archivo/v6/k3kXo8UDI-1M0wlSfdzQl0ThKYiJ-Q7m8w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Archivo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1351,11 +1189,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/archivoblack/v9/HTxqL289NzCGg4MzN6KJ7eW6OYuP_x7yx3A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ArchivoBlack${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1381,11 +1216,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/archivonarrow/v11/tssxApVBdCYD5Q7hcxTE1ArZ0bb1scVf-9cCOxBu_BM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ArchivoNarrow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1405,11 +1237,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/arefruqaa/v8/WwkYxPW1E165rajQKDulKDwNcNIS2N_7Bdk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ArefRuqaa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1435,11 +1264,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/arimamadurai/v5/t5t7IRoeKYORG0WNMgnC3seB1b3oipusfhcat2c.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ArimaMadurai${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1461,11 +1287,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/arimo/v13/P5sHzZCDf9_T_10c_JhBrZeF1dE2PY4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Arimo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1484,11 +1307,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/arizonia/v10/neIIzCemt4A5qa7mv6WGHK06UY30.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Arizonia${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1507,11 +1327,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/armata/v11/gokvH63_HV5jQ-E9lD53Q2u_mQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Armata${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1533,11 +1350,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/arsenal/v4/wXKsE3kQtZQ4pF3D513kueEKnV03vdnKjw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Arsenal${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1556,11 +1370,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/artifika/v10/VEMyRoxzronptCuxu6Wt5jDtreOL.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Artifika${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1582,11 +1393,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/arvo/v13/tDbO2oWUg0MKqSIoVLHK9tD-hAHkGg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Arvo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1606,11 +1414,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/arya/v5/ga6NawNG-HJdzfra3b-BaFg3dRE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Arya${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1636,11 +1441,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/asap/v11/KFOlCniXp96ayz4mWUlvAx05IsDqlA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Asap${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1666,11 +1468,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/asapcondensed/v5/pxiYypY1o9NHyXh3WvSbGSggdOeJUPVBim6CovpOkXA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AsapCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1689,11 +1488,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/asar/v7/sZlLdRyI6TBIXkYQDLlTW6E.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Asar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1712,11 +1508,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/asset/v10/SLXGc1na-mM4cWImRJqExst1.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Asset${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1740,11 +1533,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/assistant/v4/2sDZZGJYnIjSi6H75xk7z0OcA5cZbCjItw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Assistant${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1764,11 +1554,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/astloch/v11/TuGUUVJ8QI5GSeUjk2A-6MNPA10xLMQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Astloch${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1788,11 +1575,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/asul/v9/VuJxdNjKxYr40U8qeKbXOIFneRo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Asul${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1816,11 +1600,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/athiti/v4/pe0sMISdLIZIv1wAsDdyAv2-C99ycg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Athiti${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1843,11 +1624,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/atma/v5/uK_z4rqWc-Eoo9J0Kjc9PvedRkM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Atma${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1866,11 +1644,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/atomicage/v12/f0Xz0eug6sdmRFkYZZGL58Ht9a8GYeA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AtomicAge${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1889,11 +1664,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/aubrey/v12/q5uGsou7NPBw-p7vugNsCxVEgA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Aubrey${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1912,11 +1684,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/audiowide/v8/l7gdbjpo0cum0ckerWCtkQXPExpQBw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Audiowide${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1935,11 +1704,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/autourone/v9/UqyVK80cP25l3fJgbdfbk5lWVscxdKE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AutourOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1958,11 +1724,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/average/v8/fC1hPYBHe23MxA7rIeJwVWytTyk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Average${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -1981,11 +1744,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/averagesans/v8/1Ptpg8fLXP2dlAXR-HlJJNJPBdqazVoK4A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AverageSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2004,11 +1764,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/averiagruesalibre/v8/NGSov4nEGEktOaDRKsY-1dhh8eEtIx3ZUmmJw0SLRA8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AveriaGruesaLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2032,11 +1789,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/averialibre/v8/2V0HKIcMGZEnV6xygz7eNjESAJFxakTp2JEwT4Sk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AveriaLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2060,11 +1814,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/averiasanslibre/v8/ga6caxZG_G5OvCf_rt7FH3B6BHLMEdVLKjsVL5fXK3D9qtg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AveriaSansLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2088,11 +1839,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/averiaseriflibre/v9/neIbzD2ms4wxr6GvjeD0X88SHPyX2xYOpzM2xK0uVLe_bXHq.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'AveriaSerifLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2114,11 +1862,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/b612/v4/3Jn_SDDxiSz36juKoDWBSVcBXuFb0Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'B612${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2140,11 +1885,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/b612mono/v4/kmKkZq85QVWbN1eW6lJV1TZkp8VLnbdWSg4x.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'B612Mono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2163,11 +1905,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/badscript/v8/6NUT8F6PJgbFWQn47_x7lOwuzd1AZtw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BadScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2186,11 +1925,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bahiana/v4/uU9PCBUV4YenPWJU7xPb3vyHmlI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bahiana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2209,11 +1945,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bahianita/v2/yYLr0hTb3vuqqsBUgxWtxTvV2NJPcA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bahianita${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2243,11 +1976,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/baijamjuree/v3/LDIoapSCOBt_aeQQ7ftydoa8W_pylpox2S2CgOva.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BaiJamjuree${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2266,11 +1996,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baloo/v5/6xKhdSpJJ92I9PWIAG_5LWwJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Baloo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2289,11 +2016,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baloobhai/v5/ZgNWjP5GM7bCUdmXgWyVjGXEM4COoE4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooBhai${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2312,11 +2036,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baloobhaijaan/v6/RWmRoKCU5fcqq8fOWNzFLqSjx4ECJmVjC0-V.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooBhaijaan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2335,11 +2056,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baloobhaina/v5/Noa16Uzzzp2FIkfhq5vm9thxPAR9mhHobg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooBhaina${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2358,11 +2076,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baloochettan/v5/0QImMXRN8o2gTC2YTr4665DA07z8_ApHqqk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooChettan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2381,11 +2096,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/balooda/v5/LhWmMVnXOfIZO795FXkfSvtVM8mZ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooDa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2404,11 +2116,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baloopaaji/v6/8AttGsyxM5KQQU-Y4MTwVZnToxvQBiot.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooPaaji${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2427,11 +2136,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/balootamma/v6/JTUTjIk68Cy27gWhOWIghE5B5Arr-s50.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooTamma${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2450,11 +2156,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/balootammudu/v6/mFT3Wb8Qza7c_Z5HTsC_5nxW8EpQl9RWxD8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooTammudu${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2473,11 +2176,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baloothambi/v5/va9B4kXJzNhTFoA7CYcS8sHuQR37fF3Wlg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BalooThambi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2496,11 +2196,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/balthazar/v9/d6lKkaajS8Gm4CVQjFEvyRTo39l8hw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Balthazar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2519,11 +2216,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACL5la2bxii28.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bangers${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2559,11 +2253,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/barlow/v4/7cHsv4kjgoGqM7E_CfO451optzsrd6m9.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Barlow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2599,11 +2290,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/barlowcondensed/v4/HTxyL3I-JCGChYJ8VI-L6OO_au7B6xTrW3bWvIMHYrtUxg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BarlowCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2639,11 +2327,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/barlowsemicondensed/v5/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbIrB2sgqZiGfHK5.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BarlowSemiCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2662,11 +2347,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/barriecito/v2/WWXXlj-CbBOSLY2QTuY_KdUiYwTO0MU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Barriecito${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2685,11 +2367,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/barrio/v4/wEO8EBXBk8hBIDiEdQYhWdsX1Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Barrio${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2708,11 +2387,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/basic/v9/xfu_0WLxV2_XKQN34lDVyR7D.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Basic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2732,11 +2408,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/battambang/v13/uk-lEGe7raEw-HjkzZabNsmMxyRa8oZK9I0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Battambang${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2755,11 +2428,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/baumans/v9/-W_-XJj9QyTd3QfpR_oyaksqY5Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Baumans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2778,11 +2448,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bayon/v13/9XUrlJNmn0LPFl-pOhYEd2NJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bayon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2814,11 +2481,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/bevietnam/v1/FBVudDflz-iPfoPuIC2iIqMfTUFFI0wvNzdwXQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BeVietnam${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2837,11 +2501,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/belgrano/v10/55xvey5tM9rwKWrJZcMFirl08KDJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Belgrano${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2860,11 +2521,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bellefair/v5/kJExBuYY6AAuhiXUxG19__A2pOdvDA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bellefair${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2883,11 +2541,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/belleza/v8/0nkoC9_pNeMfhX4BtcbyawzruP8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Belleza${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2908,11 +2563,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/benchnine/v8/ahcev8612zF4jxrwMosT6-xRhWa8q0v8ag.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BenchNine${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2931,11 +2583,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bentham/v10/VdGeAZQPEpYfmHglKWw7CJaK_y4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bentham${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2954,11 +2603,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/berkshireswash/v8/ptRRTi-cavZOGqCvnNJDl5m5XmNPrcQybX4pQA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BerkshireSwash${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -2977,11 +2623,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bethellen/v1/WwkbxPW2BE-3rb_JNT-qEIAiVNo5xNY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BethEllen${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3000,11 +2643,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bevan/v11/4iCj6KZ0a9NXjF8aUir7tlSJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bevan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3030,11 +2670,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/bigshouldersdisplay/v1/fC1yPZJEZG-e9gHhdI4-NBbfd2ys3SjJCx1UT_fLJrgA00kAdA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BigShouldersDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3060,11 +2697,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/bigshoulderstext/v1/55xyezRtP9G3CGPIf49hxc8P0eytUxBUGKFfSOkOfG0Y3A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BigShouldersText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3083,11 +2717,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bigelowrules/v8/RrQWboly8iR_I3KWSzeRuN0zT4cCH8WAJVk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BigelowRules${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3106,11 +2737,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bigshotone/v10/u-470qukhRkkO6BD_7cM_gxuUQJBXv_-.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BigshotOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3129,11 +2757,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bilbo/v9/o-0EIpgpwWwZ210hpIRz4wxE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bilbo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3152,11 +2777,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bilboswashcaps/v12/zrf-0GXbz-H3Wb4XBsGrTgq2PVmdqAPopiRfKp8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BilboSwashCaps${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3179,11 +2801,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/biorhyme/v4/1cX3aULHBpDMsHYW_ETmiXGAq8Sk1PoH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BioRhyme${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3206,11 +2825,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/biorhymeexpanded/v5/i7dVIE1zZzytGswgU577CDY9Ljbffxw0aVSHSdTXrb_z.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BioRhymeExpanded${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3235,11 +2851,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/biryani/v5/hv-TlzNxIFoO84Yddcg0GTBSU-J-RxQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Biryani${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3260,11 +2873,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/bitter/v15/rax_HiqOu8IVPmnzxKlMBBJek0vA8A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bitter${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3283,11 +2893,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/blackandwhitepicture/v8/TwMe-JAERlQd3ooUHBUXGmrmioKjjnRSFO-NqI5HbcMi-yWY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BlackAndWhitePicture${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3306,11 +2913,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/blackhansans/v8/ea8Aad44WunzF9a-dL6toA8r8nqVIXSkH-Hc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BlackHanSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3329,11 +2933,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/blackopsone/v11/qWcsB6-ypo7xBdr6Xshe96H3WDzRtjkho4M.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BlackOpsOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3359,11 +2960,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/blinker/v2/cIf4MaFatEE-VTaP_K2GRGEsnIJkWL4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Blinker${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3382,11 +2980,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bokor/v12/m8JcjfpeeaqTiR2WdInbcaxE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bokor${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3405,11 +3000,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bonbon/v11/0FlVVPeVlFec4ee_cDEAbQY5-A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bonbon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3428,11 +3020,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/boogaloo/v11/kmK-Zq45GAvOdnaW6x1F_SrQo_1K.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Boogaloo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3451,11 +3040,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bowlbyone/v11/taiPGmVuC4y96PFeqp8smo6C_Z0wcK4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BowlbyOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3474,11 +3060,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bowlbyonesc/v11/DtVlJxerQqQm37tzN3wMug9Pzgj8owhNjuE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BowlbyOneSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3497,11 +3080,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/brawler/v10/xn7gYHE3xXewAscGsgC7S9XdZN8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Brawler${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3520,11 +3100,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/breeserif/v9/4UaHrEJCrhhnVA3DgluAx63j5pN1MwI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BreeSerif${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3543,11 +3120,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bubblegumsans/v8/AYCSpXb_Z9EORv1M5QTjEzMEtdaHzoPPb7R4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BubblegumSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3566,11 +3140,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bubblerone/v8/f0Xy0eqj68ppQV9KBLmAouHH26MPePkt.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BubblerOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3589,11 +3160,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('300', 'http://fonts.gstatic.com/s/buda/v10/GFDqWAN8mnyIJSSrG7UBr7pZKA0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Buda${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3613,11 +3181,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/buenard/v11/OD5GuM6Cyma8FnnsB4vSjGCWALepwss.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Buenard${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3636,11 +3201,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bungee/v5/N0bU2SZBIuF2PU_ECn50Kd_PmA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Bungee${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3659,11 +3221,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bungeehairline/v5/snfys0G548t04270a_ljTLUVrv-7YB2dQ5ZPqQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BungeeHairline${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3682,11 +3241,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bungeeinline/v5/Gg8zN58UcgnlCweMrih332VuDGJ1-FEglsc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BungeeInline${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3705,11 +3261,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bungeeoutline/v5/_6_mEDvmVP24UvU2MyiGDslL3Qg3YhJqPXxo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BungeeOutline${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3728,11 +3281,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/bungeeshade/v5/DtVkJxarWL0t2KdzK3oI_jks7iLSrwFUlw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'BungeeShade${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3751,11 +3301,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/butcherman/v11/2EbiL-thF0loflXUBOdb1zWzq_5uT84.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Butcherman${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3774,11 +3321,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/butterflykids/v8/ll8lK2CWTjuqAsXDqlnIbMNs5S4arxFrAX1D.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ButterflyKids${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3804,11 +3348,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cabin/v14/u-460qWljRw-Pd81x0RnuyxEfw5IR-Y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cabin${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3830,11 +3371,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/cabincondensed/v13/nwpJtK6mNhBK2err_hqkYhHRqmwi3Mf97F15-K1oqQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CabinCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3854,11 +3392,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/cabinsketch/v13/QGY2z_kZZAGCONcK2A4bGOj0I_1o4dLyI4CMFw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CabinSketch${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3877,11 +3412,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/caesardressing/v8/yYLx0hLa3vawqtwdswbotmK4vrR3cbb6LZttyg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CaesarDressing${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3900,11 +3432,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cagliostro/v8/ZgNWjP5HM73BV5amnX-TjGXEM4COoE4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cagliostro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3928,11 +3457,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/cairo/v6/SLXLc1nY6Hkvalqiab6M7dd8aGZk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cairo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3951,11 +3477,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/calligraffitti/v11/46k2lbT3XjDVqJw3DCmCFjE0vnFZM5ZBpYN-.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Calligraffitti${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -3977,11 +3500,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cambay/v6/SLXMc1rY6H0_ZDs2bIYwwvN0Q3ptkDMN.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cambay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4000,11 +3520,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cambo/v8/IFSqHeNEk8FJk416ok7xkPm8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cambo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4023,11 +3540,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/candal/v9/XoHn2YH6T7-t_8cNAR4Jt9Yxlw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Candal${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4049,11 +3563,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cantarell/v9/B50WF7ZDq37KMUvlO015iZrSEY6aB4oWgWHB.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cantarell${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4072,11 +3583,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cantataone/v9/PlI5Fl60Nb5obNzNe2jslVxEt8CwfGaD.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CantataOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4095,11 +3603,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cantoraone/v9/gyB4hws1JdgnKy56GB_JX6zdZ4vZVbgZ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CantoraOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4118,11 +3623,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/capriola/v7/wXKoE3YSppcvo1PDln_8L-AinG8y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Capriola${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4143,11 +3645,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/cardo/v11/wlpygwjKBV1pqhND-aQR82JHaTBX.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cardo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4166,11 +3665,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/carme/v10/ptRHTiWdbvZIDOjGxLNrxfbZ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Carme${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4189,11 +3685,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/carroisgothic/v10/Z9XPDmFATg-N1PLtLOOxvIHl9ZmD3i7ajcJ-.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CarroisGothic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4212,11 +3705,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/carroisgothicsc/v9/ZgNJjOVHM6jfUZCmyUqT2A2HVKjc-28nNHabY4dN.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CarroisGothicSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4235,11 +3725,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/carterone/v11/q5uCsoe5IOB2-pXv9UcNIxR2hYxREMs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CarterOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4266,11 +3753,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/catamaran/v6/o-0NIpQoyXQa2RxT7-5jZhNlY9aA5Wl6PQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Catamaran${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4292,11 +3776,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/caudex/v9/esDV311QOP6BJUr4yMo4kJ8GOJSuGdLB.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Caudex${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4316,11 +3797,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/caveat/v7/Wnz5HAc5bAfYB2Qz3RM9oiTQNAuxjA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Caveat${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4339,11 +3817,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/caveatbrush/v5/EYq0maZfwr9S9-ETZc3fKXtMW7mT03pdQw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CaveatBrush${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4362,11 +3837,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cedarvillecursive/v11/yYL00g_a2veiudhUmxjo5VKkoqA-B_neJbBxw8BeTg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CedarvilleCursive${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4385,11 +3857,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cevicheone/v10/gyB4hws1IcA6JzR-GB_JX6zdZ4vZVbgZ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CevicheOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4417,11 +3886,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/chakrapetch/v3/cIfnMapbsEk7TDLdtEz1BwkWmpLZRZ_A_gMk0izH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ChakraPetch${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4446,11 +3912,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/changa/v7/2-cl9JNi2YuVOUcswbqbUsT5rZhaZg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Changa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4470,11 +3933,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/changaone/v12/xfu20W3wXn3QLUJXhzq42ATivJXeO67ISw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ChangaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4493,11 +3953,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chango/v8/2V0cKI0OB5U7WaJyz324TFUaAw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chango${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4517,11 +3974,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/charm/v4/7cHrv4oii5K0Md6TDss8yn4hnCci.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Charm${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4541,11 +3995,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/charmonman/v3/MjQAmiR3vP_nuxDv47jiYC2HmL9K9OhmGnY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Charmonman${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4568,11 +4019,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/chathura/v5/_gP81R7-rzUuVjim42eAjWSxYPp7oSNy.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chathura${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4592,11 +4040,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/chauphilomeneone/v9/55xzezRsPtfie1vPY49qzdgSlJiHRQFcnoZ_YscCdXQB.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ChauPhilomeneOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4615,11 +4060,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chelaone/v8/6ae-4KC7Uqgdz_JZdPIy31vWNTMwoQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ChelaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4638,11 +4080,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chelseamarket/v7/BCawqZsHqfr89WNP_IApC8tzKBhlLA4uKkWk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ChelseaMarket${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4661,11 +4100,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chenla/v12/SZc43FDpIKu8WZ9eXxfonUPL6Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chenla${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4684,11 +4120,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cherrycreamsoda/v10/UMBIrOxBrW6w2FFyi9paG0fdVdRciTd6Cd47DJ7G.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CherryCreamSoda${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4708,11 +4141,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/cherryswash/v8/i7dSIFByZjaNAMxtZcnfAy5E_FeaGy6QZ3WfYg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CherrySwash${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4731,11 +4161,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chewy/v11/uK_94ruUb-k-wk5xIDMfO-ed.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chewy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4754,11 +4181,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chicle/v8/lJwG-pw9i2dqU-BDyWKuobYSxw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chicle${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4777,11 +4201,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chilanka/v5/WWXRlj2DZQiMJYaYRrJQI9EAZhTO.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chilanka${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4807,11 +4228,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/chivo/v11/va9D4kzIxd1KFrBteWJ4sKjkRT_-bF0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chivo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4830,11 +4248,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/chonburi/v4/8AtqGs-wOpGRTBq66IWaFr3biAfZ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Chonburi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4855,11 +4270,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/cinzel/v9/8vIK7ww63mVu7gtzdUPeFGxbO_zo-w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cinzel${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4880,11 +4292,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/cinzeldecorative/v8/daaHSScvJGqLYhG8nNt8KPPswUAPniZQa-lDQzCLlQXE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CinzelDecorative${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4903,11 +4312,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/clickerscript/v7/raxkHiKPvt8CMH6ZWP8PdlEq72rY2zqUKafv.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ClickerScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4927,11 +4333,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/coda/v15/SLXIc1jY5nQ8HeIgTp6mw9t1cX8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Coda${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4950,11 +4353,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/codacaption/v13/ieVm2YRII2GMY7SyXSoDRiQGqcx6x_-fACIgaw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CodaCaption${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4974,11 +4374,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/codystar/v7/FwZY7-Q1xVk-40qxOt6A4sijpFu_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Codystar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -4997,11 +4394,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/coiny/v5/gyByhwU1K989PXwbElSvO5Tc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Coiny${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5020,11 +4414,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/combo/v8/BXRlvF3Jh_fIhg0iBu9y8Hf0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Combo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5047,11 +4438,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/comfortaa/v27/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4Y_LPrQVIT9c2c8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Comfortaa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5070,11 +4458,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/comingsoon/v11/qWcuB6mzpYL7AJ2VfdQR1u-SUjjzsykh.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ComingSoon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5093,11 +4478,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/concertone/v10/VEM1Ro9xs5PjtzCu-srDqRTlhv-CuVAQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ConcertOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5116,11 +4498,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/condiment/v7/pONk1hggFNmwvXALyH6Sq4n4o1vyCQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Condiment${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5140,11 +4519,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/content/v12/zrfg0HLayePhU_AwaRzdBirfWCHvkAI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Content${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5163,11 +4539,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/contrailone/v9/eLGbP-j_JA-kG0_Zo51noafdZUvt_c092w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ContrailOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5186,11 +4559,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/convergence/v8/rax5HiePvdgXPmmMHcIPYRhasU7Q8Cad.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Convergence${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5209,11 +4579,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbfNlQCT9tPdpw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cookie${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5232,11 +4599,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/copse/v9/11hPGpDKz1rGb0djHkihUb-A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Copse${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5256,11 +4620,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/corben/v13/LYjAdGzzklQtCMpFHCZgrXArXN7HWQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Corben${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5288,11 +4649,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cormorant/v8/H4c-BXOCl9bbnla_nHIq6qMEh4a2QTRjF8ER.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cormorant${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5320,11 +4678,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cormorantgaramond/v7/co3WmX5slCNuHLi8bLeY9MK7whWMhyjYrEPzvA-NxBKL_y94.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CormorantGaramond${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5352,11 +4707,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cormorantinfant/v8/HhyKU44g9vKiM1sORYSiWeAsLN997_ItYDYhRoUYNrn_Ig.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CormorantInfant${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5379,11 +4731,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/cormorantsc/v8/0ybmGD4kxqXBmOVLG30OGwsmEBUU_R3y8DOWGA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CormorantSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5406,11 +4755,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/cormorantunicase/v8/HI_ViZUaILtOqhqgDeXoF_n1_fTGX9Nvsecv7Gy0DRzS.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CormorantUnicase${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5433,11 +4779,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/cormorantupright/v6/VuJudM3I2Y35poFONtLdafkUCHw1y1NpoRDsU9X6RPzQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CormorantUpright${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5456,11 +4799,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUkFUfAL3EsHiA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Courgette${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5482,11 +4822,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cousine/v14/d6lPkaiiRdih4SpP_SEXdTvM1_JgjmRpOA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cousine${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5506,11 +4843,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/coustard/v10/3XFuErgg3YsZ5fqUU-2LkEHmb_jU3eRL.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Coustard${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5529,11 +4863,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/coveredbyyourgrace/v9/QGYwz-AZahWOJJI9kykWW9mD6opopoqXSOS0FgItq6bFIg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CoveredByYourGrace${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5552,11 +4883,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/craftygirls/v9/va9B4kXI39VaDdlPJo8N_NvuQR37fF3Wlg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CraftyGirls${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5575,11 +4903,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/creepster/v8/AlZy_zVUqJz4yMrniH4hdXf4XB0Tow.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Creepster${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5599,11 +4924,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/creteround/v8/55xqey1sJNPjPiv1ZZZrxK1-0bjiL2xNhKc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CreteRound${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5637,11 +4959,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/crimsonpro/v11/q5uSsoa5M_tv7IihmnkabAReu49Y_Bo-HVKMBi49fJs7dtC4yZNE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CrimsonPro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5665,11 +4984,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/crimsontext/v10/wlprgwHKFkZgtmSR3NB0oRJfajDqDtNV9rRPfrKu.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CrimsonText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5688,11 +5004,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/croissantone/v7/3y9n6bU9bTPg4m8NDy3Kq24UM3pqn5cdJ-4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CroissantOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5711,11 +5024,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/crushed/v10/U9Mc6dym6WXImTlFT1kfuIqyLzA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Crushed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5737,11 +5047,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/cuprum/v11/dg4h_pLmvrkcOkBNI9P7ipwtYQYugjW4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cuprum${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5760,11 +5067,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cutefont/v8/Noaw6Uny2oWPbSHMrY6vmJNVNC9hkw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CuteFont${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5783,11 +5087,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cutive/v11/NaPZcZ_fHOhV3Ip7T_hDoyqlZQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Cutive${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5806,11 +5107,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/cutivemono/v8/m8JWjfRfY7WVjVi2E-K9H5RFRG-K3Mud.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'CutiveMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5834,11 +5132,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/dmsans/v3/rP2Ap2ywxg089UriCZawpBqmDnYS-Cjk6Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DMSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5858,11 +5153,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/dmserifdisplay/v3/-nFhOHM81r4j6k0gjAW3mujVU2B2G_Vx1_r352np3Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DMSerifDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5882,11 +5174,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/dmseriftext/v3/rnCw-xZa_krGokauCeNq1wWyWfGFWFAMArZKqQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DMSerifText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5905,11 +5194,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/damion/v9/hv-XlzJ3KEUe_YZUbWY3MTFgVg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Damion${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5929,11 +5215,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/dancingscript/v11/If2SXTr6YS-zF4S-kcSWSVi_szpbr8QtoCIervbA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DancingScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5952,11 +5235,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dangrek/v11/LYjCdG30nEgoH8E2gCNqqVIuTN4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Dangrek${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -5981,11 +5261,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/darkergrotesque/v1/U9MA6cuh-mLQlC4BKCtayOfARkSVozLzAW8hTOsXsX0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DarkerGrotesque${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6006,11 +5283,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/davidlibre/v4/snfzs0W_99N64iuYSvp4W8HAxbqbSjORSo9W.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DavidLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6029,11 +5303,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dawningofanewday/v10/t5t_IQMbOp2SEwuncwLRjMfIg1yYit_nAz8bhWJGNoBE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DawningofaNewDay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6052,11 +5323,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/daysone/v9/mem9YaCnxnKRiYZOCLYVeLkWVNBt.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DaysOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6075,11 +5343,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dekko/v6/46khlb_wWjfSrttFR0vsfl1B.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Dekko${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6098,11 +5363,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/delius/v9/PN_xRfK0pW_9e1rtYcI-jT3L_w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Delius${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6121,11 +5383,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/deliusswashcaps/v11/oY1E8fPLr7v4JWCExZpWebxVKORpXXedKmeBvEYs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DeliusSwashCaps${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6145,11 +5404,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/deliusunicase/v13/845CNMEwEIOVT8BmgfSzIr_6mlp7WMr_BmmlS5aw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DeliusUnicase${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6168,11 +5424,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dellarespira/v7/RLp5K5v44KaueWI6iEJQBiGPRfkSu6EuTHo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DellaRespira${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6191,11 +5444,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/denkone/v7/dg4m_pzhrqcFb2IzROtHpbglShon.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DenkOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6214,11 +5464,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/devonshire/v8/46kqlbDwWirWr4gtBD2BX0Vq01lYAZM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Devonshire${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6237,11 +5484,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dhurjati/v7/_6_8ED3gSeatXfFiFX3ySKQtuTA2.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Dhurjati${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6260,11 +5504,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/didactgothic/v13/ahcfv8qz1zt6hCC5G4F_P4ASpUySp0LlcyQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DidactGothic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6283,11 +5524,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/diplomata/v11/Cn-0JtiMXwhNwp-wKxyfYGxYrdM9Sg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Diplomata${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6306,11 +5544,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/diplomatasc/v8/buExpoi3ecvs3kidKgBJo2kf-P5Oaiw4cw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DiplomataSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6329,11 +5564,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dohyeon/v11/TwMN-I8CRRU2zM86HFE3ZwaH__-C.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DoHyeon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6352,11 +5584,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dokdo/v8/esDf315XNuCBLxLo4NaMlKcH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Dokdo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6376,11 +5605,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/domine/v7/L0x_DFMnlVwD4h3pAN-CTQJIg3uuXg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Domine${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6399,11 +5625,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/donegalone/v7/m8JWjfRYea-ZnFz6fsK9FZRFRG-K3Mud.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DonegalOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6422,11 +5645,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/doppioone/v7/Gg8wN5gSaBfyBw2MqCh-lgshKGpe5Fg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DoppioOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6445,11 +5665,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dorsa/v10/yYLn0hjd0OGwqo493XCFxAnQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Dorsa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6474,11 +5691,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/dosis/v16/HhyJU5sn9vOmLxNkIwRSjTVNWLEJt7QV3BkFTq4EPw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Dosis${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6497,11 +5711,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/drsugiyama/v9/HTxoL2k4N3O9n5I1boGI7abRM4-t-g7y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DrSugiyama${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6520,11 +5731,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/durusans/v13/xn7iYH8xwmSyTvEV_HOxT_fYdN-WZw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'DuruSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6543,11 +5751,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/dynalight/v8/1Ptsg8LOU_aOmQvTsF4ISotrDfGGxA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Dynalight${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6575,11 +5780,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/ebgaramond/v11/SlGLmQSNjdsmc35JDF1K5GRwcJwTQgviqWC_O7Y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EBGaramond${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6598,11 +5800,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/eaglelake/v7/ptRMTiqbbuNJDOiKj9wG5O7yKQNute8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EagleLake${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6621,11 +5820,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/eastseadokdo/v8/xfuo0Wn2V2_KanASqXSZp22m05_aGavYS18y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EastSeaDokdo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6644,11 +5840,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/eater/v8/mtG04_FCK7bOvpu2u3FwsXsR.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Eater${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6670,11 +5863,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/economica/v7/Qw3EZQZaHCLgIWa29ZBbM_q4D3x9Vnksi4M7.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Economica${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6697,11 +5887,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/eczar/v8/BXRovF3Pi-DLmzWCKst622v9WNjW.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Eczar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6723,11 +5910,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/elmessiri/v6/K2F3fZBRmr9vQ1pHEey6OjalJyrYYWOMluQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ElMessiri${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6746,11 +5930,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/electrolize/v8/cIf5Ma1dtE0zSiGSiED7AUEGso5tQafB.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Electrolize${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6770,11 +5951,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/elsie/v9/BCaqqZABrez54x6q2-1IU6QeXSBk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Elsie${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6794,11 +5972,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/elsieswashcaps/v8/845ENN8xGZyVX5MVo_upKf7KnjK0RW74DG2HToawrdU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ElsieSwashCaps${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6817,11 +5992,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/emblemaone/v8/nKKT-GQ0F5dSY8vzG0rOEIRBHl57G_f_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EmblemaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6840,11 +6012,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/emilyscandy/v7/2EbgL-1mD1Rnb0OGKudbk0y5r9xrX84JjA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EmilysCandy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6871,11 +6040,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/encodesans/v4/LDIrapOFNxEwR-Bd1O9uYPsoXsLOub458jGL.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EncodeSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6902,11 +6068,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/encodesanscondensed/v4/j8_46_LD37rqfuwxyIuaZhE6cRXOLtm2gfT-BYipByQJKnuIFA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EncodeSansCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6933,11 +6096,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/encodesansexpanded/v4/c4mw1mF4GcnstG_Jh1QH6ac4hNLeNyeYUpKmDiNIXIwSP0XD.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EncodeSansExpanded${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6964,11 +6124,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/encodesanssemicondensed/v4/3qT7oiKqnDuUtQUEHMoXcmspmy55SFWrXFRp9FTOG1QV0-FHbdTgTFmr.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EncodeSansSemiCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -6995,11 +6152,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/encodesanssemiexpanded/v5/ke8yOhAPMEZs-BDuzwftTNJ85JvwMOzE9d9Cca5TMw4SCyDLJX6XCWU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EncodeSansSemiExpanded${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7018,11 +6172,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/engagement/v9/x3dlckLDZbqa7RUs9MFVXNossybsHQI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Engagement${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7041,11 +6192,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/englebert/v7/xn7iYH8w2XGrC8AR4HSxT_fYdN-WZw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Englebert${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7067,11 +6215,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/enriqueta/v9/gokpH6L7AUFrRvV44HVr92-HmNZEq6TTFw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Enriqueta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7090,11 +6235,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ericaone/v10/WBLnrEXccV9VGrOKmGD1W0_MJMGxiQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EricaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7113,11 +6255,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/esteban/v8/r05bGLZE-bdGdN-GdOuD5jokU8E.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Esteban${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7136,11 +6275,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/euphoriascript/v8/mFTpWb0X2bLb_cx6To2B8GpKoD5ak_ZT1D8x7Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'EuphoriaScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7159,11 +6295,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ewert/v7/va9I4kzO2tFODYBvS-J3kbDP.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ewert${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7199,11 +6332,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/exo/v9/4UaBrEtFpBISdkYi9xLmzanB44N1.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Exo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7239,11 +6369,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/exo2/v7/7cHtv4okm5zmbtYtE287wHoDmTcibrA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Exo2${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7269,11 +6396,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/expletussans/v13/RLpiK5v5_bqufTYdnhFzDj2ddfsgA6wPVFHNBaVImA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ExpletusSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7303,11 +6427,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/fahkwang/v3/Noa06Uj3zpmBOgbNpOqNgAVUHC5Tlhjxdw4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Fahkwang${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7327,11 +6448,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/fanwoodtext/v9/3XFzErwl05Ad_vSCF6Fq7xX2R9zc9vhCblye.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FanwoodText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7353,11 +6471,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/farro/v1/i7dJIFl3byGNHa3xM56-WkJUQUq7.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Farro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7376,11 +6491,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/farsan/v5/VEMwRoJ0vY_zsyz62q-pxDX9rQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Farsan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7399,11 +6511,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fascinate/v8/z7NWdRrufC8XJK0IIEli1LbQRPyNrw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Fascinate${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7422,11 +6531,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fascinateinline/v9/jVyR7mzzB3zc-jp6QCAu60poNqIy1g3CfRXxWZQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FascinateInline${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7445,11 +6551,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fasterone/v11/H4ciBXCHmdfClFb-vWhfyLuShq63czE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FasterOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7468,11 +6571,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fasthand/v10/0yb9GDohyKTYn_ZEESkuYkw2rQg1.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Fasthand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7491,11 +6591,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/faunaone/v7/wlpzgwTPBVpjpCuwkuEx2UxLYClOCg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FaunaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7521,11 +6618,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/faustina/v4/XLYgIZPxYpJfTbZAFV-6JXVHhncESXFtUsM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Faustina${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7544,11 +6638,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/federant/v12/2sDdZGNfip_eirT0_U0jRUG0AqUc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Federant${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7567,11 +6658,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/federo/v11/iJWFBX-cbD_ETsbmjVOe2WTG7Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Federo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7590,11 +6678,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/felipa/v7/FwZa7-owz1Eu4F_wSNSEwM2zpA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Felipa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7613,11 +6698,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fenix/v7/XoHo2YL_S7-g5ostKzAFvs8o.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Fenix${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7636,11 +6718,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fingerpaint/v9/0QInMXVJ-o-oRn_7dron8YWO85bS8ANesw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FingerPaint${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7663,11 +6742,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/firacode/v7/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_NprFVfxN87gsj0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FiraCode${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7688,11 +6764,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/firamono/v8/N0bS2SlFPv1weGeLZDtondv3mf3VaZBRBQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FiraMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7728,11 +6801,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/firasans/v10/va9f4kDNxMZdWfMOD5VvkrBKRhf_XljGllLX.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FiraSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7768,11 +6838,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/firasanscondensed/v4/wEOuEADFm8hSaQTFG18FErVhsC9x-tarUfPVLMR0dzRehY43EA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FiraSansCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7808,11 +6875,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/firasansextracondensed/v4/NaPxcYDaAO5dirw6IaFn7lPJFqXmS-M9Atn3wgda1fqWO3i-pGR7e2SvJQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FiraSansExtraCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7831,11 +6895,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fjallaone/v7/Yq6R-LCAWCX3-6Ky7FAFnOZwkxgtUb8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FjallaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7854,11 +6915,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fjordone/v8/zOL-4pbEnKBY_9S1jNKr6e5As-FeiQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FjordOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7878,11 +6936,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/flamenco/v10/neIIzCehqYguo67ssaWGHK06UY30.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Flamenco${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7901,11 +6956,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/flavors/v9/FBV2dDrhxqmveJTpbkzlNqkG9UY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Flavors${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7925,11 +6977,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/fondamento/v10/4UaFrEJGsxNmFTPDnkaJ96_p4rFwIwJePw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Fondamento${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7948,11 +6997,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fontdinerswanky/v10/ijwOs4XgRNsiaI5-hcVb4hQgMvCD4uEfKiGvxts.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FontdinerSwanky${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7971,11 +7017,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/forum/v10/6aey4Ky-Vb8Ew_IWMJMa3mnT.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Forum${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -7994,11 +7037,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/francoisone/v14/_Xmr-H4zszafZw3A-KPSZutNxgKQu_avAg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FrancoisOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8021,11 +7061,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/frankruhllibre/v5/j8_36_fAw7jrcalD7oKYNX0QfAnPUzPCxJDMhYeIHw8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FrankRuhlLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8044,11 +7081,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/freckleface/v8/AMOWz4SXrmKHCvXTohxY-YI0U1K2w9lb4g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FreckleFace${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8067,11 +7101,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/frederickathegreat/v9/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV-9Skz7Ylch2L.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FrederickatheGreat${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8090,11 +7121,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fredokaone/v7/k3kUo8kEI-tA1RRcTZGmTmHBA6aF8Bf_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FredokaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8113,11 +7141,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/freehand/v11/cIf-Ma5eqk01VjKTgAmBTmUOmZJk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Freehand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8136,11 +7161,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fresca/v8/6ae94K--SKgCzbM2Gr0W13DKPA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Fresca${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8159,11 +7181,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/frijole/v8/uU9PCBUR8oakM2BQ7xPb3vyHmlI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Frijole${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8182,11 +7201,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fruktur/v12/SZc53FHsOru5QYsMfz3GkUrS8DI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Fruktur${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8205,11 +7221,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/fugazone/v9/rax_HiWKp9EAITukFslMBBJek0vA8A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'FugazOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8228,11 +7241,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gfsdidot/v9/Jqzh5TybZ9vZMWFssvwiF-fGFSCGAA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GFSDidot${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8254,11 +7264,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/gfsneohellenic/v12/8QIWdiDOrfiq0b7R8O1Iw9WLcY5jL5r37oQbeMFe985V.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GFSNeohellenic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8277,11 +7284,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gabriela/v8/qkBWXvsO6sreR8E-b_m-zrpHmRzC.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gabriela${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8302,11 +7306,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/gaegu/v8/TuGSUVB6Up9NU573jvw74sdtBk0x.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gaegu${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8325,11 +7326,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gafata/v8/XRXV3I6Cn0VJKon4MuyAbsrVcA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gafata${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8348,11 +7346,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/galada/v5/H4cmBXyGmcjXlUX-8iw-4Lqggw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Galada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8371,11 +7366,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/galdeano/v9/uU9MCBoQ4YOqOW1boDPx8PCOg0uX.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Galdeano${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8394,11 +7386,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/galindo/v7/HI_KiYMeLqVKqwyuQ5HiRp-dhpQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Galindo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8417,11 +7406,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gamjaflower/v8/6NUR8FiKJg-Pa0rM6uN40Z4kyf9Fdty2ew.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GamjaFlower${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8442,11 +7428,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/gayathri/v1/MCoXzAb429DbBilWLLiE37v4LfQJwHbn.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gayathri${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8468,11 +7451,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/gentiumbasic/v11/WnzmHAw9aB_JD2VGQVR80We3LAixMT8eaKiNbBVWkw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GentiumBasic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8494,11 +7474,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/gentiumbookbasic/v10/pe0-MJCbPYBVokB1LHA9bbyaQb8ZGjc4VYnDzofc81s0voO3.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GentiumBookBasic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8518,11 +7495,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/geo/v11/CSRx4zRZluflLXpiYDxSbf8r.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Geo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8541,11 +7515,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/geostar/v10/sykz-yx4n701VLOftSq9-trEvlQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Geostar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8564,11 +7535,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/geostarfill/v10/AMOWz4SWuWiXFfjEohxQ9os0U1K2w9lb4g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GeostarFill${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8587,11 +7555,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/germaniaone/v7/Fh4yPjrqIyv2ucM2qzBjeS3ezAJONau6ew.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GermaniaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8610,11 +7575,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gidugu/v6/L0x8DFMkk1Uf6w3RvPCmRSlUig.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gidugu${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8633,11 +7595,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gildadisplay/v7/t5tmIRoYMoaYG0WEOh7HwMeR7TnFrpOHYh4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GildaDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8656,11 +7615,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/giveyouglory/v9/8QIQdiHOgt3vv4LR7ahjw9-XYc1zB4ZD6rwa.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GiveYouGlory${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8679,11 +7635,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/glassantiqua/v7/xfu30Wr0Wn3NOQM2piC0uXOjnL_wN6fRUkY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GlassAntiqua${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8703,11 +7656,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/glegoo/v9/_Xmu-HQyrTKWaw2xN4a9CKRpzimMsg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Glegoo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8726,11 +7676,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gloriahallelujah/v11/LYjYdHv3kUk9BMV96EIswT9DIbW-MLSy3TKEvkCF.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GloriaHallelujah${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8749,11 +7696,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/goblinone/v9/CSR64z1ZnOqZRjRCBVY_TOcATNt_pOU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GoblinOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8772,11 +7716,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gochihand/v10/hES06XlsOjtJsgCkx1PkTo71-n0nXWA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GochiHand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8796,11 +7737,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/gorditas/v7/ll84K2aTVD26DsPEtThUIooIvAoShA1i.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gorditas${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8827,11 +7765,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/gothica1/v8/CSR44z5ZnPydRjlCCwlC6OAKSPl6tOU9Eg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GothicA1${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8850,11 +7785,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/goudybookletter1911/v9/sykt-z54laciWfKv-kX8krex0jDiD2HbY6I5tRbXZ4IXAA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GoudyBookletter1911${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8873,11 +7805,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/graduate/v7/C8cg4cs3o2n15t_2YxgR6X2NZAn2.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Graduate${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8896,11 +7825,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/grandhotel/v7/7Au7p_IgjDKdCRWuR1azpmQNEl0O0kEx.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GrandHotel${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8919,11 +7845,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gravitasone/v9/5h1diZ4hJ3cblKy3LWakKQmaDWRNr3DzbQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GravitasOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8942,11 +7865,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN-XCg6UKDXlq.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'GreatVibes${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -8982,11 +7902,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/grenze/v1/O4ZWFGb7hR12BxqH_VqnlS0SvWWUy1uW.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Grenze${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9005,11 +7922,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/griffy/v8/FwZa7-ox2FQh9kfwSNSEwM2zpA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Griffy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9028,11 +7942,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gruppo/v10/WwkfxPmzE06v_ZWFWXDAOIEQUQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gruppo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9053,11 +7964,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/gudea/v9/neIIzCqgsI0mp9gz26WGHK06UY30.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gudea${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9076,11 +7984,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gugi/v8/A2BVn5dXywshVA6A9DEfgqM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gugi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9099,11 +8004,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/gurajada/v7/FwZY7-Qx308m-l-0Kd6A4sijpFu_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Gurajada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9122,11 +8024,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/habibi/v8/CSR-4zFWkuqcTTNCShJeZOYySQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Habibi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9149,11 +8048,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/halant/v7/u-490qaujRI2PbsvY_1CmwZqcwdRXg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Halant${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9172,11 +8068,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/hammersmithone/v10/qWcyB624q4L_C4jGQ9IK0O_dFlnbshsks4MRXw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HammersmithOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9195,11 +8088,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/hanalei/v10/E21n_dD8iufIjBRHXzgmVydREus.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Hanalei${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9218,11 +8108,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/hanaleifill/v8/fC1mPYtObGbfyQznIaQzPQiMVwLBplm9aw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HanaleiFill${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9241,11 +8128,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/handlee/v8/-F6xfjBsISg9aMakDmr6oilJ3ik.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Handlee${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9265,11 +8149,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/hanuman/v13/VuJ0dNvD15HhpJJBQBr4HIlMZRNcp0o.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Hanuman${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9288,11 +8169,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/happymonkey/v8/K2F2fZZcl-9SXwl5F_C4R_OABwD2bWqVjw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HappyMonkey${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9311,11 +8189,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/harmattan/v6/goksH6L2DkFvVvRp9XpTS0CjkP1Yog.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Harmattan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9334,11 +8209,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/headlandone/v7/yYLu0hHR2vKnp89Tk1TCq3Tx0PlTeZ3mJA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HeadlandOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9363,11 +8235,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/heebo/v5/NGS3v5_NC0k9P9l1apRLmq8I0LVF.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Heebo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9386,11 +8255,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/hennypenny/v7/wXKvE3UZookzsxz_kjGSfMQqt3M7tMDT.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HennyPenny${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9417,11 +8283,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/heptaslab/v6/ea8JadoyU_jkHdalebHvyWVNdYoIsHe5Hvm84DfbY5B0NBkz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HeptaSlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9440,11 +8303,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/herrvonmuellerhoff/v9/WBL6rFjRZkREW8WqmCWYLgCkQKXb4CAft3c6_qJY3QPQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HerrVonMuellerhoff${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9463,11 +8323,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/himelody/v8/46ktlbP8Vnz0pJcqCTbEf29E31BBGA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HiMelody${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9490,11 +8347,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/hind/v10/5aU19_a8oxmIfNJdIRuYjDpf5Vw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Hind${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9517,11 +8371,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/hindguntur/v5/wXKyE3UZrok56nvamSuJd_yWmFczn9zaj5Ju.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HindGuntur${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9544,11 +8395,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/hindmadurai/v5/f0Xu0e2p98ZvDXdZQIOcpqjfTaInecsoMJ0b_g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HindMadurai${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9571,11 +8419,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/hindsiliguri/v6/ijwOs5juQtsyLLR5jN4cxBEoRCf_4uEfKiGvxts.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HindSiliguri${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9598,11 +8443,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/hindvadodara/v6/neIQzCKvrIcn5pbuuuriV9tTSCnwiXM0oSOL2Yw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HindVadodara${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9621,11 +8463,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/holtwoodonesc/v10/yYLx0hLR0P-3vMFSk1TCq3Txg5B3cbb6LZttyg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HoltwoodOneSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9644,11 +8483,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/homemadeapple/v10/Qw3EZQFXECDrI2q789EKQZJob3x9Vnksi4M7.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'HomemadeApple${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9667,11 +8503,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/homenaje/v9/FwZY7-Q-xVAi_l-6Ld6A4sijpFu_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Homenaje${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9703,11 +8536,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ibmplexmono/v5/-F6sfjptAgt5VM-kVkqdyU8n1ioSblJFh8ARHNh4zg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IBMPlexMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9739,11 +8569,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ibmplexsans/v7/zYX7KVElMYYaJe8bpLHnCwDKhdTmrINscf3vBmpl8A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IBMPlexSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9775,11 +8602,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ibmplexsanscondensed/v6/Gg8iN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHYas8BfupYMnEhq5H1w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IBMPlexSansCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9811,11 +8635,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ibmplexserif/v8/jizGREVNn1dOx-zrZ2X3pZvkTiUa4442q17jjNOg_oc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IBMPlexSerif${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9835,11 +8656,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/imfelldwpica/v9/2sDEZGRQotv9nbn2qSl0TxXVYNwNZgnQnCosMXm0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellDWPica${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9858,11 +8676,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/imfelldwpicasc/v9/0ybjGCAu5PfqkvtGVU15aBhXz3EUrnTW-BiKEUiBGA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellDWPicaSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9882,11 +8697,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/imfelldoublepica/v9/3XF0EqMq_94s9PeKF7Fg4gOKINyMtZ8rf0a_VJxF2p2G8g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellDoublePica${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9905,11 +8717,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/imfelldoublepicasc/v9/neIazDmuiMkFo6zj_sHpQ8teNbWlwBB_hXjJ4Y0Eeru2dGg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellDoublePicaSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9929,11 +8738,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/imfellenglish/v9/Ktk3ALSLW8zDe0rthJysWrnLsAzHFaOdd4pI59zg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellEnglish${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9952,11 +8758,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/imfellenglishsc/v9/a8IENpD3CDX-4zrWfr1VY879qFF05pZLO4gOg0shzA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellEnglishSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9976,11 +8779,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/imfellfrenchcanon/v9/-F6gfiNtDWYfYc-tDiyiw08rrghJszkK6foXNNlKy5PzzrU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellFrenchCanon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -9999,11 +8799,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/imfellfrenchcanonsc/v9/FBVmdCru5-ifcor2bgq9V89khWcmQghEURY7H3c0UBCVIVqH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellFrenchCanonSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10023,11 +8820,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/imfellgreatprimer/v9/bx6UNwSJtayYxOkbYFsT6hMsLzX7u85rJrrVtj4VTBY1N6U.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellGreatPrimer${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10046,11 +8840,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/imfellgreatprimersc/v9/ga6daxBOxyt6sCqz3fjZCTFCTUDMHagsQKdDTLf9BXz0s8FG.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IMFellGreatPrimerSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10069,11 +8860,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/iceberg/v7/8QIJdijAiM7o-qnZuIgOq7jkAOw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Iceberg${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10092,11 +8880,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/iceland/v8/rax9HiuFsdMNOnWPWKxGADBbg0s.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Iceland${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10115,11 +8900,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/imprima/v8/VEMxRoN7sY3yuy-7-oWHyDzktPo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Imprima${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10139,11 +8921,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/inconsolata/v18/QldXNThLqRwH-OJ1UHjlKGHiw41u7f34DYwn.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Inconsolata${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10162,11 +8941,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/inder/v8/w8gUH2YoQe8_4vq6pw-P3U4O.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Inder${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10185,11 +8961,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZlbkGG1dKEDw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IndieFlower${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10209,11 +8982,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/inika/v8/rnCr-x5X3QP-pix7auM-mHnOSOuk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Inika${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10238,11 +9008,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/inknutantiqua/v5/Y4GRYax7VC4ot_qNB4nYpBdaKU2Hx7j5bBoIYJNf.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'InknutAntiqua${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10261,11 +9028,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/irishgrover/v10/buExpoi6YtLz2QW7LA4flVgf-P5Oaiw4cw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IrishGrover${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10287,11 +9051,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/istokweb/v14/3qT0ojGmgSyUukBzKslpA1PG-2MQQhLMMygN.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'IstokWeb${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10310,11 +9071,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/italiana/v8/QldNNTtLsx4E__B0XTmRY31Wx7Vv.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Italiana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10333,11 +9091,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/italianno/v9/dg4n_p3sv6gCJkwzT6Rnj5YpQwM-gg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Italianno${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10356,11 +9111,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/itim/v4/0nknC9ziJOYewARKkc7ZdwU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Itim${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10379,11 +9131,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jacquesfrancois/v7/ZXu9e04ZvKeOOHIe1TMahbcIU2cgmcPqoeRWfbs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JacquesFrancois${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10402,11 +9151,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jacquesfrancoisshadow/v8/KR1FBtOz8PKTMk-kqdkLVrvR0ECFrB6Pin-2_q8VsHuV5ULS.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JacquesFrancoisShadow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10426,11 +9172,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/jaldi/v6/or3hQ67z0_CI33voSbT3LLQ1niPn.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Jaldi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10449,11 +9192,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jimnightshade/v7/PlIkFlu9Pb08Q8HLM1PxmB0g-OS4V3qKaMxD.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JimNightshade${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10472,11 +9212,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jockeyone/v9/HTxpL2g2KjCFj4x8WI6ArIb7HYOk4xc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JockeyOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10495,11 +9232,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jollylodger/v7/BXRsvFTAh_bGkA1uQ48dlB3VWerT3ZyuqA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JollyLodger${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10518,11 +9252,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jomhuria/v7/Dxxp8j-TMXf-llKur2b1MOGbC3Dh.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Jomhuria${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10541,11 +9272,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jomolhari/v1/EvONzA1M1Iw_CBd2hsQCF1IZKq5INg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Jomolhari${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10573,11 +9301,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/josefinsans/v14/Qw3HZQNVED7rKGKxtqIqX5EUCETBeV0koJ8y_eiS.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JosefinSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10605,11 +9330,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/josefinslab/v10/lW-kwjwOK3Ps5GSJlNNkMalnrzYWK-rgFA8e7onu.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JosefinSlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10628,11 +9350,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jotione/v8/Z9XVDmdJQAmWm9TwaYTe4u2El6GC.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JotiOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10651,11 +9370,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/jua/v8/co3KmW9ljjAjc-DZCsKgsg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Jua${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10676,11 +9392,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/judson/v12/FeVSS0Fbvbc14Vxps5xQ3Z5nm29Gww.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Judson${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10699,11 +9412,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/julee/v9/TuGfUVB3RpZPQ6ZLodgzydtk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Julee${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10722,11 +9432,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/juliussansone/v8/1Pt2g8TAX_SGgBGUi0tGOYEga5W-xXEW6aGXHw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JuliusSansOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10745,11 +9452,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/junge/v7/gokgH670Gl1lUqAdvhB7SnKm.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Junge${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10772,11 +9476,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/jura/v13/z7NOdRfiaC4Vd8hhoPzfb5vBTP266quhTfmrH_rt.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Jura${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10795,11 +9496,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/justanotherhand/v11/845CNN4-AJyIGvIou-6yJKyptyOpOcr_BmmlS5aw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JustAnotherHand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10818,11 +9516,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/justmeagaindownhere/v11/MwQmbgXtz-Wc6RUEGNMc0QpRrfUh2hSdBBMoAuwHvqDwc_fg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'JustMeAgainDownHere${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10856,11 +9551,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/k2d/v3/J7acnpF2V0EjdZ2JkpY4xJ9CGyAa.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'K2D${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10880,11 +9572,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/kadwa/v4/rnCr-x5V0g7ipix7auM-mHnOSOuk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kadwa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10905,11 +9594,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/kalam/v10/YA9Qr0Wd4kDdMtDqHQLLmCUItqGt.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kalam${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10929,11 +9615,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/kameron/v10/vm8zdR7vXErQxuzniAIfC-3jfHb--NY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kameron${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10969,11 +9652,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/kanit/v5/nKKS-Go6G5tXcraQI4GnVaRrMFJyAu4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kanit${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -10994,11 +9674,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/kantumruy/v7/syk0-yJ0m7wyVb-f4FOPQtflpn-UJ1H6Uw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kantumruy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11020,11 +9697,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/karla/v8/qkBQXvYC6trAT7RQFmW7xL5lnAzCKNg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Karla${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11047,11 +9721,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/karma/v10/va9F4kzAzMZRGLjTZMZ_uqzGQC_-.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Karma${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11070,11 +9741,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/katibeh/v7/ZGjXol5MQJog4bxDaC1RVDNdGDs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Katibeh${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11093,11 +9761,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kaushanscript/v8/vm8vdRfvXFLG3OLnsO15WYS5DF7_ytN3M48a.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KaushanScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11116,11 +9781,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kavivanar/v5/o-0IIpQgyXYSwhxP7_Jb4j5Ba_2c7A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kavivanar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11139,11 +9801,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kavoon/v8/pxiFyp4_scRYhlU4NLr6f1pdEQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kavoon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11162,11 +9821,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kdamthmor/v7/MwQzbhjs3veF6QwJVf0JkGMViblPtXs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KdamThmor${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11185,11 +9841,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/keaniaone/v7/zOL54pXJk65E8pXardnuycRuv-hHkOs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KeaniaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11208,11 +9861,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kellyslab/v10/-W_7XJX0Rz3cxUnJC5t6TkMBf50kbiM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KellySlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11231,11 +9881,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kenia/v11/jizURE5PuHQH9qCONUGswfGM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kenia${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11258,11 +9905,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/khand/v8/TwMN-IINQlQQ0bLpd1E3ZwaH__-C.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Khand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11281,11 +9925,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/khmer/v12/MjQImit_vPPwpF-BpN2EeYmD.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Khmer${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11308,11 +9949,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/khula/v5/OpNPnoEOns3V7G-piCvUrC59XwXD.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Khula${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11331,11 +9969,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kiranghaerang/v8/E21-_dn_gvvIjhYON1lpIU4-bcqvWPaJq4no.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KirangHaerang${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11354,11 +9989,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kiteone/v7/70lQu7shLnA_E02vyq1b6HnGO4uA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KiteOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11377,11 +10009,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/knewave/v8/sykz-yx0lLcxQaSItSq9-trEvlQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Knewave${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11411,11 +10040,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/koho/v3/K2FzfZ5fmddNNissxJvzIqCkDyvqZA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KoHo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11445,11 +10071,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/kodchasan/v3/1cXqaUPOAJv9sG4I-DJWjUk8hOCs_-YOoIgN.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kodchasan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11468,11 +10091,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kosugi/v6/pxiFyp4_v8FCjlI4NLr6f1pdEQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kosugi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11491,11 +10111,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kosugimaru/v6/0nksC9PgP_wGh21A2KeqGiTqivr9iBq_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KosugiMaru${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11514,11 +10131,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kottaone/v7/S6u_w41LXzPc_jlfNWqPHA3s5dwt7w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KottaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11537,11 +10151,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/koulen/v13/AMOQz46as3KIBPeWgnA9kuYMUg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Koulen${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11560,11 +10171,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kranky/v10/hESw6XVgJzlPsFnMpheEZo_H_w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kranky${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11587,11 +10195,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/kreon/v21/t5t9IRIUKY-TFF_LW5lnMR3v2Dnvhd-mejUfp2dWNg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kreon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11610,11 +10215,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kristi/v11/uK_y4ricdeU6zwdRCh0TMv6EXw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kristi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11633,11 +10235,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kronaone/v8/jAnEgHdjHcjgfIb1ZcUCMY-h3cWkWg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KronaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11667,11 +10266,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/krub/v3/sZlGdRyC6CRYbkQitLRyQ4oTef_6gQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Krub${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11690,11 +10286,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kumarone/v4/bMr1mS-P958wYi6YaGeGNO6WU3oT0g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KumarOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11713,11 +10306,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kumaroneoutline/v5/Noao6VH62pyLP0fsrZ-v18wlUEcX9zDwRQu8EGKF.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'KumarOneOutline${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11736,11 +10326,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/kurale/v5/4iCs6KV9e9dXjho6eAT3v02QFg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Kurale${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11759,11 +10346,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/labelleaurore/v10/RrQIbot8-mNYKnGNDkWlocovHeIIG-eFNVmULg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LaBelleAurore${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11782,11 +10366,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lacquer/v1/EYqzma1QwqpG4_BBB7-AXhttQ5I.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lacquer${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11809,11 +10390,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/laila/v6/LYjBdG_8nE8jDLzhpQNAh14nVcfe.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Laila${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11832,11 +10410,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lakkireddy/v6/S6u5w49MUSzD9jlCPmvLZQfox9k97-xZ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LakkiReddy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11855,11 +10430,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lalezar/v6/zrfl0HLVx-HwTP82UaDyIiL0RCg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lalezar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11878,11 +10450,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lancelot/v9/J7acnppxBGtQEulG4JY4xJ9CGyAa.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lancelot${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11901,11 +10470,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lateef/v15/hESw6XVnNCxEvkbMpheEZo_H_w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lateef${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11933,11 +10499,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI3wiPHA3s5dwt7w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lato${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11956,11 +10519,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/leaguescript/v11/CSR54zpSlumSWj9CGVsoBZdeaNNUuOwkC2s.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LeagueScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -11979,11 +10539,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/leckerlione/v10/V8mCoQH8VCsNttEnxnGQ-1itLZxcBtItFw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LeckerliOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12002,11 +10559,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ledger/v7/j8_q6-HK1L3if_sxm8DwHTBhHw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ledger${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12027,11 +10581,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/lekton/v10/SZc73FDmLaWmWpBm4zjMlWjX4DJXgQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lekton${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12050,11 +10601,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lemon/v8/HI_EiYEVKqRMq0jBSZXAQ4-d.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lemon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12076,11 +10624,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/lemonada/v7/0QIkMXFD9oygTWy_R8PymtGu2bje-RpH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lemonada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12099,11 +10644,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lexenddeca/v1/K2F1fZFYk-dHSE0UPPuwQ6qgLS76ZHOM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LexendDeca${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12122,11 +10664,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lexendexa/v1/UMBXrPdOoHOnxExyjdBeWirXArM58BY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LexendExa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12145,11 +10684,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lexendgiga/v1/PlI5Fl67Mah5Y8yMHE7lkVxEt8CwfGaD.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LexendGiga${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12168,11 +10704,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lexendmega/v1/qFdA35aBi5JtHD41zSTFEv7K6BsAikI7.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LexendMega${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12191,11 +10724,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lexendpeta/v1/BXRvvFPGjeLPh0kCfI4OkE_1c8Tf1IW3.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LexendPeta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12214,11 +10744,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lexendtera/v1/RrQUbo98_jt_IXnBPwCWtZhARYMgGtWA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LexendTera${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12237,11 +10764,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lexendzetta/v1/ll87K2KYXje7CdOFnEWcU8soliQejRR7AQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LexendZetta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12260,11 +10784,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/librebarcode128/v9/cIfnMbdUsUoiW3O_hVviCwVjuLtXeJ_A_gMk0izH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreBarcode128${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12283,11 +10804,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/librebarcode128text/v9/fdNv9tubt3ZEnz1Gu3I4-zppwZ9CWZ16Z0w5cV3Y6M90w4k.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreBarcode128Text${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12306,11 +10824,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/librebarcode39/v9/-nFnOHM08vwC6h8Li1eQnP_AHzI2K_d709jy92k.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreBarcode39${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12329,11 +10844,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/librebarcode39extended/v8/8At7Gt6_O5yNS0-K4Nf5U922qSzhJ3dUdfJpwNUgfNRCOZ1GOBw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreBarcode39Extended${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12352,11 +10864,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/librebarcode39extendedtext/v8/eLG1P_rwIgOiDA7yrs9LoKaYRVLQ1YldrrOnnL7xPO4jNP68fLIiPopNNA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreBarcode39ExtendedText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12375,11 +10884,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/librebarcode39text/v9/sJoa3KhViNKANw_E3LwoDXvs5Un0HQ1vT-031RRL-9rYaw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreBarcode39Text${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12400,11 +10906,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/librebaskerville/v7/kmKiZrc3Hgbbcjq75U4uslyuy4kn0qviTjYwI8Gcw6Oi.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreBaskerville${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12423,11 +10926,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/librecaslondisplay/v1/TuGOUUFxWphYQ6YI6q9Xp61FQzxDRKmzr2lRdRhtCC4d.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreCaslonDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12448,11 +10948,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/librecaslontext/v1/DdT578IGsGw1aF1JU10PUbTvNNaDMfID8sdjNR-8ssPt.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreCaslonText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12488,11 +10985,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/librefranklin/v4/jizGREVItHgc8qDIbSTKq4XkRiUa47Y0q17jjNOg_oc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LibreFranklin${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12513,11 +11007,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/lifesavers/v10/ZXu_e1UftKKabUQMgxAal8HLOi5Tk8fIpPRW.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LifeSavers${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12536,11 +11027,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lilitaone/v7/i7dPIFZ9Zz-WBtRtedDbUEZ2RFq7AwU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LilitaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12559,11 +11047,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lilyscriptone/v7/LhW9MV7ZMfIPdMxeBjBvFN8SXLS4gsSjQNsRMg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LilyScriptOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12582,11 +11067,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/limelight/v10/XLYkIZL7aopJVbZJHDuYPeNGrnY2TA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Limelight${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12606,11 +11088,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/lindenhill/v9/-F63fjxoKSg9Yc3hZgO8yjFK5igg1l9kn-s.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LindenHill${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12636,11 +11115,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/literata/v14/or3yQ6P12-iJxAIgLYT1PLs1a-t7PU0AbeHaL55T7ihaO_CS.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Literata${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12659,11 +11135,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/liujianmaocao/v5/845DNN84HJrccNonurqXILGpvCOoferVKGWsUo8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LiuJianMaoCao${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12697,11 +11170,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/livvic/v3/rnCs-x1S2hzjrlfXbdu6tV3GY_etWWIJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Livvic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12720,11 +11190,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9_oWsMqEzSJQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lobster${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12746,11 +11213,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/lobstertwo/v12/BngTUXZGTXPUvIoyV6yN5-fI3hyEwRiof_DpXMY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LobsterTwo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12769,11 +11233,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/londrinaoutline/v10/C8c44dM8vmb14dfsZxhetg3pDH-SfuoxrSKMDvI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LondrinaOutline${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12792,11 +11253,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/londrinashadow/v9/oPWX_kB4kOQoWNJmjxLV5JuoCUlXRlaSxkrMCQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LondrinaShadow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12815,11 +11273,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/londrinasketch/v8/c4m41npxGMTnomOHtRU68eIJn8qfWWn5Pos6CA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LondrinaSketch${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12841,11 +11296,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/londrinasolid/v9/flUiRq6sw40kQEJxWNgkLuudGfvdDzY0n53oTrcL.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LondrinaSolid${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12864,11 +11316,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/longcang/v5/LYjAdGP8kkgoTec8zkRgrXArXN7HWQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LongCang${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12890,11 +11339,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/lora/v14/0QIiMX1D_JOuMw_Dmt5un9uq-73O-Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lora${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12913,11 +11359,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/loveyalikeasister/v10/R70EjzUBlOqPeouhFDfR80-0FhOqJubN-Be78nZcsGGycA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LoveYaLikeASister${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12936,11 +11379,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lovedbytheking/v9/Gw6gwdP76VDVJNXerebZxUMeRXUF2PiNlXFu2R64.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LovedbytheKing${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12959,11 +11399,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/loversquarrel/v7/Yq6N-LSKXTL-5bCy8ksBzpQ_-zAsY7pO6siz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LoversQuarrel${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -12982,11 +11419,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/luckiestguy/v10/_gP_1RrxsjcxVyin9l9n_j2RStR3qDpraA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'LuckiestGuy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13006,11 +11440,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/lusitana/v7/CSR74z9ShvucWzsMKyDmaccqYtd2vfwk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lusitana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13029,11 +11460,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/lustria/v7/9oRONYodvDEyjuhOrCg5MtPyAcg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Lustria${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13058,11 +11486,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/mplus1p/v19/e3tmeuShHdiFyPFzBRrQfBMge0PWovdU4w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MPLUS1p${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13087,11 +11512,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/mplusrounded1c/v10/VdGBAYIAV6gnpUpoWwNkYvrugw9RuM0C45sKxeqmzgRK.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MPLUSRounded1c${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13110,11 +11532,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mashanzheng/v5/NaPecZTRCLxvwo41b4gvzkXaRMTsDIRSfr0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MaShanZheng${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13133,11 +11552,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/macondo/v8/RrQQboN9-iB1IXmOS2XO0LBBd4Y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Macondo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13156,11 +11572,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/macondoswashcaps/v7/6NUL8EaAJgGKZA7lpt941Z9s6ZYgDq6Oekoa_mm5bA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MacondoSwashCaps${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13185,11 +11598,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/mada/v8/7Au_p_0qnzeSdbHhCCL8zkwMIFg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13209,11 +11619,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/magra/v8/uK_w4ruaZus72nbNDxcXEPuUX1ow.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Magra${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13232,11 +11639,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/maidenorange/v10/kJE1BuIX7AUmhi2V4m08kb1XjOZdCZS8FY8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MaidenOrange${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13260,11 +11664,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/maitree/v4/MjQDmil5tffhpBrklmWJWJGovLdh6OE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Maitree${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13283,11 +11684,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/majormonodisplay/v3/RWmVoLyb5fEqtsfBX9PDZIGr2tFubRhLCn2QIndPww.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MajorMonoDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13306,11 +11704,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mako/v11/H4coBX6Mmc_Z0ST09g478Lo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mako${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13340,11 +11735,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/mali/v3/N0bX2SRONuN4SCj8tlFQIfTTkdbJYA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mali${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13363,11 +11755,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mallanna/v7/hv-Vlzx-KEQb84YaDGwzEzRwVvJ-.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mallanna${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13386,11 +11775,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mandali/v8/LhWlMVbYOfASNfNUVFk1ZPdcKtA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mandali${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13411,11 +11797,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/manjari/v2/k3kVo8UPMOBO2w1UdWLNC0HrLaqM6Q4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Manjari${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13434,11 +11817,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mansalva/v1/aWB4m0aacbtDfvq5NJllI47vdyBg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mansalva${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13464,11 +11844,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/manuale/v4/f0Xx0eas_8Z-TFZdNPT2e8Tn8Y0DceA0OQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Manuale${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13487,11 +11864,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/marcellus/v7/wEO_EBrOk8hQLDvIAF8FUfAL3EsHiA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Marcellus${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13510,11 +11884,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/marcellussc/v7/ke8iOgUHP1dg-Rmi6RWjbLEPgdydGKikhA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MarcellusSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13533,11 +11904,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/marckscript/v10/nwpTtK2oNgBA3Or78gapdwuCzyI-aMPF7Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MarckScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13556,11 +11924,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/margarine/v8/qkBXXvoE6trLT9Y7YLye5JRLkAXbMQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Margarine${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13582,11 +11947,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/markazitext/v10/sykh-ydym6AtQaiEtX7yhqb_rV1k_81ZVYYZtROXT4MlBekmJLo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MarkaziText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13605,11 +11967,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/markoone/v9/9Btq3DFG0cnVM5lw1haaKpUfrHPzUw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MarkoOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13628,11 +11987,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/marmelad/v9/Qw3eZQdSHj_jK2e-8tFLG-YMC0R8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Marmelad${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13657,11 +12013,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/martel/v4/PN_yRfK9oXHga0XV5e8ahRbX9vnDzw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Martel${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13686,11 +12039,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/martelsans/v6/h0GxssGi7VdzDgKjM-4d8hBb4MuHFUknqMxQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MartelSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13712,11 +12062,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/marvel/v9/nwpQtKeoNgBV0qa4k2x8Al-i5QwyYdrc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Marvel${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13736,11 +12083,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/mate/v8/m8JTjftRd7WZ6z-2XqfXeLVdbw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mate${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13759,11 +12103,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/matesc/v8/-nF8OGQ1-uoVr2wKyiXZ95OkJwA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MateSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13785,11 +12126,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/mavenpro/v13/7Au4p_AqnyWWAxW2Wk3OTkMtOHMC21go8A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MavenPro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13808,11 +12146,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mclaren/v7/2EbnL-ZuAXFqZFXISYYf8z2Yt_c.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'McLaren${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13831,11 +12166,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/meddon/v12/kmK8ZqA2EgDNeHTZhBdB3y_Aow.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Meddon${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13854,11 +12186,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/medievalsharp/v12/EvOJzAlL3oU5AQl2mP5KdgptAq96MwvXLDk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MedievalSharp${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13877,11 +12206,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/medulaone/v9/YA9Wr0qb5kjJM6l2V0yukiEqs7GtlvY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MedulaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13900,11 +12226,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/meerainimai/v4/845fNMM5EIqOW5MPuvO3ILep_2jDVevnLQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MeeraInimai${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13923,11 +12246,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/megrim/v10/46kulbz5WjvLqJZlbWXgd0RY1g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Megrim${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13946,11 +12266,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/meiescript/v7/_LOImzDK7erRjhunIspaMjxn5IXg0WDz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MeieScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13970,11 +12287,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/merienda/v8/gNMAW3x8Qoy5_mf8uWu-Fa-y1sfpPES4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Merienda${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -13993,11 +12307,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/meriendaone/v10/H4cgBXaMndbflEq6kyZ1ht6YgoyyYzFzFw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MeriendaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14023,11 +12334,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/merriweather/v21/u-4l0qyriQwlOrhSvowK_l5-eR7NWMf_hP3hPGWH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Merriweather${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14053,11 +12361,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/merriweathersans/v11/2-c29IRs1JiJN1FRAMjTN5zd9vgsFHXwepDF0hN0yZqYcqw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MerriweatherSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14076,11 +12381,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/metal/v12/lW-wwjUJIXTo7i3nnoQAUdN2.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Metal${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14099,11 +12401,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/metalmania/v9/RWmMoKWb4e8kqMfBUdPFJeXCg6UKDXlq.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MetalMania${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14122,11 +12421,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/metamorphous/v10/Wnz8HA03aAXcC39ZEX5y1330PCCthTsmaQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Metamorphous${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14145,11 +12441,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/metrophobic/v13/sJoA3LZUhMSAPV_u0qwiAT-J737FPEEL.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Metrophobic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14168,11 +12461,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/michroma/v10/PN_zRfy9qWD8fEagAMg6rzjb_-Da.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Michroma${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14191,11 +12481,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/milonga/v7/SZc53FHnIaK9W5kffz3GkUrS8DI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Milonga${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14214,11 +12501,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/miltonian/v13/zOL-4pbPn6Ne9JqTg9mr6e5As-FeiQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Miltonian${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14237,11 +12521,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/miltoniantattoo/v15/EvOUzBRL0o0kCxF-lcMCQxlpVsA_FwP8MDBku-s.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MiltonianTattoo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14261,11 +12542,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/mina/v3/-nF8OGc18vARl4NMyiXZ95OkJwA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mina${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14284,11 +12562,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/miniver/v8/eLGcP-PxIg-5H0vC770Cy8r8fWA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Miniver${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14308,11 +12583,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/miriamlibre/v6/DdT-798HsHwubBAqfkcBTL_X3LbbRcC7_-Z7Hg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MiriamLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14334,11 +12606,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/mirza/v7/co3FmWlikiN5EtJhB-O4mafBomDi.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mirza${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14357,11 +12626,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/missfajardose/v9/E21-_dn5gvrawDdPFVl-N0Ajb8qvWPaJq4no.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MissFajardose${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14385,11 +12651,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/mitr/v5/pxiEypw5ucZF8YcdFJDUc1NECPY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mitr${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14408,11 +12671,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/modak/v5/EJRYQgs1XtIEsnMH8BVZ76KU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Modak${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14431,11 +12691,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/modernantiqua/v9/NGStv5TIAUg6Iq_RLNo_2dp1sI1Ea2u0c3Gi.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ModernAntiqua${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14454,11 +12711,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mogra/v6/f0X40eSs8c95TBo4DvLmxtnG.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mogra${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14477,11 +12731,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/molengo/v10/I_uuMpWeuBzZNBtQbbRQkiCvs5Y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Molengo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14500,11 +12751,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/molle/v8/E21n_dL5hOXFhWEsXzgmVydREus.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Molle${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14524,11 +12772,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/monda/v9/TK3gWkYFABsmjsLaGz8Dl-tPKo2t.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Monda${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14547,11 +12792,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/monofett/v9/mFTyWbofw6zc9NtnW43SuRwr0VJ7.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Monofett${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14570,11 +12812,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/monoton/v9/5h1aiZUrOngCibe4fkbBQ2S7FU8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Monoton${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14593,11 +12832,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/monsieurladoulaise/v8/_Xmz-GY4rjmCbQfc-aPRaa4pqV340p7EZl5ewkEU4HTy.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MonsieurLaDoulaise${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14616,11 +12852,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/montaga/v7/H4cnBX2Ml8rCkEO_0gYQ7LO5mqc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Montaga${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14639,11 +12872,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/montez/v10/845ZNMk5GoGIX8lm1LDeSd-R_g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Montez${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14679,11 +12909,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/montserrat/v14/JTUPjIg1_i6t8kCHKm459WxZSgnD-_xxrCq7qg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Montserrat${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14719,11 +12946,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/montserratalternates/v11/mFTkWacfw6zH4dthXcyms1lPpC8I_b0juU057p9RB7xD-GVxk3Nd.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MontserratAlternates${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14743,11 +12967,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/montserratsubrayada/v9/U9MM6c-o9H7PgjlTHThBnNHGVUORwteQQHe3TcMWg3j36Ebz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MontserratSubrayada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14766,11 +12987,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/moul/v11/nuF2D__FSo_3E-RYiJCy-00.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Moul${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14789,11 +13007,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/moulpali/v12/H4ckBXKMl9HagUWymyY6wr-wg763.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Moulpali${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14813,11 +13028,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/mountainsofchristmas/v12/3y9z6a4zcCnn5X0FDyrKi2ZRUBIy8uxoUo7eBGqJFPtCOp6IaEA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MountainsofChristmas${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14836,11 +13048,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mousememoirs/v7/t5tmIRoSNJ-PH0WNNgDYxdSb7TnFrpOHYh4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MouseMemoirs${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14859,11 +13068,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mrbedfort/v8/MQpR-WCtNZSWAdTMwBicliq0XZe_Iy8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MrBedfort${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14882,11 +13088,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mrdafoe/v8/lJwE-pIzkS5NXuMMrGiqg7MCxz_C.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MrDafoe${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14905,11 +13108,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mrdehaviland/v8/OpNVnooIhJj96FdB73296ksbOj3C4ULVNTlB.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MrDeHaviland${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14928,11 +13128,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mrssaintdelafield/v7/v6-IGZDIOVXH9xtmTZfRagunqBw5WC62cK4tLsubB2w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MrsSaintDelafield${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14951,11 +13148,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mrssheppards/v8/PN_2Rfm9snC0XUGoEZhb91ig3vjxynMix4Y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MrsSheppards${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -14980,11 +13174,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/mukta/v7/iJWHBXyXfDDVXbFmi1ma-2HW7ZB_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Mukta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15009,11 +13200,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/muktamahee/v5/XRXN3IOIi0hcP8iVU67hA9NtdxoHJndqZCsW.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MuktaMahee${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15038,11 +13226,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/muktamalar/v6/MCoKzAXyz8LOE2FpJMxZqINYAdAB62ruoAZW.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MuktaMalar${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15067,11 +13252,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/muktavaani/v7/3JnkSD_-ynaxmxnEfVHPIGWlUMBD-u97MW1a.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MuktaVaani${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15103,11 +13285,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/muli/v16/7Au9p_0qiz-afTf-rCX2ym4JMFge0g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Muli${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15126,11 +13305,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/mysteryquest/v7/-nF6OG414u0E6k0wynSGlujRHwElD_9Qz9E.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'MysteryQuest${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15149,11 +13325,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ntr/v7/RLpzK5Xy0ZjiGGhs5TA4bg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NTR${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15172,11 +13345,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/nanumbrushscript/v17/wXK2E2wfpokopxzthSqPbcR5_gVaxazyjqBr1lO97Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NanumBrushScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15197,11 +13367,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/nanumgothic/v17/PN_oRfi-oW3hYwmKDpxS7F_LXv77zlEn14YEUQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NanumGothic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15221,11 +13388,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/nanumgothiccoding/v14/8QIYdjzHisX_8vv59_xMxtPFW4IXROws8xgecsV88t5V9r4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NanumGothicCoding${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15246,11 +13410,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/nanummyeongjo/v15/9Bty3DZF0dXLMZlywRbVRNhxy2pLVFA0pfCs5Kos.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NanumMyeongjo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15269,11 +13430,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/nanumpenscript/v15/daaDSSYiLGqEal3MvdA_FOL_3FkN2z7-aMFCcTU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NanumPenScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15292,11 +13450,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/neucha/v11/q5uGsou0JOdh94bvugNsCxVEgA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Neucha${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15320,11 +13475,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/neuton/v12/UMBQrPtMoH62xUZKaK4fegD5Drog6Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Neuton${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15343,11 +13495,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/newrocker/v8/MwQzbhjp3-HImzcCU_cJkGMViblPtXs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NewRocker${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15367,11 +13516,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/newscycle/v16/CSR54z1Qlv-GDxkbKVQ_dFsvaNNUuOwkC2s.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NewsCycle${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15390,11 +13536,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/niconne/v9/w8gaH2QvRug1_rTfrQut2F4OuOo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Niconne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15424,11 +13567,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/niramit/v4/I_upMpWdvgLdNxVLXbZiKi2Oq73EZZ_f6w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Niramit${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15447,11 +13587,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/nixieone/v10/lW-8wjkKLXjg5y2o2uUoUOFzpS-yLw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NixieOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15475,11 +13612,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/nobile/v11/m8JWjflSeaOVl1iGXJVvdZRFRG-K3Mud.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Nobile${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15499,11 +13633,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/nokora/v13/hYkLPuwgTubzaWxohxUrqt18-B9Uuw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Nokora${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15522,11 +13653,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/norican/v8/MwQ2bhXp1eSBqjkPGJJRtGs-lbA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Norican${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15545,11 +13673,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/nosifer/v8/ZGjXol5JTp0g5bxZaC1RVDNdGDs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Nosifer${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15568,11 +13693,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/notable/v4/gNMEW3N_SIqx-WX9-HMoFIez5MI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Notable${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15591,11 +13713,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/nothingyoucoulddo/v9/oY1B8fbBpaP5OX3DtrRYf_Q2BPB1SnfZb0OJl1ol2Ymo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NothingYouCouldDo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15617,11 +13736,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/noticiatext/v9/VuJrdNDF2Yv9qppOePKYRP12YwPhumvVjjTkeMnz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NoticiaText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15643,11 +13759,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/notosans/v9/o-0TIpQlx3QUlC5A4PNr4Az5ZtyEx2xqPaif.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15671,11 +13784,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notosanshk/v5/nKKP-GM_FYFRJvXzVXaAPe9ZsF1THMX6MKliqQ.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSansHK${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15699,11 +13809,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notosansjp/v24/-F6pfjtqLzI2JPCgQBnw7HFQQi8q1H1hj-sNFQ.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSansJP${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15727,11 +13834,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notosanskr/v12/Pby7FmXiEBPT4ITbgNA5CgmOUlnI7rgQsWYrzw.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSansKR${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15755,11 +13859,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notosanssc/v9/k3kIo84MPvpLmixcA63oeALZraWt9yX6-q2CGg.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSansSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15783,11 +13884,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notosanstc/v9/-nFkOG829Oofr2wohFbTp9i9uwYvDd1V39Hr7g.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSansTC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15809,11 +13907,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/notoserif/v8/ga6Vaw1J5X9T9RW6j9bNfFIu0RWedO9NOoYIDg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSerif${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15838,11 +13933,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notoserifjp/v7/xn77YHs72GKoTvER4Gn3b5eMZFqJRkgfU8fEwb0.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSerifJP${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15867,11 +13959,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notoserifkr/v6/3JnmSDn90Gmq2mr3blnHaTZXTmRE8O1ZNH1ahck.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSerifKR${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15896,11 +13985,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notoserifsc/v6/H4c8BXePl9DZ0Xe7gG9cyOj7miKxSzZBEtERe7U.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSerifSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15925,11 +14011,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/notoseriftc/v6/XLY9IZb5bJNDGYxLBibeHZ0BvvMpbX9GTsoOAX4.otf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NotoSerifTC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15948,11 +14031,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novacut/v11/KFOkCnSYu8mL-39LkWxPKTM1K9nz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaCut${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15971,11 +14051,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novaflat/v11/QdVUSTc-JgqpytEbVebEuStkm20oJA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaFlat${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -15994,11 +14071,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novamono/v10/Cn-0JtiGWQ5Ajb--MRKfYGxYrdM9Sg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16017,11 +14091,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novaoval/v11/jAnEgHdmANHvPenMaswCMY-h3cWkWg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaOval${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16040,11 +14111,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novaround/v11/flU9Rqquw5UhEnlwTJYTYYfeeetYEBc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaRound${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16063,11 +14131,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novascript/v12/7Au7p_IpkSWSTWaFWkumvmQNEl0O0kEx.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16086,11 +14151,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novaslim/v11/Z9XUDmZNQAuem8jyZcn-yMOInrib9Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaSlim${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16109,11 +14171,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/novasquare/v12/RrQUbo9-9DV7b06QHgSWsZhARYMgGtWA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NovaSquare${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16132,11 +14191,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/numans/v9/SlGRmQmGupYAfH8IYRggiHVqaQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Numans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16168,11 +14224,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/nunito/v11/XRXQ3I6Li01BKofIMN4AYevNWz4PDWtj.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Nunito${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16204,11 +14257,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/nunitosans/v5/pe01MImSLYBIv1o4X1M8cce4G1ptU1QCU5l-06Y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'NunitoSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16227,11 +14277,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/odormeanchey/v11/raxkHiKDttkTe1aOGcJMR1A_4mrY2zqUKafv.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OdorMeanChey${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16250,11 +14297,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/offside/v7/HI_KiYMWKa9QrAykQ5HiRp-dhpQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Offside${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16275,11 +14319,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/oldstandardtt/v12/MwQrbh3o1vLImiwAVvYawgcf2eVWEX-dTFxeb80flQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OldStandardTT${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16298,11 +14339,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/oldenburg/v7/fC1jPY5JYWzbywv7c4V6UU6oXyndrw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Oldenburg${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16322,11 +14360,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/oleoscript/v8/raxkHieDvtMOe0iICsUccCDmnmrY2zqUKafv.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OleoScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16346,11 +14381,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/oleoscriptswashcaps/v7/Noag6Vb-w5SFbTTAsZP_7JkCS08K-jCzDn_HCcaBbYUsn9T5dt0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OleoScriptSwashCaps${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16378,11 +14410,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKW-U-hsKKKTjrPW.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OpenSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16403,11 +14432,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmPuLGRpWRyAs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OpenSansCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16426,11 +14452,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/oranienbaum/v8/OZpHg_txtzZKMuXLIVrx-3zn7kz3dpHc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Oranienbaum${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16452,11 +14475,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/orbitron/v11/yMJWMIlzdpvBhQQL_QI4UAhxoNFxW0Hz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Orbitron${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16476,11 +14496,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/oregano/v7/If2KXTPxciS3H4S2oZXVOxvLzyP_qw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Oregano${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16499,11 +14516,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/orienta/v7/PlI9FlK4Jrl5Y9zNeyeo9HRFhcU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Orienta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16522,11 +14536,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/originalsurfer/v8/RWmQoKGZ9vIirYntXJ3_MbekzNMiDEtvAlaMKw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OriginalSurfer${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16550,11 +14561,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/oswald/v29/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUFoZAaRliE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Oswald${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16573,11 +14581,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/overtherainbow/v10/11haGoXG1k_HKhMLUWz7Mc7vvW5upvOm9NA2XG0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OvertheRainbow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16601,11 +14606,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/overlock/v9/Z9XQDmdMWRiN1_T9Z7Tc0G2Ltrmp8CLTlNs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Overlock${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16624,11 +14626,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/overlocksc/v8/1cX3aUHKGZrstGAY8nwVzHGAq8Sk1PoH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OverlockSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16662,11 +14661,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/overpass/v4/qFdC35WCmI96Ajtm81Gga1rN4h8ij1I7LLE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Overpass${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16688,11 +14684,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/overpassmono/v5/_Xm3-H86tzKDdAPa-KPQZ-AC3pSRk_edB3Zf8EQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OverpassMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16711,11 +14704,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ovo/v11/yYLl0h7Wyfzjy4Q5_3WVxA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ovo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16736,11 +14726,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/oxygen/v9/2sDcZG1Wl4LcnbuCNWgDb2-4C7wFZQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Oxygen${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16759,11 +14746,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/oxygenmono/v7/h0GsssGg9FxgDgCjLeAd7ijfze-PPlUu.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'OxygenMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16782,11 +14766,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ptmono/v7/9oRONYoBnWILk-9ArCg5MtPyAcg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PTMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16808,11 +14789,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ptsans/v11/jizdRExUiTo99u79D0e8fOytKB8c8zMrig.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PTSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16832,11 +14810,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/ptsanscaption/v12/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrUSwWuz38Tgg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PTSansCaption${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16856,11 +14831,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/ptsansnarrow/v11/BngSUXNadjH0qYEzV7ab-oWlsbg95DiCUfzgRd-3.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PTSansNarrow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16882,11 +14854,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ptserif/v11/EJRQQgYoZZY2vCFuvAFT9gaQVy7VocNB6Iw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PTSerif${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16906,11 +14875,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/ptserifcaption/v11/ieVj2ZhbGCW-JoW6S34pSDpqYKU019e7CAk8YvJEeg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PTSerifCaption${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16929,11 +14895,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ96A4sijpFu_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Pacifico${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16953,11 +14916,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/padauk/v6/RrQSboJg-id7Onb512DE1JJEZ4YwGg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Padauk${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -16982,11 +14942,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/palanquin/v5/9XUilJ90n1fBFg7ceXwUyn5oxJuqbi3ezg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Palanquin${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17008,11 +14965,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/palanquindark/v6/xn76YHgl1nqmANMB-26xC7yuF8YyY241fcvN2KT4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PalanquinDark${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17031,11 +14985,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pangolin/v5/cY9GfjGcW0FPpi-tWPfK5d3aiLBG.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Pangolin${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17054,11 +15005,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/paprika/v7/8QIJdijZitv49rDfuIgOq7jkAOw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Paprika${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17077,11 +15025,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/parisienne/v7/E21i_d3kivvAkxhLEVZpcy96DuKuavM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Parisienne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17100,11 +15045,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/passeroone/v11/JTUTjIko8DOq5FeaeEAjgE5B5Arr-s50.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PasseroOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17125,11 +15067,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/passionone/v10/Pby6FmL8HhTPqbjUzux3JEMS0X7owpYcuH8y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PassionOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17148,11 +15087,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pathwaygothicone/v8/MwQrbgD32-KAvjkYGNUUxAtW7pEBwx-dTFxeb80flQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PathwayGothicOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17171,11 +15107,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/patrickhand/v13/LDI1apSQOAYtSuYWp8ZhfYeMWcjKm7sp8g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PatrickHand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17194,11 +15127,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/patrickhandsc/v7/0nkwC9f7MfsBiWcLtY65AWDK873ViSi6JQc7Vg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PatrickHandSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17217,11 +15147,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pattaya/v5/ea8ZadcqV_zkHY-XNdCn92ZEmVs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Pattaya${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17240,11 +15167,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/patuaone/v10/ZXuke1cDvLCKLDcimxBI5PNvNA9LuA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PatuaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17263,11 +15187,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pavanam/v4/BXRrvF_aiezLh0xPDOtQ9Wf0QcE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Pavanam${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17286,11 +15207,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/paytoneone/v12/0nksC9P7MfYHj2oFtYm2CiTqivr9iBq_.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PaytoneOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17309,11 +15227,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/peddana/v7/aFTU7PBhaX89UcKWhh2aBYyMcKw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Peddana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17332,11 +15247,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/peralta/v7/hYkJPu0-RP_9d3kRGxAhrv956B8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Peralta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17355,11 +15267,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004HaqIfrT5nlk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PermanentMarker${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17378,11 +15287,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/petitformalscript/v7/B50TF6xQr2TXJBnGOFME6u5OR83oRP5qoHnqP4gZSiE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PetitFormalScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17401,11 +15307,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/petrona/v8/mtG64_NXL7bZo9XXsXVStGsRwCU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Petrona${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17427,11 +15330,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/philosopher/v11/vEFK2_5QCwIS4_Dhez5jcWBrd_QZ8tK1W77HtMo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Philosopher${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17450,11 +15350,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/piedra/v8/ke8kOg8aN0Bn7hTunEyHN_M3gA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Piedra${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17473,11 +15370,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pinyonscript/v9/6xKpdSJbL9-e9LuoeQiDRQR8aOLQO4bhiDY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PinyonScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17496,11 +15390,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pirataone/v8/I_urMpiDvgLdLh0fAtoftiiEr5_BdZ8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PirataOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17519,11 +15410,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/plaster/v11/DdTm79QatW80eRh4Ei5JOtLOeLI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Plaster${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17543,11 +15431,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/play/v11/6ae84K2oVqwItm4TOpc423nTJTM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Play${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17566,11 +15451,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/playball/v9/TK3gWksYAxQ7jbsKcj8Dl-tPKo2t.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Playball${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17594,11 +15476,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/playfairdisplay/v15/nuFnD-vYSZviVYUb_rj3ij__anPXDTngAW4e4z5nNKaV_w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PlayfairDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17622,11 +15501,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/playfairdisplaysc/v9/ke82OhoaMkR6-hSn7kbHVoFf7ZfgMPr_lbw0kcwXK6ARIyH5IA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PlayfairDisplaySC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17649,11 +15525,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/podkova/v15/K2FufZ1EmftJSV9VQpXb1lo9vC3nZWvFysU4EoporSHH.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Podkova${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17672,11 +15545,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/poiretone/v8/UqyVK80NJXN4zfRgbdfbk5lWVscxdKE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PoiretOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17695,11 +15565,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pollerone/v9/ahccv82n0TN3gia5E4Bud-lbgUS5u0s.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PollerOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17719,11 +15586,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/poly/v10/MQpV-W6wKNitdLKKr0DsviuGWA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Poly${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17742,11 +15606,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pompiere/v9/VEMyRoxis5Dwuyeov6Wt5jDtreOL.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Pompiere${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17765,11 +15626,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pontanosans/v7/qFdD35GdgYR8EzR6oBLDHa3qwjUMg1siNQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PontanoSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17788,11 +15646,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/poorstory/v8/jizfREFUsnUct9P6cDfd4OmnLD0Z4zM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PoorStory${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17828,11 +15683,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/poppins/v9/pxiDyp8kv8JHgFVrJJLm81xlEN2PQEhcqw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Poppins${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17851,11 +15703,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/portlligatsans/v8/kmKmZrYrGBbdN1aV7Vokow6Lw4s4l7N0Tx4xEcQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PortLligatSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17874,11 +15723,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/portlligatslab/v8/LDIpaoiQNgArA8kR7ulhZ8P_NYOss7ob9yGLmfI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PortLligatSlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17898,11 +15744,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/pragatinarrow/v5/vm8sdRf0T0bS1ffgsPB7WZ-mD2ZD5fd_GJMTlo_4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PragatiNarrow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17921,11 +15764,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/prata/v10/6xKhdSpbNNCT-vWIAG_5LWwJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Prata${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17944,11 +15784,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/preahvihear/v11/6NUS8F-dNQeEYhzj7uluxswE49FJf8Wv.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Preahvihear${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17967,11 +15804,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/pressstart2p/v8/e3t4euO8T-267oIAQAu6jDQyK0nSgPJE4580.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PressStart2P${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -17995,11 +15829,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/pridi/v5/2sDdZG5JnZLfkc0mjE0jRUG0AqUc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Pridi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18018,11 +15849,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/princesssofia/v8/qWczB6yguIb8DZ_GXZst16n7GRz7mDUoupoI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PrincessSofia${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18041,11 +15869,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/prociono/v9/r05YGLlR-KxAf9GGO8upyDYtStiJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Prociono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18081,11 +15906,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/prompt/v4/-W_6XJnvUD7dzB2KZeKcaWMrUZEtdzow.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Prompt${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18104,11 +15926,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/prostoone/v8/OpNJno4VhNfK-RgpwWWxpipfWhXD00c.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ProstoOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18136,11 +15955,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/prozalibre/v4/LYjZdGHgj0k1DIQRyUEyyEotTH_ZeJSY8z6Np1k.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ProzaLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18162,11 +15978,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/puritan/v11/845fNMgkAJ2VTtIoxJjC_dup_2jDVevnLQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Puritan${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18185,11 +15998,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/purplepurse/v8/qWctB66gv53iAp-Vfs4My6qyeBb_ujA4ug.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'PurplePurse${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18208,11 +16018,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/quando/v8/xMQVuFNaVa6YuW0pC6WzKX_QmA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Quando${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18234,11 +16041,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/quantico/v9/rax7HiSdp9cPL3KIF7xuHIRfu0ry9TadML4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Quantico${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18258,11 +16062,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/quattrocento/v11/OZpbg_xvsDZQL_LKIF7q4jP_eE3fd6PZsXcM9w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Quattrocento${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18284,11 +16085,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/quattrocentosans/v12/va9X4lja2NVIDdIAAoMR5MfuElaRB0zMj_bTPXnijLsJV7E.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'QuattrocentoSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18307,11 +16105,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/questrial/v9/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Questrial${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18334,11 +16129,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/quicksand/v19/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkBgv18G0wx40QDw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Quicksand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18357,11 +16149,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/quintessential/v7/fdNn9sOGq31Yjnh3qWU14DdtjY5wS7kmAyxM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Quintessential${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18380,11 +16169,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/qwigley/v9/1cXzaU3UGJb5tGoCuVxsi1mBmcE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Qwigley${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18403,11 +16189,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/racingsansone/v7/sykr-yRtm7EvTrXNxkv5jfKKyDCwL3rmWpIBtA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RacingSansOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18427,11 +16210,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/radley/v14/LYjBdGzinEIjCN1NogNAh14nVcfe.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Radley${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18454,11 +16234,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/rajdhani/v9/LDI2apCSOBg7S-QT7pa8FsOsc-bGkqIw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rajdhani${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18477,11 +16254,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rakkas/v7/Qw3cZQlNHiblL3j_lttPOeMcCw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rakkas${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18517,11 +16291,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwzqZPBdqazVoK4A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Raleway${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18540,11 +16311,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ralewaydots/v7/6NUR8FifJg6AfQvzpshgwJ8kyf9Fdty2ew.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RalewayDots${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18563,11 +16331,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ramabhadra/v9/EYq2maBOwqRW9P1SQ83LehNGX5uWw3o.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ramabhadra${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18586,11 +16351,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ramaraja/v4/SlGTmQearpYAYG1CABIkqnB6aSQU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ramaraja${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18612,11 +16374,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/rambla/v7/snfus0ip98hx6mrEIYC2O_l86p6TYS-Y.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rambla${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18635,11 +16394,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rammettoone/v8/LhWiMV3HOfMbMetJG3lQDpp9Mvuciu-_SQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RammettoOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18658,11 +16414,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ranchers/v7/zrfm0H3Lx-P2Xvs2AoDYDC79XTHv.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ranchers${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18681,11 +16434,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rancho/v10/46kulbzmXjLaqZRlbWXgd0RY1g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rancho${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18705,11 +16455,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/ranga/v5/C8cg4cYisGb28qY-AxgR6X2NZAn2.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ranga${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18732,11 +16479,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/rasa/v5/xn7gYHIn1mWmdh5xsgC7S9XdZN8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rasa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18755,11 +16499,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rationale/v11/9XUnlJ92n0_JFxHIfHcsdlFMzLC2Zw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rationale${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18778,11 +16519,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/raviprakash/v6/gokpH6fsDkVrF9Bv9X8SOAKHmNZEq6TTFw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RaviPrakash${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18808,11 +16546,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/redhatdisplay/v3/8vIX7wUr0m80wwYf0QCXZzYzUoTg-AYgaqrFIkJQb7zU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RedHatDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18836,11 +16571,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/redhattext/v2/RrQKbohi_ic6B3yVSzGBrMxQbZ-UHu2BF1yELmgy.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RedHatText${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18859,11 +16591,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/redressed/v10/x3dickHUbrmJ7wMy9MsBfPACvy_1BA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Redressed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18882,11 +16611,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/reemkufi/v7/2sDcZGJLip7W2J7v7wQDb2-4C7wFZQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ReemKufi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18905,11 +16631,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/reeniebeanie/v10/z7NSdR76eDkaJKZJFkkjuvWxbP2_qoOgf_w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ReenieBeanie${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18928,11 +16651,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/revalia/v7/WwkexPimBE2-4ZPEeVruNIgJSNM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Revalia${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18951,11 +16671,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rhodiumlibre/v4/1q2AY5adA0tn_ukeHcQHqpx6pETLeo2gm2U.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RhodiumLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18974,11 +16691,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ribeye/v8/L0x8DFMxk1MP9R3RvPCmRSlUig.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ribeye${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -18997,11 +16711,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ribeyemarrow/v9/GFDsWApshnqMRO2JdtRZ2d0vEAwTVWgKdtw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RibeyeMarrow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19020,11 +16731,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9mj3uEicG01A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Righteous${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19043,11 +16751,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/risque/v7/VdGfAZUfHosahXxoCUYVBJ-T5g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Risque${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19077,11 +16782,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBBc9AMX6lJBP.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Roboto${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19105,11 +16807,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/robotocondensed/v18/ieVg2ZhZI2eCN5jzbjEETS9weq8-19eDtCYYatlYcyRi4A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RobotoCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19137,11 +16836,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/robotomono/v7/L0xmDF4xlVMF-BfR8bXMIjhOk8azf7qpB1U-Drg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RobotoMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19163,11 +16859,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/robotoslab/v9/BngRUXZYTXPIvIBgJJSb6u92w4CByxyKeuDp.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RobotoSlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19186,11 +16879,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rochester/v10/6ae-4KCqVa4Zy6Fif-Uy31vWNTMwoQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rochester${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19209,11 +16899,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rocksalt/v10/MwQ0bhv11fWD6QsAVOZbsEk7hbBWrA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RockSalt${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19240,11 +16927,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/rokkitt/v14/qFdB35qfgYFjGy5hmMWlU97gxhcJk1s.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rokkitt${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19263,11 +16947,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/romanesco/v8/w8gYH2ozQOY7_r_J7mSn3HwLqOqSBg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Romanesco${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19287,11 +16968,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/ropasans/v9/EYq3maNOzLlWtsZSScy6WDNscZef2mNE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RopaSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19319,11 +16997,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/rosario/v16/xfug0WDhWW_fOEoY2Fbnww42bCJhNLrQSmh3feIFPiUDn08.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rosario${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19343,11 +17018,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/rosarivo/v7/PlI4Fl2lO6N9f8HaNDeA0Hxumcy5ZX8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rosarivo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19366,11 +17038,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rougescript/v8/LYjFdGbiklMoCIQOw1Ep3S4PVPXbUJWq9g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RougeScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19389,11 +17058,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rozhaone/v7/AlZy_zVFtYP12Zncg2khdXf4XB0Tow.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RozhaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19421,11 +17087,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/rubik/v9/iJWBBXyIfDnIV7nElf2d8WX06IB_18o.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rubik${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19444,11 +17107,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rubikmonoone/v8/UqyJK8kPP3hjw6ANTdfRk9YSN-8wRqQrc_j9.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RubikMonoOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19469,11 +17129,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/ruda/v11/k3kQo8YQJOpFovs6Td7iL0nAMaM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ruda${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19493,11 +17150,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/rufina/v7/Yq6W-LyURyLy-aKKHztAvMxenxE0SA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rufina${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19516,11 +17170,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rugeboogie/v10/JIA3UVFwbHRF_GIWSMhKNROiPzUveSxy.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RugeBoogie${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19539,11 +17190,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ruluko/v7/xMQVuFNZVaODtm0pC6WzKX_QmA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ruluko${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19562,11 +17210,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rumraisin/v7/nwpRtKu3Ih8D5avB4h2uJ3-IywA7eMM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RumRaisin${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19585,11 +17230,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ruslandisplay/v10/Gw6jwczl81XcIZuckK_e3UpfdzxrldyFvm1n.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RuslanDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19608,11 +17250,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsH-yMOInrib9Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'RussoOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19631,11 +17270,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ruthie/v10/gokvH63sGkdqXuU9lD53Q2u_mQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ruthie${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19654,11 +17290,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/rye/v7/r05XGLJT86YDFpTsXOqx4w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Rye${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19677,11 +17310,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sacramento/v7/buEzpo6gcdjy0EiZMBUG0CoV_NxLeiw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sacramento${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19701,11 +17331,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/sahitya/v4/6qLFKZkOuhnuqlJAUZsqGyQvEnvSexI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sahitya${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19724,11 +17351,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sail/v10/DPEjYwiBxwYJFBTDADYAbvw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sail${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19755,11 +17379,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/saira/v4/mem9Ya2wxmKQyNGkarYVeLkWVNBt.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Saira${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19786,11 +17407,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/sairacondensed/v5/EJRLQgErUN8XuHNEtX81i9TmEkrnIcxg8Keepi2lHw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SairaCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19817,11 +17435,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/sairaextracondensed/v5/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTra2_R3ABgum-uoQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SairaExtraCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19848,11 +17463,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/sairasemicondensed/v5/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXePT8MWg3j36Ebz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SairaSemiCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19871,11 +17483,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sairastencilone/v1/SLXSc03I6HkvZGJ1GvvipLoYSTEL9AsMawif2YQ2.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SairaStencilOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19894,11 +17503,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/salsa/v9/gNMKW3FiRpKj-imY8ncKEZez.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Salsa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19918,11 +17524,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/sanchez/v7/Ycm0sZJORluHnXbIfmxR-D4Bxl3gkw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sanchez${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19941,11 +17544,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sancreek/v10/pxiHypAnsdxUm159X7D-XV9NEe-K.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sancreek${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -19971,11 +17571,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/sansita/v4/QldJNTRRphEb_-V7LBuJzX5-xodqz_joDQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sansita${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20009,11 +17606,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/sarabun/v7/DtVkJx26TKEr37c9aBBxOlos7iLSrwFUlw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sarabun${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20033,11 +17627,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/sarala/v4/uK_x4riEZv4o1w9ptjI3OtWYVkMpXA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sarala${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20056,11 +17647,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sarina/v8/-F6wfjF3ITQwasLhLkDUriBQxw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sarina${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20084,11 +17672,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/sarpanch/v5/hES16Xt4NCpRuk6PziUEaa7f1HEuRHkM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sarpanch${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20107,11 +17692,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/satisfy/v10/rP2Hp2yn6lkG50LoOZSCHBeHFl0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Satisfy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20130,11 +17712,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sawarabigothic/v8/x3d4ckfVaqqa-BEj-I9mE65u3k3NBSk3E2YljQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SawarabiGothic${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20153,11 +17732,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sawarabimincho/v10/8QIRdiDaitzr7brc8ahpxt6GcIJTLahP46UDUw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SawarabiMincho${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20179,11 +17755,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/scada/v8/RLp6K5Pv5qumeVJq9Y0lT1PEYfE5p6g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Scada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20203,11 +17776,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/scheherazade/v17/YA9Lr0yF4ETZN60keViq1kQYC7yMjt3V_dB0Yw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Scheherazade${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20226,11 +17796,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/schoolbell/v10/92zQtBZWOrcgoe-fgnJIVxIQ6mRqfiQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Schoolbell${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20249,11 +17816,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/scopeone/v6/WBLnrEXKYFlGHrOKmGD1W0_MJMGxiQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ScopeOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20272,11 +17836,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/seaweedscript/v7/bx6cNx6Tne2pxOATYE8C_Rsoe0WJ-KcGVbLW.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SeaweedScript${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20295,11 +17856,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/secularone/v4/8QINdiTajsj_87rMuMdKypDlMul7LJpK.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SecularOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20318,11 +17876,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sedgwickave/v5/uK_04rKEYuguzAcSYRdWTJq8Xmg1Vcf5JA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SedgwickAve${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20341,11 +17896,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sedgwickavedisplay/v5/xfuu0XPgU3jZPUoUo3ScvmPi-NapQ8OxM2czd-YnOzUD.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SedgwickAveDisplay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20364,11 +17916,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sevillana/v8/KFOlCnWFscmDt1Bfiy1vAx05IsDqlA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sevillana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20387,11 +17936,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/seymourone/v7/4iCp6Khla9xbjQpoWGGd0myIPYBvgpUI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SeymourOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20410,11 +17956,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/shadowsintolight/v9/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQDcsr4xzSMYA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ShadowsIntoLight${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20433,11 +17976,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/shadowsintolighttwo/v7/4iC86LVlZsRSjQhpWGedwyOoW-0A6_kpsyNmlAvNGLNnIF0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ShadowsIntoLightTwo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20456,11 +17996,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/shanti/v11/t5thIREMM4uSDgzgU0ezpKfwzA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Shanti${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20482,11 +18019,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/share/v10/i7dPIFliZjKNF6VPLgK7UEZ2RFq7AwU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Share${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20505,11 +18039,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sharetech/v9/7cHtv4Uyi5K0OeZ7bohUwHoDmTcibrA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ShareTech${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20528,11 +18059,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sharetechmono/v9/J7aHnp1uDWRBEqV98dVQztYldFc7pAsEIc3Xew.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ShareTechMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20551,11 +18079,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/shojumaru/v7/rax_HiWfutkLLnaKCtlMBBJek0vA8A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Shojumaru${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20574,11 +18099,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/shortstack/v9/bMrzmS2X6p0jZC6EcmPFX-SScX8D0nq6.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ShortStack${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20597,11 +18119,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/shrikhand/v5/a8IbNovtLWfR7T7bMJwbBIiQ0zhMtA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Shrikhand${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20620,11 +18139,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/siemreap/v12/Gg82N5oFbgLvHAfNl2YbnA8DLXpe.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Siemreap${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20643,11 +18159,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3dk6Pjp3Di8U0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SigmarOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20669,11 +18182,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/signika/v10/vEFU2_JTCgwQ5ejvE-oDI3BDa0AdytM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Signika${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20695,11 +18205,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/signikanegative/v10/E217_cfngu7HiRpPX3ZpNE4kY5zKak6EipHD6z_iXAs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SignikaNegative${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20721,11 +18228,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/simonetta/v10/x3d5ckHVYrCU5BU15c4xfsKCsA7tLwc7Gn88.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Simonetta${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20744,11 +18248,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/singleday/v1/LYjHdGDjlEgoAcF95EI5jVoFUNfeQJU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SingleDay${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20768,11 +18269,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/sintony/v7/XoHj2YDqR7-98cVUGYgIn9cDkjLp6C8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sintony${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20791,11 +18289,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sirinstencil/v8/mem4YaWwznmLx-lzGfN7MdRydchGBq6al6o.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SirinStencil${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20814,11 +18309,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sixcaps/v10/6ae_4KGrU7VR7bNmabcS9XXaPCop.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SixCaps${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20838,11 +18330,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/skranji/v7/OZpGg_dtriVFNerMW4eBtlzNwED-b4g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Skranji${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20861,11 +18350,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/slabo13px/v7/11hEGp_azEvXZUdSBzzRcKer2wkYnvI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Slabo13px${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20884,11 +18370,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/slabo27px/v6/mFT0WbgBwKPR_Z4hGN2qsxgJ1EJ7i90.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Slabo27px${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20907,11 +18390,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/slackey/v10/N0bV2SdQO-5yM0-dKlRaJdbWgdY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Slackey${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20930,11 +18410,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/smokum/v10/TK3iWkUbAhopmrdGHjUHte5fKg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Smokum${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20953,11 +18430,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/smythe/v10/MwQ3bhT01--coT1BOLh_uGInjA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Smythe${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -20977,11 +18451,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/sniglet/v11/cIf4MaFLtkE3UjaJ_ImHRGEsnIJkWL4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sniglet${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21000,11 +18471,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/snippet/v9/bWt47f7XfQH9Gupu2v_Afcp9QWc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Snippet${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21023,11 +18491,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/snowburstone/v7/MQpS-WezKdujBsXY3B7I-UT7eZ-UPyacPbo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SnowburstOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21046,11 +18511,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sofadione/v8/JIA2UVBxdnVBuElZaMFGcDOIETkmYDU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SofadiOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21069,11 +18531,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sofia/v8/8QIHdirahM3j_vu-sowsrqjk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sofia${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21092,11 +18551,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/songmyung/v8/1cX2aUDWAJH5-EIC7DIhr1GqhcitzeM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SongMyung${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21115,11 +18571,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sonsieone/v8/PbymFmP_EAnPqbKaoc18YVu80lbp8JM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SonsieOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21139,11 +18592,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('italic', 'http://fonts.gstatic.com/s/sortsmillgoudy/v9/Qw3AZR9MED_6PSuS_50nEaVrfzgEbH8EirE-9PGLfQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SortsMillGoudy${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21175,11 +18625,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/sourcecodepro/v11/HI_ViYsKILxRpg3hIP6sJ7fM7PqlONNXs-cv7Gy0DRzS.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SourceCodePro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21209,11 +18656,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/sourcesanspro/v13/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklxdr3cWWxg40.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SourceSansPro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21234,11 +18678,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/sourceserifpro/v7/neIXzD-0qpwxpaWvjeD0X88SAOeasc8bhSugxYUvZrI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SourceSerifPro${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21260,11 +18701,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/spacemono/v5/i7dSIFZifjKcF5UAWdDRYERE_FeaGy6QZ3WfYg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SpaceMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21283,11 +18721,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0nhncESXFtUsM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SpecialElite${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21319,11 +18754,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/spectral/v6/rnCu-xNNww_2s0amA9M8qt3AafOPXHIJErY.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Spectral${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21355,11 +18787,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800italic', 'http://fonts.gstatic.com/s/spectralsc/v5/Ktk2ALCRZonmalTgyPmRfsWg28TRN4O3WYZB_sU.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SpectralSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21378,11 +18807,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/spicyrice/v8/uK_24rSEd-Uqwk4jY1RyGv-2WkowRcc.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SpicyRice${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21401,11 +18827,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/spinnaker/v11/w8gYH2oyX-I0_rvR6Hmn3HwLqOqSBg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Spinnaker${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21424,11 +18847,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/spirax/v8/buE3poKgYNLy0F3cXktt-Csn-Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Spirax${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21447,11 +18867,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/squadaone/v8/BCasqZ8XsOrx4mcOk6MtWaA8WDBkHgs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SquadaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21470,11 +18887,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sreekrushnadevaraya/v7/R70FjzQeifmPepmyQQjQ9kvwMkWYPfTA_EWb2FhQuXir.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SreeKrushnadevaraya${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21493,11 +18907,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sriracha/v4/0nkrC9D4IuYBgWcI9ObYRQDioeb0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sriracha${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21517,11 +18928,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/srisakdi/v3/yMJWMIlvdpDbkB0A-gIAUghxoNFxW0Hz.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Srisakdi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21540,11 +18948,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/staatliches/v3/HI_OiY8KO6hCsQSoAPmtMbectJG9O9PS.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Staatliches${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21563,11 +18968,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/stalemate/v7/taiIGmZ_EJq97-UfkZRpuqSs8ZQpaQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Stalemate${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21586,11 +18988,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/stalinistone/v23/MQpS-WezM9W4Dd7D3B7I-UT7eZ-UPyacPbo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'StalinistOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21610,11 +19009,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/stardosstencil/v10/X7n44bcuGPC8hrvEOHXOgaKCc2TpU3tTvg-t29HSHw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'StardosStencil${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21633,11 +19029,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/stintultracondensed/v8/-W_gXIrsVjjeyEnPC45qD2NoFPtBE0xCh2A-qhUO2cNvdg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'StintUltraCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21656,11 +19049,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/stintultraexpanded/v7/CSRg4yNNh-GbW3o3JkwoDcdvMKMf0oBAd0qoATQkWwam.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'StintUltraExpanded${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21680,11 +19070,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/stoke/v9/z7NadRb7aTMfKONpfihK1YTV.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Stoke${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21703,11 +19090,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/strait/v7/DtViJxy6WaEr1LZzeDhtkl0U7w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Strait${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21726,11 +19110,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/stylish/v8/m8JSjfhPYriQkk7-fo35dLxEdmo.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Stylish${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21749,11 +19130,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sueellenfrancisco/v10/wXK3E20CsoJ9j1DDkjHcQ5ZL8xRaxru9ropF2lqk9H4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SueEllenFrancisco${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21772,11 +19150,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/suezone/v4/taiJGmd_EZ6rqscQgNFJkIqg-I0w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SuezOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21796,11 +19171,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/sumana/v4/4UaArE5TqRBjGj--TDfG54fN6ppsKg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sumana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21821,11 +19193,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/sunflower/v9/RWmPoKeF8fUjqIj7Vc-0-MDiqYsGBGBzCw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sunflower${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21844,11 +19213,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/sunshiney/v10/LDIwapGTLBwsS-wT4vcgE8moUePWkg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sunshiney${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21867,11 +19233,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/supermercadoone/v9/OpNXnpQWg8jc_xps_Gi14kVVEXOn60b3MClBRTs.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SupermercadoOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21891,11 +19254,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/sura/v4/SZc53FL5PbyzLUJ7fz3GkUrS8DI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Sura${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21914,11 +19274,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/suranna/v7/gokuH6ztGkFjWe58tBRZT2KmgP0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Suranna${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21937,11 +19294,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/suravaram/v6/_gP61R_usiY7SCym4xIAi261Qv9roQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Suravaram${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21960,11 +19314,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/suwannaphum/v13/jAnCgHV7GtDvc8jbe8hXXIWl_8C0Wg2V.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Suwannaphum${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -21983,11 +19334,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/swankyandmoomoo/v9/flUlRrKz24IuWVI_WJYTYcqbEsMUZ3kUtbPkR64SYQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'SwankyandMooMoo${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22007,11 +19355,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/syncopate/v11/pe0pMIuPIYBCpEV5eFdKvtKaA_Rue1UwVg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Syncopate${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22036,11 +19381,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l7KmLrZjiLlJ-G0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Tajawal${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22060,11 +19402,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/tangerine/v11/Iurd6Y5j_oScZZow4VO5srNpjJtM6G0t9w.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Tangerine${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22083,11 +19422,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/taprom/v11/UcCn3F82JHycULbFQyk3-0kvHg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Taprom${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22106,11 +19442,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/tauri/v8/TwMA-IISS0AM3IpVWHU_TBqO.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Tauri${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22146,11 +19479,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/taviraj/v5/ahcev8Cj3ylylTXzTOwT0-5RhWa8q0v8ag.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Taviraj${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22173,11 +19503,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/teko/v9/LYjCdG7kmE0gdRhYgCNqqVIuTN4.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Teko${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22196,11 +19523,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/telex/v8/ieVw2Y1fKWmIO9fTB1piKFIf.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Telex${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22219,11 +19543,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/tenaliramakrishna/v6/raxgHj6Yt9gAN3LLKs0BZVMo8jmwn1-8KJXqUFFvtA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TenaliRamakrishna${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22242,11 +19563,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/tenorsans/v11/bx6ANxqUneKx06UkIXISr3JyC22IyqI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TenorSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22265,11 +19583,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/textmeone/v7/i7dOIFdlayuLUvgoFvHQFWZcalayGhyV.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TextMeOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22291,11 +19606,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/thasadith/v3/mtGj4_1TIqPYrd_f5R1osnus3QS2PEpN8zxA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Thasadith${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22314,11 +19626,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/thegirlnextdoor/v10/pe0zMJCIMIsBjFxqYBIcZ6_OI5oFHCYIV7t7w6bE2A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TheGirlNextDoor${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22339,11 +19648,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/tienne/v12/AYCJpX7pe9YCRP0zFG7jQHhuzvef5Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Tienne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22366,11 +19672,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/tillana/v5/VuJ0dNvf35P4qJ1OQAb7HIlMZRNcp0o.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Tillana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22389,11 +19692,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/timmana/v4/6xKvdShfL9yK-rvpCmvbKHwJUOM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Timmana${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22415,11 +19715,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/tinos/v13/buEzpoGnedXvwjX-Rt1s0CoV_NxLeiw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Tinos${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22438,11 +19735,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/titanone/v7/mFTzWbsGxbbS_J5cQcjykzIn2Etikg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TitanOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22471,11 +19765,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffEDBKIx5YrSYqWM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TitilliumWeb${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22494,11 +19785,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/tradewinds/v8/AYCPpXPpYNIIT7h8-QenM3Jq7PKP5Z_G.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TradeWinds${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22534,11 +19822,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/trirong/v5/7r3BqXNgp8wxdOdOn44QWalB4sP7itsB5g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Trirong${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22557,11 +19842,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/trocchi/v8/qWcqB6WkuIDxDZLcDrtUvMeTYD0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Trocchi${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22582,11 +19864,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/trochut/v7/CHymV-fDDlP9bDIw3sinWVokMnIllmA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Trochut${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22605,11 +19884,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/trykker/v8/KtktALyWZJXudUPzhNnoOd2j22U.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Trykker${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22628,11 +19904,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/tulpenone/v9/dFa6ZfeC474skLgesc0CWj0w_HyIRlE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TulpenOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22656,11 +19929,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('800', 'http://fonts.gstatic.com/s/turretroad/v1/pxidypMgpcBFjE84Zv-fE0PlFteLYk1Mq3ap.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'TurretRoad${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22686,11 +19956,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ubuntu/v14/4iCp6KVjbNBYlgoKejZPsmyIPYBvgpUI.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ubuntu${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22709,11 +19976,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ubuntucondensed/v10/u-4k0rCzjgs5J7oXnJcM_0kACGMtf-fVqvHoJXw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'UbuntuCondensed${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22735,11 +19999,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/ubuntumono/v9/KFO8CneDtsqEr0keqCMhbCc_Mn33tYhkf3O1GVg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'UbuntuMono${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22758,11 +20019,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/ultra/v12/zOLy4prXmrtY-tT6yLOD6NxF.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Ultra${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22781,11 +20039,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/uncialantiqua/v7/N0bM2S5WOex4OUbESzoESK-i-PfRS5VBBSSF.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'UncialAntiqua${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22804,11 +20059,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/underdog/v8/CHygV-jCElj7diMroVSiU14GN2Il.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Underdog${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22827,11 +20079,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/unicaone/v7/DPEuYwWHyAYGVTSmalshdtffuEY7FA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'UnicaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22850,11 +20099,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/unifrakturcook/v11/IurA6Yli8YOdcoky-0PTTdkm56n05Uw13ILXs-h6.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'UnifrakturCook${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22873,11 +20119,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/unifrakturmaguntia/v10/WWXPlieVYwiGNomYU-ciRLRvEmK7oaVun2xNNgNa1A.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'UnifrakturMaguntia${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22897,11 +20140,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/unkempt/v11/2EbiL-Z2DFZue0DScTow1zWzq_5uT84.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Unkempt${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22920,11 +20160,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/unlock/v9/7Au-p_8ykD-cDl7GKAjSwkUVOQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Unlock${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22946,11 +20183,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/unna/v13/AYCJpXzofN0NOpozLGzjQHhuzvef5Q.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Unna${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22969,11 +20203,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/vt323/v11/pxiKyp0ihIEF2hsYHpT2dkNE.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'VT323${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -22992,11 +20223,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/vampiroone/v10/gokqH6DoDl5yXvJytFsdLkqnsvhIor3K.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'VampiroOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23015,11 +20243,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/varela/v10/DPEtYwqExx0AWHXJBBQFfvzDsQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Varela${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23038,11 +20263,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIvoMGOD9gxZw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'VarelaRound${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23061,11 +20283,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/vastshadow/v9/pe0qMImKOZ1V62ZwbVY9dfe6Kdpickwp.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'VastShadow${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23087,11 +20306,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/vesperlibre/v11/bx6dNxyWnf-uxPdXDHUD_RdAi2Kp0okKXKvPlw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'VesperLibre${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23110,11 +20326,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/vibes/v1/QdVYSTsmIB6tmbd3HpbsuBlh.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Vibes${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23133,11 +20346,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/vibur/v10/DPEiYwmEzw0QRjTpLjoJd-Xa.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Vibur${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23156,11 +20366,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/vidaloka/v12/7cHrv4c3ipenMKlEass8yn4hnCci.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Vidaloka${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23179,11 +20386,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/viga/v8/xMQbuFFdSaiX_QIjD4e2OX8.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Viga${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23202,11 +20406,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/voces/v9/-F6_fjJyLyU8d4PBBG7YpzlJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Voces${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23228,11 +20429,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/volkhov/v11/SlGXmQieoJcKemNecTA8PHFSaBYRagrQrA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Volkhov${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23258,11 +20456,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900italic', 'http://fonts.gstatic.com/s/vollkorn/v10/0yb4GDoxxrvAnPhYGxksUMw5jBAe-T_34DM.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Vollkorn${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23284,11 +20479,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/vollkornsc/v3/j8_y6-zQ3rXpceZj9cqnVin9GVuqYbPN5Yjn.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'VollkornSC${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23307,11 +20499,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/voltaire/v9/1Pttg8PcRfSblAvGvQooYKVnBOif.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Voltaire${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23330,11 +20519,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/waitingforthesunrise/v10/WBL1rFvOYl9CEv2i1mO6KUW8RKWJ2zoXoz5JsYZQ9h_ZYk5J.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'WaitingfortheSunrise${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23353,11 +20539,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/wallpoet/v11/f0X10em2_8RnXVVdUNbu7cXP8L8G.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Wallpoet${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23376,11 +20559,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/walterturncoat/v10/snfys0Gs98ln43n0d-14ULoToe67YB2dQ5ZPqQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'WalterTurncoat${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23399,11 +20579,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/warnes/v9/pONn1hc0GsW6sW5OpiC2o6Lkqg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Warnes${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23422,11 +20599,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/wellfleet/v7/nuF7D_LfQJb3VYgX6eyT42aLDhO2HA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Wellfleet${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23445,11 +20619,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/wendyone/v8/2sDcZGJOipXfgfXV5wgDb2-4C7wFZQ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'WendyOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23468,11 +20639,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/wireone/v10/qFdH35Wah5htUhV75WGiWdrCwwcJ.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'WireOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23499,11 +20667,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/worksans/v5/QGYpz_wNahGAdqQ43Rh3_4fMn9JM6fnuKg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'WorkSans${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23525,11 +20690,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/yanonekaffeesatz/v11/3y9-6aknfjLm_3lMKjiMgmUUYBs04YegOs-tNtKENeNp.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'YanoneKaffeesatz${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23553,11 +20715,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('900', 'http://fonts.gstatic.com/s/yantramanav/v5/flUhRqu5zY00QEpyWJYWN59wesNZIhI8tIHh.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Yantramanav${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23576,11 +20735,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/yatraone/v6/C8ch4copsHzj8p7NaF0xw1OBbRDvXw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'YatraOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23599,11 +20755,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/yellowtail/v10/OZpGg_pnoDtINPfRIlLotlzNwED-b4g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Yellowtail${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23622,11 +20775,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/yeonsung/v8/QldMNTpbohAGtsJvUn6xSVNazqx2xg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'YeonSung${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23645,11 +20795,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/yesevaone/v14/OpNJno4ck8vc-xYpwWWxpipfWhXD00c.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'YesevaOne${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23668,11 +20815,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/yesteryear/v8/dg4g_p78rroaKl8kRKo1r7wHTwonmyw.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Yesteryear${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23695,11 +20839,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/yrsa/v5/wlpxgwnQFlxs3bf63IQ73W5OcCk.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Yrsa${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23718,11 +20859,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/zcoolkuaile/v5/tssqApdaRQokwFjFJjvM6h2WpozzoXhC2g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ZCOOLKuaiLe${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23741,11 +20879,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/zcoolqingkehuangyou/v5/2Eb5L_R5IXJEWhD3AOhSvFC554MOOahI4mRIi_28c8bHWA.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ZCOOLQingKeHuangYou${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23764,11 +20899,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/zcoolxiaowei/v5/i7dMIFFrTRywPpUVX9_RJyM1YFKQHwyVd3U.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ZCOOLXiaoWei${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23787,11 +20919,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/zeyada/v9/11hAGpPTxVPUbgZDNGatWKaZ3g.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'Zeyada${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23810,11 +20939,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('regular', 'http://fonts.gstatic.com/s/zhimangxing/v5/f0Xw0ey79sErYFtWQ9a2rq-g0actfektIJ0.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ZhiMangXing${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23842,11 +20968,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700italic', 'http://fonts.gstatic.com/s/zillaslab/v5/dFanZfeM_74wlPZtksIFaj8CRHGpXnp2fazkfg.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ZillaSlab${font.toString()}';
 
     loadFont(fontFamily, font.url);
@@ -23866,11 +20989,8 @@ class GoogleFonts {
       GoogleFontsFamily.fromString('700', 'http://fonts.gstatic.com/s/zillaslabhighlight/v7/gNMUW2BrTpK8-inLtBJgMMfbm6uNVDvRxiP0TET4YmVF0Mb6.ttf'),
     ];
 
-<<<<<<< HEAD
     textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-=======
->>>>>>> 4645548059b8ec9f6a09e0c92a4a95a41ec3026d
-    final font = getClosestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
+    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
     final fontFamily = 'ZillaSlabHighlight${font.toString()}';
 
     loadFont(fontFamily, font.url);
