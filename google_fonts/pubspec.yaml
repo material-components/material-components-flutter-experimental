@@ -1,0 +1,19 @@
+name: google_fonts
+description: A new Flutter package.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.12.0+2
+  mustache: ^1.1.1
+  path_provider: 1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
