@@ -14,7 +14,7 @@ are looking to save space in the initial app bundle size.
 
 To use google fonts with the default TextStyle:
 
-```
+```dart
 Text(
   'This is Google Fonts',
   style: GoogleFonts.lato(),
@@ -23,7 +23,7 @@ Text(
 
 To use google fonts with an existing TextStyle:
 
-```
+```dart
 Text(
   'This is Google Fonts',
   style: GoogleFonts.lato(textStyle: TextStyle(fontSize: 18)),
@@ -32,7 +32,7 @@ Text(
 
 or
 
-```
+```dart
 Text(
   'This is Google Fonts',
   style: GoogleFonts.lato(textStyle: Theme.of(context).textTheme.display1),
@@ -41,7 +41,7 @@ Text(
 
 To override the fontWeight and/or fontStyle:
 
-```
+```dart
 Text(
   'This is Google Fonts',
   style: GoogleFonts.lato(
