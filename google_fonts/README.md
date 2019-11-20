@@ -1,9 +1,9 @@
 # google_fonts
 
+*** WARNING: This package is experimental and should not be used in production. ***
+
 The GoogleFonts package for Flutter allows you to easily use any of the 960 fonts
 (and their variants) from fonts.google.com in your flutter app.
-
-WARNING: This package is currently in preview and should not be used in production.
 
 ## Getting Started
 

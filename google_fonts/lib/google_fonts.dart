@@ -4,6 +4,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+// WARNING: This package is experimental and should not be used in production.
+
 library google_fonts_test;
 
 import 'package:flutter/material.dart';
