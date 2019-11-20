@@ -8,6 +8,7 @@ import 'dart:io';
 import 'package:mustache/mustache.dart';
 
 void main() {
+  // TODO(clocksmith): Integrate with package:build to automate generation.
   final fontsJsonData = readFontsJsonData();
 
   final outFile = File('lib/google_fonts.dart');

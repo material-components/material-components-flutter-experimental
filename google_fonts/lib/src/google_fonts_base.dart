@@ -10,7 +10,9 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 
-Set<String> _loadedFonts = {};
+// Keep track of the loaded fonts in FontLoader for the life of the app
+// instance.
+final Set<String> _loadedFonts = {};
 
 /// Loads a font into the [FontLoader] with [fontName] for the matching
 /// [fontUrl].
@@ -35,7 +37,6 @@ Future<void> loadFont(String fontName, String fontUrl) async {
   }
   fontLoader.addFont(byteData);
   await fontLoader.load();
-  print('loaded $fontName');
   // TODO: Remove this once it is done automatically after loading a font.
   // https://github.com/flutter/flutter/issues/44460
   PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
@@ -46,7 +47,7 @@ Future<void> loadFont(String fontName, String fontUrl) async {
 //
 // This logic is taken from the following section of the minikin library, which
 // is ultimately how flutter handles matching fonts.
-// * https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
+// https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
 GoogleFontsFamily closestMatch(
     GoogleFontsFamily style,
     List<GoogleFontsFamily> variants,
@@ -121,11 +122,8 @@ String _fontWeightString(TextStyle textStyle) {
   return textStyle.fontWeight.toString().replaceAll('FontWeight.w', '');
 }
 
-String _fontStyleString(FontStyle fontstyle) {
-  if (fontstyle == FontStyle.italic) {
-    return 'italic';
-  }
-  return '';
+String _fontStyleString(FontStyle fontStyle) {
+  return fontStyle == FontStyle.italic ? 'italic' : '';
 }
 
 class GoogleFontsFamily {
