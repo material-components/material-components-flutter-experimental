@@ -31,7 +31,7 @@ void main() {
   }
 
   final template = Template(
-    File('lib/src/google_fonts.tmpl').readAsStringSync(),
+    File('generator/google_fonts.tmpl').readAsStringSync(),
     htmlEscapeValues: false,
   );
   final result = template.renderString({'method': methods});
@@ -41,7 +41,7 @@ void main() {
 }
 
 Map readFontsJsonData() {
-  final fontsJsonFile = File('lib/data/fonts_data.json');
+  final fontsJsonFile = File('data/fonts_data.json');
   final fontsJsonString = fontsJsonFile.readAsStringSync();
   return jsonDecode(fontsJsonString);
 }
