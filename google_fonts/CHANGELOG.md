@@ -1,3 +1,7 @@
+## [0.0.2] - 2019-11-20
+
+Update README with import instructions.
+
 ## [0.0.1] - 2019-11-15
 
 The initial release supports all 960 fonts and variants from fonts.google.com.
