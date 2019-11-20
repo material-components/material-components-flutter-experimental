@@ -1,3 +1,7 @@
+## [0.0.5] - 2019-11-20
+
+Mark as experimental in more places.
+
 ## [0.0.4] - 2019-11-20
 
 Add pubspec instructions to README.
