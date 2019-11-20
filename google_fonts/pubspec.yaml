@@ -1,6 +1,6 @@
 name: google_fonts
 description: A package to include fonts from fonts.google.com.
-version: 0.0.1
+version: 0.0.2
 homepage: https://fonts.google.com/
 
 environment:
