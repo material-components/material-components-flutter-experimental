@@ -14,6 +14,12 @@ the pubspec. Instead, they are fetched once via http at runtime, and stored in t
 space. This is ideal for development, and can be the preferred behavior for production apps that
 are looking to save space in the initial app bundle size.
 
+First, import GoogleFonts:
+
+```dart
+import 'package:google_fonts/google_fonts.dart';
+```
+
 To use google fonts with the default TextStyle:
 
 ```dart
