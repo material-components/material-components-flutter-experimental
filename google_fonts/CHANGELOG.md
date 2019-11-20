@@ -1,3 +1,7 @@
+## [0.0.4] - 2019-11-20
+
+Add pubspec instructions to README.
+
 ## [0.0.3] - 2019-11-20
 
 Fix homepage and main gif.
