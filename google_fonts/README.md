@@ -7,7 +7,7 @@ WARNING: This package is currently in preview and should not be used in producti
 
 ## Getting Started
 
-![](main.gif)
+![](https://raw.githubusercontent.com/material-components/material-components-flutter-experimental/master/google_fonts/main.gif)
 
 With the GoogleFonts package, ttf files do not need to be stored in your assets folder and mapped in
 the pubspec. Instead, they are fetched once via http at runtime, and stored in the apps local disk

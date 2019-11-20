@@ -1,3 +1,7 @@
+## [0.0.3] - 2019-11-20
+
+Fix homepage and main gif.
+
 ## [0.0.2] - 2019-11-20
 
 Update README with import instructions.
