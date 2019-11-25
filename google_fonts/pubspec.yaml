@@ -1,8 +1,7 @@
 name: google_fonts
-description: A new Flutter package.
-version: 0.0.1
-author:
-homepage:
+description: EXPERIMENTAL. A package to include fonts from fonts.google.com.
+version: 0.0.5
+homepage: https://github.com/material-components/material-components-flutter-experimental/tree/master/google_fonts
 
 environment:
   sdk: ">=2.3.0 <3.0.0"
@@ -12,7 +11,7 @@ dependencies:
     sdk: flutter
   http: ^0.12.0+2
   mustache: ^1.1.1
-  path_provider: 1.4.0
+  path_provider: ^1.4.0
 
 dev_dependencies:
   flutter_test:
