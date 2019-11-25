@@ -17,8 +17,6 @@ declare -a  PROJECT_NAMES=(
     "google_fonts" \
 )
 
-language: dart
-
 for PROJECT_NAME in "${PROJECT_NAMES[@]}"
 do
     echo "== Testing '${PROJECT_NAME}' on Flutter's $FLUTTER_VERSION channel =="
