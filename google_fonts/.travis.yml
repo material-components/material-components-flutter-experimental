@@ -1,6 +1,5 @@
 os:
   - linux
-language: dart
 sudo: false
 addons:
   apt:
@@ -12,7 +11,7 @@ addons:
 git:
   depth: 3
 env:
-  - FLUTTER_VERSION=dev
+  - FLUTTER_VERSION=stable
   - FLUTTER_VERSION=beta
 matrix:
   allow_failures:
