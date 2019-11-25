@@ -14,6 +14,12 @@ import 'package:path_provider/path_provider.dart';
 // instance.
 final Set<String> _loadedFonts = {};
 
+@visibleForTesting
+http.Client httpClient = http.Client();
+
+@visibleForTesting
+void clearCache() => _loadedFonts.clear();
+
 /// Loads a font into the [FontLoader] with [fontName] for the matching
 /// [fontUrl].
 ///
@@ -49,9 +55,9 @@ Future<void> loadFont(String fontName, String fontUrl) async {
 // is ultimately how flutter handles matching fonts.
 // https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
 GoogleFontsFamily closestMatch(
-    GoogleFontsFamily style,
-    List<GoogleFontsFamily> variants,
-    ) {
+  GoogleFontsFamily style,
+  List<GoogleFontsFamily> variants,
+) {
   int bestScore;
   GoogleFontsFamily bestMatch;
   for (var variant in variants) {
@@ -65,7 +71,7 @@ GoogleFontsFamily closestMatch(
 }
 
 /// Fetches a font with [fontName] from the [fontUrl] and saves it locally if
-/// it is thew first time it is being loaded.
+/// it is the first time it is being loaded.
 ///
 /// This function can return null if the font fails to load from the URL.
 Future<ByteData> _httpFetchFont(String fontName, String fontUrl) async {
@@ -74,7 +80,7 @@ Future<ByteData> _httpFetchFont(String fontName, String fontUrl) async {
     throw Exception('Invalid fontUrl: $fontUrl');
   }
 
-  final response = await http.get(uri);
+  final response = await httpClient.get(uri);
   if (response.statusCode == 200) {
     _writeLocalFont(fontName, response.bodyBytes);
     return ByteData.view(response.bodyBytes.buffer);
@@ -102,7 +108,7 @@ Future<File> _writeLocalFont(String name, List<int> bytes) async {
 Future<ByteData> _readLocalFont(String name) async {
   try {
     final file = await _localFile(name);
-    final fileExists = await file.exists();
+    final fileExists = file.existsSync();
     if (fileExists) {
       List<int> contents = await file.readAsBytes();
       if (contents != null && contents.isNotEmpty) {
@@ -113,17 +119,6 @@ Future<ByteData> _readLocalFont(String name) async {
     return null;
   }
   return null;
-}
-
-String _fontWeightString(TextStyle textStyle) {
-  if (textStyle.fontWeight == null || textStyle.fontWeight == FontWeight.w400) {
-    return '';
-  }
-  return textStyle.fontWeight.toString().replaceAll('FontWeight.w', '');
-}
-
-String _fontStyleString(FontStyle fontStyle) {
-  return fontStyle == FontStyle.italic ? 'italic' : '';
 }
 
 class GoogleFontsFamily {
