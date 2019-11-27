@@ -32,7 +32,7 @@ main() {
     clearCache();
   });
 
-  testWidgets(' loadFont method calls http', (tester) async {
+  testWidgets('loadFont method calls http get', (tester) async {
     final fakeFont = 'foo';
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
 
@@ -41,8 +41,9 @@ main() {
     verify(httpClient.get(fakeUrl)).called(1);
   });
 
-  testWidgets('loadFont method does not make http request on subsequent calls',
-      (tester) async {
+  testWidgets(
+      'loadFont method does not make http get request on subsequent '
+      'calls', (tester) async {
     final fakeFont = 'foo';
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
 

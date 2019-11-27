@@ -8,13 +8,6 @@ import 'package:http/http.dart' as http;
 class MockHttpClient extends Mock implements http.Client {}
 
 main() {
-  setUp(() async {
-    httpClient = MockHttpClient();
-    when(httpClient.get(any)).thenAnswer((_) async {
-      return http.Response('fake response body - success', 200);
-    });
-  });
-
   tearDown(() {
     clearCache();
   });
@@ -42,7 +35,7 @@ main() {
     expect(outputTextStyle.fontFamily, equals('Roboto400italic'));
   });
 
-  testWidgets('Text style no direct match picks closest font weight match',
+  testWidgets('Text style with no direct match picks closest font weight match',
       (tester) async {
     final inputTextStyle = TextStyle(
       fontWeight: FontWeight.w600,
@@ -54,7 +47,7 @@ main() {
     expect(outputTextStyle.fontFamily, equals('Roboto500normal'));
   });
 
-  testWidgets('Italic text style no direct match picks closest match',
+  testWidgets('Italic text style with no direct match picks closest match',
       (tester) async {
     final inputTextStyle = TextStyle(
       fontWeight: FontWeight.w600,
