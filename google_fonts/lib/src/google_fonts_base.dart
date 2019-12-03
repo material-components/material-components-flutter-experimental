@@ -187,6 +187,13 @@ Future<ByteData> _readLocalFont(String name) async {
   return null;
 }
 
+class GoogleFontsVariant {
+  const GoogleFontsVariant(this.fontWeight, this.fontStyle);
+
+  final FontWeight fontWeight;
+  final FontStyle fontStyle;
+}
+
 class GoogleFontsFamily {
   const GoogleFontsFamily(this.fontWeight, this.fontStyle, [this.url]);
 
