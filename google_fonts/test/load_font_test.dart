@@ -36,7 +36,7 @@ main() {
     final fakeFont = 'foo';
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
 
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeFont, fakeUrl.toString());
 
     verify(httpClient.get(fakeUrl)).called(1);
   });
@@ -48,15 +48,15 @@ main() {
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
 
     // 1st call.
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeFont, fakeUrl.toString());
     verify(httpClient.get(fakeUrl)).called(1);
 
     // 2nd call.
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeFont, fakeUrl.toString());
     verifyNever(httpClient.get(fakeUrl));
 
     // 3rd call.
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeFont, fakeUrl.toString());
     verifyNever(httpClient.get(fakeUrl));
   });
 
@@ -67,7 +67,7 @@ main() {
     var directoryContents = await getApplicationDocumentsDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
 
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeFont, fakeUrl.toString());
     directoryContents = await getApplicationDocumentsDirectory();
 
     expect(directoryContents.listSync().isNotEmpty, isTrue);

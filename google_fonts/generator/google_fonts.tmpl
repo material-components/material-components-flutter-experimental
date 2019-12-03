@@ -18,20 +18,18 @@ class GoogleFonts {
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
-    textStyle ??= TextStyle();
-    final fontUrls = <GoogleFontsFamily>[
+    final fonts = <GoogleFontsFamily>[
       {{#fontUrls}}
       GoogleFontsFamily.fromString('{{variant}}', '{{url}}'),
       {{/fontUrls}}
     ];
 
-    textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
-    final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fontUrls);
-    final fontFamily = '{{fontFamily}}${font.toString()}';
-
-    loadFont(fontFamily, font.url);
-    return textStyle.copyWith(
-      fontFamily: fontFamily,
+    return googleFontsTextStyle(
+      fontFamily: '{{fontFamily}}'',
+      textStyle: textStyle,
+      fontWeight: fontWeight,
+      fontStyle: fontStyle,
+      fonts: fonts,
     );
   }
 

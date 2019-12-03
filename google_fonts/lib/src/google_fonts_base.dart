@@ -2,10 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
@@ -20,6 +22,31 @@ http.Client httpClient = http.Client();
 @visibleForTesting
 void clearCache() => _loadedFonts.clear();
 
+/// Creates a [TextStyle] that either uses the font family for the requested
+/// GoogleFont, or falls back to the pre-bundled font family.
+///
+/// This function has a side effect of loading the font into the [FontLoader],
+/// either by network or from the file system.
+TextStyle googleFontsTextStyle({
+  String fontFamily,
+  TextStyle textStyle,
+  FontWeight fontWeight,
+  FontStyle fontStyle,
+  List<GoogleFontsFamily> fonts,
+}) {
+  textStyle ??= TextStyle();
+  textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
+
+  final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fonts);
+  final googleFontsFontFamily = '$fontFamily${font.toString()}';
+
+  loadFontIfNecessary(fontFamily, font.url);
+  return textStyle.copyWith(
+    fontFamily: googleFontsFontFamily,
+    fontFamilyFallback: [fontFamily],
+  );
+}
+
 /// Loads a font into the [FontLoader] with [fontName] for the matching
 /// [fontUrl].
 ///
@@ -28,10 +55,20 @@ void clearCache() => _loadedFonts.clear();
 ///
 /// Otherwise, this method will first check to see if the font is available on
 /// disk. If it is, then it loads it into the [FontLoader]. If it is not on
-/// disk, then it fethces it via the [fontUrl], stores it on disk, and loads it
+/// disk, then it fetches it via the [fontUrl], stores it on disk, and loads it
 /// into the [FontLoader].
-Future<void> loadFont(String fontName, String fontUrl) async {
+Future<void> loadFontIfNecessary(String fontName, String fontUrl) async {
+  // If this font has already been loaded, then there is no need to load it
+  // again.
   if (_loadedFonts.contains(fontName)) {
+    return;
+  }
+
+  // If this font can be loaded by the pre-bundled assets, then there is no
+  // need to load it at all.
+  final fontsJson = await _loadFontManifestJson();
+  print('fontsJson: ${fontsJson.toString()}');
+  if (_hasFontName(fontName, fontsJson)) {
     return;
   }
 
@@ -90,6 +127,35 @@ Future<ByteData> _httpFetchFont(String fontName, String fontUrl) async {
   }
 }
 
+Future<List<dynamic>> _loadFontManifestJson() async {
+  return rootBundle.loadStructuredData('FontManifest.json', (s) async {
+    return json.decode(s);
+  });
+}
+
+bool _hasFontName(String fontName, dynamic fontsJson) {
+  final fontNameChunks = fontName.split('-');
+  final fontFamily = fontNameChunks[0];
+  final googleFontsFamilyString = fontNameChunks.length > 1 ? fontNameChunks[1] : '';
+  final googleFontsFamily = GoogleFontsFamily.fromString(googleFontsFamilyString);
+
+  for (final fontFamilyJson in fontsJson) {
+    print('fontFamilyJson->family' + fontFamilyJson['family'] );
+    if (fontFamilyJson['family'] == fontFamily) {
+      for (final fontJson in fontFamilyJson['fonts']) {
+        final fontWeight = (googleFontsFamily.fontWeight + 1) * 100;
+        final fontStyle = googleFontsFamily.fontStyle.toString().replaceAll('FontStyle.', '');
+        final matchesWeight = fontWeight == 400 && fontJson['weight'] == null || fontJson['weight'] == fontWeight;
+        final matchesStyle = fontStyle == 'regular' && fontJson('regular') == null || fontJson['style'] == fontStyle;
+        if (matchesWeight && matchesStyle) {
+          return true;
+        }
+      }
+    }
+  }
+  return false;
+}
+
 Future<String> get _localPath async {
   final directory = await getApplicationDocumentsDirectory();
   return directory.path;
@@ -143,6 +209,7 @@ class GoogleFontsFamily {
 
   @override
   String toString() {
+    // TODO(clocksmith): Extract each sub string into a function.
     final fontWeightString = (fontWeight + 1) * 100;
     final fontStyleString = fontStyle.toString().replaceAll('FontStyle.', '');
     return '$fontWeightString$fontStyleString';
