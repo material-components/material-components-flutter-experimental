@@ -44,7 +44,8 @@ Future<void> loadFont(String fontName, String fontUrl) async {
   if (!kIsWeb) {
     byteData = _readLocalFont(fontName);
   }
-  if (byteData == null || await byteData == null) {
+  final localFontFound = byteData != null && await byteData != null;
+  if (!localFontFound) {
     byteData = _httpFetchFont(fontName, fontUrl);
   }
   fontLoader.addFont(byteData);
