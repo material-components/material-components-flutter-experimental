@@ -12,6 +12,9 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'google_fonts_descriptor.dart';
+import 'google_fonts_variant.dart';
+
 // Keep track of the loaded fonts in FontLoader for the life of the app
 // instance.
 final Set<String> _loadedFonts = {};
@@ -76,14 +79,6 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
     return;
   }
 
-  // If this font can be loaded by the pre-bundled assets, then there is no
-  // need to load it at all.
-  final fontsJson = await _loadFontManifestJson();
-  print('fontsJson: ${fontsJson.toString()}');
-  if (_isPrebundled(familyWithVariant, fontsJson)) {
-    return;
-  }
-
   _loadedFonts.add(familyWithVariant);
   final fontLoader = FontLoader(familyWithVariant);
   var byteData = _readLocalFont(familyWithVariant);
@@ -139,41 +134,6 @@ Future<ByteData> _httpFetchFont(String fontName, String fontUrl) async {
   }
 }
 
-Future<List<dynamic>> _loadFontManifestJson() async {
-  return rootBundle.loadStructuredData('FontManifest.json', (s) async {
-    return json.decode(s);
-  });
-}
-
-bool _isPrebundled(String fontName, dynamic fontsJson) {
-  final fontNameChunks = fontName.split('-');
-  final fontFamily = fontNameChunks[0];
-  final googleFontsFamilyString =
-      fontNameChunks.length > 1 ? fontNameChunks[1] : '';
-  final googleFontsFamily =
-      GoogleFontsDescriptor.fromFamilyWithVariant(googleFontsFamilyString);
-
-  for (final fontFamilyJson in fontsJson) {
-    print('fontFamilyJson->family' + fontFamilyJson['family']);
-    if (fontFamilyJson['family'] == fontFamily) {
-      for (final fontJson in fontFamilyJson['fonts']) {
-        final fontWeight = (googleFontsFamily.fontWeight + 1) * 100;
-        final fontStyle =
-            googleFontsFamily.fontStyle.toString().replaceAll('FontStyle.', '');
-        final matchesWeight = fontWeight == 400 && fontJson['weight'] == null ||
-            fontJson['weight'] == fontWeight;
-        final matchesStyle =
-            fontStyle == 'regular' && fontJson('regular') == null ||
-                fontJson['style'] == fontStyle;
-        if (matchesWeight && matchesStyle) {
-          return true;
-        }
-      }
-    }
-  }
-  return false;
-}
-
 Future<String> get _localPath async {
   final directory = await getApplicationDocumentsDirectory();
   return directory.path;
@@ -205,105 +165,6 @@ Future<ByteData> _readLocalFont(String name) async {
   return null;
 }
 
-class GoogleFontsVariant {
-  const GoogleFontsVariant({
-    @required this.fontWeight,
-    @required this.fontStyle,
-  });
-
-  GoogleFontsVariant.fromString(String variantString)
-      : this.fontWeight = FontWeight.values[variantString == _regular ||
-                variantString == _italic
-            ? 3
-            : (int.parse(variantString.replaceAll(_italic, '')) ~/ 100) - 1],
-        this.fontStyle = variantString.contains(_italic)
-            ? FontStyle.italic
-            : FontStyle.normal;
-
-  final FontWeight fontWeight;
-  final FontStyle fontStyle;
-
-  @override
-  String toString() {
-    final fontWeightString = (fontWeight.index ?? 3 + 1) * 100;
-    final fontStyleString = fontStyle.toString().replaceAll('FontStyle.', '');
-    return '$fontWeightString$fontStyleString';
-  }
-
-  @override
-  int get hashCode => hashValues(fontWeight, fontStyle);
-
-  @override
-  bool operator ==(dynamic other) {
-    if (identical(this, other)) {
-      return true;
-    }
-    if (other.runtimeType != runtimeType) {
-      return false;
-    }
-    final GoogleFontsDescriptor typedOther = other;
-    return typedOther.fontWeight == fontWeight &&
-        typedOther.fontStyle == fontStyle;
-  }
-}
-
-class GoogleFontsDescriptor {
-  const GoogleFontsDescriptor({
-    this.fontFamily,
-    this.fontWeight,
-    this.fontStyle,
-    this.fontUrl,
-  });
-
-  final String fontFamily;
-  final FontWeight fontWeight;
-  final FontStyle fontStyle;
-  final String fontUrl;
-
-//  // From a string key, for example, `500italic`.
-//  GoogleFontsDescriptor.fromVariantStringAndUrl({
-//    String variantString,
-//    this.fontUrl,
-//  })  : this.fontWeight = key == _regular || key == _italic
-//            ? 3
-//            : (int.parse(key.replaceAll(_italic, '')) ~/ 100) - 1,
-//        this.fontStyle =
-//            key.contains(_italic) ? FontStyle.italic : FontStyle.normal;
-
-//  GoogleFontsDescriptor.fromTextStyle(TextStyle style, [this.fontUrl])
-//      : this.fontWeight = style?.fontWeight?.index ?? 3,
-//        this.fontStyle = style?.fontStyle ?? FontStyle.normal;
-
-  String familyWithVariant() {
-    final variantString = GoogleFontsVariant(fontWeight: fontWeight, fontStyle: fontStyle).toString();
-    return '$fontFamily$variantString';
-  }
-
-  @override
-  String toString() {
-    // TODO(clocksmith): Extract each sub string into a function.
-    final fontWeightString = (fontWeight + 1) * 100;
-    final fontStyleString = fontStyle.toString().replaceAll('FontStyle.', '');
-    return '$fontWeightString$fontStyleString';
-  }
-
-  @override
-  int get hashCode => hashValues(fontWeight, fontStyle);
-
-  @override
-  bool operator ==(dynamic other) {
-    if (identical(this, other)) {
-      return true;
-    }
-    if (other.runtimeType != runtimeType) {
-      return false;
-    }
-    final GoogleFontsDescriptor typedOther = other;
-    return typedOther.fontWeight == fontWeight &&
-        typedOther.fontStyle == fontStyle;
-  }
-}
-
 // This logic is taken from the following section of the minikin library, which
 // is ultimately how flutter handles matching fonts.
 // * https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L128
@@ -317,6 +178,3 @@ int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
   }
   return score;
 }
-
-const _regular = 'regular';
-const _italic = 'italic';

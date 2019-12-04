@@ -10,6 +10,7 @@ library google_fonts_test;
 
 import 'package:flutter/material.dart';
 import 'src/google_fonts_base.dart';
+import 'src/google_fonts_variant.dart';
 
 class GoogleFonts {
   static TextStyle aBeeZee({
