@@ -2,14 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
+
+import 'google_fonts_descriptor.dart';
+import 'google_fonts_variant.dart';
 
 // Keep track of the loaded fonts in FontLoader for the life of the app
 // instance.
@@ -21,8 +26,48 @@ http.Client httpClient = http.Client();
 @visibleForTesting
 void clearCache() => _loadedFonts.clear();
 
-/// Loads a font into the [FontLoader] with [fontName] for the matching
-/// [fontUrl].
+/// Creates a [TextStyle] that either uses the font family for the requested
+/// GoogleFont, or falls back to the pre-bundled font family.
+///
+/// This function has a side effect of loading the font into the [FontLoader],
+/// either by network or from the file system.
+TextStyle googleFontsTextStyle({
+  @required String fontFamily,
+  TextStyle textStyle,
+  FontWeight fontWeight,
+  FontStyle fontStyle,
+  @required Map<GoogleFontsVariant, String> fonts,
+}) {
+  assert(fontFamily != null);
+  assert(fonts != null);
+
+  textStyle ??= TextStyle();
+  textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
+
+  final variant = _closestMatch(
+    GoogleFontsVariant(
+      fontWeight: textStyle.fontWeight ?? FontWeight.w400,
+      fontStyle: textStyle.fontStyle ?? FontStyle.normal,
+    ),
+    fonts.keys,
+  );
+  final descriptor = GoogleFontsDescriptor(
+    fontFamily: fontFamily,
+    fontWeight: variant.fontWeight,
+    fontStyle: variant.fontStyle,
+    fontUrl: fonts[variant],
+  );
+
+  loadFontIfNecessary(descriptor);
+
+  return textStyle.copyWith(
+    fontFamily: descriptor.familyWithVariant(),
+    fontFamilyFallback: [fontFamily],
+  );
+}
+
+/// Loads a font into the [FontLoader] with [googleFontsFamilyName] for the
+/// matching [fontUrl].
 ///
 /// If a font with the [fontName] has already been loaded into memory, then
 /// this method does nothing as there is no need to load it a second time.
@@ -31,22 +76,24 @@ void clearCache() => _loadedFonts.clear();
 /// disk. If it is, then it loads it into the [FontLoader]. If it is not on
 /// disk, then it fetches it via the [fontUrl], stores it on disk, and loads it
 /// into the [FontLoader].
-Future<void> loadFont(String fontName, String fontUrl) async {
-  if (_loadedFonts.contains(fontName)) {
+Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
+  final familyWithVariant = descriptor.familyWithVariant();
+  // If this font has already been loaded, then there is no need to load it
+  // again.
+  if (_loadedFonts.contains(familyWithVariant)) {
     return;
   }
 
-  _loadedFonts.add(fontName);
-  final fontLoader = FontLoader(fontName);
-
+  _loadedFonts.add(familyWithVariant);
+  final fontLoader = FontLoader(familyWithVariant);
 
   Future<ByteData> byteData;
   if (!kIsWeb) {
-    byteData = _readLocalFont(fontName);
+    byteData = _readLocalFont(familyWithVariant);
   }
   final localFontFound = byteData != null && await byteData != null;
   if (!localFontFound) {
-    byteData = _httpFetchFont(fontName, fontUrl);
+    byteData = _httpFetchFont(familyWithVariant, descriptor.fontUrl);
   }
   fontLoader.addFont(byteData);
   await fontLoader.load();
@@ -55,23 +102,23 @@ Future<void> loadFont(String fontName, String fontUrl) async {
   PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
 }
 
-// Returns [GoogleFontsFamily] from `variants` that most closely matches
-// [style] according to the computeMatch scoring function.
+// Returns [GoogleFontsVariant] from [variantsToCompare] that most closely
+// matches [sourceVariant] according to the [_computeMatch] scoring function.
 //
-// This logic is taken from the following section of the minikin library, which
-// is ultimately how flutter handles matching fonts.
+// This logic is derived from the following section of the minikin library,
+// which is ultimately how flutter handles matching fonts.
 // https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
-GoogleFontsFamily closestMatch(
-  GoogleFontsFamily style,
-  List<GoogleFontsFamily> variants,
+GoogleFontsVariant _closestMatch(
+  GoogleFontsVariant sourceVariant,
+  Iterable<GoogleFontsVariant> variantsToCompare,
 ) {
   int bestScore;
-  GoogleFontsFamily bestMatch;
-  for (var variant in variants) {
-    final score = _computeMatch(style, variant);
+  GoogleFontsVariant bestMatch;
+  for (final variantToCompare in variantsToCompare) {
+    final score = _computeMatch(sourceVariant, variantToCompare);
     if (bestScore == null || score < bestScore) {
       bestScore = score;
-      bestMatch = variant;
+      bestMatch = variantToCompare;
     }
   }
   return bestMatch;
@@ -128,63 +175,16 @@ Future<ByteData> _readLocalFont(String name) async {
   return null;
 }
 
-class GoogleFontsFamily {
-  const GoogleFontsFamily(this.fontWeight, this.fontStyle, [this.url]);
-
-  // The FontWeight as an index [0-8] representing the font weights 100-900.
-  final int fontWeight;
-  final FontStyle fontStyle;
-  final String url;
-
-  // From a string key, for example, `500italic`.
-  GoogleFontsFamily.fromString(String key, [this.url])
-      : this.fontWeight = key == _regular || key == _italic
-            ? 3
-            : (int.parse(key.replaceAll(_italic, '')) ~/ 100) - 1,
-        this.fontStyle =
-            key.contains(_italic) ? FontStyle.italic : FontStyle.normal;
-
-  GoogleFontsFamily.fromTextStyle(TextStyle style, [this.url])
-      : this.fontWeight = style?.fontWeight?.index ?? 3,
-        this.fontStyle = style?.fontStyle ?? FontStyle.normal;
-
-  @override
-  String toString() {
-    final fontWeightString = (fontWeight + 1) * 100;
-    final fontStyleString = fontStyle.toString().replaceAll('FontStyle.', '');
-    return '$fontWeightString$fontStyleString';
-  }
-
-  @override
-  int get hashCode => hashValues(fontWeight, fontStyle);
-
-  @override
-  bool operator ==(dynamic other) {
-    if (identical(this, other)) {
-      return true;
-    }
-    if (other.runtimeType != runtimeType) {
-      return false;
-    }
-    final GoogleFontsFamily typedOther = other;
-    return typedOther.fontWeight == fontWeight &&
-        typedOther.fontStyle == fontStyle;
-  }
-}
-
 // This logic is taken from the following section of the minikin library, which
 // is ultimately how flutter handles matching fonts.
 // * https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L128
-int _computeMatch(GoogleFontsFamily a, GoogleFontsFamily b) {
+int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
   if (a == b) {
     return 0;
   }
-  int score = (a.fontWeight - b.fontWeight).abs();
+  int score = (a.fontWeight.index - b.fontWeight.index).abs();
   if (a.fontStyle != b.fontStyle) {
     score += 2;
   }
   return score;
 }
-
-const _regular = 'regular';
-const _italic = 'italic';

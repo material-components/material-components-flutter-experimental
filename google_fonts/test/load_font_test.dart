@@ -1,8 +1,10 @@
 import 'dart:io';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/src/google_fonts_base.dart';
+import 'package:google_fonts/src/google_fonts_descriptor.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
@@ -33,10 +35,15 @@ main() {
   });
 
   testWidgets('loadFont method calls http get', (tester) async {
-    final fakeFont = 'foo';
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
+    final fakeDescriptor = GoogleFontsDescriptor(
+      fontFamily: 'foo',
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+      fontUrl: fakeUrl.toString(),
+    );
 
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeDescriptor);
 
     verify(httpClient.get(fakeUrl)).called(1);
   });
@@ -44,35 +51,45 @@ main() {
   testWidgets(
       'loadFont method does not make http get request on subsequent '
       'calls', (tester) async {
-    final fakeFont = 'foo';
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
+    final fakeDescriptor = GoogleFontsDescriptor(
+      fontFamily: 'foo',
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+      fontUrl: fakeUrl.toString(),
+    );
 
     // 1st call.
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeDescriptor);
     verify(httpClient.get(fakeUrl)).called(1);
 
     // 2nd call.
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeDescriptor);
     verifyNever(httpClient.get(fakeUrl));
 
     // 3rd call.
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeDescriptor);
     verifyNever(httpClient.get(fakeUrl));
   });
 
   testWidgets('loadFont method writes font file', (tester) async {
-    final fakeFont = 'foo';
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
+    final fakeDescriptor = GoogleFontsDescriptor(
+      fontFamily: 'foo',
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+      fontUrl: fakeUrl.toString(),
+    );
 
     var directoryContents = await getApplicationDocumentsDirectory();
     expect(directoryContents.listSync().isEmpty, isTrue);
 
-    await loadFont(fakeFont, fakeUrl.toString());
+    await loadFontIfNecessary(fakeDescriptor);
     directoryContents = await getApplicationDocumentsDirectory();
 
     expect(directoryContents.listSync().isNotEmpty, isTrue);
     expect(
-      directoryContents.listSync().single.toString().contains(fakeFont),
+      directoryContents.listSync().single.toString().contains('foo'),
       isTrue,
     );
   });

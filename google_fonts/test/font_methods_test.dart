@@ -20,7 +20,7 @@ main() {
 
     final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
-    expect(outputTextStyle.fontFamily, equals('Roboto400normal'));
+    expect(outputTextStyle.fontFamily, equals('Roboto_regular'));
   });
 
   testWidgets('Text style with an italics direct match is used',
@@ -32,7 +32,7 @@ main() {
 
     final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
-    expect(outputTextStyle.fontFamily, equals('Roboto400italic'));
+    expect(outputTextStyle.fontFamily, equals('Roboto_italic'));
   });
 
   testWidgets('Text style with no direct match picks closest font weight match',
@@ -44,7 +44,7 @@ main() {
 
     final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
-    expect(outputTextStyle.fontFamily, equals('Roboto500normal'));
+    expect(outputTextStyle.fontFamily, equals('Roboto_500'));
   });
 
   testWidgets('Italic text style with no direct match picks closest match',
@@ -56,7 +56,7 @@ main() {
 
     final outputTextStyle = GoogleFonts.roboto(textStyle: inputTextStyle);
 
-    expect(outputTextStyle.fontFamily, equals('Roboto500italic'));
+    expect(outputTextStyle.fontFamily, equals('Roboto_500italic'));
   });
 
   testWidgets('Text style prefers matching italics to closer weight',
@@ -71,7 +71,7 @@ main() {
 
     final outputTextStyle = GoogleFonts.cardo(textStyle: inputTextStyle);
 
-    expect(outputTextStyle.fontFamily, equals('Cardo400italic'));
+    expect(outputTextStyle.fontFamily, equals('Cardo_italic'));
   });
 
   testWidgets('Font weight and font style params are preferred',
@@ -89,5 +89,20 @@ main() {
 
     expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
     expect(outputTextStyle.fontStyle, equals(FontStyle.normal));
+  });
+
+  testWidgets('Defaults to regular when no Text style is passed',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.lato();
+
+    expect(outputTextStyle.fontFamily, equals('Lato_regular'));
+  });
+
+  testWidgets(
+      'Defaults to regular when a Text style with no weight or style is passed',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.lato(textStyle: TextStyle());
+
+    expect(outputTextStyle.fontFamily, equals('Lato_regular'));
   });
 }
