@@ -5,6 +5,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
@@ -40,11 +41,10 @@ Future<void> loadFont(String fontName, String fontUrl) async {
 
 
   Future<ByteData> byteData;
-  final isMobile = false;//Platform.isAndroid || Platform.isIOS;
-  if (isMobile) {
+  if (!kIsWeb) {
     byteData = _readLocalFont(fontName);
   }
-  if (!isMobile && await byteData == null) {
+  if (byteData == null || await byteData == null) {
     byteData = _httpFetchFont(fontName, fontUrl);
   }
   fontLoader.addFont(byteData);
