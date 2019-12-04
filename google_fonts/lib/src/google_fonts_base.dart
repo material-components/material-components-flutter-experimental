@@ -28,7 +28,7 @@ void clearCache() => _loadedFonts.clear();
 ///
 /// Otherwise, this method will first check to see if the font is available on
 /// disk. If it is, then it loads it into the [FontLoader]. If it is not on
-/// disk, then it fethces it via the [fontUrl], stores it on disk, and loads it
+/// disk, then it fetches it via the [fontUrl], stores it on disk, and loads it
 /// into the [FontLoader].
 Future<void> loadFont(String fontName, String fontUrl) async {
   if (_loadedFonts.contains(fontName)) {
