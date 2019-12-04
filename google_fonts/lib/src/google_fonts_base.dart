@@ -45,11 +45,12 @@ TextStyle googleFontsTextStyle({
   textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
 
   final variant = _closestMatch(
-      GoogleFontsVariant(
-        fontWeight: textStyle.fontWeight ?? FontWeight.w400,
-        fontStyle: textStyle.fontStyle ?? FontStyle.normal,
-      ),
-      fonts.keys);
+    GoogleFontsVariant(
+      fontWeight: textStyle.fontWeight ?? FontWeight.w400,
+      fontStyle: textStyle.fontStyle ?? FontStyle.normal,
+    ),
+    fonts.keys,
+  );
   final descriptor = GoogleFontsDescriptor(
     fontFamily: fontFamily,
     fontWeight: variant.fontWeight,

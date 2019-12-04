@@ -121,7 +121,8 @@ main() {
     expect(variant == otherVariant, isFalse);
   });
 
-  testWidgets('== fails for different fontWeights and different fontStyles', (tester) async {
+  testWidgets('== fails for different fontWeights and different fontStyles',
+      (tester) async {
     final variant = GoogleFontsVariant(
       fontWeight: FontWeight.w500,
       fontStyle: FontStyle.italic,
