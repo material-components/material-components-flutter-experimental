@@ -37,8 +37,14 @@ Future<void> loadFont(String fontName, String fontUrl) async {
 
   _loadedFonts.add(fontName);
   final fontLoader = FontLoader(fontName);
-  var byteData = _readLocalFont(fontName);
-  if (await byteData == null) {
+
+
+  Future<ByteData> byteData;
+  final isMobile = false;//Platform.isAndroid || Platform.isIOS;
+  if (isMobile) {
+    byteData = _readLocalFont(fontName);
+  }
+  if (!isMobile && await byteData == null) {
     byteData = _httpFetchFont(fontName, fontUrl);
   }
   fontLoader.addFont(byteData);
