@@ -1,6 +1,6 @@
 name: google_fonts
 description: EXPERIMENTAL. A package to include fonts from fonts.google.com.
-version: 0.0.5
+version: 0.0.7
 homepage: https://github.com/material-components/material-components-flutter-experimental/tree/master/google_fonts
 
 environment:

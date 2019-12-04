@@ -1,3 +1,11 @@
+## [0.0.7] - 2019-12-04
+
+BETA support for Flutter web.
+
+## [0.0.6] - 2019-12-04
+
+Minor updates to README.
+
 ## [0.0.5] - 2019-11-20
 
 Mark as experimental in more places.

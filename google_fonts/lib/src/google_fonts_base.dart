@@ -6,6 +6,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
@@ -84,8 +85,13 @@ Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
 
   _loadedFonts.add(familyWithVariant);
   final fontLoader = FontLoader(familyWithVariant);
-  var byteData = _readLocalFont(familyWithVariant);
-  if (await byteData == null) {
+
+  Future<ByteData> byteData;
+  if (!kIsWeb) {
+    byteData = _readLocalFont(familyWithVariant);
+  }
+  final localFontFound = byteData != null && await byteData != null;
+  if (!localFontFound) {
     byteData = _httpFetchFont(familyWithVariant, descriptor.fontUrl);
   }
   fontLoader.addFont(byteData);
