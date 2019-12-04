@@ -48,8 +48,8 @@ TextStyle googleFontsTextStyle({
       fonts.keys);
   final descriptor = GoogleFontsDescriptor(
     fontFamily: fontFamily,
-    fontWeight: fontWeight,
-    fontStyle: fontStyle,
+    fontWeight: variant.fontWeight,
+    fontStyle: variant.fontStyle,
     fontUrl: fonts[variant],
   );
 
