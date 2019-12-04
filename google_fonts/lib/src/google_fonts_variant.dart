@@ -7,7 +7,8 @@ class GoogleFontsVariant {
   const GoogleFontsVariant({
     @required this.fontWeight,
     @required this.fontStyle,
-  });
+  })  : assert(fontWeight != null),
+        assert(fontStyle != null);
 
   GoogleFontsVariant.fromString(String variantString)
       : this.fontWeight = FontWeight.values[variantString == _regular ||

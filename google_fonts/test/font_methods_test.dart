@@ -90,4 +90,19 @@ main() {
     expect(outputTextStyle.fontWeight, equals(FontWeight.w200));
     expect(outputTextStyle.fontStyle, equals(FontStyle.normal));
   });
+
+  testWidgets('Defaults to regular when no Text style is passed',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.lato();
+
+    expect(outputTextStyle.fontFamily, equals('Lato_regular'));
+  });
+
+  testWidgets(
+      'Defaults to regular when a Text style with no weight or style is passed',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.lato(textStyle: TextStyle());
+
+    expect(outputTextStyle.fontFamily, equals('Lato_regular'));
+  });
 }

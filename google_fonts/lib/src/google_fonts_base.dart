@@ -31,19 +31,22 @@ void clearCache() => _loadedFonts.clear();
 /// This function has a side effect of loading the font into the [FontLoader],
 /// either by network or from the file system.
 TextStyle googleFontsTextStyle({
-  String fontFamily,
+  @required String fontFamily,
   TextStyle textStyle,
   FontWeight fontWeight,
   FontStyle fontStyle,
-  Map<GoogleFontsVariant, String> fonts,
+  @required Map<GoogleFontsVariant, String> fonts,
 }) {
+  assert(fontFamily != null);
+  assert(fonts != null);
+
   textStyle ??= TextStyle();
   textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
 
   final variant = _closestMatch(
       GoogleFontsVariant(
-        fontWeight: textStyle.fontWeight,
-        fontStyle: textStyle.fontStyle,
+        fontWeight: textStyle.fontWeight ?? FontWeight.w400,
+        fontStyle: textStyle.fontStyle ?? FontStyle.normal,
       ),
       fonts.keys);
   final descriptor = GoogleFontsDescriptor(
