@@ -1,3 +1,7 @@
+## [0.0.8] - 2019-12-04
+
+Internal refactor and added tests.
+
 ## [0.0.7] - 2019-12-04
 
 BETA support for Flutter web.
