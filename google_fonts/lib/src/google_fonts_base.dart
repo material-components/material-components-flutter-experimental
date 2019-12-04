@@ -32,23 +32,34 @@ TextStyle googleFontsTextStyle({
   TextStyle textStyle,
   FontWeight fontWeight,
   FontStyle fontStyle,
-  List<GoogleFontsFamily> fonts,
+  Map<GoogleFontsVariant, String> fonts,
 }) {
   textStyle ??= TextStyle();
   textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
 
-  final font = closestMatch(GoogleFontsFamily.fromTextStyle(textStyle), fonts);
-  final googleFontsFontFamily = '$fontFamily${font.toString()}';
+  final variant = _closestMatch(
+      GoogleFontsVariant(
+        fontWeight: textStyle.fontWeight,
+        fontStyle: textStyle.fontStyle,
+      ),
+      fonts.keys);
+  final descriptor = GoogleFontsDescriptor(
+    fontFamily: fontFamily,
+    fontWeight: fontWeight,
+    fontStyle: fontStyle,
+    fontUrl: fonts[variant],
+  );
 
-  loadFontIfNecessary(fontFamily, font.url);
+  loadFontIfNecessary(descriptor);
+
   return textStyle.copyWith(
-    fontFamily: googleFontsFontFamily,
+    fontFamily: descriptor.familyWithVariant(),
     fontFamilyFallback: [fontFamily],
   );
 }
 
-/// Loads a font into the [FontLoader] with [fontName] for the matching
-/// [fontUrl].
+/// Loads a font into the [FontLoader] with [googleFontsFamilyName] for the
+/// matching [fontUrl].
 ///
 /// If a font with the [fontName] has already been loaded into memory, then
 /// this method does nothing as there is no need to load it a second time.
@@ -57,10 +68,11 @@ TextStyle googleFontsTextStyle({
 /// disk. If it is, then it loads it into the [FontLoader]. If it is not on
 /// disk, then it fetches it via the [fontUrl], stores it on disk, and loads it
 /// into the [FontLoader].
-Future<void> loadFontIfNecessary(String fontName, String fontUrl) async {
+Future<void> loadFontIfNecessary(GoogleFontsDescriptor descriptor) async {
+  final familyWithVariant = descriptor.familyWithVariant();
   // If this font has already been loaded, then there is no need to load it
   // again.
-  if (_loadedFonts.contains(fontName)) {
+  if (_loadedFonts.contains(familyWithVariant)) {
     return;
   }
 
@@ -68,15 +80,15 @@ Future<void> loadFontIfNecessary(String fontName, String fontUrl) async {
   // need to load it at all.
   final fontsJson = await _loadFontManifestJson();
   print('fontsJson: ${fontsJson.toString()}');
-  if (_hasFontName(fontName, fontsJson)) {
+  if (_isPrebundled(familyWithVariant, fontsJson)) {
     return;
   }
 
-  _loadedFonts.add(fontName);
-  final fontLoader = FontLoader(fontName);
-  var byteData = _readLocalFont(fontName);
+  _loadedFonts.add(familyWithVariant);
+  final fontLoader = FontLoader(familyWithVariant);
+  var byteData = _readLocalFont(familyWithVariant);
   if (await byteData == null) {
-    byteData = _httpFetchFont(fontName, fontUrl);
+    byteData = _httpFetchFont(familyWithVariant, descriptor.fontUrl);
   }
   fontLoader.addFont(byteData);
   await fontLoader.load();
@@ -85,23 +97,23 @@ Future<void> loadFontIfNecessary(String fontName, String fontUrl) async {
   PaintingBinding.instance.handleSystemMessage({'type': 'fontsChange'});
 }
 
-// Returns [GoogleFontsFamily] from `variants` that most closely matches
-// [style] according to the computeMatch scoring function.
+// Returns [GoogleFontsVariant] from [variantsToCompare] that most closely
+// matches [sourceVariant] according to the [_computeMatch] scoring function.
 //
-// This logic is taken from the following section of the minikin library, which
-// is ultimately how flutter handles matching fonts.
+// This logic is derived from the following section of the minikin library,
+// which is ultimately how flutter handles matching fonts.
 // https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L149
-GoogleFontsFamily closestMatch(
-  GoogleFontsFamily style,
-  List<GoogleFontsFamily> variants,
+GoogleFontsVariant _closestMatch(
+  GoogleFontsVariant sourceVariant,
+  Iterable<GoogleFontsVariant> variantsToCompare,
 ) {
   int bestScore;
-  GoogleFontsFamily bestMatch;
-  for (var variant in variants) {
-    final score = _computeMatch(style, variant);
+  GoogleFontsVariant bestMatch;
+  for (final variantToCompare in variantsToCompare) {
+    final score = _computeMatch(sourceVariant, variantToCompare);
     if (bestScore == null || score < bestScore) {
       bestScore = score;
-      bestMatch = variant;
+      bestMatch = variantToCompare;
     }
   }
   return bestMatch;
@@ -133,20 +145,26 @@ Future<List<dynamic>> _loadFontManifestJson() async {
   });
 }
 
-bool _hasFontName(String fontName, dynamic fontsJson) {
+bool _isPrebundled(String fontName, dynamic fontsJson) {
   final fontNameChunks = fontName.split('-');
   final fontFamily = fontNameChunks[0];
-  final googleFontsFamilyString = fontNameChunks.length > 1 ? fontNameChunks[1] : '';
-  final googleFontsFamily = GoogleFontsFamily.fromString(googleFontsFamilyString);
+  final googleFontsFamilyString =
+      fontNameChunks.length > 1 ? fontNameChunks[1] : '';
+  final googleFontsFamily =
+      GoogleFontsDescriptor.fromFamilyWithVariant(googleFontsFamilyString);
 
   for (final fontFamilyJson in fontsJson) {
-    print('fontFamilyJson->family' + fontFamilyJson['family'] );
+    print('fontFamilyJson->family' + fontFamilyJson['family']);
     if (fontFamilyJson['family'] == fontFamily) {
       for (final fontJson in fontFamilyJson['fonts']) {
         final fontWeight = (googleFontsFamily.fontWeight + 1) * 100;
-        final fontStyle = googleFontsFamily.fontStyle.toString().replaceAll('FontStyle.', '');
-        final matchesWeight = fontWeight == 400 && fontJson['weight'] == null || fontJson['weight'] == fontWeight;
-        final matchesStyle = fontStyle == 'regular' && fontJson('regular') == null || fontJson['style'] == fontStyle;
+        final fontStyle =
+            googleFontsFamily.fontStyle.toString().replaceAll('FontStyle.', '');
+        final matchesWeight = fontWeight == 400 && fontJson['weight'] == null ||
+            fontJson['weight'] == fontWeight;
+        final matchesStyle =
+            fontStyle == 'regular' && fontJson('regular') == null ||
+                fontJson['style'] == fontStyle;
         if (matchesWeight && matchesStyle) {
           return true;
         }
@@ -188,31 +206,78 @@ Future<ByteData> _readLocalFont(String name) async {
 }
 
 class GoogleFontsVariant {
-  const GoogleFontsVariant(this.fontWeight, this.fontStyle);
+  const GoogleFontsVariant({
+    @required this.fontWeight,
+    @required this.fontStyle,
+  });
+
+  GoogleFontsVariant.fromString(String variantString)
+      : this.fontWeight = FontWeight.values[variantString == _regular ||
+                variantString == _italic
+            ? 3
+            : (int.parse(variantString.replaceAll(_italic, '')) ~/ 100) - 1],
+        this.fontStyle = variantString.contains(_italic)
+            ? FontStyle.italic
+            : FontStyle.normal;
 
   final FontWeight fontWeight;
   final FontStyle fontStyle;
+
+  @override
+  String toString() {
+    final fontWeightString = (fontWeight.index ?? 3 + 1) * 100;
+    final fontStyleString = fontStyle.toString().replaceAll('FontStyle.', '');
+    return '$fontWeightString$fontStyleString';
+  }
+
+  @override
+  int get hashCode => hashValues(fontWeight, fontStyle);
+
+  @override
+  bool operator ==(dynamic other) {
+    if (identical(this, other)) {
+      return true;
+    }
+    if (other.runtimeType != runtimeType) {
+      return false;
+    }
+    final GoogleFontsDescriptor typedOther = other;
+    return typedOther.fontWeight == fontWeight &&
+        typedOther.fontStyle == fontStyle;
+  }
 }
 
-class GoogleFontsFamily {
-  const GoogleFontsFamily(this.fontWeight, this.fontStyle, [this.url]);
+class GoogleFontsDescriptor {
+  const GoogleFontsDescriptor({
+    this.fontFamily,
+    this.fontWeight,
+    this.fontStyle,
+    this.fontUrl,
+  });
 
-  // The FontWeight as an index [0-8] representing the font weights 100-900.
-  final int fontWeight;
+  final String fontFamily;
+  final FontWeight fontWeight;
   final FontStyle fontStyle;
-  final String url;
+  final String fontUrl;
 
-  // From a string key, for example, `500italic`.
-  GoogleFontsFamily.fromString(String key, [this.url])
-      : this.fontWeight = key == _regular || key == _italic
-            ? 3
-            : (int.parse(key.replaceAll(_italic, '')) ~/ 100) - 1,
-        this.fontStyle =
-            key.contains(_italic) ? FontStyle.italic : FontStyle.normal;
+//  // From a string key, for example, `500italic`.
+//  GoogleFontsDescriptor.fromVariantStringAndUrl({
+//    String variantString,
+//    this.fontUrl,
+//  })  : this.fontWeight = key == _regular || key == _italic
+//            ? 3
+//            : (int.parse(key.replaceAll(_italic, '')) ~/ 100) - 1,
+//        this.fontStyle =
+//            key.contains(_italic) ? FontStyle.italic : FontStyle.normal;
 
-  GoogleFontsFamily.fromTextStyle(TextStyle style, [this.url])
-      : this.fontWeight = style?.fontWeight?.index ?? 3,
-        this.fontStyle = style?.fontStyle ?? FontStyle.normal;
+//  GoogleFontsDescriptor.fromTextStyle(TextStyle style, [this.fontUrl])
+//      : this.fontWeight = style?.fontWeight?.index ?? 3,
+//        this.fontStyle = style?.fontStyle ?? FontStyle.normal;
+
+  String familyWithVariant() {
+    final variantString = GoogleFontsVariant(fontWeight: fontWeight, fontStyle: fontStyle).toString();
+    return '$fontFamily$variantString';
+  }
 
   @override
   String toString() {
@@ -233,7 +298,7 @@ class GoogleFontsFamily {
     if (other.runtimeType != runtimeType) {
       return false;
     }
-    final GoogleFontsFamily typedOther = other;
+    final GoogleFontsDescriptor typedOther = other;
     return typedOther.fontWeight == fontWeight &&
         typedOther.fontStyle == fontStyle;
   }
@@ -242,11 +307,11 @@ class GoogleFontsFamily {
 // This logic is taken from the following section of the minikin library, which
 // is ultimately how flutter handles matching fonts.
 // * https://github.com/flutter/engine/blob/master/third_party/txt/src/minikin/FontFamily.cpp#L128
-int _computeMatch(GoogleFontsFamily a, GoogleFontsFamily b) {
+int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
   if (a == b) {
     return 0;
   }
-  int score = (a.fontWeight - b.fontWeight).abs();
+  int score = (a.fontWeight.index - b.fontWeight.index).abs();
   if (a.fontStyle != b.fontStyle) {
     score += 2;
   }

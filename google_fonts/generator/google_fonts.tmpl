@@ -18,14 +18,14 @@ class GoogleFonts {
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
-    final fonts = <GoogleFontsFamily>[
+    final fonts = <GoogleFontsVariant, String>{
       {{#fontUrls}}
-      GoogleFontsFamily.fromString('{{variant}}', '{{url}}'),
+      GoogleFontsVariant.fromString('{{variant}}'): '{{url}}',
       {{/fontUrls}}
-    ];
+    };
 
     return googleFontsTextStyle(
-      fontFamily: '{{fontFamily}}'',
+      fontFamily: '{{fontFamily}}',
       textStyle: textStyle,
       fontWeight: fontWeight,
       fontStyle: fontStyle,
