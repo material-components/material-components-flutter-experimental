@@ -69,18 +69,26 @@ Text(
 You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text theme to use the "Lato" font.
 
 ```dart
-final textTheme = GoogleFonts.latoTextTheme(
-    textTheme: Theme.of(context).textTheme,
+MaterialApp(
+  theme: ThemeData(
+    textTheme: GoogleFonts.latoTextTheme(
+      Theme.of(context).textTheme,
+    ),
+  ),
 );
 ```
 
 Or, if you want a `TextTheme` where a couple of styles should use a different font:
 
 ```dart
-final textTheme = GoogleFonts.latoTextTheme(
-    textTheme: Theme.of(context).textTheme,
-).copyWith(
-  body1: GoogleFonts.oswaldTextStyle(textStyle: Theme.of(context).textTheme.body1),
+final textTheme = Theme.of(context).textTheme;
+
+MaterialApp(
+  theme: ThemeData(
+    textTheme: GoogleFonts.latoTextTheme(textTheme).copyWith(
+      body1: GoogleFonts.oswaldTextStyle(textStyle: textTheme.body1),
+    ),
+  ),
 );
 ```
  
