@@ -59,7 +59,7 @@ Text(
   'This is Google Fonts',
   style: GoogleFonts.latoTextStyle(
     textStyle: Theme.of(context).textTheme.display1,
-    fontSize:48,
+    fontSize: 48,
     fontWeight: FontWeight.w700,
     fontStyle: FontStyle.italic,
   ),
@@ -71,6 +71,16 @@ You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text 
 ```dart
 final textTheme = GoogleFonts.latoTextTheme(
     textTheme: Theme.of(context).textTheme,
+);
+```
+
+Or, if you want a `TextTheme` where a couple of styles should use a different font:
+
+```dart
+final textTheme = GoogleFonts.latoTextTheme(
+    textTheme: Theme.of(context).textTheme,
+).copyWith(
+  body1: GoogleFonts.oswaldTextStyle(textStyle: Theme.of(context).textTheme.body1),
 );
 ```
  
