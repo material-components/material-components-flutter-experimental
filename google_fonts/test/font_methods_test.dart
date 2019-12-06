@@ -105,4 +105,31 @@ main() {
 
     expect(outputTextStyle.fontFamily, equals('Lato_regular'));
   });
+
+  testWidgets('fontSize is honored when passed in via a TextStyle param',
+      (tester) async {
+    final textStyle = TextStyle(fontSize: 37);
+    final outputTextStyle = GoogleFonts.rancho(textStyle: textStyle);
+
+    expect(outputTextStyle.fontSize, equals(37));
+  });
+
+  testWidgets('fontSize is honored from a passed in the fontSize param',
+      (tester) async {
+    final outputTextStyle = GoogleFonts.rancho(fontSize: 31);
+
+    expect(outputTextStyle.fontSize, equals(31));
+  });
+
+  testWidgets(
+      'fontSize from top level fontSize param takes precedence over fontSize '
+      'from TextStyle param', (tester) async {
+    final textStyle = TextStyle(fontSize: 41);
+    final outputTextStyle = GoogleFonts.rancho(
+      textStyle: textStyle,
+      fontSize: 47,
+    );
+
+    expect(outputTextStyle.fontSize, equals(47));
+  });
 }

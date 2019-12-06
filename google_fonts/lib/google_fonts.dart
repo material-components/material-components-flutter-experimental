@@ -15,6 +15,7 @@ import 'src/google_fonts_variant.dart';
 class GoogleFonts {
   static TextStyle aBeeZee({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -25,8 +26,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ABeeZee',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -34,6 +36,7 @@ class GoogleFonts {
 
   static TextStyle abel({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -43,8 +46,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Abel',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -52,6 +56,7 @@ class GoogleFonts {
 
   static TextStyle abhayaLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -65,8 +70,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AbhayaLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -74,6 +80,7 @@ class GoogleFonts {
 
   static TextStyle abrilFatface({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -83,8 +90,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AbrilFatface',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -92,6 +100,7 @@ class GoogleFonts {
 
   static TextStyle aclonica({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -101,8 +110,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Aclonica',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -110,6 +120,7 @@ class GoogleFonts {
 
   static TextStyle acme({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -119,8 +130,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Acme',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -128,6 +140,7 @@ class GoogleFonts {
 
   static TextStyle actor({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -137,8 +150,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Actor',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -146,6 +160,7 @@ class GoogleFonts {
 
   static TextStyle adamina({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -155,8 +170,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Adamina',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -164,6 +180,7 @@ class GoogleFonts {
 
   static TextStyle adventPro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -179,8 +196,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AdventPro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -188,6 +206,7 @@ class GoogleFonts {
 
   static TextStyle aguafinaScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -197,8 +216,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AguafinaScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -206,6 +226,7 @@ class GoogleFonts {
 
   static TextStyle akronim({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -215,8 +236,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Akronim',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -224,6 +246,7 @@ class GoogleFonts {
 
   static TextStyle aladin({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -233,8 +256,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Aladin',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -242,6 +266,7 @@ class GoogleFonts {
 
   static TextStyle aldrich({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -251,8 +276,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Aldrich',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -260,6 +286,7 @@ class GoogleFonts {
 
   static TextStyle alef({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -270,8 +297,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Alef',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -279,6 +307,7 @@ class GoogleFonts {
 
   static TextStyle alegreya({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -297,8 +326,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Alegreya',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -306,6 +336,7 @@ class GoogleFonts {
 
   static TextStyle alegreyaSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -324,8 +355,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlegreyaSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -333,6 +365,7 @@ class GoogleFonts {
 
   static TextStyle alegreyaSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -355,8 +388,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlegreyaSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -364,6 +398,7 @@ class GoogleFonts {
 
   static TextStyle alegreyaSansSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -386,8 +421,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlegreyaSansSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -395,6 +431,7 @@ class GoogleFonts {
 
   static TextStyle aleo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -409,8 +446,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Aleo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -418,6 +456,7 @@ class GoogleFonts {
 
   static TextStyle alexBrush({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -427,8 +466,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlexBrush',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -436,6 +476,7 @@ class GoogleFonts {
 
   static TextStyle alfaSlabOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -445,8 +486,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlfaSlabOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -454,6 +496,7 @@ class GoogleFonts {
 
   static TextStyle alice({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -463,8 +506,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Alice',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -472,6 +516,7 @@ class GoogleFonts {
 
   static TextStyle alike({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -481,8 +526,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Alike',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -490,6 +536,7 @@ class GoogleFonts {
 
   static TextStyle alikeAngular({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -499,8 +546,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlikeAngular',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -508,6 +556,7 @@ class GoogleFonts {
 
   static TextStyle allan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -518,8 +567,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Allan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -527,6 +577,7 @@ class GoogleFonts {
 
   static TextStyle allerta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -536,8 +587,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Allerta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -545,6 +597,7 @@ class GoogleFonts {
 
   static TextStyle allertaStencil({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -554,8 +607,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AllertaStencil',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -563,6 +617,7 @@ class GoogleFonts {
 
   static TextStyle allura({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -572,8 +627,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Allura',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -581,6 +637,7 @@ class GoogleFonts {
 
   static TextStyle almarai({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -593,8 +650,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Almarai',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -602,6 +660,7 @@ class GoogleFonts {
 
   static TextStyle almendra({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -614,8 +673,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Almendra',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -623,6 +683,7 @@ class GoogleFonts {
 
   static TextStyle almendraDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -632,8 +693,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlmendraDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -641,6 +703,7 @@ class GoogleFonts {
 
   static TextStyle almendraSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -650,8 +713,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AlmendraSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -659,6 +723,7 @@ class GoogleFonts {
 
   static TextStyle amarante({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -668,8 +733,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Amarante',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -677,6 +743,7 @@ class GoogleFonts {
 
   static TextStyle amaranth({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -689,8 +756,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Amaranth',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -698,6 +766,7 @@ class GoogleFonts {
 
   static TextStyle amaticSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -708,8 +777,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AmaticSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -717,6 +787,7 @@ class GoogleFonts {
 
   static TextStyle amethysta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -726,8 +797,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Amethysta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -735,6 +807,7 @@ class GoogleFonts {
 
   static TextStyle amiko({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -746,8 +819,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Amiko',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -755,6 +829,7 @@ class GoogleFonts {
 
   static TextStyle amiri({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -767,8 +842,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Amiri',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -776,6 +852,7 @@ class GoogleFonts {
 
   static TextStyle amita({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -786,8 +863,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Amita',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -795,6 +873,7 @@ class GoogleFonts {
 
   static TextStyle anaheim({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -804,8 +883,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Anaheim',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -813,6 +893,7 @@ class GoogleFonts {
 
   static TextStyle andada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -822,8 +903,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Andada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -831,6 +913,7 @@ class GoogleFonts {
 
   static TextStyle andika({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -840,8 +923,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Andika',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -849,6 +933,7 @@ class GoogleFonts {
 
   static TextStyle angkor({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -858,8 +943,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Angkor',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -867,6 +953,7 @@ class GoogleFonts {
 
   static TextStyle annieUseYourTelescope({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -876,8 +963,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AnnieUseYourTelescope',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -885,6 +973,7 @@ class GoogleFonts {
 
   static TextStyle anonymousPro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -897,8 +986,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AnonymousPro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -906,6 +996,7 @@ class GoogleFonts {
 
   static TextStyle antic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -915,8 +1006,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Antic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -924,6 +1016,7 @@ class GoogleFonts {
 
   static TextStyle anticDidone({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -933,8 +1026,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AnticDidone',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -942,6 +1036,7 @@ class GoogleFonts {
 
   static TextStyle anticSlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -951,8 +1046,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AnticSlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -960,6 +1056,7 @@ class GoogleFonts {
 
   static TextStyle anton({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -969,8 +1066,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Anton',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -978,6 +1076,7 @@ class GoogleFonts {
 
   static TextStyle arapey({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -988,8 +1087,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Arapey',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -997,6 +1097,7 @@ class GoogleFonts {
 
   static TextStyle arbutus({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1006,8 +1107,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Arbutus',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1015,6 +1117,7 @@ class GoogleFonts {
 
   static TextStyle arbutusSlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1024,8 +1127,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ArbutusSlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1033,6 +1137,7 @@ class GoogleFonts {
 
   static TextStyle architectsDaughter({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1042,8 +1147,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ArchitectsDaughter',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1051,6 +1157,7 @@ class GoogleFonts {
 
   static TextStyle archivo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1067,8 +1174,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Archivo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1076,6 +1184,7 @@ class GoogleFonts {
 
   static TextStyle archivoBlack({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1085,8 +1194,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ArchivoBlack',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1094,6 +1204,7 @@ class GoogleFonts {
 
   static TextStyle archivoNarrow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1110,8 +1221,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ArchivoNarrow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1119,6 +1231,7 @@ class GoogleFonts {
 
   static TextStyle arefRuqaa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1129,8 +1242,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ArefRuqaa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1138,6 +1252,7 @@ class GoogleFonts {
 
   static TextStyle arimaMadurai({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1154,8 +1269,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ArimaMadurai',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1163,6 +1279,7 @@ class GoogleFonts {
 
   static TextStyle arimo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1175,8 +1292,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Arimo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1184,6 +1302,7 @@ class GoogleFonts {
 
   static TextStyle arizonia({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1193,8 +1312,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Arizonia',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1202,6 +1322,7 @@ class GoogleFonts {
 
   static TextStyle armata({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1211,8 +1332,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Armata',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1220,6 +1342,7 @@ class GoogleFonts {
 
   static TextStyle arsenal({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1232,8 +1355,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Arsenal',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1241,6 +1365,7 @@ class GoogleFonts {
 
   static TextStyle artifika({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1250,8 +1375,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Artifika',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1259,6 +1385,7 @@ class GoogleFonts {
 
   static TextStyle arvo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1271,8 +1398,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Arvo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1280,6 +1408,7 @@ class GoogleFonts {
 
   static TextStyle arya({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1290,8 +1419,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Arya',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1299,6 +1429,7 @@ class GoogleFonts {
 
   static TextStyle asap({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1315,8 +1446,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Asap',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1324,6 +1456,7 @@ class GoogleFonts {
 
   static TextStyle asapCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1340,8 +1473,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AsapCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1349,6 +1483,7 @@ class GoogleFonts {
 
   static TextStyle asar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1358,8 +1493,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Asar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1367,6 +1503,7 @@ class GoogleFonts {
 
   static TextStyle asset({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1376,8 +1513,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Asset',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1385,6 +1523,7 @@ class GoogleFonts {
 
   static TextStyle assistant({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1399,8 +1538,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Assistant',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1408,6 +1548,7 @@ class GoogleFonts {
 
   static TextStyle astloch({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1418,8 +1559,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Astloch',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1427,6 +1569,7 @@ class GoogleFonts {
 
   static TextStyle asul({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1437,8 +1580,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Asul',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1446,6 +1590,7 @@ class GoogleFonts {
 
   static TextStyle athiti({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1460,8 +1605,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Athiti',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1469,6 +1615,7 @@ class GoogleFonts {
 
   static TextStyle atma({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1482,8 +1629,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Atma',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1491,6 +1639,7 @@ class GoogleFonts {
 
   static TextStyle atomicAge({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1500,8 +1649,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AtomicAge',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1509,6 +1659,7 @@ class GoogleFonts {
 
   static TextStyle aubrey({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1518,8 +1669,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Aubrey',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1527,6 +1679,7 @@ class GoogleFonts {
 
   static TextStyle audiowide({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1536,8 +1689,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Audiowide',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1545,6 +1699,7 @@ class GoogleFonts {
 
   static TextStyle autourOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1554,8 +1709,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AutourOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1563,6 +1719,7 @@ class GoogleFonts {
 
   static TextStyle average({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1572,8 +1729,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Average',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1581,6 +1739,7 @@ class GoogleFonts {
 
   static TextStyle averageSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1590,8 +1749,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AverageSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1599,6 +1759,7 @@ class GoogleFonts {
 
   static TextStyle averiaGruesaLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1608,8 +1769,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AveriaGruesaLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1617,6 +1779,7 @@ class GoogleFonts {
 
   static TextStyle averiaLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1631,8 +1794,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AveriaLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1640,6 +1804,7 @@ class GoogleFonts {
 
   static TextStyle averiaSansLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1654,8 +1819,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AveriaSansLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1663,6 +1829,7 @@ class GoogleFonts {
 
   static TextStyle averiaSerifLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1677,8 +1844,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'AveriaSerifLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1686,6 +1854,7 @@ class GoogleFonts {
 
   static TextStyle b612({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1698,8 +1867,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'B612',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1707,6 +1877,7 @@ class GoogleFonts {
 
   static TextStyle b612Mono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1719,8 +1890,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'B612Mono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1728,6 +1900,7 @@ class GoogleFonts {
 
   static TextStyle badScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1737,8 +1910,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BadScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1746,6 +1920,7 @@ class GoogleFonts {
 
   static TextStyle bahiana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1755,8 +1930,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bahiana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1764,6 +1940,7 @@ class GoogleFonts {
 
   static TextStyle bahianita({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1773,8 +1950,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bahianita',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1782,6 +1960,7 @@ class GoogleFonts {
 
   static TextStyle baiJamjuree({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1802,8 +1981,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BaiJamjuree',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1811,6 +1991,7 @@ class GoogleFonts {
 
   static TextStyle baloo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1820,8 +2001,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Baloo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1829,6 +2011,7 @@ class GoogleFonts {
 
   static TextStyle balooBhai({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1838,8 +2021,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooBhai',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1847,6 +2031,7 @@ class GoogleFonts {
 
   static TextStyle balooBhaijaan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1856,8 +2041,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooBhaijaan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1865,6 +2051,7 @@ class GoogleFonts {
 
   static TextStyle balooBhaina({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1874,8 +2061,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooBhaina',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1883,6 +2071,7 @@ class GoogleFonts {
 
   static TextStyle balooChettan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1892,8 +2081,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooChettan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1901,6 +2091,7 @@ class GoogleFonts {
 
   static TextStyle balooDa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1910,8 +2101,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooDa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1919,6 +2111,7 @@ class GoogleFonts {
 
   static TextStyle balooPaaji({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1928,8 +2121,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooPaaji',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1937,6 +2131,7 @@ class GoogleFonts {
 
   static TextStyle balooTamma({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1946,8 +2141,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooTamma',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1955,6 +2151,7 @@ class GoogleFonts {
 
   static TextStyle balooTammudu({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1964,8 +2161,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooTammudu',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1973,6 +2171,7 @@ class GoogleFonts {
 
   static TextStyle balooThambi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -1982,8 +2181,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BalooThambi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -1991,6 +2191,7 @@ class GoogleFonts {
 
   static TextStyle balthazar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2000,8 +2201,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Balthazar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2009,6 +2211,7 @@ class GoogleFonts {
 
   static TextStyle bangers({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2018,8 +2221,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bangers',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2027,6 +2231,7 @@ class GoogleFonts {
 
   static TextStyle barlow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2053,8 +2258,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Barlow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2062,6 +2268,7 @@ class GoogleFonts {
 
   static TextStyle barlowCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2088,8 +2295,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BarlowCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2097,6 +2305,7 @@ class GoogleFonts {
 
   static TextStyle barlowSemiCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2123,8 +2332,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BarlowSemiCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2132,6 +2342,7 @@ class GoogleFonts {
 
   static TextStyle barriecito({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2141,8 +2352,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Barriecito',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2150,6 +2362,7 @@ class GoogleFonts {
 
   static TextStyle barrio({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2159,8 +2372,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Barrio',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2168,6 +2382,7 @@ class GoogleFonts {
 
   static TextStyle basic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2177,8 +2392,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Basic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2186,6 +2402,7 @@ class GoogleFonts {
 
   static TextStyle battambang({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2196,8 +2413,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Battambang',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2205,6 +2423,7 @@ class GoogleFonts {
 
   static TextStyle baumans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2214,8 +2433,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Baumans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2223,6 +2443,7 @@ class GoogleFonts {
 
   static TextStyle bayon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2232,8 +2453,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bayon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2241,6 +2463,7 @@ class GoogleFonts {
 
   static TextStyle beVietnam({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2263,8 +2486,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BeVietnam',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2272,6 +2496,7 @@ class GoogleFonts {
 
   static TextStyle belgrano({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2281,8 +2506,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Belgrano',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2290,6 +2516,7 @@ class GoogleFonts {
 
   static TextStyle bellefair({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2299,8 +2526,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bellefair',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2308,6 +2536,7 @@ class GoogleFonts {
 
   static TextStyle belleza({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2317,8 +2546,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Belleza',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2326,6 +2556,7 @@ class GoogleFonts {
 
   static TextStyle benchNine({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2337,8 +2568,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BenchNine',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2346,6 +2578,7 @@ class GoogleFonts {
 
   static TextStyle bentham({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2355,8 +2588,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bentham',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2364,6 +2598,7 @@ class GoogleFonts {
 
   static TextStyle berkshireSwash({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2373,8 +2608,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BerkshireSwash',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2382,6 +2618,7 @@ class GoogleFonts {
 
   static TextStyle bethEllen({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2391,8 +2628,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BethEllen',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2400,6 +2638,7 @@ class GoogleFonts {
 
   static TextStyle bevan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2409,8 +2648,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bevan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2418,6 +2658,7 @@ class GoogleFonts {
 
   static TextStyle bigShouldersDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2434,8 +2675,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BigShouldersDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2443,6 +2685,7 @@ class GoogleFonts {
 
   static TextStyle bigShouldersText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2459,8 +2702,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BigShouldersText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2468,6 +2712,7 @@ class GoogleFonts {
 
   static TextStyle bigelowRules({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2477,8 +2722,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BigelowRules',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2486,6 +2732,7 @@ class GoogleFonts {
 
   static TextStyle bigshotOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2495,8 +2742,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BigshotOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2504,6 +2752,7 @@ class GoogleFonts {
 
   static TextStyle bilbo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2513,8 +2762,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bilbo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2522,6 +2772,7 @@ class GoogleFonts {
 
   static TextStyle bilboSwashCaps({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2531,8 +2782,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BilboSwashCaps',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2540,6 +2792,7 @@ class GoogleFonts {
 
   static TextStyle bioRhyme({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2553,8 +2806,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BioRhyme',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2562,6 +2816,7 @@ class GoogleFonts {
 
   static TextStyle bioRhymeExpanded({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2575,8 +2830,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BioRhymeExpanded',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2584,6 +2840,7 @@ class GoogleFonts {
 
   static TextStyle biryani({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2599,8 +2856,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Biryani',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2608,6 +2866,7 @@ class GoogleFonts {
 
   static TextStyle bitter({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2619,8 +2878,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bitter',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2628,6 +2888,7 @@ class GoogleFonts {
 
   static TextStyle blackAndWhitePicture({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2637,8 +2898,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BlackAndWhitePicture',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2646,6 +2908,7 @@ class GoogleFonts {
 
   static TextStyle blackHanSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2655,8 +2918,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BlackHanSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2664,6 +2928,7 @@ class GoogleFonts {
 
   static TextStyle blackOpsOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2673,8 +2938,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BlackOpsOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2682,6 +2948,7 @@ class GoogleFonts {
 
   static TextStyle blinker({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2698,8 +2965,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Blinker',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2707,6 +2975,7 @@ class GoogleFonts {
 
   static TextStyle bokor({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2716,8 +2985,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bokor',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2725,6 +2995,7 @@ class GoogleFonts {
 
   static TextStyle bonbon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2734,8 +3005,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bonbon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2743,6 +3015,7 @@ class GoogleFonts {
 
   static TextStyle boogaloo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2752,8 +3025,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Boogaloo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2761,6 +3035,7 @@ class GoogleFonts {
 
   static TextStyle bowlbyOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2770,8 +3045,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BowlbyOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2779,6 +3055,7 @@ class GoogleFonts {
 
   static TextStyle bowlbyOneSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2788,8 +3065,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BowlbyOneSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2797,6 +3075,7 @@ class GoogleFonts {
 
   static TextStyle brawler({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2806,8 +3085,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Brawler',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2815,6 +3095,7 @@ class GoogleFonts {
 
   static TextStyle breeSerif({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2824,8 +3105,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BreeSerif',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2833,6 +3115,7 @@ class GoogleFonts {
 
   static TextStyle bubblegumSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2842,8 +3125,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BubblegumSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2851,6 +3135,7 @@ class GoogleFonts {
 
   static TextStyle bubblerOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2860,8 +3145,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BubblerOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2869,6 +3155,7 @@ class GoogleFonts {
 
   static TextStyle buda({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2878,8 +3165,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Buda',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2887,6 +3175,7 @@ class GoogleFonts {
 
   static TextStyle buenard({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2897,8 +3186,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Buenard',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2906,6 +3196,7 @@ class GoogleFonts {
 
   static TextStyle bungee({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2915,8 +3206,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Bungee',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2924,6 +3216,7 @@ class GoogleFonts {
 
   static TextStyle bungeeHairline({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2933,8 +3226,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BungeeHairline',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2942,6 +3236,7 @@ class GoogleFonts {
 
   static TextStyle bungeeInline({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2951,8 +3246,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BungeeInline',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2960,6 +3256,7 @@ class GoogleFonts {
 
   static TextStyle bungeeOutline({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2969,8 +3266,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BungeeOutline',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2978,6 +3276,7 @@ class GoogleFonts {
 
   static TextStyle bungeeShade({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -2987,8 +3286,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'BungeeShade',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -2996,6 +3296,7 @@ class GoogleFonts {
 
   static TextStyle butcherman({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3005,8 +3306,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Butcherman',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3014,6 +3316,7 @@ class GoogleFonts {
 
   static TextStyle butterflyKids({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3023,8 +3326,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ButterflyKids',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3032,6 +3336,7 @@ class GoogleFonts {
 
   static TextStyle cabin({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3048,8 +3353,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cabin',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3057,6 +3363,7 @@ class GoogleFonts {
 
   static TextStyle cabinCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3069,8 +3376,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CabinCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3078,6 +3386,7 @@ class GoogleFonts {
 
   static TextStyle cabinSketch({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3088,8 +3397,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CabinSketch',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3097,6 +3407,7 @@ class GoogleFonts {
 
   static TextStyle caesarDressing({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3106,8 +3417,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CaesarDressing',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3115,6 +3427,7 @@ class GoogleFonts {
 
   static TextStyle cagliostro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3124,8 +3437,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cagliostro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3133,6 +3447,7 @@ class GoogleFonts {
 
   static TextStyle cairo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3147,8 +3462,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cairo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3156,6 +3472,7 @@ class GoogleFonts {
 
   static TextStyle calligraffitti({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3165,8 +3482,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Calligraffitti',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3174,6 +3492,7 @@ class GoogleFonts {
 
   static TextStyle cambay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3186,8 +3505,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cambay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3195,6 +3515,7 @@ class GoogleFonts {
 
   static TextStyle cambo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3204,8 +3525,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cambo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3213,6 +3535,7 @@ class GoogleFonts {
 
   static TextStyle candal({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3222,8 +3545,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Candal',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3231,6 +3555,7 @@ class GoogleFonts {
 
   static TextStyle cantarell({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3243,8 +3568,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cantarell',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3252,6 +3578,7 @@ class GoogleFonts {
 
   static TextStyle cantataOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3261,8 +3588,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CantataOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3270,6 +3598,7 @@ class GoogleFonts {
 
   static TextStyle cantoraOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3279,8 +3608,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CantoraOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3288,6 +3618,7 @@ class GoogleFonts {
 
   static TextStyle capriola({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3297,8 +3628,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Capriola',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3306,6 +3638,7 @@ class GoogleFonts {
 
   static TextStyle cardo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3317,8 +3650,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cardo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3326,6 +3660,7 @@ class GoogleFonts {
 
   static TextStyle carme({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3335,8 +3670,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Carme',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3344,6 +3680,7 @@ class GoogleFonts {
 
   static TextStyle carroisGothic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3353,8 +3690,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CarroisGothic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3362,6 +3700,7 @@ class GoogleFonts {
 
   static TextStyle carroisGothicSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3371,8 +3710,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CarroisGothicSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3380,6 +3720,7 @@ class GoogleFonts {
 
   static TextStyle carterOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3389,8 +3730,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CarterOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3398,6 +3740,7 @@ class GoogleFonts {
 
   static TextStyle catamaran({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3415,8 +3758,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Catamaran',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3424,6 +3768,7 @@ class GoogleFonts {
 
   static TextStyle caudex({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3436,8 +3781,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Caudex',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3445,6 +3791,7 @@ class GoogleFonts {
 
   static TextStyle caveat({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3455,8 +3802,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Caveat',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3464,6 +3812,7 @@ class GoogleFonts {
 
   static TextStyle caveatBrush({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3473,8 +3822,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CaveatBrush',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3482,6 +3832,7 @@ class GoogleFonts {
 
   static TextStyle cedarvilleCursive({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3491,8 +3842,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CedarvilleCursive',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3500,6 +3852,7 @@ class GoogleFonts {
 
   static TextStyle cevicheOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3509,8 +3862,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CevicheOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3518,6 +3872,7 @@ class GoogleFonts {
 
   static TextStyle chakraPetch({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3536,8 +3891,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ChakraPetch',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3545,6 +3901,7 @@ class GoogleFonts {
 
   static TextStyle changa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3560,8 +3917,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Changa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3569,6 +3927,7 @@ class GoogleFonts {
 
   static TextStyle changaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3579,8 +3938,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ChangaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3588,6 +3948,7 @@ class GoogleFonts {
 
   static TextStyle chango({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3597,8 +3958,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chango',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3606,6 +3968,7 @@ class GoogleFonts {
 
   static TextStyle charm({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3616,8 +3979,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Charm',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3625,6 +3989,7 @@ class GoogleFonts {
 
   static TextStyle charmonman({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3635,8 +4000,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Charmonman',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3644,6 +4010,7 @@ class GoogleFonts {
 
   static TextStyle chathura({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3657,8 +4024,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chathura',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3666,6 +4034,7 @@ class GoogleFonts {
 
   static TextStyle chauPhilomeneOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3676,8 +4045,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ChauPhilomeneOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3685,6 +4055,7 @@ class GoogleFonts {
 
   static TextStyle chelaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3694,8 +4065,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ChelaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3703,6 +4075,7 @@ class GoogleFonts {
 
   static TextStyle chelseaMarket({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3712,8 +4085,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ChelseaMarket',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3721,6 +4095,7 @@ class GoogleFonts {
 
   static TextStyle chenla({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3730,8 +4105,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chenla',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3739,6 +4115,7 @@ class GoogleFonts {
 
   static TextStyle cherryCreamSoda({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3748,8 +4125,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CherryCreamSoda',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3757,6 +4135,7 @@ class GoogleFonts {
 
   static TextStyle cherrySwash({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3767,8 +4146,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CherrySwash',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3776,6 +4156,7 @@ class GoogleFonts {
 
   static TextStyle chewy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3785,8 +4166,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chewy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3794,6 +4176,7 @@ class GoogleFonts {
 
   static TextStyle chicle({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3803,8 +4186,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chicle',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3812,6 +4196,7 @@ class GoogleFonts {
 
   static TextStyle chilanka({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3821,8 +4206,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chilanka',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3830,6 +4216,7 @@ class GoogleFonts {
 
   static TextStyle chivo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3846,8 +4233,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chivo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3855,6 +4243,7 @@ class GoogleFonts {
 
   static TextStyle chonburi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3864,8 +4253,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Chonburi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3873,6 +4263,7 @@ class GoogleFonts {
 
   static TextStyle cinzel({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3884,8 +4275,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cinzel',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3893,6 +4285,7 @@ class GoogleFonts {
 
   static TextStyle cinzelDecorative({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3904,8 +4297,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CinzelDecorative',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3913,6 +4307,7 @@ class GoogleFonts {
 
   static TextStyle clickerScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3922,8 +4317,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ClickerScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3931,6 +4327,7 @@ class GoogleFonts {
 
   static TextStyle coda({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3941,8 +4338,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Coda',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3950,6 +4348,7 @@ class GoogleFonts {
 
   static TextStyle codaCaption({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3959,8 +4358,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CodaCaption',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3968,6 +4368,7 @@ class GoogleFonts {
 
   static TextStyle codystar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3978,8 +4379,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Codystar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -3987,6 +4389,7 @@ class GoogleFonts {
 
   static TextStyle coiny({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -3996,8 +4399,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Coiny',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4005,6 +4409,7 @@ class GoogleFonts {
 
   static TextStyle combo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4014,8 +4419,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Combo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4023,6 +4429,7 @@ class GoogleFonts {
 
   static TextStyle comfortaa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4036,8 +4443,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Comfortaa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4045,6 +4453,7 @@ class GoogleFonts {
 
   static TextStyle comingSoon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4054,8 +4463,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ComingSoon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4063,6 +4473,7 @@ class GoogleFonts {
 
   static TextStyle concertOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4072,8 +4483,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ConcertOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4081,6 +4493,7 @@ class GoogleFonts {
 
   static TextStyle condiment({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4090,8 +4503,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Condiment',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4099,6 +4513,7 @@ class GoogleFonts {
 
   static TextStyle content({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4109,8 +4524,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Content',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4118,6 +4534,7 @@ class GoogleFonts {
 
   static TextStyle contrailOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4127,8 +4544,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ContrailOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4136,6 +4554,7 @@ class GoogleFonts {
 
   static TextStyle convergence({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4145,8 +4564,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Convergence',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4154,6 +4574,7 @@ class GoogleFonts {
 
   static TextStyle cookie({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4163,8 +4584,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cookie',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4172,6 +4594,7 @@ class GoogleFonts {
 
   static TextStyle copse({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4181,8 +4604,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Copse',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4190,6 +4614,7 @@ class GoogleFonts {
 
   static TextStyle corben({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4200,8 +4625,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Corben',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4209,6 +4635,7 @@ class GoogleFonts {
 
   static TextStyle cormorant({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4227,8 +4654,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cormorant',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4236,6 +4664,7 @@ class GoogleFonts {
 
   static TextStyle cormorantGaramond({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4254,8 +4683,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CormorantGaramond',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4263,6 +4693,7 @@ class GoogleFonts {
 
   static TextStyle cormorantInfant({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4281,8 +4712,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CormorantInfant',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4290,6 +4722,7 @@ class GoogleFonts {
 
   static TextStyle cormorantSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4303,8 +4736,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CormorantSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4312,6 +4746,7 @@ class GoogleFonts {
 
   static TextStyle cormorantUnicase({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4325,8 +4760,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CormorantUnicase',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4334,6 +4770,7 @@ class GoogleFonts {
 
   static TextStyle cormorantUpright({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4347,8 +4784,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CormorantUpright',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4356,6 +4794,7 @@ class GoogleFonts {
 
   static TextStyle courgette({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4365,8 +4804,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Courgette',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4374,6 +4814,7 @@ class GoogleFonts {
 
   static TextStyle cousine({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4386,8 +4827,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cousine',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4395,6 +4837,7 @@ class GoogleFonts {
 
   static TextStyle coustard({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4405,8 +4848,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Coustard',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4414,6 +4858,7 @@ class GoogleFonts {
 
   static TextStyle coveredByYourGrace({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4423,8 +4868,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CoveredByYourGrace',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4432,6 +4878,7 @@ class GoogleFonts {
 
   static TextStyle craftyGirls({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4441,8 +4888,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CraftyGirls',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4450,6 +4898,7 @@ class GoogleFonts {
 
   static TextStyle creepster({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4459,8 +4908,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Creepster',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4468,6 +4918,7 @@ class GoogleFonts {
 
   static TextStyle creteRound({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4478,8 +4929,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CreteRound',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4487,6 +4939,7 @@ class GoogleFonts {
 
   static TextStyle crimsonPro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4511,8 +4964,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CrimsonPro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4520,6 +4974,7 @@ class GoogleFonts {
 
   static TextStyle crimsonText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4534,8 +4989,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CrimsonText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4543,6 +4999,7 @@ class GoogleFonts {
 
   static TextStyle croissantOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4552,8 +5009,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CroissantOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4561,6 +5019,7 @@ class GoogleFonts {
 
   static TextStyle crushed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4570,8 +5029,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Crushed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4579,6 +5039,7 @@ class GoogleFonts {
 
   static TextStyle cuprum({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4591,8 +5052,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cuprum',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4600,6 +5062,7 @@ class GoogleFonts {
 
   static TextStyle cuteFont({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4609,8 +5072,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CuteFont',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4618,6 +5082,7 @@ class GoogleFonts {
 
   static TextStyle cutive({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4627,8 +5092,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Cutive',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4636,6 +5102,7 @@ class GoogleFonts {
 
   static TextStyle cutiveMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4645,8 +5112,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'CutiveMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4654,6 +5122,7 @@ class GoogleFonts {
 
   static TextStyle dMSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4668,8 +5137,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DMSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4677,6 +5147,7 @@ class GoogleFonts {
 
   static TextStyle dMSerifDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4687,8 +5158,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DMSerifDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4696,6 +5168,7 @@ class GoogleFonts {
 
   static TextStyle dMSerifText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4706,8 +5179,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DMSerifText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4715,6 +5189,7 @@ class GoogleFonts {
 
   static TextStyle damion({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4724,8 +5199,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Damion',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4733,6 +5209,7 @@ class GoogleFonts {
 
   static TextStyle dancingScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4743,8 +5220,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DancingScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4752,6 +5230,7 @@ class GoogleFonts {
 
   static TextStyle dangrek({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4761,8 +5240,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Dangrek',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4770,6 +5250,7 @@ class GoogleFonts {
 
   static TextStyle darkerGrotesque({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4785,8 +5266,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DarkerGrotesque',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4794,6 +5276,7 @@ class GoogleFonts {
 
   static TextStyle davidLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4805,8 +5288,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DavidLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4814,6 +5298,7 @@ class GoogleFonts {
 
   static TextStyle dawningofaNewDay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4823,8 +5308,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DawningofaNewDay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4832,6 +5318,7 @@ class GoogleFonts {
 
   static TextStyle daysOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4841,8 +5328,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DaysOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4850,6 +5338,7 @@ class GoogleFonts {
 
   static TextStyle dekko({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4859,8 +5348,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Dekko',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4868,6 +5358,7 @@ class GoogleFonts {
 
   static TextStyle delius({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4877,8 +5368,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Delius',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4886,6 +5378,7 @@ class GoogleFonts {
 
   static TextStyle deliusSwashCaps({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4895,8 +5388,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DeliusSwashCaps',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4904,6 +5398,7 @@ class GoogleFonts {
 
   static TextStyle deliusUnicase({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4914,8 +5409,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DeliusUnicase',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4923,6 +5419,7 @@ class GoogleFonts {
 
   static TextStyle dellaRespira({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4932,8 +5429,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DellaRespira',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4941,6 +5439,7 @@ class GoogleFonts {
 
   static TextStyle denkOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4950,8 +5449,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DenkOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4959,6 +5459,7 @@ class GoogleFonts {
 
   static TextStyle devonshire({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4968,8 +5469,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Devonshire',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4977,6 +5479,7 @@ class GoogleFonts {
 
   static TextStyle dhurjati({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -4986,8 +5489,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Dhurjati',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -4995,6 +5499,7 @@ class GoogleFonts {
 
   static TextStyle didactGothic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5004,8 +5509,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DidactGothic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5013,6 +5519,7 @@ class GoogleFonts {
 
   static TextStyle diplomata({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5022,8 +5529,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Diplomata',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5031,6 +5539,7 @@ class GoogleFonts {
 
   static TextStyle diplomataSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5040,8 +5549,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DiplomataSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5049,6 +5559,7 @@ class GoogleFonts {
 
   static TextStyle doHyeon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5058,8 +5569,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DoHyeon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5067,6 +5579,7 @@ class GoogleFonts {
 
   static TextStyle dokdo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5076,8 +5589,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Dokdo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5085,6 +5599,7 @@ class GoogleFonts {
 
   static TextStyle domine({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5095,8 +5610,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Domine',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5104,6 +5620,7 @@ class GoogleFonts {
 
   static TextStyle donegalOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5113,8 +5630,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DonegalOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5122,6 +5640,7 @@ class GoogleFonts {
 
   static TextStyle doppioOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5131,8 +5650,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DoppioOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5140,6 +5660,7 @@ class GoogleFonts {
 
   static TextStyle dorsa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5149,8 +5670,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Dorsa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5158,6 +5680,7 @@ class GoogleFonts {
 
   static TextStyle dosis({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5173,8 +5696,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Dosis',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5182,6 +5706,7 @@ class GoogleFonts {
 
   static TextStyle drSugiyama({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5191,8 +5716,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DrSugiyama',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5200,6 +5726,7 @@ class GoogleFonts {
 
   static TextStyle duruSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5209,8 +5736,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'DuruSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5218,6 +5746,7 @@ class GoogleFonts {
 
   static TextStyle dynalight({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5227,8 +5756,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Dynalight',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5236,6 +5766,7 @@ class GoogleFonts {
 
   static TextStyle eBGaramond({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5254,8 +5785,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EBGaramond',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5263,6 +5795,7 @@ class GoogleFonts {
 
   static TextStyle eagleLake({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5272,8 +5805,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EagleLake',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5281,6 +5815,7 @@ class GoogleFonts {
 
   static TextStyle eastSeaDokdo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5290,8 +5825,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EastSeaDokdo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5299,6 +5835,7 @@ class GoogleFonts {
 
   static TextStyle eater({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5308,8 +5845,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Eater',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5317,6 +5855,7 @@ class GoogleFonts {
 
   static TextStyle economica({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5329,8 +5868,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Economica',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5338,6 +5878,7 @@ class GoogleFonts {
 
   static TextStyle eczar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5351,8 +5892,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Eczar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5360,6 +5902,7 @@ class GoogleFonts {
 
   static TextStyle elMessiri({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5372,8 +5915,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ElMessiri',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5381,6 +5925,7 @@ class GoogleFonts {
 
   static TextStyle electrolize({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5390,8 +5935,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Electrolize',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5399,6 +5945,7 @@ class GoogleFonts {
 
   static TextStyle elsie({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5409,8 +5956,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Elsie',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5418,6 +5966,7 @@ class GoogleFonts {
 
   static TextStyle elsieSwashCaps({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5428,8 +5977,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ElsieSwashCaps',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5437,6 +5987,7 @@ class GoogleFonts {
 
   static TextStyle emblemaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5446,8 +5997,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EmblemaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5455,6 +6007,7 @@ class GoogleFonts {
 
   static TextStyle emilysCandy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5464,8 +6017,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EmilysCandy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5473,6 +6027,7 @@ class GoogleFonts {
 
   static TextStyle encodeSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5490,8 +6045,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EncodeSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5499,6 +6055,7 @@ class GoogleFonts {
 
   static TextStyle encodeSansCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5516,8 +6073,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EncodeSansCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5525,6 +6083,7 @@ class GoogleFonts {
 
   static TextStyle encodeSansExpanded({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5542,8 +6101,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EncodeSansExpanded',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5551,6 +6111,7 @@ class GoogleFonts {
 
   static TextStyle encodeSansSemiCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5568,8 +6129,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EncodeSansSemiCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5577,6 +6139,7 @@ class GoogleFonts {
 
   static TextStyle encodeSansSemiExpanded({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5594,8 +6157,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EncodeSansSemiExpanded',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5603,6 +6167,7 @@ class GoogleFonts {
 
   static TextStyle engagement({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5612,8 +6177,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Engagement',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5621,6 +6187,7 @@ class GoogleFonts {
 
   static TextStyle englebert({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5630,8 +6197,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Englebert',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5639,6 +6207,7 @@ class GoogleFonts {
 
   static TextStyle enriqueta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5651,8 +6220,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Enriqueta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5660,6 +6230,7 @@ class GoogleFonts {
 
   static TextStyle ericaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5669,8 +6240,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EricaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5678,6 +6250,7 @@ class GoogleFonts {
 
   static TextStyle esteban({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5687,8 +6260,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Esteban',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5696,6 +6270,7 @@ class GoogleFonts {
 
   static TextStyle euphoriaScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5705,8 +6280,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'EuphoriaScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5714,6 +6290,7 @@ class GoogleFonts {
 
   static TextStyle ewert({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5723,8 +6300,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ewert',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5732,6 +6310,7 @@ class GoogleFonts {
 
   static TextStyle exo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5758,8 +6337,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Exo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5767,6 +6347,7 @@ class GoogleFonts {
 
   static TextStyle exo2({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5793,8 +6374,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Exo2',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5802,6 +6384,7 @@ class GoogleFonts {
 
   static TextStyle expletusSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5818,8 +6401,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ExpletusSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5827,6 +6411,7 @@ class GoogleFonts {
 
   static TextStyle fahkwang({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5847,8 +6432,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Fahkwang',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5856,6 +6442,7 @@ class GoogleFonts {
 
   static TextStyle fanwoodText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5866,8 +6453,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FanwoodText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5875,6 +6463,7 @@ class GoogleFonts {
 
   static TextStyle farro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5887,8 +6476,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Farro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5896,6 +6486,7 @@ class GoogleFonts {
 
   static TextStyle farsan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5905,8 +6496,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Farsan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5914,6 +6506,7 @@ class GoogleFonts {
 
   static TextStyle fascinate({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5923,8 +6516,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Fascinate',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5932,6 +6526,7 @@ class GoogleFonts {
 
   static TextStyle fascinateInline({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5941,8 +6536,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FascinateInline',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5950,6 +6546,7 @@ class GoogleFonts {
 
   static TextStyle fasterOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5959,8 +6556,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FasterOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5968,6 +6566,7 @@ class GoogleFonts {
 
   static TextStyle fasthand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5977,8 +6576,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Fasthand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -5986,6 +6586,7 @@ class GoogleFonts {
 
   static TextStyle faunaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -5995,8 +6596,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FaunaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6004,6 +6606,7 @@ class GoogleFonts {
 
   static TextStyle faustina({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6020,8 +6623,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Faustina',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6029,6 +6633,7 @@ class GoogleFonts {
 
   static TextStyle federant({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6038,8 +6643,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Federant',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6047,6 +6653,7 @@ class GoogleFonts {
 
   static TextStyle federo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6056,8 +6663,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Federo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6065,6 +6673,7 @@ class GoogleFonts {
 
   static TextStyle felipa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6074,8 +6683,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Felipa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6083,6 +6693,7 @@ class GoogleFonts {
 
   static TextStyle fenix({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6092,8 +6703,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Fenix',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6101,6 +6713,7 @@ class GoogleFonts {
 
   static TextStyle fingerPaint({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6110,8 +6723,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FingerPaint',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6119,6 +6733,7 @@ class GoogleFonts {
 
   static TextStyle firaCode({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6132,8 +6747,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FiraCode',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6141,6 +6757,7 @@ class GoogleFonts {
 
   static TextStyle firaMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6152,8 +6769,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FiraMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6161,6 +6779,7 @@ class GoogleFonts {
 
   static TextStyle firaSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6187,8 +6806,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FiraSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6196,6 +6816,7 @@ class GoogleFonts {
 
   static TextStyle firaSansCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6222,8 +6843,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FiraSansCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6231,6 +6853,7 @@ class GoogleFonts {
 
   static TextStyle firaSansExtraCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6257,8 +6880,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FiraSansExtraCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6266,6 +6890,7 @@ class GoogleFonts {
 
   static TextStyle fjallaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6275,8 +6900,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FjallaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6284,6 +6910,7 @@ class GoogleFonts {
 
   static TextStyle fjordOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6293,8 +6920,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FjordOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6302,6 +6930,7 @@ class GoogleFonts {
 
   static TextStyle flamenco({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6312,8 +6941,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Flamenco',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6321,6 +6951,7 @@ class GoogleFonts {
 
   static TextStyle flavors({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6330,8 +6961,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Flavors',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6339,6 +6971,7 @@ class GoogleFonts {
 
   static TextStyle fondamento({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6349,8 +6982,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Fondamento',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6358,6 +6992,7 @@ class GoogleFonts {
 
   static TextStyle fontdinerSwanky({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6367,8 +7002,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FontdinerSwanky',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6376,6 +7012,7 @@ class GoogleFonts {
 
   static TextStyle forum({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6385,8 +7022,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Forum',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6394,6 +7032,7 @@ class GoogleFonts {
 
   static TextStyle francoisOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6403,8 +7042,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FrancoisOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6412,6 +7052,7 @@ class GoogleFonts {
 
   static TextStyle frankRuhlLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6425,8 +7066,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FrankRuhlLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6434,6 +7076,7 @@ class GoogleFonts {
 
   static TextStyle freckleFace({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6443,8 +7086,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FreckleFace',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6452,6 +7096,7 @@ class GoogleFonts {
 
   static TextStyle frederickatheGreat({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6461,8 +7106,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FrederickatheGreat',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6470,6 +7116,7 @@ class GoogleFonts {
 
   static TextStyle fredokaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6479,8 +7126,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FredokaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6488,6 +7136,7 @@ class GoogleFonts {
 
   static TextStyle freehand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6497,8 +7146,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Freehand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6506,6 +7156,7 @@ class GoogleFonts {
 
   static TextStyle fresca({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6515,8 +7166,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Fresca',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6524,6 +7176,7 @@ class GoogleFonts {
 
   static TextStyle frijole({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6533,8 +7186,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Frijole',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6542,6 +7196,7 @@ class GoogleFonts {
 
   static TextStyle fruktur({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6551,8 +7206,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Fruktur',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6560,6 +7216,7 @@ class GoogleFonts {
 
   static TextStyle fugazOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6569,8 +7226,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'FugazOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6578,6 +7236,7 @@ class GoogleFonts {
 
   static TextStyle gFSDidot({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6587,8 +7246,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GFSDidot',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6596,6 +7256,7 @@ class GoogleFonts {
 
   static TextStyle gFSNeohellenic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6608,8 +7269,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GFSNeohellenic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6617,6 +7279,7 @@ class GoogleFonts {
 
   static TextStyle gabriela({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6626,8 +7289,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gabriela',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6635,6 +7299,7 @@ class GoogleFonts {
 
   static TextStyle gaegu({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6646,8 +7311,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gaegu',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6655,6 +7321,7 @@ class GoogleFonts {
 
   static TextStyle gafata({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6664,8 +7331,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gafata',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6673,6 +7341,7 @@ class GoogleFonts {
 
   static TextStyle galada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6682,8 +7351,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Galada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6691,6 +7361,7 @@ class GoogleFonts {
 
   static TextStyle galdeano({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6700,8 +7371,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Galdeano',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6709,6 +7381,7 @@ class GoogleFonts {
 
   static TextStyle galindo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6718,8 +7391,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Galindo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6727,6 +7401,7 @@ class GoogleFonts {
 
   static TextStyle gamjaFlower({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6736,8 +7411,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GamjaFlower',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6745,6 +7421,7 @@ class GoogleFonts {
 
   static TextStyle gayathri({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6756,8 +7433,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gayathri',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6765,6 +7443,7 @@ class GoogleFonts {
 
   static TextStyle gentiumBasic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6777,8 +7456,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GentiumBasic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6786,6 +7466,7 @@ class GoogleFonts {
 
   static TextStyle gentiumBookBasic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6798,8 +7479,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GentiumBookBasic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6807,6 +7489,7 @@ class GoogleFonts {
 
   static TextStyle geo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6817,8 +7500,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Geo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6826,6 +7510,7 @@ class GoogleFonts {
 
   static TextStyle geostar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6835,8 +7520,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Geostar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6844,6 +7530,7 @@ class GoogleFonts {
 
   static TextStyle geostarFill({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6853,8 +7540,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GeostarFill',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6862,6 +7550,7 @@ class GoogleFonts {
 
   static TextStyle germaniaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6871,8 +7560,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GermaniaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6880,6 +7570,7 @@ class GoogleFonts {
 
   static TextStyle gidugu({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6889,8 +7580,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gidugu',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6898,6 +7590,7 @@ class GoogleFonts {
 
   static TextStyle gildaDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6907,8 +7600,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GildaDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6916,6 +7610,7 @@ class GoogleFonts {
 
   static TextStyle giveYouGlory({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6925,8 +7620,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GiveYouGlory',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6934,6 +7630,7 @@ class GoogleFonts {
 
   static TextStyle glassAntiqua({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6943,8 +7640,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GlassAntiqua',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6952,6 +7650,7 @@ class GoogleFonts {
 
   static TextStyle glegoo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6962,8 +7661,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Glegoo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6971,6 +7671,7 @@ class GoogleFonts {
 
   static TextStyle gloriaHallelujah({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6980,8 +7681,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GloriaHallelujah',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -6989,6 +7691,7 @@ class GoogleFonts {
 
   static TextStyle goblinOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -6998,8 +7701,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GoblinOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7007,6 +7711,7 @@ class GoogleFonts {
 
   static TextStyle gochiHand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7016,8 +7721,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GochiHand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7025,6 +7731,7 @@ class GoogleFonts {
 
   static TextStyle gorditas({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7035,8 +7742,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gorditas',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7044,6 +7752,7 @@ class GoogleFonts {
 
   static TextStyle gothicA1({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7061,8 +7770,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GothicA1',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7070,6 +7780,7 @@ class GoogleFonts {
 
   static TextStyle goudyBookletter1911({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7079,8 +7790,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GoudyBookletter1911',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7088,6 +7800,7 @@ class GoogleFonts {
 
   static TextStyle graduate({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7097,8 +7810,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Graduate',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7106,6 +7820,7 @@ class GoogleFonts {
 
   static TextStyle grandHotel({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7115,8 +7830,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GrandHotel',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7124,6 +7840,7 @@ class GoogleFonts {
 
   static TextStyle gravitasOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7133,8 +7850,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GravitasOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7142,6 +7860,7 @@ class GoogleFonts {
 
   static TextStyle greatVibes({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7151,8 +7870,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'GreatVibes',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7160,6 +7880,7 @@ class GoogleFonts {
 
   static TextStyle grenze({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7186,8 +7907,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Grenze',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7195,6 +7917,7 @@ class GoogleFonts {
 
   static TextStyle griffy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7204,8 +7927,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Griffy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7213,6 +7937,7 @@ class GoogleFonts {
 
   static TextStyle gruppo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7222,8 +7947,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gruppo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7231,6 +7957,7 @@ class GoogleFonts {
 
   static TextStyle gudea({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7242,8 +7969,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gudea',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7251,6 +7979,7 @@ class GoogleFonts {
 
   static TextStyle gugi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7260,8 +7989,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gugi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7269,6 +7999,7 @@ class GoogleFonts {
 
   static TextStyle gurajada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7278,8 +8009,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Gurajada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7287,6 +8019,7 @@ class GoogleFonts {
 
   static TextStyle habibi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7296,8 +8029,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Habibi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7305,6 +8039,7 @@ class GoogleFonts {
 
   static TextStyle halant({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7318,8 +8053,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Halant',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7327,6 +8063,7 @@ class GoogleFonts {
 
   static TextStyle hammersmithOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7336,8 +8073,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HammersmithOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7345,6 +8083,7 @@ class GoogleFonts {
 
   static TextStyle hanalei({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7354,8 +8093,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Hanalei',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7363,6 +8103,7 @@ class GoogleFonts {
 
   static TextStyle hanaleiFill({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7372,8 +8113,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HanaleiFill',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7381,6 +8123,7 @@ class GoogleFonts {
 
   static TextStyle handlee({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7390,8 +8133,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Handlee',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7399,6 +8143,7 @@ class GoogleFonts {
 
   static TextStyle hanuman({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7409,8 +8154,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Hanuman',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7418,6 +8164,7 @@ class GoogleFonts {
 
   static TextStyle happyMonkey({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7427,8 +8174,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HappyMonkey',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7436,6 +8184,7 @@ class GoogleFonts {
 
   static TextStyle harmattan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7445,8 +8194,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Harmattan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7454,6 +8204,7 @@ class GoogleFonts {
 
   static TextStyle headlandOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7463,8 +8214,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HeadlandOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7472,6 +8224,7 @@ class GoogleFonts {
 
   static TextStyle heebo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7487,8 +8240,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Heebo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7496,6 +8250,7 @@ class GoogleFonts {
 
   static TextStyle hennyPenny({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7505,8 +8260,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HennyPenny',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7514,6 +8270,7 @@ class GoogleFonts {
 
   static TextStyle heptaSlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7531,8 +8288,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HeptaSlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7540,6 +8298,7 @@ class GoogleFonts {
 
   static TextStyle herrVonMuellerhoff({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7549,8 +8308,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HerrVonMuellerhoff',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7558,6 +8318,7 @@ class GoogleFonts {
 
   static TextStyle hiMelody({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7567,8 +8328,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HiMelody',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7576,6 +8338,7 @@ class GoogleFonts {
 
   static TextStyle hind({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7589,8 +8352,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Hind',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7598,6 +8362,7 @@ class GoogleFonts {
 
   static TextStyle hindGuntur({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7611,8 +8376,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HindGuntur',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7620,6 +8386,7 @@ class GoogleFonts {
 
   static TextStyle hindMadurai({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7633,8 +8400,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HindMadurai',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7642,6 +8410,7 @@ class GoogleFonts {
 
   static TextStyle hindSiliguri({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7655,8 +8424,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HindSiliguri',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7664,6 +8434,7 @@ class GoogleFonts {
 
   static TextStyle hindVadodara({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7677,8 +8448,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HindVadodara',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7686,6 +8458,7 @@ class GoogleFonts {
 
   static TextStyle holtwoodOneSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7695,8 +8468,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HoltwoodOneSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7704,6 +8478,7 @@ class GoogleFonts {
 
   static TextStyle homemadeApple({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7713,8 +8488,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'HomemadeApple',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7722,6 +8498,7 @@ class GoogleFonts {
 
   static TextStyle homenaje({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7731,8 +8508,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Homenaje',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7740,6 +8518,7 @@ class GoogleFonts {
 
   static TextStyle iBMPlexMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7762,8 +8541,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IBMPlexMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7771,6 +8551,7 @@ class GoogleFonts {
 
   static TextStyle iBMPlexSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7793,8 +8574,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IBMPlexSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7802,6 +8584,7 @@ class GoogleFonts {
 
   static TextStyle iBMPlexSansCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7824,8 +8607,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IBMPlexSansCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7833,6 +8617,7 @@ class GoogleFonts {
 
   static TextStyle iBMPlexSerif({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7855,8 +8640,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IBMPlexSerif',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7864,6 +8650,7 @@ class GoogleFonts {
 
   static TextStyle iMFellDWPica({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7874,8 +8661,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellDWPica',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7883,6 +8671,7 @@ class GoogleFonts {
 
   static TextStyle iMFellDWPicaSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7892,8 +8681,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellDWPicaSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7901,6 +8691,7 @@ class GoogleFonts {
 
   static TextStyle iMFellDoublePica({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7911,8 +8702,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellDoublePica',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7920,6 +8712,7 @@ class GoogleFonts {
 
   static TextStyle iMFellDoublePicaSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7929,8 +8722,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellDoublePicaSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7938,6 +8732,7 @@ class GoogleFonts {
 
   static TextStyle iMFellEnglish({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7948,8 +8743,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellEnglish',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7957,6 +8753,7 @@ class GoogleFonts {
 
   static TextStyle iMFellEnglishSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7966,8 +8763,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellEnglishSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7975,6 +8773,7 @@ class GoogleFonts {
 
   static TextStyle iMFellFrenchCanon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -7985,8 +8784,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellFrenchCanon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -7994,6 +8794,7 @@ class GoogleFonts {
 
   static TextStyle iMFellFrenchCanonSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8003,8 +8804,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellFrenchCanonSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8012,6 +8814,7 @@ class GoogleFonts {
 
   static TextStyle iMFellGreatPrimer({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8022,8 +8825,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellGreatPrimer',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8031,6 +8835,7 @@ class GoogleFonts {
 
   static TextStyle iMFellGreatPrimerSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8040,8 +8845,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IMFellGreatPrimerSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8049,6 +8855,7 @@ class GoogleFonts {
 
   static TextStyle iceberg({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8058,8 +8865,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Iceberg',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8067,6 +8875,7 @@ class GoogleFonts {
 
   static TextStyle iceland({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8076,8 +8885,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Iceland',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8085,6 +8895,7 @@ class GoogleFonts {
 
   static TextStyle imprima({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8094,8 +8905,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Imprima',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8103,6 +8915,7 @@ class GoogleFonts {
 
   static TextStyle inconsolata({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8113,8 +8926,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Inconsolata',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8122,6 +8936,7 @@ class GoogleFonts {
 
   static TextStyle inder({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8131,8 +8946,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Inder',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8140,6 +8956,7 @@ class GoogleFonts {
 
   static TextStyle indieFlower({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8149,8 +8966,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IndieFlower',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8158,6 +8976,7 @@ class GoogleFonts {
 
   static TextStyle inika({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8168,8 +8987,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Inika',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8177,6 +8997,7 @@ class GoogleFonts {
 
   static TextStyle inknutAntiqua({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8192,8 +9013,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'InknutAntiqua',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8201,6 +9023,7 @@ class GoogleFonts {
 
   static TextStyle irishGrover({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8210,8 +9033,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IrishGrover',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8219,6 +9043,7 @@ class GoogleFonts {
 
   static TextStyle istokWeb({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8231,8 +9056,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'IstokWeb',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8240,6 +9066,7 @@ class GoogleFonts {
 
   static TextStyle italiana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8249,8 +9076,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Italiana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8258,6 +9086,7 @@ class GoogleFonts {
 
   static TextStyle italianno({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8267,8 +9096,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Italianno',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8276,6 +9106,7 @@ class GoogleFonts {
 
   static TextStyle itim({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8285,8 +9116,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Itim',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8294,6 +9126,7 @@ class GoogleFonts {
 
   static TextStyle jacquesFrancois({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8303,8 +9136,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JacquesFrancois',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8312,6 +9146,7 @@ class GoogleFonts {
 
   static TextStyle jacquesFrancoisShadow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8321,8 +9156,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JacquesFrancoisShadow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8330,6 +9166,7 @@ class GoogleFonts {
 
   static TextStyle jaldi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8340,8 +9177,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Jaldi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8349,6 +9187,7 @@ class GoogleFonts {
 
   static TextStyle jimNightshade({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8358,8 +9197,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JimNightshade',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8367,6 +9207,7 @@ class GoogleFonts {
 
   static TextStyle jockeyOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8376,8 +9217,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JockeyOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8385,6 +9227,7 @@ class GoogleFonts {
 
   static TextStyle jollyLodger({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8394,8 +9237,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JollyLodger',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8403,6 +9247,7 @@ class GoogleFonts {
 
   static TextStyle jomhuria({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8412,8 +9257,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Jomhuria',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8421,6 +9267,7 @@ class GoogleFonts {
 
   static TextStyle jomolhari({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8430,8 +9277,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Jomolhari',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8439,6 +9287,7 @@ class GoogleFonts {
 
   static TextStyle josefinSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8457,8 +9306,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JosefinSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8466,6 +9316,7 @@ class GoogleFonts {
 
   static TextStyle josefinSlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8484,8 +9335,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JosefinSlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8493,6 +9345,7 @@ class GoogleFonts {
 
   static TextStyle jotiOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8502,8 +9355,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JotiOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8511,6 +9365,7 @@ class GoogleFonts {
 
   static TextStyle jua({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8520,8 +9375,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Jua',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8529,6 +9385,7 @@ class GoogleFonts {
 
   static TextStyle judson({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8540,8 +9397,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Judson',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8549,6 +9407,7 @@ class GoogleFonts {
 
   static TextStyle julee({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8558,8 +9417,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Julee',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8567,6 +9427,7 @@ class GoogleFonts {
 
   static TextStyle juliusSansOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8576,8 +9437,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JuliusSansOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8585,6 +9447,7 @@ class GoogleFonts {
 
   static TextStyle junge({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8594,8 +9457,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Junge',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8603,6 +9467,7 @@ class GoogleFonts {
 
   static TextStyle jura({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8616,8 +9481,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Jura',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8625,6 +9491,7 @@ class GoogleFonts {
 
   static TextStyle justAnotherHand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8634,8 +9501,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JustAnotherHand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8643,6 +9511,7 @@ class GoogleFonts {
 
   static TextStyle justMeAgainDownHere({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8652,8 +9521,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'JustMeAgainDownHere',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8661,6 +9531,7 @@ class GoogleFonts {
 
   static TextStyle k2D({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8685,8 +9556,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'K2D',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8694,6 +9566,7 @@ class GoogleFonts {
 
   static TextStyle kadwa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8704,8 +9577,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kadwa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8713,6 +9587,7 @@ class GoogleFonts {
 
   static TextStyle kalam({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8724,8 +9599,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kalam',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8733,6 +9609,7 @@ class GoogleFonts {
 
   static TextStyle kameron({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8743,8 +9620,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kameron',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8752,6 +9630,7 @@ class GoogleFonts {
 
   static TextStyle kanit({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8778,8 +9657,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kanit',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8787,6 +9667,7 @@ class GoogleFonts {
 
   static TextStyle kantumruy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8798,8 +9679,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kantumruy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8807,6 +9689,7 @@ class GoogleFonts {
 
   static TextStyle karla({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8819,8 +9702,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Karla',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8828,6 +9712,7 @@ class GoogleFonts {
 
   static TextStyle karma({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8841,8 +9726,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Karma',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8850,6 +9736,7 @@ class GoogleFonts {
 
   static TextStyle katibeh({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8859,8 +9746,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Katibeh',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8868,6 +9756,7 @@ class GoogleFonts {
 
   static TextStyle kaushanScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8877,8 +9766,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KaushanScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8886,6 +9776,7 @@ class GoogleFonts {
 
   static TextStyle kavivanar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8895,8 +9786,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kavivanar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8904,6 +9796,7 @@ class GoogleFonts {
 
   static TextStyle kavoon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8913,8 +9806,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kavoon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8922,6 +9816,7 @@ class GoogleFonts {
 
   static TextStyle kdamThmor({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8931,8 +9826,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KdamThmor',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8940,6 +9836,7 @@ class GoogleFonts {
 
   static TextStyle keaniaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8949,8 +9846,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KeaniaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8958,6 +9856,7 @@ class GoogleFonts {
 
   static TextStyle kellySlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8967,8 +9866,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KellySlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8976,6 +9876,7 @@ class GoogleFonts {
 
   static TextStyle kenia({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -8985,8 +9886,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kenia',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -8994,6 +9896,7 @@ class GoogleFonts {
 
   static TextStyle khand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9007,8 +9910,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Khand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9016,6 +9920,7 @@ class GoogleFonts {
 
   static TextStyle khmer({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9025,8 +9930,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Khmer',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9034,6 +9940,7 @@ class GoogleFonts {
 
   static TextStyle khula({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9047,8 +9954,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Khula',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9056,6 +9964,7 @@ class GoogleFonts {
 
   static TextStyle kirangHaerang({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9065,8 +9974,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KirangHaerang',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9074,6 +9984,7 @@ class GoogleFonts {
 
   static TextStyle kiteOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9083,8 +9994,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KiteOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9092,6 +10004,7 @@ class GoogleFonts {
 
   static TextStyle knewave({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9101,8 +10014,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Knewave',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9110,6 +10024,7 @@ class GoogleFonts {
 
   static TextStyle koHo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9130,8 +10045,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KoHo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9139,6 +10055,7 @@ class GoogleFonts {
 
   static TextStyle kodchasan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9159,8 +10076,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kodchasan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9168,6 +10086,7 @@ class GoogleFonts {
 
   static TextStyle kosugi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9177,8 +10096,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kosugi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9186,6 +10106,7 @@ class GoogleFonts {
 
   static TextStyle kosugiMaru({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9195,8 +10116,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KosugiMaru',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9204,6 +10126,7 @@ class GoogleFonts {
 
   static TextStyle kottaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9213,8 +10136,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KottaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9222,6 +10146,7 @@ class GoogleFonts {
 
   static TextStyle koulen({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9231,8 +10156,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Koulen',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9240,6 +10166,7 @@ class GoogleFonts {
 
   static TextStyle kranky({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9249,8 +10176,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kranky',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9258,6 +10186,7 @@ class GoogleFonts {
 
   static TextStyle kreon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9271,8 +10200,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kreon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9280,6 +10210,7 @@ class GoogleFonts {
 
   static TextStyle kristi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9289,8 +10220,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kristi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9298,6 +10230,7 @@ class GoogleFonts {
 
   static TextStyle kronaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9307,8 +10240,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KronaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9316,6 +10250,7 @@ class GoogleFonts {
 
   static TextStyle krub({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9336,8 +10271,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Krub',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9345,6 +10281,7 @@ class GoogleFonts {
 
   static TextStyle kumarOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9354,8 +10291,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KumarOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9363,6 +10301,7 @@ class GoogleFonts {
 
   static TextStyle kumarOneOutline({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9372,8 +10311,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'KumarOneOutline',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9381,6 +10321,7 @@ class GoogleFonts {
 
   static TextStyle kurale({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9390,8 +10331,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Kurale',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9399,6 +10341,7 @@ class GoogleFonts {
 
   static TextStyle laBelleAurore({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9408,8 +10351,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LaBelleAurore',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9417,6 +10361,7 @@ class GoogleFonts {
 
   static TextStyle lacquer({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9426,8 +10371,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lacquer',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9435,6 +10381,7 @@ class GoogleFonts {
 
   static TextStyle laila({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9448,8 +10395,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Laila',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9457,6 +10405,7 @@ class GoogleFonts {
 
   static TextStyle lakkiReddy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9466,8 +10415,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LakkiReddy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9475,6 +10425,7 @@ class GoogleFonts {
 
   static TextStyle lalezar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9484,8 +10435,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lalezar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9493,6 +10445,7 @@ class GoogleFonts {
 
   static TextStyle lancelot({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9502,8 +10455,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lancelot',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9511,6 +10465,7 @@ class GoogleFonts {
 
   static TextStyle lateef({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9520,8 +10475,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lateef',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9529,6 +10485,7 @@ class GoogleFonts {
 
   static TextStyle lato({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9547,8 +10504,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lato',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9556,6 +10514,7 @@ class GoogleFonts {
 
   static TextStyle leagueScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9565,8 +10524,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LeagueScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9574,6 +10534,7 @@ class GoogleFonts {
 
   static TextStyle leckerliOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9583,8 +10544,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LeckerliOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9592,6 +10554,7 @@ class GoogleFonts {
 
   static TextStyle ledger({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9601,8 +10564,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ledger',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9610,6 +10574,7 @@ class GoogleFonts {
 
   static TextStyle lekton({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9621,8 +10586,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lekton',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9630,6 +10596,7 @@ class GoogleFonts {
 
   static TextStyle lemon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9639,8 +10606,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lemon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9648,6 +10616,7 @@ class GoogleFonts {
 
   static TextStyle lemonada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9660,8 +10629,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lemonada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9669,6 +10639,7 @@ class GoogleFonts {
 
   static TextStyle lexendDeca({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9678,8 +10649,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LexendDeca',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9687,6 +10659,7 @@ class GoogleFonts {
 
   static TextStyle lexendExa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9696,8 +10669,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LexendExa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9705,6 +10679,7 @@ class GoogleFonts {
 
   static TextStyle lexendGiga({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9714,8 +10689,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LexendGiga',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9723,6 +10699,7 @@ class GoogleFonts {
 
   static TextStyle lexendMega({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9732,8 +10709,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LexendMega',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9741,6 +10719,7 @@ class GoogleFonts {
 
   static TextStyle lexendPeta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9750,8 +10729,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LexendPeta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9759,6 +10739,7 @@ class GoogleFonts {
 
   static TextStyle lexendTera({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9768,8 +10749,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LexendTera',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9777,6 +10759,7 @@ class GoogleFonts {
 
   static TextStyle lexendZetta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9786,8 +10769,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LexendZetta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9795,6 +10779,7 @@ class GoogleFonts {
 
   static TextStyle libreBarcode128({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9804,8 +10789,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreBarcode128',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9813,6 +10799,7 @@ class GoogleFonts {
 
   static TextStyle libreBarcode128Text({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9822,8 +10809,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreBarcode128Text',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9831,6 +10819,7 @@ class GoogleFonts {
 
   static TextStyle libreBarcode39({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9840,8 +10829,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreBarcode39',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9849,6 +10839,7 @@ class GoogleFonts {
 
   static TextStyle libreBarcode39Extended({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9858,8 +10849,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreBarcode39Extended',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9867,6 +10859,7 @@ class GoogleFonts {
 
   static TextStyle libreBarcode39ExtendedText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9876,8 +10869,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreBarcode39ExtendedText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9885,6 +10879,7 @@ class GoogleFonts {
 
   static TextStyle libreBarcode39Text({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9894,8 +10889,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreBarcode39Text',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9903,6 +10899,7 @@ class GoogleFonts {
 
   static TextStyle libreBaskerville({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9914,8 +10911,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreBaskerville',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9923,6 +10921,7 @@ class GoogleFonts {
 
   static TextStyle libreCaslonDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9932,8 +10931,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreCaslonDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9941,6 +10941,7 @@ class GoogleFonts {
 
   static TextStyle libreCaslonText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9952,8 +10953,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreCaslonText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9961,6 +10963,7 @@ class GoogleFonts {
 
   static TextStyle libreFranklin({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -9987,8 +10990,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LibreFranklin',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -9996,6 +11000,7 @@ class GoogleFonts {
 
   static TextStyle lifeSavers({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10007,8 +11012,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LifeSavers',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10016,6 +11022,7 @@ class GoogleFonts {
 
   static TextStyle lilitaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10025,8 +11032,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LilitaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10034,6 +11042,7 @@ class GoogleFonts {
 
   static TextStyle lilyScriptOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10043,8 +11052,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LilyScriptOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10052,6 +11062,7 @@ class GoogleFonts {
 
   static TextStyle limelight({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10061,8 +11072,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Limelight',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10070,6 +11082,7 @@ class GoogleFonts {
 
   static TextStyle lindenHill({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10080,8 +11093,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LindenHill',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10089,6 +11103,7 @@ class GoogleFonts {
 
   static TextStyle literata({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10105,8 +11120,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Literata',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10114,6 +11130,7 @@ class GoogleFonts {
 
   static TextStyle liuJianMaoCao({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10123,8 +11140,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LiuJianMaoCao',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10132,6 +11150,7 @@ class GoogleFonts {
 
   static TextStyle livvic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10156,8 +11175,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Livvic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10165,6 +11185,7 @@ class GoogleFonts {
 
   static TextStyle lobster({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10174,8 +11195,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lobster',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10183,6 +11205,7 @@ class GoogleFonts {
 
   static TextStyle lobsterTwo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10195,8 +11218,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LobsterTwo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10204,6 +11228,7 @@ class GoogleFonts {
 
   static TextStyle londrinaOutline({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10213,8 +11238,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LondrinaOutline',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10222,6 +11248,7 @@ class GoogleFonts {
 
   static TextStyle londrinaShadow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10231,8 +11258,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LondrinaShadow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10240,6 +11268,7 @@ class GoogleFonts {
 
   static TextStyle londrinaSketch({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10249,8 +11278,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LondrinaSketch',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10258,6 +11288,7 @@ class GoogleFonts {
 
   static TextStyle londrinaSolid({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10270,8 +11301,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LondrinaSolid',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10279,6 +11311,7 @@ class GoogleFonts {
 
   static TextStyle longCang({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10288,8 +11321,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LongCang',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10297,6 +11331,7 @@ class GoogleFonts {
 
   static TextStyle lora({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10309,8 +11344,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lora',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10318,6 +11354,7 @@ class GoogleFonts {
 
   static TextStyle loveYaLikeASister({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10327,8 +11364,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LoveYaLikeASister',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10336,6 +11374,7 @@ class GoogleFonts {
 
   static TextStyle lovedbytheKing({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10345,8 +11384,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LovedbytheKing',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10354,6 +11394,7 @@ class GoogleFonts {
 
   static TextStyle loversQuarrel({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10363,8 +11404,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LoversQuarrel',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10372,6 +11414,7 @@ class GoogleFonts {
 
   static TextStyle luckiestGuy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10381,8 +11424,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'LuckiestGuy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10390,6 +11434,7 @@ class GoogleFonts {
 
   static TextStyle lusitana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10400,8 +11445,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lusitana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10409,6 +11455,7 @@ class GoogleFonts {
 
   static TextStyle lustria({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10418,8 +11465,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Lustria',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10427,6 +11475,7 @@ class GoogleFonts {
 
   static TextStyle mPLUS1p({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10442,8 +11491,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MPLUS1p',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10451,6 +11501,7 @@ class GoogleFonts {
 
   static TextStyle mPLUSRounded1c({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10466,8 +11517,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MPLUSRounded1c',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10475,6 +11527,7 @@ class GoogleFonts {
 
   static TextStyle maShanZheng({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10484,8 +11537,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MaShanZheng',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10493,6 +11547,7 @@ class GoogleFonts {
 
   static TextStyle macondo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10502,8 +11557,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Macondo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10511,6 +11567,7 @@ class GoogleFonts {
 
   static TextStyle macondoSwashCaps({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10520,8 +11577,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MacondoSwashCaps',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10529,6 +11587,7 @@ class GoogleFonts {
 
   static TextStyle mada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10544,8 +11603,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10553,6 +11613,7 @@ class GoogleFonts {
 
   static TextStyle magra({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10563,8 +11624,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Magra',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10572,6 +11634,7 @@ class GoogleFonts {
 
   static TextStyle maidenOrange({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10581,8 +11644,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MaidenOrange',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10590,6 +11654,7 @@ class GoogleFonts {
 
   static TextStyle maitree({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10604,8 +11669,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Maitree',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10613,6 +11679,7 @@ class GoogleFonts {
 
   static TextStyle majorMonoDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10622,8 +11689,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MajorMonoDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10631,6 +11699,7 @@ class GoogleFonts {
 
   static TextStyle mako({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10640,8 +11709,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mako',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10649,6 +11719,7 @@ class GoogleFonts {
 
   static TextStyle mali({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10669,8 +11740,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mali',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10678,6 +11750,7 @@ class GoogleFonts {
 
   static TextStyle mallanna({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10687,8 +11760,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mallanna',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10696,6 +11770,7 @@ class GoogleFonts {
 
   static TextStyle mandali({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10705,8 +11780,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mandali',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10714,6 +11790,7 @@ class GoogleFonts {
 
   static TextStyle manjari({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10725,8 +11802,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Manjari',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10734,6 +11812,7 @@ class GoogleFonts {
 
   static TextStyle mansalva({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10743,8 +11822,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mansalva',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10752,6 +11832,7 @@ class GoogleFonts {
 
   static TextStyle manuale({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10768,8 +11849,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Manuale',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10777,6 +11859,7 @@ class GoogleFonts {
 
   static TextStyle marcellus({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10786,8 +11869,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Marcellus',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10795,6 +11879,7 @@ class GoogleFonts {
 
   static TextStyle marcellusSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10804,8 +11889,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MarcellusSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10813,6 +11899,7 @@ class GoogleFonts {
 
   static TextStyle marckScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10822,8 +11909,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MarckScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10831,6 +11919,7 @@ class GoogleFonts {
 
   static TextStyle margarine({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10840,8 +11929,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Margarine',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10849,6 +11939,7 @@ class GoogleFonts {
 
   static TextStyle markaziText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10861,8 +11952,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MarkaziText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10870,6 +11962,7 @@ class GoogleFonts {
 
   static TextStyle markoOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10879,8 +11972,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MarkoOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10888,6 +11982,7 @@ class GoogleFonts {
 
   static TextStyle marmelad({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10897,8 +11992,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Marmelad',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10906,6 +12002,7 @@ class GoogleFonts {
 
   static TextStyle martel({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10921,8 +12018,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Martel',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10930,6 +12028,7 @@ class GoogleFonts {
 
   static TextStyle martelSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10945,8 +12044,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MartelSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10954,6 +12054,7 @@ class GoogleFonts {
 
   static TextStyle marvel({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10966,8 +12067,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Marvel',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10975,6 +12077,7 @@ class GoogleFonts {
 
   static TextStyle mate({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -10985,8 +12088,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mate',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -10994,6 +12098,7 @@ class GoogleFonts {
 
   static TextStyle mateSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11003,8 +12108,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MateSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11012,6 +12118,7 @@ class GoogleFonts {
 
   static TextStyle mavenPro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11024,8 +12131,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MavenPro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11033,6 +12141,7 @@ class GoogleFonts {
 
   static TextStyle mcLaren({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11042,8 +12151,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'McLaren',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11051,6 +12161,7 @@ class GoogleFonts {
 
   static TextStyle meddon({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11060,8 +12171,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Meddon',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11069,6 +12181,7 @@ class GoogleFonts {
 
   static TextStyle medievalSharp({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11078,8 +12191,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MedievalSharp',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11087,6 +12201,7 @@ class GoogleFonts {
 
   static TextStyle medulaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11096,8 +12211,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MedulaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11105,6 +12221,7 @@ class GoogleFonts {
 
   static TextStyle meeraInimai({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11114,8 +12231,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MeeraInimai',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11123,6 +12241,7 @@ class GoogleFonts {
 
   static TextStyle megrim({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11132,8 +12251,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Megrim',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11141,6 +12261,7 @@ class GoogleFonts {
 
   static TextStyle meieScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11150,8 +12271,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MeieScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11159,6 +12281,7 @@ class GoogleFonts {
 
   static TextStyle merienda({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11169,8 +12292,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Merienda',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11178,6 +12302,7 @@ class GoogleFonts {
 
   static TextStyle meriendaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11187,8 +12312,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MeriendaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11196,6 +12322,7 @@ class GoogleFonts {
 
   static TextStyle merriweather({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11212,8 +12339,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Merriweather',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11221,6 +12349,7 @@ class GoogleFonts {
 
   static TextStyle merriweatherSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11237,8 +12366,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MerriweatherSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11246,6 +12376,7 @@ class GoogleFonts {
 
   static TextStyle metal({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11255,8 +12386,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Metal',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11264,6 +12396,7 @@ class GoogleFonts {
 
   static TextStyle metalMania({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11273,8 +12406,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MetalMania',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11282,6 +12416,7 @@ class GoogleFonts {
 
   static TextStyle metamorphous({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11291,8 +12426,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Metamorphous',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11300,6 +12436,7 @@ class GoogleFonts {
 
   static TextStyle metrophobic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11309,8 +12446,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Metrophobic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11318,6 +12456,7 @@ class GoogleFonts {
 
   static TextStyle michroma({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11327,8 +12466,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Michroma',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11336,6 +12476,7 @@ class GoogleFonts {
 
   static TextStyle milonga({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11345,8 +12486,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Milonga',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11354,6 +12496,7 @@ class GoogleFonts {
 
   static TextStyle miltonian({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11363,8 +12506,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Miltonian',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11372,6 +12516,7 @@ class GoogleFonts {
 
   static TextStyle miltonianTattoo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11381,8 +12526,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MiltonianTattoo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11390,6 +12536,7 @@ class GoogleFonts {
 
   static TextStyle mina({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11400,8 +12547,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mina',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11409,6 +12557,7 @@ class GoogleFonts {
 
   static TextStyle miniver({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11418,8 +12567,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Miniver',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11427,6 +12577,7 @@ class GoogleFonts {
 
   static TextStyle miriamLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11437,8 +12588,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MiriamLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11446,6 +12598,7 @@ class GoogleFonts {
 
   static TextStyle mirza({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11458,8 +12611,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mirza',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11467,6 +12621,7 @@ class GoogleFonts {
 
   static TextStyle missFajardose({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11476,8 +12631,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MissFajardose',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11485,6 +12641,7 @@ class GoogleFonts {
 
   static TextStyle mitr({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11499,8 +12656,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mitr',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11508,6 +12666,7 @@ class GoogleFonts {
 
   static TextStyle modak({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11517,8 +12676,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Modak',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11526,6 +12686,7 @@ class GoogleFonts {
 
   static TextStyle modernAntiqua({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11535,8 +12696,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ModernAntiqua',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11544,6 +12706,7 @@ class GoogleFonts {
 
   static TextStyle mogra({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11553,8 +12716,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mogra',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11562,6 +12726,7 @@ class GoogleFonts {
 
   static TextStyle molengo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11571,8 +12736,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Molengo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11580,6 +12746,7 @@ class GoogleFonts {
 
   static TextStyle molle({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11589,8 +12756,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Molle',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11598,6 +12766,7 @@ class GoogleFonts {
 
   static TextStyle monda({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11608,8 +12777,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Monda',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11617,6 +12787,7 @@ class GoogleFonts {
 
   static TextStyle monofett({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11626,8 +12797,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Monofett',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11635,6 +12807,7 @@ class GoogleFonts {
 
   static TextStyle monoton({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11644,8 +12817,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Monoton',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11653,6 +12827,7 @@ class GoogleFonts {
 
   static TextStyle monsieurLaDoulaise({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11662,8 +12837,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MonsieurLaDoulaise',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11671,6 +12847,7 @@ class GoogleFonts {
 
   static TextStyle montaga({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11680,8 +12857,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Montaga',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11689,6 +12867,7 @@ class GoogleFonts {
 
   static TextStyle montez({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11698,8 +12877,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Montez',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11707,6 +12887,7 @@ class GoogleFonts {
 
   static TextStyle montserrat({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11733,8 +12914,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Montserrat',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11742,6 +12924,7 @@ class GoogleFonts {
 
   static TextStyle montserratAlternates({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11768,8 +12951,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MontserratAlternates',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11777,6 +12961,7 @@ class GoogleFonts {
 
   static TextStyle montserratSubrayada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11787,8 +12972,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MontserratSubrayada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11796,6 +12982,7 @@ class GoogleFonts {
 
   static TextStyle moul({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11805,8 +12992,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Moul',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11814,6 +13002,7 @@ class GoogleFonts {
 
   static TextStyle moulpali({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11823,8 +13012,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Moulpali',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11832,6 +13022,7 @@ class GoogleFonts {
 
   static TextStyle mountainsofChristmas({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11842,8 +13033,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MountainsofChristmas',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11851,6 +13043,7 @@ class GoogleFonts {
 
   static TextStyle mouseMemoirs({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11860,8 +13053,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MouseMemoirs',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11869,6 +13063,7 @@ class GoogleFonts {
 
   static TextStyle mrBedfort({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11878,8 +13073,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MrBedfort',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11887,6 +13083,7 @@ class GoogleFonts {
 
   static TextStyle mrDafoe({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11896,8 +13093,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MrDafoe',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11905,6 +13103,7 @@ class GoogleFonts {
 
   static TextStyle mrDeHaviland({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11914,8 +13113,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MrDeHaviland',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11923,6 +13123,7 @@ class GoogleFonts {
 
   static TextStyle mrsSaintDelafield({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11932,8 +13133,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MrsSaintDelafield',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11941,6 +13143,7 @@ class GoogleFonts {
 
   static TextStyle mrsSheppards({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11950,8 +13153,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MrsSheppards',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11959,6 +13163,7 @@ class GoogleFonts {
 
   static TextStyle mukta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11974,8 +13179,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Mukta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -11983,6 +13189,7 @@ class GoogleFonts {
 
   static TextStyle muktaMahee({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -11998,8 +13205,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MuktaMahee',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12007,6 +13215,7 @@ class GoogleFonts {
 
   static TextStyle muktaMalar({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12022,8 +13231,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MuktaMalar',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12031,6 +13241,7 @@ class GoogleFonts {
 
   static TextStyle muktaVaani({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12046,8 +13257,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MuktaVaani',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12055,6 +13267,7 @@ class GoogleFonts {
 
   static TextStyle muli({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12077,8 +13290,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Muli',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12086,6 +13300,7 @@ class GoogleFonts {
 
   static TextStyle mysteryQuest({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12095,8 +13310,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'MysteryQuest',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12104,6 +13320,7 @@ class GoogleFonts {
 
   static TextStyle nTR({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12113,8 +13330,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NTR',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12122,6 +13340,7 @@ class GoogleFonts {
 
   static TextStyle nanumBrushScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12131,8 +13350,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NanumBrushScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12140,6 +13360,7 @@ class GoogleFonts {
 
   static TextStyle nanumGothic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12151,8 +13372,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NanumGothic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12160,6 +13382,7 @@ class GoogleFonts {
 
   static TextStyle nanumGothicCoding({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12170,8 +13393,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NanumGothicCoding',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12179,6 +13403,7 @@ class GoogleFonts {
 
   static TextStyle nanumMyeongjo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12190,8 +13415,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NanumMyeongjo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12199,6 +13425,7 @@ class GoogleFonts {
 
   static TextStyle nanumPenScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12208,8 +13435,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NanumPenScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12217,6 +13445,7 @@ class GoogleFonts {
 
   static TextStyle neucha({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12226,8 +13455,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Neucha',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12235,6 +13465,7 @@ class GoogleFonts {
 
   static TextStyle neuton({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12249,8 +13480,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Neuton',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12258,6 +13490,7 @@ class GoogleFonts {
 
   static TextStyle newRocker({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12267,8 +13500,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NewRocker',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12276,6 +13510,7 @@ class GoogleFonts {
 
   static TextStyle newsCycle({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12286,8 +13521,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NewsCycle',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12295,6 +13531,7 @@ class GoogleFonts {
 
   static TextStyle niconne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12304,8 +13541,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Niconne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12313,6 +13551,7 @@ class GoogleFonts {
 
   static TextStyle niramit({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12333,8 +13572,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Niramit',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12342,6 +13582,7 @@ class GoogleFonts {
 
   static TextStyle nixieOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12351,8 +13592,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NixieOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12360,6 +13602,7 @@ class GoogleFonts {
 
   static TextStyle nobile({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12374,8 +13617,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Nobile',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12383,6 +13627,7 @@ class GoogleFonts {
 
   static TextStyle nokora({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12393,8 +13638,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Nokora',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12402,6 +13648,7 @@ class GoogleFonts {
 
   static TextStyle norican({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12411,8 +13658,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Norican',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12420,6 +13668,7 @@ class GoogleFonts {
 
   static TextStyle nosifer({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12429,8 +13678,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Nosifer',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12438,6 +13688,7 @@ class GoogleFonts {
 
   static TextStyle notable({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12447,8 +13698,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Notable',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12456,6 +13708,7 @@ class GoogleFonts {
 
   static TextStyle nothingYouCouldDo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12465,8 +13718,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NothingYouCouldDo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12474,6 +13728,7 @@ class GoogleFonts {
 
   static TextStyle noticiaText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12486,8 +13741,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NoticiaText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12495,6 +13751,7 @@ class GoogleFonts {
 
   static TextStyle notoSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12507,8 +13764,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12516,6 +13774,7 @@ class GoogleFonts {
 
   static TextStyle notoSansHK({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12530,8 +13789,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSansHK',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12539,6 +13799,7 @@ class GoogleFonts {
 
   static TextStyle notoSansJP({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12553,8 +13814,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSansJP',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12562,6 +13824,7 @@ class GoogleFonts {
 
   static TextStyle notoSansKR({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12576,8 +13839,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSansKR',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12585,6 +13849,7 @@ class GoogleFonts {
 
   static TextStyle notoSansSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12599,8 +13864,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSansSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12608,6 +13874,7 @@ class GoogleFonts {
 
   static TextStyle notoSansTC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12622,8 +13889,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSansTC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12631,6 +13899,7 @@ class GoogleFonts {
 
   static TextStyle notoSerif({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12643,8 +13912,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSerif',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12652,6 +13922,7 @@ class GoogleFonts {
 
   static TextStyle notoSerifJP({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12667,8 +13938,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSerifJP',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12676,6 +13948,7 @@ class GoogleFonts {
 
   static TextStyle notoSerifKR({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12691,8 +13964,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSerifKR',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12700,6 +13974,7 @@ class GoogleFonts {
 
   static TextStyle notoSerifSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12715,8 +13990,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSerifSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12724,6 +14000,7 @@ class GoogleFonts {
 
   static TextStyle notoSerifTC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12739,8 +14016,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NotoSerifTC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12748,6 +14026,7 @@ class GoogleFonts {
 
   static TextStyle novaCut({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12757,8 +14036,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaCut',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12766,6 +14046,7 @@ class GoogleFonts {
 
   static TextStyle novaFlat({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12775,8 +14056,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaFlat',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12784,6 +14066,7 @@ class GoogleFonts {
 
   static TextStyle novaMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12793,8 +14076,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12802,6 +14086,7 @@ class GoogleFonts {
 
   static TextStyle novaOval({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12811,8 +14096,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaOval',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12820,6 +14106,7 @@ class GoogleFonts {
 
   static TextStyle novaRound({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12829,8 +14116,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaRound',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12838,6 +14126,7 @@ class GoogleFonts {
 
   static TextStyle novaScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12847,8 +14136,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12856,6 +14146,7 @@ class GoogleFonts {
 
   static TextStyle novaSlim({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12865,8 +14156,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaSlim',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12874,6 +14166,7 @@ class GoogleFonts {
 
   static TextStyle novaSquare({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12883,8 +14176,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NovaSquare',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12892,6 +14186,7 @@ class GoogleFonts {
 
   static TextStyle numans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12901,8 +14196,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Numans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12910,6 +14206,7 @@ class GoogleFonts {
 
   static TextStyle nunito({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12932,8 +14229,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Nunito',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12941,6 +14239,7 @@ class GoogleFonts {
 
   static TextStyle nunitoSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12963,8 +14262,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'NunitoSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12972,6 +14272,7 @@ class GoogleFonts {
 
   static TextStyle odorMeanChey({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12981,8 +14282,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OdorMeanChey',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -12990,6 +14292,7 @@ class GoogleFonts {
 
   static TextStyle offside({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -12999,8 +14302,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Offside',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13008,6 +14312,7 @@ class GoogleFonts {
 
   static TextStyle oldStandardTT({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13019,8 +14324,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OldStandardTT',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13028,6 +14334,7 @@ class GoogleFonts {
 
   static TextStyle oldenburg({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13037,8 +14344,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Oldenburg',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13046,6 +14354,7 @@ class GoogleFonts {
 
   static TextStyle oleoScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13056,8 +14365,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OleoScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13065,6 +14375,7 @@ class GoogleFonts {
 
   static TextStyle oleoScriptSwashCaps({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13075,8 +14386,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OleoScriptSwashCaps',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13084,6 +14396,7 @@ class GoogleFonts {
 
   static TextStyle openSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13102,8 +14415,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OpenSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13111,6 +14425,7 @@ class GoogleFonts {
 
   static TextStyle openSansCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13122,8 +14437,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OpenSansCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13131,6 +14447,7 @@ class GoogleFonts {
 
   static TextStyle oranienbaum({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13140,8 +14457,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Oranienbaum',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13149,6 +14467,7 @@ class GoogleFonts {
 
   static TextStyle orbitron({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13161,8 +14480,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Orbitron',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13170,6 +14490,7 @@ class GoogleFonts {
 
   static TextStyle oregano({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13180,8 +14501,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Oregano',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13189,6 +14511,7 @@ class GoogleFonts {
 
   static TextStyle orienta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13198,8 +14521,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Orienta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13207,6 +14531,7 @@ class GoogleFonts {
 
   static TextStyle originalSurfer({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13216,8 +14541,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OriginalSurfer',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13225,6 +14551,7 @@ class GoogleFonts {
 
   static TextStyle oswald({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13239,8 +14566,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Oswald',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13248,6 +14576,7 @@ class GoogleFonts {
 
   static TextStyle overtheRainbow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13257,8 +14586,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OvertheRainbow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13266,6 +14596,7 @@ class GoogleFonts {
 
   static TextStyle overlock({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13280,8 +14611,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Overlock',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13289,6 +14621,7 @@ class GoogleFonts {
 
   static TextStyle overlockSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13298,8 +14631,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OverlockSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13307,6 +14641,7 @@ class GoogleFonts {
 
   static TextStyle overpass({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13331,8 +14666,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Overpass',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13340,6 +14676,7 @@ class GoogleFonts {
 
   static TextStyle overpassMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13352,8 +14689,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OverpassMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13361,6 +14699,7 @@ class GoogleFonts {
 
   static TextStyle ovo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13370,8 +14709,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ovo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13379,6 +14719,7 @@ class GoogleFonts {
 
   static TextStyle oxygen({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13390,8 +14731,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Oxygen',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13399,6 +14741,7 @@ class GoogleFonts {
 
   static TextStyle oxygenMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13408,8 +14751,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'OxygenMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13417,6 +14761,7 @@ class GoogleFonts {
 
   static TextStyle pTMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13426,8 +14771,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PTMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13435,6 +14781,7 @@ class GoogleFonts {
 
   static TextStyle pTSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13447,8 +14794,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PTSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13456,6 +14804,7 @@ class GoogleFonts {
 
   static TextStyle pTSansCaption({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13466,8 +14815,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PTSansCaption',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13475,6 +14825,7 @@ class GoogleFonts {
 
   static TextStyle pTSansNarrow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13485,8 +14836,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PTSansNarrow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13494,6 +14846,7 @@ class GoogleFonts {
 
   static TextStyle pTSerif({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13506,8 +14859,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PTSerif',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13515,6 +14869,7 @@ class GoogleFonts {
 
   static TextStyle pTSerifCaption({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13525,8 +14880,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PTSerifCaption',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13534,6 +14890,7 @@ class GoogleFonts {
 
   static TextStyle pacifico({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13543,8 +14900,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Pacifico',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13552,6 +14910,7 @@ class GoogleFonts {
 
   static TextStyle padauk({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13562,8 +14921,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Padauk',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13571,6 +14931,7 @@ class GoogleFonts {
 
   static TextStyle palanquin({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13586,8 +14947,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Palanquin',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13595,6 +14957,7 @@ class GoogleFonts {
 
   static TextStyle palanquinDark({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13607,8 +14970,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PalanquinDark',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13616,6 +14980,7 @@ class GoogleFonts {
 
   static TextStyle pangolin({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13625,8 +14990,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Pangolin',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13634,6 +15000,7 @@ class GoogleFonts {
 
   static TextStyle paprika({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13643,8 +15010,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Paprika',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13652,6 +15020,7 @@ class GoogleFonts {
 
   static TextStyle parisienne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13661,8 +15030,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Parisienne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13670,6 +15040,7 @@ class GoogleFonts {
 
   static TextStyle passeroOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13679,8 +15050,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PasseroOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13688,6 +15060,7 @@ class GoogleFonts {
 
   static TextStyle passionOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13699,8 +15072,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PassionOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13708,6 +15082,7 @@ class GoogleFonts {
 
   static TextStyle pathwayGothicOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13717,8 +15092,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PathwayGothicOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13726,6 +15102,7 @@ class GoogleFonts {
 
   static TextStyle patrickHand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13735,8 +15112,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PatrickHand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13744,6 +15122,7 @@ class GoogleFonts {
 
   static TextStyle patrickHandSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13753,8 +15132,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PatrickHandSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13762,6 +15142,7 @@ class GoogleFonts {
 
   static TextStyle pattaya({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13771,8 +15152,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Pattaya',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13780,6 +15162,7 @@ class GoogleFonts {
 
   static TextStyle patuaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13789,8 +15172,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PatuaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13798,6 +15182,7 @@ class GoogleFonts {
 
   static TextStyle pavanam({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13807,8 +15192,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Pavanam',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13816,6 +15202,7 @@ class GoogleFonts {
 
   static TextStyle paytoneOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13825,8 +15212,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PaytoneOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13834,6 +15222,7 @@ class GoogleFonts {
 
   static TextStyle peddana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13843,8 +15232,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Peddana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13852,6 +15242,7 @@ class GoogleFonts {
 
   static TextStyle peralta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13861,8 +15252,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Peralta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13870,6 +15262,7 @@ class GoogleFonts {
 
   static TextStyle permanentMarker({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13879,8 +15272,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PermanentMarker',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13888,6 +15282,7 @@ class GoogleFonts {
 
   static TextStyle petitFormalScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13897,8 +15292,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PetitFormalScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13906,6 +15302,7 @@ class GoogleFonts {
 
   static TextStyle petrona({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13915,8 +15312,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Petrona',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13924,6 +15322,7 @@ class GoogleFonts {
 
   static TextStyle philosopher({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13936,8 +15335,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Philosopher',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13945,6 +15345,7 @@ class GoogleFonts {
 
   static TextStyle piedra({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13954,8 +15355,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Piedra',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13963,6 +15365,7 @@ class GoogleFonts {
 
   static TextStyle pinyonScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13972,8 +15375,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PinyonScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13981,6 +15385,7 @@ class GoogleFonts {
 
   static TextStyle pirataOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -13990,8 +15395,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PirataOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -13999,6 +15405,7 @@ class GoogleFonts {
 
   static TextStyle plaster({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14008,8 +15415,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Plaster',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14017,6 +15425,7 @@ class GoogleFonts {
 
   static TextStyle play({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14027,8 +15436,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Play',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14036,6 +15446,7 @@ class GoogleFonts {
 
   static TextStyle playball({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14045,8 +15456,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Playball',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14054,6 +15466,7 @@ class GoogleFonts {
 
   static TextStyle playfairDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14068,8 +15481,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PlayfairDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14077,6 +15491,7 @@ class GoogleFonts {
 
   static TextStyle playfairDisplaySC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14091,8 +15506,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PlayfairDisplaySC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14100,6 +15516,7 @@ class GoogleFonts {
 
   static TextStyle podkova({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14113,8 +15530,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Podkova',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14122,6 +15540,7 @@ class GoogleFonts {
 
   static TextStyle poiretOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14131,8 +15550,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PoiretOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14140,6 +15560,7 @@ class GoogleFonts {
 
   static TextStyle pollerOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14149,8 +15570,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PollerOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14158,6 +15580,7 @@ class GoogleFonts {
 
   static TextStyle poly({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14168,8 +15591,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Poly',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14177,6 +15601,7 @@ class GoogleFonts {
 
   static TextStyle pompiere({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14186,8 +15611,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Pompiere',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14195,6 +15621,7 @@ class GoogleFonts {
 
   static TextStyle pontanoSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14204,8 +15631,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PontanoSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14213,6 +15641,7 @@ class GoogleFonts {
 
   static TextStyle poorStory({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14222,8 +15651,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PoorStory',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14231,6 +15661,7 @@ class GoogleFonts {
 
   static TextStyle poppins({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14257,8 +15688,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Poppins',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14266,6 +15698,7 @@ class GoogleFonts {
 
   static TextStyle portLligatSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14275,8 +15708,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PortLligatSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14284,6 +15718,7 @@ class GoogleFonts {
 
   static TextStyle portLligatSlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14293,8 +15728,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PortLligatSlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14302,6 +15738,7 @@ class GoogleFonts {
 
   static TextStyle pragatiNarrow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14312,8 +15749,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PragatiNarrow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14321,6 +15759,7 @@ class GoogleFonts {
 
   static TextStyle prata({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14330,8 +15769,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Prata',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14339,6 +15779,7 @@ class GoogleFonts {
 
   static TextStyle preahvihear({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14348,8 +15789,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Preahvihear',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14357,6 +15799,7 @@ class GoogleFonts {
 
   static TextStyle pressStart2P({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14366,8 +15809,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PressStart2P',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14375,6 +15819,7 @@ class GoogleFonts {
 
   static TextStyle pridi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14389,8 +15834,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Pridi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14398,6 +15844,7 @@ class GoogleFonts {
 
   static TextStyle princessSofia({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14407,8 +15854,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PrincessSofia',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14416,6 +15864,7 @@ class GoogleFonts {
 
   static TextStyle prociono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14425,8 +15874,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Prociono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14434,6 +15884,7 @@ class GoogleFonts {
 
   static TextStyle prompt({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14460,8 +15911,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Prompt',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14469,6 +15921,7 @@ class GoogleFonts {
 
   static TextStyle prostoOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14478,8 +15931,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ProstoOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14487,6 +15941,7 @@ class GoogleFonts {
 
   static TextStyle prozaLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14505,8 +15960,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ProzaLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14514,6 +15970,7 @@ class GoogleFonts {
 
   static TextStyle puritan({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14526,8 +15983,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Puritan',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14535,6 +15993,7 @@ class GoogleFonts {
 
   static TextStyle purplePurse({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14544,8 +16003,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'PurplePurse',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14553,6 +16013,7 @@ class GoogleFonts {
 
   static TextStyle quando({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14562,8 +16023,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Quando',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14571,6 +16033,7 @@ class GoogleFonts {
 
   static TextStyle quantico({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14583,8 +16046,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Quantico',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14592,6 +16056,7 @@ class GoogleFonts {
 
   static TextStyle quattrocento({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14602,8 +16067,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Quattrocento',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14611,6 +16077,7 @@ class GoogleFonts {
 
   static TextStyle quattrocentoSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14623,8 +16090,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'QuattrocentoSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14632,6 +16100,7 @@ class GoogleFonts {
 
   static TextStyle questrial({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14641,8 +16110,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Questrial',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14650,6 +16120,7 @@ class GoogleFonts {
 
   static TextStyle quicksand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14663,8 +16134,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Quicksand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14672,6 +16144,7 @@ class GoogleFonts {
 
   static TextStyle quintessential({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14681,8 +16154,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Quintessential',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14690,6 +16164,7 @@ class GoogleFonts {
 
   static TextStyle qwigley({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14699,8 +16174,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Qwigley',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14708,6 +16184,7 @@ class GoogleFonts {
 
   static TextStyle racingSansOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14717,8 +16194,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RacingSansOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14726,6 +16204,7 @@ class GoogleFonts {
 
   static TextStyle radley({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14736,8 +16215,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Radley',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14745,6 +16225,7 @@ class GoogleFonts {
 
   static TextStyle rajdhani({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14758,8 +16239,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rajdhani',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14767,6 +16249,7 @@ class GoogleFonts {
 
   static TextStyle rakkas({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14776,8 +16259,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rakkas',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14785,6 +16269,7 @@ class GoogleFonts {
 
   static TextStyle raleway({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14811,8 +16296,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Raleway',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14820,6 +16306,7 @@ class GoogleFonts {
 
   static TextStyle ralewayDots({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14829,8 +16316,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RalewayDots',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14838,6 +16326,7 @@ class GoogleFonts {
 
   static TextStyle ramabhadra({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14847,8 +16336,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ramabhadra',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14856,6 +16346,7 @@ class GoogleFonts {
 
   static TextStyle ramaraja({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14865,8 +16356,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ramaraja',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14874,6 +16366,7 @@ class GoogleFonts {
 
   static TextStyle rambla({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14886,8 +16379,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rambla',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14895,6 +16389,7 @@ class GoogleFonts {
 
   static TextStyle rammettoOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14904,8 +16399,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RammettoOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14913,6 +16409,7 @@ class GoogleFonts {
 
   static TextStyle ranchers({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14922,8 +16419,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ranchers',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14931,6 +16429,7 @@ class GoogleFonts {
 
   static TextStyle rancho({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14940,8 +16439,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rancho',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14949,6 +16449,7 @@ class GoogleFonts {
 
   static TextStyle ranga({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14959,8 +16460,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ranga',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14968,6 +16470,7 @@ class GoogleFonts {
 
   static TextStyle rasa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14981,8 +16484,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rasa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -14990,6 +16494,7 @@ class GoogleFonts {
 
   static TextStyle rationale({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -14999,8 +16504,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rationale',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15008,6 +16514,7 @@ class GoogleFonts {
 
   static TextStyle raviPrakash({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15017,8 +16524,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RaviPrakash',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15026,6 +16534,7 @@ class GoogleFonts {
 
   static TextStyle redHatDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15042,8 +16551,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RedHatDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15051,6 +16561,7 @@ class GoogleFonts {
 
   static TextStyle redHatText({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15065,8 +16576,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RedHatText',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15074,6 +16586,7 @@ class GoogleFonts {
 
   static TextStyle redressed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15083,8 +16596,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Redressed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15092,6 +16606,7 @@ class GoogleFonts {
 
   static TextStyle reemKufi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15101,8 +16616,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ReemKufi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15110,6 +16626,7 @@ class GoogleFonts {
 
   static TextStyle reenieBeanie({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15119,8 +16636,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ReenieBeanie',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15128,6 +16646,7 @@ class GoogleFonts {
 
   static TextStyle revalia({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15137,8 +16656,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Revalia',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15146,6 +16666,7 @@ class GoogleFonts {
 
   static TextStyle rhodiumLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15155,8 +16676,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RhodiumLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15164,6 +16686,7 @@ class GoogleFonts {
 
   static TextStyle ribeye({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15173,8 +16696,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ribeye',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15182,6 +16706,7 @@ class GoogleFonts {
 
   static TextStyle ribeyeMarrow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15191,8 +16716,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RibeyeMarrow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15200,6 +16726,7 @@ class GoogleFonts {
 
   static TextStyle righteous({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15209,8 +16736,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Righteous',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15218,6 +16746,7 @@ class GoogleFonts {
 
   static TextStyle risque({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15227,8 +16756,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Risque',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15236,6 +16766,7 @@ class GoogleFonts {
 
   static TextStyle roboto({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15256,8 +16787,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Roboto',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15265,6 +16797,7 @@ class GoogleFonts {
 
   static TextStyle robotoCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15279,8 +16812,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RobotoCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15288,6 +16822,7 @@ class GoogleFonts {
 
   static TextStyle robotoMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15306,8 +16841,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RobotoMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15315,6 +16851,7 @@ class GoogleFonts {
 
   static TextStyle robotoSlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15327,8 +16864,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RobotoSlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15336,6 +16874,7 @@ class GoogleFonts {
 
   static TextStyle rochester({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15345,8 +16884,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rochester',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15354,6 +16894,7 @@ class GoogleFonts {
 
   static TextStyle rockSalt({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15363,8 +16904,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RockSalt',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15372,6 +16914,7 @@ class GoogleFonts {
 
   static TextStyle rokkitt({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15389,8 +16932,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rokkitt',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15398,6 +16942,7 @@ class GoogleFonts {
 
   static TextStyle romanesco({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15407,8 +16952,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Romanesco',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15416,6 +16962,7 @@ class GoogleFonts {
 
   static TextStyle ropaSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15426,8 +16973,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RopaSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15435,6 +16983,7 @@ class GoogleFonts {
 
   static TextStyle rosario({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15453,8 +17002,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rosario',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15462,6 +17012,7 @@ class GoogleFonts {
 
   static TextStyle rosarivo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15472,8 +17023,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rosarivo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15481,6 +17033,7 @@ class GoogleFonts {
 
   static TextStyle rougeScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15490,8 +17043,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RougeScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15499,6 +17053,7 @@ class GoogleFonts {
 
   static TextStyle rozhaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15508,8 +17063,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RozhaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15517,6 +17073,7 @@ class GoogleFonts {
 
   static TextStyle rubik({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15535,8 +17092,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rubik',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15544,6 +17102,7 @@ class GoogleFonts {
 
   static TextStyle rubikMonoOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15553,8 +17112,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RubikMonoOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15562,6 +17122,7 @@ class GoogleFonts {
 
   static TextStyle ruda({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15573,8 +17134,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ruda',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15582,6 +17144,7 @@ class GoogleFonts {
 
   static TextStyle rufina({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15592,8 +17155,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rufina',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15601,6 +17165,7 @@ class GoogleFonts {
 
   static TextStyle rugeBoogie({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15610,8 +17175,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RugeBoogie',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15619,6 +17185,7 @@ class GoogleFonts {
 
   static TextStyle ruluko({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15628,8 +17195,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ruluko',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15637,6 +17205,7 @@ class GoogleFonts {
 
   static TextStyle rumRaisin({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15646,8 +17215,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RumRaisin',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15655,6 +17225,7 @@ class GoogleFonts {
 
   static TextStyle ruslanDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15664,8 +17235,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RuslanDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15673,6 +17245,7 @@ class GoogleFonts {
 
   static TextStyle russoOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15682,8 +17255,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'RussoOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15691,6 +17265,7 @@ class GoogleFonts {
 
   static TextStyle ruthie({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15700,8 +17275,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ruthie',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15709,6 +17285,7 @@ class GoogleFonts {
 
   static TextStyle rye({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15718,8 +17295,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Rye',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15727,6 +17305,7 @@ class GoogleFonts {
 
   static TextStyle sacramento({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15736,8 +17315,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sacramento',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15745,6 +17325,7 @@ class GoogleFonts {
 
   static TextStyle sahitya({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15755,8 +17336,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sahitya',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15764,6 +17346,7 @@ class GoogleFonts {
 
   static TextStyle sail({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15773,8 +17356,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sail',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15782,6 +17366,7 @@ class GoogleFonts {
 
   static TextStyle saira({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15799,8 +17384,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Saira',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15808,6 +17394,7 @@ class GoogleFonts {
 
   static TextStyle sairaCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15825,8 +17412,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SairaCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15834,6 +17422,7 @@ class GoogleFonts {
 
   static TextStyle sairaExtraCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15851,8 +17440,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SairaExtraCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15860,6 +17450,7 @@ class GoogleFonts {
 
   static TextStyle sairaSemiCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15877,8 +17468,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SairaSemiCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15886,6 +17478,7 @@ class GoogleFonts {
 
   static TextStyle sairaStencilOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15895,8 +17488,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SairaStencilOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15904,6 +17498,7 @@ class GoogleFonts {
 
   static TextStyle salsa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15913,8 +17508,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Salsa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15922,6 +17518,7 @@ class GoogleFonts {
 
   static TextStyle sanchez({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15932,8 +17529,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sanchez',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15941,6 +17539,7 @@ class GoogleFonts {
 
   static TextStyle sancreek({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15950,8 +17549,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sancreek',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15959,6 +17559,7 @@ class GoogleFonts {
 
   static TextStyle sansita({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -15975,8 +17576,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sansita',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -15984,6 +17586,7 @@ class GoogleFonts {
 
   static TextStyle sarabun({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16008,8 +17611,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sarabun',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16017,6 +17621,7 @@ class GoogleFonts {
 
   static TextStyle sarala({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16027,8 +17632,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sarala',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16036,6 +17642,7 @@ class GoogleFonts {
 
   static TextStyle sarina({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16045,8 +17652,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sarina',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16054,6 +17662,7 @@ class GoogleFonts {
 
   static TextStyle sarpanch({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16068,8 +17677,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sarpanch',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16077,6 +17687,7 @@ class GoogleFonts {
 
   static TextStyle satisfy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16086,8 +17697,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Satisfy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16095,6 +17707,7 @@ class GoogleFonts {
 
   static TextStyle sawarabiGothic({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16104,8 +17717,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SawarabiGothic',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16113,6 +17727,7 @@ class GoogleFonts {
 
   static TextStyle sawarabiMincho({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16122,8 +17737,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SawarabiMincho',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16131,6 +17747,7 @@ class GoogleFonts {
 
   static TextStyle scada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16143,8 +17760,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Scada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16152,6 +17770,7 @@ class GoogleFonts {
 
   static TextStyle scheherazade({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16162,8 +17781,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Scheherazade',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16171,6 +17791,7 @@ class GoogleFonts {
 
   static TextStyle schoolbell({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16180,8 +17801,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Schoolbell',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16189,6 +17811,7 @@ class GoogleFonts {
 
   static TextStyle scopeOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16198,8 +17821,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ScopeOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16207,6 +17831,7 @@ class GoogleFonts {
 
   static TextStyle seaweedScript({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16216,8 +17841,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SeaweedScript',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16225,6 +17851,7 @@ class GoogleFonts {
 
   static TextStyle secularOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16234,8 +17861,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SecularOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16243,6 +17871,7 @@ class GoogleFonts {
 
   static TextStyle sedgwickAve({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16252,8 +17881,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SedgwickAve',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16261,6 +17891,7 @@ class GoogleFonts {
 
   static TextStyle sedgwickAveDisplay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16270,8 +17901,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SedgwickAveDisplay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16279,6 +17911,7 @@ class GoogleFonts {
 
   static TextStyle sevillana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16288,8 +17921,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sevillana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16297,6 +17931,7 @@ class GoogleFonts {
 
   static TextStyle seymourOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16306,8 +17941,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SeymourOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16315,6 +17951,7 @@ class GoogleFonts {
 
   static TextStyle shadowsIntoLight({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16324,8 +17961,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ShadowsIntoLight',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16333,6 +17971,7 @@ class GoogleFonts {
 
   static TextStyle shadowsIntoLightTwo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16342,8 +17981,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ShadowsIntoLightTwo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16351,6 +17991,7 @@ class GoogleFonts {
 
   static TextStyle shanti({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16360,8 +18001,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Shanti',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16369,6 +18011,7 @@ class GoogleFonts {
 
   static TextStyle share({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16381,8 +18024,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Share',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16390,6 +18034,7 @@ class GoogleFonts {
 
   static TextStyle shareTech({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16399,8 +18044,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ShareTech',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16408,6 +18054,7 @@ class GoogleFonts {
 
   static TextStyle shareTechMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16417,8 +18064,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ShareTechMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16426,6 +18074,7 @@ class GoogleFonts {
 
   static TextStyle shojumaru({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16435,8 +18084,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Shojumaru',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16444,6 +18094,7 @@ class GoogleFonts {
 
   static TextStyle shortStack({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16453,8 +18104,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ShortStack',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16462,6 +18114,7 @@ class GoogleFonts {
 
   static TextStyle shrikhand({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16471,8 +18124,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Shrikhand',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16480,6 +18134,7 @@ class GoogleFonts {
 
   static TextStyle siemreap({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16489,8 +18144,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Siemreap',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16498,6 +18154,7 @@ class GoogleFonts {
 
   static TextStyle sigmarOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16507,8 +18164,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SigmarOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16516,6 +18174,7 @@ class GoogleFonts {
 
   static TextStyle signika({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16528,8 +18187,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Signika',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16537,6 +18197,7 @@ class GoogleFonts {
 
   static TextStyle signikaNegative({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16549,8 +18210,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SignikaNegative',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16558,6 +18220,7 @@ class GoogleFonts {
 
   static TextStyle simonetta({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16570,8 +18233,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Simonetta',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16579,6 +18243,7 @@ class GoogleFonts {
 
   static TextStyle singleDay({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16588,8 +18253,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SingleDay',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16597,6 +18263,7 @@ class GoogleFonts {
 
   static TextStyle sintony({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16607,8 +18274,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sintony',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16616,6 +18284,7 @@ class GoogleFonts {
 
   static TextStyle sirinStencil({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16625,8 +18294,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SirinStencil',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16634,6 +18304,7 @@ class GoogleFonts {
 
   static TextStyle sixCaps({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16643,8 +18314,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SixCaps',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16652,6 +18324,7 @@ class GoogleFonts {
 
   static TextStyle skranji({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16662,8 +18335,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Skranji',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16671,6 +18345,7 @@ class GoogleFonts {
 
   static TextStyle slabo13px({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16680,8 +18355,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Slabo13px',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16689,6 +18365,7 @@ class GoogleFonts {
 
   static TextStyle slabo27px({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16698,8 +18375,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Slabo27px',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16707,6 +18385,7 @@ class GoogleFonts {
 
   static TextStyle slackey({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16716,8 +18395,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Slackey',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16725,6 +18405,7 @@ class GoogleFonts {
 
   static TextStyle smokum({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16734,8 +18415,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Smokum',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16743,6 +18425,7 @@ class GoogleFonts {
 
   static TextStyle smythe({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16752,8 +18435,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Smythe',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16761,6 +18445,7 @@ class GoogleFonts {
 
   static TextStyle sniglet({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16771,8 +18456,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sniglet',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16780,6 +18466,7 @@ class GoogleFonts {
 
   static TextStyle snippet({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16789,8 +18476,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Snippet',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16798,6 +18486,7 @@ class GoogleFonts {
 
   static TextStyle snowburstOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16807,8 +18496,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SnowburstOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16816,6 +18506,7 @@ class GoogleFonts {
 
   static TextStyle sofadiOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16825,8 +18516,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SofadiOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16834,6 +18526,7 @@ class GoogleFonts {
 
   static TextStyle sofia({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16843,8 +18536,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sofia',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16852,6 +18546,7 @@ class GoogleFonts {
 
   static TextStyle songMyung({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16861,8 +18556,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SongMyung',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16870,6 +18566,7 @@ class GoogleFonts {
 
   static TextStyle sonsieOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16879,8 +18576,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SonsieOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16888,6 +18586,7 @@ class GoogleFonts {
 
   static TextStyle sortsMillGoudy({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16898,8 +18597,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SortsMillGoudy',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16907,6 +18607,7 @@ class GoogleFonts {
 
   static TextStyle sourceCodePro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16929,8 +18630,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SourceCodePro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16938,6 +18640,7 @@ class GoogleFonts {
 
   static TextStyle sourceSansPro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16958,8 +18661,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SourceSansPro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16967,6 +18671,7 @@ class GoogleFonts {
 
   static TextStyle sourceSerifPro({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16978,8 +18683,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SourceSerifPro',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -16987,6 +18693,7 @@ class GoogleFonts {
 
   static TextStyle spaceMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -16999,8 +18706,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SpaceMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17008,6 +18716,7 @@ class GoogleFonts {
 
   static TextStyle specialElite({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17017,8 +18726,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SpecialElite',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17026,6 +18736,7 @@ class GoogleFonts {
 
   static TextStyle spectral({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17048,8 +18759,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Spectral',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17057,6 +18769,7 @@ class GoogleFonts {
 
   static TextStyle spectralSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17079,8 +18792,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SpectralSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17088,6 +18802,7 @@ class GoogleFonts {
 
   static TextStyle spicyRice({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17097,8 +18812,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SpicyRice',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17106,6 +18822,7 @@ class GoogleFonts {
 
   static TextStyle spinnaker({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17115,8 +18832,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Spinnaker',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17124,6 +18842,7 @@ class GoogleFonts {
 
   static TextStyle spirax({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17133,8 +18852,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Spirax',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17142,6 +18862,7 @@ class GoogleFonts {
 
   static TextStyle squadaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17151,8 +18872,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SquadaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17160,6 +18882,7 @@ class GoogleFonts {
 
   static TextStyle sreeKrushnadevaraya({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17169,8 +18892,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SreeKrushnadevaraya',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17178,6 +18902,7 @@ class GoogleFonts {
 
   static TextStyle sriracha({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17187,8 +18912,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sriracha',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17196,6 +18922,7 @@ class GoogleFonts {
 
   static TextStyle srisakdi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17206,8 +18933,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Srisakdi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17215,6 +18943,7 @@ class GoogleFonts {
 
   static TextStyle staatliches({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17224,8 +18953,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Staatliches',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17233,6 +18963,7 @@ class GoogleFonts {
 
   static TextStyle stalemate({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17242,8 +18973,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Stalemate',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17251,6 +18983,7 @@ class GoogleFonts {
 
   static TextStyle stalinistOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17260,8 +18993,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'StalinistOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17269,6 +19003,7 @@ class GoogleFonts {
 
   static TextStyle stardosStencil({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17279,8 +19014,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'StardosStencil',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17288,6 +19024,7 @@ class GoogleFonts {
 
   static TextStyle stintUltraCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17297,8 +19034,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'StintUltraCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17306,6 +19044,7 @@ class GoogleFonts {
 
   static TextStyle stintUltraExpanded({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17315,8 +19054,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'StintUltraExpanded',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17324,6 +19064,7 @@ class GoogleFonts {
 
   static TextStyle stoke({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17334,8 +19075,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Stoke',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17343,6 +19085,7 @@ class GoogleFonts {
 
   static TextStyle strait({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17352,8 +19095,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Strait',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17361,6 +19105,7 @@ class GoogleFonts {
 
   static TextStyle stylish({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17370,8 +19115,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Stylish',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17379,6 +19125,7 @@ class GoogleFonts {
 
   static TextStyle sueEllenFrancisco({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17388,8 +19135,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SueEllenFrancisco',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17397,6 +19145,7 @@ class GoogleFonts {
 
   static TextStyle suezOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17406,8 +19155,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SuezOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17415,6 +19165,7 @@ class GoogleFonts {
 
   static TextStyle sumana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17425,8 +19176,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sumana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17434,6 +19186,7 @@ class GoogleFonts {
 
   static TextStyle sunflower({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17445,8 +19198,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sunflower',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17454,6 +19208,7 @@ class GoogleFonts {
 
   static TextStyle sunshiney({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17463,8 +19218,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sunshiney',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17472,6 +19228,7 @@ class GoogleFonts {
 
   static TextStyle supermercadoOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17481,8 +19238,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SupermercadoOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17490,6 +19248,7 @@ class GoogleFonts {
 
   static TextStyle sura({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17500,8 +19259,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Sura',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17509,6 +19269,7 @@ class GoogleFonts {
 
   static TextStyle suranna({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17518,8 +19279,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Suranna',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17527,6 +19289,7 @@ class GoogleFonts {
 
   static TextStyle suravaram({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17536,8 +19299,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Suravaram',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17545,6 +19309,7 @@ class GoogleFonts {
 
   static TextStyle suwannaphum({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17554,8 +19319,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Suwannaphum',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17563,6 +19329,7 @@ class GoogleFonts {
 
   static TextStyle swankyandMooMoo({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17572,8 +19339,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'SwankyandMooMoo',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17581,6 +19349,7 @@ class GoogleFonts {
 
   static TextStyle syncopate({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17591,8 +19360,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Syncopate',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17600,6 +19370,7 @@ class GoogleFonts {
 
   static TextStyle tajawal({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17615,8 +19386,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Tajawal',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17624,6 +19396,7 @@ class GoogleFonts {
 
   static TextStyle tangerine({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17634,8 +19407,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Tangerine',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17643,6 +19417,7 @@ class GoogleFonts {
 
   static TextStyle taprom({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17652,8 +19427,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Taprom',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17661,6 +19437,7 @@ class GoogleFonts {
 
   static TextStyle tauri({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17670,8 +19447,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Tauri',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17679,6 +19457,7 @@ class GoogleFonts {
 
   static TextStyle taviraj({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17705,8 +19484,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Taviraj',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17714,6 +19494,7 @@ class GoogleFonts {
 
   static TextStyle teko({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17727,8 +19508,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Teko',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17736,6 +19518,7 @@ class GoogleFonts {
 
   static TextStyle telex({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17745,8 +19528,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Telex',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17754,6 +19538,7 @@ class GoogleFonts {
 
   static TextStyle tenaliRamakrishna({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17763,8 +19548,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TenaliRamakrishna',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17772,6 +19558,7 @@ class GoogleFonts {
 
   static TextStyle tenorSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17781,8 +19568,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TenorSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17790,6 +19578,7 @@ class GoogleFonts {
 
   static TextStyle textMeOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17799,8 +19588,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TextMeOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17808,6 +19598,7 @@ class GoogleFonts {
 
   static TextStyle thasadith({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17820,8 +19611,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Thasadith',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17829,6 +19621,7 @@ class GoogleFonts {
 
   static TextStyle theGirlNextDoor({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17838,8 +19631,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TheGirlNextDoor',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17847,6 +19641,7 @@ class GoogleFonts {
 
   static TextStyle tienne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17858,8 +19653,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Tienne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17867,6 +19663,7 @@ class GoogleFonts {
 
   static TextStyle tillana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17880,8 +19677,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Tillana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17889,6 +19687,7 @@ class GoogleFonts {
 
   static TextStyle timmana({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17898,8 +19697,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Timmana',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17907,6 +19707,7 @@ class GoogleFonts {
 
   static TextStyle tinos({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17919,8 +19720,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Tinos',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17928,6 +19730,7 @@ class GoogleFonts {
 
   static TextStyle titanOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17937,8 +19740,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TitanOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17946,6 +19750,7 @@ class GoogleFonts {
 
   static TextStyle titilliumWeb({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17965,8 +19770,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TitilliumWeb',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17974,6 +19780,7 @@ class GoogleFonts {
 
   static TextStyle tradeWinds({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -17983,8 +19790,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TradeWinds',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -17992,6 +19800,7 @@ class GoogleFonts {
 
   static TextStyle trirong({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18018,8 +19827,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Trirong',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18027,6 +19837,7 @@ class GoogleFonts {
 
   static TextStyle trocchi({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18036,8 +19847,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Trocchi',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18045,6 +19857,7 @@ class GoogleFonts {
 
   static TextStyle trochut({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18056,8 +19869,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Trochut',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18065,6 +19879,7 @@ class GoogleFonts {
 
   static TextStyle trykker({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18074,8 +19889,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Trykker',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18083,6 +19899,7 @@ class GoogleFonts {
 
   static TextStyle tulpenOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18092,8 +19909,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TulpenOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18101,6 +19919,7 @@ class GoogleFonts {
 
   static TextStyle turretRoad({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18115,8 +19934,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'TurretRoad',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18124,6 +19944,7 @@ class GoogleFonts {
 
   static TextStyle ubuntu({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18140,8 +19961,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ubuntu',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18149,6 +19971,7 @@ class GoogleFonts {
 
   static TextStyle ubuntuCondensed({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18158,8 +19981,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'UbuntuCondensed',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18167,6 +19991,7 @@ class GoogleFonts {
 
   static TextStyle ubuntuMono({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18179,8 +20004,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'UbuntuMono',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18188,6 +20014,7 @@ class GoogleFonts {
 
   static TextStyle ultra({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18197,8 +20024,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Ultra',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18206,6 +20034,7 @@ class GoogleFonts {
 
   static TextStyle uncialAntiqua({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18215,8 +20044,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'UncialAntiqua',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18224,6 +20054,7 @@ class GoogleFonts {
 
   static TextStyle underdog({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18233,8 +20064,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Underdog',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18242,6 +20074,7 @@ class GoogleFonts {
 
   static TextStyle unicaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18251,8 +20084,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'UnicaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18260,6 +20094,7 @@ class GoogleFonts {
 
   static TextStyle unifrakturCook({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18269,8 +20104,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'UnifrakturCook',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18278,6 +20114,7 @@ class GoogleFonts {
 
   static TextStyle unifrakturMaguntia({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18287,8 +20124,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'UnifrakturMaguntia',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18296,6 +20134,7 @@ class GoogleFonts {
 
   static TextStyle unkempt({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18306,8 +20145,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Unkempt',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18315,6 +20155,7 @@ class GoogleFonts {
 
   static TextStyle unlock({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18324,8 +20165,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Unlock',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18333,6 +20175,7 @@ class GoogleFonts {
 
   static TextStyle unna({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18345,8 +20188,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Unna',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18354,6 +20198,7 @@ class GoogleFonts {
 
   static TextStyle vT323({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18363,8 +20208,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'VT323',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18372,6 +20218,7 @@ class GoogleFonts {
 
   static TextStyle vampiroOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18381,8 +20228,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'VampiroOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18390,6 +20238,7 @@ class GoogleFonts {
 
   static TextStyle varela({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18399,8 +20248,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Varela',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18408,6 +20258,7 @@ class GoogleFonts {
 
   static TextStyle varelaRound({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18417,8 +20268,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'VarelaRound',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18426,6 +20278,7 @@ class GoogleFonts {
 
   static TextStyle vastShadow({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18435,8 +20288,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'VastShadow',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18444,6 +20298,7 @@ class GoogleFonts {
 
   static TextStyle vesperLibre({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18456,8 +20311,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'VesperLibre',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18465,6 +20321,7 @@ class GoogleFonts {
 
   static TextStyle vibes({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18474,8 +20331,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Vibes',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18483,6 +20341,7 @@ class GoogleFonts {
 
   static TextStyle vibur({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18492,8 +20351,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Vibur',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18501,6 +20361,7 @@ class GoogleFonts {
 
   static TextStyle vidaloka({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18510,8 +20371,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Vidaloka',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18519,6 +20381,7 @@ class GoogleFonts {
 
   static TextStyle viga({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18528,8 +20391,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Viga',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18537,6 +20401,7 @@ class GoogleFonts {
 
   static TextStyle voces({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18546,8 +20411,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Voces',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18555,6 +20421,7 @@ class GoogleFonts {
 
   static TextStyle volkhov({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18567,8 +20434,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Volkhov',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18576,6 +20444,7 @@ class GoogleFonts {
 
   static TextStyle vollkorn({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18592,8 +20461,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Vollkorn',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18601,6 +20471,7 @@ class GoogleFonts {
 
   static TextStyle vollkornSC({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18613,8 +20484,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'VollkornSC',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18622,6 +20494,7 @@ class GoogleFonts {
 
   static TextStyle voltaire({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18631,8 +20504,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Voltaire',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18640,6 +20514,7 @@ class GoogleFonts {
 
   static TextStyle waitingfortheSunrise({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18649,8 +20524,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'WaitingfortheSunrise',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18658,6 +20534,7 @@ class GoogleFonts {
 
   static TextStyle wallpoet({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18667,8 +20544,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Wallpoet',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18676,6 +20554,7 @@ class GoogleFonts {
 
   static TextStyle walterTurncoat({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18685,8 +20564,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'WalterTurncoat',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18694,6 +20574,7 @@ class GoogleFonts {
 
   static TextStyle warnes({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18703,8 +20584,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Warnes',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18712,6 +20594,7 @@ class GoogleFonts {
 
   static TextStyle wellfleet({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18721,8 +20604,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Wellfleet',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18730,6 +20614,7 @@ class GoogleFonts {
 
   static TextStyle wendyOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18739,8 +20624,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'WendyOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18748,6 +20634,7 @@ class GoogleFonts {
 
   static TextStyle wireOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18757,8 +20644,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'WireOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18766,6 +20654,7 @@ class GoogleFonts {
 
   static TextStyle workSans({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18783,8 +20672,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'WorkSans',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18792,6 +20682,7 @@ class GoogleFonts {
 
   static TextStyle yanoneKaffeesatz({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18804,8 +20695,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'YanoneKaffeesatz',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18813,6 +20705,7 @@ class GoogleFonts {
 
   static TextStyle yantramanav({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18827,8 +20720,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Yantramanav',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18836,6 +20730,7 @@ class GoogleFonts {
 
   static TextStyle yatraOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18845,8 +20740,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'YatraOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18854,6 +20750,7 @@ class GoogleFonts {
 
   static TextStyle yellowtail({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18863,8 +20760,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Yellowtail',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18872,6 +20770,7 @@ class GoogleFonts {
 
   static TextStyle yeonSung({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18881,8 +20780,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'YeonSung',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18890,6 +20790,7 @@ class GoogleFonts {
 
   static TextStyle yesevaOne({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18899,8 +20800,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'YesevaOne',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18908,6 +20810,7 @@ class GoogleFonts {
 
   static TextStyle yesteryear({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18917,8 +20820,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Yesteryear',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18926,6 +20830,7 @@ class GoogleFonts {
 
   static TextStyle yrsa({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18939,8 +20844,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Yrsa',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18948,6 +20854,7 @@ class GoogleFonts {
 
   static TextStyle zCOOLKuaiLe({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18957,8 +20864,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ZCOOLKuaiLe',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18966,6 +20874,7 @@ class GoogleFonts {
 
   static TextStyle zCOOLQingKeHuangYou({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18975,8 +20884,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ZCOOLQingKeHuangYou',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -18984,6 +20894,7 @@ class GoogleFonts {
 
   static TextStyle zCOOLXiaoWei({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -18993,8 +20904,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ZCOOLXiaoWei',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -19002,6 +20914,7 @@ class GoogleFonts {
 
   static TextStyle zeyada({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -19011,8 +20924,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'Zeyada',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -19020,6 +20934,7 @@ class GoogleFonts {
 
   static TextStyle zhiMangXing({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -19029,8 +20944,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ZhiMangXing',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -19038,6 +20954,7 @@ class GoogleFonts {
 
   static TextStyle zillaSlab({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -19056,8 +20973,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ZillaSlab',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
@@ -19065,6 +20983,7 @@ class GoogleFonts {
 
   static TextStyle zillaSlabHighlight({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -19075,8 +20994,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: 'ZillaSlabHighlight',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );

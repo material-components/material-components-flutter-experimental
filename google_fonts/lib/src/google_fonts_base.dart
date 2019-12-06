@@ -33,8 +33,9 @@ void clearCache() => _loadedFonts.clear();
 /// either by network or from the file system.
 TextStyle googleFontsTextStyle({
   @required String fontFamily,
-  TextStyle textStyle,
+  double fontSize,
   FontWeight fontWeight,
+  TextStyle textStyle,
   FontStyle fontStyle,
   @required Map<GoogleFontsVariant, String> fonts,
 }) {
@@ -42,7 +43,11 @@ TextStyle googleFontsTextStyle({
   assert(fonts != null);
 
   textStyle ??= TextStyle();
-  textStyle = textStyle.copyWith(fontWeight: fontWeight, fontStyle: fontStyle);
+  textStyle = textStyle.copyWith(
+    fontSize: fontSize,
+    fontWeight: fontWeight,
+    fontStyle: fontStyle,
+  );
 
   final variant = _closestMatch(
     GoogleFontsVariant(
