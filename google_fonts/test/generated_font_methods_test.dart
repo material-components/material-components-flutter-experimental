@@ -166,9 +166,15 @@ main() {
     );
 
     final textTheme = GoogleFonts.oswaldTextTheme(textTheme: baseTextTheme);
+    final expectedFamilyWithVariant = 'Oswald_regular';
 
+    // Default is preserved.
+    expect(textTheme.display1.fontFamily, equals(expectedFamilyWithVariant));
+    // Different font family gets overridden by oswald.
+    expect(textTheme.body1.fontFamily, equals(expectedFamilyWithVariant));
+    // Weight is preserved.
     expect(textTheme.display2.fontWeight, equals(FontWeight.w700));
-    expect(textTheme.body1.fontFamily, equals('Oswald_regular'));
+    // Style is preserved.
     expect(textTheme.subtitle.fontStyle, equals(FontStyle.italic));
   });
 }
