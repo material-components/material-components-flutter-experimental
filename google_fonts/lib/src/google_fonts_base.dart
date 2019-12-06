@@ -186,4 +186,3 @@ int _computeMatch(GoogleFontsVariant a, GoogleFontsVariant b) {
   }
   return score;
 }
-
