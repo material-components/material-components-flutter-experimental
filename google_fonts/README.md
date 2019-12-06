@@ -37,7 +37,9 @@ To use `GoogleFonts` with an existing `TextStyle`:
 ```dart
 Text(
   'This is Google Fonts',
-  style: GoogleFonts.latoTextStyle(textStyle: TextStyle(fontSize: 18)),
+  style: GoogleFonts.latoTextStyle(
+    textStyle: TextStyle(color: Colors.blue, letterSpacing: .5),
+  ),
 ),
 ```
  
