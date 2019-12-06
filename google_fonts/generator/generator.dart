@@ -20,6 +20,22 @@ void main() {
     final family = item['family'].toString().replaceAll(' ', '');
     final lowerFamily = family[0].toLowerCase() + family.substring(1);
 
+    final themeParams = [
+      'display4',
+      'display3',
+      'display2',
+      'display1',
+      'headline',
+      'title',
+      'subhead',
+      'body2',
+      'body1',
+      'caption',
+      'button',
+      'subtitle',
+      'overline',
+    ];
+
     methods.add({
       'methodName': '$lowerFamily',
       'fontFamily': family,
@@ -27,6 +43,10 @@ void main() {
         for (final variant in item['variants'])
           {'variant': variant, 'url': item['files'][variant]}
       ],
+      'themeParams': [
+        for (final themeParam in themeParams)
+          {'value': themeParam}
+      ]
     });
   }
 

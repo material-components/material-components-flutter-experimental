@@ -34,7 +34,7 @@ main() {
     clearCache();
   });
 
-  testWidgets('loadFont method calls http get', (tester) async {
+  testWidgets('loadFontIfNeccessary method calls http get', (tester) async {
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       fontFamily: 'foo',
@@ -49,8 +49,8 @@ main() {
   });
 
   testWidgets(
-      'loadFont method does not make http get request on subsequent '
-      'calls', (tester) async {
+      'loadFontIfNeccessary method does not make http get request on '
+      'subsequent calls', (tester) async {
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       fontFamily: 'foo',
@@ -72,7 +72,7 @@ main() {
     verifyNever(httpClient.get(fakeUrl));
   });
 
-  testWidgets('loadFont method writes font file', (tester) async {
+  testWidgets('loadFontIfNeccessary method writes font file', (tester) async {
     final fakeUrl = Uri.http('fonts.google.com', '/foo');
     final fakeDescriptor = GoogleFontsDescriptor(
       fontFamily: 'foo',
