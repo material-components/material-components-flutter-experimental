@@ -14,6 +14,7 @@ class GoogleFonts {
   {{#method}}
   static TextStyle {{methodName}}({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -25,8 +26,9 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: '{{fontFamily}}',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
     );
