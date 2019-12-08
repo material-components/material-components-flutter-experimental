@@ -72,7 +72,7 @@ You can also use `GoogleFonts.latoTextTheme()` to make or modify an entire text 
 MaterialApp(
   theme: ThemeData(
     textTheme: GoogleFonts.latoTextTheme(
-      Theme.of(context).textTheme,
+      textTheme: Theme.of(context).textTheme,
     ),
   ),
 );
