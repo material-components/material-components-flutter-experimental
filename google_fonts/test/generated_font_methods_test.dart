@@ -165,7 +165,7 @@ main() {
       subtitle: TextStyle(fontStyle: FontStyle.italic),
     );
 
-    final textTheme = GoogleFonts.oswaldTextTheme(textTheme: baseTextTheme);
+    final textTheme = GoogleFonts.oswaldTextTheme(baseTextTheme);
     final expectedFamilyWithVariant = 'Oswald_regular';
 
     // Default is preserved.

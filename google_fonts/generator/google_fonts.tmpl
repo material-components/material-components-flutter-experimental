@@ -34,9 +34,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme {{methodName}}TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme {{methodName}}TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       {{#themeParams}}
