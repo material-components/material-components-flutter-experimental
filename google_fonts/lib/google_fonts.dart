@@ -32,9 +32,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aBeeZeeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aBeeZeeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.display4),
@@ -73,9 +71,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme abelTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme abelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.abelTextStyle(textStyle: textTheme?.display4),
@@ -118,9 +114,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme abhayaLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme abhayaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.abhayaLibreTextStyle(textStyle: textTheme?.display4),
@@ -159,9 +153,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme abrilFatfaceTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme abrilFatfaceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.abrilFatfaceTextStyle(textStyle: textTheme?.display4),
@@ -200,9 +192,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aclonicaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aclonicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aclonicaTextStyle(textStyle: textTheme?.display4),
@@ -241,9 +231,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme acmeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme acmeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.acmeTextStyle(textStyle: textTheme?.display4),
@@ -282,9 +270,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme actorTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme actorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.actorTextStyle(textStyle: textTheme?.display4),
@@ -323,9 +309,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme adaminaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme adaminaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.adaminaTextStyle(textStyle: textTheme?.display4),
@@ -370,9 +354,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme adventProTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme adventProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.adventProTextStyle(textStyle: textTheme?.display4),
@@ -411,9 +393,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aguafinaScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aguafinaScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aguafinaScriptTextStyle(textStyle: textTheme?.display4),
@@ -452,9 +432,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme akronimTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme akronimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.akronimTextStyle(textStyle: textTheme?.display4),
@@ -493,9 +471,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aladinTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aladinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aladinTextStyle(textStyle: textTheme?.display4),
@@ -534,9 +510,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aldrichTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aldrichTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aldrichTextStyle(textStyle: textTheme?.display4),
@@ -576,9 +550,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alefTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alefTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alefTextStyle(textStyle: textTheme?.display4),
@@ -626,9 +598,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alegreyaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alegreyaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alegreyaTextStyle(textStyle: textTheme?.display4),
@@ -676,9 +646,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alegreyaSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alegreyaSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alegreyaSCTextStyle(textStyle: textTheme?.display4),
@@ -730,9 +698,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alegreyaSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alegreyaSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alegreyaSansTextStyle(textStyle: textTheme?.display4),
@@ -784,9 +750,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alegreyaSansSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alegreyaSansSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alegreyaSansSCTextStyle(textStyle: textTheme?.display4),
@@ -830,9 +794,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aleoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aleoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aleoTextStyle(textStyle: textTheme?.display4),
@@ -871,9 +833,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alexBrushTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alexBrushTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alexBrushTextStyle(textStyle: textTheme?.display4),
@@ -912,9 +872,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alfaSlabOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alfaSlabOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alfaSlabOneTextStyle(textStyle: textTheme?.display4),
@@ -953,9 +911,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aliceTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aliceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aliceTextStyle(textStyle: textTheme?.display4),
@@ -994,9 +950,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alikeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alikeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alikeTextStyle(textStyle: textTheme?.display4),
@@ -1035,9 +989,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alikeAngularTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alikeAngularTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alikeAngularTextStyle(textStyle: textTheme?.display4),
@@ -1077,9 +1029,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme allanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme allanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.allanTextStyle(textStyle: textTheme?.display4),
@@ -1118,9 +1068,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme allertaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme allertaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.allertaTextStyle(textStyle: textTheme?.display4),
@@ -1159,9 +1107,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme allertaStencilTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme allertaStencilTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.allertaStencilTextStyle(textStyle: textTheme?.display4),
@@ -1200,9 +1146,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme alluraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme alluraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.alluraTextStyle(textStyle: textTheme?.display4),
@@ -1244,9 +1188,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme almaraiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme almaraiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.almaraiTextStyle(textStyle: textTheme?.display4),
@@ -1288,9 +1230,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme almendraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme almendraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.almendraTextStyle(textStyle: textTheme?.display4),
@@ -1329,9 +1269,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme almendraDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme almendraDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.almendraDisplayTextStyle(textStyle: textTheme?.display4),
@@ -1370,9 +1308,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme almendraSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme almendraSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.almendraSCTextStyle(textStyle: textTheme?.display4),
@@ -1411,9 +1347,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme amaranteTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme amaranteTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.amaranteTextStyle(textStyle: textTheme?.display4),
@@ -1455,9 +1389,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme amaranthTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme amaranthTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.amaranthTextStyle(textStyle: textTheme?.display4),
@@ -1497,9 +1429,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme amaticSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme amaticSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.amaticSCTextStyle(textStyle: textTheme?.display4),
@@ -1538,9 +1468,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme amethystaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme amethystaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.amethystaTextStyle(textStyle: textTheme?.display4),
@@ -1581,9 +1509,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme amikoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme amikoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.amikoTextStyle(textStyle: textTheme?.display4),
@@ -1625,9 +1551,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme amiriTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme amiriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.amiriTextStyle(textStyle: textTheme?.display4),
@@ -1667,9 +1591,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme amitaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme amitaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.amitaTextStyle(textStyle: textTheme?.display4),
@@ -1708,9 +1630,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme anaheimTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme anaheimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.anaheimTextStyle(textStyle: textTheme?.display4),
@@ -1749,9 +1669,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme andadaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme andadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.andadaTextStyle(textStyle: textTheme?.display4),
@@ -1790,9 +1708,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme andikaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme andikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.andikaTextStyle(textStyle: textTheme?.display4),
@@ -1831,9 +1747,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme angkorTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme angkorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.angkorTextStyle(textStyle: textTheme?.display4),
@@ -1872,9 +1786,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme annieUseYourTelescopeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme annieUseYourTelescopeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.annieUseYourTelescopeTextStyle(textStyle: textTheme?.display4),
@@ -1916,9 +1828,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme anonymousProTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme anonymousProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.anonymousProTextStyle(textStyle: textTheme?.display4),
@@ -1957,9 +1867,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme anticTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme anticTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.anticTextStyle(textStyle: textTheme?.display4),
@@ -1998,9 +1906,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme anticDidoneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme anticDidoneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.anticDidoneTextStyle(textStyle: textTheme?.display4),
@@ -2039,9 +1945,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme anticSlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme anticSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.anticSlabTextStyle(textStyle: textTheme?.display4),
@@ -2080,9 +1984,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme antonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme antonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.antonTextStyle(textStyle: textTheme?.display4),
@@ -2122,9 +2024,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arapeyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arapeyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arapeyTextStyle(textStyle: textTheme?.display4),
@@ -2163,9 +2063,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arbutusTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arbutusTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arbutusTextStyle(textStyle: textTheme?.display4),
@@ -2204,9 +2102,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arbutusSlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arbutusSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arbutusSlabTextStyle(textStyle: textTheme?.display4),
@@ -2245,9 +2141,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme architectsDaughterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme architectsDaughterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.architectsDaughterTextStyle(textStyle: textTheme?.display4),
@@ -2293,9 +2187,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme archivoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme archivoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.archivoTextStyle(textStyle: textTheme?.display4),
@@ -2334,9 +2226,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme archivoBlackTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme archivoBlackTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.archivoBlackTextStyle(textStyle: textTheme?.display4),
@@ -2382,9 +2272,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme archivoNarrowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme archivoNarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.archivoNarrowTextStyle(textStyle: textTheme?.display4),
@@ -2424,9 +2312,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arefRuqaaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arefRuqaaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arefRuqaaTextStyle(textStyle: textTheme?.display4),
@@ -2472,9 +2358,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arimaMaduraiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arimaMaduraiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arimaMaduraiTextStyle(textStyle: textTheme?.display4),
@@ -2516,9 +2400,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arimoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arimoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arimoTextStyle(textStyle: textTheme?.display4),
@@ -2557,9 +2439,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arizoniaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arizoniaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arizoniaTextStyle(textStyle: textTheme?.display4),
@@ -2598,9 +2478,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme armataTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme armataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.armataTextStyle(textStyle: textTheme?.display4),
@@ -2642,9 +2520,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arsenalTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arsenalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arsenalTextStyle(textStyle: textTheme?.display4),
@@ -2683,9 +2559,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme artifikaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme artifikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.artifikaTextStyle(textStyle: textTheme?.display4),
@@ -2727,9 +2601,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme arvoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme arvoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.arvoTextStyle(textStyle: textTheme?.display4),
@@ -2769,9 +2641,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aryaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aryaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aryaTextStyle(textStyle: textTheme?.display4),
@@ -2817,9 +2687,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme asapTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme asapTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.asapTextStyle(textStyle: textTheme?.display4),
@@ -2865,9 +2733,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme asapCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme asapCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.asapCondensedTextStyle(textStyle: textTheme?.display4),
@@ -2906,9 +2772,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme asarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme asarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.asarTextStyle(textStyle: textTheme?.display4),
@@ -2947,9 +2811,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme assetTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme assetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.assetTextStyle(textStyle: textTheme?.display4),
@@ -2993,9 +2855,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme assistantTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme assistantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.assistantTextStyle(textStyle: textTheme?.display4),
@@ -3035,9 +2895,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme astlochTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme astlochTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.astlochTextStyle(textStyle: textTheme?.display4),
@@ -3077,9 +2935,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme asulTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme asulTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.asulTextStyle(textStyle: textTheme?.display4),
@@ -3123,9 +2979,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme athitiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme athitiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.athitiTextStyle(textStyle: textTheme?.display4),
@@ -3168,9 +3022,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme atmaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme atmaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.atmaTextStyle(textStyle: textTheme?.display4),
@@ -3209,9 +3061,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme atomicAgeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme atomicAgeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.atomicAgeTextStyle(textStyle: textTheme?.display4),
@@ -3250,9 +3100,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme aubreyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme aubreyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.aubreyTextStyle(textStyle: textTheme?.display4),
@@ -3291,9 +3139,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme audiowideTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme audiowideTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.audiowideTextStyle(textStyle: textTheme?.display4),
@@ -3332,9 +3178,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme autourOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme autourOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.autourOneTextStyle(textStyle: textTheme?.display4),
@@ -3373,9 +3217,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme averageTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme averageTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.averageTextStyle(textStyle: textTheme?.display4),
@@ -3414,9 +3256,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme averageSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme averageSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.averageSansTextStyle(textStyle: textTheme?.display4),
@@ -3455,9 +3295,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme averiaGruesaLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme averiaGruesaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.averiaGruesaLibreTextStyle(textStyle: textTheme?.display4),
@@ -3501,9 +3339,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme averiaLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme averiaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.averiaLibreTextStyle(textStyle: textTheme?.display4),
@@ -3547,9 +3383,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme averiaSansLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme averiaSansLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.averiaSansLibreTextStyle(textStyle: textTheme?.display4),
@@ -3593,9 +3427,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme averiaSerifLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme averiaSerifLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.averiaSerifLibreTextStyle(textStyle: textTheme?.display4),
@@ -3637,9 +3469,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme b612TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme b612TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.b612TextStyle(textStyle: textTheme?.display4),
@@ -3681,9 +3511,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme b612MonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme b612MonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.b612MonoTextStyle(textStyle: textTheme?.display4),
@@ -3722,9 +3550,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme badScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme badScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.badScriptTextStyle(textStyle: textTheme?.display4),
@@ -3763,9 +3589,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bahianaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bahianaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bahianaTextStyle(textStyle: textTheme?.display4),
@@ -3804,9 +3628,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bahianitaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bahianitaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bahianitaTextStyle(textStyle: textTheme?.display4),
@@ -3856,9 +3678,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme baiJamjureeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme baiJamjureeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.baiJamjureeTextStyle(textStyle: textTheme?.display4),
@@ -3897,9 +3717,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooTextStyle(textStyle: textTheme?.display4),
@@ -3938,9 +3756,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooBhaiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooBhaiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooBhaiTextStyle(textStyle: textTheme?.display4),
@@ -3979,9 +3795,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooBhaijaanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooBhaijaanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooBhaijaanTextStyle(textStyle: textTheme?.display4),
@@ -4020,9 +3834,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooBhainaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooBhainaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooBhainaTextStyle(textStyle: textTheme?.display4),
@@ -4061,9 +3873,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooChettanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooChettanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooChettanTextStyle(textStyle: textTheme?.display4),
@@ -4102,9 +3912,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooDaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooDaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooDaTextStyle(textStyle: textTheme?.display4),
@@ -4143,9 +3951,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooPaajiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooPaajiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooPaajiTextStyle(textStyle: textTheme?.display4),
@@ -4184,9 +3990,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooTammaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooTammaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooTammaTextStyle(textStyle: textTheme?.display4),
@@ -4225,9 +4029,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooTammuduTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooTammuduTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooTammuduTextStyle(textStyle: textTheme?.display4),
@@ -4266,9 +4068,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balooThambiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balooThambiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balooThambiTextStyle(textStyle: textTheme?.display4),
@@ -4307,9 +4107,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme balthazarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme balthazarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.balthazarTextStyle(textStyle: textTheme?.display4),
@@ -4348,9 +4146,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bangersTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bangersTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bangersTextStyle(textStyle: textTheme?.display4),
@@ -4406,9 +4202,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme barlowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme barlowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.barlowTextStyle(textStyle: textTheme?.display4),
@@ -4464,9 +4258,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme barlowCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme barlowCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.barlowCondensedTextStyle(textStyle: textTheme?.display4),
@@ -4522,9 +4314,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme barlowSemiCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme barlowSemiCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.barlowSemiCondensedTextStyle(textStyle: textTheme?.display4),
@@ -4563,9 +4353,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme barriecitoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme barriecitoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.barriecitoTextStyle(textStyle: textTheme?.display4),
@@ -4604,9 +4392,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme barrioTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme barrioTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.barrioTextStyle(textStyle: textTheme?.display4),
@@ -4645,9 +4431,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme basicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme basicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.basicTextStyle(textStyle: textTheme?.display4),
@@ -4687,9 +4471,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme battambangTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme battambangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.battambangTextStyle(textStyle: textTheme?.display4),
@@ -4728,9 +4510,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme baumansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme baumansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.baumansTextStyle(textStyle: textTheme?.display4),
@@ -4769,9 +4549,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bayonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bayonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bayonTextStyle(textStyle: textTheme?.display4),
@@ -4823,9 +4601,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme beVietnamTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme beVietnamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.beVietnamTextStyle(textStyle: textTheme?.display4),
@@ -4864,9 +4640,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme belgranoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme belgranoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.belgranoTextStyle(textStyle: textTheme?.display4),
@@ -4905,9 +4679,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bellefairTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bellefairTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bellefairTextStyle(textStyle: textTheme?.display4),
@@ -4946,9 +4718,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bellezaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bellezaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bellezaTextStyle(textStyle: textTheme?.display4),
@@ -4989,9 +4759,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme benchNineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme benchNineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.benchNineTextStyle(textStyle: textTheme?.display4),
@@ -5030,9 +4798,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme benthamTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme benthamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.benthamTextStyle(textStyle: textTheme?.display4),
@@ -5071,9 +4837,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme berkshireSwashTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme berkshireSwashTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.berkshireSwashTextStyle(textStyle: textTheme?.display4),
@@ -5112,9 +4876,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bethEllenTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bethEllenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bethEllenTextStyle(textStyle: textTheme?.display4),
@@ -5153,9 +4915,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bevanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bevanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bevanTextStyle(textStyle: textTheme?.display4),
@@ -5201,9 +4961,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bigShouldersDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bigShouldersDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bigShouldersDisplayTextStyle(textStyle: textTheme?.display4),
@@ -5249,9 +5007,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bigShouldersTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bigShouldersTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bigShouldersTextTextStyle(textStyle: textTheme?.display4),
@@ -5290,9 +5046,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bigelowRulesTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bigelowRulesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bigelowRulesTextStyle(textStyle: textTheme?.display4),
@@ -5331,9 +5085,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bigshotOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bigshotOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bigshotOneTextStyle(textStyle: textTheme?.display4),
@@ -5372,9 +5124,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bilboTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bilboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bilboTextStyle(textStyle: textTheme?.display4),
@@ -5413,9 +5163,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bilboSwashCapsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bilboSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bilboSwashCapsTextStyle(textStyle: textTheme?.display4),
@@ -5458,9 +5206,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bioRhymeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bioRhymeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bioRhymeTextStyle(textStyle: textTheme?.display4),
@@ -5503,9 +5249,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bioRhymeExpandedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bioRhymeExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bioRhymeExpandedTextStyle(textStyle: textTheme?.display4),
@@ -5550,9 +5294,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme biryaniTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme biryaniTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.biryaniTextStyle(textStyle: textTheme?.display4),
@@ -5593,9 +5335,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bitterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bitterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bitterTextStyle(textStyle: textTheme?.display4),
@@ -5634,9 +5374,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme blackAndWhitePictureTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme blackAndWhitePictureTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.blackAndWhitePictureTextStyle(textStyle: textTheme?.display4),
@@ -5675,9 +5413,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme blackHanSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme blackHanSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.blackHanSansTextStyle(textStyle: textTheme?.display4),
@@ -5716,9 +5452,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme blackOpsOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme blackOpsOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.blackOpsOneTextStyle(textStyle: textTheme?.display4),
@@ -5764,9 +5498,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme blinkerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme blinkerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.blinkerTextStyle(textStyle: textTheme?.display4),
@@ -5805,9 +5537,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bokorTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bokorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bokorTextStyle(textStyle: textTheme?.display4),
@@ -5846,9 +5576,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bonbonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bonbonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bonbonTextStyle(textStyle: textTheme?.display4),
@@ -5887,9 +5615,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme boogalooTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme boogalooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.boogalooTextStyle(textStyle: textTheme?.display4),
@@ -5928,9 +5654,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bowlbyOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bowlbyOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bowlbyOneTextStyle(textStyle: textTheme?.display4),
@@ -5969,9 +5693,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bowlbyOneSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bowlbyOneSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bowlbyOneSCTextStyle(textStyle: textTheme?.display4),
@@ -6010,9 +5732,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme brawlerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme brawlerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.brawlerTextStyle(textStyle: textTheme?.display4),
@@ -6051,9 +5771,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme breeSerifTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme breeSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.breeSerifTextStyle(textStyle: textTheme?.display4),
@@ -6092,9 +5810,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bubblegumSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bubblegumSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bubblegumSansTextStyle(textStyle: textTheme?.display4),
@@ -6133,9 +5849,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bubblerOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bubblerOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bubblerOneTextStyle(textStyle: textTheme?.display4),
@@ -6174,9 +5888,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme budaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme budaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.budaTextStyle(textStyle: textTheme?.display4),
@@ -6216,9 +5928,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme buenardTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme buenardTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.buenardTextStyle(textStyle: textTheme?.display4),
@@ -6257,9 +5967,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bungeeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bungeeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bungeeTextStyle(textStyle: textTheme?.display4),
@@ -6298,9 +6006,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bungeeHairlineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bungeeHairlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bungeeHairlineTextStyle(textStyle: textTheme?.display4),
@@ -6339,9 +6045,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bungeeInlineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bungeeInlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bungeeInlineTextStyle(textStyle: textTheme?.display4),
@@ -6380,9 +6084,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bungeeOutlineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bungeeOutlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bungeeOutlineTextStyle(textStyle: textTheme?.display4),
@@ -6421,9 +6123,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme bungeeShadeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme bungeeShadeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.bungeeShadeTextStyle(textStyle: textTheme?.display4),
@@ -6462,9 +6162,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme butchermanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme butchermanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.butchermanTextStyle(textStyle: textTheme?.display4),
@@ -6503,9 +6201,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme butterflyKidsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme butterflyKidsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.butterflyKidsTextStyle(textStyle: textTheme?.display4),
@@ -6551,9 +6247,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cabinTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cabinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cabinTextStyle(textStyle: textTheme?.display4),
@@ -6595,9 +6289,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cabinCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cabinCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cabinCondensedTextStyle(textStyle: textTheme?.display4),
@@ -6637,9 +6329,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cabinSketchTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cabinSketchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cabinSketchTextStyle(textStyle: textTheme?.display4),
@@ -6678,9 +6368,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme caesarDressingTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme caesarDressingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.caesarDressingTextStyle(textStyle: textTheme?.display4),
@@ -6719,9 +6407,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cagliostroTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cagliostroTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cagliostroTextStyle(textStyle: textTheme?.display4),
@@ -6765,9 +6451,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cairoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cairoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cairoTextStyle(textStyle: textTheme?.display4),
@@ -6806,9 +6490,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme calligraffittiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme calligraffittiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.calligraffittiTextStyle(textStyle: textTheme?.display4),
@@ -6850,9 +6532,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cambayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cambayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cambayTextStyle(textStyle: textTheme?.display4),
@@ -6891,9 +6571,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme camboTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme camboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.camboTextStyle(textStyle: textTheme?.display4),
@@ -6932,9 +6610,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme candalTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme candalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.candalTextStyle(textStyle: textTheme?.display4),
@@ -6976,9 +6652,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cantarellTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cantarellTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cantarellTextStyle(textStyle: textTheme?.display4),
@@ -7017,9 +6691,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cantataOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cantataOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cantataOneTextStyle(textStyle: textTheme?.display4),
@@ -7058,9 +6730,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cantoraOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cantoraOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cantoraOneTextStyle(textStyle: textTheme?.display4),
@@ -7099,9 +6769,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme capriolaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme capriolaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.capriolaTextStyle(textStyle: textTheme?.display4),
@@ -7142,9 +6810,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cardoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cardoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cardoTextStyle(textStyle: textTheme?.display4),
@@ -7183,9 +6849,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme carmeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme carmeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.carmeTextStyle(textStyle: textTheme?.display4),
@@ -7224,9 +6888,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme carroisGothicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme carroisGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.carroisGothicTextStyle(textStyle: textTheme?.display4),
@@ -7265,9 +6927,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme carroisGothicSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme carroisGothicSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.carroisGothicSCTextStyle(textStyle: textTheme?.display4),
@@ -7306,9 +6966,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme carterOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme carterOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.carterOneTextStyle(textStyle: textTheme?.display4),
@@ -7355,9 +7013,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme catamaranTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme catamaranTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.catamaranTextStyle(textStyle: textTheme?.display4),
@@ -7399,9 +7055,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme caudexTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme caudexTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.caudexTextStyle(textStyle: textTheme?.display4),
@@ -7441,9 +7095,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme caveatTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme caveatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.caveatTextStyle(textStyle: textTheme?.display4),
@@ -7482,9 +7134,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme caveatBrushTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme caveatBrushTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.caveatBrushTextStyle(textStyle: textTheme?.display4),
@@ -7523,9 +7173,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cedarvilleCursiveTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cedarvilleCursiveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cedarvilleCursiveTextStyle(textStyle: textTheme?.display4),
@@ -7564,9 +7212,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cevicheOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cevicheOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cevicheOneTextStyle(textStyle: textTheme?.display4),
@@ -7614,9 +7260,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chakraPetchTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chakraPetchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chakraPetchTextStyle(textStyle: textTheme?.display4),
@@ -7661,9 +7305,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme changaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme changaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.changaTextStyle(textStyle: textTheme?.display4),
@@ -7703,9 +7345,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme changaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme changaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.changaOneTextStyle(textStyle: textTheme?.display4),
@@ -7744,9 +7384,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme changoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme changoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.changoTextStyle(textStyle: textTheme?.display4),
@@ -7786,9 +7424,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme charmTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme charmTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.charmTextStyle(textStyle: textTheme?.display4),
@@ -7828,9 +7464,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme charmonmanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme charmonmanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.charmonmanTextStyle(textStyle: textTheme?.display4),
@@ -7873,9 +7507,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chathuraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chathuraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chathuraTextStyle(textStyle: textTheme?.display4),
@@ -7915,9 +7547,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chauPhilomeneOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chauPhilomeneOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chauPhilomeneOneTextStyle(textStyle: textTheme?.display4),
@@ -7956,9 +7586,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chelaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chelaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chelaOneTextStyle(textStyle: textTheme?.display4),
@@ -7997,9 +7625,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chelseaMarketTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chelseaMarketTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chelseaMarketTextStyle(textStyle: textTheme?.display4),
@@ -8038,9 +7664,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chenlaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chenlaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chenlaTextStyle(textStyle: textTheme?.display4),
@@ -8079,9 +7703,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cherryCreamSodaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cherryCreamSodaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cherryCreamSodaTextStyle(textStyle: textTheme?.display4),
@@ -8121,9 +7743,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cherrySwashTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cherrySwashTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cherrySwashTextStyle(textStyle: textTheme?.display4),
@@ -8162,9 +7782,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chewyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chewyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chewyTextStyle(textStyle: textTheme?.display4),
@@ -8203,9 +7821,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chicleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chicleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chicleTextStyle(textStyle: textTheme?.display4),
@@ -8244,9 +7860,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chilankaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chilankaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chilankaTextStyle(textStyle: textTheme?.display4),
@@ -8292,9 +7906,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chivoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chivoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chivoTextStyle(textStyle: textTheme?.display4),
@@ -8333,9 +7945,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme chonburiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme chonburiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.chonburiTextStyle(textStyle: textTheme?.display4),
@@ -8376,9 +7986,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cinzelTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cinzelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cinzelTextStyle(textStyle: textTheme?.display4),
@@ -8419,9 +8027,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cinzelDecorativeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cinzelDecorativeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cinzelDecorativeTextStyle(textStyle: textTheme?.display4),
@@ -8460,9 +8066,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme clickerScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme clickerScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.clickerScriptTextStyle(textStyle: textTheme?.display4),
@@ -8502,9 +8106,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme codaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme codaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.codaTextStyle(textStyle: textTheme?.display4),
@@ -8543,9 +8145,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme codaCaptionTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme codaCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.codaCaptionTextStyle(textStyle: textTheme?.display4),
@@ -8585,9 +8185,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme codystarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme codystarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.codystarTextStyle(textStyle: textTheme?.display4),
@@ -8626,9 +8224,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme coinyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme coinyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.coinyTextStyle(textStyle: textTheme?.display4),
@@ -8667,9 +8263,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme comboTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme comboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.comboTextStyle(textStyle: textTheme?.display4),
@@ -8712,9 +8306,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme comfortaaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme comfortaaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.comfortaaTextStyle(textStyle: textTheme?.display4),
@@ -8753,9 +8345,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme comingSoonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme comingSoonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.comingSoonTextStyle(textStyle: textTheme?.display4),
@@ -8794,9 +8384,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme concertOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme concertOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.concertOneTextStyle(textStyle: textTheme?.display4),
@@ -8835,9 +8423,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme condimentTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme condimentTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.condimentTextStyle(textStyle: textTheme?.display4),
@@ -8877,9 +8463,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme contentTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme contentTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.contentTextStyle(textStyle: textTheme?.display4),
@@ -8918,9 +8502,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme contrailOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme contrailOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.contrailOneTextStyle(textStyle: textTheme?.display4),
@@ -8959,9 +8541,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme convergenceTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme convergenceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.convergenceTextStyle(textStyle: textTheme?.display4),
@@ -9000,9 +8580,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cookieTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cookieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cookieTextStyle(textStyle: textTheme?.display4),
@@ -9041,9 +8619,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme copseTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme copseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.copseTextStyle(textStyle: textTheme?.display4),
@@ -9083,9 +8659,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme corbenTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme corbenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.corbenTextStyle(textStyle: textTheme?.display4),
@@ -9133,9 +8707,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cormorantTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cormorantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cormorantTextStyle(textStyle: textTheme?.display4),
@@ -9183,9 +8755,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cormorantGaramondTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cormorantGaramondTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cormorantGaramondTextStyle(textStyle: textTheme?.display4),
@@ -9233,9 +8803,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cormorantInfantTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cormorantInfantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cormorantInfantTextStyle(textStyle: textTheme?.display4),
@@ -9278,9 +8846,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cormorantSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cormorantSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cormorantSCTextStyle(textStyle: textTheme?.display4),
@@ -9323,9 +8889,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cormorantUnicaseTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cormorantUnicaseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cormorantUnicaseTextStyle(textStyle: textTheme?.display4),
@@ -9368,9 +8932,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cormorantUprightTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cormorantUprightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cormorantUprightTextStyle(textStyle: textTheme?.display4),
@@ -9409,9 +8971,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme courgetteTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme courgetteTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.courgetteTextStyle(textStyle: textTheme?.display4),
@@ -9453,9 +9013,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cousineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cousineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cousineTextStyle(textStyle: textTheme?.display4),
@@ -9495,9 +9053,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme coustardTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme coustardTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.coustardTextStyle(textStyle: textTheme?.display4),
@@ -9536,9 +9092,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme coveredByYourGraceTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme coveredByYourGraceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.coveredByYourGraceTextStyle(textStyle: textTheme?.display4),
@@ -9577,9 +9131,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme craftyGirlsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme craftyGirlsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.craftyGirlsTextStyle(textStyle: textTheme?.display4),
@@ -9618,9 +9170,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme creepsterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme creepsterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.creepsterTextStyle(textStyle: textTheme?.display4),
@@ -9660,9 +9210,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme creteRoundTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme creteRoundTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.creteRoundTextStyle(textStyle: textTheme?.display4),
@@ -9716,9 +9264,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme crimsonProTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme crimsonProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.crimsonProTextStyle(textStyle: textTheme?.display4),
@@ -9762,9 +9308,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme crimsonTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme crimsonTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.crimsonTextTextStyle(textStyle: textTheme?.display4),
@@ -9803,9 +9347,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme croissantOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme croissantOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.croissantOneTextStyle(textStyle: textTheme?.display4),
@@ -9844,9 +9386,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme crushedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme crushedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.crushedTextStyle(textStyle: textTheme?.display4),
@@ -9888,9 +9428,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cuprumTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cuprumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cuprumTextStyle(textStyle: textTheme?.display4),
@@ -9929,9 +9467,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cuteFontTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cuteFontTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cuteFontTextStyle(textStyle: textTheme?.display4),
@@ -9970,9 +9506,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cutiveTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cutiveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cutiveTextStyle(textStyle: textTheme?.display4),
@@ -10011,9 +9545,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme cutiveMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme cutiveMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.cutiveMonoTextStyle(textStyle: textTheme?.display4),
@@ -10057,9 +9589,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dMSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dMSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dMSansTextStyle(textStyle: textTheme?.display4),
@@ -10099,9 +9629,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dMSerifDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dMSerifDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dMSerifDisplayTextStyle(textStyle: textTheme?.display4),
@@ -10141,9 +9669,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dMSerifTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dMSerifTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dMSerifTextTextStyle(textStyle: textTheme?.display4),
@@ -10182,9 +9708,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme damionTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme damionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.damionTextStyle(textStyle: textTheme?.display4),
@@ -10224,9 +9748,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dancingScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dancingScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dancingScriptTextStyle(textStyle: textTheme?.display4),
@@ -10265,9 +9787,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dangrekTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dangrekTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dangrekTextStyle(textStyle: textTheme?.display4),
@@ -10312,9 +9832,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme darkerGrotesqueTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme darkerGrotesqueTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.darkerGrotesqueTextStyle(textStyle: textTheme?.display4),
@@ -10355,9 +9873,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme davidLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme davidLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.davidLibreTextStyle(textStyle: textTheme?.display4),
@@ -10396,9 +9912,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dawningofaNewDayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dawningofaNewDayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dawningofaNewDayTextStyle(textStyle: textTheme?.display4),
@@ -10437,9 +9951,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme daysOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme daysOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.daysOneTextStyle(textStyle: textTheme?.display4),
@@ -10478,9 +9990,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dekkoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dekkoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dekkoTextStyle(textStyle: textTheme?.display4),
@@ -10519,9 +10029,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme deliusTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme deliusTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.deliusTextStyle(textStyle: textTheme?.display4),
@@ -10560,9 +10068,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme deliusSwashCapsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme deliusSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.deliusSwashCapsTextStyle(textStyle: textTheme?.display4),
@@ -10602,9 +10108,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme deliusUnicaseTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme deliusUnicaseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.deliusUnicaseTextStyle(textStyle: textTheme?.display4),
@@ -10643,9 +10147,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dellaRespiraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dellaRespiraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dellaRespiraTextStyle(textStyle: textTheme?.display4),
@@ -10684,9 +10186,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme denkOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme denkOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.denkOneTextStyle(textStyle: textTheme?.display4),
@@ -10725,9 +10225,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme devonshireTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme devonshireTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.devonshireTextStyle(textStyle: textTheme?.display4),
@@ -10766,9 +10264,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dhurjatiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dhurjatiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dhurjatiTextStyle(textStyle: textTheme?.display4),
@@ -10807,9 +10303,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme didactGothicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme didactGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.didactGothicTextStyle(textStyle: textTheme?.display4),
@@ -10848,9 +10342,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme diplomataTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme diplomataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.diplomataTextStyle(textStyle: textTheme?.display4),
@@ -10889,9 +10381,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme diplomataSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme diplomataSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.diplomataSCTextStyle(textStyle: textTheme?.display4),
@@ -10930,9 +10420,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme doHyeonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme doHyeonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.doHyeonTextStyle(textStyle: textTheme?.display4),
@@ -10971,9 +10459,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dokdoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dokdoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dokdoTextStyle(textStyle: textTheme?.display4),
@@ -11013,9 +10499,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme domineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme domineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.domineTextStyle(textStyle: textTheme?.display4),
@@ -11054,9 +10538,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme donegalOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme donegalOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.donegalOneTextStyle(textStyle: textTheme?.display4),
@@ -11095,9 +10577,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme doppioOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme doppioOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.doppioOneTextStyle(textStyle: textTheme?.display4),
@@ -11136,9 +10616,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dorsaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dorsaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dorsaTextStyle(textStyle: textTheme?.display4),
@@ -11183,9 +10661,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dosisTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dosisTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dosisTextStyle(textStyle: textTheme?.display4),
@@ -11224,9 +10700,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme drSugiyamaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme drSugiyamaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.drSugiyamaTextStyle(textStyle: textTheme?.display4),
@@ -11265,9 +10739,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme duruSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme duruSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.duruSansTextStyle(textStyle: textTheme?.display4),
@@ -11306,9 +10778,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme dynalightTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme dynalightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.dynalightTextStyle(textStyle: textTheme?.display4),
@@ -11356,9 +10826,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme eBGaramondTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme eBGaramondTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.eBGaramondTextStyle(textStyle: textTheme?.display4),
@@ -11397,9 +10865,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme eagleLakeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme eagleLakeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.eagleLakeTextStyle(textStyle: textTheme?.display4),
@@ -11438,9 +10904,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme eastSeaDokdoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme eastSeaDokdoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.eastSeaDokdoTextStyle(textStyle: textTheme?.display4),
@@ -11479,9 +10943,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme eaterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme eaterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.eaterTextStyle(textStyle: textTheme?.display4),
@@ -11523,9 +10985,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme economicaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme economicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.economicaTextStyle(textStyle: textTheme?.display4),
@@ -11568,9 +11028,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme eczarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme eczarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.eczarTextStyle(textStyle: textTheme?.display4),
@@ -11612,9 +11070,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme elMessiriTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme elMessiriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.elMessiriTextStyle(textStyle: textTheme?.display4),
@@ -11653,9 +11109,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme electrolizeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme electrolizeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.electrolizeTextStyle(textStyle: textTheme?.display4),
@@ -11695,9 +11149,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme elsieTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme elsieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.elsieTextStyle(textStyle: textTheme?.display4),
@@ -11737,9 +11189,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme elsieSwashCapsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme elsieSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.elsieSwashCapsTextStyle(textStyle: textTheme?.display4),
@@ -11778,9 +11228,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme emblemaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme emblemaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.emblemaOneTextStyle(textStyle: textTheme?.display4),
@@ -11819,9 +11267,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme emilysCandyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme emilysCandyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.emilysCandyTextStyle(textStyle: textTheme?.display4),
@@ -11868,9 +11314,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme encodeSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme encodeSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.encodeSansTextStyle(textStyle: textTheme?.display4),
@@ -11917,9 +11361,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme encodeSansCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme encodeSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.encodeSansCondensedTextStyle(textStyle: textTheme?.display4),
@@ -11966,9 +11408,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme encodeSansExpandedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme encodeSansExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.encodeSansExpandedTextStyle(textStyle: textTheme?.display4),
@@ -12015,9 +11455,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme encodeSansSemiCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme encodeSansSemiCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.encodeSansSemiCondensedTextStyle(textStyle: textTheme?.display4),
@@ -12064,9 +11502,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme encodeSansSemiExpandedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme encodeSansSemiExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.encodeSansSemiExpandedTextStyle(textStyle: textTheme?.display4),
@@ -12105,9 +11541,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme engagementTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme engagementTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.engagementTextStyle(textStyle: textTheme?.display4),
@@ -12146,9 +11580,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme englebertTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme englebertTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.englebertTextStyle(textStyle: textTheme?.display4),
@@ -12190,9 +11622,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme enriquetaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme enriquetaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.enriquetaTextStyle(textStyle: textTheme?.display4),
@@ -12231,9 +11661,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ericaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ericaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ericaOneTextStyle(textStyle: textTheme?.display4),
@@ -12272,9 +11700,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme estebanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme estebanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.estebanTextStyle(textStyle: textTheme?.display4),
@@ -12313,9 +11739,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme euphoriaScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme euphoriaScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.euphoriaScriptTextStyle(textStyle: textTheme?.display4),
@@ -12354,9 +11778,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ewertTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ewertTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ewertTextStyle(textStyle: textTheme?.display4),
@@ -12412,9 +11834,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme exoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme exoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.exoTextStyle(textStyle: textTheme?.display4),
@@ -12470,9 +11890,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme exo2TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme exo2TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.exo2TextStyle(textStyle: textTheme?.display4),
@@ -12518,9 +11936,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme expletusSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme expletusSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.expletusSansTextStyle(textStyle: textTheme?.display4),
@@ -12570,9 +11986,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fahkwangTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fahkwangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fahkwangTextStyle(textStyle: textTheme?.display4),
@@ -12612,9 +12026,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fanwoodTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fanwoodTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fanwoodTextTextStyle(textStyle: textTheme?.display4),
@@ -12656,9 +12068,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme farroTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme farroTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.farroTextStyle(textStyle: textTheme?.display4),
@@ -12697,9 +12107,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme farsanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme farsanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.farsanTextStyle(textStyle: textTheme?.display4),
@@ -12738,9 +12146,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fascinateTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fascinateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fascinateTextStyle(textStyle: textTheme?.display4),
@@ -12779,9 +12185,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fascinateInlineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fascinateInlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fascinateInlineTextStyle(textStyle: textTheme?.display4),
@@ -12820,9 +12224,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fasterOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fasterOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fasterOneTextStyle(textStyle: textTheme?.display4),
@@ -12861,9 +12263,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fasthandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fasthandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fasthandTextStyle(textStyle: textTheme?.display4),
@@ -12902,9 +12302,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme faunaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme faunaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.faunaOneTextStyle(textStyle: textTheme?.display4),
@@ -12950,9 +12348,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme faustinaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme faustinaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.faustinaTextStyle(textStyle: textTheme?.display4),
@@ -12991,9 +12387,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme federantTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme federantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.federantTextStyle(textStyle: textTheme?.display4),
@@ -13032,9 +12426,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme federoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme federoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.federoTextStyle(textStyle: textTheme?.display4),
@@ -13073,9 +12465,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme felipaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme felipaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.felipaTextStyle(textStyle: textTheme?.display4),
@@ -13114,9 +12504,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fenixTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fenixTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fenixTextStyle(textStyle: textTheme?.display4),
@@ -13155,9 +12543,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fingerPaintTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fingerPaintTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fingerPaintTextStyle(textStyle: textTheme?.display4),
@@ -13200,9 +12586,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme firaCodeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme firaCodeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.firaCodeTextStyle(textStyle: textTheme?.display4),
@@ -13243,9 +12627,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme firaMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme firaMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.firaMonoTextStyle(textStyle: textTheme?.display4),
@@ -13301,9 +12683,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme firaSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme firaSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.firaSansTextStyle(textStyle: textTheme?.display4),
@@ -13359,9 +12739,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme firaSansCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme firaSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.firaSansCondensedTextStyle(textStyle: textTheme?.display4),
@@ -13417,9 +12795,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme firaSansExtraCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme firaSansExtraCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.firaSansExtraCondensedTextStyle(textStyle: textTheme?.display4),
@@ -13458,9 +12834,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fjallaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fjallaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fjallaOneTextStyle(textStyle: textTheme?.display4),
@@ -13499,9 +12873,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fjordOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fjordOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fjordOneTextStyle(textStyle: textTheme?.display4),
@@ -13541,9 +12913,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme flamencoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme flamencoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.flamencoTextStyle(textStyle: textTheme?.display4),
@@ -13582,9 +12952,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme flavorsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme flavorsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.flavorsTextStyle(textStyle: textTheme?.display4),
@@ -13624,9 +12992,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fondamentoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fondamentoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fondamentoTextStyle(textStyle: textTheme?.display4),
@@ -13665,9 +13031,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fontdinerSwankyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fontdinerSwankyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fontdinerSwankyTextStyle(textStyle: textTheme?.display4),
@@ -13706,9 +13070,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme forumTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme forumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.forumTextStyle(textStyle: textTheme?.display4),
@@ -13747,9 +13109,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme francoisOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme francoisOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.francoisOneTextStyle(textStyle: textTheme?.display4),
@@ -13792,9 +13152,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme frankRuhlLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme frankRuhlLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.frankRuhlLibreTextStyle(textStyle: textTheme?.display4),
@@ -13833,9 +13191,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme freckleFaceTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme freckleFaceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.freckleFaceTextStyle(textStyle: textTheme?.display4),
@@ -13874,9 +13230,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme frederickatheGreatTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme frederickatheGreatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.frederickatheGreatTextStyle(textStyle: textTheme?.display4),
@@ -13915,9 +13269,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fredokaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fredokaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fredokaOneTextStyle(textStyle: textTheme?.display4),
@@ -13956,9 +13308,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme freehandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme freehandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.freehandTextStyle(textStyle: textTheme?.display4),
@@ -13997,9 +13347,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme frescaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme frescaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.frescaTextStyle(textStyle: textTheme?.display4),
@@ -14038,9 +13386,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme frijoleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme frijoleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.frijoleTextStyle(textStyle: textTheme?.display4),
@@ -14079,9 +13425,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme frukturTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme frukturTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.frukturTextStyle(textStyle: textTheme?.display4),
@@ -14120,9 +13464,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme fugazOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme fugazOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.fugazOneTextStyle(textStyle: textTheme?.display4),
@@ -14161,9 +13503,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gFSDidotTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gFSDidotTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gFSDidotTextStyle(textStyle: textTheme?.display4),
@@ -14205,9 +13545,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gFSNeohellenicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gFSNeohellenicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gFSNeohellenicTextStyle(textStyle: textTheme?.display4),
@@ -14246,9 +13584,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gabrielaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gabrielaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gabrielaTextStyle(textStyle: textTheme?.display4),
@@ -14289,9 +13625,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gaeguTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gaeguTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gaeguTextStyle(textStyle: textTheme?.display4),
@@ -14330,9 +13664,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gafataTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gafataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gafataTextStyle(textStyle: textTheme?.display4),
@@ -14371,9 +13703,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme galadaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme galadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.galadaTextStyle(textStyle: textTheme?.display4),
@@ -14412,9 +13742,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme galdeanoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme galdeanoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.galdeanoTextStyle(textStyle: textTheme?.display4),
@@ -14453,9 +13781,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme galindoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme galindoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.galindoTextStyle(textStyle: textTheme?.display4),
@@ -14494,9 +13820,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gamjaFlowerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gamjaFlowerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gamjaFlowerTextStyle(textStyle: textTheme?.display4),
@@ -14537,9 +13861,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gayathriTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gayathriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gayathriTextStyle(textStyle: textTheme?.display4),
@@ -14581,9 +13903,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gentiumBasicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gentiumBasicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gentiumBasicTextStyle(textStyle: textTheme?.display4),
@@ -14625,9 +13945,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gentiumBookBasicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gentiumBookBasicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gentiumBookBasicTextStyle(textStyle: textTheme?.display4),
@@ -14667,9 +13985,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme geoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme geoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.geoTextStyle(textStyle: textTheme?.display4),
@@ -14708,9 +14024,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme geostarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme geostarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.geostarTextStyle(textStyle: textTheme?.display4),
@@ -14749,9 +14063,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme geostarFillTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme geostarFillTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.geostarFillTextStyle(textStyle: textTheme?.display4),
@@ -14790,9 +14102,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme germaniaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme germaniaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.germaniaOneTextStyle(textStyle: textTheme?.display4),
@@ -14831,9 +14141,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme giduguTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme giduguTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.giduguTextStyle(textStyle: textTheme?.display4),
@@ -14872,9 +14180,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gildaDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gildaDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gildaDisplayTextStyle(textStyle: textTheme?.display4),
@@ -14913,9 +14219,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme giveYouGloryTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme giveYouGloryTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.giveYouGloryTextStyle(textStyle: textTheme?.display4),
@@ -14954,9 +14258,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme glassAntiquaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme glassAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.glassAntiquaTextStyle(textStyle: textTheme?.display4),
@@ -14996,9 +14298,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme glegooTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme glegooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.glegooTextStyle(textStyle: textTheme?.display4),
@@ -15037,9 +14337,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gloriaHallelujahTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gloriaHallelujahTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gloriaHallelujahTextStyle(textStyle: textTheme?.display4),
@@ -15078,9 +14376,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme goblinOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme goblinOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.goblinOneTextStyle(textStyle: textTheme?.display4),
@@ -15119,9 +14415,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gochiHandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gochiHandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gochiHandTextStyle(textStyle: textTheme?.display4),
@@ -15161,9 +14455,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gorditasTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gorditasTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gorditasTextStyle(textStyle: textTheme?.display4),
@@ -15210,9 +14502,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gothicA1TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gothicA1TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gothicA1TextStyle(textStyle: textTheme?.display4),
@@ -15251,9 +14541,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme goudyBookletter1911TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme goudyBookletter1911TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.goudyBookletter1911TextStyle(textStyle: textTheme?.display4),
@@ -15292,9 +14580,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme graduateTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme graduateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.graduateTextStyle(textStyle: textTheme?.display4),
@@ -15333,9 +14619,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme grandHotelTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme grandHotelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.grandHotelTextStyle(textStyle: textTheme?.display4),
@@ -15374,9 +14658,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gravitasOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gravitasOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gravitasOneTextStyle(textStyle: textTheme?.display4),
@@ -15415,9 +14697,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme greatVibesTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme greatVibesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.greatVibesTextStyle(textStyle: textTheme?.display4),
@@ -15473,9 +14753,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme grenzeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme grenzeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.grenzeTextStyle(textStyle: textTheme?.display4),
@@ -15514,9 +14792,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme griffyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme griffyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.griffyTextStyle(textStyle: textTheme?.display4),
@@ -15555,9 +14831,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gruppoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gruppoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gruppoTextStyle(textStyle: textTheme?.display4),
@@ -15598,9 +14872,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gudeaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gudeaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gudeaTextStyle(textStyle: textTheme?.display4),
@@ -15639,9 +14911,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gugiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gugiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gugiTextStyle(textStyle: textTheme?.display4),
@@ -15680,9 +14950,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme gurajadaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme gurajadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.gurajadaTextStyle(textStyle: textTheme?.display4),
@@ -15721,9 +14989,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme habibiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme habibiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.habibiTextStyle(textStyle: textTheme?.display4),
@@ -15766,9 +15032,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme halantTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme halantTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.halantTextStyle(textStyle: textTheme?.display4),
@@ -15807,9 +15071,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hammersmithOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hammersmithOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hammersmithOneTextStyle(textStyle: textTheme?.display4),
@@ -15848,9 +15110,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hanaleiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hanaleiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hanaleiTextStyle(textStyle: textTheme?.display4),
@@ -15889,9 +15149,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hanaleiFillTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hanaleiFillTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hanaleiFillTextStyle(textStyle: textTheme?.display4),
@@ -15930,9 +15188,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme handleeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme handleeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.handleeTextStyle(textStyle: textTheme?.display4),
@@ -15972,9 +15228,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hanumanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hanumanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hanumanTextStyle(textStyle: textTheme?.display4),
@@ -16013,9 +15267,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme happyMonkeyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme happyMonkeyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.happyMonkeyTextStyle(textStyle: textTheme?.display4),
@@ -16054,9 +15306,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme harmattanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme harmattanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.harmattanTextStyle(textStyle: textTheme?.display4),
@@ -16095,9 +15345,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme headlandOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme headlandOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.headlandOneTextStyle(textStyle: textTheme?.display4),
@@ -16142,9 +15390,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme heeboTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme heeboTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.heeboTextStyle(textStyle: textTheme?.display4),
@@ -16183,9 +15429,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hennyPennyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hennyPennyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hennyPennyTextStyle(textStyle: textTheme?.display4),
@@ -16232,9 +15476,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme heptaSlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme heptaSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.heptaSlabTextStyle(textStyle: textTheme?.display4),
@@ -16273,9 +15515,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme herrVonMuellerhoffTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme herrVonMuellerhoffTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.herrVonMuellerhoffTextStyle(textStyle: textTheme?.display4),
@@ -16314,9 +15554,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hiMelodyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hiMelodyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hiMelodyTextStyle(textStyle: textTheme?.display4),
@@ -16359,9 +15597,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hindTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hindTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hindTextStyle(textStyle: textTheme?.display4),
@@ -16404,9 +15640,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hindGunturTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hindGunturTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hindGunturTextStyle(textStyle: textTheme?.display4),
@@ -16449,9 +15683,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hindMaduraiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hindMaduraiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hindMaduraiTextStyle(textStyle: textTheme?.display4),
@@ -16494,9 +15726,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hindSiliguriTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hindSiliguriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hindSiliguriTextStyle(textStyle: textTheme?.display4),
@@ -16539,9 +15769,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme hindVadodaraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme hindVadodaraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.hindVadodaraTextStyle(textStyle: textTheme?.display4),
@@ -16580,9 +15808,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme holtwoodOneSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme holtwoodOneSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.holtwoodOneSCTextStyle(textStyle: textTheme?.display4),
@@ -16621,9 +15847,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme homemadeAppleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme homemadeAppleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.homemadeAppleTextStyle(textStyle: textTheme?.display4),
@@ -16662,9 +15886,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme homenajeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme homenajeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.homenajeTextStyle(textStyle: textTheme?.display4),
@@ -16716,9 +15938,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iBMPlexMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iBMPlexMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iBMPlexMonoTextStyle(textStyle: textTheme?.display4),
@@ -16770,9 +15990,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iBMPlexSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iBMPlexSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iBMPlexSansTextStyle(textStyle: textTheme?.display4),
@@ -16824,9 +16042,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iBMPlexSansCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iBMPlexSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iBMPlexSansCondensedTextStyle(textStyle: textTheme?.display4),
@@ -16878,9 +16094,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iBMPlexSerifTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iBMPlexSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iBMPlexSerifTextStyle(textStyle: textTheme?.display4),
@@ -16920,9 +16134,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellDWPicaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellDWPicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellDWPicaTextStyle(textStyle: textTheme?.display4),
@@ -16961,9 +16173,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellDWPicaSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellDWPicaSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellDWPicaSCTextStyle(textStyle: textTheme?.display4),
@@ -17003,9 +16213,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellDoublePicaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellDoublePicaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellDoublePicaTextStyle(textStyle: textTheme?.display4),
@@ -17044,9 +16252,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellDoublePicaSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellDoublePicaSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellDoublePicaSCTextStyle(textStyle: textTheme?.display4),
@@ -17086,9 +16292,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellEnglishTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellEnglishTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellEnglishTextStyle(textStyle: textTheme?.display4),
@@ -17127,9 +16331,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellEnglishSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellEnglishSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellEnglishSCTextStyle(textStyle: textTheme?.display4),
@@ -17169,9 +16371,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellFrenchCanonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellFrenchCanonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellFrenchCanonTextStyle(textStyle: textTheme?.display4),
@@ -17210,9 +16410,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellFrenchCanonSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellFrenchCanonSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellFrenchCanonSCTextStyle(textStyle: textTheme?.display4),
@@ -17252,9 +16450,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellGreatPrimerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellGreatPrimerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellGreatPrimerTextStyle(textStyle: textTheme?.display4),
@@ -17293,9 +16489,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme iMFellGreatPrimerSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme iMFellGreatPrimerSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.iMFellGreatPrimerSCTextStyle(textStyle: textTheme?.display4),
@@ -17334,9 +16528,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme icebergTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme icebergTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.icebergTextStyle(textStyle: textTheme?.display4),
@@ -17375,9 +16567,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme icelandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme icelandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.icelandTextStyle(textStyle: textTheme?.display4),
@@ -17416,9 +16606,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme imprimaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme imprimaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.imprimaTextStyle(textStyle: textTheme?.display4),
@@ -17458,9 +16646,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme inconsolataTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme inconsolataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.inconsolataTextStyle(textStyle: textTheme?.display4),
@@ -17499,9 +16685,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme inderTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme inderTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.inderTextStyle(textStyle: textTheme?.display4),
@@ -17540,9 +16724,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme indieFlowerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme indieFlowerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.indieFlowerTextStyle(textStyle: textTheme?.display4),
@@ -17582,9 +16764,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme inikaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme inikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.inikaTextStyle(textStyle: textTheme?.display4),
@@ -17629,9 +16809,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme inknutAntiquaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme inknutAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.inknutAntiquaTextStyle(textStyle: textTheme?.display4),
@@ -17670,9 +16848,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme irishGroverTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme irishGroverTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.irishGroverTextStyle(textStyle: textTheme?.display4),
@@ -17714,9 +16890,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme istokWebTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme istokWebTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.istokWebTextStyle(textStyle: textTheme?.display4),
@@ -17755,9 +16929,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme italianaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme italianaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.italianaTextStyle(textStyle: textTheme?.display4),
@@ -17796,9 +16968,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme italiannoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme italiannoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.italiannoTextStyle(textStyle: textTheme?.display4),
@@ -17837,9 +17007,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme itimTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme itimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.itimTextStyle(textStyle: textTheme?.display4),
@@ -17878,9 +17046,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jacquesFrancoisTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jacquesFrancoisTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jacquesFrancoisTextStyle(textStyle: textTheme?.display4),
@@ -17919,9 +17085,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jacquesFrancoisShadowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jacquesFrancoisShadowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jacquesFrancoisShadowTextStyle(textStyle: textTheme?.display4),
@@ -17961,9 +17125,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jaldiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jaldiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jaldiTextStyle(textStyle: textTheme?.display4),
@@ -18002,9 +17164,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jimNightshadeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jimNightshadeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jimNightshadeTextStyle(textStyle: textTheme?.display4),
@@ -18043,9 +17203,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jockeyOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jockeyOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jockeyOneTextStyle(textStyle: textTheme?.display4),
@@ -18084,9 +17242,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jollyLodgerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jollyLodgerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jollyLodgerTextStyle(textStyle: textTheme?.display4),
@@ -18125,9 +17281,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jomhuriaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jomhuriaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jomhuriaTextStyle(textStyle: textTheme?.display4),
@@ -18166,9 +17320,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jomolhariTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jomolhariTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jomolhariTextStyle(textStyle: textTheme?.display4),
@@ -18216,9 +17368,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme josefinSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme josefinSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.josefinSansTextStyle(textStyle: textTheme?.display4),
@@ -18266,9 +17416,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme josefinSlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme josefinSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.josefinSlabTextStyle(textStyle: textTheme?.display4),
@@ -18307,9 +17455,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jotiOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jotiOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jotiOneTextStyle(textStyle: textTheme?.display4),
@@ -18348,9 +17494,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme juaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme juaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.juaTextStyle(textStyle: textTheme?.display4),
@@ -18391,9 +17535,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme judsonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme judsonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.judsonTextStyle(textStyle: textTheme?.display4),
@@ -18432,9 +17574,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme juleeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme juleeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.juleeTextStyle(textStyle: textTheme?.display4),
@@ -18473,9 +17613,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme juliusSansOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme juliusSansOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.juliusSansOneTextStyle(textStyle: textTheme?.display4),
@@ -18514,9 +17652,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme jungeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme jungeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.jungeTextStyle(textStyle: textTheme?.display4),
@@ -18559,9 +17695,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme juraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme juraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.juraTextStyle(textStyle: textTheme?.display4),
@@ -18600,9 +17734,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme justAnotherHandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme justAnotherHandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.justAnotherHandTextStyle(textStyle: textTheme?.display4),
@@ -18641,9 +17773,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme justMeAgainDownHereTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme justMeAgainDownHereTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.justMeAgainDownHereTextStyle(textStyle: textTheme?.display4),
@@ -18697,9 +17827,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme k2DTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme k2DTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.k2DTextStyle(textStyle: textTheme?.display4),
@@ -18739,9 +17867,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kadwaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kadwaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kadwaTextStyle(textStyle: textTheme?.display4),
@@ -18782,9 +17908,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kalamTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kalamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kalamTextStyle(textStyle: textTheme?.display4),
@@ -18824,9 +17948,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kameronTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kameronTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kameronTextStyle(textStyle: textTheme?.display4),
@@ -18882,9 +18004,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kanitTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kanitTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kanitTextStyle(textStyle: textTheme?.display4),
@@ -18925,9 +18045,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kantumruyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kantumruyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kantumruyTextStyle(textStyle: textTheme?.display4),
@@ -18969,9 +18087,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme karlaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme karlaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.karlaTextStyle(textStyle: textTheme?.display4),
@@ -19014,9 +18130,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme karmaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme karmaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.karmaTextStyle(textStyle: textTheme?.display4),
@@ -19055,9 +18169,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme katibehTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme katibehTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.katibehTextStyle(textStyle: textTheme?.display4),
@@ -19096,9 +18208,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kaushanScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kaushanScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kaushanScriptTextStyle(textStyle: textTheme?.display4),
@@ -19137,9 +18247,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kavivanarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kavivanarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kavivanarTextStyle(textStyle: textTheme?.display4),
@@ -19178,9 +18286,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kavoonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kavoonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kavoonTextStyle(textStyle: textTheme?.display4),
@@ -19219,9 +18325,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kdamThmorTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kdamThmorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kdamThmorTextStyle(textStyle: textTheme?.display4),
@@ -19260,9 +18364,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme keaniaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme keaniaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.keaniaOneTextStyle(textStyle: textTheme?.display4),
@@ -19301,9 +18403,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kellySlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kellySlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kellySlabTextStyle(textStyle: textTheme?.display4),
@@ -19342,9 +18442,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme keniaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme keniaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.keniaTextStyle(textStyle: textTheme?.display4),
@@ -19387,9 +18485,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme khandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme khandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.khandTextStyle(textStyle: textTheme?.display4),
@@ -19428,9 +18524,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme khmerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme khmerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.khmerTextStyle(textStyle: textTheme?.display4),
@@ -19473,9 +18567,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme khulaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme khulaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.khulaTextStyle(textStyle: textTheme?.display4),
@@ -19514,9 +18606,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kirangHaerangTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kirangHaerangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kirangHaerangTextStyle(textStyle: textTheme?.display4),
@@ -19555,9 +18645,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kiteOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kiteOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kiteOneTextStyle(textStyle: textTheme?.display4),
@@ -19596,9 +18684,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme knewaveTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme knewaveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.knewaveTextStyle(textStyle: textTheme?.display4),
@@ -19648,9 +18734,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme koHoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme koHoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.koHoTextStyle(textStyle: textTheme?.display4),
@@ -19700,9 +18784,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kodchasanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kodchasanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kodchasanTextStyle(textStyle: textTheme?.display4),
@@ -19741,9 +18823,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kosugiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kosugiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kosugiTextStyle(textStyle: textTheme?.display4),
@@ -19782,9 +18862,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kosugiMaruTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kosugiMaruTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kosugiMaruTextStyle(textStyle: textTheme?.display4),
@@ -19823,9 +18901,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kottaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kottaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kottaOneTextStyle(textStyle: textTheme?.display4),
@@ -19864,9 +18940,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme koulenTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme koulenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.koulenTextStyle(textStyle: textTheme?.display4),
@@ -19905,9 +18979,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme krankyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme krankyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.krankyTextStyle(textStyle: textTheme?.display4),
@@ -19950,9 +19022,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kreonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kreonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kreonTextStyle(textStyle: textTheme?.display4),
@@ -19991,9 +19061,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kristiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kristiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kristiTextStyle(textStyle: textTheme?.display4),
@@ -20032,9 +19100,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kronaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kronaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kronaOneTextStyle(textStyle: textTheme?.display4),
@@ -20084,9 +19150,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme krubTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme krubTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.krubTextStyle(textStyle: textTheme?.display4),
@@ -20125,9 +19189,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kumarOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kumarOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kumarOneTextStyle(textStyle: textTheme?.display4),
@@ -20166,9 +19228,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kumarOneOutlineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kumarOneOutlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kumarOneOutlineTextStyle(textStyle: textTheme?.display4),
@@ -20207,9 +19267,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme kuraleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme kuraleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.kuraleTextStyle(textStyle: textTheme?.display4),
@@ -20248,9 +19306,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme laBelleAuroreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme laBelleAuroreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.laBelleAuroreTextStyle(textStyle: textTheme?.display4),
@@ -20289,9 +19345,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lacquerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lacquerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lacquerTextStyle(textStyle: textTheme?.display4),
@@ -20334,9 +19388,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lailaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lailaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lailaTextStyle(textStyle: textTheme?.display4),
@@ -20375,9 +19427,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lakkiReddyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lakkiReddyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lakkiReddyTextStyle(textStyle: textTheme?.display4),
@@ -20416,9 +19466,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lalezarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lalezarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lalezarTextStyle(textStyle: textTheme?.display4),
@@ -20457,9 +19505,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lancelotTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lancelotTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lancelotTextStyle(textStyle: textTheme?.display4),
@@ -20498,9 +19544,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lateefTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lateefTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lateefTextStyle(textStyle: textTheme?.display4),
@@ -20548,9 +19592,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme latoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme latoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.latoTextStyle(textStyle: textTheme?.display4),
@@ -20589,9 +19631,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme leagueScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme leagueScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.leagueScriptTextStyle(textStyle: textTheme?.display4),
@@ -20630,9 +19670,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme leckerliOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme leckerliOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.leckerliOneTextStyle(textStyle: textTheme?.display4),
@@ -20671,9 +19709,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ledgerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ledgerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ledgerTextStyle(textStyle: textTheme?.display4),
@@ -20714,9 +19750,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lektonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lektonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lektonTextStyle(textStyle: textTheme?.display4),
@@ -20755,9 +19789,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lemonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lemonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lemonTextStyle(textStyle: textTheme?.display4),
@@ -20799,9 +19831,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lemonadaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lemonadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lemonadaTextStyle(textStyle: textTheme?.display4),
@@ -20840,9 +19870,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lexendDecaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lexendDecaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lexendDecaTextStyle(textStyle: textTheme?.display4),
@@ -20881,9 +19909,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lexendExaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lexendExaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lexendExaTextStyle(textStyle: textTheme?.display4),
@@ -20922,9 +19948,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lexendGigaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lexendGigaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lexendGigaTextStyle(textStyle: textTheme?.display4),
@@ -20963,9 +19987,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lexendMegaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lexendMegaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lexendMegaTextStyle(textStyle: textTheme?.display4),
@@ -21004,9 +20026,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lexendPetaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lexendPetaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lexendPetaTextStyle(textStyle: textTheme?.display4),
@@ -21045,9 +20065,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lexendTeraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lexendTeraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lexendTeraTextStyle(textStyle: textTheme?.display4),
@@ -21086,9 +20104,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lexendZettaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lexendZettaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lexendZettaTextStyle(textStyle: textTheme?.display4),
@@ -21127,9 +20143,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreBarcode128TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreBarcode128TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreBarcode128TextStyle(textStyle: textTheme?.display4),
@@ -21168,9 +20182,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreBarcode128TextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreBarcode128TextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreBarcode128TextTextStyle(textStyle: textTheme?.display4),
@@ -21209,9 +20221,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreBarcode39TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreBarcode39TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreBarcode39TextStyle(textStyle: textTheme?.display4),
@@ -21250,9 +20260,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreBarcode39ExtendedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreBarcode39ExtendedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreBarcode39ExtendedTextStyle(textStyle: textTheme?.display4),
@@ -21291,9 +20299,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreBarcode39ExtendedTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreBarcode39ExtendedTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreBarcode39ExtendedTextTextStyle(textStyle: textTheme?.display4),
@@ -21332,9 +20338,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreBarcode39TextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreBarcode39TextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreBarcode39TextTextStyle(textStyle: textTheme?.display4),
@@ -21375,9 +20379,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreBaskervilleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreBaskervilleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreBaskervilleTextStyle(textStyle: textTheme?.display4),
@@ -21416,9 +20418,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreCaslonDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreCaslonDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreCaslonDisplayTextStyle(textStyle: textTheme?.display4),
@@ -21459,9 +20459,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreCaslonTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreCaslonTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreCaslonTextTextStyle(textStyle: textTheme?.display4),
@@ -21517,9 +20515,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme libreFranklinTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme libreFranklinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.libreFranklinTextStyle(textStyle: textTheme?.display4),
@@ -21560,9 +20556,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lifeSaversTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lifeSaversTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lifeSaversTextStyle(textStyle: textTheme?.display4),
@@ -21601,9 +20595,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lilitaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lilitaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lilitaOneTextStyle(textStyle: textTheme?.display4),
@@ -21642,9 +20634,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lilyScriptOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lilyScriptOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lilyScriptOneTextStyle(textStyle: textTheme?.display4),
@@ -21683,9 +20673,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme limelightTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme limelightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.limelightTextStyle(textStyle: textTheme?.display4),
@@ -21725,9 +20713,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lindenHillTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lindenHillTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lindenHillTextStyle(textStyle: textTheme?.display4),
@@ -21773,9 +20759,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme literataTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme literataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.literataTextStyle(textStyle: textTheme?.display4),
@@ -21814,9 +20798,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme liuJianMaoCaoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme liuJianMaoCaoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.liuJianMaoCaoTextStyle(textStyle: textTheme?.display4),
@@ -21870,9 +20852,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme livvicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme livvicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.livvicTextStyle(textStyle: textTheme?.display4),
@@ -21911,9 +20891,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lobsterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lobsterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lobsterTextStyle(textStyle: textTheme?.display4),
@@ -21955,9 +20933,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lobsterTwoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lobsterTwoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lobsterTwoTextStyle(textStyle: textTheme?.display4),
@@ -21996,9 +20972,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme londrinaOutlineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme londrinaOutlineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.londrinaOutlineTextStyle(textStyle: textTheme?.display4),
@@ -22037,9 +21011,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme londrinaShadowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme londrinaShadowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.londrinaShadowTextStyle(textStyle: textTheme?.display4),
@@ -22078,9 +21050,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme londrinaSketchTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme londrinaSketchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.londrinaSketchTextStyle(textStyle: textTheme?.display4),
@@ -22122,9 +21092,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme londrinaSolidTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme londrinaSolidTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.londrinaSolidTextStyle(textStyle: textTheme?.display4),
@@ -22163,9 +21131,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme longCangTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme longCangTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.longCangTextStyle(textStyle: textTheme?.display4),
@@ -22207,9 +21173,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme loraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme loraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.loraTextStyle(textStyle: textTheme?.display4),
@@ -22248,9 +21212,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme loveYaLikeASisterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme loveYaLikeASisterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.loveYaLikeASisterTextStyle(textStyle: textTheme?.display4),
@@ -22289,9 +21251,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lovedbytheKingTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lovedbytheKingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lovedbytheKingTextStyle(textStyle: textTheme?.display4),
@@ -22330,9 +21290,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme loversQuarrelTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme loversQuarrelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.loversQuarrelTextStyle(textStyle: textTheme?.display4),
@@ -22371,9 +21329,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme luckiestGuyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme luckiestGuyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.luckiestGuyTextStyle(textStyle: textTheme?.display4),
@@ -22413,9 +21369,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lusitanaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lusitanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lusitanaTextStyle(textStyle: textTheme?.display4),
@@ -22454,9 +21408,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme lustriaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme lustriaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.lustriaTextStyle(textStyle: textTheme?.display4),
@@ -22501,9 +21453,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mPLUS1pTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mPLUS1pTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mPLUS1pTextStyle(textStyle: textTheme?.display4),
@@ -22548,9 +21498,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mPLUSRounded1cTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mPLUSRounded1cTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mPLUSRounded1cTextStyle(textStyle: textTheme?.display4),
@@ -22589,9 +21537,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme maShanZhengTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme maShanZhengTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.maShanZhengTextStyle(textStyle: textTheme?.display4),
@@ -22630,9 +21576,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme macondoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme macondoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.macondoTextStyle(textStyle: textTheme?.display4),
@@ -22671,9 +21615,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme macondoSwashCapsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme macondoSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.macondoSwashCapsTextStyle(textStyle: textTheme?.display4),
@@ -22718,9 +21660,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme madaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme madaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.madaTextStyle(textStyle: textTheme?.display4),
@@ -22760,9 +21700,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme magraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme magraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.magraTextStyle(textStyle: textTheme?.display4),
@@ -22801,9 +21739,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme maidenOrangeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme maidenOrangeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.maidenOrangeTextStyle(textStyle: textTheme?.display4),
@@ -22847,9 +21783,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme maitreeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme maitreeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.maitreeTextStyle(textStyle: textTheme?.display4),
@@ -22888,9 +21822,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme majorMonoDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme majorMonoDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.majorMonoDisplayTextStyle(textStyle: textTheme?.display4),
@@ -22929,9 +21861,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme makoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme makoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.makoTextStyle(textStyle: textTheme?.display4),
@@ -22981,9 +21911,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme maliTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme maliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.maliTextStyle(textStyle: textTheme?.display4),
@@ -23022,9 +21950,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mallannaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mallannaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mallannaTextStyle(textStyle: textTheme?.display4),
@@ -23063,9 +21989,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mandaliTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mandaliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mandaliTextStyle(textStyle: textTheme?.display4),
@@ -23106,9 +22030,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme manjariTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme manjariTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.manjariTextStyle(textStyle: textTheme?.display4),
@@ -23147,9 +22069,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mansalvaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mansalvaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mansalvaTextStyle(textStyle: textTheme?.display4),
@@ -23195,9 +22115,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme manualeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme manualeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.manualeTextStyle(textStyle: textTheme?.display4),
@@ -23236,9 +22154,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme marcellusTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme marcellusTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.marcellusTextStyle(textStyle: textTheme?.display4),
@@ -23277,9 +22193,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme marcellusSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme marcellusSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.marcellusSCTextStyle(textStyle: textTheme?.display4),
@@ -23318,9 +22232,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme marckScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme marckScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.marckScriptTextStyle(textStyle: textTheme?.display4),
@@ -23359,9 +22271,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme margarineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme margarineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.margarineTextStyle(textStyle: textTheme?.display4),
@@ -23403,9 +22313,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme markaziTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme markaziTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.markaziTextTextStyle(textStyle: textTheme?.display4),
@@ -23444,9 +22352,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme markoOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme markoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.markoOneTextStyle(textStyle: textTheme?.display4),
@@ -23485,9 +22391,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme marmeladTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme marmeladTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.marmeladTextStyle(textStyle: textTheme?.display4),
@@ -23532,9 +22436,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme martelTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme martelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.martelTextStyle(textStyle: textTheme?.display4),
@@ -23579,9 +22481,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme martelSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme martelSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.martelSansTextStyle(textStyle: textTheme?.display4),
@@ -23623,9 +22523,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme marvelTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme marvelTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.marvelTextStyle(textStyle: textTheme?.display4),
@@ -23665,9 +22563,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mateTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mateTextStyle(textStyle: textTheme?.display4),
@@ -23706,9 +22602,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mateSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mateSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mateSCTextStyle(textStyle: textTheme?.display4),
@@ -23750,9 +22644,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mavenProTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mavenProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mavenProTextStyle(textStyle: textTheme?.display4),
@@ -23791,9 +22683,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mcLarenTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mcLarenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mcLarenTextStyle(textStyle: textTheme?.display4),
@@ -23832,9 +22722,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme meddonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme meddonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.meddonTextStyle(textStyle: textTheme?.display4),
@@ -23873,9 +22761,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme medievalSharpTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme medievalSharpTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.medievalSharpTextStyle(textStyle: textTheme?.display4),
@@ -23914,9 +22800,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme medulaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme medulaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.medulaOneTextStyle(textStyle: textTheme?.display4),
@@ -23955,9 +22839,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme meeraInimaiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme meeraInimaiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.meeraInimaiTextStyle(textStyle: textTheme?.display4),
@@ -23996,9 +22878,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme megrimTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme megrimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.megrimTextStyle(textStyle: textTheme?.display4),
@@ -24037,9 +22917,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme meieScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme meieScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.meieScriptTextStyle(textStyle: textTheme?.display4),
@@ -24079,9 +22957,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme meriendaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme meriendaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.meriendaTextStyle(textStyle: textTheme?.display4),
@@ -24120,9 +22996,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme meriendaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme meriendaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.meriendaOneTextStyle(textStyle: textTheme?.display4),
@@ -24168,9 +23042,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme merriweatherTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme merriweatherTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.merriweatherTextStyle(textStyle: textTheme?.display4),
@@ -24216,9 +23088,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme merriweatherSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme merriweatherSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.merriweatherSansTextStyle(textStyle: textTheme?.display4),
@@ -24257,9 +23127,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme metalTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme metalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.metalTextStyle(textStyle: textTheme?.display4),
@@ -24298,9 +23166,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme metalManiaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme metalManiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.metalManiaTextStyle(textStyle: textTheme?.display4),
@@ -24339,9 +23205,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme metamorphousTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme metamorphousTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.metamorphousTextStyle(textStyle: textTheme?.display4),
@@ -24380,9 +23244,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme metrophobicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme metrophobicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.metrophobicTextStyle(textStyle: textTheme?.display4),
@@ -24421,9 +23283,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme michromaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme michromaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.michromaTextStyle(textStyle: textTheme?.display4),
@@ -24462,9 +23322,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme milongaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme milongaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.milongaTextStyle(textStyle: textTheme?.display4),
@@ -24503,9 +23361,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme miltonianTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme miltonianTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.miltonianTextStyle(textStyle: textTheme?.display4),
@@ -24544,9 +23400,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme miltonianTattooTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme miltonianTattooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.miltonianTattooTextStyle(textStyle: textTheme?.display4),
@@ -24586,9 +23440,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme minaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme minaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.minaTextStyle(textStyle: textTheme?.display4),
@@ -24627,9 +23479,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme miniverTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme miniverTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.miniverTextStyle(textStyle: textTheme?.display4),
@@ -24669,9 +23519,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme miriamLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme miriamLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.miriamLibreTextStyle(textStyle: textTheme?.display4),
@@ -24713,9 +23561,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mirzaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mirzaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mirzaTextStyle(textStyle: textTheme?.display4),
@@ -24754,9 +23600,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme missFajardoseTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme missFajardoseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.missFajardoseTextStyle(textStyle: textTheme?.display4),
@@ -24800,9 +23644,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mitrTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mitrTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mitrTextStyle(textStyle: textTheme?.display4),
@@ -24841,9 +23683,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme modakTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme modakTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.modakTextStyle(textStyle: textTheme?.display4),
@@ -24882,9 +23722,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme modernAntiquaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme modernAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.modernAntiquaTextStyle(textStyle: textTheme?.display4),
@@ -24923,9 +23761,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mograTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mograTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mograTextStyle(textStyle: textTheme?.display4),
@@ -24964,9 +23800,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme molengoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme molengoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.molengoTextStyle(textStyle: textTheme?.display4),
@@ -25005,9 +23839,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme molleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme molleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.molleTextStyle(textStyle: textTheme?.display4),
@@ -25047,9 +23879,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mondaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mondaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mondaTextStyle(textStyle: textTheme?.display4),
@@ -25088,9 +23918,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme monofettTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme monofettTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.monofettTextStyle(textStyle: textTheme?.display4),
@@ -25129,9 +23957,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme monotonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme monotonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.monotonTextStyle(textStyle: textTheme?.display4),
@@ -25170,9 +23996,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme monsieurLaDoulaiseTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme monsieurLaDoulaiseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.monsieurLaDoulaiseTextStyle(textStyle: textTheme?.display4),
@@ -25211,9 +24035,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme montagaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme montagaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.montagaTextStyle(textStyle: textTheme?.display4),
@@ -25252,9 +24074,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme montezTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme montezTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.montezTextStyle(textStyle: textTheme?.display4),
@@ -25310,9 +24130,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme montserratTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme montserratTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.montserratTextStyle(textStyle: textTheme?.display4),
@@ -25368,9 +24186,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme montserratAlternatesTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme montserratAlternatesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.montserratAlternatesTextStyle(textStyle: textTheme?.display4),
@@ -25410,9 +24226,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme montserratSubrayadaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme montserratSubrayadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.montserratSubrayadaTextStyle(textStyle: textTheme?.display4),
@@ -25451,9 +24265,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme moulTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme moulTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.moulTextStyle(textStyle: textTheme?.display4),
@@ -25492,9 +24304,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme moulpaliTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme moulpaliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.moulpaliTextStyle(textStyle: textTheme?.display4),
@@ -25534,9 +24344,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mountainsofChristmasTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mountainsofChristmasTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mountainsofChristmasTextStyle(textStyle: textTheme?.display4),
@@ -25575,9 +24383,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mouseMemoirsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mouseMemoirsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mouseMemoirsTextStyle(textStyle: textTheme?.display4),
@@ -25616,9 +24422,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mrBedfortTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mrBedfortTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mrBedfortTextStyle(textStyle: textTheme?.display4),
@@ -25657,9 +24461,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mrDafoeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mrDafoeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mrDafoeTextStyle(textStyle: textTheme?.display4),
@@ -25698,9 +24500,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mrDeHavilandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mrDeHavilandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mrDeHavilandTextStyle(textStyle: textTheme?.display4),
@@ -25739,9 +24539,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mrsSaintDelafieldTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mrsSaintDelafieldTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mrsSaintDelafieldTextStyle(textStyle: textTheme?.display4),
@@ -25780,9 +24578,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mrsSheppardsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mrsSheppardsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mrsSheppardsTextStyle(textStyle: textTheme?.display4),
@@ -25827,9 +24623,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme muktaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme muktaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.muktaTextStyle(textStyle: textTheme?.display4),
@@ -25874,9 +24668,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme muktaMaheeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme muktaMaheeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.muktaMaheeTextStyle(textStyle: textTheme?.display4),
@@ -25921,9 +24713,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme muktaMalarTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme muktaMalarTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.muktaMalarTextStyle(textStyle: textTheme?.display4),
@@ -25968,9 +24758,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme muktaVaaniTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme muktaVaaniTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.muktaVaaniTextStyle(textStyle: textTheme?.display4),
@@ -26022,9 +24810,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme muliTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme muliTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.muliTextStyle(textStyle: textTheme?.display4),
@@ -26063,9 +24849,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme mysteryQuestTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme mysteryQuestTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.mysteryQuestTextStyle(textStyle: textTheme?.display4),
@@ -26104,9 +24888,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nTRTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nTRTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nTRTextStyle(textStyle: textTheme?.display4),
@@ -26145,9 +24927,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nanumBrushScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nanumBrushScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nanumBrushScriptTextStyle(textStyle: textTheme?.display4),
@@ -26188,9 +24968,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nanumGothicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nanumGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nanumGothicTextStyle(textStyle: textTheme?.display4),
@@ -26230,9 +25008,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nanumGothicCodingTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nanumGothicCodingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nanumGothicCodingTextStyle(textStyle: textTheme?.display4),
@@ -26273,9 +25049,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nanumMyeongjoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nanumMyeongjoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nanumMyeongjoTextStyle(textStyle: textTheme?.display4),
@@ -26314,9 +25088,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nanumPenScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nanumPenScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nanumPenScriptTextStyle(textStyle: textTheme?.display4),
@@ -26355,9 +25127,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme neuchaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme neuchaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.neuchaTextStyle(textStyle: textTheme?.display4),
@@ -26401,9 +25171,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme neutonTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme neutonTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.neutonTextStyle(textStyle: textTheme?.display4),
@@ -26442,9 +25210,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme newRockerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme newRockerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.newRockerTextStyle(textStyle: textTheme?.display4),
@@ -26484,9 +25250,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme newsCycleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme newsCycleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.newsCycleTextStyle(textStyle: textTheme?.display4),
@@ -26525,9 +25289,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme niconneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme niconneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.niconneTextStyle(textStyle: textTheme?.display4),
@@ -26577,9 +25339,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme niramitTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme niramitTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.niramitTextStyle(textStyle: textTheme?.display4),
@@ -26618,9 +25378,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nixieOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nixieOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nixieOneTextStyle(textStyle: textTheme?.display4),
@@ -26664,9 +25422,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nobileTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nobileTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nobileTextStyle(textStyle: textTheme?.display4),
@@ -26706,9 +25462,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nokoraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nokoraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nokoraTextStyle(textStyle: textTheme?.display4),
@@ -26747,9 +25501,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme noricanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme noricanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.noricanTextStyle(textStyle: textTheme?.display4),
@@ -26788,9 +25540,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nosiferTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nosiferTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nosiferTextStyle(textStyle: textTheme?.display4),
@@ -26829,9 +25579,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notableTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notableTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notableTextStyle(textStyle: textTheme?.display4),
@@ -26870,9 +25618,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nothingYouCouldDoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nothingYouCouldDoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nothingYouCouldDoTextStyle(textStyle: textTheme?.display4),
@@ -26914,9 +25660,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme noticiaTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme noticiaTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.noticiaTextTextStyle(textStyle: textTheme?.display4),
@@ -26958,9 +25702,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSansTextStyle(textStyle: textTheme?.display4),
@@ -27004,9 +25746,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSansHKTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSansHKTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSansHKTextStyle(textStyle: textTheme?.display4),
@@ -27050,9 +25790,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSansJPTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSansJPTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSansJPTextStyle(textStyle: textTheme?.display4),
@@ -27096,9 +25834,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSansKRTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSansKRTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSansKRTextStyle(textStyle: textTheme?.display4),
@@ -27142,9 +25878,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSansSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSansSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSansSCTextStyle(textStyle: textTheme?.display4),
@@ -27188,9 +25922,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSansTCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSansTCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSansTCTextStyle(textStyle: textTheme?.display4),
@@ -27232,9 +25964,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSerifTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSerifTextStyle(textStyle: textTheme?.display4),
@@ -27279,9 +26009,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSerifJPTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSerifJPTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSerifJPTextStyle(textStyle: textTheme?.display4),
@@ -27326,9 +26054,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSerifKRTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSerifKRTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSerifKRTextStyle(textStyle: textTheme?.display4),
@@ -27373,9 +26099,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSerifSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSerifSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSerifSCTextStyle(textStyle: textTheme?.display4),
@@ -27420,9 +26144,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme notoSerifTCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme notoSerifTCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.notoSerifTCTextStyle(textStyle: textTheme?.display4),
@@ -27461,9 +26183,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaCutTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaCutTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaCutTextStyle(textStyle: textTheme?.display4),
@@ -27502,9 +26222,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaFlatTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaFlatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaFlatTextStyle(textStyle: textTheme?.display4),
@@ -27543,9 +26261,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaMonoTextStyle(textStyle: textTheme?.display4),
@@ -27584,9 +26300,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaOvalTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaOvalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaOvalTextStyle(textStyle: textTheme?.display4),
@@ -27625,9 +26339,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaRoundTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaRoundTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaRoundTextStyle(textStyle: textTheme?.display4),
@@ -27666,9 +26378,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaScriptTextStyle(textStyle: textTheme?.display4),
@@ -27707,9 +26417,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaSlimTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaSlimTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaSlimTextStyle(textStyle: textTheme?.display4),
@@ -27748,9 +26456,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme novaSquareTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme novaSquareTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.novaSquareTextStyle(textStyle: textTheme?.display4),
@@ -27789,9 +26495,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme numansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme numansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.numansTextStyle(textStyle: textTheme?.display4),
@@ -27843,9 +26547,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nunitoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nunitoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nunitoTextStyle(textStyle: textTheme?.display4),
@@ -27897,9 +26599,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme nunitoSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme nunitoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.nunitoSansTextStyle(textStyle: textTheme?.display4),
@@ -27938,9 +26638,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme odorMeanCheyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme odorMeanCheyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.odorMeanCheyTextStyle(textStyle: textTheme?.display4),
@@ -27979,9 +26677,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme offsideTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme offsideTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.offsideTextStyle(textStyle: textTheme?.display4),
@@ -28022,9 +26718,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oldStandardTTTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oldStandardTTTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oldStandardTTTextStyle(textStyle: textTheme?.display4),
@@ -28063,9 +26757,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oldenburgTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oldenburgTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oldenburgTextStyle(textStyle: textTheme?.display4),
@@ -28105,9 +26797,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oleoScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oleoScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oleoScriptTextStyle(textStyle: textTheme?.display4),
@@ -28147,9 +26837,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oleoScriptSwashCapsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oleoScriptSwashCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oleoScriptSwashCapsTextStyle(textStyle: textTheme?.display4),
@@ -28197,9 +26885,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme openSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme openSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.openSansTextStyle(textStyle: textTheme?.display4),
@@ -28240,9 +26926,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme openSansCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme openSansCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.openSansCondensedTextStyle(textStyle: textTheme?.display4),
@@ -28281,9 +26965,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oranienbaumTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oranienbaumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oranienbaumTextStyle(textStyle: textTheme?.display4),
@@ -28325,9 +27007,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme orbitronTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme orbitronTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.orbitronTextStyle(textStyle: textTheme?.display4),
@@ -28367,9 +27047,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oreganoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oreganoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oreganoTextStyle(textStyle: textTheme?.display4),
@@ -28408,9 +27086,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme orientaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme orientaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.orientaTextStyle(textStyle: textTheme?.display4),
@@ -28449,9 +27125,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme originalSurferTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme originalSurferTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.originalSurferTextStyle(textStyle: textTheme?.display4),
@@ -28495,9 +27169,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oswaldTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oswaldTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oswaldTextStyle(textStyle: textTheme?.display4),
@@ -28536,9 +27208,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme overtheRainbowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme overtheRainbowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.overtheRainbowTextStyle(textStyle: textTheme?.display4),
@@ -28582,9 +27252,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme overlockTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme overlockTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.overlockTextStyle(textStyle: textTheme?.display4),
@@ -28623,9 +27291,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme overlockSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme overlockSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.overlockSCTextStyle(textStyle: textTheme?.display4),
@@ -28679,9 +27345,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme overpassTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme overpassTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.overpassTextStyle(textStyle: textTheme?.display4),
@@ -28723,9 +27387,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme overpassMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme overpassMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.overpassMonoTextStyle(textStyle: textTheme?.display4),
@@ -28764,9 +27426,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ovoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ovoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ovoTextStyle(textStyle: textTheme?.display4),
@@ -28807,9 +27467,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oxygenTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oxygenTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oxygenTextStyle(textStyle: textTheme?.display4),
@@ -28848,9 +27506,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme oxygenMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme oxygenMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.oxygenMonoTextStyle(textStyle: textTheme?.display4),
@@ -28889,9 +27545,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pTMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pTMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pTMonoTextStyle(textStyle: textTheme?.display4),
@@ -28933,9 +27587,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pTSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pTSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pTSansTextStyle(textStyle: textTheme?.display4),
@@ -28975,9 +27627,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pTSansCaptionTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pTSansCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pTSansCaptionTextStyle(textStyle: textTheme?.display4),
@@ -29017,9 +27667,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pTSansNarrowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pTSansNarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pTSansNarrowTextStyle(textStyle: textTheme?.display4),
@@ -29061,9 +27709,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pTSerifTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pTSerifTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pTSerifTextStyle(textStyle: textTheme?.display4),
@@ -29103,9 +27749,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pTSerifCaptionTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pTSerifCaptionTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pTSerifCaptionTextStyle(textStyle: textTheme?.display4),
@@ -29144,9 +27788,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pacificoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pacificoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pacificoTextStyle(textStyle: textTheme?.display4),
@@ -29186,9 +27828,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme padaukTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme padaukTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.padaukTextStyle(textStyle: textTheme?.display4),
@@ -29233,9 +27873,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme palanquinTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme palanquinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.palanquinTextStyle(textStyle: textTheme?.display4),
@@ -29277,9 +27915,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme palanquinDarkTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme palanquinDarkTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.palanquinDarkTextStyle(textStyle: textTheme?.display4),
@@ -29318,9 +27954,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pangolinTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pangolinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pangolinTextStyle(textStyle: textTheme?.display4),
@@ -29359,9 +27993,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme paprikaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme paprikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.paprikaTextStyle(textStyle: textTheme?.display4),
@@ -29400,9 +28032,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme parisienneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme parisienneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.parisienneTextStyle(textStyle: textTheme?.display4),
@@ -29441,9 +28071,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme passeroOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme passeroOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.passeroOneTextStyle(textStyle: textTheme?.display4),
@@ -29484,9 +28112,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme passionOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme passionOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.passionOneTextStyle(textStyle: textTheme?.display4),
@@ -29525,9 +28151,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pathwayGothicOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pathwayGothicOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pathwayGothicOneTextStyle(textStyle: textTheme?.display4),
@@ -29566,9 +28190,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme patrickHandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme patrickHandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.patrickHandTextStyle(textStyle: textTheme?.display4),
@@ -29607,9 +28229,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme patrickHandSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme patrickHandSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.patrickHandSCTextStyle(textStyle: textTheme?.display4),
@@ -29648,9 +28268,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pattayaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pattayaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pattayaTextStyle(textStyle: textTheme?.display4),
@@ -29689,9 +28307,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme patuaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme patuaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.patuaOneTextStyle(textStyle: textTheme?.display4),
@@ -29730,9 +28346,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pavanamTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pavanamTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pavanamTextStyle(textStyle: textTheme?.display4),
@@ -29771,9 +28385,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme paytoneOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme paytoneOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.paytoneOneTextStyle(textStyle: textTheme?.display4),
@@ -29812,9 +28424,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme peddanaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme peddanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.peddanaTextStyle(textStyle: textTheme?.display4),
@@ -29853,9 +28463,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme peraltaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme peraltaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.peraltaTextStyle(textStyle: textTheme?.display4),
@@ -29894,9 +28502,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme permanentMarkerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme permanentMarkerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.permanentMarkerTextStyle(textStyle: textTheme?.display4),
@@ -29935,9 +28541,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme petitFormalScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme petitFormalScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.petitFormalScriptTextStyle(textStyle: textTheme?.display4),
@@ -29976,9 +28580,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme petronaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme petronaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.petronaTextStyle(textStyle: textTheme?.display4),
@@ -30020,9 +28622,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme philosopherTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme philosopherTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.philosopherTextStyle(textStyle: textTheme?.display4),
@@ -30061,9 +28661,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme piedraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme piedraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.piedraTextStyle(textStyle: textTheme?.display4),
@@ -30102,9 +28700,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pinyonScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pinyonScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pinyonScriptTextStyle(textStyle: textTheme?.display4),
@@ -30143,9 +28739,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pirataOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pirataOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pirataOneTextStyle(textStyle: textTheme?.display4),
@@ -30184,9 +28778,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme plasterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme plasterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.plasterTextStyle(textStyle: textTheme?.display4),
@@ -30226,9 +28818,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme playTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme playTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.playTextStyle(textStyle: textTheme?.display4),
@@ -30267,9 +28857,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme playballTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme playballTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.playballTextStyle(textStyle: textTheme?.display4),
@@ -30313,9 +28901,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme playfairDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme playfairDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.playfairDisplayTextStyle(textStyle: textTheme?.display4),
@@ -30359,9 +28945,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme playfairDisplaySCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme playfairDisplaySCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.playfairDisplaySCTextStyle(textStyle: textTheme?.display4),
@@ -30404,9 +28988,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme podkovaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme podkovaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.podkovaTextStyle(textStyle: textTheme?.display4),
@@ -30445,9 +29027,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme poiretOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme poiretOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.poiretOneTextStyle(textStyle: textTheme?.display4),
@@ -30486,9 +29066,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pollerOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pollerOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pollerOneTextStyle(textStyle: textTheme?.display4),
@@ -30528,9 +29106,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme polyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme polyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.polyTextStyle(textStyle: textTheme?.display4),
@@ -30569,9 +29145,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pompiereTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pompiereTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pompiereTextStyle(textStyle: textTheme?.display4),
@@ -30610,9 +29184,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pontanoSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pontanoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pontanoSansTextStyle(textStyle: textTheme?.display4),
@@ -30651,9 +29223,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme poorStoryTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme poorStoryTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.poorStoryTextStyle(textStyle: textTheme?.display4),
@@ -30709,9 +29279,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme poppinsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme poppinsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.poppinsTextStyle(textStyle: textTheme?.display4),
@@ -30750,9 +29318,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme portLligatSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme portLligatSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.portLligatSansTextStyle(textStyle: textTheme?.display4),
@@ -30791,9 +29357,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme portLligatSlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme portLligatSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.portLligatSlabTextStyle(textStyle: textTheme?.display4),
@@ -30833,9 +29397,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pragatiNarrowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pragatiNarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pragatiNarrowTextStyle(textStyle: textTheme?.display4),
@@ -30874,9 +29436,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme prataTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme prataTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.prataTextStyle(textStyle: textTheme?.display4),
@@ -30915,9 +29475,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme preahvihearTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme preahvihearTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.preahvihearTextStyle(textStyle: textTheme?.display4),
@@ -30956,9 +29514,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pressStart2PTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pressStart2PTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pressStart2PTextStyle(textStyle: textTheme?.display4),
@@ -31002,9 +29558,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme pridiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme pridiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.pridiTextStyle(textStyle: textTheme?.display4),
@@ -31043,9 +29597,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme princessSofiaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme princessSofiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.princessSofiaTextStyle(textStyle: textTheme?.display4),
@@ -31084,9 +29636,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme procionoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme procionoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.procionoTextStyle(textStyle: textTheme?.display4),
@@ -31142,9 +29692,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme promptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme promptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.promptTextStyle(textStyle: textTheme?.display4),
@@ -31183,9 +29731,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme prostoOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme prostoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.prostoOneTextStyle(textStyle: textTheme?.display4),
@@ -31233,9 +29779,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme prozaLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme prozaLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.prozaLibreTextStyle(textStyle: textTheme?.display4),
@@ -31277,9 +29821,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme puritanTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme puritanTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.puritanTextStyle(textStyle: textTheme?.display4),
@@ -31318,9 +29860,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme purplePurseTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme purplePurseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.purplePurseTextStyle(textStyle: textTheme?.display4),
@@ -31359,9 +29899,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme quandoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme quandoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.quandoTextStyle(textStyle: textTheme?.display4),
@@ -31403,9 +29941,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme quanticoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme quanticoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.quanticoTextStyle(textStyle: textTheme?.display4),
@@ -31445,9 +29981,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme quattrocentoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme quattrocentoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.quattrocentoTextStyle(textStyle: textTheme?.display4),
@@ -31489,9 +30023,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme quattrocentoSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme quattrocentoSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.quattrocentoSansTextStyle(textStyle: textTheme?.display4),
@@ -31530,9 +30062,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme questrialTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme questrialTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.questrialTextStyle(textStyle: textTheme?.display4),
@@ -31575,9 +30105,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme quicksandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme quicksandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.quicksandTextStyle(textStyle: textTheme?.display4),
@@ -31616,9 +30144,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme quintessentialTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme quintessentialTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.quintessentialTextStyle(textStyle: textTheme?.display4),
@@ -31657,9 +30183,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme qwigleyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme qwigleyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.qwigleyTextStyle(textStyle: textTheme?.display4),
@@ -31698,9 +30222,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme racingSansOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme racingSansOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.racingSansOneTextStyle(textStyle: textTheme?.display4),
@@ -31740,9 +30262,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme radleyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme radleyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.radleyTextStyle(textStyle: textTheme?.display4),
@@ -31785,9 +30305,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rajdhaniTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rajdhaniTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rajdhaniTextStyle(textStyle: textTheme?.display4),
@@ -31826,9 +30344,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rakkasTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rakkasTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rakkasTextStyle(textStyle: textTheme?.display4),
@@ -31884,9 +30400,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ralewayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ralewayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ralewayTextStyle(textStyle: textTheme?.display4),
@@ -31925,9 +30439,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ralewayDotsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ralewayDotsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ralewayDotsTextStyle(textStyle: textTheme?.display4),
@@ -31966,9 +30478,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ramabhadraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ramabhadraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ramabhadraTextStyle(textStyle: textTheme?.display4),
@@ -32007,9 +30517,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ramarajaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ramarajaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ramarajaTextStyle(textStyle: textTheme?.display4),
@@ -32051,9 +30559,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ramblaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ramblaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ramblaTextStyle(textStyle: textTheme?.display4),
@@ -32092,9 +30598,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rammettoOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rammettoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rammettoOneTextStyle(textStyle: textTheme?.display4),
@@ -32133,9 +30637,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ranchersTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ranchersTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ranchersTextStyle(textStyle: textTheme?.display4),
@@ -32174,9 +30676,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ranchoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ranchoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ranchoTextStyle(textStyle: textTheme?.display4),
@@ -32216,9 +30716,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rangaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rangaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rangaTextStyle(textStyle: textTheme?.display4),
@@ -32261,9 +30759,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rasaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rasaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rasaTextStyle(textStyle: textTheme?.display4),
@@ -32302,9 +30798,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rationaleTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rationaleTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rationaleTextStyle(textStyle: textTheme?.display4),
@@ -32343,9 +30837,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme raviPrakashTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme raviPrakashTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.raviPrakashTextStyle(textStyle: textTheme?.display4),
@@ -32391,9 +30883,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme redHatDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme redHatDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.redHatDisplayTextStyle(textStyle: textTheme?.display4),
@@ -32437,9 +30927,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme redHatTextTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme redHatTextTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.redHatTextTextStyle(textStyle: textTheme?.display4),
@@ -32478,9 +30966,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme redressedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme redressedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.redressedTextStyle(textStyle: textTheme?.display4),
@@ -32519,9 +31005,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme reemKufiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme reemKufiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.reemKufiTextStyle(textStyle: textTheme?.display4),
@@ -32560,9 +31044,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme reenieBeanieTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme reenieBeanieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.reenieBeanieTextStyle(textStyle: textTheme?.display4),
@@ -32601,9 +31083,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme revaliaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme revaliaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.revaliaTextStyle(textStyle: textTheme?.display4),
@@ -32642,9 +31122,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rhodiumLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rhodiumLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rhodiumLibreTextStyle(textStyle: textTheme?.display4),
@@ -32683,9 +31161,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ribeyeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ribeyeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ribeyeTextStyle(textStyle: textTheme?.display4),
@@ -32724,9 +31200,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ribeyeMarrowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ribeyeMarrowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ribeyeMarrowTextStyle(textStyle: textTheme?.display4),
@@ -32765,9 +31239,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme righteousTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme righteousTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.righteousTextStyle(textStyle: textTheme?.display4),
@@ -32806,9 +31278,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme risqueTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme risqueTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.risqueTextStyle(textStyle: textTheme?.display4),
@@ -32858,9 +31328,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme robotoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme robotoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.robotoTextStyle(textStyle: textTheme?.display4),
@@ -32904,9 +31372,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme robotoCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme robotoCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.robotoCondensedTextStyle(textStyle: textTheme?.display4),
@@ -32954,9 +31420,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme robotoMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme robotoMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.robotoMonoTextStyle(textStyle: textTheme?.display4),
@@ -32998,9 +31462,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme robotoSlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme robotoSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.robotoSlabTextStyle(textStyle: textTheme?.display4),
@@ -33039,9 +31501,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rochesterTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rochesterTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rochesterTextStyle(textStyle: textTheme?.display4),
@@ -33080,9 +31540,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rockSaltTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rockSaltTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rockSaltTextStyle(textStyle: textTheme?.display4),
@@ -33129,9 +31587,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rokkittTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rokkittTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rokkittTextStyle(textStyle: textTheme?.display4),
@@ -33170,9 +31626,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme romanescoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme romanescoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.romanescoTextStyle(textStyle: textTheme?.display4),
@@ -33212,9 +31666,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ropaSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ropaSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ropaSansTextStyle(textStyle: textTheme?.display4),
@@ -33262,9 +31714,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rosarioTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rosarioTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rosarioTextStyle(textStyle: textTheme?.display4),
@@ -33304,9 +31754,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rosarivoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rosarivoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rosarivoTextStyle(textStyle: textTheme?.display4),
@@ -33345,9 +31793,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rougeScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rougeScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rougeScriptTextStyle(textStyle: textTheme?.display4),
@@ -33386,9 +31832,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rozhaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rozhaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rozhaOneTextStyle(textStyle: textTheme?.display4),
@@ -33436,9 +31880,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rubikTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rubikTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rubikTextStyle(textStyle: textTheme?.display4),
@@ -33477,9 +31919,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rubikMonoOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rubikMonoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rubikMonoOneTextStyle(textStyle: textTheme?.display4),
@@ -33520,9 +31960,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rudaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rudaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rudaTextStyle(textStyle: textTheme?.display4),
@@ -33562,9 +32000,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rufinaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rufinaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rufinaTextStyle(textStyle: textTheme?.display4),
@@ -33603,9 +32039,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rugeBoogieTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rugeBoogieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rugeBoogieTextStyle(textStyle: textTheme?.display4),
@@ -33644,9 +32078,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rulukoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rulukoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rulukoTextStyle(textStyle: textTheme?.display4),
@@ -33685,9 +32117,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme rumRaisinTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme rumRaisinTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.rumRaisinTextStyle(textStyle: textTheme?.display4),
@@ -33726,9 +32156,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ruslanDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ruslanDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ruslanDisplayTextStyle(textStyle: textTheme?.display4),
@@ -33767,9 +32195,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme russoOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme russoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.russoOneTextStyle(textStyle: textTheme?.display4),
@@ -33808,9 +32234,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ruthieTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ruthieTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ruthieTextStyle(textStyle: textTheme?.display4),
@@ -33849,9 +32273,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ryeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ryeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ryeTextStyle(textStyle: textTheme?.display4),
@@ -33890,9 +32312,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sacramentoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sacramentoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sacramentoTextStyle(textStyle: textTheme?.display4),
@@ -33932,9 +32352,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sahityaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sahityaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sahityaTextStyle(textStyle: textTheme?.display4),
@@ -33973,9 +32391,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sailTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sailTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sailTextStyle(textStyle: textTheme?.display4),
@@ -34022,9 +32438,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sairaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sairaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sairaTextStyle(textStyle: textTheme?.display4),
@@ -34071,9 +32485,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sairaCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sairaCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sairaCondensedTextStyle(textStyle: textTheme?.display4),
@@ -34120,9 +32532,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sairaExtraCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sairaExtraCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sairaExtraCondensedTextStyle(textStyle: textTheme?.display4),
@@ -34169,9 +32579,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sairaSemiCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sairaSemiCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sairaSemiCondensedTextStyle(textStyle: textTheme?.display4),
@@ -34210,9 +32618,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sairaStencilOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sairaStencilOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sairaStencilOneTextStyle(textStyle: textTheme?.display4),
@@ -34251,9 +32657,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme salsaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme salsaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.salsaTextStyle(textStyle: textTheme?.display4),
@@ -34293,9 +32697,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sanchezTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sanchezTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sanchezTextStyle(textStyle: textTheme?.display4),
@@ -34334,9 +32736,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sancreekTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sancreekTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sancreekTextStyle(textStyle: textTheme?.display4),
@@ -34382,9 +32782,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sansitaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sansitaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sansitaTextStyle(textStyle: textTheme?.display4),
@@ -34438,9 +32836,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sarabunTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sarabunTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sarabunTextStyle(textStyle: textTheme?.display4),
@@ -34480,9 +32876,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme saralaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme saralaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.saralaTextStyle(textStyle: textTheme?.display4),
@@ -34521,9 +32915,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sarinaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sarinaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sarinaTextStyle(textStyle: textTheme?.display4),
@@ -34567,9 +32959,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sarpanchTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sarpanchTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sarpanchTextStyle(textStyle: textTheme?.display4),
@@ -34608,9 +32998,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme satisfyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme satisfyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.satisfyTextStyle(textStyle: textTheme?.display4),
@@ -34649,9 +33037,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sawarabiGothicTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sawarabiGothicTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sawarabiGothicTextStyle(textStyle: textTheme?.display4),
@@ -34690,9 +33076,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sawarabiMinchoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sawarabiMinchoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sawarabiMinchoTextStyle(textStyle: textTheme?.display4),
@@ -34734,9 +33118,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme scadaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme scadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.scadaTextStyle(textStyle: textTheme?.display4),
@@ -34776,9 +33158,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme scheherazadeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme scheherazadeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.scheherazadeTextStyle(textStyle: textTheme?.display4),
@@ -34817,9 +33197,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme schoolbellTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme schoolbellTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.schoolbellTextStyle(textStyle: textTheme?.display4),
@@ -34858,9 +33236,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme scopeOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme scopeOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.scopeOneTextStyle(textStyle: textTheme?.display4),
@@ -34899,9 +33275,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme seaweedScriptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme seaweedScriptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.seaweedScriptTextStyle(textStyle: textTheme?.display4),
@@ -34940,9 +33314,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme secularOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme secularOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.secularOneTextStyle(textStyle: textTheme?.display4),
@@ -34981,9 +33353,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sedgwickAveTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sedgwickAveTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sedgwickAveTextStyle(textStyle: textTheme?.display4),
@@ -35022,9 +33392,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sedgwickAveDisplayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sedgwickAveDisplayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sedgwickAveDisplayTextStyle(textStyle: textTheme?.display4),
@@ -35063,9 +33431,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sevillanaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sevillanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sevillanaTextStyle(textStyle: textTheme?.display4),
@@ -35104,9 +33470,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme seymourOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme seymourOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.seymourOneTextStyle(textStyle: textTheme?.display4),
@@ -35145,9 +33509,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shadowsIntoLightTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shadowsIntoLightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shadowsIntoLightTextStyle(textStyle: textTheme?.display4),
@@ -35186,9 +33548,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shadowsIntoLightTwoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shadowsIntoLightTwoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shadowsIntoLightTwoTextStyle(textStyle: textTheme?.display4),
@@ -35227,9 +33587,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shantiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shantiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shantiTextStyle(textStyle: textTheme?.display4),
@@ -35271,9 +33629,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shareTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shareTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shareTextStyle(textStyle: textTheme?.display4),
@@ -35312,9 +33668,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shareTechTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shareTechTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shareTechTextStyle(textStyle: textTheme?.display4),
@@ -35353,9 +33707,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shareTechMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shareTechMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shareTechMonoTextStyle(textStyle: textTheme?.display4),
@@ -35394,9 +33746,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shojumaruTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shojumaruTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shojumaruTextStyle(textStyle: textTheme?.display4),
@@ -35435,9 +33785,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shortStackTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shortStackTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shortStackTextStyle(textStyle: textTheme?.display4),
@@ -35476,9 +33824,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme shrikhandTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme shrikhandTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.shrikhandTextStyle(textStyle: textTheme?.display4),
@@ -35517,9 +33863,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme siemreapTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme siemreapTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.siemreapTextStyle(textStyle: textTheme?.display4),
@@ -35558,9 +33902,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sigmarOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sigmarOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sigmarOneTextStyle(textStyle: textTheme?.display4),
@@ -35602,9 +33944,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme signikaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme signikaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.signikaTextStyle(textStyle: textTheme?.display4),
@@ -35646,9 +33986,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme signikaNegativeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme signikaNegativeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.signikaNegativeTextStyle(textStyle: textTheme?.display4),
@@ -35690,9 +34028,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme simonettaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme simonettaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.simonettaTextStyle(textStyle: textTheme?.display4),
@@ -35731,9 +34067,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme singleDayTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme singleDayTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.singleDayTextStyle(textStyle: textTheme?.display4),
@@ -35773,9 +34107,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sintonyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sintonyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sintonyTextStyle(textStyle: textTheme?.display4),
@@ -35814,9 +34146,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sirinStencilTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sirinStencilTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sirinStencilTextStyle(textStyle: textTheme?.display4),
@@ -35855,9 +34185,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sixCapsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sixCapsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sixCapsTextStyle(textStyle: textTheme?.display4),
@@ -35897,9 +34225,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme skranjiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme skranjiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.skranjiTextStyle(textStyle: textTheme?.display4),
@@ -35938,9 +34264,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme slabo13pxTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme slabo13pxTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.slabo13pxTextStyle(textStyle: textTheme?.display4),
@@ -35979,9 +34303,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme slabo27pxTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme slabo27pxTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.slabo27pxTextStyle(textStyle: textTheme?.display4),
@@ -36020,9 +34342,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme slackeyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme slackeyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.slackeyTextStyle(textStyle: textTheme?.display4),
@@ -36061,9 +34381,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme smokumTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme smokumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.smokumTextStyle(textStyle: textTheme?.display4),
@@ -36102,9 +34420,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme smytheTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme smytheTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.smytheTextStyle(textStyle: textTheme?.display4),
@@ -36144,9 +34460,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme snigletTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme snigletTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.snigletTextStyle(textStyle: textTheme?.display4),
@@ -36185,9 +34499,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme snippetTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme snippetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.snippetTextStyle(textStyle: textTheme?.display4),
@@ -36226,9 +34538,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme snowburstOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme snowburstOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.snowburstOneTextStyle(textStyle: textTheme?.display4),
@@ -36267,9 +34577,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sofadiOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sofadiOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sofadiOneTextStyle(textStyle: textTheme?.display4),
@@ -36308,9 +34616,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sofiaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sofiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sofiaTextStyle(textStyle: textTheme?.display4),
@@ -36349,9 +34655,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme songMyungTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme songMyungTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.songMyungTextStyle(textStyle: textTheme?.display4),
@@ -36390,9 +34694,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sonsieOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sonsieOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sonsieOneTextStyle(textStyle: textTheme?.display4),
@@ -36432,9 +34734,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sortsMillGoudyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sortsMillGoudyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sortsMillGoudyTextStyle(textStyle: textTheme?.display4),
@@ -36486,9 +34786,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sourceCodeProTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sourceCodeProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sourceCodeProTextStyle(textStyle: textTheme?.display4),
@@ -36538,9 +34836,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sourceSansProTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sourceSansProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sourceSansProTextStyle(textStyle: textTheme?.display4),
@@ -36581,9 +34877,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sourceSerifProTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sourceSerifProTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sourceSerifProTextStyle(textStyle: textTheme?.display4),
@@ -36625,9 +34919,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme spaceMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme spaceMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.spaceMonoTextStyle(textStyle: textTheme?.display4),
@@ -36666,9 +34958,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme specialEliteTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme specialEliteTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.specialEliteTextStyle(textStyle: textTheme?.display4),
@@ -36720,9 +35010,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme spectralTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme spectralTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.spectralTextStyle(textStyle: textTheme?.display4),
@@ -36774,9 +35062,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme spectralSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme spectralSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.spectralSCTextStyle(textStyle: textTheme?.display4),
@@ -36815,9 +35101,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme spicyRiceTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme spicyRiceTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.spicyRiceTextStyle(textStyle: textTheme?.display4),
@@ -36856,9 +35140,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme spinnakerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme spinnakerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.spinnakerTextStyle(textStyle: textTheme?.display4),
@@ -36897,9 +35179,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme spiraxTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme spiraxTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.spiraxTextStyle(textStyle: textTheme?.display4),
@@ -36938,9 +35218,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme squadaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme squadaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.squadaOneTextStyle(textStyle: textTheme?.display4),
@@ -36979,9 +35257,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sreeKrushnadevarayaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sreeKrushnadevarayaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sreeKrushnadevarayaTextStyle(textStyle: textTheme?.display4),
@@ -37020,9 +35296,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme srirachaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme srirachaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.srirachaTextStyle(textStyle: textTheme?.display4),
@@ -37062,9 +35336,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme srisakdiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme srisakdiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.srisakdiTextStyle(textStyle: textTheme?.display4),
@@ -37103,9 +35375,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme staatlichesTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme staatlichesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.staatlichesTextStyle(textStyle: textTheme?.display4),
@@ -37144,9 +35414,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme stalemateTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme stalemateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.stalemateTextStyle(textStyle: textTheme?.display4),
@@ -37185,9 +35453,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme stalinistOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme stalinistOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.stalinistOneTextStyle(textStyle: textTheme?.display4),
@@ -37227,9 +35493,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme stardosStencilTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme stardosStencilTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.stardosStencilTextStyle(textStyle: textTheme?.display4),
@@ -37268,9 +35532,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme stintUltraCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme stintUltraCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.stintUltraCondensedTextStyle(textStyle: textTheme?.display4),
@@ -37309,9 +35571,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme stintUltraExpandedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme stintUltraExpandedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.stintUltraExpandedTextStyle(textStyle: textTheme?.display4),
@@ -37351,9 +35611,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme stokeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme stokeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.stokeTextStyle(textStyle: textTheme?.display4),
@@ -37392,9 +35650,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme straitTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme straitTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.straitTextStyle(textStyle: textTheme?.display4),
@@ -37433,9 +35689,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme stylishTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme stylishTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.stylishTextStyle(textStyle: textTheme?.display4),
@@ -37474,9 +35728,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sueEllenFranciscoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sueEllenFranciscoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sueEllenFranciscoTextStyle(textStyle: textTheme?.display4),
@@ -37515,9 +35767,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme suezOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme suezOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.suezOneTextStyle(textStyle: textTheme?.display4),
@@ -37557,9 +35807,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sumanaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sumanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sumanaTextStyle(textStyle: textTheme?.display4),
@@ -37600,9 +35848,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sunflowerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sunflowerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sunflowerTextStyle(textStyle: textTheme?.display4),
@@ -37641,9 +35887,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme sunshineyTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme sunshineyTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.sunshineyTextStyle(textStyle: textTheme?.display4),
@@ -37682,9 +35926,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme supermercadoOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme supermercadoOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.supermercadoOneTextStyle(textStyle: textTheme?.display4),
@@ -37724,9 +35966,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme suraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme suraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.suraTextStyle(textStyle: textTheme?.display4),
@@ -37765,9 +36005,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme surannaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme surannaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.surannaTextStyle(textStyle: textTheme?.display4),
@@ -37806,9 +36044,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme suravaramTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme suravaramTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.suravaramTextStyle(textStyle: textTheme?.display4),
@@ -37847,9 +36083,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme suwannaphumTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme suwannaphumTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.suwannaphumTextStyle(textStyle: textTheme?.display4),
@@ -37888,9 +36122,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme swankyandMooMooTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme swankyandMooMooTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.swankyandMooMooTextStyle(textStyle: textTheme?.display4),
@@ -37930,9 +36162,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme syncopateTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme syncopateTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.syncopateTextStyle(textStyle: textTheme?.display4),
@@ -37977,9 +36207,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tajawalTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tajawalTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tajawalTextStyle(textStyle: textTheme?.display4),
@@ -38019,9 +36247,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tangerineTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tangerineTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tangerineTextStyle(textStyle: textTheme?.display4),
@@ -38060,9 +36286,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tapromTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tapromTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tapromTextStyle(textStyle: textTheme?.display4),
@@ -38101,9 +36325,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tauriTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tauriTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tauriTextStyle(textStyle: textTheme?.display4),
@@ -38159,9 +36381,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tavirajTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tavirajTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tavirajTextStyle(textStyle: textTheme?.display4),
@@ -38204,9 +36424,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tekoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tekoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tekoTextStyle(textStyle: textTheme?.display4),
@@ -38245,9 +36463,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme telexTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme telexTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.telexTextStyle(textStyle: textTheme?.display4),
@@ -38286,9 +36502,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tenaliRamakrishnaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tenaliRamakrishnaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tenaliRamakrishnaTextStyle(textStyle: textTheme?.display4),
@@ -38327,9 +36541,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tenorSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tenorSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tenorSansTextStyle(textStyle: textTheme?.display4),
@@ -38368,9 +36580,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme textMeOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme textMeOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.textMeOneTextStyle(textStyle: textTheme?.display4),
@@ -38412,9 +36622,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme thasadithTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme thasadithTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.thasadithTextStyle(textStyle: textTheme?.display4),
@@ -38453,9 +36661,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme theGirlNextDoorTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme theGirlNextDoorTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.theGirlNextDoorTextStyle(textStyle: textTheme?.display4),
@@ -38496,9 +36702,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tienneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tienneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tienneTextStyle(textStyle: textTheme?.display4),
@@ -38541,9 +36745,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tillanaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tillanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tillanaTextStyle(textStyle: textTheme?.display4),
@@ -38582,9 +36784,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme timmanaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme timmanaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.timmanaTextStyle(textStyle: textTheme?.display4),
@@ -38626,9 +36826,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tinosTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tinosTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tinosTextStyle(textStyle: textTheme?.display4),
@@ -38667,9 +36865,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme titanOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme titanOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.titanOneTextStyle(textStyle: textTheme?.display4),
@@ -38718,9 +36914,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme titilliumWebTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme titilliumWebTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.titilliumWebTextStyle(textStyle: textTheme?.display4),
@@ -38759,9 +36953,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tradeWindsTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tradeWindsTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tradeWindsTextStyle(textStyle: textTheme?.display4),
@@ -38817,9 +37009,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme trirongTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme trirongTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.trirongTextStyle(textStyle: textTheme?.display4),
@@ -38858,9 +37048,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme trocchiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme trocchiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.trocchiTextStyle(textStyle: textTheme?.display4),
@@ -38901,9 +37089,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme trochutTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme trochutTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.trochutTextStyle(textStyle: textTheme?.display4),
@@ -38942,9 +37128,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme trykkerTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme trykkerTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.trykkerTextStyle(textStyle: textTheme?.display4),
@@ -38983,9 +37167,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme tulpenOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme tulpenOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.tulpenOneTextStyle(textStyle: textTheme?.display4),
@@ -39029,9 +37211,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme turretRoadTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme turretRoadTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.turretRoadTextStyle(textStyle: textTheme?.display4),
@@ -39077,9 +37257,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ubuntuTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ubuntuTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ubuntuTextStyle(textStyle: textTheme?.display4),
@@ -39118,9 +37296,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ubuntuCondensedTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ubuntuCondensedTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ubuntuCondensedTextStyle(textStyle: textTheme?.display4),
@@ -39162,9 +37338,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ubuntuMonoTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ubuntuMonoTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ubuntuMonoTextStyle(textStyle: textTheme?.display4),
@@ -39203,9 +37377,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme ultraTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme ultraTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.ultraTextStyle(textStyle: textTheme?.display4),
@@ -39244,9 +37416,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme uncialAntiquaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme uncialAntiquaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.uncialAntiquaTextStyle(textStyle: textTheme?.display4),
@@ -39285,9 +37455,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme underdogTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme underdogTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.underdogTextStyle(textStyle: textTheme?.display4),
@@ -39326,9 +37494,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme unicaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme unicaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.unicaOneTextStyle(textStyle: textTheme?.display4),
@@ -39367,9 +37533,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme unifrakturCookTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme unifrakturCookTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.unifrakturCookTextStyle(textStyle: textTheme?.display4),
@@ -39408,9 +37572,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme unifrakturMaguntiaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme unifrakturMaguntiaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.unifrakturMaguntiaTextStyle(textStyle: textTheme?.display4),
@@ -39450,9 +37612,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme unkemptTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme unkemptTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.unkemptTextStyle(textStyle: textTheme?.display4),
@@ -39491,9 +37651,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme unlockTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme unlockTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.unlockTextStyle(textStyle: textTheme?.display4),
@@ -39535,9 +37693,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme unnaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme unnaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.unnaTextStyle(textStyle: textTheme?.display4),
@@ -39576,9 +37732,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vT323TextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vT323TextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vT323TextStyle(textStyle: textTheme?.display4),
@@ -39617,9 +37771,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vampiroOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vampiroOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vampiroOneTextStyle(textStyle: textTheme?.display4),
@@ -39658,9 +37810,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme varelaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme varelaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.varelaTextStyle(textStyle: textTheme?.display4),
@@ -39699,9 +37849,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme varelaRoundTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme varelaRoundTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.varelaRoundTextStyle(textStyle: textTheme?.display4),
@@ -39740,9 +37888,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vastShadowTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vastShadowTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vastShadowTextStyle(textStyle: textTheme?.display4),
@@ -39784,9 +37930,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vesperLibreTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vesperLibreTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vesperLibreTextStyle(textStyle: textTheme?.display4),
@@ -39825,9 +37969,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vibesTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vibesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vibesTextStyle(textStyle: textTheme?.display4),
@@ -39866,9 +38008,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme viburTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme viburTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.viburTextStyle(textStyle: textTheme?.display4),
@@ -39907,9 +38047,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vidalokaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vidalokaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vidalokaTextStyle(textStyle: textTheme?.display4),
@@ -39948,9 +38086,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vigaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vigaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vigaTextStyle(textStyle: textTheme?.display4),
@@ -39989,9 +38125,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vocesTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vocesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vocesTextStyle(textStyle: textTheme?.display4),
@@ -40033,9 +38167,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme volkhovTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme volkhovTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.volkhovTextStyle(textStyle: textTheme?.display4),
@@ -40081,9 +38213,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vollkornTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vollkornTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vollkornTextStyle(textStyle: textTheme?.display4),
@@ -40125,9 +38255,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme vollkornSCTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme vollkornSCTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.vollkornSCTextStyle(textStyle: textTheme?.display4),
@@ -40166,9 +38294,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme voltaireTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme voltaireTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.voltaireTextStyle(textStyle: textTheme?.display4),
@@ -40207,9 +38333,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme waitingfortheSunriseTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme waitingfortheSunriseTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.waitingfortheSunriseTextStyle(textStyle: textTheme?.display4),
@@ -40248,9 +38372,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme wallpoetTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme wallpoetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.wallpoetTextStyle(textStyle: textTheme?.display4),
@@ -40289,9 +38411,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme walterTurncoatTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme walterTurncoatTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.walterTurncoatTextStyle(textStyle: textTheme?.display4),
@@ -40330,9 +38450,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme warnesTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme warnesTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.warnesTextStyle(textStyle: textTheme?.display4),
@@ -40371,9 +38489,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme wellfleetTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme wellfleetTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.wellfleetTextStyle(textStyle: textTheme?.display4),
@@ -40412,9 +38528,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme wendyOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme wendyOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.wendyOneTextStyle(textStyle: textTheme?.display4),
@@ -40453,9 +38567,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme wireOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme wireOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.wireOneTextStyle(textStyle: textTheme?.display4),
@@ -40502,9 +38614,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme workSansTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme workSansTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.workSansTextStyle(textStyle: textTheme?.display4),
@@ -40546,9 +38656,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yanoneKaffeesatzTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yanoneKaffeesatzTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yanoneKaffeesatzTextStyle(textStyle: textTheme?.display4),
@@ -40592,9 +38700,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yantramanavTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yantramanavTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yantramanavTextStyle(textStyle: textTheme?.display4),
@@ -40633,9 +38739,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yatraOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yatraOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yatraOneTextStyle(textStyle: textTheme?.display4),
@@ -40674,9 +38778,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yellowtailTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yellowtailTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yellowtailTextStyle(textStyle: textTheme?.display4),
@@ -40715,9 +38817,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yeonSungTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yeonSungTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yeonSungTextStyle(textStyle: textTheme?.display4),
@@ -40756,9 +38856,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yesevaOneTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yesevaOneTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yesevaOneTextStyle(textStyle: textTheme?.display4),
@@ -40797,9 +38895,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yesteryearTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yesteryearTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yesteryearTextStyle(textStyle: textTheme?.display4),
@@ -40842,9 +38938,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme yrsaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme yrsaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.yrsaTextStyle(textStyle: textTheme?.display4),
@@ -40883,9 +38977,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme zCOOLKuaiLeTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme zCOOLKuaiLeTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.zCOOLKuaiLeTextStyle(textStyle: textTheme?.display4),
@@ -40924,9 +39016,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme zCOOLQingKeHuangYouTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme zCOOLQingKeHuangYouTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.zCOOLQingKeHuangYouTextStyle(textStyle: textTheme?.display4),
@@ -40965,9 +39055,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme zCOOLXiaoWeiTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme zCOOLXiaoWeiTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.zCOOLXiaoWeiTextStyle(textStyle: textTheme?.display4),
@@ -41006,9 +39094,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme zeyadaTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme zeyadaTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.zeyadaTextStyle(textStyle: textTheme?.display4),
@@ -41047,9 +39133,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme zhiMangXingTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme zhiMangXingTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.zhiMangXingTextStyle(textStyle: textTheme?.display4),
@@ -41097,9 +39181,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme zillaSlabTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme zillaSlabTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.zillaSlabTextStyle(textStyle: textTheme?.display4),
@@ -41139,9 +39221,7 @@ class GoogleFonts {
     );
   }
 
-  static TextTheme zillaSlabHighlightTextTheme({
-    TextTheme textTheme,
-  }) {
+  static TextTheme zillaSlabHighlightTextTheme([TextTheme textTheme]) {
     textTheme ??= ThemeData.light().textTheme;
     return TextTheme(
       display4: GoogleFonts.zillaSlabHighlightTextStyle(textStyle: textTheme?.display4),
