@@ -47,11 +47,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
-              style: GoogleFonts.oswald(textStyle: display1),
+              style: GoogleFonts.oswaldTextStyle(textStyle: display1),
             ),
             Text(
               '$_counter',
-              style: GoogleFonts.lato(fontStyle: FontStyle.italic),
+              style: GoogleFonts.latoTextStyle(fontStyle: FontStyle.italic),
             ),
           ],
         ),
