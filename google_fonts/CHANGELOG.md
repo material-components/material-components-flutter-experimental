@@ -1,3 +1,24 @@
+## [0.1.0] - 2019-12-06
+
+### Generated method names changed (breaking change).
+
+For example,
+
+`GoogleFonts.lato(...)` is now `GoogleFonts.latoTextStyle(...)`.
+
+### Text theme support
+
+Every font family now _also_ has a `TextTheme` method.
+
+For example, the `Lato` font now has `GoogleFonts.latoTextStyle()` and `GoogleFonts.latoTextTheme()`.
+
+See README for more examples.
+
+### Other cleanups
+
+Refactored implementation, updated READMEs, and usage docs.
+
+
 ## [0.0.8] - 2019-12-04
 
 Internal refactor and added tests.

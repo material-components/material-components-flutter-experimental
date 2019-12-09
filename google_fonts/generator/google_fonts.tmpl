@@ -12,8 +12,9 @@ import 'src/google_fonts_variant.dart';
 
 class GoogleFonts {
   {{#method}}
-  static TextStyle {{methodName}}({
+  static TextStyle {{methodName}}TextStyle({
     TextStyle textStyle,
+    double fontSize,
     FontWeight fontWeight,
     FontStyle fontStyle,
   }) {
@@ -25,10 +26,20 @@ class GoogleFonts {
 
     return googleFontsTextStyle(
       fontFamily: '{{fontFamily}}',
-      textStyle: textStyle,
+      fontSize: fontSize,
       fontWeight: fontWeight,
+      textStyle: textStyle,
       fontStyle: fontStyle,
       fonts: fonts,
+    );
+  }
+
+  static TextTheme {{methodName}}TextTheme([TextTheme textTheme]) {
+    textTheme ??= ThemeData.light().textTheme;
+    return TextTheme(
+      {{#themeParams}}
+      {{value}}: GoogleFonts.{{methodName}}TextStyle(textStyle: textTheme?.{{value}}),
+      {{/themeParams}}
     );
   }
 
