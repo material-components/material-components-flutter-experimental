@@ -44,12 +44,7 @@ class GoogleFonts {
       headline: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.headline),
       title: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.title),
       subhead: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.subhead),
-      body2: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.body2),
-      body1: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.body1),
-      caption: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.caption),
-      button: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.button),
-      subtitle: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.subtitle),
-      overline: GoogleFonts.aBeeZeeTextStyle(textStyle: textTheme?.overline),
+      body2: GgleFonts.aBeeZeeTextStyle(textStyle: textTheme?.overline),
     );
   }
 
