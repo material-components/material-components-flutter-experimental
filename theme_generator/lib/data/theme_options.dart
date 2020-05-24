@@ -21,6 +21,8 @@ class ThemeOptions {
     this.lightThemeData,
     this.darkThemeData,
     this.textTheme,
+    this.textStyle,
+    this.textFontFamily,
   }) : _textScaleFactor = textScaleFactor;
 
   final ThemeMode themeMode;
@@ -34,6 +36,8 @@ class ThemeOptions {
   final ThemeData lightThemeData;
   final ThemeData darkThemeData;
   final TextTheme textTheme;
+  final TextStyle textStyle;
+  final String textFontFamily;
 
   // We use a sentinel value to indicate the system text scale option. By
   // default, return the actual text scale factor, otherwise return the
@@ -60,6 +64,8 @@ class ThemeOptions {
     ThemeData lightThemeData,
     ThemeData darkThemeData,
     TextTheme textTheme,
+    TextStyle textStyle,
+    String textFontFamily,
   }) {
     return ThemeOptions(
       themeMode: themeMode ?? this.themeMode,
@@ -73,6 +79,8 @@ class ThemeOptions {
       lightThemeData: lightThemeData ?? this.lightThemeData,
       darkThemeData: darkThemeData ?? this.darkThemeData,
       textTheme: textTheme ?? this.textTheme,
+      textStyle: textStyle ?? this.textStyle,
+      textFontFamily: textFontFamily ?? this.textFontFamily,
     );
   }
 
@@ -89,7 +97,9 @@ class ThemeOptions {
       selectedScheme == other.selectedScheme &&
       lightThemeData == other.lightThemeData &&
       darkThemeData == other.darkThemeData &&
-      textTheme == other.textTheme;
+      textTheme == other.textTheme &&
+      textStyle == other.textStyle &&
+      textFontFamily == other.textFontFamily;
 
   @override
   int get hashCode => hashValues(
@@ -104,6 +114,8 @@ class ThemeOptions {
         lightThemeData,
         darkThemeData,
         textTheme,
+        textStyle,
+        textFontFamily,
       );
 
   static ThemeOptions of(BuildContext context) {
@@ -234,6 +246,7 @@ class ThemeOptions {
       }(),
       darkThemeData: this.darkThemeData,
       textTheme: this.textTheme,
+      textStyle: this.textStyle,
     );
   }
 
@@ -292,51 +305,49 @@ class ThemeOptions {
   ///When I run textTheme.toString I get
   //.TextStyle(inherit: true, family: Roboto_regular, familyback: [Roboto]),
   String get textThemeAsString {
-    TextTheme textTheme = TextTheme(
-      headline1: GoogleFonts.roboto(),
-      headline2: GoogleFonts.roboto(),
-      headline3: GoogleFonts.roboto(),
-      headline4: GoogleFonts.roboto(),
-      headline5: GoogleFonts.roboto(),
-      headline6: GoogleFonts.roboto(),
-      subtitle1: GoogleFonts.roboto(),
-      subtitle2: GoogleFonts.roboto(),
-      bodyText1: GoogleFonts.roboto(),
-      bodyText2: GoogleFonts.roboto(),
-      caption: GoogleFonts.roboto(),
-      button: GoogleFonts.roboto(),
-      overline: GoogleFonts.roboto(),
-    );
     if (textTheme == null) return '';
 
     String textThemeString = 'static TextTheme _textTheme = TextTheme(\n';
 
     if (textTheme?.headline1 != null)
-      textThemeString += '        headline1: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        headline1: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.headline2 != null)
-      textThemeString += '        headline2: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        headline2: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.headline3 != null)
-      textThemeString += '        headline3: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        headline3: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.headline4 != null)
-      textThemeString += '        headline4: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        headline4: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.headline5 != null)
-      textThemeString += '        headline5: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        headline5: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.headline6 != null)
-      textThemeString += '        headline6: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        headline6: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.subtitle1 != null)
-      textThemeString += '        subtitle1: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        subtitle1: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.subtitle2 != null)
-      textThemeString += '        subtitle2: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        subtitle2: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.bodyText1 != null)
-      textThemeString += '        bodyText1: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        bodyText1: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.bodyText2 != null)
-      textThemeString += '        bodyText2: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        bodyText2: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.caption != null)
-      textThemeString += '        caption: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        caption: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.button != null)
-      textThemeString += '        button: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        button: GoogleFonts.getFont(\'$textFontFamily\'),\n';
     if (textTheme?.overline != null)
-      textThemeString += '        overline: GoogleFonts.roboto(),\n';
+      textThemeString +=
+          '        overline: GoogleFonts.getFont(\'$textFontFamily\'),\n';
 
     textThemeString += '      );\n';
 

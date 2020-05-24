@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 
 import 'package:theme_generator/constants.dart';
+import 'package:theme_generator/pages/material_palette.dart';
 import 'package:theme_generator/theme_app.dart';
 import 'package:theme_generator/data/theme_options.dart';
 import 'package:theme_generator/pages/home.dart';
@@ -32,6 +33,9 @@ class MyApp extends StatelessWidget {
           darkTheme: ThemeAppThemeData.darkThemeData.copyWith(
             platform: ThemeOptions.of(context).platform,
           ),
+          onUnknownRoute: (settings) {
+            return MaterialPageRoute(builder: (_) => MaterialPalette());
+          },
           home: HomePage(),
         );
       }),

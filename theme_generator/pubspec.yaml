@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   google_fonts: ^0.4.0
   tinycolor: ^1.0.2
+  dart_code_viewer: ^0.0.1
 
 
 

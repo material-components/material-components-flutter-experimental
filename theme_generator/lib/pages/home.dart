@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:theme_generator/pages/app_theme_data.dart';
 import 'package:theme_generator/data/theme_options.dart';
 //import 'package:theme_generator/pages/color_picker.dart';
 import 'package:theme_generator/pages/material_palette.dart';
@@ -9,6 +8,7 @@ import 'package:theme_generator/pages/type_scale.dart';
 import 'package:theme_generator/pages/fonts.dart';
 import 'package:theme_generator/pages/shapes.dart';
 import 'package:theme_generator/pages/code.dart';
+import 'package:dart_code_viewer/dart_code_viewer.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
                           UserInterface(),
                           Container(color: Colors.transparent),
                           Container(color: Colors.transparent),
-                          AppThemeData(),
+                          DartCodeViewer(ThemeOptions.of(context).toString()),
                         ],
                       ),
                     ),
@@ -107,9 +107,9 @@ class HomePage extends StatelessWidget {
                     ],
                     pages: [
                       MaterialPalette(),
-                      TypeScale(),
-                      Fonts(),
 //                      TypeScale(),
+                      Fonts(),
+                      TypeScale(),
                       Shapes(),
                       Container(color: Colors.pink),
                       Code(),
