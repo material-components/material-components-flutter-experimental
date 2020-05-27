@@ -61,7 +61,7 @@ class _AdaptiveNavigationScaffoldState
     final NavigationTypeResolver navigationTypeResolver = widget.navigationTypeResolver ?? _defaultNavigationTypeResolver;
     switch(navigationTypeResolver(context)) {
       case NavigationType.bottomNavigation:
-        // Show a bottom app bar
+        // Show a Scaffold with a BottomNavigationBar.
         return Scaffold(
           body: widget.body,
           appBar: AppBar(title: widget.title),
@@ -80,6 +80,7 @@ class _AdaptiveNavigationScaffoldState
           floatingActionButton: widget.floatingActionButton,
         );
       case NavigationType.navigationRail:
+        // Show a Scaffold with a body containing a NavigationRail.
         return Scaffold(
           appBar: AppBar(
             title: widget.title,
@@ -111,6 +112,7 @@ class _AdaptiveNavigationScaffoldState
           ),
         );
       case NavigationType.drawer:
+        // Show a Row containing a Drawer and Scaffold.
         return Row(
           children: [
             Drawer(
