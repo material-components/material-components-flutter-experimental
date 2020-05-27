@@ -111,7 +111,6 @@ class _AdaptiveNavigationScaffoldState
               VerticalDivider(
                 width: 1,
                 thickness: 1,
-                color: Colors.grey[300],
               ),
               Expanded(
                 child: widget.body,
