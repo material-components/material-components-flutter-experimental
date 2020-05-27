@@ -1,4 +1,4 @@
-name: Adaptive Navigation Scaffold Example
+name: adaptive_navigation_scaffold_example
 description: An example to show how to use the adaptive_navigation_scaffold
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -11,6 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  adaptive_navigation_scaffold:
+    path: ../
 
 dev_dependencies:
   flutter_test:

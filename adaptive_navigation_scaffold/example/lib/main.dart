@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:adaptive_navigation_scaffold/scaffold.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,8 +19,12 @@ class MyApp extends StatelessWidget {
 class AdaptiveNavigationScaffoldDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: Use the AdaptiveNavigationScaffold
-    return Scaffold(
+    return AdaptiveNavigationScaffold(
+      currentIndex: 0,
+      destinations: [
+        AdaptiveScaffoldDestination(title: 'Home', icon: Icons.home),
+        AdaptiveScaffoldDestination(title: 'Settings', icon: Icons.settings),
+      ],
       body: Center(
         child: Text(
             'Resize the window to switch between the Navigation Rail and Bottom Navigation'),
