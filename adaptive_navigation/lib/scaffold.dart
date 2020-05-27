@@ -103,7 +103,7 @@ class _AdaptiveNavigationScaffoldState
                     NavigationRailDestination(
                       icon: Icon(destination.icon),
                       label: Text(destination.title),
-                    ),git
+                    ),
                 ],
                 selectedIndex: widget.currentIndex,
                 onDestinationSelected: widget.onNavigationIndexChange ?? (_) {},

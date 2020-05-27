@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:adaptive_navigation_scaffold/scaffold.dart';
+import 'package:adaptive_navigation/scaffold.dart';
 
 void main() {
   runApp(MyApp());
