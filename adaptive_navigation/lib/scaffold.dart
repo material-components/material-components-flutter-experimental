@@ -4,6 +4,15 @@
 
 import 'package:flutter/material.dart';
 
+typedef NavigationType NavigationTypeResolver(BuildContext context);
+
+// The type of navigation to configure to.
+enum NavigationType {
+  bottomNavigation,
+  navigationRail,
+  drawer,
+}
+
 /// See bottomNavigationBarItem or NavigationRailDestination
 class AdaptiveScaffoldDestination {
   final String title;
@@ -28,15 +37,15 @@ class AdaptiveNavigationScaffold extends StatefulWidget {
   final FloatingActionButton floatingActionButton;
   final NavigationTypeResolver navigationTypeResolver;
 
-  AdaptiveNavigationScaffold(
-      {this.title,
-      this.body,
-      @required this.currentIndex,
-      @required this.destinations,
-      this.onNavigationIndexChange,
-      this.floatingActionButton,
-      this.navigationTypeResolver})
-      : assert(currentIndex != null),
+  AdaptiveNavigationScaffold({
+    this.title,
+    this.body,
+    @required this.currentIndex,
+    @required this.destinations,
+    this.onNavigationIndexChange,
+    this.floatingActionButton,
+    this.navigationTypeResolver,
+  })  : assert(currentIndex != null),
         assert(destinations != null);
 
   @override
@@ -58,8 +67,9 @@ class _AdaptiveNavigationScaffoldState
 
   @override
   Widget build(BuildContext context) {
-    final NavigationTypeResolver navigationTypeResolver = widget.navigationTypeResolver ?? _defaultNavigationTypeResolver;
-    switch(navigationTypeResolver(context)) {
+    final NavigationTypeResolver navigationTypeResolver =
+        widget.navigationTypeResolver ?? _defaultNavigationTypeResolver;
+    switch (navigationTypeResolver(context)) {
       case NavigationType.bottomNavigation:
         // Show a Scaffold with a BottomNavigationBar.
         return Scaffold(
@@ -67,12 +77,11 @@ class _AdaptiveNavigationScaffoldState
           appBar: AppBar(title: widget.title),
           bottomNavigationBar: BottomNavigationBar(
             items: [
-              ...widget.destinations.map(
-                    (d) => BottomNavigationBarItem(
-                  icon: Icon(d.icon),
-                  title: Text(d.title),
+              for (final destination in widget.destinations)
+                BottomNavigationBarItem(
+                  icon: Icon(destination.icon),
+                  title: Text(destination.title),
                 ),
-              ),
             ],
             currentIndex: widget.currentIndex,
             onTap: widget.onNavigationIndexChange,
@@ -90,12 +99,11 @@ class _AdaptiveNavigationScaffoldState
               NavigationRail(
                 leading: widget.floatingActionButton,
                 destinations: [
-                  ...widget.destinations.map(
-                        (d) => NavigationRailDestination(
-                      icon: Icon(d.icon),
-                      label: Text(d.title),
-                    ),
-                  ),
+                  for (final destination in widget.destinations)
+                    NavigationRailDestination(
+                      icon: Icon(destination.icon),
+                      label: Text(destination.title),
+                    ),git
                 ],
                 selectedIndex: widget.currentIndex,
                 onDestinationSelected: widget.onNavigationIndexChange ?? (_) {},
@@ -157,15 +165,6 @@ class _AdaptiveNavigationScaffoldState
       widget.onNavigationIndexChange(index);
     }
   }
-}
-
-typedef NavigationType NavigationTypeResolver(BuildContext context);
-
-// The type of navigation to configure to.
-enum NavigationType {
-  bottomNavigation,
-  navigationRail,
-  drawer,
 }
 
 bool _isLargeScreen(BuildContext context) {
