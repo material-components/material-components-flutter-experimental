@@ -37,7 +37,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   final FloatingActionButton floatingActionButton;
   final NavigationTypeResolver navigationTypeResolver;
 
-  AdaptiveNavigationScaffold({
+  const AdaptiveNavigationScaffold({
     this.title,
     this.body,
     @required this.currentIndex,
