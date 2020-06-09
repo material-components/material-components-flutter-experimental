@@ -38,6 +38,7 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
   final NavigationTypeResolver navigationTypeResolver;
 
   const AdaptiveNavigationScaffold({
+    Key key,
     this.title,
     this.body,
     @required this.currentIndex,
@@ -46,7 +47,8 @@ class AdaptiveNavigationScaffold extends StatelessWidget {
     this.floatingActionButton,
     this.navigationTypeResolver,
   })  : assert(currentIndex != null),
-        assert(destinations != null);
+        assert(destinations != null),
+        super(key: key);
 
   NavigationType _defaultNavigationTypeResolver(BuildContext context) {
     if (_isLargeScreen(context)) {
