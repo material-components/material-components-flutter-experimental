@@ -58,17 +58,17 @@ class _HomePageState extends State<HomePage> {
                   child: Card(
                     elevation: 8,
                     child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Line $index',
-                            style: Theme.of(context).textTheme.headline5,
-                          ),
-                          Expanded(child: Container()),
-                          Icon(Icons.camera),
-                          Icon(Icons.face),
-                        ]
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Line $index',
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                        Expanded(child: Container()),
+                        Icon(Icons.camera),
+                        Icon(Icons.face),
+                      ],
                     ),
                   ),
                 ),
