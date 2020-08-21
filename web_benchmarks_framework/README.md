@@ -1,14 +1,7 @@
 # web_benchmarks_framework
 
-A framework for running flutter web benchmarks.
+A minimal framework to run performance tests for flutter apps in Chrome.
+See [web_benchmarks_example](https://github.com/pennzht/material-components-flutter-experimental/tree/develop/web_benchmarks_example) for an example.
 
-## Getting Started
+This package is adapted from [macrobenchmarks](https://github.com/flutter/flutter/tree/master/dev/benchmarks/macrobenchmarks) and [devicelab](https://github.com/flutter/flutter/tree/master/dev/devicelab), the packages used by flutter to run performance tests in Chrome for the new Flutter Gallery.
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
