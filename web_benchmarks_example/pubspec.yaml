@@ -1,7 +1,7 @@
 name: web_benchmarks_example
 description: An example app for web benchmarks testing.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: 'none'
 
 version: 1.0.0+1
 
