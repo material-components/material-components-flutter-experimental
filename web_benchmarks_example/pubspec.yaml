@@ -25,7 +25,7 @@ dependencies:
     sdk: flutter
   web_benchmarks_framework:
     git:
-      # To be updated to the material-components repo.
+      # TODO: update to the material-components repo, after #62 merges.
       url: https://github.com/pennzht/material-components-flutter-experimental.git
       ref: 9bc127b90d9c3844707fac2f9dbd764e60c04de5
       path: web_benchmarks_framework
