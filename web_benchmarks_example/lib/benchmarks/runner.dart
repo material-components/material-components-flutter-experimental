@@ -7,19 +7,20 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:web_benchmarks_framework/recorder.dart';
 import 'package:web_benchmarks_framework/driver.dart';
 import 'package:web_benchmarks_example/main.dart';
-import 'package:web_benchmarks_example/homepage.dart' show textKey, aboutPageKey;
+import 'package:web_benchmarks_example/homepage.dart'
+    show textKey, aboutPageKey;
 import 'package:web_benchmarks_example/aboutpage.dart' show backKey;
 
 /// A recorder that measures frame building durations.
 class AppRecorder extends WidgetRecorder {
-  AppRecorder({@required this.benchmarkName}): super(name: benchmarkName);
+  AppRecorder({@required this.benchmarkName}) : super(name: benchmarkName);
 
   final String benchmarkName;
 
   bool _completed = false;
 
   @override
-  bool shouldContinue () {
+  bool shouldContinue() {
     if (benchmarkName == 'scroll') {
       return profile.shouldContinue();
     } else {
@@ -33,7 +34,7 @@ class AppRecorder extends WidgetRecorder {
       'scroll': automateScrolling,
       'page': automatePaging,
       'tap': automateTapping,
-    } [benchmarkName];
+    }[benchmarkName];
     Future.delayed(Duration(milliseconds: 400), automationFunction);
     return MyApp();
   }
@@ -50,7 +51,7 @@ class AppRecorder extends WidgetRecorder {
   Future<void> automatePaging() async {
     final controller = LiveWidgetController(WidgetsBinding.instance);
     for (int i = 0; i < 10; ++i) {
-      print ('Testing round $i...');
+      print('Testing round $i...');
       await controller.tap(find.byKey(aboutPageKey));
       await animationStops();
       await controller.tap(find.byKey(backKey));
@@ -62,7 +63,7 @@ class AppRecorder extends WidgetRecorder {
   Future<void> automateTapping() async {
     final controller = LiveWidgetController(WidgetsBinding.instance);
     for (int i = 0; i < 10; ++i) {
-      print ('Testing round $i...');
+      print('Testing round $i...');
       await controller.tap(find.byIcon(Icons.add));
       await animationStops();
     }
@@ -76,15 +77,12 @@ class AppRecorder extends WidgetRecorder {
   }
 }
 
-Future<void> main () async {
+Future<void> main() async {
   await runBenchmarks(
     {
-      'scroll':
-        () => AppRecorder(benchmarkName: 'scroll'),
-      'page':
-        () => AppRecorder(benchmarkName: 'page'),
-      'tap':
-        () => AppRecorder(benchmarkName: 'tap'),
+      'scroll': () => AppRecorder(benchmarkName: 'scroll'),
+      'page': () => AppRecorder(benchmarkName: 'page'),
+      'tap': () => AppRecorder(benchmarkName: 'tap'),
     },
   );
 }

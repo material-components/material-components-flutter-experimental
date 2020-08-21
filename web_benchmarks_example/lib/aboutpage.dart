@@ -4,7 +4,7 @@ const backKey = ValueKey('backKey');
 
 class AboutPage extends StatelessWidget {
   @override
-  Widget build (BuildContext context) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -22,4 +22,3 @@ class AboutPage extends StatelessWidget {
     );
   }
 }
-
