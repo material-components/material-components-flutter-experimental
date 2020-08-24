@@ -32,30 +32,53 @@ class AllDemos extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(
-              height: 100,
-              child: FlatButton(
-                child: Text('StaticPinkDemo'),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return StaticPinkDemo();
-                  }));
-                },
+            const SizedBox(height: 100),
+            _DemoTitle(
+              title: 'Static Color',
+              route: MaterialPageRoute(
+                builder: (context) => StaticPinkDemo(),
               ),
             ),
-            SizedBox(
-              height: 100,
-              child: FlatButton(
-                child: Text('ShaderDemo2'),
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return AnimatedSolidColorDemo();
-                  }));
-                },
+            _DemoTitle(
+              title: 'Animated Color Change',
+              route: MaterialPageRoute(
+                builder: (context) => AnimatedSolidColorDemo(),
               ),
             ),
+            _DemoTitle(
+              title: 'Animated Spiral',
+              route: MaterialPageRoute(
+                builder: (context) => AnimatedSpiral(),
+              ),
+            ),
+//            _DemoTitle(
+//              title: 'Animated Protean Clouds',
+//              route: MaterialPageRoute(
+//                builder: (context) => ProteanClouds(),
+//              ),
+//            ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _DemoTitle extends StatelessWidget {
+  _DemoTitle({this.title, this.route});
+
+  final String title;
+  final MaterialPageRoute route;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 100,
+      child: FlatButton(
+        child: Text(title),
+        onPressed: () {
+          Navigator.push(context, route);
+        },
       ),
     );
   }
