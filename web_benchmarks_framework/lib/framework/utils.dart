@@ -304,8 +304,9 @@ Future<Process> startProcess(
 }
 
 Future<void> forceQuitRunningProcesses() async {
-  if (_runningProcesses.isEmpty)
+  if (_runningProcesses.isEmpty) {
     return;
+  }
 
   // Give normally quitting processes a chance to report their exit code.
   await Future<void>.delayed(const Duration(seconds: 1));
@@ -360,11 +361,12 @@ Future<int> _execute(
     stderr: stderr,
     printStdout: printStdout,
     printStderr: printStderr,
-    );
+  );
   final int exitCode = await process.exitCode;
 
-  if (exitCode != 0 && !canFail)
+  if (exitCode != 0 && !canFail) {
     fail('Executable "$executable" failed with exit code $exitCode.');
+  }
 
   return exitCode;
 }

@@ -98,8 +98,9 @@ class _TaskRunner {
       }
 
       Future<TaskResult> futureResult = _performTask();
-      if (taskTimeout != null)
+      if (taskTimeout != null) {
         futureResult = futureResult.timeout(taskTimeout);
+      }
 
       TaskResult result = await futureResult;
 
@@ -139,8 +140,9 @@ class _TaskRunner {
   /// Causes the Dart VM to stay alive until a request to run the task is
   /// received via the VM service protocol.
   void keepVmAliveUntilTaskRunRequested() {
-    if (_taskStarted)
+    if (_taskStarted) {
       throw StateError('Task already started.');
+    }
 
     // Merely creating this port object will cause the VM to stay alive and keep
     // the VM service server running until the port is disposed of.

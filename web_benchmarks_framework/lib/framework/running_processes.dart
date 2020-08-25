@@ -219,7 +219,6 @@ Iterable<RunningProcessInfo> processPsOutput(
     if (!inTableBody || line.isEmpty) {
       continue;
     }
-
     if (processName != null && !line.contains(processName)) {
       continue;
     }
