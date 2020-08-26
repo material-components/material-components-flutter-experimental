@@ -1,15 +1,25 @@
+// Copyright 2018-present the Flutter authors. All Rights Reserved.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'dart:async';
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/services.dart';
-import 'package:shaderexperiment/static.dart';
-
-import 'animated.dart';
 
 class ImageDemo extends StatefulWidget {
   _ImageDemoState createState() => _ImageDemoState();
@@ -18,7 +28,6 @@ class ImageDemo extends StatefulWidget {
 class _ImageDemoState extends State<ImageDemo>
     with SingleTickerProviderStateMixin {
   ui.Image _image;
-  AnimationController _animationController;
 
   Future<ui.Image> _loadUiImage(String imageAssetPath) async {
     final ByteData data = await rootBundle.load(imageAssetPath);
@@ -41,12 +50,6 @@ class _ImageDemoState extends State<ImageDemo>
   }
 
   @override
-  void dispose() {
-    _animationController.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Fragment Shaders')),
@@ -59,8 +62,8 @@ class _ImageDemoState extends State<ImageDemo>
             ),
             if (_image != null)
               SizedBox(
-                width: 200,
-                height: 200,
+                width: 300,
+                height: 300,
                 child: CustomPaint(
                   painter: _ImagePainter(
                     image: _image,
@@ -82,19 +85,25 @@ class _ImagePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    // TODO: Pass image as in input to the shader program.
-
     // This paints an image. Painting with an ImageShader should be like painting with a FragmentShader.
-//    canvas.drawImage(image, Offset.zero, Paint()..shader = ImageShader(image, TileMode.clamp, TileMode.clamp, Matrix4.identity().storage));
-
-    // This paints a red box without a shader, just to make sure the custom painter works.
-//    canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), Paint()..color = Colors.red);
+//    canvas.drawImage(image, Offset.zero, Paint()..shader = ImageShader(image, TileMode.repeated, TileMode.repeated, Matrix4.identity().storage));
 
     // This passes a broken SKSL program to see if the SKSL is being tested by Skia.
 //    canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), Paint()..shader = FragmentShader('void main() {}'));
 
-    // This should produce a simple SKSL program where every pixel is the same color.
-//    canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height), Paint()..shader = FragmentShader('void main(float2 fragCoord, inout half4 fragColor) {fragColor = half4(1.0, 0, 1.0, 1.0);}'));
+    FragmentShader fragmentShader = FragmentShader('''
+        in shader input;
+        
+        void main(float2 fragCoord, inout half4 fragColor) {
+          half4 s = sample(input);
+          fragColor = half4(s.r, 0, s.b, 1.0);
+        }
+      ''');
+    fragmentShader.setImage(image, TileMode.repeated, TileMode.repeated, Matrix4.identity().storage);
+    canvas.drawRect(
+      Offset.zero & size,
+      Paint()..shader = fragmentShader,
+    );
   }
 
   @override
