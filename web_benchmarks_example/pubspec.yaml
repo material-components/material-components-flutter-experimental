@@ -1,0 +1,28 @@
+name: web_benchmarks_example
+description: An example app for web benchmarks testing.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  web_benchmarks_framework:
+    git:
+      # TODO: update to the material-components repo, after #62 merges.
+      url: https://github.com/pennzht/material-components-flutter-experimental.git
+      ref: 9bc127b90d9c3844707fac2f9dbd764e60c04de5
+      path: web_benchmarks_framework
+
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
