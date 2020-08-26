@@ -13,9 +13,8 @@ dependencies:
     sdk: flutter
   web_benchmarks_framework:
     git:
-      # TODO: update to the material-components repo, after #62 merges.
-      url: https://github.com/pennzht/material-components-flutter-experimental.git
-      ref: 9bc127b90d9c3844707fac2f9dbd764e60c04de5
+      url: https://github.com/material-components/material-components-flutter-experimental.git
+      ref: f6ebb4ed3b6489547d9ae58216df9999112be568
       path: web_benchmarks_framework
 
   cupertino_icons: ^0.1.3
