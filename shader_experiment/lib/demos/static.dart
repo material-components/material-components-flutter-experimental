@@ -39,8 +39,8 @@ class PinkSquarePainter extends CustomPainter {
     canvas.drawRect(
       Offset.zero & size,
       Paint()..shader = FragmentShader('''
-        void main(float2 fragCoord, inout half4 fragColor) {
-          fragColor = half4(1.0, 0, 1.0, 1.0);
+        void main(float2 xy, inout half4 color) {
+          color = half4(1.0, 0, 1.0, 1.0);
         }
       '''),
     );

@@ -12,19 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'dart:async';
-import 'dart:typed_data';
-import 'dart:ui' as ui;
+import 'package:shaderexperiment/demos/ui.dart';
 
-import 'package:flutter/services.dart';
-import 'package:shaderexperiment/static.dart';
-
-import 'animated.dart';
-import 'image.dart';
+import 'demos/animated.dart';
+import 'demos/image.dart';
+import 'demos/static.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,66 +33,119 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class AllDemos extends StatelessWidget {
+class AllDemos extends StatefulWidget {
+  @override
+  _AllDemosState createState() => _AllDemosState();
+}
+
+class _AllDemosState extends State<AllDemos> {
+  final List<bool> _expanded = [false, false, false];
+
+  final List<_DemoCategory> _categories = [
+    _DemoCategory(
+      title: 'Static',
+      children: [
+        _DemoTitle(
+          title: 'Pink',
+          builder: (context) => StaticPinkDemo(),
+        ),
+      ],
+      isExpanded: false,
+    ),
+    _DemoCategory(
+      title: 'Animated',
+      children: [
+        _DemoTitle(
+          title: 'Color Change',
+          builder: (context) => AnimatedSolidColorDemo(),
+        ),
+        _DemoTitle(
+          title: 'Spiral',
+          builder: (context) => AnimatedSpiral(),
+        ),
+        _DemoTitle(
+          title: 'Image Upload Wave',
+          builder: (context) => UploadImageAnimationDemo(),
+        ),
+        _DemoTitle(
+          title: 'Image Upload Pulse',
+          builder: (context) => UploadImageAnimationDemo2(),
+        ),
+      ],
+      isExpanded: false,
+    ),
+    _DemoCategory(
+      title: 'UI Demos',
+      children: [
+        _DemoTitle(
+          title: 'Image Sending Demo',
+          builder: (context) => ImageSendDemo(),
+        ),
+      ],
+      isExpanded: false,
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            const SizedBox(height: 100),
-            _DemoTitle(
-              title: 'Static Color',
-              route: MaterialPageRoute(
-                builder: (context) => StaticPinkDemo(),
-              ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ExpansionPanelList(
+              expansionCallback: (panelIndex, isExpanded) {
+                setState(() {
+                  _categories[panelIndex].isExpanded = !isExpanded;
+                });
+              },
+              children: [
+                for (final category in _categories)
+                  ExpansionPanel(
+                    canTapOnHeader: true,
+                    headerBuilder: (context, isExpanded) {
+                      return ListTile(title: Text(category.title));
+                    },
+                    body: Column(
+                      children: category.children,
+                    ),
+                    isExpanded: category.isExpanded,
+                  ),
+              ],
             ),
-            _DemoTitle(
-              title: 'Animated Color Change',
-              route: MaterialPageRoute(
-                builder: (context) => AnimatedSolidColorDemo(),
-              ),
-            ),
-            _DemoTitle(
-              title: 'Animated Spiral',
-              route: MaterialPageRoute(
-                builder: (context) => AnimatedSpiral(),
-              ),
-            ),
-            _DemoTitle(
-              title: 'Image',
-              route: MaterialPageRoute(
-                builder: (context) => ImageDemo(),
-              ),
-            ),
-//            _DemoTitle(
-//              title: 'Animated Protean Clouds',
-//              route: MaterialPageRoute(
-//                builder: (context) => ProteanClouds(),
-//              ),
-//            ),
-          ],
+          ),
         ),
       ),
     );
   }
 }
 
+class _DemoCategory {
+  final String title;
+  final List<Widget> children;
+  bool isExpanded;
+
+  _DemoCategory({
+    this.title,
+    this.children,
+    this.isExpanded = false,
+  });
+}
+
 class _DemoTitle extends StatelessWidget {
-  _DemoTitle({this.title, this.route});
+  _DemoTitle({this.title, this.builder});
 
   final String title;
-  final MaterialPageRoute route;
+  final WidgetBuilder builder;
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 100,
-      child: FlatButton(
-        child: Text(title),
-        onPressed: () {
-          Navigator.push(context, route);
-        },
+    return InkWell(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: builder));
+      },
+      child: ListTile(
+        title: Text(title),
       ),
     );
   }
