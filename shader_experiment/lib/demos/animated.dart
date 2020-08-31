@@ -18,58 +18,47 @@ import '../api.dart';
 class AnimatedSolidColorDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: SizedBox(
-          width: 300,
-          height: 300,
-          child: TickingFragmentShader(
-            sksl: '''
-              uniform float t;
-            
-              void main(float2 xy, inout half4 color) {
-                color = half4(half((sin(t * 3.1415926) + 1.0) / 2.0), 0.0, 1.0, 1.0);
-              }
-            ''',
-          ),
-        ),
-      ),
+    return ShaderDemo(
+      sksl: _colorChangeSksl,
+      builder: (context) => TickingFragmentShader(sksl: _colorChangeSksl),
     );
   }
 }
 
-class AnimatedSpiral extends StatelessWidget {
-
+class AnimatedSpiralDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: SizedBox(
-          width: 300,
-          height: 300,
-          child: TickingFragmentShader(
-            sksl: '''
-        uniform float t;
-
-        void main(float2 p, inout half4 color) {
-            float rad_scale = sin(t + 2.0) / 5.0;
-            float2 in_center = float2(150.0, 150.0);
-            float4 in_colors0 = float4(1.0, 0.0, 1.0, 1.0);
-            float4 in_colors1 = float4(0.0, 1.0, 1.0, 1.0);
-            float2 pp = p - in_center;
-            float radius = length(pp);
-            radius = sqrt(radius);
-            float angle = atan(pp.y / pp.x);
-            float tt = (angle + 3.1415926/2) / (3.1415926);
-            tt += radius * rad_scale;
-            tt = fract(tt);
-            float4 m = in_colors0 * (1-tt) + in_colors1 * tt;
-            color = half4(m);
-        }
-            ''',
-          ),
-        ),
-      ),
+    return ShaderDemo(
+      sksl: _spiralSksl,
+      builder: (context) => TickingFragmentShader(sksl: _spiralSksl),
     );
   }
 }
+
+const String _colorChangeSksl = '''
+  uniform float t;
+
+  void main(float2 xy, inout half4 color) {
+    color = half4(half((sin(t * 3.1415926) + 1.0) / 2.0), 0.0, 1.0, 1.0);
+  }
+''';
+
+const String _spiralSksl = '''
+  uniform float t;
+
+  void main(float2 p, inout half4 color) {
+    float rad_scale = sin(t + 2.0) / 5.0;
+    float2 in_center = float2(150.0, 150.0);
+    float4 in_colors0 = float4(1.0, 0.0, 1.0, 1.0);
+    float4 in_colors1 = float4(0.0, 1.0, 1.0, 1.0);
+    float2 pp = p - in_center;
+    float radius = length(pp);
+    radius = sqrt(radius);
+    float angle = atan(pp.y / pp.x);
+    float tt = (angle + 3.1415926/2) / (3.1415926);
+    tt += radius * rad_scale;
+    tt = fract(tt);
+    float4 m = in_colors0 * (1-tt) + in_colors1 * tt;
+    color = half4(m);
+  }
+''';

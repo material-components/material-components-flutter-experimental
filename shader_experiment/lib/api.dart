@@ -98,3 +98,30 @@ Future<ui.Image> loadUiImage(String imageAssetPath) async {
   });
   return completer.future;
 }
+
+class ShaderDemo extends StatelessWidget {
+  final String sksl;
+  final WidgetBuilder builder;
+
+  ShaderDemo({this.sksl, this.builder});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(
+              width: 300,
+              height: 300,
+              child: builder(context),
+            ),
+            SizedBox(height: 60),
+            SingleChildScrollView(child: Text(sksl)),
+          ],
+        ),
+      ),
+    );
+  }
+}

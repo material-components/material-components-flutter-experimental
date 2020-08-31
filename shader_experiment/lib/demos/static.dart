@@ -15,37 +15,41 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:shaderexperiment/api.dart';
 
 class StaticPinkDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: SizedBox(
-          width: 200,
-          height: 200,
-          child: CustomPaint(
-            painter: PinkSquarePainter(),
-          ),
-        ),
-      ),
+    return ShaderDemo(
+      sksl: _sksl,
+      builder: (context) {
+        return CustomPaint(
+          painter: PinkSquarePainter(_sksl),
+        );
+      },
     );
   }
 }
 
 class PinkSquarePainter extends CustomPainter {
+  final String sksl;
+
+  PinkSquarePainter(this.sksl);
+
   @override
   void paint(Canvas canvas, Size size) {
     canvas.drawRect(
       Offset.zero & size,
-      Paint()..shader = FragmentShader('''
-        void main(float2 xy, inout half4 color) {
-          color = half4(1.0, 0, 1.0, 1.0);
-        }
-      '''),
+      Paint()..shader = FragmentShader(sksl),
     );
   }
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => false;
 }
+
+const _sksl = '''
+  void main(float2 xy, inout half4 color) {
+    color = half4(1.0, 0, 1.0, 1.0);
+  }
+''';

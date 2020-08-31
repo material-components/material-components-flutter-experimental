@@ -39,8 +39,6 @@ class AllDemos extends StatefulWidget {
 }
 
 class _AllDemosState extends State<AllDemos> {
-  final List<bool> _expanded = [false, false, false];
-
   final List<_DemoCategory> _categories = [
     _DemoCategory(
       title: 'Static',
@@ -61,7 +59,7 @@ class _AllDemosState extends State<AllDemos> {
         ),
         _DemoTitle(
           title: 'Spiral',
-          builder: (context) => AnimatedSpiral(),
+          builder: (context) => AnimatedSpiralDemo(),
         ),
         _DemoTitle(
           title: 'Image Upload Wave',
