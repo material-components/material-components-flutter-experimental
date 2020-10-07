@@ -133,7 +133,7 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
                       color: widget.currentIndex == i
                           ? Theme.of(context)!.colorScheme.primary
                           : Theme.of(context)!.colorScheme.onSurface.withOpacity(0.64)),
-                  child: widget.items[i].title,
+                  child: widget.items[i].title!,
                 ),
                 onTap: () {
                   widget.onNavigationIndexChange(i);
@@ -169,7 +169,7 @@ class _RailItem extends StatelessWidget {
   final Animation<double> animation;
   final NavigationRailKind labelKind;
   final bool selected;
-  final Icon icon;
+  final Widget icon;
   final Widget title;
   final VoidCallback onTap;
 
