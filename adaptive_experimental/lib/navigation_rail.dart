@@ -11,10 +11,10 @@ class NavigationRail extends StatefulWidget {
   NavigationRail({
     this.leading,
     this.extendedLeading, // TODO: leading could also be a function that takes in whether its extended or not
-    this.items,
-    this.actions,
-    this.currentIndex,
-    this.onNavigationIndexChange,
+    required this.items,
+    required this.actions,
+    required this.currentIndex,
+    required this.onNavigationIndexChange,
     this.labelKind = NavigationRailKind.Regular,
     this.labelTextStyle,
     this.labelIconTheme,
@@ -22,18 +22,18 @@ class NavigationRail extends StatefulWidget {
     this.selectedLabelIconTheme,
   });
 
-  final Widget leading;
-  final Widget extendedLeading;
+  final Widget? leading;
+  final Widget? extendedLeading;
   final List<BottomNavigationBarItem> items;
   final List<Widget> actions;
   final int currentIndex;
   final ValueChanged<int> onNavigationIndexChange;
 
   final NavigationRailKind labelKind;
-  final TextStyle labelTextStyle;
-  final IconTheme labelIconTheme;
-  final TextStyle selectedLabelTextStyle;
-  final IconTheme selectedLabelIconTheme;
+  final TextStyle? labelTextStyle;
+  final IconTheme? labelIconTheme;
+  final TextStyle? selectedLabelTextStyle;
+  final IconTheme? selectedLabelIconTheme;
 
   @override
   _NavigationRailState createState() => _NavigationRailState();
@@ -150,12 +150,12 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
 
 class _RailItem extends StatelessWidget {
   _RailItem({
-    this.animation,
-    this.labelKind,
-    this.selected,
-    this.icon,
-    this.title,
-    this.onTap,
+    required this.animation,
+    required this.labelKind,
+    required this.selected,
+    required this.icon,
+    required this.title,
+    required this.onTap,
   }) {
     _positionAnimation = CurvedAnimation(
       parent: ReverseAnimation(animation),
@@ -164,7 +164,7 @@ class _RailItem extends StatelessWidget {
     );
   }
 
-  Animation _positionAnimation;
+  late Animation _positionAnimation;
 
   final Animation<double> animation;
   final NavigationRailKind labelKind;
