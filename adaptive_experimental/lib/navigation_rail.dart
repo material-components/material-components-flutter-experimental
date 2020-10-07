@@ -41,7 +41,7 @@ class NavigationRail extends StatefulWidget {
 
 class _NavigationRailState extends State<NavigationRail> with TickerProviderStateMixin {
   List<AnimationController> _controllers = <AnimationController>[];
-  List<Animation<double>> _animations;
+  late List<Animation<double>> _animations;
 
   @override
   void initState() {
