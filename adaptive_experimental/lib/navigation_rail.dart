@@ -230,7 +230,7 @@ class _RailItem extends StatelessWidget {
     }
 
     final colors = Theme
-        .of(context)
+        .of(context)!
         .colorScheme;
 
     return IconTheme(
@@ -246,12 +246,12 @@ class _RailItem extends StatelessWidget {
             onTap: onTap,
             onHover: (_) {},
             splashColor: Theme
-                .of(context)
+                .of(context)!
                 .colorScheme
                 .primary
                 .withOpacity(0.12),
             hoverColor: Theme
-                .of(context)
+                .of(context)!
                 .colorScheme
                 .primary
                 .withOpacity(0.04),

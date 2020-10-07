@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFF6200EE),
         accentColor: Color(0xFF03DAC5),
-        colorScheme: Theme.of(context).colorScheme.copyWith(primary: Color(0xFF6200EE), secondary: Color(0xFF03DAC5)),
+        colorScheme: Theme.of(context)!.colorScheme.copyWith(primary: Color(0xFF6200EE), secondary: Color(0xFF03DAC5)),
       ),
       home: Scene2(),
     );
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, this.title}) : super(key: key);
 
   final String title;
 
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class _SceneItem extends StatelessWidget {
-  _SceneItem({this.routeName, this.title});
+  _SceneItem({required this.routeName, required this.title});
 
   final String routeName;
   final String title;
