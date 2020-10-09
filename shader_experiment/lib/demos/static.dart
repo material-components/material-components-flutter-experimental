@@ -17,14 +17,21 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:shaderexperiment/api.dart';
 
+
+const _staticPinkSksl = '''
+  void main(float2 xy, inout half4 color) {
+    color = half4(1.0, 0, 1.0, 1.0);
+  }
+''';
+
 class StaticPinkDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ShaderDemo(
-      sksl: _sksl,
+      sksl: _staticPinkSksl,
       builder: (context) {
         return CustomPaint(
-          painter: PinkSquarePainter(_sksl),
+          painter: PinkSquarePainter(_staticPinkSksl),
         );
       },
     );
@@ -47,9 +54,3 @@ class PinkSquarePainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => false;
 }
-
-const _sksl = '''
-  void main(float2 xy, inout half4 color) {
-    color = half4(1.0, 0, 1.0, 1.0);
-  }
-''';

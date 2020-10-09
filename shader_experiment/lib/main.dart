@@ -62,12 +62,12 @@ class _AllDemosState extends State<AllDemos> {
           builder: (context) => AnimatedSpiralDemo(),
         ),
         _DemoTitle(
-          title: 'Image Upload Wave',
-          builder: (context) => UploadImageAnimationDemo(),
+          title: 'Image Upload - Wave',
+          builder: (context) => WaveUploadImageDemo(),
         ),
         _DemoTitle(
-          title: 'Image Upload Pulse',
-          builder: (context) => UploadImageAnimationDemo2(),
+          title: 'Image Upload - Pulse',
+          builder: (context) => PulseUploadImageDemo(),
         ),
       ],
       isExpanded: false,

@@ -15,26 +15,6 @@ import 'package:flutter/material.dart';
 
 import '../api.dart';
 
-class AnimatedSolidColorDemo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ShaderDemo(
-      sksl: _colorChangeSksl,
-      builder: (context) => TickingFragmentShader(sksl: _colorChangeSksl),
-    );
-  }
-}
-
-class AnimatedSpiralDemo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ShaderDemo(
-      sksl: _spiralSksl,
-      builder: (context) => TickingFragmentShader(sksl: _spiralSksl),
-    );
-  }
-}
-
 const String _colorChangeSksl = '''
   uniform float t;
 
@@ -62,3 +42,23 @@ const String _spiralSksl = '''
     color = half4(m);
   }
 ''';
+
+class AnimatedSolidColorDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ShaderDemo(
+      sksl: _colorChangeSksl,
+      builder: (context) => TickingFragmentShader(sksl: _colorChangeSksl),
+    );
+  }
+}
+
+class AnimatedSpiralDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ShaderDemo(
+      sksl: _spiralSksl,
+      builder: (context) => TickingFragmentShader(sksl: _spiralSksl),
+    );
+  }
+}

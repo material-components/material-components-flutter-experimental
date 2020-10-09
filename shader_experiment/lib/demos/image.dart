@@ -65,13 +65,12 @@ const String _pulseUploadSksl = '''
   }
 ''';
 
-class UploadImageAnimationDemo extends StatefulWidget {
+class WaveUploadImageDemo extends StatefulWidget {
   @override
-  _UploadImageAnimationDemoState createState() =>
-      _UploadImageAnimationDemoState();
+  _WaveUploadImageDemoState createState() => _WaveUploadImageDemoState();
 }
 
-class _UploadImageAnimationDemoState extends State<UploadImageAnimationDemo> {
+class _WaveUploadImageDemoState extends State<WaveUploadImageDemo> {
   ui.Image _image;
 
   @override
@@ -99,13 +98,12 @@ class _UploadImageAnimationDemoState extends State<UploadImageAnimationDemo> {
   }
 }
 
-class UploadImageAnimationDemo2 extends StatefulWidget {
+class PulseUploadImageDemo extends StatefulWidget {
   @override
-  _UploadImageAnimationDemoState2 createState() =>
-      _UploadImageAnimationDemoState2();
+  _PulseUploadImageDemoState createState() => _PulseUploadImageDemoState();
 }
 
-class _UploadImageAnimationDemoState2 extends State<UploadImageAnimationDemo2> {
+class _PulseUploadImageDemoState extends State<PulseUploadImageDemo> {
   ui.Image _image;
 
   @override
