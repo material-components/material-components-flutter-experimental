@@ -104,10 +104,11 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
   @override
   Widget build(BuildContext context) {
     final leading = widget.leading;
+    final colorScheme = Theme.of(context)!.colorScheme;
     return DefaultTextStyle(
-      style: TextStyle(color: Theme.of(context)!.colorScheme.primary),
+      style: TextStyle(color: colorScheme.primary),
       child: Container(
-        color: Theme.of(context)!.colorScheme.surface,
+        color: colorScheme.surface,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -131,8 +132,8 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
                 title: DefaultTextStyle(
                   style: TextStyle(
                       color: widget.currentIndex == i
-                          ? Theme.of(context)!.colorScheme.primary
-                          : Theme.of(context)!.colorScheme.onSurface.withOpacity(0.64)),
+                          ? colorScheme.primary
+                          : colorScheme.onSurface.withOpacity(0.64)),
                   child: widget.items[i].title!,
                 ),
                 onTap: () {
@@ -229,13 +230,13 @@ class _RailItem extends StatelessWidget {
         break;
     }
 
-    final colors = Theme
-        .of(context)!
-        .colorScheme;
+    final colorScheme = Theme.of(context)!.colorScheme;
 
     return IconTheme(
       data: IconThemeData(
-        color: selected ? colors.primary : colors.onSurface.withOpacity(0.64),
+        color: selected
+            ? colorScheme.primary
+            : colorScheme.onSurface.withOpacity(0.64),
       ),
       child: SizedBox(
         height: 72,
@@ -245,14 +246,10 @@ class _RailItem extends StatelessWidget {
           child: InkResponse(
             onTap: onTap,
             onHover: (_) {},
-            splashColor: Theme
-                .of(context)!
-                .colorScheme
+            splashColor: colorScheme
                 .primary
                 .withOpacity(0.12),
-            hoverColor: Theme
-                .of(context)!
-                .colorScheme
+            hoverColor: colorScheme
                 .primary
                 .withOpacity(0.04),
             child: content,
