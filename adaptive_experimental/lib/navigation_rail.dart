@@ -11,10 +11,10 @@ class NavigationRail extends StatefulWidget {
   NavigationRail({
     this.leading,
     this.extendedLeading, // TODO: leading could also be a function that takes in whether its extended or not
-    this.items,
-    this.actions,
-    this.currentIndex,
-    this.onNavigationIndexChange,
+    required this.items,
+    required this.actions,
+    required this.currentIndex,
+    required this.onNavigationIndexChange,
     this.labelKind = NavigationRailKind.Regular,
     this.labelTextStyle,
     this.labelIconTheme,
@@ -22,18 +22,18 @@ class NavigationRail extends StatefulWidget {
     this.selectedLabelIconTheme,
   });
 
-  final Widget leading;
-  final Widget extendedLeading;
+  final Widget? leading;
+  final Widget? extendedLeading;
   final List<BottomNavigationBarItem> items;
   final List<Widget> actions;
   final int currentIndex;
   final ValueChanged<int> onNavigationIndexChange;
 
   final NavigationRailKind labelKind;
-  final TextStyle labelTextStyle;
-  final IconTheme labelIconTheme;
-  final TextStyle selectedLabelTextStyle;
-  final IconTheme selectedLabelIconTheme;
+  final TextStyle? labelTextStyle;
+  final IconTheme? labelIconTheme;
+  final TextStyle? selectedLabelTextStyle;
+  final IconTheme? selectedLabelIconTheme;
 
   @override
   _NavigationRailState createState() => _NavigationRailState();
@@ -41,7 +41,7 @@ class NavigationRail extends StatefulWidget {
 
 class _NavigationRailState extends State<NavigationRail> with TickerProviderStateMixin {
   List<AnimationController> _controllers = <AnimationController>[];
-  List<Animation<double>> _animations;
+  late List<Animation<double>> _animations;
 
   @override
   void initState() {
@@ -104,10 +104,11 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
   @override
   Widget build(BuildContext context) {
     final leading = widget.leading;
+    final colorScheme = Theme.of(context)!.colorScheme;
     return DefaultTextStyle(
-      style: TextStyle(color: Theme.of(context).colorScheme.primary),
+      style: TextStyle(color: colorScheme.primary),
       child: Container(
-        color: Theme.of(context).colorScheme.surface,
+        color: colorScheme.surface,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -131,9 +132,9 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
                 title: DefaultTextStyle(
                   style: TextStyle(
                       color: widget.currentIndex == i
-                          ? Theme.of(context).colorScheme.primary
-                          : Theme.of(context).colorScheme.onSurface.withOpacity(0.64)),
-                  child: widget.items[i].title,
+                          ? colorScheme.primary
+                          : colorScheme.onSurface.withOpacity(0.64)),
+                  child: widget.items[i].title!,
                 ),
                 onTap: () {
                   widget.onNavigationIndexChange(i);
@@ -150,12 +151,12 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
 
 class _RailItem extends StatelessWidget {
   _RailItem({
-    this.animation,
-    this.labelKind,
-    this.selected,
-    this.icon,
-    this.title,
-    this.onTap,
+    required this.animation,
+    required this.labelKind,
+    required this.selected,
+    required this.icon,
+    required this.title,
+    required this.onTap,
   }) {
     _positionAnimation = CurvedAnimation(
       parent: ReverseAnimation(animation),
@@ -164,12 +165,12 @@ class _RailItem extends StatelessWidget {
     );
   }
 
-  Animation _positionAnimation;
+  late Animation _positionAnimation;
 
   final Animation<double> animation;
   final NavigationRailKind labelKind;
   final bool selected;
-  final Icon icon;
+  final Widget icon;
   final Widget title;
   final VoidCallback onTap;
 
@@ -229,13 +230,13 @@ class _RailItem extends StatelessWidget {
         break;
     }
 
-    final colors = Theme
-        .of(context)
-        .colorScheme;
+    final colorScheme = Theme.of(context)!.colorScheme;
 
     return IconTheme(
       data: IconThemeData(
-        color: selected ? colors.primary : colors.onSurface.withOpacity(0.64),
+        color: selected
+            ? colorScheme.primary
+            : colorScheme.onSurface.withOpacity(0.64),
       ),
       child: SizedBox(
         height: 72,
@@ -245,14 +246,10 @@ class _RailItem extends StatelessWidget {
           child: InkResponse(
             onTap: onTap,
             onHover: (_) {},
-            splashColor: Theme
-                .of(context)
-                .colorScheme
+            splashColor: colorScheme
                 .primary
                 .withOpacity(0.12),
-            hoverColor: Theme
-                .of(context)
-                .colorScheme
+            hoverColor: colorScheme
                 .primary
                 .withOpacity(0.04),
             child: content,

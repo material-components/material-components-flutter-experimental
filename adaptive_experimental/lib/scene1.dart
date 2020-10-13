@@ -48,7 +48,7 @@ class _Scene1State extends State<Scene1> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context)!.textTheme.display1,
             ),
           ],
         ),

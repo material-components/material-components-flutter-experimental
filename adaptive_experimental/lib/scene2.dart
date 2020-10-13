@@ -140,20 +140,20 @@ class _Scene2State extends State<Scene2> {
 
 class AdaptiveScaffold extends StatelessWidget {
   AdaptiveScaffold({
-    Key key,
+    Key? key,
     this.title,
-    this.body,
-    this.actions,
-    this.navigationItems,
-    this.currentIndex,
-    this.onNavigationIndexChange,
-    this.navigationRailKind,
+    required this.body,
+    required this.actions,
+    required this.navigationItems,
+    required this.currentIndex,
+    required this.onNavigationIndexChange,
+    required this.navigationRailKind,
     this.bottomNavigationKind,
     this.floatingActionButton,
     this.extendedFloatingActionButton,
   });
 
-  final Widget title;
+  final Widget? title;
   final Widget body;
   final List<Widget> actions;
   final List<BottomNavigationBarItem> navigationItems;
@@ -161,13 +161,13 @@ class AdaptiveScaffold extends StatelessWidget {
   final ValueChanged<int> onNavigationIndexChange;
 
   final NavigationRailKind navigationRailKind;
-  final BottomNavigationKind bottomNavigationKind;
-  final Widget floatingActionButton;
-  final Widget extendedFloatingActionButton;
+  final BottomNavigationKind? bottomNavigationKind;
+  final Widget? floatingActionButton;
+  final Widget? extendedFloatingActionButton;
 
   @override
   Widget build(BuildContext context) {
-    bool isDesktop = MediaQuery.of(context).size.width > 600;
+    bool isDesktop = MediaQuery.of(context)!.size.width > 600;
     return isDesktop
         ? Scaffold(
       backgroundColor: Colors.white,
