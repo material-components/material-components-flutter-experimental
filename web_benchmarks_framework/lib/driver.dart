@@ -11,8 +11,6 @@ import 'recorder.dart';
 
 typedef RecorderFactory = Recorder Function();
 
-const bool isCanvasKit = bool.fromEnvironment('FLUTTER_WEB_USE_SKIA', defaultValue: false);
-
 /// List of all benchmarks that run in the devicelab.
 ///
 /// When adding a new benchmark, add it to this map. Make sure that the name
@@ -21,6 +19,13 @@ Map<String, RecorderFactory> _benchmarks;
 
 final LocalBenchmarkServerClient _client = LocalBenchmarkServerClient();
 
+/// Starts a local benchmark client to run [benchmarks].
+///
+/// Usually used in combination with a benchmark server, which orders the
+/// client to run each benchmark in order.
+///
+/// When used without a server, prompts the user to select a benchmark to
+/// run next.
 Future<void> runBenchmarks(Map<String, RecorderFactory> benchmarks) async {
   assert(benchmarks != null);
 
