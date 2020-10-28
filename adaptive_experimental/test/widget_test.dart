@@ -22,6 +22,7 @@ void main() {
     await tester.pump();
 
     expect(find.byIcon(Icons.favorite_border), findsNWidgets(4));
+    expect(find.byIcon(Icons.favorite), findsOneWidget);
     expect(find.text('First'), findsNothing);
   });
 }
