@@ -13,7 +13,7 @@ import 'package:adaptive_starter/main.dart';
 const _desktopSize = Size(700, 700);
 const _mobileSize = Size(500, 500);
 
-bool _isFavoriteIcon(IconData icon) =>
+bool _isFavoriteIcon(IconData? icon) =>
     {Icons.favorite_border, Icons.favorite}.contains(icon);
 
 void main() {
