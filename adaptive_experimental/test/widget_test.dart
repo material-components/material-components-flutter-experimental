@@ -10,20 +10,27 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:adaptive_starter/main.dart';
 
+const _desktopSize = Size(700, 700);
+const _mobileSize = Size(500, 500);
+
 void main() {
-  testWidgets('Adaptive navigation rail has correct logic under different sizes',
-      (WidgetTester tester) async {
-    final devicePixelRatio = tester.binding.window.devicePixelRatio;
+  for (final size in [_desktopSize, _mobileSize]) {
+    final testName = 'Adaptive navigation rail behaves correctly under $size';
+    testWidgets(testName, (WidgetTester tester) async {
+      final devicePixelRatio = tester.binding.window.devicePixelRatio;
 
-    tester.binding.window.physicalSizeTestValue = Size(700, 700) * devicePixelRatio;
-    await tester.pumpWidget(MyApp());
+      tester.binding.window.physicalSizeTestValue = size * devicePixelRatio;
+      await tester.pumpWidget(MyApp());
 
-    await tester.tap(find.text('Regular'));
-    await tester.pump();
+      await tester.tap(find.text('Regular'));
+      await tester.pump();
 
-    expect(find.byIcon(Icons.favorite_border), findsNWidgets(4));
-    expect(find.byIcon(Icons.favorite), findsOneWidget);
-    expect(find.byWidgetPredicate((widget) => widget is Icon && widget.icon == Icons.favorite), findsOneWidget);
-    expect(find.text('First'), findsNothing);
-  });
+      expect(find.byIcon(Icons.favorite_border), findsNWidgets(4));
+      expect(find.byIcon(Icons.favorite), findsOneWidget);
+      expect(find.byWidgetPredicate((widget) => widget is Icon &&
+          widget.icon == Icons.favorite), findsOneWidget);
+      // expect(find.text('First'), findsNothing);
+
+    });
+  }
 }
