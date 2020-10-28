@@ -16,8 +16,8 @@ void main() {
     tester.binding.window.physicalSizeTestValue = Size(700, 700);
     await tester.pumpWidget(MyApp());
 
-    tester.tap(find.text('Regular'));
-    tester.pump();
+    await tester.tap(find.text('Regular'));
+    await tester.pump();
 
     expect(find.byIcon(Icons.favorite_border), findsNWidgets(5));
     expect(find.text('First'), findsNothing);
