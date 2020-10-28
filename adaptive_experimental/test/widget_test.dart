@@ -13,6 +13,8 @@ import 'package:adaptive_starter/main.dart';
 const _desktopSize = Size(700, 700);
 const _mobileSize = Size(500, 500);
 
+bool _isFavoriteIcon(IconData icon) => {Icons.favorite_border, Icons.favorite}.contains(icon);
+
 void main() {
   for (final size in [_desktopSize, _mobileSize]) {
     final testName = 'Adaptive navigation rail behaves correctly under $size';
@@ -25,12 +27,11 @@ void main() {
       await tester.tap(find.text('Regular'));
       await tester.pump();
 
-      expect(find.byIcon(Icons.favorite_border), findsNWidgets(4));
-      expect(find.byIcon(Icons.favorite), findsOneWidget);
-      expect(find.byWidgetPredicate((widget) => widget is Icon &&
-          widget.icon == Icons.favorite), findsOneWidget);
-      // expect(find.text('First'), findsNothing);
+      final iconWidgets = find.byWidgetPredicate(
+        (widget) => widget is Icon && _isFavoriteIcon(widget.icon),
+      );
 
+      expect(iconWidgets, findsNWidgets(5));
     });
   }
 }
