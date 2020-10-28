@@ -13,7 +13,8 @@ import 'package:adaptive_starter/main.dart';
 const _desktopSize = Size(700, 700);
 const _mobileSize = Size(500, 500);
 
-bool _isFavoriteIcon(IconData icon) => {Icons.favorite_border, Icons.favorite}.contains(icon);
+bool _isFavoriteIcon(IconData icon) =>
+    {Icons.favorite_border, Icons.favorite}.contains(icon);
 
 void main() {
   for (final size in [_desktopSize, _mobileSize]) {
@@ -24,14 +25,26 @@ void main() {
       tester.binding.window.physicalSizeTestValue = size * devicePixelRatio;
       await tester.pumpWidget(MyApp());
 
-      await tester.tap(find.text('Regular'));
-      await tester.pump();
-
-      final iconWidgets = find.byWidgetPredicate(
+      final iconWidgetFinder = find.byWidgetPredicate(
         (widget) => widget is Icon && _isFavoriteIcon(widget.icon),
       );
 
-      expect(iconWidgets, findsNWidgets(5));
+      expect(iconWidgetFinder, findsNWidgets(5));
+
+      var iconWidgets = iconWidgetFinder.evaluate().toList();
+
+      expect((iconWidgets[0].widget as Icon).icon, Icons.favorite_border);
+      expect((iconWidgets[1].widget as Icon).icon, Icons.favorite_border);
+      expect((iconWidgets[2].widget as Icon).icon, Icons.favorite);
+
+      await tester.tap(iconWidgetFinder.first);
+      await tester.pump();
+
+      iconWidgets = iconWidgetFinder.evaluate().toList();
+
+      expect((iconWidgets[0].widget as Icon).icon, Icons.favorite);
+      expect((iconWidgets[1].widget as Icon).icon, Icons.favorite_border);
+      expect((iconWidgets[2].widget as Icon).icon, Icons.favorite_border);
     });
   }
 }
