@@ -13,13 +13,15 @@ import 'package:adaptive_starter/main.dart';
 void main() {
   testWidgets('Adaptive navigation rail has correct logic under different sizes',
       (WidgetTester tester) async {
-    tester.binding.window.physicalSizeTestValue = Size(700, 700);
+    final devicePixelRatio = tester.binding.window.devicePixelRatio;
+
+    tester.binding.window.physicalSizeTestValue = Size(700, 700) * devicePixelRatio;
     await tester.pumpWidget(MyApp());
 
     await tester.tap(find.text('Regular'));
     await tester.pump();
 
-    expect(find.byIcon(Icons.favorite_border), findsNWidgets(5));
+    expect(find.byIcon(Icons.favorite_border), findsNWidgets(4));
     expect(find.text('First'), findsNothing);
   });
 }
