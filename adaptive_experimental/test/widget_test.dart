@@ -10,21 +10,41 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:adaptive_starter/main.dart';
 
+const _desktopSize = Size(700, 700);
+const _mobileSize = Size(500, 500);
+
+bool _isFavoriteIcon(IconData? icon) =>
+    {Icons.favorite_border, Icons.favorite}.contains(icon);
+
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
+  for (final size in [_desktopSize, _mobileSize]) {
+    final testName = 'Adaptive navigation rail behaves correctly under $size';
+    testWidgets(testName, (WidgetTester tester) async {
+      final devicePixelRatio = tester.binding.window.devicePixelRatio;
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+      tester.binding.window.physicalSizeTestValue = size * devicePixelRatio;
+      await tester.pumpWidget(MyApp());
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+      final iconWidgetFinder = find.byWidgetPredicate(
+        (widget) => widget is Icon && _isFavoriteIcon(widget.icon),
+      );
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-  });
+      expect(iconWidgetFinder, findsNWidgets(5));
+
+      var iconWidgets = iconWidgetFinder.evaluate().toList();
+
+      expect((iconWidgets[0].widget as Icon).icon, Icons.favorite_border);
+      expect((iconWidgets[1].widget as Icon).icon, Icons.favorite_border);
+      expect((iconWidgets[2].widget as Icon).icon, Icons.favorite);
+
+      await tester.tap(iconWidgetFinder.first);
+      await tester.pump();
+
+      iconWidgets = iconWidgetFinder.evaluate().toList();
+
+      expect((iconWidgets[0].widget as Icon).icon, Icons.favorite);
+      expect((iconWidgets[1].widget as Icon).icon, Icons.favorite_border);
+      expect((iconWidgets[2].widget as Icon).icon, Icons.favorite_border);
+    });
+  }
 }
