@@ -1,6 +1,6 @@
 import 'dart:convert' show JsonEncoder;
 
-import 'package:web_benchmarks_framework/server.dart';
+import 'package:web_benchmarks/server.dart';
 
 Future<void> main() async {
   final taskResult = await runWebBenchmark(
