@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  web_benchmarks: ^0.2.2
+  web_benchmarks: ^0.0.2
 
   cupertino_icons: ^0.1.3
 
