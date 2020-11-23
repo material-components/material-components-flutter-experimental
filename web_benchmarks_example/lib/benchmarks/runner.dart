@@ -4,8 +4,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:web_benchmarks_framework/recorder.dart';
-import 'package:web_benchmarks_framework/driver.dart';
 import 'package:web_benchmarks_example/main.dart';
 import 'package:web_benchmarks_example/homepage.dart'
     show textKey, aboutPageKey;
