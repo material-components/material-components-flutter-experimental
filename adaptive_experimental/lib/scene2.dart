@@ -167,7 +167,7 @@ class AdaptiveScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isDesktop = MediaQuery.of(context)!.size.width > 600;
+    bool isDesktop = MediaQuery.of(context).size.width > 600;
     return isDesktop
         ? Scaffold(
       backgroundColor: Colors.white,

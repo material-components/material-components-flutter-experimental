@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFF6200EE),
         accentColor: Color(0xFF03DAC5),
-        colorScheme: Theme.of(context)!.colorScheme.copyWith(primary: Color(0xFF6200EE), secondary: Color(0xFF03DAC5)),
+        colorScheme: Theme.of(context).colorScheme.copyWith(primary: Color(0xFF6200EE), secondary: Color(0xFF03DAC5)),
       ),
       home: Scene2(),
     );

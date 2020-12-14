@@ -104,7 +104,7 @@ class _NavigationRailState extends State<NavigationRail> with TickerProviderStat
   @override
   Widget build(BuildContext context) {
     final leading = widget.leading;
-    final colorScheme = Theme.of(context)!.colorScheme;
+    final colorScheme = Theme.of(context).colorScheme;
     return DefaultTextStyle(
       style: TextStyle(color: colorScheme.primary),
       child: Container(
@@ -230,7 +230,7 @@ class _RailItem extends StatelessWidget {
         break;
     }
 
-    final colorScheme = Theme.of(context)!.colorScheme;
+    final colorScheme = Theme.of(context).colorScheme;
 
     return IconTheme(
       data: IconThemeData(
