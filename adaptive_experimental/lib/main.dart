@@ -39,9 +39,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class _SceneItem extends StatelessWidget {
-  _SceneItem({this.routeName, this.title});
+  _SceneItem({required this.routeName, required this.title});
 
   final String routeName;
   final String title;
