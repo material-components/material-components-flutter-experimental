@@ -1,0 +1,11 @@
+# load("//third_party:third_party.bzl", "load_third_party_libraries")
+
+workspace(name = "fragment-shader-helper")
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "glslang",
+    urls = ["https://github.com/KhronosGroup/glslang.git"],
+    # sha256 = "..."
+)
