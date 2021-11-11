@@ -1,0 +1,21 @@
+# load("//third_party:third_party.bzl", "load_third_party_libraries")
+
+workspace(name = "fragment_shader_manager")
+
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
+git_repository(
+    name = "rules_vulkan",
+    remote = "https://github.com/jadarve/rules_vulkan.git",
+    tag = "v0.0.2"
+)
+
+load("@rules_vulkan//vulkan:repositories.bzl", "vulkan_repositories")
+vulkan_repositories()
+
+# TODO: prefer http_archive
+git_repository(
+    name = "glslang",
+    remote = "https://github.com/KhronosGroup/glslang.git",
+    tag = "11.6.0"
+)
