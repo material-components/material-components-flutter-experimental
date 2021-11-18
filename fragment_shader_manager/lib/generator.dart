@@ -101,8 +101,9 @@ SplayTreeMap<int, UniformData> _parseUniforms(List<String> glslLines) {
           final name = chunks[chunks.length - 1];
           uniformsMap[locationIndex] = UniformData(
             type: _glslTypeToFlutterType(type),
-            name: _glslNameToFlutterName(name),
-            toFloats: _glslTypeToFlutterFloatFunction(type),
+            name: _glslNameToFlutterName(name.replaceAll(';', '')),
+            toFloatTemplatePrefix: _glslTypeToFlutterFloatTemplatePrefix(type),
+            toFloatTemplateSuffix: _glslTypeToFlutterFloatTemplateSuffix(type),
           );
         } catch (e) {
           throw FormatException('Invalid GLSL: $e');
@@ -132,35 +133,55 @@ const _glslTypeToFlutterTypeMap = <String, String>{
   'mat4x4': 'Matrix4',
 };
 
-const _glslTypeToFlutterFloatFunctions = <String, String>{
-  'float': '(t) => [t]',
-  'vec2': '(t) => t.storage',
-  'vec3': '(t) => t.storage',
-  'vec4': '(t) => t.storage',
-  'mat2x2': '(t) => t.storage',
-  'mat3x3': '(t) => t.storage',
-  'mat4x4': '(t) => t.storage',
-};
-
 String _glslNameToFlutterName(String type) => type.camelCase;
 
-String _glslTypeToFlutterFloatFunction(String type) {
-  final flutterFunction = _glslTypeToFlutterFloatFunctions[type];
-  if (flutterFunction == null) {
+String _glslTypeToFlutterFloatTemplatePrefix(String type) {
+  final template = _glslTypeToFlutterFloatTemplatePrefixes[type];
+  if (template == null) {
     throw FormatException('Unsupported uniform type: $type');
   }
-  return flutterFunction;
+  return template;
 }
+const _glslTypeToFlutterFloatTemplatePrefixes = <String, String>{
+  'float': '[',
+  'vec2': _vectorOrMatrixTemplatePrefix,
+  'vec3': _vectorOrMatrixTemplatePrefix,
+  'vec4': _vectorOrMatrixTemplatePrefix,
+  'mat2x2': _vectorOrMatrixTemplatePrefix,
+  'mat3x3': _vectorOrMatrixTemplatePrefix,
+  'mat4x4': _vectorOrMatrixTemplatePrefix,
+};
+const _vectorOrMatrixTemplatePrefix = '';
+
+String _glslTypeToFlutterFloatTemplateSuffix(String type) {
+  final template = _glslTypeToFlutterFloatTemplateSuffixes[type];
+  if (template == null) {
+    throw FormatException('Unsupported uniform type: $type');
+  }
+  return template;
+}
+const _glslTypeToFlutterFloatTemplateSuffixes = <String, String>{
+  'float': ']',
+  'vec2': _vectorOrMatrixTemplateSuffix,
+  'vec3': _vectorOrMatrixTemplateSuffix,
+  'vec4': _vectorOrMatrixTemplateSuffix,
+  'mat2x2': _vectorOrMatrixTemplateSuffix,
+  'mat3x3': _vectorOrMatrixTemplateSuffix,
+  'mat4x4': _vectorOrMatrixTemplateSuffix,
+};
+const _vectorOrMatrixTemplateSuffix = '.storage';
 
 /// Data needed by manager related to uniforms.
 class UniformData {
   UniformData({
     required this.type,
     required this.name,
-    required this.toFloats,
+    required this.toFloatTemplatePrefix,
+    required this.toFloatTemplateSuffix,
   });
 
   final String type;
   final String name;
-  final String toFloats;
+  final String toFloatTemplatePrefix;
+  final String toFloatTemplateSuffix;
 }

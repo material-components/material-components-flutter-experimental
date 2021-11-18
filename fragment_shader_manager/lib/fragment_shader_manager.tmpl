@@ -4,62 +4,59 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:vector_math/vector_math_64.dart';
 
 /// A class for managing [FragmentProgram] that includes a pre-transpiled
 /// shader program into SPIR-V.
-///
-/// Words in SPIR-V are 32 bits. Every 4 elements in this list represents 1
-/// SPIR-V word. See https://www.khronos.org/registry/SPIR-V/.
 class FragmentShaderManager {
-  FragmentShaderManager.{{constructorName}}) {
-    _program = FragmentProgram(spirv: spirvByteBuffer);
+  FragmentShaderManager.{{constructorName}}() {
+    _program = ui.FragmentProgram(spirv: spirvByteBuffer);
   }
 
   /// Creates a shader with the original program and optional uniforms.
-  ///
+  /// 
   /// A new shader must be made whenever the uniforms are updated.
   shader(
-    {{#uniforms.entries}}
-      '{{value.type}}' '{{value.name}}'
-    {{/uniforms.entries}}
+  {{#uniforms.entries}}
+    {{value.type}} {{value.name}},
+  {{/uniforms.entries}}
   ) {
     return _program.shader(
-      floatUniforms: Uint32List.from(
-        {{#uniforms.entries}}
-          ...{{value.toFloats}}({{value.name}}),
-        {{/uniforms.entries}}
-      ),
+      floatUniforms: Float32List.fromList([
+      {{#uniforms.entries}}
+        ...{{value.toFloatTemplatePrefix}}{{value.name}}{{value.toFloatTemplateSuffix}},
+      {{/uniforms.entries}}
+      ]),
       // TODO(clocksmith): Add sampler uniforms.
-    )
+    );
   }
   
-  late FragmentProgram _program;
+  late ui.FragmentProgram _program;
 
-  /// Direct access to the [FragmentProgram] that this class manages.
+  /// Direct access to the [ui.FragmentProgram] that this class manages.
   /// 
   /// In general, this is not needed, but may be useful for debugging or edge cases.
-  FragmentProgram get program => _program;
+  ui.FragmentProgram get program => _program;
 
   /// Direct access to the source GLSL that was used to generate this class.
   /// 
   /// In general, this is not needed, but may be useful for debugging or edge cases.
   String get glsl => _glslString;
 
-  /// Direct access to the SPIR-V Assembly string.
-  /// 
-  /// In general, this is not needed, but may be useful for debugging or edge cases.
-  String get spvasm => _spvasmString;
-
   /// Direct access to the the SPIR-V bytecode that was used to generate this class.
   /// 
   /// In general, this is not needed, but may be useful for debugging or edge cases.
-  ByteBuffer get spirvByteBuffer => Uint8List.fromList(spirvByteList).buffer;
+  ///
+  /// Words in SPIR-V are 32 bits. Every 4 elements in this list represents 1
+  /// SPIR-V word. See https://www.khronos.org/registry/SPIR-V/.
+  ByteBuffer get spirvByteBuffer => Uint8List.fromList(_spirvByteList).buffer;
 }
 
-const _glslString = {{glslString}};
-const _spirvByteList = {{spirvByteList}};
+const _glslString = '''
+{{glslString}}
+''';
 
-// TODO(clo)
+const _spirvByteList = {{spirvByteList}};
