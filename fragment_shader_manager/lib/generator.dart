@@ -9,9 +9,33 @@ import 'package:args/args.dart';
 import 'package:mustache/mustache.dart';
 import 'package:recase/recase.dart';
 
+/// Input file prefix for the GLSL and SPV.
+/// 
+/// These files must be siblings in the same folder.
+/// 
+/// If the files are named:
+/// `my_shader.glsl`
+/// `my_shader.spv`
+/// 
+/// then `my_program` should be passed here
 const inputFilePrefixOption = 'input_file_prefix';
+
+/// Output prefix for the generated dart file.
+/// 
+/// For example, if `cool_shader` is passed, then the output file will be
+/// `cool_shader.g.dart`.
 const outputFilePrefixOption = 'output_file_prefix';
+
+/// If true, the formatting of the spir-v byte array will use 4 bytes per line.
 const formatWithNewlinesFlag = 'format_with_newlines';
+
+/// If true, a const string representing the GLSL program will be added to the
+/// generated class.
+const glslAsConstFlag = 'glsl_as_const';
+
+/// If true, a doc comment representing the GLSL program will be added to the
+/// generated class.
+const glslAsDocCommentFlag = 'glsl_as_doc_comment';
 
 const space = ' ';
 const twoSpaces = '  ';
@@ -22,7 +46,9 @@ Future<void> main(List<String> arguments) async {
   final parser = ArgParser()
     ..addOption(inputFilePrefixOption, abbr: 'i')
     ..addOption(outputFilePrefixOption, abbr: 'o')
-    ..addFlag(formatWithNewlinesFlag, abbr: 'f', defaultsTo: false);
+    ..addFlag(formatWithNewlinesFlag, abbr: 'f', defaultsTo: false)
+    ..addFlag(glslAsConstFlag, defaultsTo: false)
+    ..addFlag(glslAsDocCommentFlag, defaultsTo: true);
   final argResults = parser.parse(arguments);
 
   // Read in the glsl as a string and spirv binary as a list of bytes.
@@ -32,6 +58,7 @@ Future<void> main(List<String> arguments) async {
   final glslPath = '$inputFilePrefix.glsl';
   print('Reading GLSL string from $glslPath');
   final glslString = await File(glslPath).readAsString();
+  final glslDocComment = glslString.split('\n').map((e) => '/// ' + e).join('\n');
 
   final spvPath = '$inputFilePrefix.spv';
   print('Reading SPIR-V bytes from $spvPath');
@@ -66,8 +93,12 @@ Future<void> main(List<String> arguments) async {
   );
   final generatedDartString = template.renderString({
     'generatedCodeHeader': generatedCodeHeader,
+    'glslAsConstFlag': argResults[glslAsConstFlag],
     'glslString': glslString,
+    'glslAsDocCommentFlag': argResults[glslAsDocCommentFlag],
+    'glslDocComment': glslDocComment,
     'spirvByteList': spirvByteList,
+    'byteCount': byteCount,
     'uniforms': uniforms,
     'constructorName': constructorName,
   });
@@ -86,27 +117,32 @@ SplayTreeMap<int, UniformData> _parseUniforms(List<String> glslLines) {
   final uniformsMap = SplayTreeMap<int, UniformData>();
 
   // Looking for lines like: layout(location = 1) uniform float u_time;
-  final spacelessLocationLineStart = 'layout(location';
+  const spacelessLocationLineStart = 'layout(location';
   for (final line in glslLines) {
+    // TODO(clocksmith): ignore comments that are part of valid lines.
+    if (line.startsWith('//')) continue;
+
     if (line.contains(' uniform ')) {
-      int? locationIndex;
+      int? location;
       final spacelessLine = line.replaceAll(' ', '');
       if (spacelessLine.startsWith(spacelessLocationLineStart)) {
-        locationIndex = int.tryParse(
-          spacelessLine[spacelessLocationLineStart.length + 1]);
-        if (locationIndex == null) throw FormatException('Invalid GLSL');
         final chunks = line.split(' ');
+        // TODO(clocksmith): check chunks for proper uniform declaration
+        location = int.tryParse(chunks[2].replaceAll(')', ''));
+        if (location == null) throw FormatException('Invalid GLSL line: $line');
+        
         try {
-          final type = chunks[chunks.length - 2];
-          final name = chunks[chunks.length - 1];
-          uniformsMap[locationIndex] = UniformData(
+          final type = chunks[4];
+          final name = chunks[5];
+          uniformsMap[location] = UniformData(
             type: _glslTypeToFlutterType(type),
             name: _glslNameToFlutterName(name.replaceAll(';', '')),
             toFloatTemplatePrefix: _glslTypeToFlutterFloatTemplatePrefix(type),
             toFloatTemplateSuffix: _glslTypeToFlutterFloatTemplateSuffix(type),
+            defaultValue: _glslTypeToFlutterDefaultValue(type),
           );
         } catch (e) {
-          throw FormatException('Invalid GLSL: $e');
+          throw FormatException('Invalid GLSL: $line $e');
         }
       }
     }
@@ -115,6 +151,8 @@ SplayTreeMap<int, UniformData> _parseUniforms(List<String> glslLines) {
   return uniformsMap;
 }
 
+String _glslNameToFlutterName(String type) => type.camelCase;
+
 String _glslTypeToFlutterType(String type) {
   final flutterType = _glslTypeToFlutterTypeMap[type];
   if (flutterType == null) {
@@ -122,7 +160,6 @@ String _glslTypeToFlutterType(String type) {
   }
   return flutterType;
 }
-
 const _glslTypeToFlutterTypeMap = <String, String>{
   'float': 'double',
   'vec2': 'Vector2',
@@ -132,8 +169,6 @@ const _glslTypeToFlutterTypeMap = <String, String>{
   'mat3x3': 'Matrix3',
   'mat4x4': 'Matrix4',
 };
-
-String _glslNameToFlutterName(String type) => type.camelCase;
 
 String _glslTypeToFlutterFloatTemplatePrefix(String type) {
   final template = _glslTypeToFlutterFloatTemplatePrefixes[type];
@@ -171,17 +206,36 @@ const _glslTypeToFlutterFloatTemplateSuffixes = <String, String>{
 };
 const _vectorOrMatrixTemplateSuffix = '.storage';
 
-/// Data needed by manager related to uniforms.
+String _glslTypeToFlutterDefaultValue(String type) {
+  final template = _glslTypeToFlutterDefaultValues[type];
+  if (template == null) {
+    throw FormatException('Unsupported uniform type: $type');
+  }
+  return template;
+}
+const _glslTypeToFlutterDefaultValues = <String, String>{
+  'float': '<double>[0]',
+  'vec2': '<double>[0, 0]',
+  'vec3': '<double>[0, 0, 0]',
+  'vec4': '<double>[0, 0, 0, 0]',
+  'mat2x2': '<double>[0, 0, 0, 0]',
+  'mat3x3': '<double>[0, 0, 0, 0, 0, 0, 0, 0, 0]',
+  'mat4x4': '<double>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]',
+};
+
+/// Template data needed by by generator related to uniforms.
 class UniformData {
   UniformData({
     required this.type,
     required this.name,
     required this.toFloatTemplatePrefix,
     required this.toFloatTemplateSuffix,
+    required this.defaultValue,
   });
 
   final String type;
   final String name;
   final String toFloatTemplatePrefix;
   final String toFloatTemplateSuffix;
+  final String defaultValue;
 }

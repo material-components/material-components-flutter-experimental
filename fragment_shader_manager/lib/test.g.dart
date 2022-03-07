@@ -11,29 +11,33 @@ import 'package:vector_math/vector_math_64.dart';
 
 /// A class for managing [FragmentProgram] that includes a pre-transpiled
 /// shader program into SPIR-V.
-/// 
-/// - See [_spirvByteList] for the SPIR-V bytecode.
-/// - See [_glslString] for the original GLSL source code.
 class FragmentShaderManager {
-  FragmentShaderManager.test() {
-    _program = ui.FragmentProgram(spirv: spirvByteBuffer);
+  static Future<FragmentShaderManager> test() async {
+    final manager = FragmentShaderManager._();
+    await manager.compile();
+    return manager;
+  }
+
+  FragmentShaderManager._();
+
+  Future<void> compile() async {
+    _program = await ui.FragmentProgram.compile(spirv: spirvByteBuffer);
   }
 
   /// Creates a shader with the original program and optional uniforms.
   /// 
   /// A new shader must be made whenever the uniforms are updated.
-  shader(
-    Vector2 uResolution,
-    double uTime,
-    double uRad,
-  ) {
+  shader({
+    Vector2? uResolution,
+    double? uTime,
+    double? uRad,
+  }) {
     return _program.shader(
       floatUniforms: Float32List.fromList([
-        ...uResolution.storage,
-        ...[uTime],
-        ...[uRad],
+        ...uResolution != null ? uResolution.storage : [0, 0],
+        ...uTime != null ? [uTime] : [0],
+        ...uRad != null ? [uRad] : [0],
       ]),
-      // TODO(clocksmith): Add sampler uniforms.
     );
   }
   

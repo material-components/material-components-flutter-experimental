@@ -18,9 +18,7 @@ See the [examples](##Example-use-cases) below for more info on how to use [Shade
 
 ## Setup
 
-This package uses Bazel.
-
-- See [Installing Bazel](https://docs.bazel.build/versions/0.18.1/install.html)
+TODO
 
 ### How to use this package
 
@@ -28,6 +26,8 @@ TODO
 
 cd lib
 dart --no-sound-null-safety generator.dart -i test -o test  
+
+dart --no-sound-null-safety generator.dart -i /google/src/cloud/antrob/flutter-ripple-source-update-test-1/google3/ink_sparkle -o ink_sparkle 
 
 ## Example use cases
 
@@ -51,6 +51,10 @@ for the full spec. Section 4.3.5 specifies how unforms should be pased in
 
 ## Beyond 0.0.1
 
+### Add sampler uniforms
+
+Generator should also add sampler params to `.shader()`.
+
 ### Require only the GLSL (not spv binary)
 
 The GLSL -> SPIR-V can be done in pub by downloading vulkan tools (glslang).
@@ -59,6 +63,11 @@ The GLSL -> SPIR-V can be done in pub by downloading vulkan tools (glslang).
 
 Similar to the method of downloading glslang above, SPIR-V Tools can be
 downloaded and utilized via command line args.
+
+### Add ability for manager to manage multiple shaders.
+
+glsl and spir-v programs should be kept in a map keyed by filename, then
+different static methods for each filename can be generated.
 
 ### Add option for including spvasm.
 
@@ -72,3 +81,11 @@ Example:
 
   const _spvasmString = {{_spvasmString}};
 ```
+
+### Provide mechanism to keep track of previous uniforms during update
+
+Right now, the bookeeping of current and previous uniform value smust be done by
+the developer.
+
+AI: For uniforms that do not change often, it would be nice to have them not
+default back to 0 if they are omitted on updates.

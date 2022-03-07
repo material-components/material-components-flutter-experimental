@@ -11,26 +11,39 @@ import 'package:vector_math/vector_math_64.dart';
 
 /// A class for managing [FragmentProgram] that includes a pre-transpiled
 /// shader program into SPIR-V.
+{{#glslAsDocCommentFlag}}
+///
+/// GLSL source for this shader:
+///
+{{glslDocComment}}
+{{/glslAsDocCommentFlag}}
 class FragmentShaderManager {
-  FragmentShaderManager.{{constructorName}}() {
-    _program = ui.FragmentProgram(spirv: spirvByteBuffer);
+  static Future<FragmentShaderManager> {{constructorName}}() async {
+    final manager = FragmentShaderManager._();
+    await manager.compile();
+    return manager;
+  }
+
+  FragmentShaderManager._();
+
+  Future<void> compile() async {
+    _program = await ui.FragmentProgram.compile(spirv: spirvByteBuffer);
   }
 
   /// Creates a shader with the original program and optional uniforms.
   /// 
   /// A new shader must be made whenever the uniforms are updated.
-  shader(
+  Shader shader({
   {{#uniforms.entries}}
-    {{value.type}} {{value.name}},
+    {{value.type}}? {{value.name}},
   {{/uniforms.entries}}
-  ) {
+  }) {
     return _program.shader(
       floatUniforms: Float32List.fromList([
       {{#uniforms.entries}}
-        ...{{value.toFloatTemplatePrefix}}{{value.name}}{{value.toFloatTemplateSuffix}},
+        ...{{value.name}} != null ? {{value.toFloatTemplatePrefix}}{{value.name}}{{value.toFloatTemplateSuffix}} : {{value.defaultValue}},
       {{/uniforms.entries}}
       ]),
-      // TODO(clocksmith): Add sampler uniforms.
     );
   }
   
@@ -41,10 +54,12 @@ class FragmentShaderManager {
   /// In general, this is not needed, but may be useful for debugging or edge cases.
   ui.FragmentProgram get program => _program;
 
+  {{#glslAsConstFlag}}
   /// Direct access to the source GLSL that was used to generate this class.
   /// 
   /// In general, this is not needed, but may be useful for debugging or edge cases.
   String get glsl => _glslString;
+  {{/glslAsConstFlag}}
 
   /// Direct access to the the SPIR-V bytecode that was used to generate this class.
   /// 
@@ -55,8 +70,12 @@ class FragmentShaderManager {
   ByteBuffer get spirvByteBuffer => Uint8List.fromList(_spirvByteList).buffer;
 }
 
-const _glslString = '''
+{{#glslAsConstFlag}}
+  const _glslString = '''
 {{glslString}}
 ''';
+{{/glslAsConstFlag}}
 
+/// {{byteCount}} bytes
+/// TODO(clocksmith): Compress each word into an int to compress.
 const _spirvByteList = {{spirvByteList}};
