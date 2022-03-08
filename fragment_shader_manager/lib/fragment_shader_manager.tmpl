@@ -18,14 +18,16 @@ import 'package:vector_math/vector_math_64.dart';
 {{glslDocComment}}
 {{/glslAsDocCommentFlag}}
 class FragmentShaderManager {
+  FragmentShaderManager._();
+
+  /// Creates an [FragmentShaderManager] with an [{{constructorName}}] effect.
   static Future<FragmentShaderManager> {{constructorName}}() async {
     final manager = FragmentShaderManager._();
     await manager.compile();
     return manager;
   }
 
-  FragmentShaderManager._();
-
+  /// Compiles the spir-v bytecode into a shader program.
   Future<void> compile() async {
     _program = await ui.FragmentProgram.compile(spirv: spirvByteBuffer);
   }
